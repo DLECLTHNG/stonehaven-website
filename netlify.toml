@@ -1,0 +1,6 @@
+# Netlify deploy config. The build step strips internal docs from the
+# published site — they stay in git but must not be served on
+# stonehavencre.com.
+[build]
+  publish = "."
+  command = "rm -f README.md SEO-CHANGES.md POST-LAUNCH-SEO-CHECKLIST.md netlify.toml"
