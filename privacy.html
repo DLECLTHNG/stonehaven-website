@@ -76,15 +76,5 @@
     <p class="foot-disc">Stonehaven Commercial is a commercial real estate lender. Information herein is general in nature and does not constitute a commitment to lend, an offer to extend credit, or a guarantee of any particular rate or term. All financing is subject to underwriting approval. SBA loans are made under the U.S. Small Business Administration's lending programs.</p>
   </div>
 </footer>
-<script>
-const nav=document.getElementById('nav');
-const onScroll=()=>{nav.classList.toggle('scrolled',window.scrollY>24);};
-onScroll();window.addEventListener('scroll',onScroll,{passive:true});
-const toggle=document.getElementById('toggle'),links=document.getElementById('links');
-if(toggle&&links){toggle.addEventListener('click',()=>links.classList.toggle('open'));}
-const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.16,rootMargin:'0px 0px -50px 0px'});
-document.querySelectorAll('.reveal:not(.in)').forEach(el=>io.observe(el));
-const lf=document.getElementById('leadForm');
-if(lf){lf.addEventListener('submit',(e)=>{e.preventDefault();const n=lf.name.value.trim(),em=lf.email.value.trim();if(!n||!em||!/.+@.+\..+/.test(em)){[lf.name,lf.email].forEach(f=>{if(!f.value.trim())f.style.borderBottomColor='#B0413A';});return;}lf.style.display='none';document.getElementById('leadSuccess').classList.add('show');});lf.querySelectorAll('input').forEach(i=>i.addEventListener('input',()=>{i.style.borderBottomColor='';}));}
-</script>
+<script src="js/funnel.js" defer></script>
 </body></html>

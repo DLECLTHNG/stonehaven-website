@@ -76,15 +76,5 @@
     <p class="foot-disc">Stonehaven Commercial es un prestamista de bienes raíces comerciales. La información aquí contenida es de carácter general y no constituye un compromiso de préstamo, una oferta de crédito ni una garantía de tasa o término particular. Todo financiamiento está sujeto a aprobación de suscripción. Los préstamos SBA se otorgan bajo los programas de la Administración de Pequeñas Empresas de los EE. UU.</p>
   </div>
 </footer>
-<script>
-const nav=document.getElementById('nav');
-const onScroll=()=>{nav.classList.toggle('scrolled',window.scrollY>24);};
-onScroll();window.addEventListener('scroll',onScroll,{passive:true});
-const toggle=document.getElementById('toggle'),links=document.getElementById('links');
-if(toggle&&links){toggle.addEventListener('click',()=>links.classList.toggle('open'));}
-const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.16,rootMargin:'0px 0px -50px 0px'});
-document.querySelectorAll('.reveal:not(.in)').forEach(el=>io.observe(el));
-const lf=document.getElementById('leadForm');
-if(lf){lf.addEventListener('submit',(e)=>{e.preventDefault();const n=lf.name.value.trim(),em=lf.email.value.trim();if(!n||!em||!/.+@.+\..+/.test(em)){[lf.name,lf.email].forEach(f=>{if(!f.value.trim())f.style.borderBottomColor='#B0413A';});return;}lf.style.display='none';document.getElementById('leadSuccess').classList.add('show');});lf.querySelectorAll('input').forEach(i=>i.addEventListener('input',()=>{i.style.borderBottomColor='';}));}
-</script>
+<script src="../js/funnel.js" defer></script>
 </body></html>

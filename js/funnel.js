@@ -15,6 +15,33 @@
   "use strict";
 
   var INTAKE_ENDPOINT = ""; // <-- set at go-live
+  var GA4_ID = "";          // <-- e.g. "G-XXXXXXXXXX"  (Google Analytics 4)
+  var META_PIXEL_ID = "";   // <-- e.g. "1234567890"    (Meta/Facebook Pixel)
+
+  /* ---------- 0 · analytics tag loaders (inert until IDs above are set) ---------- */
+  if (GA4_ID) {
+    var gs = document.createElement("script");
+    gs.async = true;
+    gs.src = "https://www.googletagmanager.com/gtag/js?id=" + GA4_ID;
+    document.head.appendChild(gs);
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { window.dataLayer.push(arguments); };
+    window.gtag("js", new Date());
+    window.gtag("config", GA4_ID);
+  }
+  if (META_PIXEL_ID) {
+    /* Meta's standard base snippet, unminified */
+    (function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments); };
+      if (!f._fbq) f._fbq = n;
+      n.push = n; n.loaded = true; n.version = "2.0"; n.queue = [];
+      t = b.createElement(e); t.async = true; t.src = v;
+      s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s);
+    })(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
+    window.fbq("init", META_PIXEL_ID);
+    window.fbq("track", "PageView");
+  }
 
   /* ---------- 1 · UTM capture (persists for the session) ---------- */
   var UTM_KEYS = ["utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term", "gclid", "fbclid"];
