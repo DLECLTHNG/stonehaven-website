@@ -54,12 +54,13 @@
       <span class="eyebrow">Enquire</span>
       <h2>Discuss your financing.</h2>
       <p class="sub">Share a few details and a Stonehaven lender will respond within one business day. No obligation.</p>
-      <form class="lead-form" id="leadForm" novalidate>
+      <form class="lead-form" id="leadForm" novalidate data-sh-form="home" data-sh-product="Not sure" data-sh-event="lead">
+        <input type="text" name="company_website" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true"/>
         <div class="lf-field"><label for="lf-name">Name</label><input id="lf-name" type="text" name="name" autocomplete="name" required/></div>
         <div class="lf-field"><label for="lf-email">Email</label><input id="lf-email" type="email" name="email" autocomplete="email" required/></div>
         <div class="lf-field"><label for="lf-phone">Phone</label><input id="lf-phone" type="tel" name="phone" autocomplete="tel"/></div>
         <div class="lf-field"><label for="lf-product">Financing type</label>
-          <select id="lf-product" name="product">
+          <select id="lf-product" name="product_choice">
             <option value="Commercial">Commercial</option>
             <option value="SBA">SBA</option>
             <option value="DSCR">DSCR</option>
@@ -108,15 +109,17 @@
     <p class="foot-disc">Stonehaven Commercial is a commercial real estate lender. Information herein is general in nature and does not constitute a commitment to lend, an offer to extend credit, or a guarantee of any particular rate or term. All financing is subject to underwriting approval. SBA loans are made under the U.S. Small Business Administration's lending programs.</p>
   </div>
 </footer>
-<script>
-const nav=document.getElementById('nav');
-const onScroll=()=>{nav.classList.toggle('scrolled',window.scrollY>24);};
-onScroll();window.addEventListener('scroll',onScroll,{passive:true});
-const toggle=document.getElementById('toggle'),links=document.getElementById('links');
-if(toggle&&links){toggle.addEventListener('click',()=>links.classList.toggle('open'));}
-const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.16,rootMargin:'0px 0px -50px 0px'});
-document.querySelectorAll('.reveal:not(.in)').forEach(el=>io.observe(el));
-const lf=document.getElementById('leadForm');
-if(lf){lf.addEventListener('submit',(e)=>{e.preventDefault();const n=lf.name.value.trim(),em=lf.email.value.trim();if(!n||!em||!/.+@.+\..+/.test(em)){[lf.name,lf.email].forEach(f=>{if(!f.value.trim())f.style.borderBottomColor='#B0413A';});return;}lf.style.display='none';document.getElementById('leadSuccess').classList.add('show');});lf.querySelectorAll('input').forEach(i=>i.addEventListener('input',()=>{i.style.borderBottomColor='';}));}
-</script>
+<!-- Netlify Forms registration: defines the site-wide "lead" form all funnel
+     forms submit to (via js/funnel.js) until the CRM intake endpoint is live. -->
+<form name="lead" data-netlify="true" netlify-honeypot="company_website" hidden>
+  <input type="text" name="name"/>
+  <input type="email" name="email"/>
+  <input type="tel" name="phone"/>
+  <input type="text" name="product"/>
+  <textarea name="about"></textarea>
+  <input type="text" name="page"/>
+  <input type="text" name="lang"/>
+  <input type="text" name="company_website"/>
+</form>
+<script src="js/funnel.js" defer></script>
 </body></html>

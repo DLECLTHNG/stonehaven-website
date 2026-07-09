@@ -6,9 +6,10 @@
    GOING LIVE — one place to edit:
    Set INTAKE_ENDPOINT to the CRM's public intake URL, e.g.
    "https://crm.stonehavencre.com/api/intake/website".
-   While empty, forms behave gracefully (mock mode): they log the
-   payload to the console and continue to the thank-you page, so
-   the site works before the CRM exists. Matches WEBSITE_FORM_CONTRACT.md.
+   While empty, submissions are captured by Netlify Forms (the
+   hidden <form name="lead"> registered in index.html defines the
+   fields), so no lead is lost before the CRM exists. Matches
+   WEBSITE_FORM_CONTRACT.md.
    ============================================================ */
 (function () {
   "use strict";
@@ -137,9 +138,20 @@
         }
       }
 
-      if (!INTAKE_ENDPOINT) { // mock mode — site works before the CRM exists
-        try { console.log("[stonehaven] mock intake:", payload); } catch (err) {}
-        done(); return;
+      if (!INTAKE_ENDPOINT) {
+        // Netlify Forms fallback — every submission lands in the site's
+        // "lead" form (Netlify dashboard → Forms) until the CRM goes live.
+        var nf = new URLSearchParams();
+        nf.append("form-name", "lead");
+        ["name", "email", "phone", "product", "about", "page", "lang"].forEach(function (k) {
+          nf.append(k, payload[k] || "");
+        });
+        fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: nf.toString()
+        }).then(done).catch(done); // never strand a real lead on a network blip
+        return;
       }
       fetch(INTAKE_ENDPOINT, {
         method: "POST",
