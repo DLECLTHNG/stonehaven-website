@@ -168,16 +168,29 @@
       if (!INTAKE_ENDPOINT) {
         // Netlify Forms fallback — every submission lands in the site's
         // "lead" form (Netlify dashboard → Forms) until the CRM goes live.
+        // POST to the current page's path, never the bare "/": Netlify's
+        // edge 404s POSTs to the naked root (found in pre-launch testing)
+        // while any real page path routes to the forms handler.
         var nf = new URLSearchParams();
         nf.append("form-name", "lead");
         ["name", "email", "phone", "product", "about", "page", "lang"].forEach(function (k) {
           nf.append(k, payload[k] || "");
         });
-        fetch("/", {
-          method: "POST",
-          headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: nf.toString()
-        }).then(done).catch(done); // never strand a real lead on a network blip
+        var post = function (target) {
+          return fetch(target, {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: nf.toString()
+          });
+        };
+        var target = window.location.pathname;
+        if (target.slice(-1) === "/") target += "index.html";
+        post(target).then(function (r) {
+          if (r && r.ok) { done(); return; }
+          post("/index.html").then(done, done); // one retry on a known-good path
+        }).catch(function () {
+          post("/index.html").then(done, done); // never strand the visitor on a blip
+        });
         return;
       }
       fetch(INTAKE_ENDPOINT, {
