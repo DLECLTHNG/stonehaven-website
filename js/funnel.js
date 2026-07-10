@@ -185,6 +185,7 @@
         };
         var target = window.location.pathname;
         if (target.slice(-1) === "/") target += "index.html";
+        else if (!/\.html?$/.test(target)) target += ".html"; // pretty URL → real file path
         post(target).then(function (r) {
           if (r && r.ok) { done(); return; }
           post("/index.html").then(done, done); // one retry on a known-good path
