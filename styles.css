@@ -255,7 +255,9 @@ footer{background:var(--slate-900);color:var(--stone-400);padding:64px 0 44px;}
 /* ============ SEO build additions (breadcrumb, process, FAQ, NAP) ============ */
 .nav .links a.line.active{color:#1A2530;}
 .lang-opt{text-decoration:none;cursor:pointer;}
-.crumb{display:flex;gap:.5rem;align-items:center;font-family:'Inter',sans-serif;font-size:.8rem;color:#8A95A1;padding:1.4rem 0 0;letter-spacing:.02em;}
+/* Positioned in the gap between the fixed 88px header and the page-hero
+   text so it neither hides behind the header nor adds height above the hero. */
+.crumb{position:absolute;top:104px;left:0;right:0;display:flex;gap:.5rem;align-items:center;font-family:'Inter',sans-serif;font-size:.8rem;color:#8A95A1;letter-spacing:.02em;}
 .crumb a{color:#5A6B7B;text-decoration:none;}
 .crumb a:hover{color:#9C5A35;}
 .crumb span[aria-current]{color:#3A4A5A;}
