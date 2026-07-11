@@ -1,0 +1,90 @@
+# Synthetic monitoring for stonehavencre.com.
+#
+# Every 6 hours (and on demand) this verifies the things that can break
+# silently between deploys — pre-launch testing caught Netlify's edge
+# 404ing form POSTs a day after they worked, with no deploy in between.
+#
+# Checks:
+#   1. Key pages, assets, and lead-magnet PDFs return 200.
+#   2. js/funnel.js still contains the live form-POST logic.
+#   3. The homepage still registers the hidden Netlify "lead" form.
+#   4. A canary form POST reaches the forms handler (200). The canary
+#      fills the honeypot field on purpose, so Netlify discards it as
+#      spam: no email, no stored submission, no quota use — it only
+#      proves the POST routing works.
+#
+# On failure: the run goes red (GitHub emails the repo owner) and an
+# issue is opened — or commented on, if one is already open.
+
+name: Site monitor
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check site health
+        run: |
+          set -u
+          BASE="https://stonehavencre.com"
+          fails=()
+
+          for p in "/" "/contact.html" "/book.html" "/commercial.html" "/sba.html" "/dscr.html" \
+                   "/dscr-analyzer.html" "/sba-guide.html" "/terms-sheet.html" "/privacy.html" \
+                   "/es/" "/es/contact.html" "/sitemap.xml" "/robots.txt" "/styles.css" \
+                   "/funnel.css" "/js/funnel.js" "/assets/mark.png" "/downloads/dscr-playbook.pdf"; do
+            code=$(curl -s -o /dev/null -w "%{http_code}" --max-time 20 "$BASE$p" || echo "000")
+            [ "$code" = "200" ] || fails+=("GET $p -> $code")
+          done
+
+          if ! curl -s --max-time 20 "$BASE/js/funnel.js" | grep -q 'form-name'; then
+            fails+=("funnel.js is missing the form-name POST logic")
+          fi
+
+          if ! curl -s --max-time 20 "$BASE/" | grep -qi "name=.lead."; then
+            fails+=("homepage is missing the hidden 'lead' form registration")
+          fi
+
+          code=$(curl -s -o /dev/null -w "%{http_code}" --max-time 20 -X POST "$BASE/index.html" \
+            -H "Content-Type: application/x-www-form-urlencoded" \
+            --data-urlencode "form-name=lead" \
+            --data-urlencode "name=MONITOR CANARY (auto, discarded as spam)" \
+            --data-urlencode "email=canary@stonehavencre.com" \
+            --data-urlencode "company_website=intentional-honeypot-fill" \
+            --data-urlencode "page=home" || echo "000")
+          [ "$code" = "200" ] || fails+=("form POST canary -> $code (want 200) — leads may be silently lost")
+
+          if [ "${#fails[@]}" -gt 0 ]; then
+            printf '%s\n' "${fails[@]}" | tee /tmp/failures.txt
+            exit 1
+          fi
+          echo "all checks passed"
+
+      - name: Open or update alert issue
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          {
+            echo "Automated monitor failures at $(date -u +%FT%TZ):"
+            echo '```'
+            cat /tmp/failures.txt 2>/dev/null || echo "see workflow log"
+            echo '```'
+            echo "Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          } > /tmp/body.md
+          existing=$(gh issue list --repo "${{ github.repository }}" --state open \
+            --search "Site monitor failed in:title" --json number --jq '.[0].number' || true)
+          if [ -n "$existing" ]; then
+            gh issue comment "$existing" --repo "${{ github.repository }}" --body-file /tmp/body.md
+          else
+            gh issue create --repo "${{ github.repository }}" \
+              --title "🔴 Site monitor failed: stonehavencre.com" \
+              --body-file /tmp/body.md
+          fi
