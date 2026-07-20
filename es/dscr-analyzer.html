@@ -147,7 +147,7 @@
     out.p.textContent=money(pmt)+"/mes"; out.t.textContent=money(ti)+"/mes"; out.pit.textContent=money(pitia)+"/mes";
     out.r.innerHTML=(Math.round(dscr*100)/100).toFixed(2)+"<small>x</small>";
     out.v.className="verdict";
-    if(dscr>=1.25){out.v.classList.add("strong");out.v.textContent="Fuerte - la propiedad califica sola";out.note.textContent="Ratios de 1.25x o más típicamente abren la mejor estructura y apalancamiento.";}
+    if(dscr>=1.25){out.v.classList.add("strong");out.v.textContent="Fuerte - el ratio suele abrir más opciones";out.note.textContent="Ratios de 1.25x o más típicamente abren la mejor estructura y apalancamiento.";}
     else if(dscr>=1.0){out.v.classList.add("workable");out.v.textContent="Viable - probablemente encaja en un programa";out.note.textContent="Entre 1.0x y 1.25x la estructura importa - el informe completo muestra qué sube su ratio.";}
     else {out.v.classList.add("short");out.v.textContent="Aún no - esto es lo que lo mueve";out.note.textContent="Abajo de 1.0x la renta no cubre la deuda con estos términos. Más pago inicial u otra estructura muchas veces cierra la brecha - el informe muestra cómo.";}
     var form=document.querySelector('form[data-sh-form="dscr-analyzer"]');

@@ -42,7 +42,7 @@
 <section class="funnel-hero">
   <span class="eyebrow">DSCR · Deal Analyzer</span>
   <h1>Does your deal <em>qualify?</em></h1>
-  <p>Run the numbers the way an underwriter would - in 60 seconds, no credit pull, no tax returns. Your ratio shows instantly.</p>
+  <p>Run the numbers the way an underwriter would - in 60 seconds, no credit pull at this stage. Your estimated ratio shows instantly.</p>
 </section>
 <div class="proof-strip"><span><b>All 50</b> states</span><span><b>No</b> tax returns</span><span><b>$100K–$5M+</b> per property</span><span><b>Asset-based</b> underwriting</span></div>
 
@@ -73,7 +73,7 @@
         <p class="calc-note" id="r-note">Enter your figures - the ratio updates as you type.</p>
       </div>
     </div>
-    <p class="fine">Calculated the way most DSCR programs do for 1–4 unit rentals: monthly rent ÷ full monthly payment (principal, interest, taxes, insurance, HOA). Illustrative only, 30-year amortization - programs also weigh leverage, credit and reserves; we confirm the real number before you apply. Not a commitment to lend.</p>
+    <p class="fine">Calculated the way most DSCR programs do for 1–4 unit rentals: monthly rent ÷ full monthly payment (principal, interest, taxes, insurance, HOA). Illustrative only, 30-year amortization - programs also weigh leverage, credit and reserves; we confirm the real number before you apply. Estimates only - not an approval, commitment, rate quote or guarantee. Want the full lender-and-investor analysis? <a href="dscr-review.html" style="color:inherit;text-decoration:underline;">Run the complete Deal Review</a>.</p>
   </div>
 </section>
 
@@ -147,8 +147,8 @@
     out.p.textContent=money(pmt)+"/mo"; out.t.textContent=money(ti)+"/mo"; out.pit.textContent=money(pitia)+"/mo";
     out.r.innerHTML=(Math.round(dscr*100)/100).toFixed(2)+"<small>x</small>";
     out.v.className="verdict";
-    if(dscr>=1.25){out.v.classList.add("strong");out.v.textContent="Strong - this deal qualifies itself";out.note.textContent="Ratios at 1.25x and above typically open the best structure and leverage.";}
-    else if(dscr>=1.0){out.v.classList.add("workable");out.v.textContent="Workable - likely fits a program";out.note.textContent="Between 1.0x and 1.25x, structure matters - the full report shows what moves your ratio up.";}
+    if(dscr>=1.25){out.v.classList.add("strong");out.v.textContent="Strong - ratio typically opens broader options";out.note.textContent="Ratios at 1.25x and above typically open the best structure and leverage.";}
+    else if(dscr>=1.0){out.v.classList.add("workable");out.v.textContent="Workable - may fit some programs";out.note.textContent="Between 1.0x and 1.25x, structure matters - the full report shows what moves your ratio up.";}
     else {out.v.classList.add("short");out.v.textContent="Not yet - here's what moves it";out.note.textContent="Below 1.0x the rent doesn't cover the debt at these terms. More down payment or a different structure often closes the gap - the report shows how.";}
     var form=document.querySelector('form[data-sh-form="dscr-analyzer"]');
     if(form){form.setAttribute("data-sh-about-prefix","[Deal Analyzer] price "+money(price)+" · down "+Math.round(down*100)+"% · rate "+(rate*100).toFixed(2)+"% · rent "+money(rent)+"/mo · DSCR "+dscr.toFixed(2)+"x");}

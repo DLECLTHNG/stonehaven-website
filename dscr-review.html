@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>DSCR Deal Review - See If the Deal Works | Stonehaven</title>
+<meta name="description" content="Submit your rental property for a preliminary Stonehaven scenario review - estimated lender DSCR, conservative cash flow, financing range and the risks that matter. Not a commitment to lend."/>
+<link rel="canonical" href="https://stonehavencre.com/dscr-review.html"/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="Stonehaven Lending"/>
+<meta property="og:title" content="DSCR Deal Review - See If the Deal Works"/>
+<meta property="og:description" content="A preliminary scenario review of your rental deal: lender DSCR, investor cash flow and the risks that matter - before you spend time and money."/>
+<meta property="og:url" content="https://stonehavencre.com/dscr-review.html"/>
+<meta property="og:image" content="https://stonehavencre.com/assets/og-logo.png"/>
+<link rel="icon" type="image/png" href="assets/mark.png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+<link rel="stylesheet" href="funnel.css"/>
+<script src="js/funnel.js" defer></script>
+<script src="js/dscr-review.js" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://stonehavencre.com/"}, {"@type": "ListItem", "position": 2, "name": "DSCR", "item": "https://stonehavencre.com/dscr.html"}, {"@type": "ListItem", "position": 3, "name": "Deal Review", "item": "https://stonehavencre.com/dscr-review.html"}]}</script>
+</head>
+<body class="has-sticky"><header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="brand" aria-label="Stonehaven Lending home">
+      <img src="assets/mark.png" width="30" height="30" alt="Stonehaven Lending"/>
+      <span class="bt"><span class="b1">Stonehaven</span><span class="b2">Lending</span></span>
+    </a>
+    <nav class="links" id="links" aria-label="Primary">
+      <a href="commercial.html" class="line">Commercial</a>
+      <a href="sba.html" class="line">SBA</a>
+      <a href="dscr.html" class="line active">DSCR</a>
+      <a href="contact.html" class="line">Contact</a>
+    </nav>
+    <button class="menu-toggle" id="toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<main>
+<section class="funnel-hero">
+  <span class="eyebrow">The Investor Finance Desk · Deal Review</span>
+  <h1>Know whether the deal works <em>before</em> you spend money.</h1>
+  <p>Run the numbers both ways - the lender's formula and your economics - then submit the scenario for a preliminary Stonehaven review. No obligation, no credit pull at this stage.</p>
+</section>
+<div class="proof-strip"><span><b>All 50</b> states</span><span><b>1 business day</b> response</span><span><b>$100K–$5M+</b> per property</span><span><b>Lender + investor</b> view</span></div>
+
+<section class="tight" id="analyze" aria-label="Deal analysis calculator">
+  <div class="wrap">
+    <div class="head reveal" style="text-align:center;max-width:560px;margin:0 auto 44px;"><span class="eyebrow" style="display:block;margin-bottom:20px;">Step One</span><h2 style="font-family:'Cormorant',serif;font-weight:400;font-size:clamp(28px,3.6vw,42px);line-height:1.12;">Analyze the property.</h2></div>
+    <div class="calc-wrap reveal">
+      <div class="calc-inputs">
+        <h3>The deal</h3>
+        <div class="calc-grid">
+          <div class="lf-field"><label for="k-price">Value / price ($)<details class="tipd"><summary>i</summary><span class="tip-pop">Purchase price for an acquisition, or your estimate of current value for a refinance. The appraisal governs in underwriting.</span></details></label><input id="k-price" type="number" inputmode="numeric" min="0" value="400000"/></div>
+          <div class="lf-field"><label for="k-loan">Loan amount ($)<details class="tipd"><summary>i</summary><span class="tip-pop">The financing you're requesting. Loan ÷ value is your LTV - leverage drives both eligibility and pricing.</span></details></label><input id="k-loan" type="number" inputmode="numeric" min="0" value="300000"/></div>
+          <div class="lf-field"><label for="k-rate">Rate estimate (%)<details class="tipd"><summary>i</summary><span class="tip-pop">An illustrative rate for modeling only - actual rates vary by program, leverage, credit and market. This is not a quote.</span></details></label><input id="k-rate" type="number" inputmode="decimal" step="0.125" min="0" value="7.25"/></div>
+          <div class="lf-field"><label for="k-amort">Amortization (yrs)<details class="tipd"><summary>i</summary><span class="tip-pop">Years the payment schedule is spread over. 30 is common for residential DSCR; shorter amortization raises the payment and lowers DSCR.</span></details></label><input id="k-amort" type="number" inputmode="numeric" min="5" max="40" value="30"/></div>
+          <div class="lf-field full" style="display:flex;align-items:center;gap:10px;"><input id="k-io" type="checkbox" style="width:15px;height:15px;accent-color:var(--brass);"/><label for="k-io" style="margin:0;">Interest-only qualification<details class="tipd"><summary>i</summary><span class="tip-pop">Some programs qualify on the interest-only payment, which raises DSCR. The amortizing payment still arrives later - model both.</span></details></label></div>
+          <div class="lf-field"><label for="k-rent">Monthly rent ($)<details class="tipd"><summary>i</summary><span class="tip-pop">Lease rent or expected market rent. In underwriting, the appraiser's rent analysis usually controls - a low rent opinion is a common deal-changer.</span></details></label><input id="k-rent" type="number" inputmode="numeric" min="0" value="3000"/></div>
+          <div class="lf-field"><label for="k-tax">Annual taxes ($)<details class="tipd"><summary>i</summary><span class="tip-pop">Use the post-sale tax bill where reassessment applies - not the seller's old bill.</span></details></label><input id="k-tax" type="number" inputmode="numeric" min="0" value="5400"/></div>
+          <div class="lf-field"><label for="k-ins">Annual insurance ($)<details class="tipd"><summary>i</summary><span class="tip-pop">Landlord policy premium. In some states this line item alone decides whether the deal covers.</span></details></label><input id="k-ins" type="number" inputmode="numeric" min="0" value="1800"/></div>
+          <div class="lf-field"><label for="k-hoa">HOA / other, mo ($)<details class="tipd"><summary>i</summary><span class="tip-pop">Monthly HOA dues plus any other recurring property charge a lender counts in the qualifying payment.</span></details></label><input id="k-hoa" type="number" inputmode="numeric" min="0" value="0"/></div>
+          <div class="lf-field"><label for="k-vac">Vacancy (%)<details class="tipd"><summary>i</summary><span class="tip-pop">Investor-view assumption for collection loss between tenants. Lenders' DSCR formula ignores it; your bank account doesn't.</span></details></label><input id="k-vac" type="number" inputmode="numeric" min="0" max="50" value="5"/></div>
+          <div class="lf-field"><label for="k-mgmt">Management (%)<details class="tipd"><summary>i</summary><span class="tip-pop">Property management as a share of collected rent - even if you self-manage, your time isn't free.</span></details></label><input id="k-mgmt" type="number" inputmode="numeric" min="0" max="30" value="8"/></div>
+          <div class="lf-field"><label for="k-maint">Maintenance (%)<details class="tipd"><summary>i</summary><span class="tip-pop">Routine repairs as a share of rent. Older properties run higher.</span></details></label><input id="k-maint" type="number" inputmode="numeric" min="0" max="30" value="5"/></div>
+          <div class="lf-field"><label for="k-capex">CapEx reserve (%)<details class="tipd"><summary>i</summary><span class="tip-pop">Set-aside for roofs, systems and turns - the expenses that arrive in years, not months.</span></details></label><input id="k-capex" type="number" inputmode="numeric" min="0" max="30" value="5"/></div>
+        </div>
+      </div>
+      <div class="calc-result" aria-live="polite">
+        <span class="eyebrow">Estimated lender DSCR</span>
+        <div class="ratio" id="o-ratio">-<small>x</small></div>
+        <div class="verdict" id="o-lverdict"></div>
+        <div class="view-toggle" role="tablist" style="margin-top:20px;">
+          <button type="button" role="tab" aria-selected="true" data-view="vp-lender">Lender view</button>
+          <button type="button" role="tab" aria-selected="false" data-view="vp-investor">Investor view</button>
+        </div>
+        <div class="view-panel active" id="vp-lender" role="tabpanel">
+          <div class="calc-sub">
+            <div class="row"><span>Loan · LTV</span><b id="o-ltv">-</b></div>
+            <div class="row"><span>Principal &amp; interest</span><b id="o-pi">-</b></div>
+            <div class="row"><span>Qualifying payment (PITIA)</span><b id="o-pitia">-</b></div>
+            <div class="row"><span>Lender DSCR (rent ÷ PITIA)</span><b id="o-ldscr">-</b></div>
+          </div>
+        </div>
+        <div class="view-panel" id="vp-investor" role="tabpanel">
+          <div class="calc-sub">
+            <div class="row"><span>Income after vacancy</span><b id="o-egi">-</b></div>
+            <div class="row"><span>Operating expenses</span><b id="o-opex">-</b></div>
+            <div class="row"><span>Estimated NOI</span><b id="o-noi">-</b></div>
+            <div class="row"><span>Debt service (P&amp;I)</span><b id="o-ds">-</b></div>
+            <div class="row"><span>Investor DSCR (NOI ÷ P&amp;I)</span><b id="o-idscr">-</b></div>
+            <div class="row"><span>Est. monthly cash flow</span><b id="o-cash">-</b></div>
+            <div class="row"><span>Break-even occupancy</span><b id="o-be">-</b></div>
+          </div>
+        </div>
+        <p class="calc-note">A deal can pass the lender's formula and still be thin economics. We look at both.</p>
+      </div>
+    </div>
+    <p class="fine">This calculator provides estimates for educational and preliminary scenario-review purposes. It is not an approval, commitment, rate quote or guarantee. Actual calculations, rent treatment and eligibility vary by lender, property, documentation and underwriting. Lender DSCR shown uses the common 1–4 unit convention (gross rent ÷ PITIA); investor figures are conservative estimates based on your assumptions.</p>
+  </div>
+</section>
+
+<section class="tight" id="review" style="background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="head reveal" style="text-align:center;max-width:600px;margin:0 auto 44px;"><span class="eyebrow" style="display:block;margin-bottom:20px;">Step Two</span><h2 style="font-family:'Cormorant',serif;font-weight:400;font-size:clamp(28px,3.6vw,42px);line-height:1.12;">Request your deal review.</h2><p style="font-size:15px;color:var(--slate-400);font-weight:300;margin-top:18px;">A preliminary scenario assessment - estimated DSCR, potential financing range, likely documentation and the major risks - with a recommended next step. Not an approval or commitment.</p></div>
+    <div class="rev-card reveal" id="rev-card">
+      <div class="quiz-progress" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+      <form id="revForm" data-sh-form="deal-review" data-sh-product="DSCR" data-sh-event="deal_review_request" data-sh-thanks="thanks-dscr-review.html" novalidate>
+        <input type="text" name="company_website" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true"/>
+        <input type="hidden" name="lead_class" id="r-leadclass"/>
+
+        <div class="rev-step active">
+          <h3>What kind of deal is it?</h3>
+          <p class="sub2">This shapes which structures we compare.</p>
+          <div class="rev-grid">
+            <div class="lf-field full"><label for="r-dealtype">Deal type</label>
+              <select id="r-dealtype" name="deal_type" required>
+                <option value="">- Select -</option>
+                <option>Purchase</option>
+                <option>Rate-and-term refinance</option>
+                <option>Cash-out refinance</option>
+                <option>BRRRR takeout</option>
+                <option>Portfolio review</option>
+                <option>Other investor financing</option>
+              </select>
+            </div>
+          </div>
+          <p class="rev-err">Please choose a deal type.</p>
+          <div class="rev-nav"><button type="button" class="quiz-back" id="rev-back">← Back</button><button type="button" class="btn-primary rev-next">Continue</button></div>
+        </div>
+
+        <div class="rev-step">
+          <h3>The property.</h3>
+          <p class="sub2">Address is optional at this stage - state and property type drive program fit.</p>
+          <div class="rev-grid">
+            <div class="lf-field full"><label for="r-address">Property address <span style="text-transform:none;letter-spacing:0;color:#AAB8C7;">(optional)</span></label><input id="r-address" type="text" name="property_address" autocomplete="street-address"/></div>
+            <div class="lf-field"><label for="r-state">State</label><select id="r-state" name="state" required><option value="">- Select -</option><option>Alabama</option><option>Alaska</option><option>Arizona</option><option>Arkansas</option><option>California</option><option>Colorado</option><option>Connecticut</option><option>Delaware</option><option>Florida</option><option>Georgia</option><option>Hawaii</option><option>Idaho</option><option>Illinois</option><option>Indiana</option><option>Iowa</option><option>Kansas</option><option>Kentucky</option><option>Louisiana</option><option>Maine</option><option>Maryland</option><option>Massachusetts</option><option>Michigan</option><option>Minnesota</option><option>Mississippi</option><option>Missouri</option><option>Montana</option><option>Nebraska</option><option>Nevada</option><option>New Hampshire</option><option>New Jersey</option><option>New Mexico</option><option>New York</option><option>North Carolina</option><option>North Dakota</option><option>Ohio</option><option>Oklahoma</option><option>Oregon</option><option>Pennsylvania</option><option>Rhode Island</option><option>South Carolina</option><option>South Dakota</option><option>Tennessee</option><option>Texas</option><option>Utah</option><option>Vermont</option><option>Virginia</option><option>Washington</option><option>West Virginia</option><option>Wisconsin</option><option>Wyoming</option></select></div>
+            <div class="lf-field"><label for="r-proptype">Property type</label><select id="r-proptype" name="property_type" required><option value="">- Select -</option><option>Single-family rental</option><option>Townhome / PUD</option><option>Condominium</option><option>2–4 units</option><option>5–9 units</option><option>10+ units / commercial</option><option>Mixed-use</option><option>Other</option></select></div>
+            <div class="lf-field"><label for="r-units">Unit count</label><input id="r-units" type="number" name="unit_count" inputmode="numeric" min="1" max="500" value="1"/></div>
+            <div class="lf-field"><label for="r-occupancy">Current occupancy</label><select id="r-occupancy" name="occupancy"><option>Leased</option><option>Vacant</option><option>Owner will vacate</option><option>Mixed / partial</option></select></div>
+            <div class="lf-field"><label for="r-rentmodel">Rental model</label><select id="r-rentmodel" name="rental_model"><option>Long-term rental</option><option>Mid-term rental</option><option>Short-term rental</option></select></div>
+            <div class="lf-field"><label for="r-value">Price / est. value ($)</label><input id="r-value" type="number" name="value" inputmode="numeric" min="0" required/></div>
+          </div>
+          <p class="rev-err">Please complete state, property type and value.</p>
+          <div class="rev-nav"><span></span><button type="button" class="btn-primary rev-next">Continue</button></div>
+        </div>
+
+        <div class="rev-step">
+          <h3>Rent and expenses.</h3>
+          <p class="sub2">Estimates are fine - we flag where the appraisal could move them.</p>
+          <div class="rev-grid">
+            <div class="lf-field"><label for="r-rent">Current monthly rent ($)</label><input id="r-rent" type="number" name="monthly_rent" inputmode="numeric" min="0" required/></div>
+            <div class="lf-field"><label for="r-mktrent">Expected market rent ($)</label><input id="r-mktrent" type="number" name="market_rent" inputmode="numeric" min="0"/></div>
+            <div class="lf-field"><label for="r-tax">Annual taxes ($)</label><input id="r-tax" type="number" name="annual_taxes" inputmode="numeric" min="0"/></div>
+            <div class="lf-field"><label for="r-ins">Annual insurance ($)</label><input id="r-ins" type="number" name="annual_insurance" inputmode="numeric" min="0"/></div>
+            <div class="lf-field"><label for="r-hoa">Monthly HOA ($)</label><input id="r-hoa" type="number" name="monthly_hoa" inputmode="numeric" min="0"/></div>
+            <div class="lf-field"><label for="r-othexp">Other property expenses ($)</label><input id="r-othexp" type="number" name="other_expenses" inputmode="numeric" min="0"/></div>
+          </div>
+          <p class="rev-err">Please enter at least the monthly rent.</p>
+          <div class="rev-nav"><span></span><button type="button" class="btn-primary rev-next">Continue</button></div>
+        </div>
+
+        <div class="rev-step">
+          <h3>The financing.</h3>
+          <p class="sub2">What you're asking for, and when.</p>
+          <div class="rev-grid">
+            <div class="lf-field"><label for="r-loanamt">Requested loan amount ($)</label><input id="r-loanamt" type="number" name="loan_amount" inputmode="numeric" min="0" required/></div>
+            <div class="lf-field"><label for="r-down">Down payment / equity ($)</label><input id="r-down" type="number" name="down_payment" inputmode="numeric" min="0"/></div>
+            <div class="lf-field"><label for="r-existing">Existing loan balance ($) <span style="text-transform:none;letter-spacing:0;color:#AAB8C7;">(refi)</span></label><input id="r-existing" type="number" name="existing_balance" inputmode="numeric" min="0"/></div>
+            <div class="lf-field"><label for="r-close">Desired close</label><select id="r-close" name="close_timeline" required><option value="">- Select -</option><option>Under 30 days</option><option>30-60 days</option><option>60-90 days</option><option>Exploring options</option></select></div>
+            <div class="lf-field"><label for="r-hold">Expected hold period</label><select id="r-hold" name="hold_period"><option>Under 3 years</option><option>3-5 years</option><option>5-10 years</option><option>10+ years / indefinite</option></select></div>
+            <div class="lf-field"><label for="r-goal">Primary goal</label><select id="r-goal" name="primary_goal"><option>Maximize cash flow</option><option>Maximize leverage</option><option>Lowest total cost</option><option>Fast, certain close</option><option>Free equity for next deal</option></select></div>
+          </div>
+          <p class="rev-err">Please enter the loan amount and timeline.</p>
+          <div class="rev-nav"><span></span><button type="button" class="btn-primary rev-next">Continue</button></div>
+        </div>
+
+        <div class="rev-step">
+          <h3>Borrower fit.</h3>
+          <p class="sub2">Ranges only - no credit pull, nothing verified at this stage.</p>
+          <div class="rev-grid">
+            <div class="lf-field"><label for="r-fico">Estimated FICO range</label><select id="r-fico" name="fico_range"><option value="">Prefer not to say</option><option>740+</option><option>700-739</option><option>660-699</option><option>620-659</option><option>Below 620</option></select></div>
+            <div class="lf-field"><label for="r-exp">Investment experience</label><select id="r-exp" name="experience"><option>First investment property</option><option>1-3 properties</option><option>4-10 properties</option><option>10+ properties</option></select></div>
+            <div class="lf-field"><label for="r-reserves">Approx. liquid reserves</label><select id="r-reserves" name="reserves"><option value="">Prefer not to say</option><option>Under 3 months</option><option>3-6 months</option><option>6-12 months</option><option>12+ months</option></select></div>
+            <div class="lf-field"><label for="r-vesting">Vesting</label><select id="r-vesting" name="vesting"><option>Individual</option><option>LLC / entity</option><option>Undecided</option></select></div>
+            <div class="lf-field full"><label for="r-credevent">Mortgage late or major credit event in the last 24 months?</label><select id="r-credevent" name="credit_event"><option>No</option><option>Yes</option><option>Not sure</option></select></div>
+          </div>
+          <p class="rev-err"></p>
+          <div class="rev-nav"><span></span><button type="button" class="btn-primary rev-next">Continue</button></div>
+        </div>
+
+        <div class="rev-step">
+          <h3>Where do we send the review?</h3>
+          <p class="sub2">A Stonehaven specialist reviews every submission personally.</p>
+          <div class="rev-grid">
+            <div class="lf-field"><label for="r-name">Name</label><input id="r-name" type="text" name="name" autocomplete="name" required/></div>
+            <div class="lf-field"><label for="r-email">Email</label><input id="r-email" type="email" name="email" autocomplete="email" required/></div>
+            <div class="lf-field"><label for="r-phone">Phone</label><input id="r-phone" type="tel" name="phone" autocomplete="tel"/></div>
+            <div class="lf-field"><label for="r-contactpref">Preferred contact</label><select id="r-contactpref" name="contact_preference"><option>Email</option><option>Phone</option><option>Text</option></select></div>
+          </div>
+          <div class="consent-row" style="margin-top:22px;">
+            <input type="checkbox" id="r-consent" name="contact_consent" value="I agree to be contacted by Stonehaven" required/>
+            <label for="r-consent" style="text-transform:none;letter-spacing:0;font-size:12.5px;">I agree that Stonehaven Lending may contact me about this enquiry by email, phone or text at the details provided. Consent is not a condition of any service. See our <a href="privacy.html" style="text-decoration:underline;">Privacy Policy</a>.</label>
+          </div>
+          <p class="rev-err">Please complete name, a valid email, and the consent box.</p>
+          <div class="rev-nav"><span></span><button type="submit" class="btn-primary lead-submit">Review My Deal</button></div>
+          <p class="fine" style="text-align:left;margin-top:18px;">You'll receive a preliminary scenario assessment - not an approval, preapproval, commitment, rate lock or guarantee. All financing is subject to documentation, valuation, underwriting and program eligibility.</p>
+        </div>
+      </form>
+      <div class="lead-success" id="leadSuccess">
+        <div class="ok">Thank you - received.</div>
+        <p>Your scenario is in review. A Stonehaven specialist will respond within one business day.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tight" id="prepay">
+  <div class="wrap">
+    <div class="head reveal" style="text-align:center;max-width:560px;margin:0 auto 40px;"><span class="eyebrow" style="display:block;margin-bottom:20px;">Know Your Exit</span><h2 style="font-family:'Cormorant',serif;font-weight:400;font-size:clamp(28px,3.6vw,42px);line-height:1.12;">Prepayment penalty explainer.</h2><p style="font-size:15px;color:var(--slate-400);font-weight:300;margin-top:16px;">DSCR loans commonly carry prepayment penalties. If your planned exit lands inside the penalty period, that cost belongs in your math today.</p></div>
+    <div class="calc-wrap reveal" style="max-width:760px;">
+      <div class="calc-inputs">
+        <h3>Your exit plan</h3>
+        <div class="calc-grid">
+          <div class="lf-field"><label for="pp-bal">Loan balance ($)</label><input id="pp-bal" type="number" inputmode="numeric" min="0" value="300000"/></div>
+          <div class="lf-field"><label for="pp-structure">Illustrative structure</label><select id="pp-structure"><option value="5-4-3-2-1">5-4-3-2-1 step-down</option><option value="3-2-1">3-2-1 step-down</option><option value="3-3-3">3-3-3 flat</option><option value="none">No penalty</option></select></div>
+          <div class="lf-field"><label for="pp-hold">Planned hold (yrs)</label><input id="pp-hold" type="number" inputmode="numeric" min="0" max="40" value="7"/></div>
+          <div class="lf-field"><label for="pp-exit">Sale / refi in year</label><input id="pp-exit" type="number" inputmode="numeric" min="1" max="40" value="2"/></div>
+        </div>
+      </div>
+      <div class="calc-result" aria-live="polite">
+        <span class="eyebrow">Potential penalty exposure</span>
+        <div class="ratio" style="font-size:38px;line-height:1.25;" id="pp-out">-</div>
+        <p class="calc-note" id="pp-note">Illustrative structures only. Actual terms vary by lender and state.</p>
+      </div>
+    </div>
+    <p class="fine">Educational tool. Prepayment structures vary by lender and state; some states restrict or prohibit certain penalties. Final loan documents control.</p>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <div class="fb"><img src="assets/mark.png" width="26" height="26" alt="" loading="lazy"/><span>Stonehaven Lending</span></div>
+        <p>A direct residential and commercial real estate lender. Commercial, SBA, and DSCR financing in all fifty states.</p>
+        <address class="foot-nap">Stonehaven Lending · <a href="tel:+18005550100">+1 (800) 555-0100</a> · <a href="mailto:office@stonehavencre.com">office@stonehavencre.com</a></address>
+      </div>
+      <div class="foot-nav">
+        <div class="col"><h5>Lending</h5><a href="commercial.html">Commercial</a><a href="sba.html">SBA</a><a href="dscr.html">DSCR</a></div>
+        <div class="col"><h5>Firm</h5><a href="index.html">Overview</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy Policy</a></div>
+        <div class="col"><h5>Contact</h5><a href="mailto:office@stonehavencre.com">office@stonehavencre.com</a><a href="tel:+18005550100">+1 (800) 555-0100</a></div>
+      </div>
+    </div>
+    <div class="foot-bottom"><p>© 2026 Stonehaven Lending. All rights reserved.</p><p>Lending in all fifty states.</p></div>
+    <p class="foot-disc">Stonehaven Lending is a residential and commercial real estate lender. Deal reviews and calculator results are preliminary scenario assessments for educational purposes and do not constitute an approval, commitment to lend, offer to extend credit, rate quote or guarantee. Rates, terms and programs are subject to change. Property and borrower requirements vary. All financing is subject to documentation, valuation, underwriting and program eligibility.</p>
+  </div>
+</footer>
+<div class="sticky-cta"><a class="btn-primary" href="#review">Review My Deal</a></div>
+</body></html>

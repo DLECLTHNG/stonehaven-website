@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Deal Review Received | Stonehaven</title>
+<meta name="robots" content="noindex,follow"/>
+<link rel="canonical" href="https://stonehavencre.com/thanks-dscr-review.html"/>
+<link rel="icon" type="image/png" href="assets/mark.png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+<link rel="stylesheet" href="funnel.css"/>
+<script src="js/funnel.js" defer></script>
+</head>
+<body><header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="brand" aria-label="Stonehaven Lending home">
+      <img src="assets/mark.png" width="30" height="30" alt="Stonehaven Lending"/>
+      <span class="bt"><span class="b1">Stonehaven</span><span class="b2">Lending</span></span>
+    </a>
+    <nav class="links" id="links" aria-label="Primary">
+      <a href="commercial.html" class="line">Commercial</a>
+      <a href="sba.html" class="line">SBA</a>
+      <a href="dscr.html" class="line active">DSCR</a>
+      <a href="contact.html" class="line">Contact</a>
+    </nav>
+    <button class="menu-toggle" id="toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<main>
+<section class="thanks-hero">
+  <div class="narrow">
+    <span class="ok-mark">Received</span>
+    <h1>Your deal is <em>in review.</em></h1>
+    <p>A Stonehaven specialist will assess the scenario and respond within one business day with a preliminary read - the estimated ratio, the structures worth comparing, and the risks to resolve first.</p>
+    <div class="next-step" id="summaryCard" style="display:none;text-align:left;">
+      <span class="eyebrow">What you submitted</span>
+      <div class="calc-sub" style="border:none;padding-top:4px;margin-top:6px;" id="summaryRows"></div>
+      <p class="fine" style="text-align:left;margin:14px 0 0;">Any ratio shown is an educational estimate from your own inputs - not an approval, preapproval or qualification decision.</p>
+    </div>
+    <div class="next-step">
+      <span class="eyebrow">While You Wait</span>
+      <h3>Prefer to talk it through?</h3>
+      <p>Book a 15-minute deal call and walk the scenario with a specialist directly.</p>
+      <a class="btn-primary" href="book.html">Book a deal call</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="foot-bottom"><p>© 2026 Stonehaven Lending. All rights reserved.</p><p>Lending in all fifty states.</p></div>
+    <p class="foot-disc">Stonehaven Lending is a residential and commercial real estate lender. A deal review is a preliminary scenario assessment and does not constitute an approval, commitment to lend, offer to extend credit, rate quote or guarantee. All financing is subject to documentation, valuation, underwriting and program eligibility.</p>
+  </div>
+</footer>
+<script>
+(function(){
+  "use strict";
+  try{
+    var s=JSON.parse(sessionStorage.getItem("sh_dscr_summary")||"null");
+    if(!s) return;
+    var rows=[["Deal type",s.dealType],["State",s.state],["Property",s.propType+(s.units&&+s.units>1?" · "+s.units+" units":"")],["Value / price",s.value?"$"+(+s.value).toLocaleString("en-US"):""],["Monthly rent",s.rent?"$"+(+s.rent).toLocaleString("en-US"):""],["Requested loan",s.loanAmt?"$"+(+s.loanAmt).toLocaleString("en-US"):""],["Timeline",s.close],["Educational DSCR estimate",s.dscr?s.dscr+"x":""]];
+    var host=document.getElementById("summaryRows"), any=false;
+    rows.forEach(function(r){ if(!r[1])return; any=true; var d=document.createElement("div"); d.className="row"; d.innerHTML="<span></span><b></b>"; d.children[0].textContent=r[0]; d.children[1].textContent=r[1]; host.appendChild(d); });
+    if(any) document.getElementById("summaryCard").style.display="block";
+    sessionStorage.removeItem("sh_dscr_summary");
+  }catch(e){}
+})();
+</script>
+</body></html>
