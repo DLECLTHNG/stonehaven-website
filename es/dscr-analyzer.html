@@ -20,7 +20,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="../styles.css"/>
 <link rel="stylesheet" href="../funnel.css"/>
-<script src="../js/funnel.js" defer></script>
+<noscript><style>.reveal{opacity:1 !important;transform:none !important;}</style></noscript>
+<script src="../js/site-config.js?v=2" defer></script>
+<script src="../js/funnel.js?v=2" defer></script>
 </head>
 <body><header class="nav" id="nav">
   <div class="wrap nav-inner">
@@ -41,8 +43,8 @@
 <main>
 <section class="funnel-hero">
   <span class="eyebrow">DSCR · Analizador</span>
-  <h1>¿Su propiedad <em>califica?</em></h1>
-  <p>Calcule los números como lo haría un underwriter - en 60 segundos, sin consulta de crédito en esta etapa, típicamente sin documentación de ingresos. Su ratio aparece al instante.</p>
+  <h1>¿Cómo se <em>dimensiona</em> su operación?</h1>
+  <p>Modele la operación con una convención DSCR común de 1-4 unidades - en 60 segundos, sin consulta de crédito en esta etapa, típicamente sin documentación de ingresos. Su ratio aparece al instante.</p>
 </section>
 <div class="proof-strip"><span><b>Cobertura</b> nacional</span><span><b>Sin</b> declaraciones de impuestos</span><span><b>$100K–$5M+</b> por propiedad</span><span>Calificación <b>por el activo</b></span></div>
 
@@ -83,7 +85,7 @@
       <span class="eyebrow">El Análisis Completo</span>
       <h2>Envíenme el informe completo + la guía DSCR.</h2>
       <p class="sub">El análisis completo de su operación al estilo underwriting, más la guía: cómo funciona el precio DSCR, qué mueve su apalancamiento, y cómo los inversionistas escalan con él.</p>
-      <form class="lead-form" data-sh-form="dscr-analyzer" data-sh-product="DSCR" data-sh-event="lead" data-sh-thanks="thanks-dscr-analyzer.html" data-sh-lang="es" novalidate>
+      <form class="lead-form" data-sh-form="dscr-analyzer" data-sh-product="DSCR" data-sh-event="lead" data-sh-thanks="thanks-dscr-analyzer.html" data-sh-lang="es" novalidate method="POST" action="thanks-dscr-analyzer.html" data-netlify="true" netlify-honeypot="company_website"><input type="hidden" name="form-name" value="lead"/>
         <input type="text" name="company_website" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true"/>
         <div class="lf-field"><label for="g-email">Correo electrónico</label><input id="g-email" type="email" name="email" autocomplete="email" required/></div>
         <div class="lf-field"><label for="g-phone">Teléfono <span style="text-transform:none;letter-spacing:0;color:#AAB8C7;">(opcional)</span></label><input id="g-phone" type="tel" name="phone" autocomplete="tel"/></div>
@@ -101,7 +103,7 @@
   <div class="wrap">
     <div class="head reveal"><span class="eyebrow">Preguntas</span><h2>Antes de calcular</h2></div>
     <div class="faq-list reveal">
-      <details class="faq-item"><summary class="faq-q">¿Qué cuenta como ingreso en un cálculo DSCR?</summary><div class="faq-a"><p>La renta de la propiedad - la renta del contrato o la renta de mercado según el avalúo. El ingreso de renta a largo y corto plazo puede funcionar, según el programa. Su ingreso personal nunca entra al expediente.</p></div></details>
+      <details class="faq-item"><summary class="faq-q">¿Qué cuenta como ingreso en un cálculo DSCR?</summary><div class="faq-a"><p>La renta de la propiedad - la renta del contrato o la renta de mercado según el avalúo. El ingreso de renta a largo y corto plazo puede funcionar, según el programa. El ingreso personal generalmente no se usa para calcular el DSCR calificante, aunque el crédito, la liquidez y los documentos de entidad o garantía pueden revisarse.</p></div></details>
       <details class="faq-item"><summary class="faq-q">¿Qué ratio necesito?</summary><div class="faq-a"><p>La mayoría de los programas buscan aproximadamente 1.0x–1.25x. Arriba de 1.25x es fuerte y típicamente abre mejor estructura; abajo de 1.0x no es el final - un pago inicial mayor u otra estructura muchas veces cruza la línea.</p></div></details>
       <details class="faq-item"><summary class="faq-q">¿Califica el ingreso de Airbnb / renta a corto plazo?</summary><div class="faq-a"><p>Con frecuencia sí - algunos programas usan ingreso STR con historial documentado o datos de mercado. Envíenos la operación y le diremos honestamente qué tratamiento recibe.</p></div></details>
     </div>
@@ -113,17 +115,17 @@
     <div class="foot-top">
       <div class="foot-brand">
         <div class="fb"><img src="../assets/mark.png" width="26" height="26" alt="" loading="lazy"/><span>Stonehaven Lending</span></div>
-        <p>Financiamiento de bienes raíces residenciales y comerciales - Comercial, SBA y DSCR a nivel nacional.</p>
-        <address class="foot-nap">Stonehaven Lending · <a href="tel:+18005550100">+1 (800) 555-0100</a> · <a href="mailto:office@stonehavencre.com">office@stonehavencre.com</a></address>
+        <p>Financiamiento de bienes raíces gestionado a través de proveedores de capital externos - Comercial, SBA y DSCR a nivel nacional.</p>
+        <address class="foot-nap">Stonehaven Lending · <a href="mailto:office@stonehavencre.com">office@stonehavencre.com</a></address>
       </div>
       <div class="foot-nav">
         <div class="col"><h5>Financiamiento</h5><a href="commercial.html">Comercial</a><a href="sba.html">SBA</a><a href="dscr.html">DSCR</a></div>
         <div class="col"><h5>Firma</h5><a href="index.html">Inicio</a><a href="contact.html">Contacto</a><a href="privacy.html">Privacidad</a></div>
-        <div class="col"><h5>Contacto</h5><a href="mailto:office@stonehavencre.com">office@stonehavencre.com</a><a href="tel:+18005550100">+1 (800) 555-0100</a></div>
+        <div class="col"><h5>Contacto</h5><a href="mailto:office@stonehavencre.com">office@stonehavencre.com</a></div>
       </div>
     </div>
     <div class="foot-bottom"><p>© 2026 Stonehaven Lending. Todos los derechos reservados.</p><p>Programas disponibles a nivel nacional.</p></div>
-    <p class="foot-disc">Stonehaven Lending ofrece financiamiento de bienes raíces residenciales y comerciales. Los resultados de la calculadora son ilustrativos y no constituyen un compromiso de préstamo, una oferta de crédito ni una garantía de tasa o plazo. Todo financiamiento está sujeto a aprobación de underwriting. La disponibilidad de programas varía según el estado. Igualdad de Oportunidades de Vivienda.</p>
+    <p class="foot-disc">Stonehaven Lending es una firma de corretaje y asesoría de capital inmobiliario, no un prestamista directo; el financiamiento se gestiona a través de proveedores de capital externos y queda sujeto a underwriting del prestamista, documentación, disponibilidad de programa y licencias aplicables. Los resultados de la calculadora son ilustrativos y no constituyen un compromiso de préstamo, una oferta de crédito ni una garantía de tasa o plazo. Todo financiamiento está sujeto a aprobación de underwriting. La disponibilidad de programas varía según el estado. Igualdad de Oportunidades de Vivienda.</p>
   </div>
 </footer>
 <script>

@@ -17,7 +17,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="styles.css"/>
 <link rel="stylesheet" href="funnel.css"/>
-<script src="js/funnel.js" defer></script>
+<noscript><style>.reveal{opacity:1 !important;transform:none !important;}</style></noscript>
+<script src="js/site-config.js?v=2" defer></script>
+<script src="js/funnel.js?v=2" defer></script>
 </head>
 <body><header class="nav" id="nav">
   <div class="wrap nav-inner">
@@ -59,7 +61,7 @@
       <div class="dl-form-card">
         <h3>Get the terms sheet</h3>
         <p class="sub2">This quarter's edition now, each update as it's released. Unsubscribe anytime.</p>
-        <form class="dl-form" data-sh-form="terms-sheet" data-sh-product="Commercial" data-sh-event="sheet_download" data-sh-thanks="thanks-terms-sheet.html" novalidate>
+        <form class="dl-form" data-sh-form="terms-sheet" data-sh-product="Commercial" data-sh-event="sheet_download" data-sh-thanks="thanks-terms-sheet.html" novalidate method="POST" action="thanks-terms-sheet.html" data-netlify="true" netlify-honeypot="company_website"><input type="hidden" name="form-name" value="lead"/>
           <input type="text" name="company_website" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true"/>
           <div class="lf-field"><label for="t-name">Name</label><input id="t-name" type="text" name="name" autocomplete="name" required/></div>
           <div class="lf-field"><label for="t-email">Email</label><input id="t-email" type="email" name="email" autocomplete="email" required/></div>
@@ -99,7 +101,7 @@
       <span class="eyebrow">Have a Live Deal?</span>
       <h2>Term sheet in 48 hours.</h2>
       <p class="sub">Send the basics and get honest feedback from a lender - real structure, real numbers, no obligation. If it's not our deal, we'll tell you that too.</p>
-      <form class="lead-form" data-sh-form="deal-review" data-sh-product="Commercial" data-sh-event="deal_review_request" data-sh-thanks="thanks-quote.html" novalidate>
+      <form class="lead-form" data-sh-form="deal-review" data-sh-product="Commercial" data-sh-event="deal_review_request" data-sh-thanks="thanks-quote.html" novalidate method="POST" action="thanks-quote.html" data-netlify="true" netlify-honeypot="company_website"><input type="hidden" name="form-name" value="lead"/>
         <input type="text" name="company_website" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true"/>
         <div class="lf-field"><label for="r-name">Name</label><input id="r-name" type="text" name="name" autocomplete="name" required/></div>
         <div class="lf-field"><label for="r-email">Email</label><input id="r-email" type="email" name="email" autocomplete="email" required/></div>
@@ -145,17 +147,17 @@
     <div class="foot-top">
       <div class="foot-brand">
         <div class="fb"><img src="assets/mark.png" width="26" height="26" alt="" loading="lazy"/><span>Stonehaven Lending</span></div>
-        <p>Residential and commercial real estate financing - commercial, SBA, and DSCR programs nationwide.</p>
-        <address class="foot-nap">Stonehaven Lending · <a href="tel:+18005550100">+1 (800) 555-0100</a> · <a href="mailto:office@stonehavencre.com">office@stonehavencre.com</a></address>
+        <p>Residential and commercial real estate financing, arranged through third-party capital providers - commercial, SBA, and DSCR programs nationwide.</p>
+        <address class="foot-nap">Stonehaven Lending · <a href="mailto:office@stonehavencre.com">office@stonehavencre.com</a></address>
       </div>
       <div class="foot-nav">
         <div class="col"><h5>Lending</h5><a href="commercial.html">Commercial</a><a href="sba.html">SBA</a><a href="dscr.html">DSCR</a></div>
         <div class="col"><h5>Firm</h5><a href="index.html">Overview</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy Policy</a></div>
-        <div class="col"><h5>Contact</h5><a href="mailto:office@stonehavencre.com">office@stonehavencre.com</a><a href="tel:+18005550100">+1 (800) 555-0100</a></div>
+        <div class="col"><h5>Contact</h5><a href="mailto:office@stonehavencre.com">office@stonehavencre.com</a></div>
       </div>
     </div>
     <div class="foot-bottom"><p>© 2026 Stonehaven Lending. All rights reserved.</p><p>Programs available nationwide.</p></div>
-    <p class="foot-disc">Stonehaven Lending provides residential and commercial real estate financing. Terms-sheet figures are indicative market references only and do not constitute a commitment to lend, an offer to extend credit, or a guarantee of any particular rate or term. All financing is subject to underwriting approval. Program availability varies by state. Equal Housing Opportunity.</p>
+    <p class="foot-disc">Stonehaven Lending is a real estate capital advisory and brokerage firm, not a direct lender; financing is arranged through third-party capital providers and remains subject to lender underwriting, documentation, program availability, and applicable licensing. Terms-sheet figures are indicative market references only and do not constitute a commitment to lend, an offer to extend credit, or a guarantee of any particular rate or term. All financing is subject to underwriting approval. Program availability varies by state. Equal Housing Opportunity.</p>
   </div>
 </footer>
 </body></html>

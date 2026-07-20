@@ -14,9 +14,14 @@
 (function () {
   "use strict";
 
-  var INTAKE_ENDPOINT = ""; // <-- set at go-live
-  var GA4_ID = "";          // <-- e.g. "G-XXXXXXXXXX"  (Google Analytics 4)
-  var META_PIXEL_ID = "";   // <-- e.g. "1234567890"    (Meta/Facebook Pixel)
+  /* All IDs/endpoints live in js/site-config.js (window.SH_CONFIG) —
+     the fallbacks here only cover a page that forgot the config tag. */
+  var CFG = window.SH_CONFIG || {};
+  var INTAKE_ENDPOINT = CFG.intakeEndpoint || "";
+  var GA4_ID = CFG.ga4Id || "";
+  var META_PIXEL_ID = CFG.metaPixelId || "";
+  var CONTACT_EMAIL = CFG.email || "office@stonehavencre.com";
+  var SUBMIT_TIMEOUT = CFG.submitTimeoutMs || 15000;
 
   /* ---------- 0 · analytics tag loaders (inert until IDs above are set) ---------- */
   if (GA4_ID) {
@@ -152,6 +157,7 @@
       };
 
       var evt = form.getAttribute("data-sh-event") || "lead";
+      track("form_submit_attempted", { page: payload.page });
       var btn = form.querySelector('[type="submit"]');
       if (btn) { btn.disabled = true; btn.style.opacity = ".6"; }
 
@@ -165,19 +171,45 @@
         }
       }
 
+      // Truthful failure handling: success UI renders ONLY after an
+      // accepted response. On failure (primary + one fallback), the
+      // visitor sees an accessible error with a retry and a verified
+      // alternate channel — values are preserved, button re-enabled.
+      function showError() {
+        if (btn) { btn.disabled = false; btn.style.opacity = ""; }
+        var es = (form.getAttribute("data-sh-lang") || document.documentElement.lang || "en").indexOf("es") === 0;
+        var box = form.querySelector(".lead-error");
+        if (!box) {
+          box = document.createElement("p");
+          box.className = "lead-error";
+          box.setAttribute("role", "alert");
+          box.style.cssText = "color:#B0413A;font-size:13px;margin-top:14px;line-height:1.5;";
+          form.appendChild(box);
+        }
+        box.textContent = es
+          ? "No pudimos enviar su consulta. Por favor intente de nuevo, o escríbanos a " + CONTACT_EMAIL + "."
+          : "We couldn't send your enquiry. Please try again, or email us at " + CONTACT_EMAIL + ".";
+        track("form_submit_failed", { page: payload.page });
+      }
+      function timedFetch(url, opts) {
+        if (typeof AbortController === "undefined") return fetch(url, opts);
+        var ctl = new AbortController();
+        var t = setTimeout(function () { ctl.abort(); }, SUBMIT_TIMEOUT);
+        opts.signal = ctl.signal;
+        return fetch(url, opts).finally(function () { clearTimeout(t); });
+      }
+
       if (!INTAKE_ENDPOINT) {
-        // Netlify Forms fallback — every submission lands in the site's
-        // "lead" form (Netlify dashboard → Forms) until the CRM goes live.
-        // POST to the current page's path, never the bare "/": Netlify's
-        // edge 404s POSTs to the naked root (found in pre-launch testing)
-        // while any real page path routes to the forms handler.
+        // Netlify Forms capture — every submission lands in the site's
+        // "lead" form until the CRM goes live. POST to the current
+        // page's path, never the bare "/" (edge 404s naked-root POSTs).
         var nf = new URLSearchParams();
         nf.append("form-name", "lead");
         ["name", "email", "phone", "product", "about", "page", "lang"].forEach(function (k) {
           nf.append(k, payload[k] || "");
         });
         var post = function (target) {
-          return fetch(target, {
+          return timedFetch(target, {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: nf.toString()
@@ -187,18 +219,25 @@
         if (target.slice(-1) === "/") target += "index.html";
         else if (!/\.html?$/.test(target)) target += ".html"; // pretty URL → real file path
         post(target).then(function (r) {
-          if (r && r.ok) { done(); return; }
-          post("/index.html").then(done, done); // one retry on a known-good path
+          if (r && r.ok) { track("form_submit_succeeded", { page: payload.page }); done(); return; }
+          return post("/index.html").then(function (r2) {
+            if (r2 && r2.ok) { track("form_submit_succeeded", { page: payload.page }); done(); } else showError();
+          }, showError);
         }).catch(function () {
-          post("/index.html").then(done, done); // never strand the visitor on a blip
+          post("/index.html").then(function (r2) {
+            if (r2 && r2.ok) { track("form_submit_succeeded", { page: payload.page }); done(); } else showError();
+          }, showError);
         });
         return;
       }
-      fetch(INTAKE_ENDPOINT, {
+      timedFetch(INTAKE_ENDPOINT, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload)
-      }).then(done).catch(done); // never strand a real lead on a network blip — thank-you either way
+      }).then(function (r) {
+        if (r && r.ok) { track("form_submit_succeeded", { page: payload.page }); done(); }
+        else showError();
+      }).catch(showError);
     });
     Array.prototype.forEach.call(form.querySelectorAll("input,select,textarea"), function (i) {
       i.addEventListener("input", function () { i.style.borderBottomColor = ""; });
@@ -215,7 +254,16 @@
       onScroll(); window.addEventListener("scroll", onScroll, { passive: true });
     }
     var toggle = document.getElementById("toggle"), links = document.getElementById("links");
-    if (toggle && links) toggle.addEventListener("click", function () { links.classList.toggle("open"); });
+    if (toggle && links) {
+      var esNav = (document.documentElement.lang || "en").indexOf("es") === 0;
+      toggle.setAttribute("aria-expanded", "false");
+      toggle.setAttribute("aria-controls", "links");
+      toggle.addEventListener("click", function () {
+        var open = links.classList.toggle("open");
+        toggle.setAttribute("aria-expanded", open ? "true" : "false");
+        toggle.setAttribute("aria-label", open ? (esNav ? "Cerrar men\u00fa" : "Close menu") : (esNav ? "Abrir men\u00fa" : "Open menu"));
+      });
+    }
     var io = new IntersectionObserver(function (es) {
       es.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); } });
     }, { threshold: .16, rootMargin: "0px 0px -50px 0px" });
