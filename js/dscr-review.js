@@ -13,6 +13,28 @@
 (function () {
   "use strict";
   var $ = function (id) { return document.getElementById(id); };
+  var ES = (document.documentElement.lang || "en").toLowerCase().indexOf("es") === 0;
+  var T = ES ? {
+    strong: "El ratio suele abrir m\u00e1s opciones",
+    workable: "El ratio puede encajar en algunos programas - la estructura importa",
+    short: "Debajo de 1.0x con estos t\u00e9rminos - requiere revisi\u00f3n de estructura",
+    io: " (solo inter\u00e9s)",
+    ppAfter: "$0 - la salida cae despu\u00e9s del periodo de penalidad",
+    ppYear: function (pct, yr) { return "  (" + pct + "% del saldo en el a\u00f1o " + yr + ")"; },
+    ppEnter: "Ingrese un saldo y un a\u00f1o de salida estimado.",
+    ppInside: function (h) { return "Su periodo de tenencia de " + h + " a\u00f1o(s) cae dentro de este periodo ilustrativo de penalidad - vale la pena evaluarlo contra la estructura antes de comprometerse."; },
+    ppVaries: "Estructuras ilustrativas. Los t\u00e9rminos reales var\u00edan por prestamista y estado - algunos estados restringen ciertas penalidades. Los documentos finales del pr\u00e9stamo prevalecen."
+  } : {
+    strong: "Ratio typically opens broader options",
+    workable: "Ratio may fit some programs - structure matters",
+    short: "Below 1.0x at these terms - structure review needed",
+    io: " (interest-only)",
+    ppAfter: "$0 - exit falls after the penalty period",
+    ppYear: function (pct, yr) { return "  (" + pct + "% of balance in year " + yr + ")"; },
+    ppEnter: "Enter a balance and an expected exit year.",
+    ppInside: function (h) { return "Your planned hold of " + h + " year(s) sits inside this illustrative penalty period - worth weighing against the structure before you commit."; },
+    ppVaries: "Illustrative structures only. Actual prepayment terms vary by lender and state - some states restrict certain penalties. Final loan documents control."
+  };
   var track = function (ev, params) { try { if (window.shTrack) window.shTrack(ev, params || {}); } catch (e) {} };
   var money = function (n) { return "$" + Math.round(n).toLocaleString("en-US"); };
 
@@ -70,14 +92,14 @@
 
     if (out.ratio) out.ratio.innerHTML = lenderDscr.toFixed(2) + "<small>x</small>";
     if (out.ltv) out.ltv.textContent = ltv.toFixed(1) + "% · " + money(loan);
-    if (out.pi) out.pi.textContent = money(pi) + "/mo" + (io ? " (interest-only)" : "");
+    if (out.pi) out.pi.textContent = money(pi) + "/mo" + (io ? T.io : "");
     if (out.pitia) out.pitia.textContent = money(pitia) + "/mo";
     if (out.ldscr) out.ldscr.textContent = lenderDscr.toFixed(2) + "x";
     if (out.lVerdict) {
       out.lVerdict.className = "verdict";
-      if (lenderDscr >= 1.25) { out.lVerdict.classList.add("strong"); out.lVerdict.textContent = "Ratio typically opens broader options"; }
-      else if (lenderDscr >= 1.0) { out.lVerdict.classList.add("workable"); out.lVerdict.textContent = "Ratio may fit some programs - structure matters"; }
-      else { out.lVerdict.classList.add("short"); out.lVerdict.textContent = "Below 1.0x at these terms - structure review needed"; }
+      if (lenderDscr >= 1.25) { out.lVerdict.classList.add("strong"); out.lVerdict.textContent = T.strong; }
+      else if (lenderDscr >= 1.0) { out.lVerdict.classList.add("workable"); out.lVerdict.textContent = T.workable; }
+      else { out.lVerdict.classList.add("short"); out.lVerdict.textContent = T.short; }
     }
     if (out.egi) out.egi.textContent = money(egiMo) + "/mo";
     if (out.opex) out.opex.textContent = money(opexMo) + "/mo";
@@ -97,7 +119,7 @@
     var sel = $("pp-structure");
     var out = $("pp-out"), note = $("pp-note");
     if (!out || !sel) return;
-    if (!(bal > 0) || !(exitYr > 0)) { out.textContent = "-"; if (note) note.textContent = "Enter a balance and an expected exit year."; return; }
+    if (!(bal > 0) || !(exitYr > 0)) { out.textContent = "-"; if (note) note.textContent = T.ppEnter; return; }
     var structures = {
       "5-4-3-2-1": [5, 4, 3, 2, 1],
       "3-2-1": [3, 2, 1],
@@ -107,10 +129,8 @@
     var steps = structures[sel.value] || [];
     var pct = exitYr <= steps.length ? steps[exitYr - 1] : 0;
     var penalty = bal * pct / 100;
-    out.textContent = pct > 0 ? money(penalty) + "  (" + pct + "% of balance in year " + exitYr + ")" : "$0 - exit falls after the penalty period";
-    if (note) note.textContent = hold && hold < steps.length && sel.value !== "none"
-      ? "Your planned hold of " + hold + " year(s) sits inside this illustrative penalty period - worth weighing against the structure before you commit."
-      : "Illustrative structures only. Actual prepayment terms vary by lender and state - some states restrict certain penalties. Final loan documents control.";
+    out.textContent = pct > 0 ? money(penalty) + T.ppYear(pct, exitYr) : T.ppAfter;
+    if (note) note.textContent = hold && hold < steps.length && sel.value !== "none" ? T.ppInside(hold) : T.ppVaries;
   }
 
   /* ---------- six-step progressive form ---------- */
