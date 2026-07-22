@@ -7,7 +7,7 @@
 /* ---------- shared ---------- */
 .funnel-hero{padding:170px 0 70px;text-align:center;border-bottom:1px solid var(--line);}
 .funnel-hero .eyebrow{display:block;margin-bottom:24px;}
-.funnel-hero h1{font-family:'Cormorant',serif;font-weight:400;font-size:clamp(36px,5vw,60px);line-height:1.06;letter-spacing:-.005em;}
+.funnel-hero h1{font-family:'Cormorant',serif;font-weight:400;font-size:clamp(32px,4.4vw,52px);line-height:1.06;letter-spacing:-.005em;}
 .funnel-hero h1 em{font-style:italic;color:var(--slate-600);}
 .funnel-hero p{font-size:17px;color:var(--slate-400);max-width:520px;margin:26px auto 0;font-weight:300;}
 .badge{display:inline-block;font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--brass);border:1px solid var(--brass);border-radius:20px;padding:5px 14px;margin-bottom:20px;font-weight:500;}
