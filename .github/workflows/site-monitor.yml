@@ -36,12 +36,19 @@ jobs:
           BASE="https://stonehavencre.com"
           fails=()
 
-          for p in "/" "/contact.html" "/book.html" "/commercial.html" "/sba.html" "/dscr.html" \
-                   "/dscr-analyzer.html" "/sba-guide.html" "/terms-sheet.html" "/privacy.html" \
-                   "/es/" "/es/contact.html" "/sitemap.xml" "/robots.txt" "/styles.css" \
+          for p in "/" "/contact" "/book" "/commercial" "/sba" "/dscr" "/dscr-review" \
+                   "/dscr-analyzer" "/sba-guide" "/terms-sheet" "/privacy" \
+                   "/es/" "/es/contact" "/es/dscr" "/sitemap.xml" "/robots.txt" "/styles.css" \
                    "/funnel.css" "/js/funnel.js" "/assets/mark.png" "/downloads/dscr-playbook.pdf"; do
             code=$(curl -s -o /dev/null -w "%{http_code}" --max-time 20 "$BASE$p" || echo "000")
             [ "$code" = "200" ] || fails+=("GET $p -> $code")
+          done
+
+          for p in "/dscr.html" "/commercial.html" "/index.html" "/es/dscr.html"; do
+            code=$(curl -s -o /dev/null -w "%{http_code}" --max-time 20 "$BASE$p" || echo "000")
+            loc=$(curl -s -o /dev/null -w "%{redirect_url}" --max-time 20 "$BASE$p" || echo "")
+            case "$code" in 301|308) : ;; *) fails+=("$p not redirecting (got $code)") ;; esac
+            case "$loc" in *".html"*) fails+=("$p redirects to .html: $loc") ;; esac
           done
 
           if ! curl -s --max-time 20 "$BASE/js/funnel.js" | grep -q 'form-name'; then
@@ -52,7 +59,7 @@ jobs:
             fails+=("homepage is missing the hidden 'lead' form registration")
           fi
 
-          code=$(curl -s -o /dev/null -w "%{http_code}" --max-time 20 -X POST "$BASE/index.html" \
+          code=$(curl -s -o /dev/null -w "%{http_code}" --max-time 20 -X POST "$BASE/contact" \
             -H "Content-Type: application/x-www-form-urlencoded" \
             --data-urlencode "form-name=lead" \
             --data-urlencode "name=MONITOR CANARY (auto, discarded as spam)" \

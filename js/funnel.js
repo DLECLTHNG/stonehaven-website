@@ -215,16 +215,18 @@
             body: nf.toString()
           });
         };
-        var target = window.location.pathname;
-        if (target.slice(-1) === "/") target += "index.html";
-        else if (!/\.html?$/.test(target)) target += ".html"; // pretty URL → real file path
+        // Clean-URL era: .html paths force-301 (method-breaking for POST),
+        // so submit to the page's own clean path; directory paths map to
+        // the contact page, a known-registered POST target.
+        var target = window.location.pathname.replace(/\.html?$/, "");
+        if (target.slice(-1) === "/") target = (target.indexOf("/es/") === 0 ? "/es" : "") + "/contact";
         post(target).then(function (r) {
           if (r && r.ok) { track("form_submit_succeeded", { page: payload.page }); done(); return; }
-          return post("/index.html").then(function (r2) {
+          return post("/contact").then(function (r2) {
             if (r2 && r2.ok) { track("form_submit_succeeded", { page: payload.page }); done(); } else showError();
           }, showError);
         }).catch(function () {
-          post("/index.html").then(function (r2) {
+          post("/contact").then(function (r2) {
             if (r2 && r2.ok) { track("form_submit_succeeded", { page: payload.page }); done(); } else showError();
           }, showError);
         });

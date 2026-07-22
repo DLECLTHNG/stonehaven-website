@@ -3,17 +3,17 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>DSCR Deal Analyzer - How Does Your Deal Size Up? | Stonehaven</title>
-<meta name="description" content="Run your rental deal's numbers the way an underwriter would - in 60 seconds, no credit pull at this stage. Instant DSCR ratio plus the full breakdown and DSCR Playbook by email."/>
-<link rel="canonical" href="https://stonehavencre.com/dscr-analyzer.html"/>
-<link rel="alternate" hreflang="en" href="https://stonehavencre.com/dscr-analyzer.html"/>
-<link rel="alternate" hreflang="es" href="https://stonehavencre.com/es/dscr-analyzer.html"/>
-<link rel="alternate" hreflang="x-default" href="https://stonehavencre.com/dscr-analyzer.html"/>
+<title>DSCR Loan Calculator for Rental Property | Stonehaven</title>
+<meta name="description" content="Calculate a rental property's DSCR using rent and PITIA, test rate and leverage scenarios, and request a preliminary Stonehaven deal review."/>
+<link rel="canonical" href="https://stonehavencre.com/dscr-analyzer"/>
+<link rel="alternate" hreflang="en" href="https://stonehavencre.com/dscr-analyzer"/>
+<link rel="alternate" hreflang="es" href="https://stonehavencre.com/es/dscr-analyzer"/>
+<link rel="alternate" hreflang="x-default" href="https://stonehavencre.com/dscr-analyzer"/>
 <meta property="og:type" content="website"/>
 <meta property="og:site_name" content="Stonehaven Lending"/>
-<meta property="og:title" content="DSCR Deal Analyzer - How Does Your Deal Size Up?"/>
-<meta property="og:description" content="Run your rental deal's numbers the way an underwriter would - instant DSCR ratio, no credit pull at this stage."/>
-<meta property="og:url" content="https://stonehavencre.com/dscr-analyzer.html"/>
+<meta property="og:title" content="DSCR Loan Calculator for Rental Property"/>
+<meta property="og:description" content="Model lender-style coverage and real investor cash flow - immediate, ungated results."/>
+<meta property="og:url" content="https://stonehavencre.com/dscr-analyzer"/>
 <meta property="og:image" content="https://stonehavencre.com/assets/og-logo.png"/>
 <link rel="icon" type="image/png" href="assets/mark.png"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -23,19 +23,21 @@
 <noscript><style>.reveal{opacity:1 !important;transform:none !important;}</style></noscript>
 <script src="js/site-config.js?v=2" defer></script>
 <script src="js/funnel.js?v=2" defer></script>
+<script src="js/dscr-calc.js?v=2"></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://stonehavencre.com/"}, {"@type": "ListItem", "position": 2, "name": "DSCR", "item": "https://stonehavencre.com/dscr"}, {"@type": "ListItem", "position": 3, "name": "DSCR Loan Calculator", "item": "https://stonehavencre.com/dscr-analyzer"}]}</script>
 </head>
 <body><header class="nav" id="nav">
   <div class="wrap nav-inner">
-    <a href="index.html" class="brand" aria-label="Stonehaven Lending home">
+    <a href="/" class="brand" aria-label="Stonehaven Lending home">
       <img src="assets/mark.png" width="30" height="30" alt="Stonehaven Lending"/>
       <span class="bt"><span class="b1">Stonehaven</span><span class="b2">Lending</span></span>
     </a>
     <nav class="links" id="links" aria-label="Primary">
-      <a href="commercial.html" class="line">Commercial</a>
-      <a href="sba.html" class="line">SBA</a>
-      <a href="dscr.html" class="line active">DSCR</a>
-      <a href="contact.html" class="line">Contact</a>
-      <div class="lang-toggle" role="group" aria-label="Language"><a class="lang-opt active" href="#" aria-current="true">EN</a><span class="lang-sep">/</span><a class="lang-opt" href="es/dscr-analyzer.html" hreflang="es">ES</a></div>
+      <a href="/commercial" class="line">Commercial</a>
+      <a href="/sba" class="line">SBA</a>
+      <a href="/dscr" class="line active">DSCR</a>
+      <a href="/contact" class="line">Contact</a>
+      <div class="lang-toggle" role="group" aria-label="Language"><a class="lang-opt active" href="#" aria-current="true">EN</a><span class="lang-sep">/</span><a class="lang-opt" href="/es/dscr-analyzer" hreflang="es">ES</a></div>
     </nav>
     <button class="menu-toggle" id="toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
   </div>
@@ -43,10 +45,10 @@
 <main>
 <section class="funnel-hero">
   <span class="eyebrow">DSCR · Deal Analyzer</span>
-  <h1>How does your deal <em>size up?</em></h1>
-  <p>Model the deal with a common 1-4 unit DSCR convention - in 60 seconds, no credit pull at this stage. Your estimated ratio shows instantly.</p>
+  <h1>DSCR Loan <em>Calculator.</em></h1>
+  <p>Model lender-style coverage and real investor cash flow side by side - in 60 seconds, no credit pull at this stage. Your estimated ratio shows instantly.</p>
 </section>
-<div class="proof-strip"><span><b>Nationwide</b> programs</span><span><b>No</b> tax returns</span><span><b>$100K–$5M+</b> per property</span><span><b>Asset-based</b> underwriting</span></div>
+<div class="proof-strip"><span><b>Availability</b> varies by state</span><span><b>Rent ÷ PITIA</b> convention</span><span><b>No credit pull</b> at this stage</span><span><b>Property-first</b> preliminary review</span></div>
 
 <section class="tight">
   <div class="wrap">
@@ -61,6 +63,7 @@
           <div class="lf-field"><label for="c-tax">Annual taxes ($)</label><input id="c-tax" type="number" inputmode="numeric" min="0" value="4800"/></div>
           <div class="lf-field"><label for="c-ins">Annual insurance ($)</label><input id="c-ins" type="number" inputmode="numeric" min="0" value="1800"/></div>
           <div class="lf-field full"><label for="c-hoa">HOA / other, monthly ($) <span style="text-transform:none;letter-spacing:0;color:#AAB8C7;">(optional)</span></label><input id="c-hoa" type="number" inputmode="numeric" min="0" value="0"/></div>
+          <div class="lf-field full"><label for="c-target">Target DSCR (for sizing)</label><input id="c-target" type="number" inputmode="decimal" step="0.05" min="0.5" max="2" value="1.20"/></div>
         </div>
       </div>
       <div class="calc-result" aria-live="polite">
@@ -71,11 +74,14 @@
           <div class="row"><span>Principal &amp; interest</span><b id="r-pmt">-</b></div>
           <div class="row"><span>Taxes · insurance · HOA /mo</span><b id="r-ti">-</b></div>
           <div class="row"><span>Full monthly payment (PITIA)</span><b id="r-pitia">-</b></div>
+          <div class="row"><span>Rent needed @ target</span><b id="r-rentneed">-</b></div>
+          <div class="row"><span>Max P&amp;I @ target</span><b id="r-maxpi">-</b></div>
+          <div class="row"><span>Illustrative max loan @ target</span><b id="r-maxloan">-</b></div>
         </div>
         <p class="calc-note" id="r-note">Enter your figures - the ratio updates as you type.</p>
       </div>
     </div>
-    <p class="fine">Calculated the way most DSCR programs do for 1–4 unit rentals: monthly rent ÷ full monthly payment (principal, interest, taxes, insurance, HOA). Illustrative only, 30-year amortization - programs also weigh leverage, credit and reserves; we confirm the real number before you apply. Estimates only - not an approval, commitment, rate quote or guarantee. Want the full lender-and-investor analysis? <a href="dscr-review.html" style="color:inherit;text-decoration:underline;">Run the complete Deal Review</a>.</p>
+    <p class="fine">Calculated the way most DSCR programs do for 1–4 unit rentals: monthly rent ÷ full monthly payment (principal, interest, taxes, insurance, HOA). Illustrative only, 30-year amortization - programs also weigh leverage, credit and reserves; we confirm the real number before you apply. Sizing outputs show what the entered rent could support at your chosen target ratio - illustrative only. Estimates are educational, not an approval, commitment, rate quote or guarantee. See <a href="/calculation-methodology" style="color:inherit;text-decoration:underline;">how these figures are calculated</a>. Want the full lender-and-investor analysis? <a href="/dscr-review" style="color:inherit;text-decoration:underline;">Run the complete Deal Review</a>.</p>
   </div>
 </section>
 
@@ -85,7 +91,7 @@
       <span class="eyebrow">The Full Breakdown</span>
       <h2>Email me the full report + the DSCR Playbook.</h2>
       <p class="sub">Your deal's complete underwriter-style breakdown, plus the playbook: how DSCR pricing works, what moves your leverage, and how investors scale with it.</p>
-      <form class="lead-form" data-sh-form="dscr-analyzer" data-sh-product="DSCR" data-sh-event="lead" data-sh-thanks="thanks-dscr-analyzer.html" novalidate method="POST" action="thanks-dscr-analyzer.html" data-netlify="true" netlify-honeypot="company_website"><input type="hidden" name="form-name" value="lead"/>
+      <form class="lead-form" data-sh-form="dscr-analyzer" data-sh-product="DSCR" data-sh-event="lead" data-sh-thanks="/thanks-dscr-analyzer" novalidate method="POST" action="/thanks-dscr-analyzer" data-netlify="true" netlify-honeypot="company_website"><input type="hidden" name="form-name" value="lead"/>
         <input type="text" name="company_website" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true"/>
         <div class="lf-field"><label for="g-email">Email</label><input id="g-email" type="email" name="email" autocomplete="email" required/></div>
         <div class="lf-field"><label for="g-phone">Phone <span style="text-transform:none;letter-spacing:0;color:#AAB8C7;">(optional)</span></label><input id="g-phone" type="tel" name="phone" autocomplete="tel"/></div>
@@ -119,8 +125,8 @@
         <address class="foot-nap">Stonehaven Lending · <a href="mailto:office@stonehavencre.com">office@stonehavencre.com</a></address>
       </div>
       <div class="foot-nav">
-        <div class="col"><h5>Lending</h5><a href="commercial.html">Commercial</a><a href="sba.html">SBA</a><a href="dscr.html">DSCR</a></div>
-        <div class="col"><h5>Firm</h5><a href="index.html">Overview</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy Policy</a></div>
+        <div class="col"><h5>Lending</h5><a href="/commercial">Commercial</a><a href="/sba">SBA</a><a href="/dscr">DSCR</a></div>
+        <div class="col"><h5>Firm</h5><a href="/">Overview</a><a href="/contact">Contact</a><a href="/privacy">Privacy Policy</a></div>
         <div class="col"><h5>Contact</h5><a href="mailto:office@stonehavencre.com">office@stonehavencre.com</a></div>
       </div>
     </div>
@@ -132,7 +138,7 @@
 (function(){
   "use strict";
   var $=function(id){return document.getElementById(id);};
-  var inputs=["c-price","c-down","c-rate","c-rent","c-tax","c-ins","c-hoa"].map($);
+  var inputs=["c-price","c-down","c-rate","c-rent","c-tax","c-ins","c-hoa","c-target"].map($);
   var fired=false;
   function money(n){return "$"+Math.round(n).toLocaleString("en-US");}
   function calc(){
@@ -147,6 +153,12 @@
     var pitia=pmt+ti;
     var dscr=rent/pitia; // industry convention for 1–4 unit DSCR: rent ÷ PITIA
     out.p.textContent=money(pmt)+"/mo"; out.t.textContent=money(ti)+"/mo"; out.pit.textContent=money(pitia)+"/mo";
+    var C=window.SH_CALC, tgt=+($("c-target")&&$("c-target").value)||1.2;
+    if(C){
+      var rn=C.rentNeeded(pitia,tgt), mp=C.maxPrincipalAndInterest(rent,tgt,ti), ml=C.maxLoanFromPI(mp,rate*100,30,false);
+      var set=function(id,v,suf){var el=$(id);if(el)el.textContent=isNaN(v)?"-":money(v)+(suf||"");};
+      set("r-rentneed",rn,"/mo"); set("r-maxpi",mp,"/mo"); set("r-maxloan",ml,"");
+    }
     out.r.innerHTML=(Math.round(dscr*100)/100).toFixed(2)+"<small>x</small>";
     out.v.className="verdict";
     if(dscr>=1.25){out.v.classList.add("strong");out.v.textContent="Strong - ratio typically opens broader options";out.note.textContent="Ratios at 1.25x and above typically open the best structure and leverage.";}

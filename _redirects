@@ -1,0 +1,32 @@
+# .html -> clean canonical URLs (one hop). 301! forces the redirect even
+# though the .html file exists in the deploy. Keep indefinitely.
+/book.html /book 301!
+/commercial.html /commercial 301!
+/contact.html /contact 301!
+/dscr-analyzer.html /dscr-analyzer 301!
+/dscr-review.html /dscr-review 301!
+/dscr.html /dscr 301!
+/es/commercial.html /es/commercial 301!
+/es/contact.html /es/contact 301!
+/es/dscr-analyzer.html /es/dscr-analyzer 301!
+/es/dscr-review.html /es/dscr-review 301!
+/es/dscr.html /es/dscr 301!
+/es/index.html /es/ 301!
+/es/privacy.html /es/privacy 301!
+/es/sba-guide.html /es/sba-guide 301!
+/es/sba.html /es/sba 301!
+/es/thanks-dscr-analyzer.html /es/thanks-dscr-analyzer 301!
+/es/thanks-dscr-review.html /es/thanks-dscr-review 301!
+/es/thanks-sba-guide.html /es/thanks-sba-guide 301!
+/index.html / 301!
+/privacy.html /privacy 301!
+/sba-guide.html /sba-guide 301!
+/sba.html /sba 301!
+/terms-sheet.html /terms-sheet 301!
+/thanks-book.html /thanks-book 301!
+/thanks-dscr-analyzer.html /thanks-dscr-analyzer 301!
+/thanks-dscr-review.html /thanks-dscr-review 301!
+/thanks-quote.html /thanks-quote 301!
+/thanks-sba-guide.html /thanks-sba-guide 301!
+/thanks-terms-sheet.html /thanks-terms-sheet 301!
+/calculation-methodology.html /calculation-methodology 301!

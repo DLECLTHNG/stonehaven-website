@@ -3,4 +3,4 @@
 # stonehavencre.com.
 [build]
   publish = "."
-  command = "rm -f README.md SEO-CHANGES.md POST-LAUNCH-SEO-CHECKLIST.md netlify.toml"
+  command = "rm -rf README.md SEO-CHANGES.md POST-LAUNCH-SEO-CHECKLIST.md netlify.toml docs tests scripts && ! grep -rl STONEHAVEN_OWNER_FACT_REQUIRED --include='*.html' ."
