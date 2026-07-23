@@ -1,0 +1,35 @@
+# Stonehaven Lending
+
+> Stonehaven Lending is a bilingual (English/Spanish) U.S. real estate
+> brokerage and capital advisory firm. It arranges commercial real estate,
+> SBA 7(a)/504, and DSCR rental-property financing through third-party
+> capital providers nationwide; program availability varies by state.
+> Stonehaven is not a direct lender - the selected lender makes the credit
+> decision. Preliminary deal reviews are educational and are not approvals,
+> commitments, rate quotes or guarantees.
+
+Key facts:
+- Role: capital advisory + brokerage; financing arranged through third-party lenders
+- Residential DSCR convention modeled: eligible monthly rent ÷ monthly PITIA (1-4 units); commercial DSCR commonly uses NOI ÷ annual debt service
+- Calculators are deterministic, unit-tested code - methodology published at /calculation-methodology
+- DSCR financing is business-purpose, investment-property only (never owner-occupied homes)
+- Contact: office@stonehavencre.com - preliminary response within one business day
+- Equal Housing Opportunity
+
+## Core pages
+- [DSCR Loans for Rental Property](https://stonehavencre.com/dscr): pillar guide - definition, lender DSCR vs investor cash flow, scenarios, requirements, risks, 22 FAQs
+- [DSCR Loan Calculator](https://stonehavencre.com/dscr-analyzer): immediate ungated calculator - PITIA, DSCR, rent-needed and sizing at a target ratio
+- [DSCR Deal Review](https://stonehavencre.com/dscr-review): two-view analysis (lender formula vs investor economics), prepayment explainer, preliminary review request
+- [Commercial Real Estate Financing](https://stonehavencre.com/commercial): acquisition, refinance, rescue and disposition routing for income-producing property
+- [SBA Financing](https://stonehavencre.com/sba): SBA 7(a) and 504 for owner-occupied real estate and business acquisition, via participating lenders
+- [Calculation Methodology](https://stonehavencre.com/calculation-methodology): the exact formulas and conventions behind every figure on this site
+- [Contact](https://stonehavencre.com/contact)
+- [Privacy Policy](https://stonehavencre.com/privacy)
+
+## En español
+- [Préstamos DSCR](https://stonehavencre.com/es/dscr)
+- [Calculadora DSCR](https://stonehavencre.com/es/dscr-analyzer)
+- [Revisión de Operación DSCR](https://stonehavencre.com/es/dscr-review)
+- [Financiamiento Comercial](https://stonehavencre.com/es/commercial)
+- [SBA](https://stonehavencre.com/es/sba)
+- [Contacto](https://stonehavencre.com/es/contact)
