@@ -22,7 +22,7 @@
 <link rel="stylesheet" href="funnel.css"/>
 <noscript><style>.reveal{opacity:1 !important;transform:none !important;}</style></noscript>
 <script src="js/site-config.js?v=2" defer></script>
-<script src="js/funnel.js?v=2" defer></script>
+<script src="js/funnel.js?v=3" defer></script>
 <script src="js/dscr-calc.js?v=2"></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://stonehavencre.com/"}, {"@type": "ListItem", "position": 2, "name": "DSCR", "item": "https://stonehavencre.com/dscr"}, {"@type": "ListItem", "position": 3, "name": "DSCR Loan Calculator", "item": "https://stonehavencre.com/dscr-analyzer"}]}</script>
 </head>
@@ -89,8 +89,8 @@
   <div class="wrap">
     <div class="lead-card reveal">
       <span class="eyebrow">The Full Breakdown</span>
-      <h2>Email me the full report + the DSCR Playbook.</h2>
-      <p class="sub">Your deal's complete underwriter-style breakdown, plus the playbook: how DSCR pricing works, what moves your leverage, and how investors scale with it.</p>
+      <h2>Have a specialist review my numbers.</h2>
+      <p class="sub">A specialist reviews the scenario you built and replies personally: how your DSCR reads, what moves your leverage, and sensible next steps.</p>
       <form class="lead-form" data-sh-form="dscr-analyzer" data-sh-product="DSCR" data-sh-event="lead" data-sh-thanks="/thanks-dscr-analyzer" novalidate method="POST" action="/thanks-dscr-analyzer" data-netlify="true" netlify-honeypot="company_website"><input type="hidden" name="form-name" value="lead"/>
         <input type="text" name="company_website" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true"/>
         <div class="lf-field"><label for="g-email">Email</label><input id="g-email" type="email" name="email" autocomplete="email" required/></div>
@@ -98,7 +98,7 @@
         <div class="lf-field full"><label for="g-state">Property state</label><input id="g-state" type="text" name="state" autocomplete="address-level1" placeholder="e.g. Texas"/></div>
         <div class="lead-actions">
           <span class="note">No spam, no credit pull at this stage - just your numbers. By submitting, you agree Stonehaven may contact you about your enquiry by phone, email or text. Consent is not a condition of service.</span>
-          <button type="submit" class="lead-submit">Send my report</button>
+          <button type="submit" class="lead-submit">Send my numbers</button>
         </div>
       </form>
     </div>
@@ -162,8 +162,8 @@
     out.r.innerHTML=(Math.round(dscr*100)/100).toFixed(2)+"<small>x</small>";
     out.v.className="verdict";
     if(dscr>=1.25){out.v.classList.add("strong");out.v.textContent="Strong - ratio typically opens broader options";out.note.textContent="Ratios at 1.25x and above typically open the best structure and leverage.";}
-    else if(dscr>=1.0){out.v.classList.add("workable");out.v.textContent="Workable - may fit some programs";out.note.textContent="Between 1.0x and 1.25x, structure matters - the full report shows what moves your ratio up.";}
-    else {out.v.classList.add("short");out.v.textContent="Not yet - here's what moves it";out.note.textContent="Below 1.0x the rent doesn't cover the debt at these terms. More down payment or a different structure often closes the gap - the report shows how.";}
+    else if(dscr>=1.0){out.v.classList.add("workable");out.v.textContent="Workable - may fit some programs";out.note.textContent="Between 1.0x and 1.25x, structure matters - a specialist can walk through what moves your ratio up.";}
+    else {out.v.classList.add("short");out.v.textContent="Not yet - here's what moves it";out.note.textContent="Below 1.0x the rent doesn't cover the debt at these terms. More down payment or a different structure often closes the gap - a specialist can show how.";}
     var form=document.querySelector('form[data-sh-form="dscr-analyzer"]');
     if(form){form.setAttribute("data-sh-about-prefix","[Deal Analyzer] price "+money(price)+" · down "+Math.round(down*100)+"% · rate "+(rate*100).toFixed(2)+"% · rent "+money(rent)+"/mo · DSCR "+dscr.toFixed(2)+"x");}
     if(!fired&&window.shTrack){fired=true;window.shTrack("calc_used",{page:"dscr-analyzer"});}

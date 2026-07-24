@@ -115,6 +115,14 @@
   }
 
   function wireForm(form) {
+    // Any form with a product_choice select keeps data-sh-product in sync,
+    // so the CRM payload always reflects the visitor's actual selection.
+    var productSel = form.querySelector('select[name="product_choice"]');
+    if (productSel) {
+      var syncProduct = function () { form.setAttribute("data-sh-product", productSel.value); };
+      productSel.addEventListener("change", syncProduct);
+      syncProduct();
+    }
     form.addEventListener("submit", function (e) {
       e.preventDefault();
 

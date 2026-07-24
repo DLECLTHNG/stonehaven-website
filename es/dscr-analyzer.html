@@ -22,7 +22,7 @@
 <link rel="stylesheet" href="../funnel.css"/>
 <noscript><style>.reveal{opacity:1 !important;transform:none !important;}</style></noscript>
 <script src="../js/site-config.js?v=2" defer></script>
-<script src="../js/funnel.js?v=2" defer></script>
+<script src="../js/funnel.js?v=3" defer></script>
 <script src="../js/dscr-calc.js?v=2"></script>
 </head>
 <body><header class="nav" id="nav">
@@ -88,8 +88,8 @@
   <div class="wrap">
     <div class="lead-card reveal">
       <span class="eyebrow">El Análisis Completo</span>
-      <h2>Envíenme el informe completo + la guía DSCR.</h2>
-      <p class="sub">El análisis completo de su operación al estilo underwriting, más la guía: cómo funciona el precio DSCR, qué mueve su apalancamiento, y cómo los inversionistas escalan con él.</p>
+      <h2>Que un especialista revise mis números.</h2>
+      <p class="sub">Un especialista revisa el escenario que armó y le responde personalmente: cómo se lee su DSCR, qué mueve su apalancamiento, y los siguientes pasos sensatos.</p>
       <form class="lead-form" data-sh-form="dscr-analyzer" data-sh-product="DSCR" data-sh-event="lead" data-sh-thanks="/es/thanks-dscr-analyzer" data-sh-lang="es" novalidate method="POST" action="/es/thanks-dscr-analyzer" data-netlify="true" netlify-honeypot="company_website"><input type="hidden" name="form-name" value="lead"/>
         <input type="text" name="company_website" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true"/>
         <div class="lf-field"><label for="g-email">Correo electrónico</label><input id="g-email" type="email" name="email" autocomplete="email" required/></div>
@@ -97,7 +97,7 @@
         <div class="lf-field full"><label for="g-state">Estado de la propiedad</label><input id="g-state" type="text" name="state" autocomplete="address-level1" placeholder="p. ej. Texas"/></div>
         <div class="lead-actions">
           <span class="note">Sin spam, sin consulta de crédito en esta etapa - solo sus números. Al enviar, usted acepta que Stonehaven le contacte sobre su consulta por teléfono, correo o mensaje de texto. El consentimiento no es condición de ningún servicio.</span>
-          <button type="submit" class="lead-submit">Enviar mi informe</button>
+          <button type="submit" class="lead-submit">Enviar mis números</button>
         </div>
       </form>
     </div>
@@ -161,8 +161,8 @@
     out.r.innerHTML=(Math.round(dscr*100)/100).toFixed(2)+"<small>x</small>";
     out.v.className="verdict";
     if(dscr>=1.25){out.v.classList.add("strong");out.v.textContent="Fuerte - el ratio suele abrir más opciones";out.note.textContent="Ratios de 1.25x o más típicamente abren la mejor estructura y apalancamiento.";}
-    else if(dscr>=1.0){out.v.classList.add("workable");out.v.textContent="Viable - probablemente encaja en un programa";out.note.textContent="Entre 1.0x y 1.25x la estructura importa - el informe completo muestra qué sube su ratio.";}
-    else {out.v.classList.add("short");out.v.textContent="Aún no - esto es lo que lo mueve";out.note.textContent="Abajo de 1.0x la renta no cubre la deuda con estos términos. Más pago inicial u otra estructura muchas veces cierra la brecha - el informe muestra cómo.";}
+    else if(dscr>=1.0){out.v.classList.add("workable");out.v.textContent="Viable - probablemente encaja en un programa";out.note.textContent="Entre 1.0x y 1.25x la estructura importa - un especialista puede mostrarle qué sube su ratio.";}
+    else {out.v.classList.add("short");out.v.textContent="Aún no - esto es lo que lo mueve";out.note.textContent="Abajo de 1.0x la renta no cubre la deuda con estos términos. Más pago inicial u otra estructura muchas veces cierra la brecha - un especialista puede mostrarle cómo.";}
     var form=document.querySelector('form[data-sh-form="dscr-analyzer"]');
     if(form){form.setAttribute("data-sh-about-prefix","[Deal Analyzer ES] precio "+money(price)+" · inicial "+Math.round(down*100)+"% · tasa "+(rate*100).toFixed(2)+"% · renta "+money(rent)+"/mes · DSCR "+dscr.toFixed(2)+"x");}
     if(!fired&&window.shTrack){fired=true;window.shTrack("calc_used",{page:"dscr-analyzer-es"});}

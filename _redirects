@@ -16,6 +16,9 @@
 /es/sba-guide.html /es/sba-guide 301!
 /es/sba.html /es/sba 301!
 /es/thanks-dscr-analyzer.html /es/thanks-dscr-analyzer 301!
+/es/book.html /es/book 301!
+/es/thanks-book.html /es/thanks-book 301!
+/es/thanks-quote.html /es/thanks-quote 301!
 /es/thanks-dscr-review.html /es/thanks-dscr-review 301!
 /es/thanks-sba-guide.html /es/thanks-sba-guide 301!
 /index.html / 301!
@@ -30,3 +33,7 @@
 /thanks-sba-guide.html /thanks-sba-guide 301!
 /thanks-terms-sheet.html /thanks-terms-sheet 301!
 /calculation-methodology.html /calculation-methodology 301!
+
+# Withdrawn PDF assets (2026-07-24): unreviewed content pulled from the
+# build - fake phone, direct-lender claims, unsourced rates. 410 Gone.
+/downloads/* / 410

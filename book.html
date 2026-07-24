@@ -14,7 +14,7 @@
 <link rel="stylesheet" href="funnel.css"/>
 <noscript><style>.reveal{opacity:1 !important;transform:none !important;}</style></noscript>
 <script src="js/site-config.js?v=2" defer></script>
-<script src="js/funnel.js?v=2" defer></script>
+<script src="js/funnel.js?v=3" defer></script>
 </head>
 <body><header class="nav" id="nav">
   <div class="wrap nav-inner">
@@ -55,10 +55,10 @@
         <div class="lf-field"><label for="b-phone">Phone</label><input id="b-phone" type="tel" name="phone" autocomplete="tel" required/></div>
         <div class="lf-field"><label for="b-product">What's the deal?</label>
           <select id="b-product" name="product_choice">
+            <option value="Not sure">Not sure yet</option>
             <option value="DSCR">DSCR - rental property</option>
             <option value="SBA">SBA - owner-occupied / business</option>
             <option value="Commercial">Commercial - $1M+</option>
-            <option value="Not sure">Not sure yet</option>
           </select>
         </div>
         <div class="lf-field"><label for="b-amount">Loan amount range</label>
@@ -113,11 +113,14 @@
   </div>
 </footer>
 <script>
-// carry the selected product into the CRM payload
+// Preselect the product from ?product= (product-page links carry it);
+// funnel.js keeps data-sh-product in sync with the select from there on.
 (function(){
-  var sel=document.getElementById("b-product"),form=document.getElementById("bookForm");
-  function sync(){var v=sel.value;form.setAttribute("data-sh-product",v==="Not sure"?"Not sure":v);}
-  sel.addEventListener("change",sync);sync();
+  try{
+    var q=new URLSearchParams(window.location.search).get("product");
+    var sel=document.getElementById("b-product");
+    if(q&&sel&&["DSCR","SBA","Commercial"].indexOf(q)>=0)sel.value=q;
+  }catch(e){}
 })();
 </script>
 </body></html>

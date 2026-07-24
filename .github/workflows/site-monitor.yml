@@ -5,7 +5,7 @@
 # 404ing form POSTs a day after they worked, with no deploy in between.
 #
 # Checks:
-#   1. Key pages, assets, and lead-magnet PDFs return 200.
+#   1. Key pages and assets return 200; withdrawn PDFs return 410.
 #   2. js/funnel.js still contains the live form-POST logic.
 #   3. The homepage still registers the hidden Netlify "lead" form.
 #   4. A canary form POST reaches the forms handler (200). The canary
@@ -39,9 +39,15 @@ jobs:
           for p in "/" "/contact" "/book" "/commercial" "/sba" "/dscr" "/dscr-review" \
                    "/dscr-analyzer" "/sba-guide" "/terms-sheet" "/privacy" \
                    "/es/" "/es/contact" "/es/dscr" "/sitemap.xml" "/robots.txt" "/styles.css" \
-                   "/funnel.css" "/js/funnel.js" "/assets/mark.png" "/downloads/dscr-playbook.pdf"; do
+                   "/funnel.css" "/js/funnel.js" "/assets/mark.png" "/es/book"; do
             code=$(curl -s -o /dev/null -w "%{http_code}" --max-time 20 "$BASE$p" || echo "000")
             [ "$code" = "200" ] || fails+=("GET $p -> $code")
+          done
+
+          # withdrawn PDFs (unreviewed content pulled 2026-07-24) must stay 410
+          for p in "/downloads/dscr-playbook.pdf" "/downloads/sba-own-your-building.pdf" "/downloads/cre-terms-sheet-q3-2026.pdf"; do
+            code=$(curl -s -o /dev/null -w "%{http_code}" --max-time 20 "$BASE$p" || echo "000")
+            [ "$code" = "410" ] || fails+=("GET $p -> $code (want 410)")
           done
 
           for p in "/dscr.html" "/commercial.html" "/index.html" "/es/dscr.html"; do

@@ -1,6 +1,10 @@
 # Netlify deploy config. The build step strips internal docs from the
 # published site — they stay in git but must not be served on
-# stonehavencre.com.
+# stonehavencre.com. `downloads` holds withdrawn, unreviewed PDF assets
+# (fake phone, direct-lender claims, unsourced rates) — never publish.
+# The grep is a release gate: build fails if any rendered HTML contains
+# a sentinel token, a placeholder phone, config-gap artifacts ("Call ,"
+# / "Llame al ,"), or direct-lender role claims in either language.
 [build]
   publish = "."
-  command = "rm -rf README.md SEO-CHANGES.md POST-LAUNCH-SEO-CHECKLIST.md netlify.toml docs tests scripts && ! grep -rl STONEHAVEN_OWNER_FACT_REQUIRED --include='*.html' ."
+  command = "rm -rf README.md SEO-CHANGES.md POST-LAUNCH-SEO-CHECKLIST.md netlify.toml docs tests scripts downloads && ! grep -rlE 'STONEHAVEN_OWNER_FACT_REQUIRED|555-0100|Call ,|call  to|Llame al ,|Llame al  |is a commercial real estate lender|prestamos de forma directa' --include='*.html' ."
