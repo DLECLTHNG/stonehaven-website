@@ -39,7 +39,8 @@ jobs:
           for p in "/" "/contact" "/book" "/commercial" "/sba" "/dscr" "/dscr-review" \
                    "/dscr-analyzer" "/sba-guide" "/terms-sheet" "/privacy" \
                    "/es/" "/es/contact" "/es/dscr" "/sitemap.xml" "/robots.txt" "/styles.css" \
-                   "/funnel.css" "/js/funnel.js" "/assets/mark.png" "/es/book"; do
+                   "/funnel.css" "/js/funnel.js" "/assets/mark.png" "/es/book" \
+                   "/sba-loan-calculator" "/commercial-loan-calculator" "/resources/sba" "/resources/commercial"; do
             code=$(curl -s -o /dev/null -w "%{http_code}" --max-time 20 "$BASE$p" || echo "000")
             [ "$code" = "200" ] || fails+=("GET $p -> $code")
           done

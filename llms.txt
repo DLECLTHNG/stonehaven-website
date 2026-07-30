@@ -33,3 +33,16 @@ Key facts:
 - [Financiamiento Comercial](https://stonehavencre.com/es/commercial)
 - [SBA](https://stonehavencre.com/es/sba)
 - [Contacto](https://stonehavencre.com/es/contact)
+
+## Resources (editorial guides and calculators, English)
+- /sba-loan-calculator : SBA 7(a) & 504 structure calculator (deterministic math)
+- /commercial-loan-calculator : commercial loan sizing by DSCR and LTV, names the binding constraint
+- /resources/sba : SBA resource center
+- /resources/sba-7a-vs-504 : choosing between SBA 7(a) and 504 for real estate
+- /resources/sba-down-payment : how the SBA 504 10/15/20 injection rules work
+- /resources/sba-timeline-documents : SBA loan stages and document checklist
+- /resources/commercial : commercial finance resource center
+- /resources/how-lenders-size-commercial-loans : DSCR vs LTV sizing and the binding constraint
+- /resources/bridge-vs-permanent-financing : when bridge capital earns its cost
+- /resources/commercial-refinance-guide : the four reasons to refinance and the prepayment math
+Guides are written by Christiaan De Leeuw (Stonehaven Lending); calculators use deterministic formulas documented at /calculation-methodology.

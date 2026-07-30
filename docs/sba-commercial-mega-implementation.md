@@ -78,11 +78,29 @@ pushed without owner authorization.
 - `site-monitor.yml`: dropped the 200-check on the withdrawn PDF, added
   410 assertions for all three PDF URLs, added `/es/book` to the 200s.
 
-## Gated backlog (blocked on owner facts / named author+reviewer / counsel)
+## Backlog release (2026-07-30) — author gate cleared
 
-- /sba-loan-calculator, /commercial-loan-calculator (deterministic math
-  + fixtures, same pattern as dscr-calc).
-- /resources/sba hub + 3 guides; /resources/commercial hub + 3 guides.
+Owner designated the byline: **Christiaan De Leeuw · Stonehaven Lending**
+(minimal bio, no title/credential claims; no separate reviewer credit —
+same-person "review" would be untruthful, so guides carry a single
+byline). Shipped: js/sba-calc.js + js/commercial-calc.js (pure functions,
+fixture suites in tests/), /sba-loan-calculator (7(a) & 504 structures,
+10/15/20 injection rules, rent comparison), /commercial-loan-calculator
+(DSCR vs LTV sizing, names the binding constraint), /resources/sba and
+/resources/commercial hubs, six guides (7a-vs-504, sba-down-payment,
+sba-timeline-documents, how-lenders-size-commercial-loans,
+bridge-vs-permanent-financing, commercial-refinance-guide). All Article
+schema with Person author; answer-first blocks; no market rates anywhere
+(user-entered estimates only); methodology page documents both new
+calculators; sitemap 17→27; llms.txt resources section; footer
+Resources column on EN root pages; monitor covers the four new hub/calc
+routes. CRM note: new `page` values sba-calculator / commercial-calculator
+must be added to WEBSITE_PAGE_VALUES when the CRM intake goes live.
+
+## Remaining gated backlog
+
+- Spanish versions of calculators, hubs and guides (blocked on native
+  Spanish review for long-form editorial).
 - Re-issue of any downloadable assets only after counsel-reviewed,
   owner-fact-complete versions exist.
 - Standing owner items: real phone, legal entity/NMLS/licensing/address,
