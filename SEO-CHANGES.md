@@ -1,4 +1,4 @@
-# Stonehaven Commercial — SEO Changes
+# Stonehaven Lending — SEO Changes
 
 What changed in this pass and why. The brand design, colours, fonts, and the lead forms were preserved. The one structural change is how Spanish is served (see below).
 

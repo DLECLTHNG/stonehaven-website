@@ -7,4 +7,4 @@
 # / "Llame al ,"), or direct-lender role claims in either language.
 [build]
   publish = "."
-  command = "rm -rf README.md SEO-CHANGES.md POST-LAUNCH-SEO-CHECKLIST.md netlify.toml docs tests scripts downloads && ! grep -rlE 'STONEHAVEN_OWNER_FACT_REQUIRED|555-0100|Call ,|call  to|Llame al ,|Llame al  |is a commercial real estate lender|prestamos de forma directa' --include='*.html' ."
+  command = "rm -rf README.md SEO-CHANGES.md POST-LAUNCH-SEO-CHECKLIST.md netlify.toml docs tests scripts downloads residential && ! grep -rlE 'STONEHAVEN_OWNER_FACT_REQUIRED|555-0100|Call ,|call  to|Llame al ,|Llame al  |is a commercial real estate lender|prestamos de forma directa' --include='*.html' ."

@@ -1,4 +1,4 @@
-# Stonehaven Commercial — Post-Launch SEO Checklist
+# Stonehaven Lending — Post-Launch SEO Checklist
 
 Everything that can't be done in the code. Work top to bottom; the first section is the highest priority.
 
