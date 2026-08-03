@@ -10,8 +10,12 @@ Paste-ready content. Assets in this folder:
 - **Category (primary):** Mortgage Brokers
 - **Category (secondary):** Financial Service
 
-## Bio (101-char limit)
-Residential & commercial real estate financing, arranged with discipline. NMLS #1752355.
+## Bio (101-char limit) — chosen 2026-07-30
+Buy, finance, or refinance - with one accountable team. Nationwide. NMLS #1752355
+
+Alternates:
+- Commercial, SBA & DSCR financing nationwide. Honest answers in one business day. NMLS #1752355
+- Real estate financing for investors, owners & businesses. Founder-run. NMLS #1752355
 
 ## About / Additional information
 Stonehaven Lending is a real estate capital advisory and brokerage firm
