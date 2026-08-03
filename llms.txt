@@ -36,6 +36,8 @@ Key facts:
 - [SBA](https://stonehavencre.com/es/sba)
 - [Contacto](https://stonehavencre.com/es/contact)
 
+- /management : the firm founders (Dawn Munoz, Chris De Leeuw)
+
 ## Resources (editorial guides and calculators, English)
 - /sba-loan-calculator : SBA 7(a) & 504 structure calculator (deterministic math)
 - /commercial-loan-calculator : commercial loan sizing by DSCR and LTV, names the binding constraint
