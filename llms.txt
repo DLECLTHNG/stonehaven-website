@@ -16,6 +16,8 @@ Key facts:
 - Contact: office@stonehavencre.com - preliminary response within one business day
 - Equal Housing Opportunity
 
+- NMLS company ID: 1752355 (nmlsconsumeraccess.org)
+
 ## Core pages
 - [DSCR Loans for Rental Property](https://stonehavencre.com/dscr): pillar guide - definition, lender DSCR vs investor cash flow, scenarios, requirements, risks, 22 FAQs
 - [DSCR Loan Calculator](https://stonehavencre.com/dscr-analyzer): immediate ungated calculator - PITIA, DSCR, rent-needed and sizing at a target ratio
