@@ -196,7 +196,7 @@
         }
         box.textContent = es
           ? "No pudimos enviar su consulta. Por favor intente de nuevo, o escríbanos a " + CONTACT_EMAIL + "."
-          : "We couldn't send your enquiry. Please try again, or email us at " + CONTACT_EMAIL + ".";
+          : "We couldn't send your inquiry. Please try again, or email us at " + CONTACT_EMAIL + ".";
         track("form_submit_failed", { page: payload.page });
       }
       function timedFetch(url, opts) {
@@ -257,7 +257,7 @@
   document.addEventListener("DOMContentLoaded", function () {
     Array.prototype.forEach.call(document.querySelectorAll("form[data-sh-form]"), wireForm);
 
-    /* nav scroll + mobile menu + reveal (same behaviour as the rest of the site) */
+    /* nav scroll + mobile menu + reveal (same behavior as the rest of the site) */
     var nav = document.getElementById("nav");
     if (nav) {
       var onScroll = function () { nav.classList.toggle("scrolled", window.scrollY > 24); };
