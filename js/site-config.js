@@ -12,7 +12,7 @@ window.SH_CONFIG = {
 
   /* Analytics — public measurement IDs. Empty = tag never loads. */
   ga4Id: "",           /* e.g. "G-XXXXXXXXXX" */
-  metaPixelId: "",     /* e.g. "1234567890" */
+  metaPixelId: "4039555362846500",  /* Meta Pixel, set 2026-07-31 */
 
   /* Verified contact channels. phone MUST stay empty until a real,
      verified business number exists — empty hides phone UI entirely. */
