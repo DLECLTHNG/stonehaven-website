@@ -11,7 +11,7 @@ window.SH_CONFIG = {
   intakeEndpoint: "",
 
   /* Analytics — public measurement IDs. Empty = tag never loads. */
-  ga4Id: "",           /* e.g. "G-XXXXXXXXXX" */
+  ga4Id: "G-69X0CPMGJP",  /* GA4, set 2026-08-10 */
   metaPixelId: "4039555362846500",  /* Meta Pixel, set 2026-07-31 */
 
   /* Verified contact channels. phone MUST stay empty until a real,
