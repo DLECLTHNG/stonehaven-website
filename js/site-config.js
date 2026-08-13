@@ -20,6 +20,9 @@ window.SH_CONFIG = {
   phoneDisplay: "",    /* e.g. "+1 (555) 123-4567" */
   email: "office@stonehavencre.com",
 
+  /* Google Calendar booking page ("DISCUSS MY DEAL", 15 min). */
+  bookingUrl: "https://calendar.app.google/1pTBR6R4ho6jDvKE6",
+
   /* HELOC destination (pending owner decision: branded application
      link vs calendar booking). While empty, /heloc CTAs point to the
      on-page specialist form and /book. Setting a URL flips both
