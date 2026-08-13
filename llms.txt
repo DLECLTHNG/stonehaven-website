@@ -47,7 +47,7 @@ Key facts:
 - /residential/va : VA loans for eligible veterans - zero down, no monthly MI, funding fee explained
 - /mortgage-calculator : full PITI payment + affordability calculator (deterministic math)
 - /refinance-calculator : refinance break-even calculator (deterministic math)
-- /heloc : HELOC explained - available-line and two-phase payment calculators, honest risk section
+- /heloc : HELOC - 30-second equity estimate, then a named broker callback; keeps the existing mortgage rate untouched
 - /residential/georgia : Georgia home loans - Alpharetta HQ, GA licensing, statewide
 - /resources/residential : home loan resource center (guides by Dawn M. Muñoz)
 - /resources/fha-vs-conventional : the mortgage-insurance math that decides FHA vs conventional

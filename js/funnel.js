@@ -67,17 +67,19 @@
   var UTMS = readUtms();
 
   /* ---------- 2 · analytics events (safe no-ops until tags exist) ---------- */
-  function track(eventName, params) {
+  function track(eventName, params, opts) {
     params = params || {};
+    opts = opts || {};
     try { if (typeof window.gtag === "function") window.gtag("event", eventName, params); } catch (e) {}
     try {
       if (typeof window.fbq === "function") {
         // Map our named conversions onto Meta standard events where they fit
         var metaMap = { lead: "Lead", quote_request: "Lead", booking_complete: "Schedule",
           guide_download: "Lead", sheet_download: "Lead", deal_review_request: "Lead",
-          quiz_complete: "CompleteRegistration", calc_used: "ViewContent" };
-        if (metaMap[eventName]) window.fbq("track", metaMap[eventName], params);
-        else window.fbq("trackCustom", eventName, params);
+          quiz_complete: "CompleteRegistration", calc_used: "ViewContent", heloc_callback: "Lead" };
+        var fbqOpts = opts.eventID ? { eventID: opts.eventID } : undefined;
+        if (metaMap[eventName]) window.fbq("track", metaMap[eventName], params, fbqOpts);
+        else window.fbq("trackCustom", eventName, params, fbqOpts);
       }
     } catch (e) {}
     try { window.dataLayer = window.dataLayer || []; window.dataLayer.push(Object.assign({ event: eventName }, params)); } catch (e) {}
@@ -137,6 +139,8 @@
       var bad = false;
       if (emailEl && !/.+@.+\..+/.test(emailEl.value.trim())) { emailEl.style.borderBottomColor = "#B0413A"; bad = true; }
       if (nameEl && nameEl.hasAttribute("required") && !nameEl.value.trim()) { nameEl.style.borderBottomColor = "#B0413A"; bad = true; }
+      var phoneEl = form.querySelector('[name="phone"]');
+      if (phoneEl && phoneEl.hasAttribute("required") && phoneEl.value.replace(/\D/g, "").length < 10) { phoneEl.style.borderBottomColor = "#B0413A"; bad = true; }
       if (bad) return;
 
       // Structured extras: every non-contract field, machine-readable, plus UTMs.
@@ -170,7 +174,20 @@
       if (btn) { btn.disabled = true; btn.style.opacity = ".6"; }
 
       function done() {
-        track(evt, { page: payload.page, product: payload.product });
+        // One event_id shared by the browser pixel and the server relay,
+        // so Meta deduplicates the two copies of the conversion.
+        var eventId = "sh-" + payload.page + "-" + Date.now() + "-" + Math.floor(Math.random() * 1e6);
+        track(evt, { page: payload.page, product: payload.product }, { eventID: eventId });
+        if (form.hasAttribute("data-sh-capi")) {
+          try {
+            fetch("/.netlify/functions/lead-capi", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ event_name: evt, event_id: eventId,
+                source_url: window.location.href.split("?")[0], payload: payload })
+            }).catch(function () {});
+          } catch (e) {}
+        }
         if (thanks) window.location.href = thanks;
         else {
           form.style.display = "none";

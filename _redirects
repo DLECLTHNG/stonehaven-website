@@ -32,6 +32,7 @@
 /thanks-quote.html /thanks-quote 301!
 /thanks-sba-guide.html /thanks-sba-guide 301!
 /thanks-terms-sheet.html /thanks-terms-sheet 301!
+/thanks-callback.html /thanks-callback 301!
 /calculation-methodology.html /calculation-methodology 301!
 /residential.html /residential 301!
 /residential/buy.html /residential/buy 301!
@@ -64,3 +65,6 @@
 # Withdrawn PDF assets (2026-07-24): unreviewed content pulled from the
 # build - fake phone, direct-lender claims, unsourced rates. 410 Gone.
 /downloads/* / 410
+
+# Function sources are bundled at /.netlify/functions/* - never serve the raw files
+/netlify/* / 404

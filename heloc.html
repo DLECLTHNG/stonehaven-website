@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>HELOC - Home Equity Line of Credit, Explained | Stonehaven</title>
-<meta name="description" content="What a HELOC really is, how much equity you could access, and what the payments look like in both phases - honest math, then a secure online application. GA, AL, TN, FL, NC."/>
+<title>Tap Your Equity - Keep Your Rate | Stonehaven HELOC</title>
+<meta name="description" content="A 30-second equity estimate, then a named Stonehaven broker calls back - shopping HELOC, home equity loan, and cash-out across multiple lenders. No credit pull to check. GA, AL, TN, FL, NC."/>
 <link rel="canonical" href="https://stonehavencre.com/heloc"/>
 <meta property="og:type" content="website"/>
 <meta property="og:site_name" content="Stonehaven Lending"/>
-<meta property="og:title" content="HELOC - Home Equity Line of Credit, Explained"/>
-<meta property="og:description" content="Your equity, honestly explained - available line, both payment phases, and the risks stated plainly."/>
+<meta property="og:title" content="Tap Your Equity - Keep Your Rate"/>
+<meta property="og:description" content="See an estimated equity range in 30 seconds, then talk to a real broker - without touching the existing mortgage rate."/>
 <meta property="og:url" content="https://stonehavencre.com/heloc"/>
 <meta property="og:image" content="https://stonehavencre.com/assets/og-logo.png"/>
 <link rel="icon" type="image/png" href="assets/favicon.png"/>
@@ -19,11 +19,23 @@
 <link rel="stylesheet" href="styles.css"/>
 <link rel="stylesheet" href="funnel.css"/>
 <noscript><style>.reveal{opacity:1 !important;transform:none !important;}</style></noscript>
+<style>
+.heloc-sticky{display:none;position:fixed;left:0;right:0;bottom:0;z-index:60;background:#142332;padding:12px 16px calc(12px + env(safe-area-inset-bottom));box-shadow:0 -6px 24px rgba(20,35,50,.3);}
+.heloc-sticky a{display:block;text-align:center;background:#B08230;color:#fff;font-family:Inter,sans-serif;font-size:15px;font-weight:500;letter-spacing:.02em;padding:14px;border-radius:2px;text-decoration:none;}
+@media(max-width:760px){.heloc-sticky{display:block;}body{padding-bottom:78px;}}
+.est-range{font-family:Cormorant,serif;font-size:clamp(36px,6vw,54px);color:#142332;line-height:1.1;}
+.vstack{display:grid;gap:14px;max-width:640px;margin:0 auto;text-align:left;}
+.vstack .vi{display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid rgba(20,35,50,.08);padding:18px 20px;}
+.vstack .vi b{color:#142332;}
+.vstack .tick{flex:0 0 22px;height:22px;border-radius:50%;background:#142332;color:#B08230;display:flex;align-items:center;justify-content:center;font-size:13px;margin-top:1px;}
+.qa{max-width:620px;margin:0 auto;text-align:left;}
+.qa p{margin:0 0 14px;font-size:15px;line-height:1.65;}
+.qa b{color:#142332;}
+</style>
 <script src="js/site-config.js?v=5" defer></script>
-<script src="js/funnel.js?v=4" defer></script>
+<script src="js/funnel.js?v=5" defer></script>
 <script src="js/heloc-calc.js?v=1"></script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://stonehavencre.com/"}, {"@type": "ListItem", "position": 2, "name": "Residential", "item": "https://stonehavencre.com/residential"}, {"@type": "ListItem", "position": 3, "name": "HELOC", "item": "https://stonehavencre.com/heloc"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Service", "name": "Home Equity Line of Credit", "serviceType": "Residential mortgage brokerage", "description": "HELOC education and application access, arranged through third-party capital providers.", "url": "https://stonehavencre.com/heloc", "areaServed": [{"@type": "State", "name": "Georgia"}, {"@type": "State", "name": "Alabama"}, {"@type": "State", "name": "Tennessee"}, {"@type": "State", "name": "Florida"}, {"@type": "State", "name": "North Carolina"}], "provider": {"@type": "FinancialService", "name": "Stonehaven Lending", "url": "https://stonehavencre.com/", "identifier": {"@type": "PropertyValue", "propertyID": "NMLS", "value": "1752355"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Service", "name": "Home Equity Line of Credit", "serviceType": "Residential mortgage brokerage", "description": "HELOC, home equity loan, and cash-out comparison arranged through third-party capital providers.", "url": "https://stonehavencre.com/heloc", "areaServed": [{"@type": "State", "name": "Georgia"}, {"@type": "State", "name": "Alabama"}, {"@type": "State", "name": "Tennessee"}, {"@type": "State", "name": "Florida"}, {"@type": "State", "name": "North Carolina"}], "provider": {"@type": "FinancialService", "name": "Stonehaven Lending", "url": "https://stonehavencre.com/", "identifier": {"@type": "PropertyValue", "propertyID": "NMLS", "value": "1752355"}}}</script>
 </head>
 <body><noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=4039555362846500&ev=PageView&noscript=1" alt=""/></noscript><header class="nav" id="nav">
   <div class="wrap nav-inner">
@@ -31,106 +43,78 @@
       <img src="assets/mark.png" width="30" height="30" alt="Stonehaven Lending"/>
       <span class="bt"><span class="b1">Stonehaven</span><span class="b2">Lending</span></span>
     </a>
-    <nav class="links" id="links" aria-label="Primary">
-      <a href="/commercial" class="line">Commercial</a>
-      <a href="/sba" class="line">SBA</a>
-      <a href="/dscr" class="line">DSCR</a>
-      <a href="/residential" class="line active">Residential</a>
-      <a href="/management" class="line">About Us</a>
-      <a href="/contact" class="line">Contact</a>
-    </nav>
-    <button class="menu-toggle" id="toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
   </div>
 </header>
 <main>
-<section class="funnel-hero">
-  <span class="eyebrow">Residential · HELOC</span>
-  <h1>Your equity, on tap - <br><em>without touching your mortgage.</em></h1>
-  <p>A home equity line of credit sits behind the mortgage you already have - draw what you need, when you need it, and keep the first-mortgage rate you're glad you locked. Residential programs are available in Georgia, Alabama, Tennessee, Florida, and North Carolina.</p>
-  <div style="margin-top:26px;display:flex;flex-direction:column;align-items:center;gap:16px;"><a class="btn-primary" id="heloc-apply-hero" href="#inquire" rel="noopener">Get started</a><a class="btn-quiet" href="#numbers">See my numbers first</a></div>
+<section class="funnel-hero" style="padding-bottom:16px;">
+  <span class="eyebrow">Home Equity Line of Credit</span>
+  <h1>Tap Your Equity - <br><em>Keep Your Rate.</em></h1>
+  <p>Use the home's equity through a separate credit line. The existing mortgage - and its low rate - stays exactly as it is.</p>
 </section>
-<div class="proof-strip"><span><b>Keep your first mortgage</b> untouched</span><span><b>Draw as needed</b> - interest on what you use</span><span><b>No teaser rates</b> here, ever</span><span><b>GA · AL · TN · FL · NC</b></span></div>
 
-<section class="tight" id="answer" style="padding-bottom:10px;"><div class="wrap"><div class="prose reveal"><span class="eyebrow">The Short Answer</span><p style="color:var(--slate-700);font-size:17px;line-height:1.75;">A HELOC (home equity line of credit) is a revolving credit line secured by your home's equity - a second lien that leaves your existing mortgage exactly as it is. You draw what you need during a draw period (interest-only payments are common), then repay the balance over a repayment period. Rates are typically variable. Stonehaven Lending arranges HELOCs as a mortgage brokerage in Georgia, Alabama, Tennessee, Florida, and North Carolina - and a specialist handles your file personally from the first conversation.</p></div></div></section>
-
-<section class="tight" id="numbers">
+<section class="tight" id="estimate" style="padding-top:6px;">
   <div class="wrap">
-    <div class="calc-wrap reveal">
+    <div class="calc-wrap reveal in">
       <div class="calc-inputs">
-        <h3>How much could you access?</h3>
+        <h3>30-second estimate</h3>
         <div class="calc-grid">
-          <div class="lf-field"><label for="h-value">Home value est. ($)</label><input id="h-value" type="number" inputmode="numeric" min="0" value="500000"/></div>
-          <div class="lf-field"><label for="h-balance">Mortgage balance ($)</label><input id="h-balance" type="number" inputmode="numeric" min="0" value="280000"/></div>
-          <div class="lf-field full"><label for="h-cltv">Max combined LTV (%) <span style="text-transform:none;letter-spacing:0;color:#AAB8C7;">(80–90 is a common range - lenders vary)</span></label><input id="h-cltv" type="number" inputmode="numeric" min="50" max="100" value="85"/></div>
+          <div class="lf-field full"><label for="e-value">Home value, roughly ($)</label><input id="e-value" type="number" inputmode="numeric" min="0" step="10000" value="450000" style="font-size:18px;"/></div>
+          <div class="lf-field full"><label for="e-balance">Mortgage balance, roughly ($)</label><input id="e-balance" type="number" inputmode="numeric" min="0" step="10000" value="250000" style="font-size:18px;"/></div>
         </div>
       </div>
       <div class="calc-result" aria-live="polite">
-        <span class="eyebrow">Illustrative Line</span>
-        <div class="ratio" id="h-avail">-</div>
-        <div class="verdict" id="h-verdict">potentially available</div>
-        <div class="calc-sub">
-          <div class="row"><span>Your current equity</span><b id="h-equity">-</b></div>
-          <div class="row"><span>Max total debt at that CLTV</span><b id="h-max">-</b></div>
+        <span class="eyebrow">Estimated Equity Range</span>
+        <div class="est-range" id="e-range">-</div>
+        <div class="verdict" id="e-verdict">potentially accessible</div>
+        <p class="calc-note" id="e-note">Two numbers, no signup - the estimate updates instantly.</p>
+        <div style="margin-top:22px;display:flex;flex-direction:column;align-items:center;gap:10px;">
+          <a class="btn-primary" href="#callback" style="width:100%;max-width:320px;text-align:center;">Talk to a broker</a>
+          <span style="font-size:13px;color:var(--stone-400);">A Stonehaven broker calls back - typically within minutes during business hours (Mon&ndash;Fri, ET).</span>
         </div>
-        <p class="calc-note" id="h-note">Enter your figures - the line updates as you type.</p>
       </div>
     </div>
-
-    <div class="calc-wrap reveal" style="margin-top:34px;">
-      <div class="calc-inputs">
-        <h3>What would a draw cost monthly?</h3>
-        <div class="calc-grid">
-          <div class="lf-field"><label for="p-draw">Amount you'd draw ($)</label><input id="p-draw" type="number" inputmode="numeric" min="0" value="100000"/></div>
-          <div class="lf-field"><label for="p-rate">Interest rate est. (%)</label><input id="p-rate" type="number" inputmode="decimal" step="0.125" min="0" value="8.0"/></div>
-          <div class="lf-field full"><label for="p-years">Repayment period (years)</label><input id="p-years" type="number" inputmode="numeric" min="5" max="30" value="20"/></div>
-        </div>
-      </div>
-      <div class="calc-result" aria-live="polite">
-        <span class="eyebrow">Both Phases, Honestly</span>
-        <div class="ratio" id="p-io">-</div>
-        <div class="verdict" id="p-verdict">draw-period payment (interest-only)</div>
-        <div class="calc-sub">
-          <div class="row"><span>Repayment-period payment</span><b id="p-repay">-</b></div>
-          <div class="row"><span>The step-up between phases</span><b id="p-shock">-</b></div>
-        </div>
-        <p class="calc-note" id="p-note">Most HELOC surprises live in that step-up - we show it up front.</p>
-      </div>
-    </div>
-    <p class="fine">Available line = home value × your entered maximum combined loan-to-value, minus your current mortgage balance - lender CLTV caps vary and are set at underwriting, not here. Draw-period payment modeled as interest-only on the drawn balance; repayment-period payment amortizes the balance over your entered years. HELOC rates are typically variable, so real payments move with the market. Rates and CLTV are your estimates - we publish none. Estimates are illustrative and educational, not an approval, offer, line amount, rate quote, or commitment to lend. See <a href="/calculation-methodology" style="color:inherit;text-decoration:underline;">how these figures are calculated</a>.</p>
+    <p class="fine">Estimates only - the range shows headroom at common 80&ndash;90% combined loan-to-value caps and is subject to verification, appraisal, and lender approval. Rates and line amounts are set by lenders at underwriting; nothing on this page is an offer, approval, or rate quote. See <a href="/calculation-methodology" style="color:inherit;text-decoration:underline;">how the figures are calculated</a>.</p>
   </div>
 </section>
 
-<section><div class="wrap"><div class="prose reveal"><span class="eyebrow">The Mechanics</span><h2>Two phases, one honest picture.</h2><p>A HELOC lives in two acts. During the <b>draw period</b> - commonly around ten years - the line works like a credit card secured by your house: draw, repay, redraw, with interest-only payments typically allowed on what's outstanding. Then the <b>repayment period</b> begins: no more draws, and the balance amortizes - principal plus interest - over the remaining term.</p><p>That transition is where households get hurt: an interest-only payment that felt easy becomes a fully amortizing one, sometimes years after anyone read the paperwork. The calculator above shows both phases side by side for exactly that reason - if the repayment-phase payment doesn't fit your budget, the answer is a smaller draw, not surprise in year eleven.</p></div></div></section>
-
-<section><div class="wrap"><div class="prose reveal"><span class="eyebrow">The Comparison</span><h2>HELOC vs cash-out vs home equity loan.</h2><p><b>HELOC</b> - revolving, draw as needed, typically variable rate, keeps your first mortgage untouched. Wins for staged expenses (renovations in phases, tuition by semester) and for standby flexibility you may never fully use.</p><p><b>Cash-out refinance</b> - replaces your entire first mortgage with a bigger one. If your existing rate is lower than today's market, cash-out reprices <em>everything you owe</em> to reach the new money - often a brutal trade. When the old rate is the treasure, the second-lien route protects it. See <a href="/residential/refinance">the refinance page</a> for when cash-out does win.</p><p><b>Home equity loan</b> - a fixed lump sum, fixed rate, fixed payment, also behind your first mortgage. Wins when you need one known amount and want payment certainty over flexibility.</p><p>Which fits is a file-level answer - and since we arrange all three paths, the recommendation is a comparison, not a pitch.</p></div></div></section>
-
-<section><div class="wrap"><div class="prose reveal"><span class="eyebrow">Plainly</span><h2>The risks, before you sign.</h2><p>Your home secures the line - that's why the pricing beats credit cards, and it's also the entire risk: sustained non-payment can ultimately threaten the home. Rates are typically variable, so payments can rise. The end-of-draw step-up is real and arrives on schedule. And easy access to equity is a feature only when the use is deliberate - consolidating card debt onto your house while the cards stay open is how equity quietly evaporates. We'd rather lose an application than skip this paragraph.</p></div></div></section>
-
-<section class="lead" id="apply">
-  <div class="wrap">
-    <div class="lead-card reveal" style="text-align:center;">
-      <span class="eyebrow">Ready?</span>
-      <h2>Take the next step.</h2>
-      <p class="sub">A specialist handles your file personally from the first conversation - honest answers on the line, the phases, and whether a HELOC is genuinely your best move.</p>
-      <div style="margin-top:22px;display:flex;flex-direction:column;align-items:center;gap:16px;"><a class="btn-primary" id="heloc-apply" href="/book?product=Residential" rel="noopener">Book a 15-minute call</a><a class="btn-quiet" href="#inquire">Ask a question instead</a></div>
-      <p id="heloc-apply-disc" style="display:none;margin-top:18px;font-size:12px;color:var(--stone-400);">Applications are processed through our secure online lending platform. Submitting an application does not obligate you and is subject to credit approval.</p>
+<section style="padding:44px 0 10px;">
+  <div class="wrap" style="text-align:center;">
+    <span class="eyebrow">Why the Call Beats a Form</span>
+    <h2 style="margin:10px 0 26px;">One short call. The broker does the shopping.</h2>
+    <div class="vstack reveal in">
+      <div class="vi"><span class="tick">&#10003;</span><span><b>A real, named broker</b> - not a call center - compares HELOC, home equity loan, and cash-out options across multiple lenders to find the best fit.</span></div>
+      <div class="vi"><span class="tick">&#10003;</span><span><b>Self-employed friendly</b> - including bank-statement income that many lenders turn away.</span></div>
+      <div class="vi"><span class="tick">&#10003;</span><span><b>No obligation, no credit impact</b> - the estimate and the call involve no credit pull.</span></div>
+      <div class="vi"><span class="tick">&#10003;</span><span><b>Answers in minutes</b> - real numbers, honest trade-offs, and a clear next step.</span></div>
+    </div>
+    <div style="margin-top:26px;display:flex;flex-direction:column;align-items:center;gap:10px;">
+      <a class="btn-primary" href="#callback" style="width:100%;max-width:320px;text-align:center;">Get my callback</a>
+      <span style="font-size:13px;color:var(--stone-400);">Callback typically within minutes, during business hours.</span>
     </div>
   </div>
 </section>
 
-<section class="lead" id="inquire" style="padding-top:0;">
+<section class="lead" id="callback">
   <div class="wrap">
-    <div class="lead-card reveal">
-      <span class="eyebrow">Not Ready to Apply?</span>
-      <h2>Ask a specialist first.</h2>
-      <p class="sub">Share the basics and get an honest read - whether a HELOC, a home equity loan, or leaving the equity alone is actually your best move.</p>
-      <form class="lead-form" data-sh-form="heloc" data-sh-product="Residential" data-sh-event="lead" data-sh-thanks="/thanks-residential" novalidate method="POST" action="/thanks-residential" data-netlify="true" netlify-honeypot="company_website"><input type="hidden" name="form-name" value="lead"/>
+    <div class="lead-card reveal in">
+      <span class="eyebrow">The 30-Second Step</span>
+      <h2>Get a broker on the phone.</h2>
+      <p class="sub">Six quick fields. A Stonehaven broker calls back - typically within minutes during business hours (Mon&ndash;Fri, ET). No obligation, no credit pull.</p>
+      <form class="lead-form" data-sh-form="heloc-callback" data-sh-product="Residential" data-sh-event="heloc_callback" data-sh-capi data-sh-thanks="/thanks-callback" novalidate method="POST" action="/thanks-callback" data-netlify="true" netlify-honeypot="company_website"><input type="hidden" name="form-name" value="lead"/>
         <input type="text" name="company_website" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true"/>
-        <div class="lf-field"><label for="g-name">Name</label><input id="g-name" type="text" name="name" autocomplete="name" required/></div>
-        <div class="lf-field"><label for="g-email">Email</label><input id="g-email" type="email" name="email" autocomplete="email" required/></div>
-        <div class="lf-field"><label for="g-phone">Phone <span style="text-transform:none;letter-spacing:0;color:#AAB8C7;">(optional)</span></label><input id="g-phone" type="tel" name="phone" autocomplete="tel"/></div>
-        <div class="lf-field"><label for="g-state">Property state</label>
-          <select id="g-state" name="state">
+        <div class="lf-field"><label for="cb-name">Name</label><input id="cb-name" type="text" name="name" autocomplete="name" required/></div>
+        <div class="lf-field"><label for="cb-phone">Phone (for the callback)</label><input id="cb-phone" type="tel" name="phone" autocomplete="tel" required/></div>
+        <div class="lf-field"><label for="cb-email">Email</label><input id="cb-email" type="email" name="email" autocomplete="email" required/></div>
+        <div class="lf-field"><label for="cb-occ">Owner-occupied?</label>
+          <select id="cb-occ" name="owner_occupied">
+            <option value="Yes">Yes - primary residence</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+        <div class="lf-field"><label for="cb-value">Home value est. ($)</label><input id="cb-value" type="number" inputmode="numeric" min="0" name="home_value"/></div>
+        <div class="lf-field"><label for="cb-balance">Mortgage balance est. ($)</label><input id="cb-balance" type="number" inputmode="numeric" min="0" name="mortgage_balance"/></div>
+        <div class="lf-field full"><label for="cb-state">Property state</label>
+          <select id="cb-state" name="state">
             <option value="Georgia">Georgia</option>
             <option value="Alabama">Alabama</option>
             <option value="Tennessee">Tennessee</option>
@@ -139,105 +123,83 @@
             <option value="Other">Other</option>
           </select>
         </div>
-        <div class="lf-field full"><label for="g-use">What's the equity for?</label>
-          <select id="g-use" name="use">
-            <option value="Renovation">Renovation</option>
-            <option value="Debt consolidation">Debt consolidation</option>
-            <option value="Investment">Investment</option>
-            <option value="Standby flexibility">Standby flexibility</option>
-            <option value="Other">Other</option>
-          </select>
-        </div>
         <div class="lead-actions">
-          <span class="note">No spam, no credit pull at this stage. By submitting, you agree Stonehaven may contact you about your inquiry by phone, email or text. Consent is not a condition of service.</span>
-          <button type="submit" class="lead-submit">Send my details</button>
+          <span class="note">No credit pull at this stage. By submitting, the visitor agrees Stonehaven may make contact about this inquiry by phone, email or text. Consent is not a condition of service.</span>
+          <button type="submit" class="lead-submit" style="font-size:16px;">Call me back</button>
         </div>
       </form>
     </div>
   </div>
 </section>
 
-<section class="faq">
-  <div class="wrap">
-    <div class="head reveal"><span class="eyebrow">Questions</span><h2>Before you draw</h2></div>
-    <div class="faq-list reveal">
-      <details class="faq-item"><summary class="faq-q">Does a HELOC change my existing mortgage?</summary><div class="faq-a"><p>No - it's a separate second lien behind your current mortgage, which keeps its rate, term, and payment untouched. That's the core reason HELOCs surged when first-mortgage rates rose: homeowners access equity without repricing the loan they're glad they have.</p></div></details>
-      <details class="faq-item"><summary class="faq-q">Do I pay interest on the whole line?</summary><div class="faq-a"><p>Only on what you've actually drawn. A $150,000 line with $20,000 drawn accrues interest on $20,000 - the rest is standby capacity. Some lenders have minimum draws or inactivity fees, which is exactly the fine print a specialist reads with you before you sign.</p></div></details>
-      <details class="faq-item"><summary class="faq-q">How much line can I get?</summary><div class="faq-a"><p>Lenders cap your combined loan-to-value - all home-secured debt against the home's value - commonly somewhere in the 80–90% range, alongside credit and income review. The calculator above shows the arithmetic for any cap you enter; underwriting sets the real one.</p></div></details>
-      <details class="faq-item"><summary class="faq-q">HELOC or cash-out refinance?</summary><div class="faq-a"><p>Usually decided by your current first-mortgage rate. If it's below today's market, a cash-out refinance repricing your whole balance is expensive money; the HELOC protects the old rate and prices only the new draw. If your existing rate is high anyway, cash-out can win. Five minutes with both numbers settles it.</p></div></details>
+<section style="padding:40px 0 6px;">
+  <div class="wrap" style="text-align:center;">
+    <span class="eyebrow">Straight Answers</span>
+    <h2 style="margin:10px 0 22px;">Three things everyone asks.</h2>
+    <div class="qa reveal in">
+      <p><b>Will this reset the existing mortgage rate?</b> No - a HELOC is a separate second lien; the current mortgage and its rate don't change.</p>
+      <p><b>Does checking affect credit?</b> No - the estimate and the broker call involve no credit pull.</p>
+      <p><b>How fast are funds available?</b> Often a few weeks from a complete application - the broker gives a real timeline on the first call.</p>
+    </div>
+    <div style="margin-top:22px;display:flex;flex-direction:column;align-items:center;gap:10px;">
+      <a class="btn-primary" href="#callback" style="width:100%;max-width:320px;text-align:center;">Talk to a broker</a>
+      <span style="font-size:13px;color:var(--stone-400);">Typically minutes to a callback, during business hours.</span>
+    </div>
+  </div>
+</section>
+
+<section style="padding:38px 0 54px;">
+  <div class="wrap" style="text-align:center;">
+    <div class="reveal in" style="max-width:640px;margin:0 auto;background:#fff;border:1px solid rgba(20,35,50,.08);padding:30px 28px;">
+      <div style="display:flex;gap:18px;align-items:center;justify-content:center;flex-wrap:wrap;">
+        <div aria-hidden="true" style="width:64px;height:64px;border-radius:50%;flex:0 0 64px;background:#142332;color:#B08230;display:flex;align-items:center;justify-content:center;font-family:'Cormorant',serif;font-size:24px;">DM</div>
+        <div style="text-align:left;">
+          <p style="margin:0;font-family:'Cormorant',serif;font-size:20px;color:#142332;"><b>Dawn M. Mu&ntilde;oz</b></p>
+          <p style="margin:2px 0 0;font-size:13px;color:#B08230;">Co-Founder · Residential Broker · 20+ years in mortgage operations</p>
+        </div>
+      </div>
+      <p style="margin:18px 0 0;font-size:12px;color:var(--stone-400);line-height:1.7;">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" style="vertical-align:-2px;" role="img" aria-label="Equal Housing Opportunity"><path d="M12 3 2 10h3v11h14V10h3L12 3z" stroke="#44546A" stroke-width="1.6"/><path d="M8 13.5h8M8 17h8" stroke="#44546A" stroke-width="1.6"/></svg>
+        Equal Housing Opportunity · Stonehaven Lending · NMLS #1752355<br/>
+        GA Residential Mortgage Licensee #19721 · MLO #169068 · AL #22874 · TN #165060 · FL #MBR3925 · NC #B-198926<br/>
+        Estimates only - subject to verification, appraisal, and lender approval. Stonehaven Lending is a mortgage brokerage, not a direct lender; financing is arranged through third-party capital providers. HELOC rates are typically variable and payments may increase. Program availability varies by state. <a href="https://www.nmlsconsumeraccess.org/EntityDetails.aspx/COMPANY/1752355" style="color:inherit;text-decoration:underline;" rel="noopener">NMLS Consumer Access</a> · <a href="/privacy" style="color:inherit;text-decoration:underline;">Privacy</a></p>
     </div>
   </div>
 </section>
 </main>
-<footer>
-  <div class="wrap">
-    <div class="foot-top">
-      <div class="foot-brand">
-        <div class="fb"><img src="assets/mark.png" width="26" height="26" alt="" loading="lazy"/><span>Stonehaven Lending</span></div>
-        <p>Residential and commercial real estate financing, arranged through third-party capital providers - commercial programs nationwide; residential in GA, AL, TN, FL &amp; NC.</p>
-        <address class="foot-nap">Stonehaven Lending · 10 Roswell Street, Suite 102, Alpharetta, GA 30009 · <a href="mailto:office@stonehavencre.com">office@stonehavencre.com</a></address>
-      </div>
-      <div class="foot-nav">
-        <div class="col"><h5>Lending</h5><a href="/commercial">Commercial</a><a href="/sba">SBA</a><a href="/dscr">DSCR</a><a href="/residential">Residential</a></div>
-        <div class="col"><h5>Resources</h5><a href="/resources/sba">SBA Resources</a><a href="/resources/commercial">CRE Resources</a><a href="/resources/residential">Home Loan Resources</a></div>
-        <div class="col"><h5>Firm</h5><a href="/">Overview</a><a href="/management">Management</a><a href="/contact">Contact</a><a href="/privacy">Privacy Policy</a></div>
-      </div>
-    </div>
-    <div class="foot-bottom"><p>© 2026 Stonehaven Lending · NMLS #1752355. All rights reserved.</p><p>Commercial nationwide · Residential in GA, AL, TN, FL &amp; NC.</p></div>
-    <p class="foot-disc">Stonehaven Lending is a real estate capital advisory and brokerage firm, not a direct lender; financing is arranged through third-party capital providers and remains subject to lender underwriting, documentation, program eligibility, and applicable licensing. Calculator results are illustrative and educational, not an approval, offer, line amount, rate quote, or commitment to lend. HELOC rates are typically variable and payments may increase. Residential mortgage programs are offered in Georgia (Residential Mortgage Licensee #19721 · MLO #169068), Alabama (#22874), Tennessee (#165060), Florida (#MBR3925), and North Carolina (#B-198926). Program availability varies by state. Equal Housing Opportunity. Stonehaven Lending NMLS #1752355 · <a href="https://www.nmlsconsumeraccess.org/EntityDetails.aspx/COMPANY/1752355" style="color:inherit;text-decoration:underline;" rel="noopener">NMLS Consumer Access</a>.</p>
-  </div>
-</footer>
+
+<div class="heloc-sticky"><a href="#callback">&#9742;&nbsp; Get my callback</a></div>
+
 <script>
 (function(){
   "use strict";
   var $=function(id){return document.getElementById(id);};
   var fired=false;
-  function money(n){return "$"+Math.round(n).toLocaleString("en-US");}
-  // Apply URL is config-driven for the branded-link swap; buttons fire a
-  // trackable event before the redirect.
-  function wireApply(id){
-    var a=$(id); if(!a) return;
-    var cfg=window.SH_CONFIG&&window.SH_CONFIG.helocApplyUrl;
-    if(cfg){
-      a.href=cfg; a.textContent="Start my application";
-      var disc=$("heloc-apply-disc"); if(disc)disc.style.display="";
+  function moneyK(n){ if(n<=0)return "$0"; return "$"+Math.round(n/1000).toLocaleString("en-US")+"k"; }
+  function est(){
+    var H=window.SH_HELOC; if(!H) return;
+    var v=+$("e-value").value||0, b=+$("e-balance").value||0;
+    if(v<=0){$("e-range").textContent="-";return;}
+    var lo=H.availableEquity(v,b,80), hi=H.availableEquity(v,b,90);
+    if(!lo||!hi)return;
+    if(hi.available<=0){
+      $("e-range").textContent="$0";
+      $("e-verdict").textContent="no headroom at common caps";
+      $("e-note").textContent="At common lender caps there's no room above the balance today - a broker can still walk through options and timing on a quick call.";
+    } else {
+      $("e-range").textContent=moneyK(lo.available)+" – "+moneyK(hi.available);
+      $("e-verdict").textContent="potentially accessible";
+      $("e-note").textContent="Headroom at common 80–90% combined loan-to-value caps. A broker confirms the real number on a quick call.";
     }
-    a.addEventListener("click",function(){ if(window.shTrack)window.shTrack("heloc_apply_click",{page:"heloc"}); });
-  }
-  function calcLine(){
-    var H=window.SH_HELOC; if(!H) return;
-    var v=+$("h-value").value||0, b=+$("h-balance").value||0, c=+$("h-cltv").value||85;
-    if(v<=0){$("h-avail").textContent="-";return;}
-    var a=H.availableEquity(v,b,c);
-    if(!a)return;
-    $("h-avail").textContent=money(a.available);
-    $("h-equity").textContent=money(a.currentEquity);
-    $("h-max").textContent=money(a.maxTotal);
-    $("h-note").textContent=a.available<=0
-      ? "At this CLTV cap there's no room above the current balance - equity growth or paydown changes that over time."
-      : "Illustrative headroom at your entered cap - underwriting sets the real line.";
-    syncAbout();
+    if($("cb-value") && !$("cb-value").dataset.touched) $("cb-value").value=v;
+    if($("cb-balance") && !$("cb-balance").dataset.touched) $("cb-balance").value=b;
+    var form=document.querySelector('form[data-sh-form="heloc-callback"]');
+    if(form)form.setAttribute("data-sh-about-prefix","[HELOC Callback] est range "+$("e-range").textContent+" on value "+moneyK(v)+" / balance "+moneyK(b));
     if(!fired&&window.shTrack){fired=true;window.shTrack("calc_used",{page:"heloc"});}
   }
-  function calcPay(){
-    var H=window.SH_HELOC; if(!H) return;
-    var d=+$("p-draw").value||0, r=+$("p-rate").value||0, y=+$("p-years").value||20;
-    if(d<=0||r<=0){$("p-io").textContent="-";return;}
-    var io=H.interestOnlyPayment(d,r), rp=H.repaymentPayment(d,r,y);
-    $("p-io").textContent=money(io)+"/mo";
-    $("p-repay").textContent=money(rp)+"/mo";
-    $("p-shock").textContent="+"+money(rp-io)+"/mo";
-    $("p-note").textContent="When the draw period ends, "+money(io)+" becomes "+money(rp)+" on this balance - budget for the second number, enjoy the first.";
-    syncAbout();
-    if(!fired&&window.shTrack){fired=true;window.shTrack("calc_used",{page:"heloc"});}
-  }
-  function syncAbout(){
-    var form=document.querySelector('form[data-sh-form="heloc"]');
-    if(form)form.setAttribute("data-sh-about-prefix","[HELOC] available est "+$("h-avail").textContent+" · draw "+($("p-draw").value?money(+$("p-draw").value):"-")+" · io "+$("p-io").textContent+" / repay "+$("p-repay").textContent);
-  }
-  ["h-value","h-balance","h-cltv"].forEach(function(id){$(id).addEventListener("input",calcLine);});
-  ["p-draw","p-rate","p-years"].forEach(function(id){$(id).addEventListener("input",calcPay);});
-  document.addEventListener("DOMContentLoaded",function(){wireApply("heloc-apply-hero");wireApply("heloc-apply");calcLine();calcPay();});
+  ["e-value","e-balance"].forEach(function(id){$(id).addEventListener("input",est);});
+  ["cb-value","cb-balance"].forEach(function(id){var el=$(id);if(el)el.addEventListener("input",function(){el.dataset.touched="1";});});
+  document.addEventListener("DOMContentLoaded",est);
 })();
 </script>
 </body></html>
