@@ -67,4 +67,4 @@
 /downloads/* / 410
 
 # Function sources are bundled at /.netlify/functions/* - never serve the raw files
-/netlify/* / 404
+/netlify/* / 404!
