@@ -41,6 +41,12 @@ Key facts:
 - /management : the firm founders (Dawn Munoz, Chris De Leeuw)
 
 ## Residential
+- /residential/buy : purchase paths - conventional, FHA, VA - compared honestly
+- /residential/refinance : when a refinance makes sense - break-even framing
+- /residential/fha : FHA loans explained - 3.5% down for qualifying credit, MIP trade stated plainly
+- /residential/va : VA loans for eligible veterans - zero down, no monthly MI, funding fee explained
+- /mortgage-calculator : full PITI payment + affordability calculator (deterministic math)
+- /refinance-calculator : refinance break-even calculator (deterministic math)
 - /residential : residential home loans hub - purchase, refinance, FHA & VA programs (GA, AL, TN, FL, NC), arranged through third-party capital providers
 
 ## Resources (editorial guides and calculators, English)

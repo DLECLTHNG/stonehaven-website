@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Refinance Calculator - Break-Even Math | Stonehaven</title>
+<meta name="description" content="Should you refinance? Closing costs divided by monthly savings equals your break-even month - judged against how long you'll actually keep the home. Honest, instant."/>
+<link rel="canonical" href="https://stonehavencre.com/refinance-calculator"/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="Stonehaven Lending"/>
+<meta property="og:title" content="Refinance Calculator - Break-Even Math"/>
+<meta property="og:description" content="The refinance decision, decided the honest way: break-even vs. how long you'll stay."/>
+<meta property="og:url" content="https://stonehavencre.com/refinance-calculator"/>
+<meta property="og:image" content="https://stonehavencre.com/assets/og-logo.png"/>
+<link rel="icon" type="image/png" href="assets/mark.png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+<link rel="stylesheet" href="funnel.css"/>
+<noscript><style>.reveal{opacity:1 !important;transform:none !important;}</style></noscript>
+<script src="js/site-config.js?v=4" defer></script>
+<script src="js/funnel.js?v=4" defer></script>
+<script src="js/residential-calc.js?v=1"></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://stonehavencre.com/"}, {"@type": "ListItem", "position": 2, "name": "Residential", "item": "https://stonehavencre.com/residential"}, {"@type": "ListItem", "position": 3, "name": "Refinance Calculator", "item": "https://stonehavencre.com/refinance-calculator"}]}</script>
+</head>
+<body><noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=4039555362846500&ev=PageView&noscript=1" alt=""/></noscript><header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a href="/" class="brand" aria-label="Stonehaven Lending home">
+      <img src="assets/mark.png" width="30" height="30" alt="Stonehaven Lending"/>
+      <span class="bt"><span class="b1">Stonehaven</span><span class="b2">Lending</span></span>
+    </a>
+    <nav class="links" id="links" aria-label="Primary">
+      <a href="/commercial" class="line">Commercial</a>
+      <a href="/sba" class="line">SBA</a>
+      <a href="/dscr" class="line">DSCR</a>
+      <a href="/residential" class="line active">Residential</a>
+      <a href="/management" class="line">About Us</a>
+      <a href="/contact" class="line">Contact</a>
+    </nav>
+    <button class="menu-toggle" id="toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<main>
+<section class="funnel-hero">
+  <span class="eyebrow">Residential · Refinance Calculator</span>
+  <h1>Refinance <em>Calculator.</em></h1>
+  <p>One honest question decides most refinances: do the savings repay the costs before you leave the house? Thirty seconds, no credit pull, no teaser rates.</p>
+</section>
+<div class="proof-strip"><span><b>Break-even math</b> - the whole decision</span><span><b>No teaser rates</b> - your estimates</span><span><b>No credit pull</b> at this stage</span><span><b>GA · AL · TN · FL · NC</b> residential</span></div>
+
+<section class="tight">
+  <div class="wrap">
+    <div class="calc-wrap reveal">
+      <div class="calc-inputs">
+        <h3>Your refinance</h3>
+        <div class="calc-grid">
+          <div class="lf-field"><label for="r-current">Current monthly P&amp;I ($)</label><input id="r-current" type="number" inputmode="numeric" min="0" value="2600"/></div>
+          <div class="lf-field"><label for="r-new">New monthly P&amp;I est. ($)</label><input id="r-new" type="number" inputmode="numeric" min="0" value="2400"/></div>
+          <div class="lf-field"><label for="r-costs">Closing costs est. ($)</label><input id="r-costs" type="number" inputmode="numeric" min="0" value="6000"/></div>
+          <div class="lf-field"><label for="r-stay">Years you'll keep the home</label><input id="r-stay" type="number" inputmode="numeric" min="1" max="40" value="7"/></div>
+        </div>
+      </div>
+      <div class="calc-result" aria-live="polite">
+        <span class="eyebrow">Break-Even Point</span>
+        <div class="ratio" id="r-months">-</div>
+        <div class="verdict" id="r-verdict"></div>
+        <div class="calc-sub">
+          <div class="row"><span>Monthly savings</span><b id="r-save">-</b></div>
+          <div class="row"><span>Net over your stay</span><b id="r-net">-</b></div>
+        </div>
+        <p class="calc-note" id="r-note">Enter your figures - the break-even updates as you type.</p>
+      </div>
+    </div>
+    <p class="fine">Break-even = closing costs ÷ monthly savings; net over your stay = savings for the months you'll keep the home, minus costs. Compare payments of the same kind (principal &amp; interest against principal &amp; interest) - and remember that "no-cost" refinances price the costs into the rate. Term changes and cash-out change the comparison; a specialist prices those properly. Estimates are educational, not an approval, offer, rate quote or guarantee. See <a href="/calculation-methodology" style="color:inherit;text-decoration:underline;">how these figures are calculated</a>. Want the four real reasons to refinance? <a href="/residential/refinance" style="color:inherit;text-decoration:underline;">Read the refinance page</a>.</p>
+  </div>
+</section>
+
+<section class="lead" id="review">
+  <div class="wrap">
+    <div class="lead-card reveal">
+      <span class="eyebrow">The Real Numbers</span>
+      <h2>Have a specialist price it for real.</h2>
+      <p class="sub">Current balance, payment, and goal - a specialist replies personally within one business day with an honest read on whether the math works for your file.</p>
+      <form class="lead-form" data-sh-form="refinance-calculator" data-sh-product="Residential" data-sh-event="lead" data-sh-thanks="/thanks-quote" novalidate method="POST" action="/thanks-quote" data-netlify="true" netlify-honeypot="company_website"><input type="hidden" name="form-name" value="lead"/>
+        <input type="text" name="company_website" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true"/>
+        <div class="lf-field"><label for="g-email">Email</label><input id="g-email" type="email" name="email" autocomplete="email" required/></div>
+        <div class="lf-field"><label for="g-phone">Phone <span style="text-transform:none;letter-spacing:0;color:#AAB8C7;">(optional)</span></label><input id="g-phone" type="tel" name="phone" autocomplete="tel"/></div>
+        <div class="lf-field full"><label for="g-state">Property state</label>
+          <select id="g-state" name="state">
+            <option value="Georgia">Georgia</option>
+            <option value="Alabama">Alabama</option>
+            <option value="Tennessee">Tennessee</option>
+            <option value="Florida">Florida</option>
+            <option value="North Carolina">North Carolina</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div class="lead-actions">
+          <span class="note">No spam, no credit pull at this stage. By submitting, you agree Stonehaven may contact you about your inquiry by phone, email or text. Consent is not a condition of service.</span>
+          <button type="submit" class="lead-submit">Send my scenario</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="wrap">
+    <div class="head reveal"><span class="eyebrow">Questions</span><h2>Before you run the numbers</h2></div>
+    <div class="faq-list reveal">
+      <details class="faq-item"><summary class="faq-q">What counts as closing costs?</summary><div class="faq-a"><p>Lender fees, title and settlement charges, the appraisal, and recording costs - the money it takes to manufacture the new loan. Prepaid escrows (taxes and insurance you'd owe anyway) aren't really a cost of refinancing, so a fair break-even excludes them. Your Loan Estimate itemizes all of it.</p></div></details>
+      <details class="faq-item"><summary class="faq-q">Is a "no-cost" refinance really free?</summary><div class="faq-a"><p>No - the costs are priced into a higher rate. That trade can genuinely make sense for a short expected stay, but it's a trade, not a gift. Run this calculator both ways and the difference becomes visible.</p></div></details>
+      <details class="faq-item"><summary class="faq-q">What if I'm changing the term or taking cash out?</summary><div class="faq-a"><p>Then payment-vs-payment stops being apples to apples - a shorter term can raise the payment while saving enormous interest, and cash-out is a borrowing decision, not a savings one. Those cases deserve a real side-by-side, which is exactly what a specialist prepares.</p></div></details>
+    </div>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <div class="fb"><img src="assets/mark.png" width="26" height="26" alt="" loading="lazy"/><span>Stonehaven Lending</span></div>
+        <p>Residential and commercial real estate financing, arranged through third-party capital providers - commercial programs nationwide; residential in GA, AL, TN, FL &amp; NC.</p>
+        <address class="foot-nap">Stonehaven Lending · 10 Roswell Street, Suite 102, Alpharetta, GA 30009 · <a href="mailto:office@stonehavencre.com">office@stonehavencre.com</a></address>
+      </div>
+      <div class="foot-nav">
+        <div class="col"><h5>Lending</h5><a href="/commercial">Commercial</a><a href="/sba">SBA</a><a href="/dscr">DSCR</a><a href="/residential">Residential</a></div>
+        <div class="col"><h5>Resources</h5><a href="/resources/sba">SBA Resources</a><a href="/resources/commercial">CRE Resources</a></div>
+        <div class="col"><h5>Firm</h5><a href="/">Overview</a><a href="/management">Management</a><a href="/contact">Contact</a><a href="/privacy">Privacy Policy</a></div>
+      </div>
+    </div>
+    <div class="foot-bottom"><p>© 2026 Stonehaven Lending · NMLS #1752355. All rights reserved.</p><p>Commercial nationwide · Residential in GA, AL, TN, FL &amp; NC.</p></div>
+    <p class="foot-disc">Stonehaven Lending is a real estate capital advisory and brokerage firm, not a direct lender; financing is arranged through third-party capital providers and remains subject to lender underwriting, documentation, program eligibility, and applicable licensing. Calculator results are illustrative and educational, not an approval, offer, rate quote, qualification, or commitment to lend. Residential mortgage programs are offered in Georgia (Residential Mortgage Licensee #19721 · MLO #169068), Alabama (#22874), Tennessee (#165060), Florida (#MBR3925), and North Carolina (#B-198926). Program availability varies by state. Equal Housing Opportunity. Stonehaven Lending NMLS #1752355 · <a href="https://www.nmlsconsumeraccess.org/EntityDetails.aspx/COMPANY/1752355" style="color:inherit;text-decoration:underline;" rel="noopener">NMLS Consumer Access</a>.</p>
+  </div>
+</footer>
+<script>
+(function(){
+  "use strict";
+  var $=function(id){return document.getElementById(id);};
+  var fired=false;
+  function money(n){return "$"+Math.round(Math.abs(n)).toLocaleString("en-US");}
+  function calc(){
+    var R=window.SH_RES; if(!R) return;
+    var cur=+$("r-current").value||0, nw=+$("r-new").value||0,
+        costs=+$("r-costs").value||0, stay=+$("r-stay").value||0;
+    var out={m:$("r-months"),v:$("r-verdict"),note:$("r-note")};
+    if(cur<=0||nw<=0){out.m.textContent="-";out.v.textContent="";return;}
+    var b=R.breakEven(costs,cur,nw);
+    if(!b){
+      out.m.textContent="—";
+      out.v.className="verdict short";
+      out.v.textContent="No monthly savings at these numbers";
+      $("r-save").textContent="-";$("r-net").textContent="-";
+      out.note.textContent="The new payment isn't lower, so break-even never arrives - unless the goal is structural (shorter term, fixing a rate, cash out), which is a different comparison a specialist can price.";
+      return;
+    }
+    var months=b.months, stayMo=stay*12;
+    var net=b.monthlySavings*stayMo-costs;
+    out.m.textContent=(Math.round(months*10)/10)+" mo";
+    $("r-save").textContent=money(b.monthlySavings)+"/mo";
+    $("r-net").textContent=(net>=0?"+":"−")+money(net);
+    out.v.className="verdict "+(months<=stayMo*0.5?"strong":months<=stayMo?"workable":"short");
+    out.v.textContent=months<=stayMo*0.5?"Breaks even well inside your stay"
+      :months<=stayMo?"Breaks even - but the margin is thin"
+      :"Breaks even AFTER you plan to leave";
+    out.note.textContent=months<=stayMo
+      ? "Past month "+Math.ceil(months)+", every month in the home is money kept. Over "+stay+" years that's a net "+(net>=0?"gain":"loss")+" of "+money(net)+"."
+      : "At these numbers you'd leave before the refinance pays for itself - a net loss of "+money(net)+". A lower-cost structure, or staying put, beats it.";
+    var form=document.querySelector('form[data-sh-form="refinance-calculator"]');
+    if(form)form.setAttribute("data-sh-about-prefix","[Refi Calculator] "+money(cur)+" -> "+money(nw)+"/mo · costs "+money(costs)+" · break-even "+(Math.round(months*10)/10)+" mo vs "+stay+" yr stay");
+    if(!fired&&window.shTrack){fired=true;window.shTrack("calc_used",{page:"refinance-calculator"});}
+  }
+  ["r-current","r-new","r-costs","r-stay"].forEach(function(id){$(id).addEventListener("input",calc);});
+  document.addEventListener("DOMContentLoaded",calc);
+})();
+</script>
+</body></html>
