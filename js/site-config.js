@@ -20,6 +20,10 @@ window.SH_CONFIG = {
   phoneDisplay: "",    /* e.g. "+1 (555) 123-4567" */
   email: "office@stonehavencre.com",
 
+  /* HELOC application URL (swap to the Stonehaven-branded invite link
+     when issued - one edit updates both /heloc CTA buttons). */
+  helocApplyUrl: "https://accessheloc.com/invite/home-lenders-of-georgia-llc/dawn-munoz-2/signup",
+
   /* Network behavior for form delivery */
   submitTimeoutMs: 15000
 };

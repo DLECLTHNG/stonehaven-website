@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="styles.css"/>
 <link rel="stylesheet" href="funnel.css"/>
 <noscript><style>.reveal{opacity:1 !important;transform:none !important;}</style></noscript>
-<script src="js/site-config.js?v=4" defer></script>
+<script src="js/site-config.js?v=5" defer></script>
 <script src="js/funnel.js?v=4" defer></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://stonehavencre.com/"}, {"@type": "ListItem", "position": 2, "name": "Calculation Methodology", "item": "https://stonehavencre.com/calculation-methodology"}]}</script>
 </head>
@@ -54,6 +54,8 @@
 <p>The payment view computes principal and interest with the standard amortization formula at the user-entered rate and term, then adds annual taxes ÷ 12, annual insurance ÷ 12, monthly HOA, and mortgage insurance entered as a user-supplied annual percent of the loan ÷ 12 - the calculator never supplies an MI rate. The affordability view multiplies gross monthly income by the user-adjustable housing and total-debt ratios (defaults 28/36, labeled as a common convention), takes the lesser after subtracting monthly debts, subtracts the user's tax/insurance/HOA estimate to reach a maximum principal-and-interest figure, inverts the amortization formula into a loan amount, and grosses up by the down-payment percentage into an illustrative price. It reports which ratio binds.</p>
 <h2>Refinance break-even calculator (/refinance-calculator)</h2>
 <p>Break-even months = closing costs ÷ (current monthly payment − new monthly payment); the net figure multiplies monthly savings by the user's expected months in the home and subtracts costs. If the new payment is not lower, the calculator says so rather than inventing a benefit. Formulas are implemented in js/residential-calc.js with fixture tests.</p>
+<h2>HELOC calculators (/heloc)</h2>
+<p>The available-line view computes home value × the user-entered maximum combined loan-to-value percentage, minus the current mortgage balance, floored at zero - CLTV caps vary by lender and are set at underwriting. The payment view models the draw-period payment as interest-only on the drawn balance (balance × annual rate ÷ 12) and the repayment-period payment as full amortization of that balance over the user-entered repayment years, and reports the step-up between the two. Rates are always user estimates. Formulas are implemented in js/heloc-calc.js with fixture tests.</p>
 <h2>What these calculators do not determine</h2>
 <p>Eligibility, approval, pricing, leverage limits, reserve requirements, rent-evidence treatment, property eligibility or closing timelines. Those are determined by the selected third-party lender through underwriting. Stonehaven arranges financing and performs preliminary analysis; the selected lender makes the credit decision.</p>
 <h2>Prepayment explainer</h2>

@@ -47,6 +47,14 @@ Key facts:
 - /residential/va : VA loans for eligible veterans - zero down, no monthly MI, funding fee explained
 - /mortgage-calculator : full PITI payment + affordability calculator (deterministic math)
 - /refinance-calculator : refinance break-even calculator (deterministic math)
+- /heloc : HELOC explained - available-line and two-phase payment calculators, honest risk section
+- /residential/georgia : Georgia home loans - Alpharetta HQ, GA licensing, statewide
+- /resources/residential : home loan resource center (guides by Dawn M. Muñoz)
+- /resources/fha-vs-conventional : the mortgage-insurance math that decides FHA vs conventional
+- /resources/how-much-home : DTI ratios and the honest affordability math
+- /resources/refinance-break-even : the only math that decides a refinance
+- /resources/first-time-buyer-checklist : documents and order of operations
+- /resources/dscr-vs-conventional : which loan fits a rental - both desks compared
 - /residential : residential home loans hub - purchase, refinance, FHA & VA programs (GA, AL, TN, FL, NC), arranged through third-party capital providers
 
 ## Resources (editorial guides and calculators, English)
