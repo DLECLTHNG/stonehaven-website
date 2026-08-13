@@ -46,7 +46,7 @@
   <span class="eyebrow">Residential · HELOC</span>
   <h1>Your equity, on tap - <br><em>without touching your mortgage.</em></h1>
   <p>A home equity line of credit sits behind the mortgage you already have - draw what you need, when you need it, and keep the first-mortgage rate you're glad you locked. Residential programs are available in Georgia, Alabama, Tennessee, Florida, and North Carolina.</p>
-  <div style="margin-top:26px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap;"><a class="btn-primary" id="heloc-apply-hero" href="https://accessheloc.com/invite/home-lenders-of-georgia-llc/dawn-munoz-2/signup" rel="noopener">Start my application</a><a class="btn-quiet" href="#numbers">See my numbers first</a></div>
+  <div style="margin-top:26px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap;"><a class="btn-primary" id="heloc-apply-hero" href="#inquire" rel="noopener">Get started</a><a class="btn-quiet" href="#numbers">See my numbers first</a></div>
 </section>
 <div class="proof-strip"><span><b>Keep your first mortgage</b> untouched</span><span><b>Draw as needed</b> - interest on what you use</span><span><b>No teaser rates</b> here, ever</span><span><b>GA · AL · TN · FL · NC</b></span></div>
 
@@ -109,10 +109,10 @@
   <div class="wrap">
     <div class="lead-card reveal" style="text-align:center;">
       <span class="eyebrow">Ready?</span>
-      <h2>Apply securely online.</h2>
-      <p class="sub">The application takes minutes, runs through our secure lending platform, and a specialist reviews every file personally. Prefer to talk it through first? That works too.</p>
-      <div style="margin-top:22px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap;"><a class="btn-primary" id="heloc-apply" href="https://accessheloc.com/invite/home-lenders-of-georgia-llc/dawn-munoz-2/signup" rel="noopener">Start my application</a><a class="btn-quiet" href="/book?product=Residential">Talk to a specialist first</a></div>
-      <p style="margin-top:18px;font-size:12px;color:var(--stone-400);">Applications are processed through our secure online lending platform. Submitting an application does not obligate you and is subject to credit approval.</p>
+      <h2>Take the next step.</h2>
+      <p class="sub">A specialist handles your file personally from the first conversation - honest answers on the line, the phases, and whether a HELOC is genuinely your best move.</p>
+      <div style="margin-top:22px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap;"><a class="btn-primary" id="heloc-apply" href="/book?product=Residential" rel="noopener">Book a 15-minute call</a><a class="btn-quiet" href="#inquire">Ask a question instead</a></div>
+      <p id="heloc-apply-disc" style="display:none;margin-top:18px;font-size:12px;color:var(--stone-400);">Applications are processed through our secure online lending platform. Submitting an application does not obligate you and is subject to credit approval.</p>
     </div>
   </div>
 </section>
@@ -197,7 +197,10 @@
   function wireApply(id){
     var a=$(id); if(!a) return;
     var cfg=window.SH_CONFIG&&window.SH_CONFIG.helocApplyUrl;
-    if(cfg)a.href=cfg;
+    if(cfg){
+      a.href=cfg; a.textContent="Start my application";
+      var disc=$("heloc-apply-disc"); if(disc)disc.style.display="";
+    }
     a.addEventListener("click",function(){ if(window.shTrack)window.shTrack("heloc_apply_click",{page:"heloc"}); });
   }
   function calcLine(){

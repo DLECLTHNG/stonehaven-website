@@ -20,9 +20,11 @@ window.SH_CONFIG = {
   phoneDisplay: "",    /* e.g. "+1 (555) 123-4567" */
   email: "office@stonehavencre.com",
 
-  /* HELOC application URL (swap to the Stonehaven-branded invite link
-     when issued - one edit updates both /heloc CTA buttons). */
-  helocApplyUrl: "https://accessheloc.com/invite/home-lenders-of-georgia-llc/dawn-munoz-2/signup",
+  /* HELOC destination (pending owner decision: branded application
+     link vs calendar booking). While empty, /heloc CTAs point to the
+     on-page specialist form and /book. Setting a URL flips both
+     buttons to "Start my application" automatically. */
+  helocApplyUrl: "",
 
   /* Network behavior for form delivery */
   submitTimeoutMs: 15000
