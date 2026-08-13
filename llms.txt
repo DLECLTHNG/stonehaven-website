@@ -18,6 +18,7 @@ Key facts:
 
 - NMLS company ID: 1752355 (nmlsconsumeraccess.org)
 - Office: 10 Roswell Street, Suite 102, Alpharetta, GA 30009
+- Residential mortgage licenses: GA #19721 (MLO #169068), AL #22874, TN #165060, FL #MBR3925, NC #B-198926 - residential programs available in these five states; commercial programs nationwide
 
 ## Core pages
 - [DSCR Loans for Rental Property](https://stonehavencre.com/dscr): pillar guide - definition, lender DSCR vs investor cash flow, scenarios, requirements, risks, 22 FAQs
@@ -38,6 +39,9 @@ Key facts:
 - [Contacto](https://stonehavencre.com/es/contact)
 
 - /management : the firm founders (Dawn Munoz, Chris De Leeuw)
+
+## Residential
+- /residential : residential home loans hub - purchase, refinance, FHA & VA programs (GA, AL, TN, FL, NC), arranged through third-party capital providers
 
 ## Resources (editorial guides and calculators, English)
 - /sba-loan-calculator : SBA 7(a) & 504 structure calculator (deterministic math)
