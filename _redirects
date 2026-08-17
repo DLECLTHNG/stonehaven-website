@@ -87,3 +87,5 @@
 
 # Function sources are bundled at /.netlify/functions/* - never serve the raw files
 /netlify/* / 404!
+/blog/georgia-cash-out-refinance-70-ltv-15-year-conventional-auto-loan-payoff.html /blog/georgia-cash-out-refinance-70-ltv-15-year-conventional-auto-loan-payoff 301!
+/es/blog/georgia-cash-out-refinance-70-ltv-15-year-conventional-auto-loan-payoff.html /es/blog/georgia-cash-out-refinance-70-ltv-15-year-conventional-auto-loan-payoff 301!
