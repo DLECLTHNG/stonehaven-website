@@ -40,3 +40,8 @@ final domain before launch.
 - **Contact email:** `office@stonehavencre.com` (live via Google Workspace).
 - Forms POST to Netlify Forms per `js/funnel.js` (same contract as production);
   the CRM cutover is the `INTAKE_ENDPOINT` constant at the top of that file.
+
+## Spanish copy
+Sentence case, usted, literal accents — see `docs/STYLE-es.md`. Lint before committing Spanish pages:
+
+    node scripts/lint-es-casing.mjs
