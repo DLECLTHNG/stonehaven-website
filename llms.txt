@@ -62,6 +62,7 @@ Key facts:
 - /commercial/mixed-use : mixed-use buildings - underwritten on the commercial/residential blend
 - /commercial/commercial-property : office, industrial, retail, self-storage, hospitality, special-purpose - by asset class
 - Investor 1-4 unit rentals are served by the DSCR desk (/dscr)
+- Spanish mirrors: /es/commercial/multifamily · /es/commercial/mixed-use · /es/commercial/commercial-property
 
 ## Resources (editorial guides and calculators, English)
 - /sba-loan-calculator : SBA 7(a) & 504 structure calculator (deterministic math)
