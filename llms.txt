@@ -40,6 +40,7 @@ Key facts:
 - [Contacto](https://stonehavencre.com/es/contact)
 
 - /management : the firm founders (Dawn Munoz, Chris De Leeuw)
+- /blog : anonymized write-ups of closed transactions (structure and terms; no parties named); Spanish at /es/blog
 
 ## Residential
 - /residential/buy : purchase paths - conventional, FHA, VA - compared honestly
