@@ -16,8 +16,8 @@ window.SH_CONFIG = {
 
   /* Verified contact channels. phone MUST stay empty until a real,
      verified business number exists — empty hides phone UI entirely. */
-  phone: "",           /* e.g. "+15551234567" (E.164, verified only) */
-  phoneDisplay: "",    /* e.g. "+1 (555) 123-4567" */
+  phone: "+14709704979",  /* verified business line, set 2026-08-17 */
+  phoneDisplay: "(470) 970-4979",
   email: "office@stonehavencre.com",
 
   /* Google Calendar booking page ("DISCUSS MY DEAL", 15 min). */
