@@ -2,6 +2,9 @@
 # though the .html file exists in the deploy. Keep indefinitely.
 /book.html /book 301!
 /commercial.html /commercial 301!
+/commercial/multifamily.html /commercial/multifamily 301!
+/commercial/mixed-use.html /commercial/mixed-use 301!
+/commercial/commercial-property.html /commercial/commercial-property 301!
 /contact.html /contact 301!
 /dscr-analyzer.html /dscr-analyzer 301!
 /dscr-review.html /dscr-review 301!

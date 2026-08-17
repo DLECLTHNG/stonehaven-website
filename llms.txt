@@ -57,6 +57,12 @@ Key facts:
 - /resources/dscr-vs-conventional : which loan fits a rental - both desks compared
 - /residential : residential home loans hub - purchase, refinance, FHA & VA programs (GA, AL, TN, FL, NC), arranged through third-party capital providers
 
+## Commercial programs
+- /commercial/multifamily : 5+ unit / apartment financing - agency, bank, bridge; sized on NOI
+- /commercial/mixed-use : mixed-use buildings - underwritten on the commercial/residential blend
+- /commercial/commercial-property : office, industrial, retail, self-storage, hospitality, special-purpose - by asset class
+- Investor 1-4 unit rentals are served by the DSCR desk (/dscr)
+
 ## Resources (editorial guides and calculators, English)
 - /sba-loan-calculator : SBA 7(a) & 504 structure calculator (deterministic math)
 - /commercial-loan-calculator : commercial loan sizing by DSCR and LTV, names the binding constraint
