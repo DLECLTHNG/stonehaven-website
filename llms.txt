@@ -69,3 +69,9 @@ Key facts:
 - /resources/bridge-vs-permanent-financing : when bridge capital earns its cost
 - /resources/commercial-refinance-guide : the four reasons to refinance and the prepayment math
 Guides are written by Christiaan De Leeuw (Stonehaven Lending); calculators use deterministic formulas documented at /calculation-methodology.
+
+## Residencial (Spanish mirror)
+- /es/residential : hub de préstamos de vivienda (compra, refinanciamiento, FHA, VA) - GA, AL, TN, FL, NC
+- /es/residential/buy · /es/residential/refinance · /es/residential/fha · /es/residential/va · /es/residential/georgia
+- /es/mortgage-calculator : calculadora PITI + capacidad de compra · /es/refinance-calculator : punto de equilibrio
+- /es/heloc : HELOC - estimado en 30 segundos, luego llamada de un bróker; conserva la tasa de la hipoteca actual
