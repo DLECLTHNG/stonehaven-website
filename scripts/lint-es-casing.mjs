@@ -25,8 +25,9 @@ const ALLOW = new Set([
   "dscr","sba","fha","va","heloc","nmls","llc","mlo","piti","pitia","ltv","cltv","noi","hoa","irrrl","coe","cdc",
   "cre","utm","ga","al","tn","fl","nc","et","fannie","mae","freddie","mac","hud","apr","tila","reg","z",
   // formal document / product names kept capitalised on purpose
-  "política","privacidad","consumer","access","equal","housing","opportunity","igualdad","oportunidades","vivienda",
+  "consumer","access","equal","housing","opportunity","igualdad","oportunidades","vivienda",
 ]);
+// (Formal document names like "Política de privacidad" are sentence case too - not allow-listed.)
 // Spanish function words that are lowercase mid-sentence anyway
 const SMALL = new Set(["de","del","la","las","el","los","y","o","u","a","en","con","por","para","sobre","sin","al",
   "que","su","sus","un","una","se","lo","ni","e","le","les","me","no","es","ya"]);
@@ -37,7 +38,7 @@ const clean = (w) => w.replace(/^[¿¡("'«]+|[.,:;!?)"'»·]+$/g, "");
 function titleCased(text) {
   // Split into sentences/segments first: a capital is legitimate right after
   // ". ! ? - – — | :" so each segment is judged on its own.
-  const segments = text.replace(/<[^>]+>/g, " ").split(/(?:[.!?:|]|\s[-–—]\s)\s*/);
+  const segments = text.replace(/<[^>]+>/g, " ").split(/(?:[.!?:|]|\s[-–—·]\s)\s*/);
   for (const seg of segments) {
     const words = seg.split(/\s+/).map(clean).filter(w => /[A-Za-zÁÉÍÓÚÑáéíóúñ]/.test(w));
     if (words.length < 2) continue;

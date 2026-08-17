@@ -21,9 +21,10 @@ changes.
 
 **Stays capitalised:** proper nouns (Stonehaven, Georgia, Alpharetta,
 Dawn M. Muñoz), acronyms and program names (DSCR, SBA, FHA, VA, HELOC,
-NMLS, LLC, PITI, EE. UU.), and formal document names (Política de
-Privacidad). A capital is also fine at the start of a new sentence or
-clause inside a string (after `.`, `?`, `!`, `:`, ` - `, `|`).
+NMLS, LLC, PITI, EE. UU.). Formal document names are sentence case too
+(*Política de privacidad*, not *Política de Privacidad*). A capital is also fine at the start of a new sentence or
+clause inside a string (after `.`, `?`, `!`, `:`, ` - `, `|`), and interpunct-separated labels are
+two labels — each takes its own capital: `DSCR · Analizador`, `Residencial · Compra`.
 
 ## Other house rules for Spanish pages
 - Address the reader as **usted**, consistently (imperative: *Hable*, not *Hablar*).
