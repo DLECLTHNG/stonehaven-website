@@ -20,7 +20,7 @@
 <body><noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=4039555362846500&ev=PageView&noscript=1" alt=""/></noscript><header class="nav" id="nav">
   <div class="wrap nav-inner">
     <a href="/" class="brand" aria-label="Stonehaven Lending home">
-      <img src="assets/mark.png" width="30" height="30" alt="Stonehaven Lending"/>
+      <img src="assets/mark.png" width="44" height="44" alt="Stonehaven Lending"/>
       <span class="bt"><span class="b1">Stonehaven</span><span class="b2">Lending</span></span>
     </a>
     <nav class="links" id="links" aria-label="Primary">
@@ -30,7 +30,9 @@
       <a href="/residential" class="line">Residential</a>
       <a href="/management" class="line">About Us</a>
       <a href="/contact" class="line">Contact</a>
+      <a href="tel:+14709704979" class="nav-phone">(470) 970-4979</a>
     </nav>
+    <a href="tel:+14709704979" class="nav-call" aria-label="Call (470) 970-4979">Call</a>
     <button class="menu-toggle" id="toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
   </div>
 </header>
@@ -50,7 +52,7 @@
 <h2>SBA structure calculator (/sba-loan-calculator)</h2>
 <p>The 504 model applies the program's structural rules: borrower injection of 10% of total project cost, plus 5% if the property is special-purpose and 5% if the business is under two years old, capped at 20%; a bank portion modeled at 50% of project cost; and a CDC portion equal to the remainder. Each portion's payment uses the standard amortization formula at the user-entered rate and term. The 7(a) model is a single amortizing loan for project cost minus the entered down payment. Rates are always user estimates - the calculator never supplies market pricing. The rent comparison subtracts entered current rent from the estimated total payment.</p>
 <h2>Commercial sizing calculator (/commercial-loan-calculator)</h2>
-<p>Commercial DSCR is annual net operating income divided by annual debt service. The DSCR-constrained loan converts NOI ÷ 12 ÷ target DSCR into a maximum payment and inverts the amortization formula at the entered rate and term. The LTV-constrained loan is value × maximum LTV. The supported loan is the lesser of the two; the calculator names which constraint binds. Resulting DSCR is recomputed from the supported loan's payment. Formulas are implemented in js/sba-calc.js and js/commercial-calc.js with fixture tests.</p>
+<p>Commercial DSCR is annual net operating income divided by annual debt service. The DSCR-constrained loan converts NOI ÷ 12 ÷ target DSCR into a maximum payment and inverts the amortization formula at the entered rate and term. The LTV-constrained loan is value × maximum LTV. The supported loan is the lesser of the two; the calculator names which limit binds. Resulting DSCR is recomputed from the supported loan's payment. Formulas are implemented in js/sba-calc.js and js/commercial-calc.js with fixture tests.</p>
 <h2>Mortgage payment &amp; affordability calculator (/mortgage-calculator)</h2>
 <p>The payment view computes principal and interest with the standard amortization formula at the user-entered rate and term, then adds annual taxes ÷ 12, annual insurance ÷ 12, monthly HOA, and mortgage insurance entered as a user-supplied annual percent of the loan ÷ 12 - the calculator never supplies an MI rate. The affordability view multiplies gross monthly income by the user-adjustable housing and total-debt ratios (defaults 28/36, labeled as a common convention), takes the lesser after subtracting monthly debts, subtracts the user's tax/insurance/HOA estimate to reach a maximum principal-and-interest figure, inverts the amortization formula into a loan amount, and grosses up by the down-payment percentage into an illustrative price. It reports which ratio binds.</p>
 <h2>Refinance break-even calculator (/refinance-calculator)</h2>
@@ -58,7 +60,7 @@
 <h2>HELOC calculators (/heloc)</h2>
 <p>The available-line view computes home value × the user-entered maximum combined loan-to-value percentage, minus the current mortgage balance, floored at zero - CLTV caps vary by lender and are set at underwriting. The payment view models the draw-period payment as interest-only on the drawn balance (balance × annual rate ÷ 12) and the repayment-period payment as full amortization of that balance over the user-entered repayment years, and reports the step-up between the two. Rates are always user estimates. Formulas are implemented in js/heloc-calc.js with fixture tests.</p>
 <h2>What these calculators do not determine</h2>
-<p>Eligibility, approval, pricing, leverage limits, reserve requirements, rent-evidence treatment, property eligibility or closing timelines. Those are determined by the selected third-party lender through underwriting. Stonehaven arranges financing and performs preliminary analysis; the selected lender makes the credit decision.</p>
+<p>Eligibility, approval, pricing, leverage limits, reserve requirements, rent-evidence treatment, property eligibility or closing timelines. Those are determined by the lender through underwriting. Stonehaven arranges financing and performs preliminary analysis.</p>
 <h2>Prepayment explainer</h2>
 <p>The prepayment module multiplies the entered balance by the step percentage of an illustrative structure for the chosen exit year. Structures vary by lender and state, and some states restrict certain penalties; final loan documents control.</p>
 </div></div></section>
@@ -66,7 +68,7 @@
 <footer>
   <div class="wrap">
     <div class="foot-bottom"><p>&copy; 2026 Stonehaven Lending · NMLS #1752355. All rights reserved.</p><p>10 Roswell Street, Suite 102, Alpharetta, GA 30009</p></div>
-    <p class="foot-disc">Stonehaven Lending is a real estate capital advisory and brokerage firm, not a direct lender; financing is arranged through third-party capital providers and remains subject to lender underwriting, documentation, program availability, and applicable licensing. Calculator results are educational estimates, not an approval, commitment, rate quote or guarantee. Program availability varies by state. Equal Housing Opportunity. Stonehaven Lending NMLS #1752355 · <a href="https://www.nmlsconsumeraccess.org/EntityDetails.aspx/COMPANY/1752355" style="color:inherit;text-decoration:underline;" rel="noopener">NMLS Consumer Access</a>.</p>
+    <p class="foot-disc">Stonehaven Lending is a mortgage brokerage, not a direct lender. Financing is subject to lender underwriting, documentation, program availability, and applicable licensing. Calculator results are educational estimates, not an approval, commitment, rate quote or guarantee. Program availability varies by state. Equal Housing Opportunity. Stonehaven Lending NMLS #1752355 · <a href="https://www.nmlsconsumeraccess.org/EntityDetails.aspx/COMPANY/1752355" style="color:inherit;text-decoration:underline;" rel="noopener">NMLS Consumer Access</a>.</p>
   </div>
 </footer>
 </body></html>
