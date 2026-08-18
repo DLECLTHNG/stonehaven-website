@@ -29,7 +29,7 @@
 <body class="has-sticky"><noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=4039555362846500&ev=PageView&noscript=1" alt=""/></noscript><header class="nav" id="nav">
   <div class="wrap nav-inner">
     <a href="/es/" class="brand" aria-label="Stonehaven Lending inicio">
-      <img src="../assets/mark.png" width="114" height="114" alt="Stonehaven Lending"/>
+      <img src="../assets/mark.png" width="76" height="76" alt="Stonehaven Lending"/>
       <span class="bt"><span class="b1">Stonehaven</span><span class="b2">Lending</span></span>
     </a>
     <nav class="links" id="links" aria-label="Principal">
@@ -47,32 +47,32 @@
 </header>
 <main>
 <section class="funnel-hero">
-  <span class="eyebrow">La mesa del inversionista · Revisión de operación</span>
-  <h1>Sepa si el negocio funciona <br><em>antes</em> de gastar dinero</h1>
-  <p>Calcule los números de las dos maneras - la fórmula del prestamista y su economía real - y envíe el escenario para una revisión preliminar de Stonehaven. Sin obligación, sin consulta de crédito en esta etapa.</p>
+  <span class="eyebrow">Revisión de operación</span>
+  <h1>Sepa si funciona <br><em>antes</em> de gastar</h1>
+  <p>Corra los números y envíe su escenario. Sin consulta de crédito.</p>
 </section>
 <div class="proof-strip"><span><b>Disponibilidad</b> varía por estado</span><span><b>1 día hábil</b> de respuesta</span><span><b>Sin consulta de crédito</b> en esta etapa</span><span><b>Vista prestamista</b> + inversionista</span></div>
 
 <section class="tight" id="analyze" aria-label="Calculadora de análisis">
   <div class="wrap">
-    <div class="head reveal" style="text-align:center;max-width:560px;margin:0 auto 44px;"><span class="eyebrow" style="display:block;margin-bottom:20px;">Paso Uno</span><h2 style="font-family:'Cormorant',serif;font-weight:400;font-size:clamp(28px,3.6vw,42px);line-height:1.12;">Analice la propiedad</h2></div>
+    <div class="head reveal" style="text-align:center;max-width:560px;margin:0 auto 44px;"><span class="eyebrow" style="display:block;margin-bottom:20px;">Paso uno</span><h2 style="font-family:'Cormorant',serif;font-weight:400;font-size:clamp(28px,3.6vw,42px);line-height:1.12;">Analice la propiedad</h2></div>
     <div class="calc-wrap reveal">
       <div class="calc-inputs">
         <h3>La operación</h3>
         <div class="calc-grid">
-          <div class="lf-field"><label for="k-price">Valor / precio ($)<details class="tipd"><summary>i</summary><span class="tip-pop">Precio de compra en una adquisición, o su estimado del valor actual en un refinanciamiento. En underwriting rige la tasación.</span></details></label><input id="k-price" type="number" inputmode="numeric" min="0" value="400000"/></div>
-          <div class="lf-field"><label for="k-loan">Monto del préstamo ($)<details class="tipd"><summary>i</summary><span class="tip-pop">El financiamiento que solicita. Préstamo ÷ valor es su LTV - el apalancamiento afecta elegibilidad y precio.</span></details></label><input id="k-loan" type="number" inputmode="numeric" min="0" value="300000"/></div>
-          <div class="lf-field"><label for="k-rate">Tasa estimada (%)<details class="tipd"><summary>i</summary><span class="tip-pop">Tasa ilustrativa solo para modelar - las tasas reales varían por programa, apalancamiento, crédito y mercado. No es una cotización.</span></details></label><input id="k-rate" type="number" inputmode="decimal" step="0.125" min="0" value="7.25"/></div>
-          <div class="lf-field"><label for="k-amort">Amortización (años)<details class="tipd"><summary>i</summary><span class="tip-pop">Años sobre los que se distribuye el pago. 30 es común en DSCR residencial; amortización más corta sube el pago y baja el DSCR.</span></details></label><input id="k-amort" type="number" inputmode="numeric" min="5" max="40" value="30"/></div>
-          <div class="lf-field full" style="display:flex;align-items:center;gap:10px;"><input id="k-io" type="checkbox" style="width:15px;height:15px;accent-color:var(--brass);"/><label for="k-io" style="margin:0;">Calificación solo interés<details class="tipd"><summary>i</summary><span class="tip-pop">Algunos programas califican con el pago de solo interés, lo que sube el DSCR. El pago amortizado llega después - modele ambos.</span></details></label></div>
-          <div class="lf-field"><label for="k-rent">Renta mensual ($)<details class="tipd"><summary>i</summary><span class="tip-pop">Renta del contrato o renta de mercado esperada. En underwriting suele regir el análisis de renta del tasador - una opinión baja es un cambio de juego común.</span></details></label><input id="k-rent" type="number" inputmode="numeric" min="0" value="3000"/></div>
-          <div class="lf-field"><label for="k-tax">Impuestos anuales ($)<details class="tipd"><summary>i</summary><span class="tip-pop">Use el impuesto posterior a la venta donde aplique reavalúo - no la factura vieja del vendedor.</span></details></label><input id="k-tax" type="number" inputmode="numeric" min="0" value="5400"/></div>
-          <div class="lf-field"><label for="k-ins">Seguro anual ($)<details class="tipd"><summary>i</summary><span class="tip-pop">Prima de póliza de arrendador. En algunos estados esta sola línea decide si la operación cubre.</span></details></label><input id="k-ins" type="number" inputmode="numeric" min="0" value="1800"/></div>
-          <div class="lf-field"><label for="k-hoa">HOA / otros, mensual ($)<details class="tipd"><summary>i</summary><span class="tip-pop">Cuotas de HOA más cualquier otro cargo recurrente que el prestamista cuente en el pago calificante.</span></details></label><input id="k-hoa" type="number" inputmode="numeric" min="0" value="0"/></div>
-          <div class="lf-field"><label for="k-vac">Vacancia (%)<details class="tipd"><summary>i</summary><span class="tip-pop">Supuesto del inversionista para pérdida de cobro entre inquilinos. La fórmula del prestamista la ignora; su cuenta bancaria no.</span></details></label><input id="k-vac" type="number" inputmode="numeric" min="0" max="50" value="5"/></div>
-          <div class="lf-field"><label for="k-mgmt">Administración (%)<details class="tipd"><summary>i</summary><span class="tip-pop">Administración como porcentaje de la renta cobrada - aunque se administre usted mismo, su tiempo no es gratis.</span></details></label><input id="k-mgmt" type="number" inputmode="numeric" min="0" max="30" value="8"/></div>
-          <div class="lf-field"><label for="k-maint">Mantenimiento (%)<details class="tipd"><summary>i</summary><span class="tip-pop">Reparaciones de rutina como porcentaje de la renta. Propiedades más antiguas corren más alto.</span></details></label><input id="k-maint" type="number" inputmode="numeric" min="0" max="30" value="5"/></div>
-          <div class="lf-field"><label for="k-capex">Reserva CapEx (%)<details class="tipd"><summary>i</summary><span class="tip-pop">Apartado para techos, sistemas y rotaciones - los gastos que llegan en años, no en meses.</span></details></label><input id="k-capex" type="number" inputmode="numeric" min="0" max="30" value="5"/></div>
+          <div class="lf-field"><label for="k-price">Valor / precio ($)<details class="tipd"><summary>i</summary><span class="tip-pop">Rige la tasación.</span></details></label><input id="k-price" type="number" inputmode="numeric" min="0" value="400000"/></div>
+          <div class="lf-field"><label for="k-loan">Monto del préstamo ($)<details class="tipd"><summary>i</summary><span class="tip-pop">Préstamo ÷ valor es su LTV.</span></details></label><input id="k-loan" type="number" inputmode="numeric" min="0" value="300000"/></div>
+          <div class="lf-field"><label for="k-rate">Tasa estimada (%)<details class="tipd"><summary>i</summary><span class="tip-pop">Solo ilustrativa. No es una cotización.</span></details></label><input id="k-rate" type="number" inputmode="decimal" step="0.125" min="0" value="7.25"/></div>
+          <div class="lf-field"><label for="k-amort">Amortización (años)<details class="tipd"><summary>i</summary><span class="tip-pop">30 es lo común.</span></details></label><input id="k-amort" type="number" inputmode="numeric" min="5" max="40" value="30"/></div>
+          <div class="lf-field full" style="display:flex;align-items:center;gap:10px;"><input id="k-io" type="checkbox" style="width:15px;height:15px;accent-color:var(--brass);"/><label for="k-io" style="margin:0;">Calificación solo interés<details class="tipd"><summary>i</summary><span class="tip-pop">Algunos programas lo permiten.</span></details></label></div>
+          <div class="lf-field"><label for="k-rent">Renta mensual ($)<details class="tipd"><summary>i</summary><span class="tip-pop">Rige la opinión del tasador.</span></details></label><input id="k-rent" type="number" inputmode="numeric" min="0" value="3000"/></div>
+          <div class="lf-field"><label for="k-tax">Impuestos anuales ($)<details class="tipd"><summary>i</summary><span class="tip-pop">Use la factura posterior a la venta, no la del vendedor.</span></details></label><input id="k-tax" type="number" inputmode="numeric" min="0" value="5400"/></div>
+          <div class="lf-field"><label for="k-ins">Seguro anual ($)<details class="tipd"><summary>i</summary><span class="tip-pop">Prima de póliza de arrendador.</span></details></label><input id="k-ins" type="number" inputmode="numeric" min="0" value="1800"/></div>
+          <div class="lf-field"><label for="k-hoa">HOA / otros, mensual ($)<details class="tipd"><summary>i</summary><span class="tip-pop">Cuotas y otros cargos recurrentes.</span></details></label><input id="k-hoa" type="number" inputmode="numeric" min="0" value="0"/></div>
+          <div class="lf-field"><label for="k-vac">Vacancia (%)<details class="tipd"><summary>i</summary><span class="tip-pop">El prestamista la ignora. Usted no puede.</span></details></label><input id="k-vac" type="number" inputmode="numeric" min="0" max="50" value="5"/></div>
+          <div class="lf-field"><label for="k-mgmt">Administración (%)<details class="tipd"><summary>i</summary><span class="tip-pop">Aunque se administre usted, su tiempo no es gratis.</span></details></label><input id="k-mgmt" type="number" inputmode="numeric" min="0" max="30" value="8"/></div>
+          <div class="lf-field"><label for="k-maint">Mantenimiento (%)<details class="tipd"><summary>i</summary><span class="tip-pop">Las propiedades antiguas corren más alto.</span></details></label><input id="k-maint" type="number" inputmode="numeric" min="0" max="30" value="5"/></div>
+          <div class="lf-field"><label for="k-capex">Reserva CapEx (%)<details class="tipd"><summary>i</summary><span class="tip-pop">Techos, sistemas y rotaciones.</span></details></label><input id="k-capex" type="number" inputmode="numeric" min="0" max="30" value="5"/></div>
         </div>
       </div>
       <div class="calc-result" aria-live="polite">
@@ -102,7 +102,7 @@
             <div class="row"><span>Ocupación de equilibrio</span><b id="o-be">-</b></div>
           </div>
         </div>
-        <p class="calc-note">Una operación puede pasar la fórmula del prestamista y aun así tener economía débil. Nosotros miramos ambas.</p>
+        <p class="calc-note">Pasar la fórmula no es ganancia. Mostramos ambas.</p>
       </div>
     </div>
     <p class="fine">Esta calculadora ofrece estimados con fines educativos y de revisión preliminar de escenario. No es una aprobación, compromiso, cotización de tasa ni garantía. Los cálculos, el tratamiento de la renta y la elegibilidad reales varían por prestamista, propiedad, documentación y underwriting. El DSCR del prestamista usa la convención común de 1–4 unidades (renta bruta ÷ PITIA); las cifras del inversionista son estimados conservadores basados en sus supuestos. Vea <a href="/calculation-methodology" style="color:inherit;text-decoration:underline;">c&oacute;mo se calculan estas cifras</a> (en ingl&eacute;s).</p>
@@ -111,7 +111,7 @@
 
 <section class="tight" id="review" style="background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
   <div class="wrap">
-    <div class="head reveal" style="text-align:center;max-width:600px;margin:0 auto 44px;"><span class="eyebrow" style="display:block;margin-bottom:20px;">Paso Dos</span><h2 style="font-family:'Cormorant',serif;font-weight:400;font-size:clamp(28px,3.6vw,42px);line-height:1.12;">Solicite su revisión de operación</h2><p style="font-size:15px;color:var(--slate-400);font-weight:300;margin-top:18px;">Una evaluación preliminar de escenario - DSCR estimado, rango potencial de financiamiento, documentación probable y los riesgos mayores - con un siguiente paso recomendado. No es una aprobación ni un compromiso.</p></div>
+    <div class="head reveal" style="text-align:center;max-width:600px;margin:0 auto 44px;"><span class="eyebrow" style="display:block;margin-bottom:20px;">Paso dos</span><h2 style="font-family:'Cormorant',serif;font-weight:400;font-size:clamp(28px,3.6vw,42px);line-height:1.12;">Solicite su revisión de operación</h2><p style="font-size:15px;color:var(--slate-400);font-weight:300;margin-top:18px;">DSCR estimado, rango, documentos, riesgos. No es una aprobación.</p></div>
     <div class="rev-card reveal" id="rev-card">
       <div class="quiz-progress" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
       <form id="revForm" data-sh-form="deal-review" data-sh-product="DSCR" data-sh-event="deal_review_request" data-sh-thanks="/es/thanks-dscr-review" data-sh-lang="es" novalidate method="POST" action="/es/thanks-dscr-review" data-netlify="true" netlify-honeypot="company_website"><input type="hidden" name="form-name" value="lead"/>
@@ -217,7 +217,7 @@
       </form>
       <div class="lead-success" id="leadSuccess">
         <div class="ok">Gracias - recibido.</div>
-        <p>Su escenario está en revisión. Un especialista de Stonehaven responderá en un día hábil.</p>
+        <p>Un especialista responderá en un día hábil.</p>
       </div>
     </div>
   </div>
@@ -225,7 +225,7 @@
 
 <section class="tight" id="prepay">
   <div class="wrap">
-    <div class="head reveal" style="text-align:center;max-width:560px;margin:0 auto 40px;"><span class="eyebrow" style="display:block;margin-bottom:20px;">Conozca Su Salida</span><h2 style="font-family:'Cormorant',serif;font-weight:400;font-size:clamp(28px,3.6vw,42px);line-height:1.12;">Explicador de penalidad por prepago</h2><p style="font-size:15px;color:var(--slate-400);font-weight:300;margin-top:16px;">Los préstamos DSCR comúnmente llevan penalidades por prepago. Si su salida planificada cae dentro del periodo de penalidad, ese costo pertenece a su matemática de hoy.</p></div>
+    <div class="head reveal" style="text-align:center;max-width:560px;margin:0 auto 40px;"><span class="eyebrow" style="display:block;margin-bottom:20px;">Conozca su salida</span><h2 style="font-family:'Cormorant',serif;font-weight:400;font-size:clamp(28px,3.6vw,42px);line-height:1.12;">Explicador de penalidad por prepago</h2><p style="font-size:15px;color:var(--slate-400);font-weight:300;margin-top:16px;">Si su salida cae dentro del periodo de penalidad, ese costo entra en la matemática de hoy.</p></div>
     <div class="calc-wrap reveal" style="max-width:760px;">
       <div class="calc-inputs">
         <h3>Su plan de salida</h3>
@@ -239,7 +239,7 @@
       <div class="calc-result" aria-live="polite">
         <span class="eyebrow">Exposición potencial a penalidad</span>
         <div class="ratio" style="font-size:38px;line-height:1.25;" id="pp-out">-</div>
-        <p class="calc-note" id="pp-note">Estructuras ilustrativas. Los términos reales varían por prestamista y estado.</p>
+        <p class="calc-note" id="pp-note">Solo ilustrativo. Los términos varían por prestamista y estado.</p>
       </div>
     </div>
     <p class="fine">Herramienta educativa. Las estructuras de prepago varían por prestamista y estado; algunos estados restringen o prohíben ciertas penalidades. Los documentos finales del préstamo prevalecen.</p>
