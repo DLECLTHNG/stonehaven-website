@@ -5,7 +5,8 @@
    ============================================================ */
 
 /* ---------- shared ---------- */
-.funnel-hero{padding:170px 0 70px;text-align:center;border-bottom:1px solid var(--line);}
+.funnel-hero{padding:204px 0 70px;text-align:center;border-bottom:1px solid var(--line);}
+@media(max-width:860px){.funnel-hero{padding:150px 0 60px;}}
 .funnel-hero .eyebrow{display:block;margin-bottom:24px;}
 .funnel-hero h1{font-family:'Cormorant',serif;font-weight:400;font-size:clamp(32px,4.4vw,52px);line-height:1.06;letter-spacing:-.005em;}
 .funnel-hero h1 em{font-style:italic;color:var(--slate-600);}
