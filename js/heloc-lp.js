@@ -127,6 +127,9 @@
       var u; try { u = new URL(url, window.location.origin); } catch (e) { u = null; }
       if (u) {
         var q = Object.assign({}, utms, answers);
+        Array.prototype.forEach.call(form.querySelectorAll('input[type="hidden"]'), function (h) {
+          if (h.name && h.value && h.name !== "form-name" && h.name !== "company_website") q[h.name] = h.value;
+        });
         ["name", "email", "phone"].forEach(function (k) { var el = form.querySelector('[name="' + k + '"]'); if (el && el.value) q[k] = el.value; });
         Object.keys(q).forEach(function (k) { if (q[k]) u.searchParams.set(k, q[k]); });
         u.searchParams.set("src", "stonehaven-" + form.getAttribute("data-sh-form"));
