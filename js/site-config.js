@@ -8,7 +8,12 @@
 window.SH_CONFIG = {
   /* CRM intake endpoint (POST, JSON per WEBSITE_FORM_CONTRACT.md).
      Empty = capture via Netlify Forms. */
-  intakeEndpoint: "",
+  intakeEndpoint: "",   /* set to "https://crm.stonehavencre.com/api/intake/website" to go live */
+
+  /* Cloudflare Turnstile site key (public). Required by the CRM intake in
+     production; funnel.js loads the widget invisibly and attaches the token
+     to every submission. Empty = no CAPTCHA (Netlify Forms mode). */
+  turnstileSiteKey: "",
 
   /* Analytics — public measurement IDs. Empty = tag never loads. */
   ga4Id: "G-69X0CPMGJP",  /* GA4, set 2026-08-10 */

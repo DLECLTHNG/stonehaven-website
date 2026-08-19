@@ -49,6 +49,35 @@
   }
 
   /* ---------- 1 · UTM capture (persists for the session) ---------- */
+  /* ---------- 1b · Cloudflare Turnstile (invisible) — only when a site key is set ---------- */
+  var TS_KEY = CFG.turnstileSiteKey || "";
+  var tsWidgets = {}; // form -> widgetId
+  if (TS_KEY && INTAKE_ENDPOINT) {
+    var tss = document.createElement("script");
+    tss.src = "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit";
+    tss.async = true; tss.defer = true;
+    document.head.appendChild(tss);
+  }
+  function tsToken(form) {
+    // Resolves a fresh Turnstile token for this form (invisible challenge),
+    // or "" if Turnstile isn't configured/loaded. Never blocks submission on
+    // a Turnstile outage: the CRM decides what to do with an empty token.
+    return new Promise(function (resolve) {
+      if (!TS_KEY || !INTAKE_ENDPOINT || !window.turnstile) return resolve("");
+      try {
+        var host = form.querySelector(".sh-ts");
+        if (!host) { host = document.createElement("div"); host.className = "sh-ts"; form.appendChild(host); }
+        var settled = false, t = setTimeout(function () { if (!settled) { settled = true; resolve(""); } }, 8000);
+        var id = tsWidgets[form.id || (form.id = "f" + Math.random().toString(36).slice(2))];
+        if (id) window.turnstile.reset(id);
+        else id = tsWidgets[form.id] = window.turnstile.render(host, { sitekey: TS_KEY, size: "invisible", execution: "execute",
+          callback: function (tok) { if (!settled) { settled = true; clearTimeout(t); resolve(tok || ""); } },
+          "error-callback": function () { if (!settled) { settled = true; clearTimeout(t); resolve(""); } } });
+        window.turnstile.execute(id);
+      } catch (e) { resolve(""); }
+    });
+  }
+
   var UTM_KEYS = ["utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term", "gclid", "fbclid"];
   function readUtms() {
     try {
@@ -258,10 +287,13 @@
         });
         return;
       }
-      timedFetch(INTAKE_ENDPOINT, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload)
+      tsToken(form).then(function (tok) {
+        payload.token = tok;
+        return timedFetch(INTAKE_ENDPOINT, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload)
+        });
       }).then(function (r) {
         if (r && r.ok) { track("form_submit_succeeded", { page: payload.page }); done(); }
         else showError();
