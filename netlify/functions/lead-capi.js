@@ -56,7 +56,7 @@ exports.handler = async (event) => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           data: [{
-            event_name: event_name === "heloc_callback" ? "Lead" : event_name,
+            event_name: ({ heloc_callback: "Lead", lead: "Lead", submit_application: "SubmitApplication" })[event_name] || event_name,
             event_time: Math.floor(Date.now() / 1000),
             event_id,
             action_source: "website",

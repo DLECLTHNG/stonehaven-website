@@ -29,6 +29,17 @@ window.SH_CONFIG = {
      buttons to "Start my application" automatically. */
   helocApplyUrl: "",
 
+  /* HELOC landing pages (/heloc-wizard, /heloc-instant + /es mirrors).
+     THE ONE SWITCH: "call" (default) = callback flow, CTA "Get My Callback",
+     lead -> Netlify Forms + CRM webhook + Meta Lead event.
+     "instant_quote" = CTA "Get My Instant Quote"; lead is still captured, then
+     the visitor is redirected to helocInstantQuoteUrl with what they entered
+     appended as URL params (goal, home_value, mortgage_balance, state,
+     owner_occupied, name, phone, email + UTMs). Meta event: SubmitApplication.
+     Nothing else on the pages changes between modes. */
+  helocConversionMode: "call",
+  helocInstantQuoteUrl: "",
+
   /* Network behavior for form delivery */
   submitTimeoutMs: 15000
 };

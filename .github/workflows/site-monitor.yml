@@ -41,7 +41,7 @@ jobs:
                    "/es/" "/es/contact" "/es/dscr" "/sitemap.xml" "/robots.txt" "/styles.css" \
                    "/funnel.css" "/js/funnel.js" "/assets/mark.png" "/es/book" \
                    "/sba-loan-calculator" "/commercial-loan-calculator" "/resources/sba" "/resources/commercial" "/management" "/blog" "/es/blog" "/residential" \
-                   "/residential/buy" "/residential/fha" "/mortgage-calculator" "/refinance-calculator" "/heloc" "/resources/residential" "/es/residential" "/es/heloc" "/es/mortgage-calculator" "/commercial/multifamily" "/commercial/mixed-use" "/es/commercial/multifamily"; do
+                   "/residential/buy" "/residential/fha" "/mortgage-calculator" "/refinance-calculator" "/heloc" "/heloc-wizard" "/heloc-instant" "/es/heloc-wizard" "/es/heloc-instant" "/resources/residential" "/es/residential" "/es/heloc" "/es/mortgage-calculator" "/commercial/multifamily" "/commercial/mixed-use" "/es/commercial/multifamily"; do
             code=$(curl -s -o /dev/null -w "%{http_code}" --max-time 20 "$BASE$p" || echo "000")
             [ "$code" = "200" ] || fails+=("GET $p -> $code")
           done

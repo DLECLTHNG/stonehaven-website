@@ -76,7 +76,8 @@
         // Map our named conversions onto Meta standard events where they fit
         var metaMap = { lead: "Lead", quote_request: "Lead", booking_complete: "Schedule",
           guide_download: "Lead", sheet_download: "Lead", deal_review_request: "Lead",
-          quiz_complete: "CompleteRegistration", calc_used: "ViewContent", heloc_callback: "Lead" };
+          quiz_complete: "CompleteRegistration", calc_used: "ViewContent", heloc_callback: "Lead",
+          submit_application: "SubmitApplication" };
         var fbqOpts = opts.eventID ? { eventID: opts.eventID } : undefined;
         if (metaMap[eventName]) window.fbq("track", metaMap[eventName], params, fbqOpts);
         else window.fbq("trackCustom", eventName, params, fbqOpts);
