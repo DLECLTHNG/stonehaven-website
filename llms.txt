@@ -1,86 +1,69 @@
 # Stonehaven Lending
 
-> Stonehaven Lending is a bilingual (English/Spanish) U.S. real estate
-> brokerage and capital advisory firm. It arranges commercial real estate,
-> SBA 7(a)/504, and DSCR rental-property financing through third-party
-> capital providers nationwide; program availability varies by state.
-> Stonehaven is not a direct lender - the selected lender makes the credit
-> decision. Preliminary deal reviews are educational and are not approvals,
-> commitments, rate quotes or guarantees.
+> Stonehaven Lending is a bilingual (English/Spanish) U.S. mortgage brokerage.
+> It arranges home loans in Georgia, Alabama, Tennessee, Florida, North
+> Carolina and South Carolina, and commercial real estate, SBA 7(a)/504 and
+> DSCR rental-property financing nationwide. Stonehaven is not a direct lender;
+> financing is subject to lender underwriting and program availability, which
+> varies by state. Preliminary reviews and calculators are educational and are
+> not approvals, commitments, rate quotes or guarantees.
 
 Key facts:
-- Role: capital advisory + brokerage; financing arranged through third-party lenders
-- Residential DSCR convention modeled: eligible monthly rent ÷ monthly PITIA (1-4 units); commercial DSCR commonly uses NOI ÷ annual debt service
+- Type: mortgage brokerage (residential + commercial); founder-run
+- Home loans: purchase, refinance, FHA, VA and HELOC in GA, AL, TN, FL, NC & SC
+- Commercial, DSCR and SBA financing: nationwide
+- Residential DSCR convention modeled: eligible monthly rent / monthly PITIA (1-4 units); commercial DSCR commonly uses NOI / annual debt service
 - Calculators are deterministic, unit-tested code - methodology published at /calculation-methodology
 - DSCR financing is business-purpose, investment-property only (never owner-occupied homes)
-- Contact: office@stonehavencre.com - preliminary response within one business day
+- Contact: (470) 970-4979 - office@stonehavencre.com - preliminary response within one business day
 - Equal Housing Opportunity
 
 - NMLS company ID: 1752355 (nmlsconsumeraccess.org)
 - Office: 10 Roswell Street, Suite 102, Alpharetta, GA 30009
 - Phone: (470) 970-4979
-- Residential mortgage licenses: GA #19721 (MLO #169068), AL #22874, TN #165060, FL #MBR3925, NC #B-198926 - residential programs available in these five states; commercial programs nationwide
+- Residential mortgage licenses: GA #19721 (MLO #169068), AL #22874, TN #165060, FL #MBR3925, NC #B-198926, plus South Carolina - home loans available in these six states; commercial programs nationwide
 
 ## Core pages
-- [DSCR Loans for Rental Property](https://stonehavencre.com/dscr): pillar guide - definition, lender DSCR vs investor cash flow, scenarios, requirements, risks, 22 FAQs
-- [DSCR Loan Calculator](https://stonehavencre.com/dscr-analyzer): immediate ungated calculator - PITIA, DSCR, rent-needed and sizing at a target ratio
-- [DSCR Deal Review](https://stonehavencre.com/dscr-review): two-view analysis (lender formula vs investor economics), prepayment explainer, preliminary review request
-- [Commercial Real Estate Financing](https://stonehavencre.com/commercial): acquisition, refinance, rescue and disposition routing for income-producing property
-- [SBA Financing](https://stonehavencre.com/sba): SBA 7(a) and 504 for owner-occupied real estate and business acquisition, via participating lenders
-- [Calculation Methodology](https://stonehavencre.com/calculation-methodology): the exact formulas and conventions behind every figure on this site
+- [Home, Investment, Commercial & SBA Loans](https://stonehavencre.com/): overview - who Stonehaven finances and how to start
+- [Residential Home Loans](https://stonehavencre.com/residential): purchase, refinance, FHA, VA in GA, AL, TN, FL, NC & SC
+- [DSCR Loans for Rental Property](https://stonehavencre.com/dscr): pillar guide - definition, lender DSCR vs investor cash flow, scenarios, requirements, risks, FAQs
+- [Commercial Real Estate Financing](https://stonehavencre.com/commercial): acquisition, refinance, construction and bridge for income-producing property, nationwide
+- [SBA Financing](https://stonehavencre.com/sba): SBA 7(a) and 504 for owner-occupied real estate and business acquisition
+- [HELOC / Home Equity](https://stonehavencre.com/heloc): borrow against equity without changing the current first-mortgage rate
+- [Management](https://stonehavencre.com/management): founders Dawn M. Munoz and Chris De Leeuw
+- [Closings blog](https://stonehavencre.com/blog): anonymized write-ups of closed transactions (structure and terms; no parties named)
+- [Calculation Methodology](https://stonehavencre.com/calculation-methodology): the exact formulas behind every figure on this site
 - [Contact](https://stonehavencre.com/contact)
 - [Privacy Policy](https://stonehavencre.com/privacy)
 
-## En español
-- [Préstamos DSCR](https://stonehavencre.com/es/dscr)
-- [Calculadora DSCR](https://stonehavencre.com/es/dscr-analyzer)
-- [Revisión de Operación DSCR](https://stonehavencre.com/es/dscr-review)
-- [Financiamiento Comercial](https://stonehavencre.com/es/commercial)
-- [SBA](https://stonehavencre.com/es/sba)
-- [Contacto](https://stonehavencre.com/es/contact)
+## Calculators (deterministic, ungated)
+- [Mortgage Calculator](https://stonehavencre.com/mortgage-calculator): full PITI payment + affordability
+- [Refinance Calculator](https://stonehavencre.com/refinance-calculator): refinance break-even
+- [DSCR Loan Calculator](https://stonehavencre.com/dscr-analyzer): PITIA, DSCR, rent-needed and sizing at a target ratio
+- [Commercial Loan Calculator](https://stonehavencre.com/commercial-loan-calculator): DSCR vs LTV sizing
+- [SBA Loan Calculator](https://stonehavencre.com/sba-loan-calculator): 7(a)/504 payment and down-payment
 
-- /management : the firm founders (Dawn Munoz, Chris De Leeuw)
-- /blog : anonymized write-ups of closed transactions (structure and terms; no parties named); Spanish at /es/blog
-
-## Residential
-- /residential/buy : purchase paths - conventional, FHA, VA - compared honestly
-- /residential/refinance : when a refinance makes sense - break-even framing
-- /residential/fha : FHA loans explained - 3.5% down for qualifying credit, MIP trade stated plainly
-- /residential/va : VA loans for eligible veterans - zero down, no monthly MI, funding fee explained
-- /mortgage-calculator : full PITI payment + affordability calculator (deterministic math)
-- /refinance-calculator : refinance break-even calculator (deterministic math)
-- /heloc : HELOC - 30-second equity estimate, then a named broker callback; keeps the existing mortgage rate untouched
-- /residential/georgia : Georgia home loans - Alpharetta HQ, GA licensing, statewide
-- /resources/residential : home loan resource center (guides by Dawn M. Muñoz)
-- /resources/fha-vs-conventional : the mortgage-insurance math that decides FHA vs conventional
-- /resources/how-much-home : DTI ratios and the honest affordability math
-- /resources/refinance-break-even : the only math that decides a refinance
-- /resources/first-time-buyer-checklist : documents and order of operations
-- /resources/dscr-vs-conventional : which loan fits a rental - both desks compared
-- /residential : residential home loans hub - purchase, refinance, FHA & VA programs (GA, AL, TN, FL, NC), arranged through third-party capital providers
+## Residential detail
+- [Buy a home](https://stonehavencre.com/residential/buy): conventional, FHA, VA compared
+- [Refinance](https://stonehavencre.com/residential/refinance): when a refinance makes sense - break-even framing
+- [FHA loans](https://stonehavencre.com/residential/fha): 3.5% down for qualifying credit, MIP trade stated plainly
+- [VA loans](https://stonehavencre.com/residential/va): zero down for eligible veterans, funding fee explained
+- [Georgia home loans](https://stonehavencre.com/residential/georgia): Alpharetta HQ, GA licensing, statewide
 
 ## Commercial programs
-- /commercial/multifamily : 5+ unit / apartment financing - agency, bank, bridge; sized on NOI
-- /commercial/mixed-use : mixed-use buildings - underwritten on the commercial/residential blend
-- /commercial/commercial-property : office, industrial, retail, self-storage, hospitality, special-purpose - by asset class
-- Investor 1-4 unit rentals are served by the DSCR desk (/dscr)
-- Spanish mirrors: /es/commercial/multifamily · /es/commercial/mixed-use · /es/commercial/commercial-property
+- [Multifamily](https://stonehavencre.com/commercial/multifamily)
+- [Mixed-use](https://stonehavencre.com/commercial/mixed-use)
+- [Commercial property](https://stonehavencre.com/commercial/commercial-property)
 
-## Resources (editorial guides and calculators, English)
-- /sba-loan-calculator : SBA 7(a) & 504 structure calculator (deterministic math)
-- /commercial-loan-calculator : commercial loan sizing by DSCR and LTV, names the binding constraint
-- /resources/sba : SBA resource center
-- /resources/sba-7a-vs-504 : choosing between SBA 7(a) and 504 for real estate
-- /resources/sba-down-payment : how the SBA 504 10/15/20 injection rules work
-- /resources/sba-timeline-documents : SBA loan stages and document checklist
-- /resources/commercial : commercial finance resource center
-- /resources/how-lenders-size-commercial-loans : DSCR vs LTV sizing and the binding constraint
-- /resources/bridge-vs-permanent-financing : when bridge capital earns its cost
-- /resources/commercial-refinance-guide : the four reasons to refinance and the prepayment math
-Guides are written by Christiaan De Leeuw (Stonehaven Lending); calculators use deterministic formulas documented at /calculation-methodology.
+## Resource guides
+- [Home loan resources](https://stonehavencre.com/resources/residential)
+- [FHA vs conventional](https://stonehavencre.com/resources/fha-vs-conventional): the mortgage-insurance math that decides
+- [How much home](https://stonehavencre.com/resources/how-much-home): DTI ratios and the honest affordability math
+- [Refinance break-even](https://stonehavencre.com/resources/refinance-break-even)
+- [First-time buyer checklist](https://stonehavencre.com/resources/first-time-buyer-checklist)
+- [DSCR vs conventional](https://stonehavencre.com/resources/dscr-vs-conventional): which loan fits a rental
+- [SBA resources](https://stonehavencre.com/resources/sba): [7(a) vs 504](https://stonehavencre.com/resources/sba-7a-vs-504), [down payment](https://stonehavencre.com/resources/sba-down-payment), [timeline & documents](https://stonehavencre.com/resources/sba-timeline-documents)
+- [Commercial resources](https://stonehavencre.com/resources/commercial): [how lenders size loans](https://stonehavencre.com/resources/how-lenders-size-commercial-loans), [when to refinance](https://stonehavencre.com/resources/commercial-refinance-guide), [bridge vs permanent](https://stonehavencre.com/resources/bridge-vs-permanent-financing)
 
-## Residencial (Spanish mirror)
-- /es/residential : hub de préstamos de vivienda (compra, refinanciamiento, FHA, VA) - GA, AL, TN, FL, NC
-- /es/residential/buy · /es/residential/refinance · /es/residential/fha · /es/residential/va · /es/residential/georgia
-- /es/mortgage-calculator : calculadora PITI + capacidad de compra · /es/refinance-calculator : punto de equilibrio
-- /es/heloc : HELOC - estimado en 30 segundos, luego llamada de un bróker; conserva la tasa de la hipoteca actual
+## En español
+- [Inicio](https://stonehavencre.com/es/), [Residencial](https://stonehavencre.com/es/residential), [DSCR](https://stonehavencre.com/es/dscr), [Comercial](https://stonehavencre.com/es/commercial), [SBA](https://stonehavencre.com/es/sba), [HELOC](https://stonehavencre.com/es/heloc), [Contacto](https://stonehavencre.com/es/contact), [Blog / Cierres](https://stonehavencre.com/es/blog)
