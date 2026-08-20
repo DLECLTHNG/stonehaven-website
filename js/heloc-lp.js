@@ -52,10 +52,26 @@
     dots.setAttribute("aria-label", T.stepOf.replace("{a}", i + 1).replace("{b}", steps.length));
   }
 
+  function money0(n) { return "$" + Math.round(n).toLocaleString("en-US"); }
+  function computeEstimate(step) {
+    var host = step.querySelector("[data-estimate]");
+    if (!host) return;
+    var hv = +(answers.home_value || 0), bal = +(answers.mortgage_balance || 0);
+    var CAP = 400000; /* product ceiling shown on the page */
+    var lo = Math.max(0, Math.floor((hv * 0.80 - bal) / 5000) * 5000);
+    var hi = Math.min(CAP, Math.max(0, Math.floor((hv * 0.85 - bal) / 5000) * 5000));
+    if (lo > hi) lo = hi;
+    setHidden("est_available_low", lo); setHidden("est_available_high", hi);
+    var low = step.getAttribute("data-low"); /* fallback copy when equity is thin */
+    if (hi < 10000) { if (low) host.textContent = low; host.classList.add("est-thin"); }
+    else { host.textContent = money0(lo) + " – " + money0(hi); host.classList.remove("est-thin"); }
+  }
+
   function show(n) {
     i = Math.max(0, Math.min(steps.length - 1, n));
     steps.forEach(function (s, k) { s.hidden = k !== i; });
     renderDots();
+    if (steps[i].getAttribute("data-type") === "estimate") computeEstimate(steps[i]);
     if (dots) dots.style.display = steps[i].getAttribute("data-type") === "phone" ? "none" : "";
     var first = steps[i].querySelector("input:not([type=hidden]),select,button.lp-card");
     if (first && window.innerWidth > 760) { try { first.focus({ preventScroll: true }); } catch (e) {} }
@@ -76,13 +92,16 @@
     if (type === "cards") {
       var sel = step.querySelector(".lp-card.on");
       if (!sel) { err(step, T.need); return false; }
-      answers[key] = sel.getAttribute("data-value"); setHidden(key, answers[key]); return true;
+      answers[key] = sel.getAttribute("data-value"); setHidden(key, answers[key]);
+      var lbl = sel.getAttribute("data-label"); if (lbl) setHidden(key + "_label", lbl);
+      return true;
     }
     if (type === "money") {
       var inp = step.querySelector("input"); var v = (inp.value || "").replace(/[^\d]/g, "");
       if (!v || +v < 10000) { err(step, T.need); return false; }
       answers[key] = v; setHidden(key, v); return true;
     }
+    if (type === "estimate") { return true; }
     if (type === "state") {
       var s = step.querySelector("select"); var st = s.value;
       if (!st) { err(step, T.need); return false; }
