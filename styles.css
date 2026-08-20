@@ -138,6 +138,8 @@ section{padding:120px 0;}
 .uses .head .eyebrow{display:block;margin-bottom:20px;}
 .uses .head h2{font-family:'Cormorant',serif;font-weight:400;font-size:clamp(28px,3.6vw,42px);line-height:1.12;}
 .use-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;max-width:820px;margin:0 auto;background:var(--line);border:1px solid var(--line);}
+/* exactly-three grids (Buy/Finance/Refinance etc.) fill a single row of 3 — no empty 4th cell */
+.use-grid:has(.use:nth-child(3):last-child){grid-template-columns:repeat(3,1fr);max-width:960px;}
 .use{background:var(--paper);padding:30px 34px;transition:background .35s var(--ease);}
 .use:hover{background:var(--white);}
 .use .un{font-family:'Cormorant',serif;font-style:italic;color:var(--brass);font-size:15px;}
