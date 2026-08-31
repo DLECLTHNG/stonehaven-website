@@ -46,7 +46,8 @@
   function renderDots() {
     if (!dots) return;
     dots.innerHTML = "";
-    steps.forEach(function (_, n) {
+    steps.forEach(function (s, n) {
+      if (skipped(s)) return;
       var d = document.createElement("span"); d.className = "lp-dot" + (n <= i ? " on" : ""); dots.appendChild(d);
     });
     dots.setAttribute("aria-label", T.stepOf.replace("{a}", i + 1).replace("{b}", steps.length));
@@ -65,9 +66,36 @@
     var low = step.getAttribute("data-low"); /* fallback copy when equity is thin */
     if (hi < 10000) { if (low) host.textContent = low; host.classList.add("est-thin"); }
     else { host.textContent = money0(lo) + " – " + money0(hi); host.classList.remove("est-thin"); }
+    var sum = step.querySelector("[data-summary]");
+    if (sum) {
+      sum.innerHTML = "";
+      steps.forEach(function (s) {
+        var k = s.getAttribute("data-key");
+        if (!answers[k] || s === step || k === "state" && !answers.state) return;
+        var lblEl = form.querySelector('input[name="' + k + '_label"]');
+        var card = s.querySelector('.lp-card.on span');
+        var txt = (lblEl && lblEl.value) || (card && card.textContent) || answers[k];
+        var q = s.querySelector("h2");
+        if (!q) return;
+        var li = document.createElement("li");
+        li.textContent = q.textContent.replace(/\?$/, "") + ": " + txt;
+        sum.appendChild(li);
+      });
+      if (answers.state) { var li2 = document.createElement("li"); li2.textContent = (lang === "es" ? "Estado: " : "State: ") + answers.state; sum.appendChild(li2); }
+    }
+  }
+
+  function skipped(step) {
+    var cond = step.getAttribute("data-skip-if");
+    if (!cond) return false;
+    var kv = cond.split(":");
+    return answers[kv[0]] === kv[1];
   }
 
   function show(n) {
+    var dir = n >= i ? 1 : -1;
+    n = Math.max(0, Math.min(steps.length - 1, n));
+    while (steps[n] && skipped(steps[n])) n += dir;
     i = Math.max(0, Math.min(steps.length - 1, n));
     steps.forEach(function (s, k) { s.hidden = k !== i; });
     renderDots();
