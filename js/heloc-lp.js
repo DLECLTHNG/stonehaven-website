@@ -71,7 +71,7 @@
       sum.innerHTML = "";
       steps.forEach(function (s) {
         var k = s.getAttribute("data-key");
-        if (!answers[k] || s === step || k === "state" && !answers.state) return;
+        if (!answers[k] || s === step || k === "state") return;
         var lblEl = form.querySelector('input[name="' + k + '_label"]');
         var card = s.querySelector('.lp-card.on span');
         var txt = (lblEl && lblEl.value) || (card && card.textContent) || answers[k];
