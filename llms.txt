@@ -41,6 +41,7 @@ Key facts:
 - [Mortgage Calculator](https://stonehavencre.com/mortgage-calculator): full PITI payment + affordability
 - [Refinance Calculator](https://stonehavencre.com/refinance-calculator): refinance break-even
 - [DSCR Loan Calculator](https://stonehavencre.com/dscr-analyzer): PITIA, DSCR, rent-needed and sizing at a target ratio
+- [DSCR Program Calculator](https://stonehavencre.com/dscr-program-calculator): program-rule engine - qualifying rent for 1-4 unit, 5-8 unit, short-term rental and condotel DSCR (115% receipt cap, 80% condotel haircut, 90% vacancy rule)
 - [Commercial Loan Calculator](https://stonehavencre.com/commercial-loan-calculator): DSCR vs LTV sizing
 - [SBA Loan Calculator](https://stonehavencre.com/sba-loan-calculator): 7(a)/504 payment and down-payment
 
