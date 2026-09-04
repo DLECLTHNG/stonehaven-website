@@ -20,7 +20,7 @@ import { join } from "node:path";
 const ALLOW = new Set([
   // brand / people / places
   "stonehaven","lending","dawn","m.","muñoz","chris","de","leeuw","georgia","alabama","tennessee","florida",
-  "carolina","norte","sur","atlanta","birmingham","huntsville","montgomery","mobile","tuscaloosa","nashville","memphis","knoxville","chattanooga","miami","orlando","tampa","jacksonville","panhandle","charlotte","raleigh","durham","greensboro","winston-salem","asheville","charleston","columbia","greenville","myrtle","beach","triángulo","golfo","redstone","homestead","sc","alpharetta","londres","london","roswell","street","suite","estados","unidos","ee.","uu.",
+  "carolina","norte","sur","atlanta","brookhaven","birmingham","huntsville","montgomery","mobile","tuscaloosa","nashville","memphis","knoxville","chattanooga","miami","orlando","tampa","jacksonville","panhandle","charlotte","raleigh","durham","greensboro","winston-salem","asheville","charleston","columbia","greenville","myrtle","beach","triángulo","golfo","redstone","homestead","sc","alpharetta","londres","london","roswell","street","suite","estados","unidos","ee.","uu.",
   // acronyms & programs
   "dscr","sba","fha","va","heloc","nmls","llc","mlo","piti","pitia","ltv","cltv","noi","hoa","irrrl","coe","cdc",
   "cre","utm","ga","al","tn","fl","nc","et","fannie","mae","freddie","mac","hud","apr","tila","reg","z",
