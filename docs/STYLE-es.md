@@ -28,7 +28,6 @@ two labels — each takes its own capital: `DSCR · Analizador`, `Residencial ·
 
 ## Other house rules for Spanish pages
 - Address the reader as **usted**, consistently (imperative: *Hable*, not *Hablar*).
-- Spanish em dashes hug the enclosed text: `—y su tasa baja—`.
 - Literal accented characters in source (á é í ó ú ñ ¿ ¡), not HTML entities.
 - "Estado" alone reads as *condition*; for the US state say
   *Estado donde está la propiedad*.
@@ -42,3 +41,5 @@ Scans every file under `es/` for Title Case in titles, H1–H3, og/twitter
 titles, JSON-LD headlines and eyebrow labels; prints `file:line` and
 exits 1 on findings. Heuristic on purpose. Add genuine proper nouns or
 acronyms to `ALLOW` in the script rather than weakening the rule.
+
+- No em dashes (—) sitewide (2026-09-07): use " - "; en dashes stay for numeric ranges.

@@ -155,7 +155,7 @@
     if(cur<=0||nw<=0){out.m.textContent="-";out.v.textContent="";return;}
     var b=R.breakEven(costs,cur,nw);
     if(!b){
-      out.m.textContent="—";
+      out.m.textContent=" - ";
       out.v.className="verdict short";
       out.v.textContent="No monthly savings at these numbers";
       $("r-save").textContent="-";$("r-net").textContent="-";

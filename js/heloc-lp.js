@@ -20,11 +20,11 @@
   var lang = (document.documentElement.lang || "en").slice(0, 2);
   var T = {
     en: { next: "Next", back: "Back", callCta: "Get My Callback", quoteCta: "Get My Instant Quote",
-          geo: "Thank you — Stonehaven doesn't currently serve that state. Home loans are available in GA, AL, TN, FL, NC and SC.",
+          geo: "Thank you - Stonehaven doesn't currently serve that state. Home loans are available in GA, AL, TN, FL, NC and SC.",
           need: "Please answer to continue.", phone: "Please enter a valid mobile number.", email: "Please enter a valid email.",
           stepOf: "Step {a} of {b}" },
     es: { next: "Siguiente", back: "Atrás", callCta: "Quiero mi llamada", quoteCta: "Quiero mi cotización al instante",
-          geo: "Gracias — Stonehaven no atiende ese estado por ahora. Los préstamos de vivienda están disponibles en GA, AL, TN, FL, NC y SC.",
+          geo: "Gracias - Stonehaven no atiende ese estado por ahora. Los préstamos de vivienda están disponibles en GA, AL, TN, FL, NC y SC.",
           need: "Responda para continuar.", phone: "Ingrese un número de celular válido.", email: "Ingrese un correo válido.",
           stepOf: "Paso {a} de {b}" }
   }[lang] || null;
