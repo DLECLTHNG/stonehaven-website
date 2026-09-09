@@ -27,6 +27,18 @@
   URLs in manifests are PROPOSED. .html->clean redirects added to _redirects and
   follow the proven pattern of existing sections (verified pattern live for /heloc/*).
 
+## Form-path verification (production, 2026-09-13)
+- /dscr-review (primary CTA of all 17 pages): form present with honeypot and consent
+  text; empty submit blocked with field flagging; ONE labeled end-to-end submission
+  ("TEST PREFLIGHT - please disregard") accepted, redirected to /thanks-dscr-review,
+  and verified stored in the backend with all deal fields and preserved attribution
+  (utm_content=DSCR-QA pattern, matching the planned angle-ID UTMs). Owner should
+  disregard that lead notification.
+- /dscr-analyzer (secondary CTA): form present with honeypot; empty submit blocked;
+  live calculator computes (1.17x on test inputs); /thanks-dscr-analyzer returns 200.
+- Final render sweep on the branch build: 17 pages x 2 widths (390px / 1200px), all
+  pass single-h1, CTA, canonical and no-overflow checks.
+
 ## Not observable pre-launch (post-launch items)
 - Google/Bing indexing, selected canonicals, AI-answer citation, real-user CWV field
   data. Lab note: pages are static HTML with the site's existing font/CSS budget and
