@@ -131,9 +131,11 @@
   function buildAbout(form, extra) {
     var lines = [];
     if (extra) lines.push(extra);
-    var skip = { name: 1, email: 1, phone: 1, company_website: 1 };
+    var skip = { name: 1, email: 1, phone: 1, company_website: 1, "form-name": 1 };
     Array.prototype.forEach.call(form.elements, function (el) {
-      if (!el.name || skip[el.name] || el.type === "submit" || el.type === "hidden") return;
+      // hidden inputs carry the step-engine answers (wizard/instant/persona
+      // context) - include them; only the plumbing fields above are skipped
+      if (!el.name || skip[el.name] || el.type === "submit") return;
       var v = (el.value || "").trim();
       if (!v) return;
       var label = form.querySelector('label[for="' + el.id + '"]');
