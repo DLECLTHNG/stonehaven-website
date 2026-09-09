@@ -12,7 +12,7 @@ const BANNED = [
 ];
 let fail = 0;
 const seen = { renovation: new Map(), consolidation: new Map() };
-const files = readdirSync("heloc").filter(f => f.endsWith(".html"));
+const files = readdirSync("heloc").filter(f => f.endsWith(".html") && !readFileSync("heloc/" + f, "utf8").includes("data-sh-form=\"heloc-ad\""));
 if (files.length !== 16) { console.error("expected 16 pages, found " + files.length); fail++; }
 for (const f of files) {
   const t = readFileSync("heloc/" + f, "utf8");

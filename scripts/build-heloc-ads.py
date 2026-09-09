@@ -44,6 +44,15 @@ def head(a):
     cfg = {"persona": a['slug'], "reviewNote": "", "intents": {
         "renovation": {"purpose": a['purpose'], "docTitle": a['title'].replace('&amp;', '&')},
         "consolidation": {"purpose": a['purpose'], "docTitle": a['title'].replace('&amp;', '&')}}}
+    ld = [{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+            {"@type":"ListItem","position":1,"name":"Home","item":"https://stonehavencre.com/"},
+            {"@type":"ListItem","position":2,"name":"HELOC","item":"https://stonehavencre.com/heloc"},
+            {"@type":"ListItem","position":3,"name":a['h1'],"item":url}]},
+          {"@context":"https://schema.org","@type":"WebPage","name":a['title'].replace('&amp;','&'),"url":url,"inLanguage":"en",
+           "isPartOf":{"@type":"WebSite","name":"Stonehaven Lending","url":"https://stonehavencre.com/"},
+           "about":{"@type":"Thing","name":"Home equity line of credit"}},
+          {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":ans}} for q,ans in a['faqs']]}]
+    lds = ''.join('<script type="application/ld+json">%s</script>\n' % json.dumps(x, ensure_ascii=False) for x in ld)
     return '''<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -66,7 +75,7 @@ def head(a):
 <script src="../js/heloc-calc.js?v=2" defer></script>
 <script src="../js/heloc-persona.js?v=1" defer></script>
 %(css)s
-<script type="application/json" id="sh-persona-content">%(cfg)s</script>
+%(lds)s<script type="application/json" id="sh-persona-content">%(cfg)s</script>
 </head>
 <body><noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=4039555362846500&ev=PageView&noscript=1" alt=""/></noscript>
 <header class="nav solid" id="nav">
@@ -78,7 +87,7 @@ def head(a):
     <a href="tel:+14709704979" class="nav-phone" style="margin-left:auto;">(470) 970-4979</a>
   </div>
 </header>
-''' % dict(title=a['title'], desc=desc, url=url, css=CSS, cfg=json.dumps(cfg, ensure_ascii=False).replace('</', '<\\/'))
+''' % dict(title=a['title'], desc=desc, url=url, css=CSS, cfg=json.dumps(cfg, ensure_ascii=False).replace('</', '<\\/'), lds=lds)
 
 def module(m):
     t = m['type']
@@ -153,6 +162,7 @@ def body(a):
   <div class="head reveal"><span class="eyebrow">Questions</span><h2>Asked before starting</h2></div>
   <div class="faq-list reveal">%(faqs)s</div>
 </div></section>
+<section class="tight" style="padding-top:0;"><div class="wrap"><div class="ad-mod reveal"><p style="font-size:13.5px;color:var(--stone-400);line-height:2;text-align:center;">Read more: <a href="/heloc" class="line">HELOC guide and comparison</a> · <a href="/cash-out-refinance" class="line">Cash-out refinance, compared</a> · <a href="/residential" class="line">Home loans in GA, AL, TN, FL, NC and SC</a></p></div></div></section>
 </main>
 <footer class="lp-foot" style="max-width:760px;margin:0 auto;padding:18px 20px 34px;border-top:1px solid %(line)s;font-size:12px;line-height:1.6;color:%(slate)s;">%(eho)s %(disc)s <a href="/privacy" style="color:inherit;">Privacy policy</a></footer>
 <script>

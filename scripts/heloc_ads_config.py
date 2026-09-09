@@ -63,18 +63,6 @@ dict(slug="renovate-keep-your-rate", ad="HOME IMPROVEMENT", purpose="Home improv
        ("Does this change my current mortgage?","No. The HELOC sits in second position behind it. Your first mortgage keeps its balance, rate and payment; the HELOC adds a separate payment."),
        ("Is a fixed home equity loan better for a renovation?","For one known contract price, a fixed second loan can suit; for staged or uncertain costs, a line usually fits better. A specialist compares both for your project.")]),
 
-dict(slug="home-value-estimate", ad="AVM SPEED", purpose="Home improvement",
- title="Estimate Your Available Equity in About a Minute | Stonehaven",
- eyebrow="Equity estimate", h1="An estimated equity range in about a minute",
- sub="Enter a rough home value and mortgage balance and see the range your equity may support. No appraiser visit required to get started; full valuation requirements depend on the program selected.",
- cta="Calculate",
- modules=[dict(type="estimator"),
-   dict(type="checks", h="What the estimate is, and is not",
-   items=["Arithmetic on the value you enter, at common 80 to 90 percent combined loan-to-value caps","Not an appraisal and not an approval; a lender's valuation comes later if you proceed","No hard credit pull to compare initial options","Credit scores 600+ considered"])],
- faqs=[("Where does the home value come from?","From you. Enter your best estimate; recent sales of similar homes nearby are a fair guide. A lender's valuation, if one is required, comes later in the process."),
-       ("Will an appraiser need to visit?","Not to get started. Whether a full appraisal is needed later depends on the program; many home equity lines use automated or exterior valuations."),
-       ("How accurate is the range?","As accurate as your inputs. It shows headroom at common lender caps; the confirmed amount depends on the lender's valuation, your credit and program rules.")]),
-
 dict(slug="veteran-equity", ad="VETERAN EQUITY", purpose="Home improvement",
  title="Access Home Equity Without Refinancing a VA Loan | Stonehaven",
  eyebrow="For veteran homeowners", h1="Access home equity without refinancing",
