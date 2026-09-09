@@ -61,12 +61,18 @@ CONSOLIDATION_SCENE = _wrap(
     + '<rect x="36" y="158" width="182" height="22" rx="5" fill="%s"/><rect x="228" y="158" width="56" height="22" rx="5" fill="#fff" stroke="%s" stroke-width="2"/>' % (NAVY, NAVY),
     "Several card balances compared with one home-secured plan")
 
-DIAGRAM = _wrap(
-    _house(130, 30, 1.4)
-    + '<rect x="30" y="120" width="120" height="46" rx="6" fill="%s"/><text x="90" y="140" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#fff">Existing first mortgage</text><text x="90" y="156" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="%s">stays in place, unchanged</text>' % (NAVY, LINE)
-    + '<rect x="170" y="120" width="120" height="46" rx="6" fill="#fff" stroke="%s" stroke-width="2"/><text x="230" y="140" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="%s">Separate HELOC</text><text x="230" y="156" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="%s">its own loan, payment and costs</text>' % (BRASS, NAVY, SLATE)
-    + '<path d="M90 120V96h70M230 120V96h-40" stroke="%s" stroke-width="2" fill="none"/>' % LINE,
-    "Diagram: the existing first mortgage and a separate HELOC both secured by the same home")
+DIAGRAM = ('<svg viewBox="0 0 340 224" role="img" aria-label="Diagram: the existing first mortgage and a separate HELOC are both secured by the same home" '
+    'style="width:100%%;height:auto;display:block;background:%s;border:1px solid %s;border-radius:12px;">' % (PAPER, LINE)
+    + _house(140, 26, 1.0)
+    + '<path d="M100 118V102h68M240 118V102h-68" stroke="#C9C3B6" stroke-width="2" fill="none"/>'
+    + '<rect x="18" y="118" width="152" height="58" rx="8" fill="%s"/>' % NAVY
+    + '<text x="94" y="142" text-anchor="middle" font-family="Inter,-apple-system,sans-serif" font-size="11.5" font-weight="600" fill="#fff">Existing first mortgage</text>'
+    + '<text x="94" y="160" text-anchor="middle" font-family="Inter,-apple-system,sans-serif" font-size="10" fill="#C9D2DC">stays in place, unchanged</text>'
+    + '<rect x="182" y="118" width="140" height="58" rx="8" fill="#fff" stroke="%s" stroke-width="2"/>' % BRASS
+    + '<text x="252" y="142" text-anchor="middle" font-family="Inter,-apple-system,sans-serif" font-size="11.5" font-weight="600" fill="%s">Separate HELOC</text>' % NAVY
+    + '<text x="252" y="160" text-anchor="middle" font-family="Inter,-apple-system,sans-serif" font-size="10" fill="%s">its own loan and payment</text>' % SLATE
+    + '<text x="170" y="204" text-anchor="middle" font-family="Inter,-apple-system,sans-serif" font-size="10" fill="%s">Both are secured by the same home</text>' % SLATE
+    + '</svg>')
 
 STATES = [("GA", "Georgia"), ("AL", "Alabama"), ("TN", "Tennessee"), ("FL", "Florida"), ("NC", "North Carolina"), ("SC", "South Carolina"), ("OTHER", "Another state")]
 
@@ -168,7 +174,7 @@ def body(p):
 
 <section><div class="wrap"><div class="prose reveal">
   <span class="eyebrow">Why Consider a HELOC</span>
-  <h2>The first mortgage stays. The HELOC is separate.</h2>
+  <h2>The first mortgage stays. The HELOC is separate</h2>
   <p>A home equity line of credit is a second loan secured by your home. Opening one leaves your existing first mortgage and its terms in place. The HELOC has its own payment, its own costs and its own repayment obligations, so your total monthly outgo changes even though the first mortgage does not.</p>
   <div style="max-width:420px;margin:22px 0 6px;">%(diagram)s</div>
   <ul class="pp-bens" data-pi="bens"></ul>
@@ -233,9 +239,9 @@ def build_intents(p):
         c = p[key]
         out["intents"][intent] = {
             "docTitle": c['title'].replace('&amp;', '&'),
-            "h1": c['h1'], "sub": c['sub'],
-            "sit_h": c['sit_h'], "sit_p1": c['sit_p1'], "sit_p2": c['sit_p2'],
-            "dist_h": c['dist_h'], "dist_p1": c['dist_p1'], "dist_p2": c['dist_p2'],
+            "h1": c['h1'].rstrip('.'), "sub": c['sub'],
+            "sit_h": c['sit_h'].rstrip('.'), "sit_p1": c['sit_p1'], "sit_p2": c['sit_p2'],
+            "dist_h": c['dist_h'].rstrip('.'), "dist_p1": c['dist_p1'], "dist_p2": c['dist_p2'],
             "bens": ''.join('<li>%s</li>' % b for b in c['bens']),
             "intake": c['intake'], "purpose": c['purpose'],
             "faqs": c['faqs'] + BASE_FAQS[intent],

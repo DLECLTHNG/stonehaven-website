@@ -7,7 +7,7 @@ Rebuild after editing copy: python3 scripts/build-heloc-personas.py
 Validate: node scripts/lint-heloc-personas.mjs && node tests/heloc-persona.test.mjs
 
 ## Missing product / operational facts (owner to supply before launch)
-1. SC license number - still absent from all site disclosures (existing gap).
+1. RESOLVED 2026-09-10: South Carolina issues no separate license number (owner confirmed); site now states this explicitly on the SC page.
 2. Confirm HELOC program facts used: "no appraisal in most cases" appears on
    the older funnels but was NOT used on these pages (kept out pending program
    confirmation); draw/repayment-period specifics deliberately unstated.
