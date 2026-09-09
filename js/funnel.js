@@ -78,7 +78,7 @@
     });
   }
 
-  var UTM_KEYS = ["utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term", "gclid", "fbclid"];
+  var UTM_KEYS = ["utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term", "utm_id", "gclid", "fbclid"];
   function readUtms() {
     try {
       var params = new URLSearchParams(window.location.search);
