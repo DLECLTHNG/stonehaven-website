@@ -129,6 +129,11 @@
       if (!v || +v < 10000) { err(step, T.need); return false; }
       answers[key] = v; setHidden(key, v); return true;
     }
+    if (type === "select") {
+      var sl = step.querySelector("select"); var sv = sl ? sl.value : "";
+      if (!sv || sv === "not-sure") { err(step, T.need); return false; }
+      answers[key] = sv; setHidden(key, sv); return true;
+    }
     if (type === "estimate") { return true; }
     if (type === "state") {
       var s = step.querySelector("select"); var st = s.value;

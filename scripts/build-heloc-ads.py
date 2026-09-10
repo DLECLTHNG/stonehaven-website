@@ -5,6 +5,8 @@ hidden marketing context), intake with credit band, licensed footer.
 Run from site root: python3 scripts/build-heloc-ads.py"""
 import io, os, re, json, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from credit_bands import options as _credit_options
+CREDIT_OPTIONS = _credit_options('en')
 from heloc_ads_config import ADS, DISCLOSURE
 import importlib
 P = importlib.import_module('build-heloc-personas')  # footer, diagram, scene, states, palette
@@ -145,7 +147,7 @@ def body(a):
     <div class="lf-field"><label for="f-balance">Approx. mortgage balance ($)</label><input id="f-balance" type="number" inputmode="numeric" min="0" name="mortgage_balance" placeholder="250,000"/></div>
     <div class="lf-field"><label for="f-amount">Amount you are exploring ($)</label><input id="f-amount" type="number" inputmode="numeric" min="0" name="requested_amount" placeholder="60,000"/></div>
     <div class="lf-field"><label for="pi-purpose">Borrowing purpose</label><select id="pi-purpose" name="purpose"><option>Home improvement</option><option>Debt consolidation</option><option>Other</option></select></div>
-    <div class="lf-field"><label for="f-credit">Estimated credit score <span style="text-transform:none;letter-spacing:0;color:#AAB8C7;">(best guess is fine)</span></label><select id="f-credit" name="credit_band"><option value="740+">740+</option><option value="670-739">670–739</option><option value="600-669">600–669</option><option value="under-600">Below 600</option><option value="not-sure" selected>Not sure</option></select></div>
+    <div class="lf-field"><label for="f-credit">Estimated credit score <span style="text-transform:none;letter-spacing:0;color:#AAB8C7;">(best guess is fine)</span></label><select id="f-credit" name="credit_band">%(credit_opts)s</select></div>
     <div class="lf-field"><label for="f-timing">Timing</label><select id="f-timing" name="timeline"><option>As soon as practical</option><option>1-3 months</option><option>3-6 months</option><option>Exploring</option></select></div>
     <div class="lf-field"><label for="f-name">Name</label><input id="f-name" type="text" name="name" autocomplete="name" required/></div>
     <div class="lf-field"><label for="f-phone">Mobile number</label><input id="f-phone" type="tel" name="phone" inputmode="tel" autocomplete="tel" required/></div>
@@ -197,7 +199,7 @@ def body(a):
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",boot);else boot();
 })();
 </script>
-</body></html>''' % dict(eyebrow=a['eyebrow'], h1=a['h1'], sub=a['sub'], cta=a['cta'], mods=mods, faqs=faqs, states=states,
+</body></html>''' % dict(credit_opts=CREDIT_OPTIONS, eyebrow=a['eyebrow'], h1=a['h1'], sub=a['sub'], cta=a['cta'], mods=mods, faqs=faqs, states=states,
            target='estimate' if has_est else 'intake', slug=a['slug'], line=LINE, slate=SLATE, disc=DISCLOSURE,
            eho='<svg width="14" height="14" viewBox="0 0 24 24" fill="none" role="img" aria-label="Equal Housing Opportunity" style="vertical-align:-3px;margin-right:4px;"><path d="M12 3 2 10h3v11h14V10h3L12 3z" stroke="#5b6876" stroke-width="1.6"/><path d="M8 13.5h8M8 17h8" stroke="#5b6876" stroke-width="1.6"/></svg>')
 
