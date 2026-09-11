@@ -1,0 +1,31 @@
+{
+  "siteUrl": "https://stonehavencre.com",
+  "states": [
+    "GA",
+    "AL",
+    "TN",
+    "FL",
+    "NC",
+    "SC"
+  ],
+  "noticeVersion": "fo-notice-2026-09-11",
+  "pages": {
+    "family-parents": "Family Opportunity: parents",
+    "family-adult-child": "Family Opportunity: adult child with a disability"
+  },
+  "timing": {
+    "exploring": "Exploring",
+    "within_3_months": "Within 3 months",
+    "3_to_6_months": "3 to 6 months",
+    "more_than_6_months": "More than 6 months"
+  },
+  "attributionAllowlist": [
+    "utm_source",
+    "utm_medium",
+    "utm_campaign",
+    "utm_content",
+    "utm_term",
+    "utm_id"
+  ],
+  "metaPixelId": ""
+}
