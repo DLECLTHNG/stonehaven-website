@@ -12,20 +12,22 @@ publish, so it never reaches the public site.
 
 ## 1. Status right now
 
-Three pages are live in production on stonehavencre.com:
+Four pages are live in production on stonehavencre.com:
 
 | Path | Page id | Sensitive | Ad tags | Indexed |
 |---|---|---|---|---|
+| `/family-home-financing` | `family-overview` | no | Meta Pixel on | no (`noindex,nofollow`) |
 | `/buy-a-home-for-parents` | `family-parents` | no | Meta Pixel on | no (`noindex,nofollow`) |
 | `/family-housing-options` | `family-adult-child` | yes | none, blocked in code | no (`noindex,nofollow`) |
 | `/request-received` | n/a | n/a | none, blocked in code | no, permanently |
 
 Working and verified in the browser against production:
 
-- Both landing pages render on desktop and mobile, forms validate inline,
+- All three landing pages render on desktop and mobile, forms validate inline,
   submissions post to the serverless endpoint and redirect to the confirmation
   page with a reference id.
-- Meta Pixel loads on the parents page only. Verified absent on the other two.
+- Meta Pixel loads on the bridge and parents pages only. Verified absent on the
+  adult-child page and the confirmation page.
 - Error recovery preserves entered values and offers a phone fallback.
 - Sticky mobile call-to-action shows mid-page and hides at the footer.
 
@@ -51,7 +53,8 @@ Not yet working:
 Netlify site id `d9ec18aa-630d-47f6-93cc-7514615ae9b8`, serving stonehavencre.com.
 
 **The CRM change is on a feature branch, not `main`**: commit `d8d73b9c0` adds
-`family-parents` and `family-adult-child` to the page allowlist. Without it the
+`family-parents` and `family-adult-child` to the page allowlist, and `140ea37da`
+adds `family-overview`. Without it the
 CRM rejects these inquiries as an unknown page. It is pushed to
 `feat/residential-product-website-intake`, which also carries unrelated in-flight
 work, so merge or cherry-pick it into `main` before connecting the CRM.
@@ -60,6 +63,7 @@ Relevant website commits, both on `main` and deployed:
 
 - `8d25347` the pages, endpoint, generator, linter, tests
 - `57e7dbd` Meta Pixel enabled on the parents page
+- `8665382` the neutral bridge page at `/family-home-financing`
 
 ---
 
@@ -73,6 +77,7 @@ scripts/family_lp_config.py      <- the only file you edit for copy or settings
         v
 scripts/build-family-lps.py      <- run this
         |
+        +--> family-home-financing.html
         +--> buy-a-home-for-parents.html
         +--> family-housing-options.html
         +--> request-received.html
@@ -159,7 +164,7 @@ preference. If it is made deliberately and documented, implementing it means
 changing `AD_TAGS_ALLOWED` in `js/family-lp.js`, the page gate in
 `netlify/functions/family-inquiry.js`, the test that asserts the block, and the
 consent notice wording plus `CONSENT_NOTICE_VERSION`. Section 8 describes the
-alternative that was proposed instead and partly built.
+alternative that was built instead and is now live.
 
 ---
 
@@ -260,35 +265,19 @@ somebody has to watch it.
 **a. Decide the Pixel question on the disability page.** Section 4. Everything
 else is smaller than this.
 
-**b. Bridge page for ad traffic.** Proposed as the way to get Meta-measurable
-volume for this audience without putting the disability signal into ad
-targeting: run ads to a neutral family-housing page that carries the Pixel, and
-let visitors self-select onward. Meta sees "interested in family housing" and
-never learns who clicked through to the disability page, because that page sends
-Meta nothing. This was started and then stashed.
+**b. Bridge page for ad traffic. DONE, live at `/family-home-financing`.**
+Built as the way to get Meta-measurable volume for this audience without putting
+the disability signal into ad targeting. Ads point at this neutral page, which
+carries the Pixel, and visitors self-select onward via two route cards. Meta sees
+"interested in family housing" and never learns who continued to the disability
+page, because that page sends Meta nothing.
 
-Recover the work in progress with:
+Two properties that must survive any future edit:
 
-```bash
-git stash list        # look for "WIP: routes/bridge-page scaffold"
-git stash pop
-```
-
-The stash contains a generator change adding an optional `routes` block, which
-renders a card list linking onward and no-ops for pages without it. Still to do:
-the matching `.fo-routes` CSS in `family.css`, and the page entry in
-`family_lp_config.py`. The intended page:
-
-- slug `family-home-financing`, page id `family-overview`, `sensitive=False`
-- general copy about financing a home for a family member, covering both
-  situations without leading with disability
-- a `routes` list linking to `/buy-a-home-for-parents` and
-  `/family-housing-options`
-- its own inquiry form, same component as the others
-
-Because the Pixel sends the URL, the slug must stay neutral. Because
-`autoConfig` is off, link text mentioning disability on that page is not
-transmitted. Add `family-overview` to `WEBSITE_PAGE_VALUES` in the CRM.
+- The slug and on-page copy stay general. The Pixel reports the URL, so a slug
+  naming disability would leak the same signal the design avoids.
+- Card link text mentioning disability is safe only because `autoConfig` is off.
+  Re-enabling Meta's automatic element scraping would start transmitting it.
 
 **c. Conversions API on the parents page.** Code is written and tested. Needs
 `META_CAPI_TOKEN` and `FAMILY_CAPI_PARENTS_PAGE=1` in Netlify. The client already

@@ -9,9 +9,9 @@ You are taking over the Family Opportunity Mortgage work on the Stonehaven
 Lending marketing site. Read `docs/family-opportunity-handoff.md` first and in
 full before changing anything. It is accurate as of 2026-09-11.
 
-**What exists.** Three generated pages are live in production:
-`/buy-a-home-for-parents`, `/family-housing-options`, and a shared
-`/request-received` confirmation page. They are served by Netlify from the
+**What exists.** Four generated pages are live in production: a neutral
+`/family-home-financing` that ad traffic lands on, `/buy-a-home-for-parents`,
+`/family-housing-options`, and a shared `/request-received` confirmation page. They are served by Netlify from the
 `main` branch of `github.com/DLECLTHNG/stonehaven-website`. A Netlify Function at
 `/.netlify/functions/family-inquiry` validates and stores inquiries. There is a
 generator, a compliance linter, and ten passing endpoint tests.
@@ -44,13 +44,10 @@ including the consent notice and its version stamp.
 
 **Highest value work available**, detail in section 8:
 
-1. The bridge page, partly built and sitting in a `git stash`. It gets
-   Meta-measurable ad volume for this audience without putting disability into
-   ad targeting.
-2. Meta Conversions API on the parents page. Code is done, needs a token.
-3. CRM integration, which is blocked by a real incompatibility described in
+1. Meta Conversions API on the parents page. Code is done, needs a token.
+2. CRM integration, which is blocked by a real incompatibility described in
    section 7. Do not just set the environment variable, it will fail closed.
-4. Flipping the pages out of `noindex`.
+3. Flipping the pages out of `noindex`.
 
 **Credentials.** None are in the repository. Section 5 lists what is needed and
 who supplies it. Do not paste the Meta Conversions API token yourself, have the
