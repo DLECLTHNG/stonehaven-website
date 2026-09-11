@@ -142,6 +142,30 @@ Other properties worth preserving:
 - Attribution is limited to an allowlist of six UTM keys, held in
   `sessionStorage`.
 
+### Qualifying questions and what the sensitive page may ask
+
+Every inquiry form asks purchase price and the borrower's own credit score
+range, both optional. The parents page additionally asks whether the parents
+could qualify on their own income, which is the actual Fannie criterion for that
+product.
+
+The adult-child page has no equivalent question and must not gain one. The same
+question there would be asking a parent to disclose a disabled person's capacity
+to work, and the page's own copy promises the opposite: the hero says no medical
+information is needed, and an FAQ tells visitors not to send diagnoses or
+benefits documents. Three things enforce this:
+
+- The question is defined per page in `family_lp_config.py` as `extra_select`,
+  and only the parents page defines one.
+- `netlify/functions/family-inquiry.js` keys the answer to the page that asks
+  it, so a crafted request offering `occupant_income` for the adult-child page
+  has the value dropped rather than stored. A test covers it.
+- The linter fails the build if the sensitive page's form mentions income,
+  benefits, capacity to work, disability or medical wording.
+
+Keep all of these optional. The consent notice states that this is an inquiry
+and not a mortgage application, which stops being true if answers become gates.
+
 ### Open decision: Pixel on the disability page
 
 The owner has asked for the Meta Pixel to be added to
