@@ -50,10 +50,11 @@ Not yet working:
 
 Netlify site id `d9ec18aa-630d-47f6-93cc-7514615ae9b8`, serving stonehavencre.com.
 
-**The CRM has one unpushed commit**: `d8d73b9c0`, which adds `family-parents` and
-`family-adult-child` to the page allowlist. Without it the CRM rejects these
-inquiries as an unknown page. It is unpushed because the branch it sits on is
-unrelated in-flight work. Push or cherry-pick it before connecting the CRM.
+**The CRM change is on a feature branch, not `main`**: commit `d8d73b9c0` adds
+`family-parents` and `family-adult-child` to the page allowlist. Without it the
+CRM rejects these inquiries as an unknown page. It is pushed to
+`feat/residential-product-website-intake`, which also carries unrelated in-flight
+work, so merge or cherry-pick it into `main` before connecting the CRM.
 
 Relevant website commits, both on `main` and deployed:
 
