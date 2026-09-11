@@ -73,7 +73,7 @@ FORM = dict(
 TRACKING = dict(
     ga4_id="",                 # e.g. "G-XXXXXXX". Aggregate page views + form starts + inquiry success on the parents page only.
     ga4_on_sensitive_page=False,  # keep False: no analytics on the adult-child page unless separately reviewed
-    meta_pixel_id="",          # parents page only. Lead fires after a confirmed server success, never on click or confirmation visit.
+    meta_pixel_id="4039555362846500",  # parents page only, same Pixel as the rest of the site (set 2026-07-31). Lead fires after a confirmed server success, never on click or confirmation visit.
     capi=False,                # server-side relay for the parents page only. Requires META_CAPI_TOKEN in Netlify and a review.
 )
 

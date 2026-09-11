@@ -16,7 +16,7 @@ window.SH_FAMILY = {
   "tracking": {
     "ga4Id": "",
     "ga4OnSensitivePage": false,
-    "metaPixelId": "",
+    "metaPixelId": "4039555362846500",
     "capi": false
   }
 };
