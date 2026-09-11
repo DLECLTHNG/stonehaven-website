@@ -10,7 +10,7 @@
   ],
   "noticeVersion": "fo-notice-2026-09-11",
   "pages": {
-    "family-overview": "Family Opportunity: parents",
+    "family-overview": "Family Opportunity: family overview",
     "family-parents": "Family Opportunity: parents",
     "family-adult-child": "Family Opportunity: adult child with a disability"
   },
@@ -19,6 +19,33 @@
     "within_3_months": "Within 3 months",
     "3_to_6_months": "3 to 6 months",
     "more_than_6_months": "More than 6 months"
+  },
+  "credit": {
+    "bands": [
+      "850-780",
+      "779-760",
+      "759-740",
+      "739-720",
+      "719-700",
+      "699-680",
+      "679-660",
+      "659-640",
+      "639-620",
+      "619-600"
+    ],
+    "placeholder": "not-sure"
+  },
+  "priceMax": 100000000,
+  "extraSelect": {
+    "family-parents": {
+      "name": "occupant_income",
+      "label": "Could your parents qualify for a mortgage on their own income?",
+      "values": [
+        "not_sure",
+        "no",
+        "yes"
+      ]
+    }
   },
   "attributionAllowlist": [
     "utm_source",

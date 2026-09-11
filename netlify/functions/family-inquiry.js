@@ -57,7 +57,34 @@ function validate(b) {
   if (timing && !timingLabel) errors.timing = "Please choose one of the listed options.";
   const page = String(b.page || "");
   if (!SHARED.pages[page]) errors.page = "Unknown page.";
-  return { errors, name, phone, state, email, timing: timingLabel, page };
+
+  // Optional qualifying answers. Blank is always acceptable; a present value
+  // must match the allowlist, so a crafted request cannot smuggle free text in.
+  const priceDigits = String(b.price || "").replace(/\D/g, "").slice(0, 12);
+  let price = 0;
+  if (priceDigits) {
+    price = parseInt(priceDigits, 10);
+    if (!price || price < 1000 || price > (SHARED.priceMax || 100000000)) {
+      errors.price = "Please enter a rough purchase price, or leave it blank.";
+      price = 0;
+    }
+  }
+  const creditRaw = String(b.credit || "");
+  const ph = SHARED.credit ? SHARED.credit.placeholder : "";
+  const bands = SHARED.credit ? SHARED.credit.bands : [];
+  const credit = creditRaw && creditRaw !== ph && bands.includes(creditRaw) ? creditRaw : "";
+  if (creditRaw && creditRaw !== ph && !credit) errors.credit = "Please choose one of the listed ranges.";
+
+  // The extra select is defined per page. A value offered for a page that does
+  // not ask the question is dropped rather than stored: this is what keeps the
+  // adult-child page from ever carrying an income or capacity answer.
+  const spec = SHARED.extraSelect && SHARED.extraSelect[page];
+  let extra = null;
+  if (spec && String(b.extra_name || "") === spec.name) {
+    const val = String(b.extra_value || "");
+    if (val && spec.values.includes(val)) extra = { name: spec.name, label: spec.label, value: val };
+  }
+  return { errors, name, phone, state, email, timing: timingLabel, page, price, credit, extra };
 }
 
 function allowedOrigin(origin) {
@@ -93,6 +120,9 @@ async function persist(rec, event) {
     "[Family Opportunity inquiry " + rec.id + "]",
     "Page: " + SHARED.pages[rec.page],
     "Property state: " + rec.state,
+    rec.price ? "Purchase price, approx: " + rec.price.toLocaleString("en-US") : "",
+    rec.credit ? "Credit score range: " + rec.credit : "",
+    rec.extra ? rec.extra.label + " " + rec.extra.value : "",
     rec.timing ? "Purchase timing: " + rec.timing : "",
     "Requested-contact notice: " + rec.notice_version,
     "Received: " + rec.received_at,
@@ -106,7 +136,10 @@ async function persist(rec, event) {
       method: "POST", headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name: rec.name, email: rec.email, phone: fmtPhone(rec.phone), product: "Residential", about,
         page: rec.page, lang: "en", token: "",
-        extra: { state: rec.state, timeline: rec.timing, inquiry_id: rec.id, notice_version: rec.notice_version, utm: rec.attributionObj } })
+        extra: { state: rec.state, timeline: rec.timing, inquiry_id: rec.id, notice_version: rec.notice_version,
+          purchase_price: rec.price || undefined, credit_band: rec.credit || undefined,
+          [rec.extra ? rec.extra.name : "_unused"]: rec.extra ? rec.extra.value : undefined,
+          utm: rec.attributionObj } })
     });
     if (!r.ok) throw new Error("crm " + r.status);
     return { stored: true, dry_run: false };
@@ -159,7 +192,7 @@ exports.handler = async (event) => {
   if (b.attribution && typeof b.attribution === "object") SHARED.attributionAllowlist.forEach((k) => { if (typeof b.attribution[k] === "string" && b.attribution[k]) attributionObj[k] = b.attribution[k].slice(0, 120); });
   const rec = {
     id: newId(), received_at: new Date().toISOString(), page: v.page, name: v.name, phone: v.phone, email: v.email,
-    state: v.state, timing: v.timing, notice_version: String(b.notice_version || SHARED.noticeVersion).slice(0, 60),
+    state: v.state, timing: v.timing, price: v.price, credit: v.credit, extra: v.extra, notice_version: String(b.notice_version || SHARED.noticeVersion).slice(0, 60),
     attribution: attributionLine(b.attribution), attributionObj,
     path: String(b.path || "/").split("?")[0].slice(0, 80), event_id: String(b.event_id || "").slice(0, 60)
   };

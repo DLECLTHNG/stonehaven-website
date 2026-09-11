@@ -55,3 +55,31 @@ test("storage failure returns 502, never a fake success", async () => {
   try { const r = await post({ ...good(), phone: "4705550888" }); assert.equal(r.statusCode, 502); assert.equal(JSON.parse(r.body).ok, false); }
   finally { globalThis.fetch = orig; process.env.FAMILY_DRY_RUN = "1"; }
 });
+test("accepts optional price and credit band, rejects out-of-range values", async () => {
+  const ok = await post({ ...good(), phone: "4705551201", price: "$450,000", credit: "759-740" });
+  assert.equal(ok.statusCode, 200);
+  const lowPrice = await post({ ...good(), phone: "4705551202", price: "12" });
+  assert.equal(lowPrice.statusCode, 400);
+  assert.ok(JSON.parse(lowPrice.body).errors.price);
+  const badBand = await post({ ...good(), phone: "4705551203", credit: "900-880" });
+  assert.equal(badBand.statusCode, 400);
+  assert.ok(JSON.parse(badBand.body).errors.credit);
+  const placeholder = await post({ ...good(), phone: "4705551204", credit: "not-sure" });
+  assert.equal(placeholder.statusCode, 200);
+});
+test("the parent-income question is accepted only on the parents page", async () => {
+  const parents = await post({ ...good(), page: "family-parents", phone: "4705551301",
+    extra_name: "occupant_income", extra_value: "no" });
+  assert.equal(parents.statusCode, 200);
+  // Same answer offered for the adult-child page must be dropped, never stored.
+  const orig = globalThis.fetch; let body = null;
+  globalThis.fetch = async (_u, o) => { body = o && o.body; return { ok: true }; };
+  process.env.FAMILY_DRY_RUN = ""; process.env.URL = "https://example.test";
+  try {
+    const sensitive = await post({ ...good(), page: "family-adult-child", phone: "4705551302",
+      extra_name: "occupant_income", extra_value: "no" });
+    assert.equal(sensitive.statusCode, 200);
+    assert.ok(!/occupant_income/.test(String(body)));
+    assert.ok(!/income/i.test(String(body)));
+  } finally { globalThis.fetch = orig; process.env.FAMILY_DRY_RUN = "1"; }
+});

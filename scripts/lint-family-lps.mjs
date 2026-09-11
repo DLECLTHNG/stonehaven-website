@@ -15,7 +15,14 @@ const banned = [
 for (const f of pages) {
   const html = fs.readFileSync(ROOT + f, "utf8");
   const main = html.split("<main")[1]?.split("</main>")[0] || "";
-  const text = html.replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/g, "").replace(/<[^>]+>/g, " ");
+  // Claim checks run on prose. Field labels and select options are excluded:
+  // a credit-range dropdown and a currency-marked price label are inputs, not
+  // claims. The consent notice is a paragraph, so it still gets checked.
+  const text = html
+    .replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/g, "")
+    .replace(/<select[\s\S]*?<\/select>/g, " ")
+    .replace(/<label[\s\S]*?<\/label>/g, " ")
+    .replace(/<[^>]+>/g, " ");
   for (const [re, label] of banned) if (re.test(text)) fails.push(`${f}: ${label}`);
   for (const m of html.matchAll(/<h[23][^>]*>([^<]*)<\/h[23]>/g)) if (/\.\s*$/.test(m[1])) fails.push(`${f}: heading ends with a period: ${m[1]}`);
   if (f !== "request-received.html") {
@@ -24,9 +31,21 @@ for (const f of pages) {
     if (!/name="company_website"/.test(html)) fails.push(`${f}: no honeypot`);
     if (!/href="\/privacy"/.test(main)) fails.push(`${f}: consent notice lacks privacy link`);
     if (!/This is an inquiry, not a mortgage application/.test(text)) fails.push(`${f}: consent notice missing`);
-    for (const bad of ["income", "loan amount", "credit score", "diagnosis", "date of birth", "SSN", "property address"]) {
-      const formHtml = html.split('id="inquiry-form"')[1].split("</form>")[0];
-      if (new RegExp(bad, "i").test(formHtml.replace(/<[^>]+>/g, " "))) fails.push(`${f}: form asks for ${bad}`);
+    const formHtml = html.split('id="inquiry-form"')[1].split("</form>")[0];
+    const formText = formHtml.replace(/<[^>]+>/g, " ");
+    // Never acceptable on any page: identity documents and dates of birth have
+    // no place in an inquiry, and a full address is not needed to return a call.
+    for (const bad of ["diagnosis", "date of birth", "SSN", "social security", "property address"]) {
+      if (new RegExp(bad, "i").test(formText)) fails.push(`${f}: form asks for ${bad}`);
+    }
+    // The adult-child page asks nothing about the occupant. Purchase price and
+    // the borrower's own credit range are fine there; anything touching the
+    // disabled person's capacity, benefits or health is not, and the page's own
+    // copy promises as much.
+    if (/data-fo-sensitive="1"/.test(html)) {
+      for (const bad of ["income", "able to work", "unable to work", "benefits", "SSI", "disability", "medical", "diagnos"]) {
+        if (new RegExp(bad, "i").test(formText)) fails.push(`${f}: sensitive page form asks about ${bad}`);
+      }
     }
     const ctas = (main.match(/href="#inquiry"/g) || []).length;
     if (ctas < 2) fails.push(`${f}: CTAs not wired to #inquiry`);

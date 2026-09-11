@@ -66,7 +66,19 @@ FORM = dict(
     timing_label="Purchase timing (optional)",
     timing_options=[("exploring", "Exploring"), ("within_3_months", "Within 3 months"),
                     ("3_to_6_months", "3 to 6 months"), ("more_than_6_months", "More than 6 months")],
+    # Qualifying questions. All optional by design: the page states that this is
+    # an inquiry and not a mortgage application, so nothing here may be a gate.
+    price_label="Purchase price, roughly ($)",
+    price_hint="A rough figure is fine. Leave blank if you are still looking.",
+    price_max=100000000,
+    credit_label="Credit score range",
+    credit_hint="Your own range, not your family member's. A rough answer is fine.",
 )
+
+# Owner's standard ten 20-point bands, shared with every other form on the site.
+import credit_bands
+CREDIT_BANDS = credit_bands.BANDS
+CREDIT_PLACEHOLDER = ("not-sure", "Select a range")
 
 # All measurement is OFF by default. Meta Pixel / CAPI / retargeting can never
 # load on the adult-child page or on /request-received (enforced in code).
@@ -97,6 +109,7 @@ PAGES = [
 # the cards is not transmitted, because autoConfig is off in js/family-lp.js.
 dict(
     slug="family-home-financing", page_id="family-overview", sensitive=False,
+    label="family overview",
     title="Buying a Home for a Family Member | Stonehaven Lending",
     description=("Conventional family-occupancy guidelines may let you finance a home for a family member using "
                  "primary-residence terms while you live elsewhere. Request a call from Stonehaven Lending."),
@@ -145,6 +158,7 @@ dict(
 ),
 dict(
     slug="buy-a-home-for-parents", page_id="family-parents", sensitive=False,
+    label="parents",
     title="Buy a Home for Your Parents, Keep Your Own | Stonehaven Lending",
     description=("Conventional family-occupancy guidelines may let you finance a home your parents live in using "
                  "primary-residence terms while you live elsewhere. Request a call from Stonehaven Lending."),
@@ -152,6 +166,16 @@ dict(
     sub=("Certain conventional mortgage guidelines may let you finance a home for your parents using primary-residence "
          "terms, even when you live elsewhere. Stonehaven can help you explore whether this approach fits."),
     micro="Start with a conversation. This form does not authorize a credit check.",
+    # The Fannie provision turns on whether the occupying parent could qualify
+    # alone, so asking it here is a real eligibility signal rather than profiling.
+    # There is deliberately no equivalent question on the adult-child page: the
+    # same question there would be asking about a disabled person's capacity to
+    # work, which that page promises not to collect.
+    extra_select=dict(
+        name="occupant_income",
+        label="Could your parents qualify for a mortgage on their own income?",
+        options=[("not_sure", "Not sure"), ("no", "No"), ("yes", "Yes")],
+    ),
     points=["Your parents live in the home.", "You apply for the financing.", "You may be able to keep your current home."],
     photo="",   # "" = no photo. Licensed or supplied asset only: adults of different generations together at home.
     photo_alt="Adults of different generations together in a family home",
@@ -187,6 +211,7 @@ dict(
 ),
 dict(
     slug="family-housing-options", page_id="family-adult-child", sensitive=True,
+    label="adult child with a disability",
     title="A Home for an Adult Child with a Disability | Stonehaven Lending",
     description=("Parents or legal guardians may be able to finance a separate home for an adult child with a "
                  "disability under conventional family-occupancy guidelines. Request a call from Stonehaven Lending."),

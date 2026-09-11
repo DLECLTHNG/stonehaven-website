@@ -138,7 +138,8 @@
     name: form.querySelector("[name=name]"),
     phone: form.querySelector("[name=phone]"),
     state: form.querySelector("[name=state]"),
-    email: form.querySelector("[name=email]")
+    email: form.querySelector("[name=email]"),
+    price: form.querySelector("[name=price]")
   };
   var btn = form.querySelector('button[type="submit"]');
   var btnLabel = btn ? btn.textContent : "";
@@ -166,6 +167,13 @@
     setErr(fields.state, m); if (m && !first) first = fields.state;
     m = emailOk((fields.email.value || "").trim()) ? "" : "Please enter a valid email address, or leave it blank.";
     setErr(fields.email, m); if (m && !first) first = fields.email;
+    if (fields.price) {
+      var raw = (fields.price.value || "").trim();
+      var n = parseInt(digits(raw), 10);
+      m = !raw ? "" : (!n || n < 1000 || n > (C.priceMax || 100000000))
+        ? "Please enter a rough purchase price, or leave it blank." : "";
+      setErr(fields.price, m); if (m && !first) first = fields.price;
+    }
     return first;
   }
   Object.keys(fields).forEach(function (k) {
@@ -198,6 +206,9 @@
     if (bad) { bad.focus(); return; }
     var timing = form.querySelector("[name=timing]:checked");
     var hp = form.querySelector("[name=company_website]");
+    var priceEl = form.querySelector("[name=price]");
+    var creditEl = form.querySelector("[name=credit]");
+    var extraEl = form.querySelector("#f-extra");
     var eid = eventId();
     var payload = {
       page: PAGE,
@@ -205,6 +216,10 @@
       phone: digits(fields.phone.value),
       state: fields.state.value,
       email: (fields.email.value || "").trim(),
+      price: priceEl ? digits(priceEl.value) : "",
+      credit: creditEl ? creditEl.value : "",
+      extra_name: extraEl ? extraEl.getAttribute("name") : "",
+      extra_value: extraEl ? extraEl.value : "",
       timing: timing ? timing.value : "",
       notice_version: C.noticeVersion || "",
       attribution: ATTR,
