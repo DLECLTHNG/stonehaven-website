@@ -2,3 +2,6 @@
 
 # Local Netlify folder
 .netlify
+
+# Python build artifacts
+scripts/__pycache__/
