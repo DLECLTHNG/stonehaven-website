@@ -91,6 +91,58 @@ SHARED = dict(
 )
 
 PAGES = [
+# Neutral entry page. Ads point here, then visitors choose their own situation.
+# The slug and copy stay general on purpose: the Meta Pixel reports the URL, so
+# this page must never identify the visitor's family circumstances. Link text on
+# the cards is not transmitted, because autoConfig is off in js/family-lp.js.
+dict(
+    slug="family-home-financing", page_id="family-overview", sensitive=False,
+    title="Buying a Home for a Family Member | Stonehaven Lending",
+    description=("Conventional family-occupancy guidelines may let you finance a home for a family member using "
+                 "primary-residence terms while you live elsewhere. Request a call from Stonehaven Lending."),
+    h1="Buying a home for someone in your family.",
+    sub=("Certain conventional mortgage guidelines may let you finance a home a family member lives in using "
+         "primary-residence terms, even when you live elsewhere. Stonehaven can help you find the route that fits."),
+    micro="Start with a conversation. This form does not authorize a credit check.",
+    points=["A family member lives in the home.", "You apply for the financing.", "You may be able to keep your current home."],
+    routes_h="Which situation fits your family",
+    routes=[("/buy-a-home-for-parents", "Buying a home for a parent",
+             "A parent lives in the home as their primary residence while you live elsewhere.",
+             "Explore this option"),
+            ("/family-housing-options", "Buying a home for an adult child with a disability",
+             "A parent or legal guardian purchases a home for an adult child who cannot qualify independently.",
+             "Explore this option")],
+    photo="",
+    photo_alt="A family home",
+    story_h="One set of rules, more than one family situation",
+    story_p=("Family-occupancy guidelines exist because households do not all live under one roof. The same "
+             "conventional approach can apply whether the person living in the home is a parent or an adult child, "
+             "and the details differ by situation."),
+    how_h="How this financing works",
+    steps=[("Start with the family housing plan", "Tell Stonehaven who the home is for, where you are looking, and when you hope to buy."),
+           ("Review the mortgage options", "We discuss the occupancy rules, your borrowing profile, and which lender options may fit."),
+           ("Decide on the next step", "If it makes sense to proceed, we explain the application, documentation, and lender review process.")],
+    explainer_h="Why the occupancy rules matter",
+    explainer_p=("Family Opportunity Mortgage is a common name for a conventional financing approach. In qualifying "
+                 "situations, a home occupied by a family member can receive primary-residence treatment even when "
+                 "the person borrowing the money lives elsewhere. It is not a grant or a separate government benefit."),
+    explainer_link_text="Read the occupancy guidance",
+    work_h="What we will work through together",
+    work_items=["Who will live in the home and how it will be occupied",
+                "The applicable family-occupancy requirements",
+                "The buyer's income, credit, assets, and existing obligations",
+                "The down payment, closing costs, and complete housing payment"],
+    work_note=("The provision that applies depends on the family situation and on the lender. Stonehaven will review "
+               "the route that fits the scenario."),
+    faqs=[("Do I have to live in the home?", "An eligible family-occupancy arrangement can allow you to live elsewhere while your family member occupies the home as their primary residence."),
+          ("Can I already own a home?", "Yes, that can be possible. Existing housing costs and other obligations still matter when the lender reviews the new loan."),
+          ("Does my family member borrow with me?", "The family-occupancy approach may allow you to borrow without your family member being a co-borrower. Stonehaven will review the appropriate loan and ownership structure."),
+          ("How much would I need upfront?", "Your required down payment, closing costs, and any reserves depend on the loan and lender. We will help you understand the amounts for your situation."),
+          ("Is this for a vacation home or rental?", "This page addresses a home occupied by a family member as their primary residence. Other uses need a different review."),
+          ("Am I applying for a mortgage here?", "No. You are asking Stonehaven to contact you. A mortgage application and any credit authorization are separate steps.")],
+    closing_h="Let's talk through the family housing plan",
+    closing_p="Tell us who the home is for and how to reach you. A Stonehaven team member will follow up to discuss the options and next steps.",
+),
 dict(
     slug="buy-a-home-for-parents", page_id="family-parents", sensitive=False,
     title="Buy a Home for Your Parents, Keep Your Own | Stonehaven Lending",

@@ -144,6 +144,18 @@ def page(p):
     photo = ""
     if p.get("photo"):
         photo = f'<figure class="fo-figure"><img src="{p["photo"]}" alt="{esc(p["photo_alt"])}" width="1200" height="800" loading="lazy" decoding="async"/><figcaption>{esc(C.SHARED["illustration_note"])}</figcaption></figure>'
+    routes = ""
+    if p.get("routes"):
+        cards = "".join(
+            f'<li><a href="{r[0]}"><strong>{heading(r[1])}</strong><span>{esc(r[2])}</span>'
+            f'<em>{esc(r[3])}</em></a></li>'
+            for r in p["routes"])
+        routes = f"""<section class="fo-sec" aria-labelledby="routes-h">
+  <div class="fo-wrap">
+    <h2 id="routes-h">{heading(p['routes_h'])}</h2>
+    <ul class="fo-routes">{cards}</ul>
+  </div>
+</section>"""
     sens = "1" if p["sensitive"] else "0"
     body = f"""{head(p["title"], p["description"], path, not C.INDEXABLE)}
 <body data-fo-kind="lp" data-fo-page="{p['page_id']}" data-fo-sensitive="{sens}">
@@ -165,6 +177,7 @@ def page(p):
 <section class="fo-sec" aria-label="At a glance">
   <div class="fo-wrap"><ul class="fo-points">{pts}</ul></div>
 </section>
+{routes}
 <section class="fo-sec alt" aria-labelledby="story-h">
   <div class="fo-wrap">
     <h2 id="story-h">{heading(p['story_h'])}</h2>

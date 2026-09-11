@@ -2,7 +2,7 @@
 import fs from "node:fs";
 import { fileURLToPath } from "node:url";
 const ROOT = fileURLToPath(new URL("../", import.meta.url));
-const pages = ["buy-a-home-for-parents.html", "family-housing-options.html", "request-received.html"];
+const pages = ["family-home-financing.html", "buy-a-home-for-parents.html", "family-housing-options.html", "request-received.html"];
 const fails = [];
 const banned = [
   [/[—–]/, "em/en dash"],
