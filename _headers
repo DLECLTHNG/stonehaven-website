@@ -1,0 +1,44 @@
+# Netlify response headers.
+#
+# These live here and NOT in netlify.toml on purpose: the build command in
+# netlify.toml deletes netlify.toml itself, so any [[headers]] block declared
+# there never reaches the deploy. This file is read from the publish directory
+# and survives, the same way _redirects does. Verify any change with:
+#   curl -sI https://stonehavencre.com/ | grep -i content-security
+#
+# Order matters: Netlify applies the first matching rule set, and later blocks
+# add to earlier ones for the same path.
+
+/*
+  # Clickjacking. The site carries lead forms, so a framed overlay could
+  # harvest or trigger submissions. frame-ancestors is the modern control;
+  # X-Frame-Options is kept for older agents.
+  X-Frame-Options: DENY
+  # Stop the browser guessing a content type and running a response as script.
+  X-Content-Type-Options: nosniff
+  # Do not leak full URLs (including any query string) to third parties.
+  Referrer-Policy: strict-origin-when-cross-origin
+  # Nothing here needs these devices or APIs.
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=(), usb=(), magnetometer=(), gyroscope=(), interest-cohort=()
+  # Netlify already sends HSTS; this adds subdomains and preload eligibility.
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  # Enforced now because none of these can break a page that behaves:
+  # no plugins, no <base> injection, forms may only post to this origin,
+  # and the page may not be framed.
+  Content-Security-Policy: base-uri 'self'; object-src 'none'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests
+  # Full resource allowlist, REPORT-ONLY for now. Flip this into the line above
+  # once production shows no violations. 'unsafe-inline' is required because
+  # the pages carry inline <script> and style attributes; the value is still
+  # real, since it confines loading and exfiltration to known origins.
+  Content-Security-Policy-Report-Only: default-src 'self'; script-src 'self' 'unsafe-inline' https://connect.facebook.net https://www.googletagmanager.com https://challenges.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: https://www.facebook.com https://www.google-analytics.com https://*.google-analytics.com https://*.googletagmanager.com; connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://connect.facebook.net https://www.facebook.com; frame-src https://calendar.google.com https://challenges.cloudflare.com; base-uri 'self'; object-src 'none'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests
+
+# The confirmation page renders a per-visitor reference from sessionStorage.
+# It must not be stored by any shared cache, and must never be indexed.
+/request-received
+  X-Robots-Tag: noindex, nofollow
+  Cache-Control: no-store, max-age=0
+
+# Serverless endpoints return per-visitor data.
+/.netlify/functions/*
+  Cache-Control: no-store, max-age=0
+  X-Robots-Tag: noindex, nofollow

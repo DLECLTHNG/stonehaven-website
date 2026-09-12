@@ -144,7 +144,11 @@
     });
     var utmStr = Object.keys(UTMS).map(function (k) { return k + "=" + UTMS[k]; }).join(" ");
     if (utmStr) lines.push("[attribution] " + utmStr);
-    lines.push("[url] " + window.location.pathname + window.location.search);
+    // The query string is attacker-controllable via a crafted inbound link and
+    // ends up stored in the CRM, so bound it and drop anything that could form
+    // markup downstream. Defence in depth: the CRM must still encode on output.
+    var q = window.location.search.replace(/[<>"']/g, "").slice(0, 200);
+    lines.push("[url] " + window.location.pathname.slice(0, 120) + q);
     return lines.join(" · ").slice(0, 2000);
   }
 
