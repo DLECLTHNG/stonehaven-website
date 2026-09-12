@@ -16,7 +16,7 @@ The shared form transport saves structured extra fields alongside the readable d
 
 The CRM requires the server-only relay key and stable Netlify submission identity. Origin/CAPTCHA handling for direct browser intake remains unchanged. No secret is committed. The event function retries transient failures three times; exhausted failures leave the original inquiry in Netlify and produce a function error. There is no unlimited durable retry queue.
 
-Deploy CRM using an explicit commit based on the running release, because upstream main differs from the live revision. No schema migration or new environment variable is required by this update. Deploy the website after the CRM is live.
+Deploy CRM using an explicit commit based on the running release, because upstream main differs from the live revision. The CRM migration `20261015030000_saved_residential_lead_categories` expands the allowed Residential categories and must finish before Family Opportunity, VA, and Refinance inquiries can be saved. No new environment variable is required. Deploy the website after the CRM is live.
 
 ## Validation
 
