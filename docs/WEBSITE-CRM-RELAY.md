@@ -1,6 +1,6 @@
 # Saved website form relay
 
-Prepared September 12, 2026. Not activated in production.
+Prepared September 12, 2026. Production relay settings are configured; deployment and live delivery verification are in progress.
 
 ## Delivery
 
@@ -20,13 +20,13 @@ Keep `js/site-config.js` `intakeEndpoint` empty and `FAMILY_CRM_INTAKE_URL` unse
 
 CRM: deploy the reviewed `codex/website-crm-intake` change based on currently deployed commit `74809b81756e037015a54178b344c7b5f74f3cef`. Upstream main differs from that deployed revision, so do not deploy main indiscriminately. Configure `WEBSITE_RELAY_SECRET` with a random secret at least 32 characters long and set `WEBSITE_RELAY_ENABLED=1` to enable only the authenticated relay. The browser transport and its stored settings remain unchanged.
 
-Netlify: configure the matching `WEBSITE_RELAY_SECRET`, `WEBSITE_CRM_INTAKE_URL=https://stonehaven-crm.onrender.com/api/intake/website`, and finally `WEBSITE_CRM_RELAY_ENABLED=1`. Secrets belong only in deployment environment variables, never in browser scripts or git. No production secret has been created or changed during this work.
+Netlify: configure the matching `WEBSITE_RELAY_SECRET`, `WEBSITE_CRM_INTAKE_URL=https://stonehaven-crm.onrender.com/api/intake/website`, and finally `WEBSITE_CRM_RELAY_ENABLED=1`. Secrets belong only in deployment environment variables, never in browser scripts or git. A dedicated relay secret was configured in Render and in Netlify for production only. Netlify uses its plan-default scopes. The site has no injection snippets, and the exact production build with a canary secret produced no files containing that value.
 
 Enable after checking the CRM response with a synthetic inquiry and verifying the intended email recipient receives the existing Netlify notification. A real end-to-end receipt and database verification are still required.
 
 ## Residential boundary
 
-The deployed CRM is substantially newer than the handoff's local checkout. Its existing `ingestLead` service requires a reviewed Residential mapping and exact disclosure evidence. Current website forms do not supply that CRM evidence. The prepared transport preserves this restriction and will surface the rejection while the inquiry remains in Forms and email. Do not claim Residential import is working or fabricate evidence from the submitted notice version.
+The deployed CRM is substantially newer than the handoff's local checkout. Its existing `ingestLead` service requires a reviewed Residential mapping and exact disclosure evidence. Current website forms do not supply that CRM evidence. The transport preserves this restriction and excludes these inquiries from CRM forwarding. Do not claim Residential import is working or fabricate evidence from the submitted notice version.
 
 The owner chose to keep Residential and Family Opportunity inquiries in email and Netlify for now. The relay explicitly skips Residential product submissions and the Residential, HELOC, and Family page families. It does not attempt a CRM import for them.
 
