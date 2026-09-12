@@ -266,7 +266,7 @@
       box.querySelector("[data-save-range]").textContent = rng;
       sform.setAttribute("data-sh-about-prefix", "[SAVE ESTIMATE: text " + rng + " to this number]");
       box.classList.add("on");
-      track("save_nudge_shown", { reason: reason });
+      if (window.shTrack) window.shTrack("save_nudge_shown", { page: "heloc-wizard", reason: reason });
     }
     function armIdle() { clearTimeout(idleTimer); idleTimer = setTimeout(function () { showIt("idle"); }, 20000); }
     document.addEventListener("mouseleave", function (e) { if (e.clientY <= 0) showIt("exit"); });
