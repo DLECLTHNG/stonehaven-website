@@ -22,15 +22,16 @@
   Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=(), usb=(), magnetometer=(), gyroscope=(), interest-cohort=()
   # Netlify already sends HSTS; this adds subdomains and preload eligibility.
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-  # Enforced now because none of these can break a page that behaves:
-  # no plugins, no <base> injection, forms may only post to this origin,
-  # and the page may not be framed.
-  Content-Security-Policy: base-uri 'self'; object-src 'none'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests
-  # Full resource allowlist, REPORT-ONLY for now. Flip this into the line above
-  # once production shows no violations. 'unsafe-inline' is required because
-  # the pages carry inline <script> and style attributes; the value is still
-  # real, since it confines loading and exfiltration to known origins.
-  Content-Security-Policy-Report-Only: default-src 'self'; script-src 'self' 'unsafe-inline' https://connect.facebook.net https://www.googletagmanager.com https://challenges.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: https://www.facebook.com https://www.google-analytics.com https://*.google-analytics.com https://*.googletagmanager.com; connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://connect.facebook.net https://www.facebook.com; frame-src https://calendar.google.com https://challenges.cloudflare.com; base-uri 'self'; object-src 'none'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests
+  # Full resource allowlist, ENFORCED. Verified report-only first against the
+  # home page, /book (Google Calendar iframe), /heloc, /es/heloc and a Family
+  # page: zero resource violations, Pixel/GA4/fonts all still load.
+  # 'unsafe-inline' is required because the pages carry inline <script> and
+  # style attributes. The value is still real: it confines both loading and
+  # exfiltration to known origins, so injected markup cannot beacon out to
+  # attacker infrastructure. Origins come from the inventory in
+  # docs/security-review-2026-09-11.md; adding a vendor means adding it here.
+  # To roll back fast, rename this key to Content-Security-Policy-Report-Only.
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://connect.facebook.net https://www.googletagmanager.com https://challenges.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: https://www.facebook.com https://www.google-analytics.com https://*.google-analytics.com https://*.googletagmanager.com; connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://connect.facebook.net https://www.facebook.com; frame-src https://calendar.google.com https://challenges.cloudflare.com; base-uri 'self'; object-src 'none'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests
 
 # The confirmation page renders a per-visitor reference from sessionStorage.
 # It must not be stored by any shared cache, and must never be indexed.
