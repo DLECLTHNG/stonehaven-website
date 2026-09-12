@@ -106,14 +106,38 @@ in both configs would have one silently overwrite the other.
 `scripts/credit_bands.py` is shared by several generators and holds the owner's
 standard ten credit-score bands. Change it in one place and rebuild.
 
-Rebuild commands:
+Rebuild commands. **Order matters**, because `build-heloc-ads.py` imports
+`build-heloc-personas` as a module to borrow its shared helpers:
 
 ```bash
 python3 scripts/build-family-lps.py
 python3 scripts/build-dscr-personas.py
 python3 scripts/build-heloc-personas.py
-python3 scripts/build-heloc-ads.py
+python3 scripts/build-heloc-ads.py      # must run after the personas
 ```
+
+All four were run on 2026-09-12 and reproduce their committed output byte for
+byte, so the tree and the generators currently agree.
+
+### Two couplings that are easy to miss
+
+**The DSCR and HELOC generators scrape the `<footer>` out of `residential.html`
+at build time.** Editing that one footer therefore changes 33 generated pages on
+the next rebuild. That is by design, but it makes `residential.html` a shared
+dependency rather than just another page.
+
+**A cache-key drift was fixed on 2026-09-12 and is worth understanding, because
+it can recur.** Someone bumped `funnel.js?v=` across the site but not inside
+`build-dscr-personas.py`, so the generator still emitted `v=6` while its own 17
+committed pages carried `v=8`. Running it would have silently reverted all
+seventeen. The generator now emits `v=8` and regenerates identically.
+
+The related open question: the 16 HELOC persona pages are pinned to
+`funnel.js?v=6` while the rest of the site is on `v=8`. Generator and output
+agree there, so nothing is broken, but they are the only pages on an older cache
+key. That was left alone deliberately, since changing it would alter 16 live
+pages rather than just fix a drift. Cache busting is entirely manual: nothing
+propagates a bump.
 
 ---
 
@@ -142,6 +166,25 @@ Two conventions that are easy to get wrong:
 The blog index is titled **"Closings"** and its CTA disclaimer asserts the posts
 are illustrative of transactions already closed. Ten educational DSCR guides now
 sit under that framing. See section 8.
+
+### The pipeline is one-way, which is the biggest content gap
+
+**`new-post.mjs` is not idempotent.** Re-running it with an existing slug appends
+a duplicate redirect line, a duplicate sitemap entry and a duplicate index card.
+There is no dedupe check anywhere.
+
+**The JSON briefs are not kept.** None is committed and none appears in git
+history. Fifteen posts exist and zero briefs survive, so a published post cannot
+be regenerated. Changing one means hand-editing the generated HTML in both
+languages. If you write new posts, commit the brief alongside them.
+
+**Only the post generator maintains `_redirects` and `sitemap.xml`.** The four
+Python generators do not. Every `dscr/`, `heloc/` and Family redirect rule was
+added by hand, and any page added by any other route needs both files edited
+manually. Nothing checks for a miss.
+
+The sitemap does have a clean invariant worth preserving: 173 servable pages
+minus 53 deliberately noindex pages equals the 120 entries it contains.
 
 ---
 
@@ -442,3 +485,23 @@ state matrix is recorded as an unverified fact in the internal claims register.
   `netlify.toml`.** Anything that must be served cannot live there.
 - **Rates outside `/blog`.** The standing rule is no pricing anywhere except
   closed-deal write-ups, where every rate carries its closing date.
+- **`README.md` is stale and actively misleading.** It tells you not to
+  drag-and-drop onto the existing Netlify site because that would replace
+  stonehavencre.com. This repository **is** stonehavencre.com now. It also still
+  lists `(800) 555-0100` as the phone placeholder, and that exact string is a
+  build-gate sentinel, so pasting from the README into a page would fail the
+  deploy. The real number is in `js/site-config.js`.
+- **Large parts of the site have no linter at all.** The four linters cover the
+  17 DSCR pages, the 16 HELOC persona pages, the 4 Family pages and Spanish
+  casing. Nothing covers the 8 HELOC ad pages, the 30 blog posts, the 14
+  `resources/` pages, the 10 `residential/` pages or the 3 `commercial/` pages.
+- **The `heloc/` and Family pages are orphaned on purpose.** Nothing links to the
+  24 HELOC landing pages, and the only inbound links to Family pages come from
+  each other. They are noindex destinations for paid traffic. Do not "fix" the
+  missing navigation.
+- **There is synthetic monitoring.** `.github/workflows/site-monitor.yml` runs
+  every six hours against production, checking roughly 50 URLs, asserting the
+  withdrawn PDFs still return 410, and firing a canary form POST that
+  deliberately trips the honeypot so nothing is stored. It opens a GitHub issue
+  on failure. It exists because Netlify's edge once started 404ing form POSTs a
+  day after they worked, with no deploy in between.
