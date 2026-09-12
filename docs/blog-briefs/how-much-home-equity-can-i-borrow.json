@@ -1,0 +1,86 @@
+{
+  "slug": "how-much-home-equity-can-i-borrow",
+  "date": "2026-09-12",
+  "type": "guide",
+  "product": "HELOC",
+  "en": {
+    "title": "How much home equity could support your request?",
+    "desc": "Separate home equity from borrowing capacity with a transparent example using home value, mortgage balance, and the amount you want.",
+    "eyebrow": "HELOC · Homeowner guide",
+    "body": [
+      "Equity and an approved credit limit are different figures. An estimated value can help start a conversation, but it is not a lender valuation. The amount a lender will consider also depends on its program and your circumstances.",
+      {
+        "h": "Start with three figures"
+      },
+      "Write down your estimated home value, what remains on the mortgage, and the amount you want to request. Include other loans secured against the property when discussing the scenario with a broker. If the mortgage is paid off, enter zero for that balance; do not leave it blank.",
+      {
+        "h": "An example, not a lending offer"
+      },
+      "Assume a home is worth $450,000 and the mortgage balance is $250,000. The difference is $200,000 of estimated equity before considering other liens or costs. If the owner wants $60,000, the existing mortgage plus that request totals $310,000. Dividing $310,000 by $450,000 gives about 68.9% combined loan-to-value in this simplified example. That calculation does not establish eligibility or promise the requested funds.",
+      "For a separate illustration, applying an assumed 80% cap to $450,000 gives $360,000. Subtracting the $250,000 mortgage leaves $110,000 of mathematical headroom before other liens, costs, or program restrictions. The 80% assumption is not a Stonehaven offer, a quoted program limit, or an interest rate.",
+      {
+        "h": "Why the actual answer can change"
+      },
+      "A different accepted property value changes the calculation. So can another lien, the property use, or how a lender counts existing credit lines. A maximum credit line and the amount you plan to draw immediately are also different. Identify both during the conversation and ask how the proposed program treats them.",
+      "Keep a separate budget for the work or expense you want to fund. If your request uses nearly all the illustrated room, ask what happens if the valuation is lower or costs rise. A useful review should explain that uncertainty rather than turn an estimate into an approval.",
+      {
+        "h": "Use the calculator with its assumptions visible"
+      },
+      "The <a href=\"/heloc#estimate\">HELOC estimate</a> shows an illustrative range; its assumptions are explained in the <a href=\"/calculation-methodology\">calculation methodology</a>. You can change the figures and then request a review. The form asks for the same three figures so a broker can discuss the actual goal.",
+      {
+        "h": "What to do next"
+      },
+      "Prepare a current mortgage balance, your best available value estimate, and a brief description of the planned use. Do not attach account statements or send account numbers through the public inquiry form. Use the <a href=\"/blog/heloc-preparation-checklist\">preparation checklist</a> and <a href=\"/heloc#callback\">request a broker review</a>. For a basic definition, see the <a href=\"https://www.consumerfinance.gov/consumer-tools/mortgages/answers/key-terms/\">CFPB mortgage glossary</a>."
+    ],
+    "terms": [
+      [
+        "Purpose",
+        "Prepare for a broker conversation"
+      ],
+      [
+        "Scope",
+        "Education, not a loan approval"
+      ]
+    ]
+  },
+  "es": {
+    "title": "¿Cuánto valor acumulado puede respaldar su solicitud?",
+    "desc": "Distinga el valor acumulado de la capacidad de financiamiento con un ejemplo de valor de vivienda, saldo hipotecario y monto solicitado.",
+    "eyebrow": "HELOC · Guía para propietarios",
+    "body": [
+      "El valor acumulado y el límite de crédito aprobado son cifras distintas. Un valor estimado sirve para iniciar una conversación, pero no es la valoración de un prestamista. El monto que se puede considerar también depende del programa y de sus circunstancias.",
+      {
+        "h": "Empiece con tres cifras"
+      },
+      "Anote el valor estimado de la vivienda, el saldo hipotecario y el monto que desea solicitar. Mencione otros préstamos garantizados con la propiedad al hablar con el bróker. Si ya pagó la hipoteca, indique cero como saldo; no deje el campo vacío.",
+      {
+        "h": "Un ejemplo, no una oferta"
+      },
+      "Suponga un valor de $450,000 y un saldo hipotecario de $250,000. La diferencia es $200,000 de valor acumulado estimado antes de otros gravámenes o costos. Si solicita $60,000, la hipoteca más la solicitud suman $310,000. Al dividir $310,000 entre $450,000 resulta aproximadamente 68.9% de relación préstamo-valor combinada en este ejemplo simplificado. El cálculo no demuestra elegibilidad ni promete fondos.",
+      "En otra ilustración, aplicar un tope supuesto del 80% a $450,000 da $360,000. Restar la hipoteca de $250,000 deja $110,000 de margen matemático antes de otros gravámenes, costos o restricciones. El supuesto del 80% no es una oferta de Stonehaven, un límite cotizado de un programa ni una tasa de interés.",
+      {
+        "h": "Por qué puede cambiar la respuesta"
+      },
+      "Una valoración aceptada distinta cambia el cálculo. También pueden influir otro gravamen, el uso de la propiedad o la forma de contar líneas existentes. El límite máximo y el monto que desea retirar inmediatamente son distintos. Identifique ambos y pregunte cómo los trata el programa propuesto.",
+      "Mantenga separado el presupuesto de la obra o del gasto. Si su solicitud utiliza casi todo el margen ilustrado, pregunte qué ocurre si baja la valoración o suben los costos. La revisión debe explicar esa incertidumbre sin convertir una estimación en aprobación.",
+      {
+        "h": "Use la calculadora con sus supuestos visibles"
+      },
+      "La <a href=\"/es/heloc#estimate\">estimación de HELOC</a> muestra un rango ilustrativo; consulte la <a href=\"/calculation-methodology\">metodología de cálculo</a>. Puede cambiar las cifras y solicitar una revisión. El formulario pide las mismas tres cifras para que el bróker entienda su objetivo.",
+      {
+        "h": "Próximo paso"
+      },
+      "Prepare el saldo actual, su mejor estimación de valor y una descripción breve del uso previsto. No adjunte estados de cuenta ni envíe números de cuenta por el formulario público. Consulte la <a href=\"/es/blog/heloc-preparation-checklist\">lista de preparación</a> y <a href=\"/es/heloc#callback\">solicite una revisión</a>. Para definiciones, vea el <a href=\"https://www.consumerfinance.gov/consumer-tools/mortgages/answers/key-terms/\">glosario hipotecario del CFPB (en inglés)</a>."
+    ],
+    "terms": [
+      [
+        "Propósito",
+        "Preparar una conversación con un bróker"
+      ],
+      [
+        "Alcance",
+        "Información educativa, no aprobación"
+      ]
+    ]
+  }
+}

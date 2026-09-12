@@ -9,6 +9,9 @@ function run(args) {
 }
 run(['--test', ...readdirSync('tests').filter(f => f.endsWith('.test.mjs')).sort().map(f => join('tests', f))]);
 for (const name of ['family-lps', 'dscr-personas', 'heloc-personas', 'es-casing']) run([`scripts/lint-${name}.mjs`]);
+const seo = spawnSync('python3', ['scripts/check-seo.py'], { stdio: 'inherit' });
+if (seo.error) throw seo.error;
+if (seo.status !== 0) process.exit(seo.status || 1);
 const banned = /STONEHAVEN_OWNER_FACT_REQUIRED|555-0100|Call ,|call  to|Llame al ,|Llame al  |is a commercial real estate lender|prestamos de forma directa|guaranteed approval|lowest rate|everyone qualifies/i;
 function scan(dir) {
   let failures = 0;

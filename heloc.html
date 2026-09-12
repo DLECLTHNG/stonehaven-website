@@ -40,8 +40,9 @@
 <script src="js/heloc-fields.js?v=1" defer></script>
 <script src="js/funnel.js?v=10" defer></script>
 <script src="js/heloc-calc.js?v=1"></script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Service", "name": "Home Equity Line of Credit", "serviceType": "Residential mortgage brokerage", "description": "HELOC, home equity loan, and cash-out comparison.", "url": "https://stonehavencre.com/heloc", "areaServed": [{"@type": "State", "name": "Georgia"}, {"@type": "State", "name": "Alabama"}, {"@type": "State", "name": "Tennessee"}, {"@type": "State", "name": "Florida"}, {"@type": "State", "name": "North Carolina"}], "provider": {"@type": "FinancialService", "name": "Stonehaven Lending", "url": "https://stonehavencre.com/", "identifier": {"@type": "PropertyValue", "propertyID": "NMLS", "value": "1752355"}}}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Will this reset the existing mortgage rate?", "acceptedAnswer": {"@type": "Answer", "text": "No - a HELOC is a separate second lien; the current mortgage and its rate don't change."}}, {"@type": "Question", "name": "Does checking affect credit?", "acceptedAnswer": {"@type": "Answer", "text": "No - the estimate and the broker call involve no credit pull."}}, {"@type": "Question", "name": "How fast are funds available?", "acceptedAnswer": {"@type": "Answer", "text": "Often a few weeks from a complete application - the broker gives a real timeline on the first call."}}, {"@type": "Question", "name": "Do I need an appraisal for a HELOC?", "acceptedAnswer": {"@type": "Answer", "text": "In most cases no full appraisal is needed - many lenders accept an automated or drive-by valuation for home equity lines. Your advisor confirms what your scenario requires."}}, {"@type": "Question", "name": "Should I choose a HELOC or a cash-out refinance?", "acceptedAnswer": {"@type": "Answer", "text": "If your current mortgage rate is low, a second-lien HELOC or fixed home-equity loan usually protects it. If your current rate is high, replacing the loan with a cash-out refinance may make sense. The comparison depends on your rate, balance, and goal."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Service", "name": "Home Equity Line of Credit", "serviceType": "Residential mortgage brokerage", "description": "HELOC, home equity loan, and cash-out comparison.", "url": "https://stonehavencre.com/heloc", "areaServed": [{"@type": "State", "name": "Georgia"}, {"@type": "State", "name": "Alabama"}, {"@type": "State", "name": "Tennessee"}, {"@type": "State", "name": "Florida"}, {"@type": "State", "name": "North Carolina"}, {"@type": "State", "name": "South Carolina"}], "provider": {"@type": "FinancialService", "name": "Stonehaven Lending", "url": "https://stonehavencre.com/", "identifier": {"@type": "PropertyValue", "propertyID": "NMLS", "value": "1752355"}, "@id": "https://stonehavencre.com/#org"}}</script>
+
+<link rel="stylesheet" href="/seo-resources.css?v=1"/>
 </head>
 <body><noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=4039555362846500&ev=PageView&noscript=1" alt=""/></noscript><header class="nav" id="nav">
   <div class="wrap nav-inner">
@@ -68,13 +69,14 @@
         <div class="calc-grid">
           <div class="lf-field full"><label for="e-value">Home value, roughly ($)</label><input id="e-value" type="number" inputmode="numeric" min="0" step="10000" value="450000" style="font-size:18px;"/></div>
           <div class="lf-field full"><label for="e-balance">Mortgage balance, roughly ($)</label><input id="e-balance" type="number" inputmode="numeric" min="0" step="10000" value="250000" style="font-size:18px;"/></div>
+<div class="lf-field full"><label for="e-request">How much do you want to request? ($)</label><input id="e-request" type="number" inputmode="numeric" min="1" step="1" placeholder="60000" aria-describedby="e-request-note" style="font-size:18px;"/></div>
         </div>
       </div>
       <div class="calc-result" aria-live="polite">
         <span class="eyebrow">Estimated Equity Range</span>
         <div class="est-range" id="e-range">-</div>
         <div class="verdict" id="e-verdict">potentially accessible</div>
-        <p class="calc-note" id="e-note">Two numbers, no signup.</p>
+        <p class="calc-note" id="e-note">Two numbers, no signup.</p><p class="calc-note" id="e-request-note"></p>
         <div style="margin-top:22px;display:flex;flex-direction:column;align-items:center;gap:10px;">
           <a class="btn-primary" href="#callback" style="width:100%;max-width:320px;text-align:center;">Talk to a broker</a>
           <span style="font-size:13px;color:var(--stone-400);">Callback typically within minutes, business hours (Mon&ndash;Fri, ET).</span>
@@ -107,11 +109,14 @@
 <tr><td style="padding:10px 12px;border-bottom:2px solid #142332;"></td><td style="padding:10px 12px;border-bottom:2px solid #142332;"><b>HELOC</b></td><td style="padding:10px 12px;border-bottom:2px solid #142332;"><b>Home equity loan</b></td><td style="padding:10px 12px;border-bottom:2px solid #142332;"><b>Cash-out refinance</b></td></tr>
 <tr><td style="padding:9px 12px;border-bottom:1px solid rgba(20,35,50,.08);color:var(--stone-400);">Your current mortgage</td><td style="padding:9px 12px;border-bottom:1px solid rgba(20,35,50,.08);">Stays as is</td><td style="padding:9px 12px;border-bottom:1px solid rgba(20,35,50,.08);">Stays as is</td><td style="padding:9px 12px;border-bottom:1px solid rgba(20,35,50,.08);">Replaced by a new loan</td></tr>
 <tr><td style="padding:9px 12px;border-bottom:1px solid rgba(20,35,50,.08);color:var(--stone-400);">How you receive funds</td><td style="padding:9px 12px;border-bottom:1px solid rgba(20,35,50,.08);">A line you draw as needed</td><td style="padding:9px 12px;border-bottom:1px solid rgba(20,35,50,.08);">One lump sum</td><td style="padding:9px 12px;border-bottom:1px solid rgba(20,35,50,.08);">Lump sum at closing</td></tr>
-<tr><td style="padding:9px 12px;border-bottom:1px solid rgba(20,35,50,.08);color:var(--stone-400);">Payment style</td><td style="padding:9px 12px;border-bottom:1px solid rgba(20,35,50,.08);">Varies with balance drawn</td><td style="padding:9px 12px;border-bottom:1px solid rgba(20,35,50,.08);">Fixed monthly payments</td><td style="padding:9px 12px;border-bottom:1px solid rgba(20,35,50,.08);">One new mortgage payment</td></tr>
-<tr><td style="padding:9px 12px;border-bottom:1px solid rgba(20,35,50,.08);color:var(--stone-400);">Usually fits when</td><td style="padding:9px 12px;border-bottom:1px solid rgba(20,35,50,.08);">Costs arrive in stages</td><td style="padding:9px 12px;border-bottom:1px solid rgba(20,35,50,.08);">One known amount, fixed budget</td><td style="padding:9px 12px;border-bottom:1px solid rgba(20,35,50,.08);">Your current rate is higher than today’s market</td></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid rgba(20,35,50,.08);color:var(--stone-400);">Payment style</td><td style="padding:9px 12px;border-bottom:1px solid rgba(20,35,50,.08);">Varies with balance drawn</td><td style="padding:9px 12px;border-bottom:1px solid rgba(20,35,50,.08);">Often fixed; confirm the terms</td><td style="padding:9px 12px;border-bottom:1px solid rgba(20,35,50,.08);">One new mortgage payment</td></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid rgba(20,35,50,.08);color:var(--stone-400);">Usually fits when</td><td style="padding:9px 12px;border-bottom:1px solid rgba(20,35,50,.08);">Costs arrive in stages</td><td style="padding:9px 12px;border-bottom:1px solid rgba(20,35,50,.08);">One known amount, fixed budget</td><td style="padding:9px 12px;border-bottom:1px solid rgba(20,35,50,.08);">You want to review the whole mortgage</td></tr>
 </table></div>
-<p style="margin-top:12px;">Keeping a low first-mortgage rate usually favors a second-lien option; replacing a higher-rate loan can favor a <a href="/cash-out-refinance">cash-out refinance</a>. A licensed advisor compares all three for your numbers.</p></div></div></section>
+<p style="margin-top:12px;">Compare the existing mortgage, total costs, repayment terms, and your budget before choosing a <a href="/cash-out-refinance">cash-out refinance</a>. A licensed advisor compares all three for your numbers.</p></div></div></section>
 <section class="tight" aria-labelledby="review-next"><div class="wrap"><div class="prose reveal"><span class="eyebrow">Your next step</span><h2 id="review-next">What happens after you request a callback?</h2><p>A Stonehaven broker reviews your estimated home value, remaining mortgage balance, and requested amount, then contacts you to discuss your goal and available options. Submitting this form is an inquiry, not a loan approval.</p><p>You do not need an exact valuation to start. Estimates are welcome, and you can enter $0 if your mortgage is paid off. Please do not send Social Security numbers, account numbers, or documents through this form.</p><p>Prefer to talk now? Call <a href="tel:+14709704979">(470) 970-4979</a>. English and Spanish assistance is available.</p><p><a href="#callback">Request my HELOC review</a> &middot; <a href="/cash-out-refinance">Compare cash-out refinancing</a></p></div></div></section>
+<!-- SEO:HELOC-RESOURCES:START -->
+<section class="tight seo-resources" aria-label="HELOC"><div class="wrap"><span class="eyebrow">For homeowners</span><h2>Plan your next step with home equity</h2><p>Compare a line of credit, a home equity loan, and refinancing around the goal you want to fund.</p><div class="seo-resource-grid"><article><h3><a href="/blog/heloc-vs-cash-out-refinance">Compare your options</a></h3><p>Your existing mortgage, costs, and repayment plan.</p></article><article><h3><a href="/blog/how-much-home-equity-can-i-borrow">Understand your equity</a></h3><p>A worked example with visible assumptions.</p></article><article><h3><a href="/blog/heloc-preparation-checklist">Prepare for the conversation</a></h3><p>A printable checklist without uploading documents.</p></article><article><h3><a href="/blog/georgia-heloc-questions">Georgia homeowner questions</a></h3><p>Local context and independent information.</p></article></div><p><a class="line" href="/heloc">Explore HELOC options and request a review</a></p></div></section>
+<!-- SEO:HELOC-RESOURCES:END -->
 <section class="lead" id="callback">
   <div class="wrap">
     <div class="lead-card reveal in">
@@ -157,7 +162,7 @@
     <div class="qa reveal in">
       <p><b>Will this reset the existing mortgage rate?</b> No - a HELOC is a separate second lien; the current mortgage and its rate don't change.</p>
       <p><b>Does checking affect credit?</b> No - the estimate and the broker call involve no credit pull.</p>
-      <p><b>How fast are funds available?</b> Often a few weeks from a complete application - the broker gives a real timeline on the first call.</p><p><b>Do I need an appraisal for a HELOC?</b> In most cases no full appraisal is needed - many lenders accept an automated or drive-by valuation for home equity lines. Your advisor confirms what your scenario requires.</p><p><b>Should I choose a HELOC or a cash-out refinance?</b> If your current mortgage rate is low, a second-lien HELOC or fixed home-equity loan usually protects it. If your current rate is high, replacing the loan with a cash-out refinance may make sense. The comparison depends on your rate, balance, and goal.</p>
+      <p><b>How fast are funds available?</b> Often a few weeks from a complete application - the broker gives a real timeline on the first call.</p><p><b>Do I need an appraisal for a HELOC?</b> Valuation requirements vary by lender and scenario. Ask your advisor which method is required and what it costs before proceeding.</p><p><b>Should I choose a HELOC or a cash-out refinance?</b> If your current mortgage rate is low, a second-lien HELOC or fixed home-equity loan usually protects it. If your current rate is high, replacing the loan with a cash-out refinance may make sense. The comparison depends on your rate, balance, and goal.</p>
     </div>
     <div style="margin-top:22px;display:flex;flex-direction:column;align-items:center;gap:10px;">
       <a class="btn-primary" href="#callback" style="width:100%;max-width:320px;text-align:center;">Talk to a broker</a>
@@ -188,36 +193,5 @@
 
 <div class="heloc-sticky"><a href="#callback">&#9742;&nbsp; Get my callback</a></div>
 
-<script>
-(function(){
-  "use strict";
-  var $=function(id){return document.getElementById(id);};
-  var fired=false;
-  function moneyK(n){ if(n<=0)return "$0"; return "$"+Math.round(n/1000).toLocaleString("en-US")+"k"; }
-  function est(){
-    var H=window.SH_HELOC; if(!H) return;
-    var v=+$("e-value").value||0, b=+$("e-balance").value||0;
-    if(v<=0){$("e-range").textContent="-";return;}
-    var lo=H.availableEquity(v,b,80), hi=H.availableEquity(v,b,90);
-    if(!lo||!hi)return;
-    if(hi.available<=0){
-      $("e-range").textContent="$0";
-      $("e-verdict").textContent="no headroom at common caps";
-      $("e-note").textContent="At common lender caps there's no room above the balance today - a broker can still walk through options and timing on a quick call.";
-    } else {
-      $("e-range").textContent=moneyK(lo.available)+" – "+moneyK(hi.available);
-      $("e-verdict").textContent="potentially accessible";
-      $("e-note").textContent="Headroom at common 80–90% combined loan-to-value caps. A broker confirms the real number on a quick call.";
-    }
-    if(arguments.length && $("cb-value") && !$("cb-value").dataset.touched) $("cb-value").value=v;
-    if(arguments.length && $("cb-balance") && !$("cb-balance").dataset.touched) $("cb-balance").value=b;
-    var form=document.querySelector('form[data-sh-form="heloc-callback"]');
-    if(form)form.setAttribute("data-sh-about-prefix","[HELOC Callback] est range "+$("e-range").textContent+" on value "+moneyK(v)+" / balance "+moneyK(b));
-    if(!fired&&window.shTrack){fired=true;window.shTrack("calc_used",{page:"heloc"});}
-  }
-  ["e-value","e-balance"].forEach(function(id){$(id).addEventListener("input",est);});
-  ["cb-value","cb-balance"].forEach(function(id){var el=$(id);if(el)el.addEventListener("input",function(){el.dataset.touched="1";});});
-  document.addEventListener("DOMContentLoaded",function(){est();});
-})();
-</script>
+<script src="/js/heloc-estimate.js?v=1" defer></script>
 </body></html>

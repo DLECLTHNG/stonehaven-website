@@ -5,7 +5,9 @@ const b=JSON.parse(fs.readFileSync(process.argv[2],'utf8'));
 // Validate the entire bilingual brief before writing any output.
 if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(b.slug || '')) throw new Error('A safe lowercase slug is required');
 if (!/^\d{4}-\d{2}-\d{2}$/.test(b.date || '')) throw new Error('date must be YYYY-MM-DD');
+if (new Date(b.date).toISOString().slice(0, 10) !== b.date || b.date > new Date().toISOString().slice(0, 10)) throw new Error('Use a real publication date that is not in the future');
 if (!['guide', 'closing'].includes(b.type)) throw new Error('type must be guide or closing');
+if (b.product && !['HELOC', 'DSCR'].includes(b.product)) throw new Error('Unsupported product');
 for (const lang of ['en', 'es']) {
   const p = b[lang];
   if (!p || !['title', 'desc', 'eyebrow'].every(k => typeof p[k] === 'string' && p[k].trim()) ||
@@ -57,6 +59,15 @@ ${body}
 </div></div></section>
 ${shell.slice(shell.indexOf('<section class="lead">'),shell.indexOf('</main>'))}`;
   let out=shell.slice(0,shell.indexOf('<main>'))+main+shell.slice(shell.indexOf('</main>'));
+  const prefix = lang === 'es' ? '/es' : '';
+  const policy = `<p class="editorial-note" style="margin-top:22px;font-size:13px;"><a href="${prefix}/editorial-policy">${lang === 'es' ? 'Criterios editoriales y correcciones' : 'Editorial standards and corrections'}</a> · <a href="/management">${lang === 'es' ? 'Nuestro equipo' : 'Meet the team'}</a></p>`;
+  out = out.replace('</article>', policy + '\n</article>');
+  if (b.product === 'HELOC') {
+    const cta = lang === 'es'
+      ? ['Revise sus opciones de HELOC', 'Empiece con el valor estimado de su vivienda, el saldo hipotecario y el monto que desea solicitar.', 'Solicitar una revisión']
+      : ['Review your HELOC options', 'Start with your estimated home value, mortgage balance, and the amount you want to request.', 'Request a HELOC review'];
+    out = out.replace(/<section class="lead">[\s\S]*?<\/section>/, `<section class="lead"><div class="wrap"><div class="lead-card"><h2>${cta[0]}</h2><p class="sub">${cta[1]}</p><p><a class="btn-primary" href="${prefix}/heloc#callback">${cta[2]}</a></p><p class="fine">${disclosures[b.type][lang]}</p></div></div></section>`);
+  }
   out=out.replace(/href="\/(es\/)?blog" style="color:var\(--stone-400\);">/,`href="${lang==='es'?'/blog/':'/es/blog/'}${b.slug}" style="color:var(--stone-400);">`);
   fs.mkdirSync(file.replace(/\/[^/]+$/,''),{recursive:true}); fs.writeFileSync(file,out);
   // index card

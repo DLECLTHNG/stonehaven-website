@@ -1,0 +1,88 @@
+{
+  "slug": "heloc-preparation-checklist",
+  "date": "2026-09-12",
+  "type": "guide",
+  "product": "HELOC",
+  "en": {
+    "title": "HELOC preparation checklist: what to have ready",
+    "desc": "A printable checklist for a useful HELOC conversation, including your three starting figures, project timing, and questions about repayment.",
+    "eyebrow": "HELOC · Homeowner guide",
+    "body": [
+      "You do not need a complete application to organize the first conversation. This checklist helps you distinguish the figures you know, the estimates you are using, and the questions you still need answered. Print this page or save it using your browser; nothing needs to be uploaded to use the checklist.",
+      {
+        "h": "Your starting figures"
+      },
+      "<strong>Estimated home value:</strong> __________ &nbsp; <strong>Source and date of estimate:</strong> __________<br><strong>Remaining mortgage balance:</strong> __________<br><strong>Amount you want:</strong> __________<br><strong>Other property liens to discuss:</strong> __________",
+      "Use zero if the mortgage is paid off. If you do not know an exact number, mark it as an estimate rather than presenting it as an appraisal or payoff quote. Keep the amount you want separate from the total equity you believe you have.",
+      {
+        "h": "Your goal and timing"
+      },
+      "<strong>Purpose of funds:</strong> __________<br><strong>When expenses are due:</strong> __________<br><strong>One payment or several stages:</strong> __________<br><strong>Payment budget to discuss:</strong> __________",
+      "For a project, bring the cost information you already have and identify items that are still uncertain. If a contractor date depends on financing, tell the broker that the date is a target. An inquiry does not reserve funds or commit a lender to a deadline.",
+      {
+        "h": "Information to locate for later"
+      },
+      "Know where to find your latest mortgage statement, property information, insurance information, and records relevant to documenting your income. Ask the broker for the specific application checklist and secure delivery method if you decide to proceed. Requirements vary; this planning list does not claim that every lender will request the same documents.",
+      {
+        "h": "Questions for the broker"
+      },
+      "What valuation method would this scenario need? What costs apply to opening, keeping, or closing the account? How would payments change? What happens when borrowing access ends? What assumptions still need confirmation? Write the answers next to the actual proposal instead of relying on a general advertisement.",
+      "A HELOC can have separate borrowing and repayment stages, with payment changes depending on the agreement. Read the <a href=\"https://www.consumerfinance.gov/ask-cfpb/what-is-a-home-equity-line-of-credit-heloc-en-107/\">CFPB explanation of HELOCs</a> for those mechanics. For a product comparison, see <a href=\"/blog/heloc-vs-cash-out-refinance\">HELOC versus cash-out refinancing</a>.",
+      {
+        "h": "Keep the public inquiry simple"
+      },
+      "Use only the requested contact and scenario fields. Do not send Social Security numbers, account numbers, identity documents, or statements through the public form or an unverified email address. The <a href=\"/heloc#callback\">HELOC inquiry</a> starts with home value, mortgage balance, and requested amount. A broker can explain the next step and the appropriate document channel."
+    ],
+    "terms": [
+      [
+        "Purpose",
+        "Prepare for a broker conversation"
+      ],
+      [
+        "Scope",
+        "Education, not a loan approval"
+      ]
+    ]
+  },
+  "es": {
+    "title": "Lista de preparación para una HELOC",
+    "desc": "Una lista imprimible para preparar su conversación sobre HELOC: tres cifras iniciales, fechas del proyecto y preguntas sobre los pagos.",
+    "eyebrow": "HELOC · Guía para propietarios",
+    "body": [
+      "No necesita una solicitud completa para organizar la primera conversación. Esta lista permite distinguir cifras conocidas, estimaciones y preguntas pendientes. Puede imprimir o guardar esta página desde su navegador sin subir documentos.",
+      {
+        "h": "Sus cifras iniciales"
+      },
+      "<strong>Valor estimado de la vivienda:</strong> __________ &nbsp; <strong>Fuente y fecha:</strong> __________<br><strong>Saldo hipotecario:</strong> __________<br><strong>Monto que desea:</strong> __________<br><strong>Otros gravámenes que debe comentar:</strong> __________",
+      "Indique cero si ya pagó la hipoteca. Identifique como estimación cualquier cifra que no conozca con exactitud; no la presente como tasación o cotización de liquidación. Separe el monto solicitado del valor acumulado total.",
+      {
+        "h": "Su objetivo y calendario"
+      },
+      "<strong>Uso de los fondos:</strong> __________<br><strong>Fechas de los gastos:</strong> __________<br><strong>Un pago o varias etapas:</strong> __________<br><strong>Presupuesto de pago que desea comentar:</strong> __________",
+      "Para una obra, prepare los costos conocidos e identifique los inciertos. Si una fecha del contratista depende del financiamiento, explique que es una fecha deseada. Una consulta no reserva fondos ni compromete al prestamista con un plazo.",
+      {
+        "h": "Información que puede localizar para después"
+      },
+      "Ubique su estado hipotecario reciente, información de la propiedad y del seguro, y registros relevantes para documentar ingresos. Si decide continuar, pida la lista específica y el canal seguro para entregar documentos. Los requisitos varían; esta lista no afirma que todos los prestamistas pidan lo mismo.",
+      {
+        "h": "Preguntas para el bróker"
+      },
+      "¿Qué valoración requiere el caso? ¿Qué costos existen al abrir, mantener o cerrar la cuenta? ¿Cómo pueden cambiar los pagos? ¿Qué pasa cuando termina el acceso a nuevos fondos? ¿Qué supuestos siguen pendientes? Anote las respuestas junto a la propuesta real.",
+      "Una HELOC puede tener etapas separadas de disposición y amortización, con cambios en los pagos según el contrato. Consulte la <a href=\"https://www.consumerfinance.gov/ask-cfpb/what-is-a-home-equity-line-of-credit-heloc-en-107/\">explicación del CFPB sobre HELOC (en inglés)</a> y nuestra <a href=\"/es/blog/heloc-vs-cash-out-refinance\">comparación con el refinanciamiento con retiro de efectivo</a>.",
+      {
+        "h": "Mantenga sencilla la consulta pública"
+      },
+      "Complete únicamente los campos solicitados. No envíe números de Seguro Social, cuentas, identificaciones o estados de cuenta por el formulario público o un correo sin verificar. La <a href=\"/es/heloc#callback\">consulta de HELOC</a> empieza con el valor de vivienda, saldo hipotecario y monto solicitado. El bróker le explicará el siguiente paso y el canal adecuado para documentos."
+    ],
+    "terms": [
+      [
+        "Propósito",
+        "Preparar una conversación con un bróker"
+      ],
+      [
+        "Alcance",
+        "Información educativa, no aprobación"
+      ]
+    ]
+  }
+}

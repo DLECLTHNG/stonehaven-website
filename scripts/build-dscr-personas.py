@@ -37,9 +37,7 @@ def head(p):
     ld2 = {"@context": "https://schema.org", "@type": "WebPage", "name": p['title'].replace('&amp;', '&'),
            "url": url, "inLanguage": "en", "isPartOf": {"@type": "WebSite", "name": "Stonehaven Lending", "url": "https://stonehavencre.com/"},
            "about": {"@type": "Thing", "name": "DSCR rental property financing"}}
-    ld3 = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
-        {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in p['faqs']]}
-    lds = ''.join('<script type="application/ld+json">%s</script>\n' % json.dumps(x, ensure_ascii=False) for x in (ld1, ld2, ld3))
+    lds = ''.join('<script type="application/ld+json">%s</script>\n' % json.dumps(x, ensure_ascii=False) for x in (ld1, ld2))
     return '''<!DOCTYPE html>
 <html lang="en">
 <head>

@@ -11,7 +11,7 @@ for(const f of files){
   const full=readFileSync("dscr/"+f,"utf8");
   const t=/<main>[\s\S]*?<\/main>/.exec(full)?.[0]||full;
   for(const rx of BANNED) if(rx.test(t)){console.error(`${f}: banned ${rx}`);fail++;}
-  for(const probe of ['rel="canonical" href="https://stonehavencre.com/dscr/','"@type": "BreadcrumbList"','"@type": "FAQPage"','href="/dscr-review"','href="/dscr-analyzer"','Preliminary review is not approval','An Illustrative','property="og:title"'])
+  for(const probe of ['rel="canonical" href="https://stonehavencre.com/dscr/','"@type": "BreadcrumbList"','href="/dscr-review"','href="/dscr-analyzer"','Preliminary review is not approval','An Illustrative','property="og:title"'])
     if(!full.includes(probe)){console.error(`${f}: missing ${probe}`);fail++;}
   const h1=/<h1>(.*?)<\/h1>/s.exec(t)?.[1];
   const title=/<title>(.*?)<\/title>/s.exec(full)?.[1];

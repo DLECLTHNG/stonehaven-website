@@ -52,8 +52,7 @@ def head(a):
             {"@type":"ListItem","position":3,"name":a['h1'],"item":url}]},
           {"@context":"https://schema.org","@type":"WebPage","name":a['title'].replace('&amp;','&'),"url":url,"inLanguage":"en",
            "isPartOf":{"@type":"WebSite","name":"Stonehaven Lending","url":"https://stonehavencre.com/"},
-           "about":{"@type":"Thing","name":"Home equity line of credit"}},
-          {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":ans}} for q,ans in a['faqs']]}]
+           "about":{"@type":"Thing","name":"Home equity line of credit"}}]
     lds = ''.join('<script type="application/ld+json">%s</script>\n' % json.dumps(x, ensure_ascii=False) for x in ld)
     return '''<!DOCTYPE html>
 <html lang="en">
