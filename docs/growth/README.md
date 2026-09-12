@@ -2,6 +2,8 @@
 
 Prepared September 12, 2026.
 
+Release status: CRM attribution fix is live at commit d8d85a558c50e4be368b873619e8bbe98871ad53. Website changes are on codex/growth-launch and await production publication approval. Automatic approval review rejected a direct main-branch push because of the number of affected files. Most website changes only refresh the shared script cache version.
+
 ## Completed work
 
 - Reviewed website form measurement and the CRM intake attribution path.
