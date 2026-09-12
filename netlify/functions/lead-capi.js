@@ -53,22 +53,14 @@ const normPhone = (p) => {
   return digits.length === 10 ? "1" + digits : digits; // default US country code
 };
 
-function allowedOrigin(origin) {
-  if (!origin) return true; // in-app browsers and some clients omit Origin
-  try {
-    const u = new URL(origin);
-    if (u.hostname === "localhost" || u.hostname === "127.0.0.1") return true;
-    if (u.hostname.endsWith(".netlify.app")) return true;
-    return u.hostname === SITE_HOST || u.hostname === "www." + SITE_HOST;
-  } catch { return false; }
-}
+const { allowedOrigin } = require("./lib/request-security");
 
 function limited(ipHash) {
   const t = Date.now();
   const arr = (rate.get(ipHash) || []).filter((x) => t - x < RATE_WINDOW_MS);
   if (arr.length >= RATE_MAX) { rate.set(ipHash, arr); return true; }
   arr.push(t); rate.set(ipHash, arr);
-  if (rate.size > 5000) rate.clear();
+  if (rate.size > 5000) rate.delete(rate.keys().next().value);
   return false;
 }
 
@@ -118,10 +110,10 @@ function cleanPayload(p) {
 exports.handler = async (event) => {
   if (event.httpMethod !== "POST") return { statusCode: 405, body: "" };
   if (!allowedOrigin(event.headers.origin)) return { statusCode: 403, body: "" };
-  if (String(event.body || "").length > MAX_BODY_BYTES) return { statusCode: 413, body: "" };
+  if ((event.isBase64Encoded || Buffer.byteLength(event.body || "", "utf8") > MAX_BODY_BYTES)) return { statusCode: 413, body: "" };
 
   const ip = event.headers["x-nf-client-connection-ip"] || event.headers["client-ip"] || "";
-  if (limited(hash(ip + "|" + (event.headers["user-agent"] || "")))) return { statusCode: 429, body: "" };
+  if (limited(hash(ip))) return { statusCode: 429, body: "" };
 
   let body;
   try { body = JSON.parse(event.body || "{}"); } catch { return { statusCode: 400, body: "" }; }
@@ -129,7 +121,7 @@ exports.handler = async (event) => {
 
   const event_name = String(body.event_name || "");
   const event_id = String(body.event_id || "").slice(0, 100);
-  if (!EVENTS[event_name] || !event_id) return { statusCode: 400, body: "" };
+  if (!Object.hasOwn(EVENTS, event_name) || !event_id) return { statusCode: 400, body: "" };
 
   const payload = cleanPayload(body.payload);
   const source_url = safeSourceUrl(body.source_url);
@@ -153,6 +145,7 @@ exports.handler = async (event) => {
       fetch(`https://graph.facebook.com/v21.0/${PIXEL_ID}/events`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
+        redirect: "error", signal: AbortSignal.timeout(5000),
         body: JSON.stringify({
           access_token: token,
           data: [{
@@ -175,6 +168,7 @@ exports.handler = async (event) => {
       fetch(webhook, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
+        redirect: "error", signal: AbortSignal.timeout(5000),
         body: JSON.stringify({ event_name, event_id, received_at: new Date().toISOString(), ...payload }),
       }).catch(() => {})
     );

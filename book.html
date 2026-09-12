@@ -48,7 +48,7 @@
     <div class="book-card reveal">
       <div class="reveal in" style="margin-bottom:34px;">
         <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ20NpEeeW_Xs7NZ4D0L6YXKOV0MCYB3vnttQcSwN829VCly8K5jZi-f61pYWiKA3UaYsjc5N0RP?gv=true" style="width:100%;height:920px;border:0;border-radius:2px;" title="Book a 15-minute call with Stonehaven" loading="lazy"></iframe>
-        <p style="text-align:center;font-size:13px;color:var(--stone-400);margin-top:10px;">Calendar not loading? <a href="https://calendar.app.google/1pTBR6R4ho6jDvKE6" rel="noopener" onclick="if(window.shTrack)shTrack('booking_page_open',{page:'book'})">Open the booking page directly</a>.</p>
+        <p style="text-align:center;font-size:13px;color:var(--stone-400);margin-top:10px;">Calendar not loading? <a href="https://calendar.app.google/1pTBR6R4ho6jDvKE6" rel="noopener" id="booking-fallback">Open the booking page directly</a>.</p>
       </div>
       <p style="text-align:center;font-size:14px;color:var(--stone-400);margin:0 0 22px;">Prefer we call you? Use the form:</p>
 
@@ -128,4 +128,5 @@
   }catch(e){}
 })();
 </script>
+<script>document.getElementById("booking-fallback").addEventListener("click",function(){if(window.shTrack)window.shTrack("booking_page_open",{page:"book"});});</script>
 </body></html>

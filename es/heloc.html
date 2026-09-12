@@ -36,7 +36,8 @@
 .qa b{color:#142332;}
 </style>
 <script src="../js/site-config.js?v=6" defer></script>
-<script src="../js/funnel.js?v=8" defer></script>
+<script src="../js/heloc-fields.js?v=1" defer></script>
+<script src="../js/funnel.js?v=9" defer></script>
 <script src="../js/heloc-calc.js?v=1"></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Service", "name": "Línea de crédito sobre el valor de la vivienda (HELOC)", "serviceType": "Corretaje hipotecario residencial", "description": "Comparación de HELOC, préstamo sobre el valor de la vivienda y refinanciamiento con retiro de efectivo, gestionada.", "url": "https://stonehavencre.com/es/heloc", "inLanguage": "es", "areaServed": [{"@type": "State", "name": "Georgia"}, {"@type": "State", "name": "Alabama"}, {"@type": "State", "name": "Tennessee"}, {"@type": "State", "name": "Florida"}, {"@type": "State", "name": "North Carolina"}], "provider": {"@type": "FinancialService", "name": "Stonehaven Lending", "url": "https://stonehavencre.com/", "identifier": {"@type": "PropertyValue", "propertyID": "NMLS", "value": "1752355"}}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Esto cambia la tasa de la hipoteca actual?", "acceptedAnswer": {"@type": "Answer", "text": "No - una HELOC es un segundo gravamen separado; la hipoteca actual y su tasa no cambian."}}, {"@type": "Question", "name": "¿Consultar afecta el crédito?", "acceptedAnswer": {"@type": "Answer", "text": "No - el estimado y la llamada con el bróker no requieren consulta de crédito."}}, {"@type": "Question", "name": "¿Qué tan rápido están disponibles los fondos?", "acceptedAnswer": {"@type": "Answer", "text": "Con frecuencia unas semanas desde una solicitud completa - el bróker da un plazo real en la primera llamada."}}, {"@type": "Question", "name": "¿Necesito un avalúo para una HELOC?", "acceptedAnswer": {"@type": "Answer", "text": "En la mayoría de los casos no se necesita un avalúo completo - muchos prestamistas aceptan una valoración automatizada. Su asesor confirma lo que requiere su caso."}}, {"@type": "Question", "name": "¿Me conviene una HELOC o un refinanciamiento con retiro?", "acceptedAnswer": {"@type": "Answer", "text": "Si la tasa de su hipoteca actual es baja, una segunda hipoteca suele protegerla. Si su tasa actual es alta, reemplazar el préstamo con un refinanciamiento con retiro puede tener sentido. La comparación depende de su tasa, su saldo y su objetivo."}}]}</script>
@@ -114,7 +115,7 @@
     <div class="lead-card reveal in">
       <span class="eyebrow">Su llamada de vuelta</span>
       <h2>Hable con un bróker por teléfono</h2>
-      <p class="sub">Seis campos. Un bróker le devuelve la llamada, normalmente en minutos (lun&ndash;vie, hora del Este). Sin compromiso, sin consulta de crédito.</p>
+      <p class="sub">Comparta el valor estimado de su casa, el saldo de la hipoteca y el monto que desea solicitar. Un bróker revisará sus cifras con usted. Sin compromiso ni consulta de crédito dura en esta etapa.</p>
       <form class="lead-form" data-sh-form="heloc-callback" data-sh-product="Residential" data-sh-event="heloc_callback" data-sh-capi data-sh-lang="es" data-sh-thanks="/es/thanks-callback" novalidate method="POST" action="/es/thanks-callback" data-netlify="true" netlify-honeypot="company_website"><input type="hidden" name="form-name" value="lead"/>
         <input type="text" name="company_website" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true"/>
         <div class="lf-field"><label for="cb-name">Nombre</label><input id="cb-name" type="text" name="name" autocomplete="name" required/></div>
@@ -126,8 +127,8 @@
             <option value="No">No</option>
           </select>
         </div>
-        <div class="lf-field"><label for="cb-value">Valor est. de la casa ($)</label><input id="cb-value" type="number" inputmode="numeric" min="0" name="home_value"/></div>
-        <div class="lf-field"><label for="cb-balance">Saldo est. de la hipoteca ($)</label><input id="cb-balance" type="number" inputmode="numeric" min="0" name="mortgage_balance"/></div><div class="lf-field"><label for="cb-credit">Puntaje de crédito estimado <span style="text-transform:none;letter-spacing:0;color:#AAB8C7;">(una estimación está bien)</span></label><select id="cb-credit" name="credit_band"><option value="not-sure" selected>Seleccione un rango</option><option value="850-780">850-780</option><option value="779-760">779-760</option><option value="759-740">759-740</option><option value="739-720">739-720</option><option value="719-700">719-700</option><option value="699-680">699-680</option><option value="679-660">679-660</option><option value="659-640">659-640</option><option value="639-620">639-620</option><option value="619-600">619-600</option></select></div>
+        <div class="lf-field"><label for="cb-value">Valor est. de la casa ($)</label><input id="cb-value" type="number" inputmode="numeric" min="1" name="home_value" step="0.01" required/></div>
+        <div class="lf-field"><label for="cb-balance">Saldo de la hipoteca ($, ingrese 0 si está pagada)</label><input id="cb-balance" type="number" inputmode="numeric" min="0" name="mortgage_balance" step="0.01" required/></div><div class="lf-field"><label for="cb-amount">¿Cuánto desea solicitar? ($)</label><input id="cb-amount" type="number" inputmode="numeric" min="1" step="0.01" name="requested_amount" required/></div><div class="lf-field"><label for="cb-credit">Puntaje de crédito estimado <span style="text-transform:none;letter-spacing:0;color:#AAB8C7;">(una estimación está bien)</span></label><select id="cb-credit" name="credit_band"><option value="not-sure" selected>Seleccione un rango</option><option value="850-780">850-780</option><option value="779-760">779-760</option><option value="759-740">759-740</option><option value="739-720">739-720</option><option value="719-700">719-700</option><option value="699-680">699-680</option><option value="679-660">679-660</option><option value="659-640">659-640</option><option value="639-620">639-620</option><option value="619-600">619-600</option></select></div>
         <div class="lf-field full"><label for="cb-state">Estado donde está la propiedad</label>
           <select id="cb-state" name="state">
             <option value="Georgia">Georgia</option>
@@ -206,15 +207,15 @@
       $("e-verdict").textContent="potencialmente accesible";
       $("e-note").textContent="Margen con topes comunes del 80–90% de préstamo-valor combinado. Un bróker confirma la cifra real en una llamada rápida.";
     }
-    if($("cb-value") && !$("cb-value").dataset.touched) $("cb-value").value=v;
-    if($("cb-balance") && !$("cb-balance").dataset.touched) $("cb-balance").value=b;
+    if(arguments.length && $("cb-value") && !$("cb-value").dataset.touched) $("cb-value").value=v;
+    if(arguments.length && $("cb-balance") && !$("cb-balance").dataset.touched) $("cb-balance").value=b;
     var form=document.querySelector('form[data-sh-form="heloc-callback"]');
     if(form)form.setAttribute("data-sh-about-prefix","[HELOC Callback ES] est range "+$("e-range").textContent+" on value "+moneyK(v)+" / balance "+moneyK(b));
     if(!fired&&window.shTrack){fired=true;window.shTrack("calc_used",{page:"heloc-es"});}
   }
   ["e-value","e-balance"].forEach(function(id){$(id).addEventListener("input",est);});
   ["cb-value","cb-balance"].forEach(function(id){var el=$(id);if(el)el.addEventListener("input",function(){el.dataset.touched="1";});});
-  document.addEventListener("DOMContentLoaded",est);
+  document.addEventListener("DOMContentLoaded",function(){est();});
 })();
 </script>
 </body></html>

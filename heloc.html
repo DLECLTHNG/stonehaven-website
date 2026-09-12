@@ -36,7 +36,8 @@
 .qa b{color:#142332;}
 </style>
 <script src="js/site-config.js?v=6" defer></script>
-<script src="js/funnel.js?v=8" defer></script>
+<script src="js/heloc-fields.js?v=1" defer></script>
+<script src="js/funnel.js?v=9" defer></script>
 <script src="js/heloc-calc.js?v=1"></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Service", "name": "Home Equity Line of Credit", "serviceType": "Residential mortgage brokerage", "description": "HELOC, home equity loan, and cash-out comparison.", "url": "https://stonehavencre.com/heloc", "areaServed": [{"@type": "State", "name": "Georgia"}, {"@type": "State", "name": "Alabama"}, {"@type": "State", "name": "Tennessee"}, {"@type": "State", "name": "Florida"}, {"@type": "State", "name": "North Carolina"}], "provider": {"@type": "FinancialService", "name": "Stonehaven Lending", "url": "https://stonehavencre.com/", "identifier": {"@type": "PropertyValue", "propertyID": "NMLS", "value": "1752355"}}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Will this reset the existing mortgage rate?", "acceptedAnswer": {"@type": "Answer", "text": "No - a HELOC is a separate second lien; the current mortgage and its rate don't change."}}, {"@type": "Question", "name": "Does checking affect credit?", "acceptedAnswer": {"@type": "Answer", "text": "No - the estimate and the broker call involve no credit pull."}}, {"@type": "Question", "name": "How fast are funds available?", "acceptedAnswer": {"@type": "Answer", "text": "Often a few weeks from a complete application - the broker gives a real timeline on the first call."}}, {"@type": "Question", "name": "Do I need an appraisal for a HELOC?", "acceptedAnswer": {"@type": "Answer", "text": "In most cases no full appraisal is needed - many lenders accept an automated or drive-by valuation for home equity lines. Your advisor confirms what your scenario requires."}}, {"@type": "Question", "name": "Should I choose a HELOC or a cash-out refinance?", "acceptedAnswer": {"@type": "Answer", "text": "If your current mortgage rate is low, a second-lien HELOC or fixed home-equity loan usually protects it. If your current rate is high, replacing the loan with a cash-out refinance may make sense. The comparison depends on your rate, balance, and goal."}}]}</script>
@@ -114,7 +115,7 @@
     <div class="lead-card reveal in">
       <span class="eyebrow">The 30-Second Step</span>
       <h2>Get a broker on the phone</h2>
-      <p class="sub">Six fields. A broker calls back, typically within minutes (Mon&ndash;Fri, ET). No obligation, no credit pull.</p>
+      <p class="sub">Share your estimated home value, mortgage balance, and the amount you want to borrow. A broker will review your figures with you. No obligation or hard credit pull at this stage.</p>
       <form class="lead-form" data-sh-form="heloc-callback" data-sh-product="Residential" data-sh-event="heloc_callback" data-sh-capi data-sh-thanks="/thanks-callback" novalidate method="POST" action="/thanks-callback" data-netlify="true" netlify-honeypot="company_website"><input type="hidden" name="form-name" value="lead"/>
         <input type="text" name="company_website" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true"/>
         <div class="lf-field"><label for="cb-name">Name</label><input id="cb-name" type="text" name="name" autocomplete="name" required/></div>
@@ -126,8 +127,8 @@
             <option value="No">No</option>
           </select>
         </div>
-        <div class="lf-field"><label for="cb-value">Home value est. ($)</label><input id="cb-value" type="number" inputmode="numeric" min="0" name="home_value"/></div>
-        <div class="lf-field"><label for="cb-balance">Mortgage balance est. ($)</label><input id="cb-balance" type="number" inputmode="numeric" min="0" name="mortgage_balance"/></div><div class="lf-field"><label for="cb-credit">Estimated credit score <span style="text-transform:none;letter-spacing:0;color:#AAB8C7;">(best guess is fine)</span></label><select id="cb-credit" name="credit_band"><option value="not-sure" selected>Select a range</option><option value="850-780">850-780</option><option value="779-760">779-760</option><option value="759-740">759-740</option><option value="739-720">739-720</option><option value="719-700">719-700</option><option value="699-680">699-680</option><option value="679-660">679-660</option><option value="659-640">659-640</option><option value="639-620">639-620</option><option value="619-600">619-600</option></select></div>
+        <div class="lf-field"><label for="cb-value">Estimated home value ($)</label><input id="cb-value" type="number" inputmode="numeric" min="1" name="home_value" step="0.01" required/></div>
+        <div class="lf-field"><label for="cb-balance">Mortgage balance ($, enter 0 if paid off)</label><input id="cb-balance" type="number" inputmode="numeric" min="0" name="mortgage_balance" step="0.01" required/></div><div class="lf-field"><label for="cb-amount">How much do you want to borrow? ($)</label><input id="cb-amount" type="number" inputmode="numeric" min="1" step="0.01" name="requested_amount" required/></div><div class="lf-field"><label for="cb-credit">Estimated credit score <span style="text-transform:none;letter-spacing:0;color:#AAB8C7;">(best guess is fine)</span></label><select id="cb-credit" name="credit_band"><option value="not-sure" selected>Select a range</option><option value="850-780">850-780</option><option value="779-760">779-760</option><option value="759-740">759-740</option><option value="739-720">739-720</option><option value="719-700">719-700</option><option value="699-680">699-680</option><option value="679-660">679-660</option><option value="659-640">659-640</option><option value="639-620">639-620</option><option value="619-600">619-600</option></select></div>
         <div class="lf-field full"><label for="cb-state">Property state</label>
           <select id="cb-state" name="state">
             <option value="Georgia">Georgia</option>
@@ -177,7 +178,7 @@
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" style="vertical-align:-2px;" role="img" aria-label="Equal Housing Opportunity"><path d="M12 3 2 10h3v11h14V10h3L12 3z" stroke="#44546A" stroke-width="1.6"/><path d="M8 13.5h8M8 17h8" stroke="#44546A" stroke-width="1.6"/></svg>
         Equal Housing Opportunity · Stonehaven Lending · NMLS #1752355<br/>
         GA Residential Mortgage Licensee #19721 · MLO #169068 · AL #22874 · TN #165060 · FL #MBR3925 · NC #B-198926 · SC<br/>
-        Estimates only - subject to verification, appraisal, and lender approval. Stonehaven Lending is a mortgage brokerage, not a direct lender; financing is. HELOC rates are typically variable and payments may increase. Program availability varies by state. <a href="https://www.nmlsconsumeraccess.org/EntityDetails.aspx/COMPANY/1752355" style="color:inherit;text-decoration:underline;" rel="noopener">NMLS Consumer Access</a> · <a href="/privacy" style="color:inherit;text-decoration:underline;">Privacy</a></p>
+        Estimates only - subject to verification, appraisal, and lender approval. Stonehaven Lending is a mortgage brokerage, not a direct lender. HELOC rates are typically variable and payments may increase. Program availability varies by state. <a href="https://www.nmlsconsumeraccess.org/EntityDetails.aspx/COMPANY/1752355" style="color:inherit;text-decoration:underline;" rel="noopener">NMLS Consumer Access</a> · <a href="/privacy" style="color:inherit;text-decoration:underline;">Privacy</a></p>
     </div>
   </div>
 </section>
@@ -206,15 +207,15 @@
       $("e-verdict").textContent="potentially accessible";
       $("e-note").textContent="Headroom at common 80–90% combined loan-to-value caps. A broker confirms the real number on a quick call.";
     }
-    if($("cb-value") && !$("cb-value").dataset.touched) $("cb-value").value=v;
-    if($("cb-balance") && !$("cb-balance").dataset.touched) $("cb-balance").value=b;
+    if(arguments.length && $("cb-value") && !$("cb-value").dataset.touched) $("cb-value").value=v;
+    if(arguments.length && $("cb-balance") && !$("cb-balance").dataset.touched) $("cb-balance").value=b;
     var form=document.querySelector('form[data-sh-form="heloc-callback"]');
     if(form)form.setAttribute("data-sh-about-prefix","[HELOC Callback] est range "+$("e-range").textContent+" on value "+moneyK(v)+" / balance "+moneyK(b));
     if(!fired&&window.shTrack){fired=true;window.shTrack("calc_used",{page:"heloc"});}
   }
   ["e-value","e-balance"].forEach(function(id){$(id).addEventListener("input",est);});
   ["cb-value","cb-balance"].forEach(function(id){var el=$(id);if(el)el.addEventListener("input",function(){el.dataset.touched="1";});});
-  document.addEventListener("DOMContentLoaded",est);
+  document.addEventListener("DOMContentLoaded",function(){est();});
 })();
 </script>
 </body></html>

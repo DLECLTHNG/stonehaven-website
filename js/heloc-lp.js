@@ -13,7 +13,7 @@
 (function () {
   "use strict";
   var CFG = window.SH_CONFIG || {};
-  var MODE = (CFG.helocConversionMode === "instant_quote" && CFG.helocInstantQuoteUrl) ? "instant_quote" : "call";
+  var MODE = (CFG.helocConversionMode === "instant_quote" && window.SH_HELOC_FIELDS.quoteDestination(CFG.helocInstantQuoteUrl, window.location.origin, "heloc")) ? "instant_quote" : "call";
   var LICENSED = ["GA", "AL", "TN", "FL", "NC", "SC"];
   var root = document.getElementById("lp");
   if (!root) return;
@@ -77,7 +77,7 @@
       sum.innerHTML = "";
       steps.forEach(function (s) {
         var k = s.getAttribute("data-key");
-        if (!answers[k] || s === step || k === "state") return;
+        if (answers[k] == null || s === step || k === "state") return;
         var lblEl = form.querySelector('input[name="' + k + '_label"]');
         var card = s.querySelector('.lp-card.on span');
         var txt = (lblEl && lblEl.value) || (card && card.textContent) || answers[k];
@@ -131,8 +131,8 @@
       return true;
     }
     if (type === "money") {
-      var inp = step.querySelector("input"); var v = (inp.value || "").replace(/[^\d]/g, "");
-      if (!v || +v < 10000) { err(step, T.need); return false; }
+      var inp = step.querySelector("input"); var v = window.SH_HELOC_FIELDS.amount(inp.value, key === "mortgage_balance");
+      if (v === null) { err(step, T.need); return false; }
       answers[key] = v; setHidden(key, v); return true;
     }
     if (type === "select") {
@@ -179,20 +179,8 @@
     root.setAttribute("data-mode", MODE);
     if (MODE === "instant_quote") {
       form.setAttribute("data-sh-event", "submit_application");
-      /* funnel.js redirects to data-sh-thanks after an accepted submit.
-         We point it at the quote flow with everything entered so far. */
-      var url = CFG.helocInstantQuoteUrl;
-      var u; try { u = new URL(url, window.location.origin); } catch (e) { u = null; }
-      if (u) {
-        var q = Object.assign({}, utms, answers);
-        Array.prototype.forEach.call(form.querySelectorAll('input[type="hidden"]'), function (h) {
-          if (h.name && h.value && h.name !== "form-name" && h.name !== "company_website") q[h.name] = h.value;
-        });
-        ["name", "email", "phone"].forEach(function (k) { var el = form.querySelector('[name="' + k + '"]'); if (el && el.value) q[k] = el.value; });
-        Object.keys(q).forEach(function (k) { if (q[k]) u.searchParams.set(k, q[k]); });
-        u.searchParams.set("src", "stonehaven-" + form.getAttribute("data-sh-form"));
-        form.setAttribute("data-sh-thanks", u.toString());
-      }
+      // Contact details and financial answers stay out of URL logs/history.
+      form.setAttribute("data-sh-thanks", window.SH_HELOC_FIELDS.quoteDestination(CFG.helocInstantQuoteUrl, window.location.origin, form.getAttribute("data-sh-form")));
     } else {
       form.setAttribute("data-sh-event", "heloc_callback");
       form.removeAttribute("data-sh-thanks"); /* in-page confirmation */
@@ -209,10 +197,6 @@
         if (collect(step)) show(n + 1); /* cards advance on tap */
       });
     });
-    var money = step.querySelector('input[data-money]');
-    if (money) money.addEventListener("input", function () {
-      var v = money.value.replace(/[^\d]/g, ""); money.value = v ? "$" + (+v).toLocaleString("en-US") : "";
-    });
     var sel = step.querySelector("select");
     if (sel) sel.addEventListener("change", function () { collect(step); });
     if (next) next.addEventListener("click", function () { if (collect(step)) show(n + 1); });
@@ -225,6 +209,10 @@
      then hand off to funnel.js (its own submit listener does the POST,
      Pixel + CAPI event with shared event_id, and the redirect/confirmation). */
   form.addEventListener("submit", function (e) {
+    // Revalidate every applicable step, including answers revisited with Back.
+    for (var n = 0; n < steps.length; n++) {
+      if (!skipped(steps[n]) && !collect(steps[n])) { e.preventDefault(); e.stopImmediatePropagation(); show(n); return; }
+    }
     var last = steps[steps.length - 1];
     if (!collect(last)) { e.preventDefault(); e.stopImmediatePropagation(); return; }
     /* geo safety: never submit an unlicensed state */

@@ -107,7 +107,8 @@ def head(p, intents_json):
 <link rel="stylesheet" href="../styles.css"/><link rel="stylesheet" href="../funnel.css"/>
 <noscript><style>.reveal{opacity:1 !important;transform:none !important;}</style></noscript>
 <script src="../js/site-config.js?v=6" defer></script>
-<script src="../js/funnel.js?v=6" defer></script>
+<script src="../js/heloc-fields.js?v=1" defer></script>
+<script src="../js/funnel.js?v=9" defer></script>
 <script src="../js/heloc-persona.js?v=1" defer></script>
 <style>
 .pp-hero{padding:150px 0 44px;}
@@ -204,9 +205,9 @@ def body(p):
     <div class="lf-field"><label for="f-ptype">Property type</label><select id="f-ptype" name="property_type"><option>Single family</option><option>Townhome</option><option>Condo</option><option>2-4 units</option></select></div>
     <div class="lf-field"><label for="f-occ">How is it used?</label><select id="f-occ" name="occupancy"><option>I live there</option><option>Second home</option><option>Rental / investment</option></select></div>
     <div class="lf-field"><label for="pi-purpose">Borrowing purpose</label><select id="pi-purpose" name="purpose"><option>Home improvement</option><option>Debt consolidation</option><option>Other</option></select></div>
-    <div class="lf-field"><label for="f-value">Estimated home value ($)</label><input id="f-value" type="number" inputmode="numeric" min="0" name="home_value" placeholder="400,000"/></div>
-    <div class="lf-field"><label for="f-balance">Approx. mortgage balance ($)</label><input id="f-balance" type="number" inputmode="numeric" min="0" name="mortgage_balance" placeholder="250,000"/></div>
-    <div class="lf-field"><label for="f-amount">Amount you are exploring ($)</label><input id="f-amount" type="number" inputmode="numeric" min="0" name="requested_amount" placeholder="60,000"/></div>
+    <div class="lf-field"><label for="f-value">Estimated home value ($)</label><input id="f-value" type="number" inputmode="numeric" min="1" name="home_value" placeholder="400,000" step="0.01" required/></div>
+    <div class="lf-field"><label for="f-balance">Mortgage balance ($, enter 0 if paid off)</label><input id="f-balance" type="number" inputmode="numeric" min="0" name="mortgage_balance" placeholder="250,000" step="0.01" required/></div>
+    <div class="lf-field"><label for="f-amount">How much do you want to borrow? ($)</label><input id="f-amount" type="number" inputmode="numeric" min="1" name="requested_amount" placeholder="60,000" step="0.01" required/></div>
     <div class="lf-field"><label for="f-credit">Estimated credit score <span style="text-transform:none;letter-spacing:0;color:#AAB8C7;">(best guess is fine)</span></label><select id="f-credit" name="credit_band">%(credit_opts)s</select></div>
     <div class="lf-field"><label for="f-timing">Timing</label><select id="f-timing" name="timeline"><option>As soon as practical</option><option>1-3 months</option><option>3-6 months</option><option>Exploring</option></select></div>
     <div class="lf-field"><label for="f-name">Name</label><input id="f-name" type="text" name="name" autocomplete="name" required/></div>

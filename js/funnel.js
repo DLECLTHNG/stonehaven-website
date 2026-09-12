@@ -130,12 +130,19 @@
 
   function buildAbout(form, extra) {
     var lines = [];
+    // Keep the requested HELOC figures ahead of long notes and attribution.
+    var heloc = window.SH_HELOC_FIELDS && window.SH_HELOC_FIELDS.applies(form);
+    var moneyLabels = { home_value: "Estimated home value ($)", mortgage_balance: "Mortgage balance ($)", requested_amount: "Requested amount ($)" };
+    if (heloc) Object.keys(moneyLabels).forEach(function (key) {
+      var el = form.querySelector('[name="' + key + '"]');
+      if (el) lines.push(moneyLabels[key] + ": " + el.value);
+    });
     if (extra) lines.push(extra);
     var skip = { name: 1, email: 1, phone: 1, company_website: 1, "form-name": 1 };
     Array.prototype.forEach.call(form.elements, function (el) {
       // hidden inputs carry the step-engine answers (wizard/instant/persona
       // context) - include them; only the plumbing fields above are skipped
-      if (!el.name || skip[el.name] || el.type === "submit") return;
+      if (!el.name || skip[el.name] || el.type === "submit" || el.disabled || ((el.type === "checkbox" || el.type === "radio") && !el.checked) || (heloc && moneyLabels[el.name])) return;
       var v = (el.value || "").trim();
       if (!v) return;
       var label = form.querySelector('label[for="' + el.id + '"]');
@@ -161,6 +168,16 @@
       productSel.addEventListener("change", syncProduct);
       syncProduct();
     }
+    var equityGoal = form.querySelector('[name="goal"]');
+    if (equityGoal && form.querySelector('[data-heloc-detail]')) {
+      var syncEquity = function () {
+        var on = /HELOC/i.test(equityGoal.value);
+        Array.prototype.forEach.call(form.querySelectorAll('[data-heloc-detail]'), function (field) {
+          field.hidden = !on; field.querySelector('input').disabled = !on;
+        });
+      };
+      equityGoal.addEventListener('change', syncEquity); syncEquity();
+    }
     form.addEventListener("submit", function (e) {
       e.preventDefault();
 
@@ -178,6 +195,9 @@
       var phoneEl = form.querySelector('[name="phone"]');
       if (phoneEl && phoneEl.hasAttribute("required") && phoneEl.value.replace(/\D/g, "").length < 10) { phoneEl.style.borderBottomColor = "#B0413A"; bad = true; }
       if (bad) return;
+      if (/^heloc-/.test(form.getAttribute("data-sh-form") || "") || (window.SH_HELOC_FIELDS && window.SH_HELOC_FIELDS.applies(form))) {
+        if (!window.SH_HELOC_FIELDS || !window.SH_HELOC_FIELDS.validate(form)) return;
+      }
 
       // Structured extras: every non-contract field, machine-readable, plus UTMs.
       // See FORM_CONTRACT_ADDENDUM.md — the CRM stores these as queryable lead fields;
@@ -186,7 +206,7 @@
       var extra = {};
       var skipX = { name: 1, email: 1, phone: 1, company_website: 1 };
       Array.prototype.forEach.call(form.elements, function (el) {
-        if (!el.name || skipX[el.name] || el.type === "submit") return;
+        if (!el.name || skipX[el.name] || el.type === "submit" || el.disabled || ((el.type === "checkbox" || el.type === "radio") && !el.checked)) return;
         var v = (el.value || "").trim();
         if (v) extra[el.name] = v.slice(0, 300);
       });
@@ -332,7 +352,7 @@
     }
     var io = new IntersectionObserver(function (es) {
       es.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); } });
-    }, { threshold: .16, rootMargin: "0px 0px -50px 0px" });
+    }, { threshold: 0, rootMargin: "0px 0px -24px 0px" });
     Array.prototype.forEach.call(document.querySelectorAll(".reveal:not(.in)"), function (el) { io.observe(el); });
   });
 })();

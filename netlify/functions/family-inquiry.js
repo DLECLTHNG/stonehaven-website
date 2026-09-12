@@ -56,7 +56,7 @@ function validate(b) {
   const timingLabel = timing ? (SHARED.timing[timing] || "") : "";
   if (timing && !timingLabel) errors.timing = "Please choose one of the listed options.";
   const page = String(b.page || "");
-  if (!SHARED.pages[page]) errors.page = "Unknown page.";
+  if (!Object.hasOwn(SHARED.pages, page)) errors.page = "Unknown page.";
 
   // Optional qualifying answers. Blank is always acceptable; a present value
   // must match the allowlist, so a crafted request cannot smuggle free text in.
@@ -87,23 +87,14 @@ function validate(b) {
   return { errors, name, phone, state, email, timing: timingLabel, page, price, credit, extra };
 }
 
-function allowedOrigin(origin) {
-  if (!origin) return true; // in-app browsers and some clients omit Origin
-  try {
-    const u = new URL(origin);
-    if (u.hostname === "localhost" || u.hostname === "127.0.0.1") return true;
-    if (u.hostname.endsWith(".netlify.app")) return true;
-    const site = new URL(SHARED.siteUrl).hostname;
-    return u.hostname === site || u.hostname === "www." + site;
-  } catch { return false; }
-}
+const { allowedOrigin } = require("./lib/request-security");
 
 function limited(ipHash) {
   const t = now();
   const arr = (rate.get(ipHash) || []).filter((x) => t - x < RATE_WINDOW_MS);
   if (arr.length >= RATE_MAX) { rate.set(ipHash, arr); return true; }
   arr.push(t); rate.set(ipHash, arr);
-  if (rate.size > 5000) rate.clear();
+  if (rate.size > 5000) rate.delete(rate.keys().next().value);
   return false;
 }
 
@@ -144,7 +135,7 @@ async function persist(rec, event) {
     if (!r.ok) throw new Error("crm " + r.status);
     return { stored: true, dry_run: false };
   }
-  const base = process.env.URL || ("https://" + (event.headers.host || new URL(SHARED.siteUrl).host));
+  const base = process.env.URL || SHARED.siteUrl;
   const nf = new URLSearchParams();
   nf.append("form-name", "lead");
   nf.append("name", rec.name); nf.append("email", rec.email); nf.append("phone", fmtPhone(rec.phone));
@@ -171,6 +162,7 @@ async function capi(rec, event) {
 exports.handler = async (event) => {
   if (event.httpMethod !== "POST") return json(405, { ok: false, error: "method" });
   if (!allowedOrigin(event.headers.origin)) return json(403, { ok: false, error: "origin" });
+  if (event.isBase64Encoded || Buffer.byteLength(event.body || "", "utf8") > 32 * 1024) return json(413, { ok: false, error: "body_too_large" });
   let b;
   try { b = JSON.parse(event.body || "{}"); } catch { return json(400, { ok: false, error: "json" }); }
   if (!b || typeof b !== "object") return json(400, { ok: false, error: "json" });
@@ -179,7 +171,7 @@ exports.handler = async (event) => {
   if (b.company_website) return json(200, { ok: true, inquiry_id: newId(), received_at: new Date().toISOString() });
 
   const ip = event.headers["x-nf-client-connection-ip"] || event.headers["client-ip"] || "";
-  if (limited(h(ip + "|" + (event.headers["user-agent"] || "")))) return json(429, { ok: false, error: "rate_limited" });
+  if (limited(h(ip))) return json(429, { ok: false, error: "rate_limited" });
 
   const v = validate(b);
   if (Object.keys(v.errors).length) return json(400, { ok: false, errors: v.errors });

@@ -10,6 +10,7 @@ import { createRequire } from "node:module";
 import { fileURLToPath } from "node:url";
 const require = createRequire(import.meta.url);
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+process.env.NETLIFY_DEV = "true";
 process.env.FAMILY_DRY_RUN = process.env.FAMILY_DRY_RUN || "1";
 const fn = require(path.join(ROOT, "netlify/functions/family-inquiry.js"));
 const PORT = +(process.argv[2] || 8902);
