@@ -1,0 +1,109 @@
+{
+  "slug": "dscr-loans-north-carolina-investor-guide",
+  "date": "2026-09-12",
+  "type": "guide",
+  "en": {
+    "title": "DSCR loans in North Carolina: investor guide",
+    "seo_title": "DSCR loans in North Carolina",
+    "desc": "DSCR loans in North Carolina: county reappraisal timing belongs in the loan file. Review local records, rental evidence and a practical property scenario.",
+    "eyebrow": "DSCR · North Carolina",
+    "terms": [
+      [
+        "Purpose",
+        "Investment rental property review"
+      ],
+      [
+        "Local focus",
+        "County reappraisal timing belongs in the loan file"
+      ],
+      [
+        "Availability",
+        "Varies by state, property, lender and program"
+      ]
+    ],
+    "body": [
+      "A debt service coverage ratio (DSCR) loan uses rental income to evaluate an investment property under the selected lender's rules. For rental property in North Carolina, this guide focuses on county reappraisal timing belongs in the loan file. Start with the local records below before relying on a projected loan payment.",
+      {
+        "h": "County reappraisal timing belongs in the loan file"
+      },
+      "North Carolina publishes county property-tax rates and reappraisal schedules. Use the relevant county and fiscal year when reviewing a rental's expense assumptions. For properties near a county boundary, do not copy the tax estimate from the nearest comparable sale without checking that the taxing jurisdiction and assessment timing match.",
+      "State reference: <a href=\"https://www.ncdor.gov/taxes-forms/property-tax/property-tax-rates/county-property-tax-rates-and-reappraisal-schedules\">North Carolina Department of Revenue: county rates and reappraisal schedules</a>.",
+      {
+        "h": "Documents and questions for this property review"
+      },
+      "Identify the county, reappraisal cycle and fiscal year used in the estimate. Where a property sits near a boundary, verify its actual parcel jurisdiction instead of relying on the mailing address. Explain any difference between a comparable property's tax record and the subject property before using that comparable in the expense budget.",
+      {
+        "h": "A property review example"
+      },
+      "<strong>Hypothetical planning example, not a completed transaction.</strong> A Raleigh-area investor compares similar rentals in different counties. The rent comparables may be useful across the area, but taxes must be checked for each parcel. Build an income-and-expense worksheet for both and identify the next reappraisal date so an apparently narrow coverage cushion is not treated as permanently fixed.",
+      {
+        "h": "Can nearby comparable homes share one tax estimate?"
+      },
+      "Only after checking their actual jurisdictions and accounts. Similar location and price do not establish identical taxes.",
+      {
+        "h": "Connect local costs to the DSCR calculation"
+      },
+      "Many residential rental programs divide qualifying monthly rent by the full housing payment, including principal, interest, taxes, insurance and applicable association dues. Confirm the selected program's formula and accepted rent evidence. Keep vacancy, management, maintenance and capital work in a separate operating budget: meeting a lender's ratio does not establish profitability. <a href=\"/dscr-program-calculator\">Use the DSCR Program Calculator</a> and <a href=\"/blog/dscr-loans-explained\">read the full DSCR qualification guide</a> for the broader framework.",
+      {
+        "h": "Request a property scenario review"
+      },
+      "Stonehaven Lending is a mortgage brokerage arranging business-purpose DSCR financing nationwide, with availability varying by state, property, lender and program. <a href=\"/dscr-review\">Request a DSCR review</a> with the property location, legal unit count, intended use, purchase or refinance goal and available rent and expense records."
+    ]
+  },
+  "es": {
+    "title": "Préstamos DSCR en Carolina del Norte: guía de inversión",
+    "seo_title": "Préstamos DSCR en Carolina del Norte",
+    "desc": "Préstamos DSCR en Carolina del Norte: el calendario de revaluación debe incluirse en el expediente. Revise registros locales, evidencia de renta y un escenario práctico.",
+    "eyebrow": "DSCR · Carolina del Norte",
+    "terms": [
+      [
+        "Propósito",
+        "Revisión de propiedad de alquiler"
+      ],
+      [
+        "Enfoque local",
+        "El calendario de revaluación debe incluirse en el expediente"
+      ],
+      [
+        "Disponibilidad",
+        "Varía por estado, propiedad, prestamista y programa"
+      ]
+    ],
+    "body": [
+      "Un préstamo DSCR utiliza ingresos de alquiler para evaluar una propiedad de inversión según las reglas del prestamista. La razón DSCR mide la cobertura del servicio de la deuda. Para un alquiler en Carolina del Norte, esta guía aborda el calendario de revaluación debe incluirse en el expediente. Revise los registros locales antes de confiar en un pago proyectado.",
+      {
+        "h": "El calendario de revaluación debe incluirse en el expediente"
+      },
+      "Carolina del Norte publica tasas y calendarios de revaluación por condado. Use el condado y año fiscal correspondientes al revisar los gastos. Cerca de un límite de condado, no copie impuestos de la venta comparable más próxima sin comprobar jurisdicción y período de evaluación.",
+      "Fuente estatal: <a href=\"https://www.ncdor.gov/taxes-forms/property-tax/property-tax-rates/county-property-tax-rates-and-reappraisal-schedules\">North Carolina Department of Revenue: county rates and reappraisal schedules</a>.",
+      {
+        "h": "Documentos y preguntas para revisar esta propiedad"
+      },
+      "Identifique condado, ciclo de reevaluación y año fiscal de la estimación. Cerca de un límite, confirme jurisdicción de la parcela sin depender de la dirección postal. Explique diferencias entre impuestos de una propiedad comparable y la financiada antes de usar la comparación para presupuestar.",
+      {
+        "h": "Ejemplo de revisión de una propiedad"
+      },
+      "<strong>Ejemplo hipotético de planificación, no una operación cerrada.</strong> Un inversionista del área de Raleigh compara alquileres similares en condados distintos. Los comparables de renta pueden servir en la zona, pero los impuestos deben verificarse por parcela. Prepare hojas separadas e identifique la próxima revaluación para no tratar un margen reducido como permanente.",
+      {
+        "h": "¿Pueden viviendas comparables cercanas usar una misma estimación fiscal?"
+      },
+      "Solo después de verificar jurisdicciones y cuentas reales. La cercanía y el precio similar no establecen impuestos idénticos.",
+      {
+        "h": "Conecte los costos locales con el cálculo DSCR"
+      },
+      "Muchos programas residenciales de inversión dividen renta mensual calificada entre pago completo, incluidos capital, intereses, impuestos, seguro y asociación aplicable. Confirme la fórmula del programa y la evidencia de renta aceptada. Presupueste por separado vacantes, administración, mantenimiento y obras de capital: cumplir la razón del prestamista no demuestra rentabilidad. <a href=\"/es/dscr-program-calculator\">Use la calculadora DSCR por programa</a> y <a href=\"/es/blog/dscr-loans-explained\">consulte la guía completa de calificación DSCR</a>.",
+      {
+        "h": "Solicite una revisión de su escenario"
+      },
+      "Stonehaven Lending es una correduría hipotecaria que gestiona financiamiento DSCR de propósito comercial a nivel nacional, con disponibilidad variable por estado, propiedad, prestamista y programa. <a href=\"/es/dscr-review\">Solicite una revisión DSCR</a> con ubicación, unidades legales, uso previsto, objetivo de compra o refinanciamiento y registros de renta y gastos disponibles."
+    ]
+  },
+  "sources": [
+    {
+      "title": "North Carolina Department of Revenue: county rates and reappraisal schedules",
+      "url": "https://www.ncdor.gov/taxes-forms/property-tax/property-tax-rates/county-property-tax-rates-and-reappraisal-schedules",
+      "checked_at": "2026-09-12"
+    }
+  ],
+  "series": "dscr"
+}

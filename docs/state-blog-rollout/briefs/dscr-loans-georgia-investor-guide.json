@@ -1,0 +1,101 @@
+{
+  "slug": "dscr-loans-georgia-investor-guide",
+  "date": "2026-09-12",
+  "type": "guide",
+  "en": {
+    "title": "Georgia DSCR guide: a property-record review checklist",
+    "seo_title": "DSCR loans in Georgia",
+    "desc": "DSCR loans in Georgia: county records and taxes for a Georgia rental. Review local records, rental evidence and a practical property scenario.",
+    "eyebrow": "DSCR · Georgia",
+    "terms": [
+      [
+        "Purpose",
+        "Investment rental property review"
+      ],
+      [
+        "Local focus",
+        "County records and taxes for a Georgia rental"
+      ],
+      [
+        "Availability",
+        "Varies by state, property, lender and program"
+      ]
+    ],
+    "body": [
+      {
+        "h": "County records and taxes for a Georgia rental"
+      },
+      "Georgia's homestead guidance ties the standard exemption to the owner's primary residence. For a rental acquisition, have the county review the proposed ownership and use instead of assuming the seller's exemption remains. Confirm city, county and school components against the same parcel record so the calculator's tax line represents the property being financed.",
+      "State reference: <a href=\"https://dor.georgia.gov/property-tax-homestead-exemptions\">Georgia Department of Revenue: homestead exemptions</a>.",
+      {
+        "h": "Documents and questions for this property review"
+      },
+      "Assemble the parcel identification, county account, current exemptions and any separate city or school charges. Ask which amounts reflect the proposed rental ownership. Reconcile that total with the tax figure entered in the DSCR calculator, and retain the supporting record so later quotes use the same expense assumption.",
+      {
+        "h": "A property review example"
+      },
+      "<strong>Hypothetical planning example, not a completed transaction.</strong> An Atlanta-area investor compares an occupied rental with a residence being converted to investment use. Build a tax file for each, verify association obligations and obtain independent insurance quotes. Then use the DSCR tools to distinguish a lender's qualifying ratio from the cash remaining after vacancy, management and maintenance.",
+      {
+        "h": "Can a Georgia rental buyer rely on the seller's homestead tax bill?"
+      },
+      "Use it as historical information, then ask the county to review the proposed ownership and rental use. The loan analysis needs a supported estimate for the buyer's situation.",
+      "<a href=\"/dscr-program-calculator\">Review the program-specific calculation</a> using supported rent and the reconciled tax estimate.",
+      {
+        "h": "Request a property scenario review"
+      },
+      "Stonehaven Lending is a mortgage brokerage arranging business-purpose DSCR financing nationwide, with availability varying by state, property, lender and program. <a href=\"/dscr-review\">Request a DSCR review</a> with the property location, legal unit count, intended use, purchase or refinance goal and available rent and expense records."
+    ]
+  },
+  "es": {
+    "title": "Guía DSCR de Georgia: revisión de registros de la propiedad",
+    "seo_title": "Préstamos DSCR en Georgia",
+    "desc": "Préstamos DSCR en Georgia: registros del condado e impuestos de un alquiler en Georgia. Revise registros locales, evidencia de renta y un escenario práctico.",
+    "eyebrow": "DSCR · Georgia",
+    "terms": [
+      [
+        "Propósito",
+        "Revisión de propiedad de alquiler"
+      ],
+      [
+        "Enfoque local",
+        "Registros del condado e impuestos de un alquiler en Georgia"
+      ],
+      [
+        "Disponibilidad",
+        "Varía por estado, propiedad, prestamista y programa"
+      ]
+    ],
+    "body": [
+      {
+        "h": "Registros del condado e impuestos de un alquiler en Georgia"
+      },
+      "La guía homestead de Georgia vincula la exención estándar a la residencia principal del propietario. En una compra de inversión, pida al condado que revise la titularidad y el uso previstos, sin suponer que continúe la exención del vendedor. Confirme los componentes municipales, del condado y escolares de la misma parcela.",
+      "Fuente estatal: <a href=\"https://dor.georgia.gov/property-tax-homestead-exemptions\">Georgia Department of Revenue: homestead exemptions</a>.",
+      {
+        "h": "Documentos y preguntas para revisar esta propiedad"
+      },
+      "Reúna identificación de parcela, cuenta del condado, exenciones actuales y cargos municipales o escolares separados. Confirme los importes aplicables al alquiler previsto. Concilie el total con el impuesto ingresado en la calculadora DSCR y conserve el respaldo para comparar cotizaciones con el mismo supuesto.",
+      {
+        "h": "Ejemplo de revisión de una propiedad"
+      },
+      "<strong>Ejemplo hipotético de planificación, no una operación cerrada.</strong> Un inversionista del área de Atlanta compara un alquiler ocupado con una vivienda que pasará a inversión. Prepare un expediente fiscal de cada una, confirme obligaciones de asociación y obtenga seguros independientes. Use después las herramientas DSCR para distinguir la cobertura del prestamista del efectivo restante tras vacantes, administración y mantenimiento.",
+      {
+        "h": "¿Puede un comprador de alquiler usar el recibo homestead del vendedor?"
+      },
+      "Úselo como información histórica y pida al condado revisar titularidad y alquiler previstos. El análisis del préstamo necesita una estimación respaldada para la situación del comprador.",
+      "<a href=\"/es/dscr-program-calculator\">Revise el cálculo específico del programa</a> con renta respaldada y la estimación fiscal conciliada.",
+      {
+        "h": "Solicite una revisión de su escenario"
+      },
+      "Stonehaven Lending es una correduría hipotecaria que gestiona financiamiento DSCR de propósito comercial a nivel nacional, con disponibilidad variable por estado, propiedad, prestamista y programa. <a href=\"/es/dscr-review\">Solicite una revisión DSCR</a> con ubicación, unidades legales, uso previsto, objetivo de compra o refinanciamiento y registros de renta y gastos disponibles."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Georgia Department of Revenue: homestead exemptions",
+      "url": "https://dor.georgia.gov/property-tax-homestead-exemptions",
+      "checked_at": "2026-09-12"
+    }
+  ],
+  "series": "dscr"
+}
