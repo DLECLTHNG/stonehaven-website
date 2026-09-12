@@ -2,7 +2,7 @@
 
 Prepared September 12, 2026.
 
-Release status: CRM attribution fix is live at commit d8d85a558c50e4be368b873619e8bbe98871ad53. Website changes are on codex/growth-launch and await production publication approval. Automatic approval review rejected a direct main-branch push because of the number of affected files. Most website changes only refresh the shared script cache version.
+Release status: the previous growth release was published through PR #3 at main commit aa518c6edb05a2bc7f45617bed1aa070fa62e0c8. CRM attribution remains at d8d85a558c50e4be368b873619e8bbe98871ad53. The subsequent HELOC and DSCR search implementation is documented in ../seo-implementation/README.md.
 
 ## Completed work
 

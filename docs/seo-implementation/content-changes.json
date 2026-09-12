@@ -1,0 +1,56 @@
+[
+  {
+    "date": "2026-09-12",
+    "reason": "Borrower resources, product explanations, editorial policy and substantive guide improvements",
+    "paths": [
+      "/editorial-policy",
+      "/es/editorial-policy",
+      "/management",
+      "/blog",
+      "/es/blog",
+      "/",
+      "/residential",
+      "/resources/residential",
+      "/cash-out-refinance",
+      "/heloc",
+      "/blog/which-rent-counts-dscr-loan",
+      "/blog/dscr-loans-georgia-investor-guide",
+      "/blog/dscr-cash-out-refinance-georgia",
+      "/dscr",
+      "/dscr-analyzer",
+      "/dscr-program-calculator",
+      "/es/",
+      "/es/residential",
+      "/es/cash-out-refinance",
+      "/es/heloc",
+      "/es/blog/which-rent-counts-dscr-loan",
+      "/es/blog/dscr-loans-georgia-investor-guide",
+      "/es/blog/dscr-cash-out-refinance-georgia",
+      "/es/dscr",
+      "/es/dscr-analyzer",
+      "/es/dscr-program-calculator"
+    ]
+  },
+  {
+    "date": "2026-09-12",
+    "reason": "Correct erroneous future dates on DSCR persona pages to their already-published revision date",
+    "paths": [
+      "/dscr/experienced-landlords",
+      "/dscr/bridge-loan-refinance",
+      "/dscr/cash-out-refinance",
+      "/dscr/self-employed-investors",
+      "/dscr/first-time-investors",
+      "/dscr/brrrr-refinance",
+      "/dscr/out-of-state-investors",
+      "/dscr/portfolio-growth",
+      "/dscr/long-term-rentals",
+      "/dscr/short-term-rentals",
+      "/dscr/rate-and-term-refinance",
+      "/dscr/llc-investors",
+      "/dscr/2-4-unit-properties",
+      "/dscr/cash-purchase-refinance",
+      "/dscr/hold-or-sell",
+      "/dscr/veteran-investors"
+    ]
+  }
+]

@@ -1,0 +1,94 @@
+{
+  "slug": "georgia-heloc-questions",
+  "date": "2026-09-12",
+  "type": "guide",
+  "product": "HELOC",
+  "en": {
+    "title": "Georgia HELOC questions to ask before requesting terms",
+    "desc": "A Georgia homeowner guide to checking the brokerage, organizing property details, and separating a HELOC inquiry from lender approval.",
+    "eyebrow": "HELOC · Homeowner guide",
+    "body": [
+      "A useful Georgia HELOC conversation begins with your property and your goal. A city name alone does not establish program eligibility or a credit limit. Use these questions to organize a review with a mortgage broker and to identify which details still need confirmation.",
+      {
+        "h": "Who is arranging the financing?"
+      },
+      "Stonehaven Lending is a mortgage brokerage based in Alpharetta, NMLS #1752355. Financing is arranged through third-party lenders. Confirm the business and licensing information using <a href=\"https://www.nmlsconsumeraccess.org/EntityDetails.aspx/COMPANY/1752355\">NMLS Consumer Access</a>, and meet the people listed on our <a href=\"/management\">management page</a>. A listing or a license does not itself approve a particular loan.",
+      {
+        "h": "Which property figures should you prepare?"
+      },
+      "Bring your estimated home value, remaining mortgage balance, and requested amount. Also explain how the property is used and whether other loans are secured against it. If you have a current mortgage statement or a recent value estimate, identify its date. Do not treat an old listing price as an accepted lender valuation.",
+      "Ask which valuation process the proposed program requires and how its costs will be disclosed. A full appraisal, a different valuation method, and a borrower estimate are not interchangeable. Your scenario must be assessed under the actual lender requirements.",
+      {
+        "h": "Where can Georgia homeowners find independent information?"
+      },
+      "The Georgia Department of Banking and Finance publishes <a href=\"https://dbf.georgia.gov/home-equity-loans-and-lines-credit\">home equity loan and line-of-credit information</a>. It explains the distinction between product types and points consumers toward additional guidance. Use independent information alongside the actual lender disclosures, not as a substitute for them.",
+      {
+        "h": "What should a quote comparison answer?"
+      },
+      "Ask what happens to your current mortgage, how funds become available, which costs apply, and how the payments could change. If you are comparing proposals, record the same requested amount and purpose for each. Different borrowing amounts or repayment periods can make an apparently simple comparison misleading.",
+      "If a line of credit is proposed, ask about access to future draws as well as the initial funds. A planned project should not depend on an assumption that every future draw will remain available regardless of changes. Ask the lender to explain the agreement and any conditions.",
+      {
+        "h": "Does Stonehaven serve only Georgia homeowners?"
+      },
+      "Stonehaven describes residential service in Georgia, Alabama, Tennessee, Florida, North Carolina, and South Carolina, subject to program availability and applicable licensing. Property location and program fit still need review. Do not interpret the nationwide description of business-purpose DSCR financing as a nationwide residential HELOC offer.",
+      {
+        "h": "What happens after the inquiry?"
+      },
+      "Use the <a href=\"/blog/heloc-preparation-checklist\">preparation checklist</a> and submit your three starting figures through the <a href=\"/heloc#callback\">HELOC review form</a>. Submitting is an inquiry, not a lender commitment. For the difference between an equity calculation and borrowing capacity, read <a href=\"/blog/how-much-home-equity-can-i-borrow\">how much equity could support a request</a>."
+    ],
+    "terms": [
+      [
+        "Purpose",
+        "Prepare for a broker conversation"
+      ],
+      [
+        "Scope",
+        "Education, not a loan approval"
+      ]
+    ]
+  },
+  "es": {
+    "title": "Preguntas sobre HELOC en Georgia antes de solicitar términos",
+    "desc": "Guía para propietarios en Georgia: verificar el corretaje, preparar datos de la propiedad y distinguir una consulta de una aprobación.",
+    "eyebrow": "HELOC · Guía para propietarios",
+    "body": [
+      "Una conversación útil sobre HELOC en Georgia empieza con su propiedad y su objetivo. El nombre de una ciudad no demuestra elegibilidad ni fija un límite de crédito. Estas preguntas ayudan a preparar la revisión e identificar datos pendientes.",
+      {
+        "h": "¿Quién organiza el financiamiento?"
+      },
+      "Stonehaven Lending es un corretaje hipotecario con sede en Alpharetta, NMLS #1752355. El financiamiento se organiza mediante prestamistas externos. Verifique los datos y licencias en <a href=\"https://www.nmlsconsumeraccess.org/EntityDetails.aspx/COMPANY/1752355\">NMLS Consumer Access</a> y conozca al equipo en <a href=\"/management\">nuestra página de dirección</a>. Una licencia no aprueba un préstamo específico.",
+      {
+        "h": "¿Qué cifras debe preparar?"
+      },
+      "Prepare el valor estimado de la vivienda, el saldo hipotecario y el monto solicitado. Explique el uso de la propiedad y otros préstamos garantizados con ella. Identifique la fecha del estado hipotecario o estimación reciente. Un precio de venta anunciado anteriormente no equivale a una valoración aceptada por el prestamista.",
+      "Pregunte qué proceso de valoración exige el programa y cómo se informan sus costos. Una tasación completa, otro método de valoración y una estimación del propietario no son intercambiables. Se aplican los requisitos reales del prestamista.",
+      {
+        "h": "¿Dónde puede consultar información independiente?"
+      },
+      "El Departamento de Banca y Finanzas de Georgia publica <a href=\"https://dbf.georgia.gov/home-equity-loans-and-lines-credit\">información sobre préstamos y líneas sobre el valor de la vivienda (en inglés)</a>. Explica diferencias y ofrece orientación adicional. Use esa información junto con las divulgaciones del prestamista, sin sustituirlas.",
+      {
+        "h": "¿Qué debe responder la comparación?"
+      },
+      "Pregunte qué ocurre con su hipoteca, cómo recibe los fondos, qué costos existen y cómo pueden cambiar los pagos. Use el mismo monto solicitado y propósito al comparar propuestas. Montos o plazos distintos pueden volver engañosa una comparación aparentemente sencilla.",
+      "Si se propone una línea, pregunte por futuros retiros además de los fondos iniciales. No base un proyecto en que todos los retiros futuros estarán disponibles sin importar cambios. Pida una explicación del contrato y sus condiciones.",
+      {
+        "h": "¿Stonehaven atiende solo a propietarios de Georgia?"
+      },
+      "Stonehaven describe servicio residencial en Georgia, Alabama, Tennessee, Florida, Carolina del Norte y Carolina del Sur, sujeto a disponibilidad y licencias aplicables. La ubicación y el programa requieren revisión. El alcance nacional de DSCR para inversión no constituye una oferta nacional de HELOC residencial.",
+      {
+        "h": "¿Qué ocurre después de consultar?"
+      },
+      "Use la <a href=\"/es/blog/heloc-preparation-checklist\">lista de preparación</a> y envíe sus tres cifras en el <a href=\"/es/heloc#callback\">formulario de revisión</a>. Es una consulta, no un compromiso del prestamista. Lea también <a href=\"/es/blog/how-much-home-equity-can-i-borrow\">cuánto valor acumulado puede respaldar su solicitud</a>."
+    ],
+    "terms": [
+      [
+        "Propósito",
+        "Preparar una conversación con un bróker"
+      ],
+      [
+        "Alcance",
+        "Información educativa, no aprobación"
+      ]
+    ]
+  }
+}

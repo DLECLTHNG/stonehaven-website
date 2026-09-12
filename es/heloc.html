@@ -40,8 +40,9 @@
 <script src="../js/heloc-fields.js?v=1" defer></script>
 <script src="../js/funnel.js?v=10" defer></script>
 <script src="../js/heloc-calc.js?v=1"></script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Service", "name": "Línea de crédito sobre el valor de la vivienda (HELOC)", "serviceType": "Corretaje hipotecario residencial", "description": "Comparación de HELOC, préstamo sobre el valor de la vivienda y refinanciamiento con retiro de efectivo, gestionada.", "url": "https://stonehavencre.com/es/heloc", "inLanguage": "es", "areaServed": [{"@type": "State", "name": "Georgia"}, {"@type": "State", "name": "Alabama"}, {"@type": "State", "name": "Tennessee"}, {"@type": "State", "name": "Florida"}, {"@type": "State", "name": "North Carolina"}], "provider": {"@type": "FinancialService", "name": "Stonehaven Lending", "url": "https://stonehavencre.com/", "identifier": {"@type": "PropertyValue", "propertyID": "NMLS", "value": "1752355"}}}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Esto cambia la tasa de la hipoteca actual?", "acceptedAnswer": {"@type": "Answer", "text": "No - una HELOC es un segundo gravamen separado; la hipoteca actual y su tasa no cambian."}}, {"@type": "Question", "name": "¿Consultar afecta el crédito?", "acceptedAnswer": {"@type": "Answer", "text": "No - el estimado y la llamada con el bróker no requieren consulta de crédito."}}, {"@type": "Question", "name": "¿Qué tan rápido están disponibles los fondos?", "acceptedAnswer": {"@type": "Answer", "text": "Con frecuencia unas semanas desde una solicitud completa - el bróker da un plazo real en la primera llamada."}}, {"@type": "Question", "name": "¿Necesito un avalúo para una HELOC?", "acceptedAnswer": {"@type": "Answer", "text": "En la mayoría de los casos no se necesita un avalúo completo - muchos prestamistas aceptan una valoración automatizada. Su asesor confirma lo que requiere su caso."}}, {"@type": "Question", "name": "¿Me conviene una HELOC o un refinanciamiento con retiro?", "acceptedAnswer": {"@type": "Answer", "text": "Si la tasa de su hipoteca actual es baja, una segunda hipoteca suele protegerla. Si su tasa actual es alta, reemplazar el préstamo con un refinanciamiento con retiro puede tener sentido. La comparación depende de su tasa, su saldo y su objetivo."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Service", "name": "Línea de crédito sobre el valor de la vivienda (HELOC)", "serviceType": "Corretaje hipotecario residencial", "description": "Comparación de HELOC, préstamo sobre el valor de la vivienda y refinanciamiento con retiro de efectivo, gestionada.", "url": "https://stonehavencre.com/es/heloc", "inLanguage": "es", "areaServed": [{"@type": "State", "name": "Georgia"}, {"@type": "State", "name": "Alabama"}, {"@type": "State", "name": "Tennessee"}, {"@type": "State", "name": "Florida"}, {"@type": "State", "name": "North Carolina"}, {"@type": "State", "name": "South Carolina"}], "provider": {"@type": "FinancialService", "name": "Stonehaven Lending", "url": "https://stonehavencre.com/", "identifier": {"@type": "PropertyValue", "propertyID": "NMLS", "value": "1752355"}, "@id": "https://stonehavencre.com/#org"}}</script>
+
+<link rel="stylesheet" href="/seo-resources.css?v=1"/>
 </head>
 <body><noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=4039555362846500&ev=PageView&noscript=1" alt=""/></noscript><header class="nav" id="nav">
   <div class="wrap nav-inner">
@@ -68,13 +69,14 @@
         <div class="calc-grid">
           <div class="lf-field full"><label for="e-value">Valor aproximado de la casa ($)</label><input id="e-value" type="number" inputmode="numeric" min="0" step="10000" value="450000" style="font-size:18px;"/></div>
           <div class="lf-field full"><label for="e-balance">Saldo aproximado de la hipoteca ($)</label><input id="e-balance" type="number" inputmode="numeric" min="0" step="10000" value="250000" style="font-size:18px;"/></div>
+<div class="lf-field full"><label for="e-request">¿Cuánto desea solicitar? ($)</label><input id="e-request" type="number" inputmode="numeric" min="1" step="1" placeholder="60000" aria-describedby="e-request-note" style="font-size:18px;"/></div>
         </div>
       </div>
       <div class="calc-result" aria-live="polite">
         <span class="eyebrow">Rango estimado disponible</span>
         <div class="est-range" id="e-range">-</div>
         <div class="verdict" id="e-verdict">potencialmente accesible</div>
-        <p class="calc-note" id="e-note">Dos cifras, sin registrarse.</p>
+        <p class="calc-note" id="e-note">Dos cifras, sin registrarse.</p><p class="calc-note" id="e-request-note"></p>
         <div style="margin-top:22px;display:flex;flex-direction:column;align-items:center;gap:10px;">
           <a class="btn-primary" href="#callback" style="width:100%;max-width:320px;text-align:center;">Hable con un bróker</a>
           <span style="font-size:13px;color:var(--stone-400);">Llamada normalmente en minutos, en horario laboral (lun&ndash;vie, hora del Este).</span>
@@ -107,11 +109,14 @@
 <tr><td style="padding:10px 12px;border-bottom:2px solid #142332;"></td><td style="padding:10px 12px;border-bottom:2px solid #142332;"><b>HELOC</b></td><td style="padding:10px 12px;border-bottom:2px solid #142332;"><b>Segunda hipoteca fija</b></td><td style="padding:10px 12px;border-bottom:2px solid #142332;"><b>Refinanciamiento con retiro</b></td></tr>
 <tr><td style="padding:9px 12px;border-bottom:1px solid rgba(20,35,50,.08);color:var(--stone-400);">Su hipoteca actual</td><td style="padding:9px 12px;border-bottom:1px solid rgba(20,35,50,.08);">Queda igual</td><td style="padding:9px 12px;border-bottom:1px solid rgba(20,35,50,.08);">Queda igual</td><td style="padding:9px 12px;border-bottom:1px solid rgba(20,35,50,.08);">Se reemplaza con un préstamo nuevo</td></tr>
 <tr><td style="padding:9px 12px;border-bottom:1px solid rgba(20,35,50,.08);color:var(--stone-400);">Cómo recibe los fondos</td><td style="padding:9px 12px;border-bottom:1px solid rgba(20,35,50,.08);">Una línea que usa según necesite</td><td style="padding:9px 12px;border-bottom:1px solid rgba(20,35,50,.08);">Una suma única</td><td style="padding:9px 12px;border-bottom:1px solid rgba(20,35,50,.08);">Suma única al cierre</td></tr>
-<tr><td style="padding:9px 12px;border-bottom:1px solid rgba(20,35,50,.08);color:var(--stone-400);">Estilo de pago</td><td style="padding:9px 12px;border-bottom:1px solid rgba(20,35,50,.08);">Varía con el saldo usado</td><td style="padding:9px 12px;border-bottom:1px solid rgba(20,35,50,.08);">Pagos mensuales fijos</td><td style="padding:9px 12px;border-bottom:1px solid rgba(20,35,50,.08);">Un nuevo pago hipotecario</td></tr>
-<tr><td style="padding:9px 12px;border-bottom:1px solid rgba(20,35,50,.08);color:var(--stone-400);">Suele convenir cuando</td><td style="padding:9px 12px;border-bottom:1px solid rgba(20,35,50,.08);">Los gastos llegan por etapas</td><td style="padding:9px 12px;border-bottom:1px solid rgba(20,35,50,.08);">Un monto conocido y presupuesto fijo</td><td style="padding:9px 12px;border-bottom:1px solid rgba(20,35,50,.08);">Su tasa actual es más alta que la del mercado</td></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid rgba(20,35,50,.08);color:var(--stone-400);">Estilo de pago</td><td style="padding:9px 12px;border-bottom:1px solid rgba(20,35,50,.08);">Varía con el saldo usado</td><td style="padding:9px 12px;border-bottom:1px solid rgba(20,35,50,.08);">Suelen ser fijos; confirme los términos</td><td style="padding:9px 12px;border-bottom:1px solid rgba(20,35,50,.08);">Un nuevo pago hipotecario</td></tr>
+<tr><td style="padding:9px 12px;border-bottom:1px solid rgba(20,35,50,.08);color:var(--stone-400);">Suele convenir cuando</td><td style="padding:9px 12px;border-bottom:1px solid rgba(20,35,50,.08);">Los gastos llegan por etapas</td><td style="padding:9px 12px;border-bottom:1px solid rgba(20,35,50,.08);">Un monto conocido y presupuesto fijo</td><td style="padding:9px 12px;border-bottom:1px solid rgba(20,35,50,.08);">Desea revisar la hipoteca completa</td></tr>
 </table></div>
 <p style="margin-top:12px;">Conservar una tasa baja suele favorecer una segunda hipoteca; reemplazar un préstamo de tasa alta puede favorecer un <a href="/es/cash-out-refinance">refinanciamiento con retiro</a>. Un asesor con licencia compara las tres con sus números.</p></div></div></section>
 <section class="tight" aria-labelledby="review-next"><div class="wrap"><div class="prose reveal"><span class="eyebrow">El siguiente paso</span><h2 id="review-next">¿Qué pasa después de solicitar una llamada?</h2><p>Un bróker de Stonehaven revisa el valor estimado de su vivienda, el saldo hipotecario y el monto que desea. Luego se comunica con usted para hablar de su objetivo y las opciones disponibles. Este formulario es una consulta, no una aprobación de préstamo.</p><p>No necesita una valoración exacta para empezar. Puede usar estimados e ingresar $0 si ya pagó su hipoteca. No envíe números de Seguro Social, números de cuenta ni documentos por este formulario.</p><p>¿Prefiere hablar ahora? Llame al <a href="tel:+14709704979">(470) 970-4979</a>. Atendemos en español e inglés.</p><p><a href="#callback">Solicitar una revisión de HELOC</a> &middot; <a href="/es/cash-out-refinance">Comparar un refinanciamiento con retiro de efectivo</a></p></div></div></section>
+<!-- SEO:HELOC-RESOURCES:START -->
+<section class="tight seo-resources" aria-label="HELOC"><div class="wrap"><span class="eyebrow">Para propietarios</span><h2>Planifique el uso del valor de su vivienda</h2><p>Compare una línea de crédito, un préstamo sobre el valor de la vivienda y un refinanciamiento según su objetivo.</p><div class="seo-resource-grid"><article><h3><a href="/es/blog/heloc-vs-cash-out-refinance">Compare opciones</a></h3><p>La hipoteca actual, los costos y el plan de pago.</p></article><article><h3><a href="/es/blog/how-much-home-equity-can-i-borrow">Calcule el valor acumulado</a></h3><p>Un ejemplo con supuestos visibles.</p></article><article><h3><a href="/es/blog/heloc-preparation-checklist">Prepare su conversación</a></h3><p>Una lista imprimible sin enviar documentos.</p></article><article><h3><a href="/es/blog/georgia-heloc-questions">Preguntas en Georgia</a></h3><p>Información local y fuentes independientes.</p></article></div><p><a class="line" href="/es/heloc">Explorar HELOC y solicitar una revisión</a></p></div></section>
+<!-- SEO:HELOC-RESOURCES:END -->
 <section class="lead" id="callback">
   <div class="wrap">
     <div class="lead-card reveal in">
@@ -157,7 +162,7 @@
     <div class="qa reveal in">
       <p><b>¿Esto cambia la tasa de la hipoteca actual?</b> No - una HELOC es un segundo gravamen separado; la hipoteca actual y su tasa no cambian.</p>
       <p><b>¿Consultar afecta el crédito?</b> No - el estimado y la llamada con el bróker no requieren consulta de crédito.</p>
-      <p><b>¿Qué tan rápido están disponibles los fondos?</b> Con frecuencia unas semanas desde una solicitud completa - el bróker da un plazo real en la primera llamada.</p><p><b>¿Necesito un avalúo para una HELOC?</b> En la mayoría de los casos no se necesita un avalúo completo - muchos prestamistas aceptan una valoración automatizada. Su asesor confirma lo que requiere su caso.</p><p><b>¿Me conviene una HELOC o un refinanciamiento con retiro?</b> Si la tasa de su hipoteca actual es baja, una segunda hipoteca suele protegerla. Si su tasa actual es alta, reemplazar el préstamo con un refinanciamiento con retiro puede tener sentido. La comparación depende de su tasa, su saldo y su objetivo.</p>
+      <p><b>¿Qué tan rápido están disponibles los fondos?</b> Con frecuencia unas semanas desde una solicitud completa - el bróker da un plazo real en la primera llamada.</p><p><b>¿Necesito un avalúo para una HELOC?</b> Los requisitos de valoración varían según el prestamista y el caso. Pregunte qué método se requiere y cuánto cuesta antes de proceder.</p><p><b>¿Me conviene una HELOC o un refinanciamiento con retiro?</b> Si la tasa de su hipoteca actual es baja, una segunda hipoteca suele protegerla. Si su tasa actual es alta, reemplazar el préstamo con un refinanciamiento con retiro puede tener sentido. La comparación depende de su tasa, su saldo y su objetivo.</p>
     </div>
     <div style="margin-top:22px;display:flex;flex-direction:column;align-items:center;gap:10px;">
       <a class="btn-primary" href="#callback" style="width:100%;max-width:320px;text-align:center;">Hable con un bróker</a>
@@ -188,36 +193,5 @@
 
 <div class="heloc-sticky"><a href="#callback">&#9742;&nbsp; Quiero que me llamen</a></div>
 
-<script>
-(function(){
-  "use strict";
-  var $=function(id){return document.getElementById(id);};
-  var fired=false;
-  function moneyK(n){ if(n<=0)return "$0"; return "$"+Math.round(n/1000).toLocaleString("en-US")+"k"; }
-  function est(){
-    var H=window.SH_HELOC; if(!H) return;
-    var v=+$("e-value").value||0, b=+$("e-balance").value||0;
-    if(v<=0){$("e-range").textContent="-";return;}
-    var lo=H.availableEquity(v,b,80), hi=H.availableEquity(v,b,90);
-    if(!lo||!hi)return;
-    if(hi.available<=0){
-      $("e-range").textContent="$0";
-      $("e-verdict").textContent="sin margen con los topes comunes";
-      $("e-note").textContent="Con los topes comunes de los prestamistas hoy no hay margen por encima del saldo - un bróker puede igualmente repasar opciones y plazos en una llamada rápida.";
-    } else {
-      $("e-range").textContent=moneyK(lo.available)+" – "+moneyK(hi.available);
-      $("e-verdict").textContent="potencialmente accesible";
-      $("e-note").textContent="Margen con topes comunes del 80–90% de préstamo-valor combinado. Un bróker confirma la cifra real en una llamada rápida.";
-    }
-    if(arguments.length && $("cb-value") && !$("cb-value").dataset.touched) $("cb-value").value=v;
-    if(arguments.length && $("cb-balance") && !$("cb-balance").dataset.touched) $("cb-balance").value=b;
-    var form=document.querySelector('form[data-sh-form="heloc-callback"]');
-    if(form)form.setAttribute("data-sh-about-prefix","[HELOC Callback ES] est range "+$("e-range").textContent+" on value "+moneyK(v)+" / balance "+moneyK(b));
-    if(!fired&&window.shTrack){fired=true;window.shTrack("calc_used",{page:"heloc-es"});}
-  }
-  ["e-value","e-balance"].forEach(function(id){$(id).addEventListener("input",est);});
-  ["cb-value","cb-balance"].forEach(function(id){var el=$(id);if(el)el.addEventListener("input",function(){el.dataset.touched="1";});});
-  document.addEventListener("DOMContentLoaded",function(){est();});
-})();
-</script>
+<script src="/js/heloc-estimate.js?v=1" defer></script>
 </body></html>

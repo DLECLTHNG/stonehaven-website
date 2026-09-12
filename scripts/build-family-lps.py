@@ -136,7 +136,6 @@ def faq_jsonld(p, path):
         {"@type": "WebPage", "@id": C.SITE_URL + path, "url": C.SITE_URL + path, "name": p["title"], "description": p["description"],
          "isPartOf": {"@type": "WebSite", "name": C.BRAND["name"], "url": C.SITE_URL + "/"},
          "about": {"@type": "Thing", "name": "Family Opportunity Mortgage"}},
-        {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in p["faqs"]]},
         {"@type": "MortgageBroker", "name": C.BRAND["name"], "telephone": C.CONTACT["phone_e164"], "email": C.CONTACT["email"],
          "address": {"@type": "PostalAddress", "streetAddress": "10 Roswell Street, Suite 102", "addressLocality": "Alpharetta", "addressRegion": "GA", "postalCode": "30009", "addressCountry": "US"},
          "areaServed": [n for _, n in C.SERVICE_STATES], "url": C.SITE_URL + "/"}]}
