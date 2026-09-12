@@ -244,6 +244,7 @@
       if (res.status === 200 && j.ok && j.inquiry_id) {
         try { sessionStorage.setItem("sh_fo_receipt", JSON.stringify({ id: j.inquiry_id, at: j.received_at || "", dry_run: !!j.dry_run })); } catch (e2) {}
         ev("inquiry_submitted");
+        ev("generate_lead");
         if (pixel && !j.dry_run) { try { window.fbq("track", "Lead", {}, { eventID: eid }); } catch (e3) {} }
         window.location.assign("/request-received");
         return;

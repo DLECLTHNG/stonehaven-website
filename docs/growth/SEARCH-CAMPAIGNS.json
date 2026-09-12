@@ -1,0 +1,183 @@
+{
+  "prepared": "2026-09-12",
+  "format": "local planning specification, not an Ads Editor import",
+  "spending_authorized": false,
+  "campaigns": [
+    {
+      "name": "Stonehaven | GA | HELOC | Search",
+      "status": "PAUSED",
+      "location": "Georgia, United States",
+      "location_option": "PRESENCE",
+      "language": "English",
+      "network": "GOOGLE_SEARCH",
+      "search_partners": false,
+      "display_expansion": false,
+      "proposed_average_daily_budget_usd": 25,
+      "approved_budget_usd": null,
+      "bid_strategy": null,
+      "start_date": null,
+      "ad_groups": [
+        {
+          "name": "HELOC intent",
+          "keywords": [
+            {
+              "text": "heloc georgia",
+              "match_type": "EXACT"
+            },
+            {
+              "text": "heloc georgia",
+              "match_type": "PHRASE"
+            },
+            {
+              "text": "home equity line of credit georgia",
+              "match_type": "EXACT"
+            },
+            {
+              "text": "home equity line of credit georgia",
+              "match_type": "PHRASE"
+            },
+            {
+              "text": "heloc mortgage broker",
+              "match_type": "EXACT"
+            },
+            {
+              "text": "heloc mortgage broker",
+              "match_type": "PHRASE"
+            },
+            {
+              "text": "home equity broker georgia",
+              "match_type": "EXACT"
+            },
+            {
+              "text": "home equity broker georgia",
+              "match_type": "PHRASE"
+            }
+          ],
+          "responsive_search_ad": {
+            "headlines": [
+              "Georgia HELOC Options",
+              "Explore Your Home Equity",
+              "Talk With a Mortgage Broker",
+              "Keep Your First Mortgage",
+              "Request a HELOC Review",
+              "Stonehaven Lending",
+              "English & Spanish Support",
+              "Compare Home Equity Options"
+            ],
+            "descriptions": [
+              "Share your home value, mortgage balance, and requested amount. Talk with a broker.",
+              "Explore a separate home equity line. Availability and eligibility vary by lender.",
+              "Compare options with Stonehaven Lending, a mortgage brokerage based in Alpharetta.",
+              "Start with an estimate and request a callback. No approval or rate is guaranteed."
+            ],
+            "final_url": "https://stonehavencre.com/heloc",
+            "final_url_suffix": "utm_source=google&utm_medium=cpc&utm_campaign=ga_heloc_search&utm_content={creative}&utm_term={keyword}&utm_id={campaignid}",
+            "status": "PAUSED"
+          }
+        }
+      ],
+      "negative_phrase_keywords": [
+        "jobs",
+        "careers",
+        "salary",
+        "loan officer training",
+        "login",
+        "customer service number",
+        "definition homework"
+      ],
+      "primary_conversion_proposal": "generate_lead",
+      "secondary_interactions": [
+        "phone_click"
+      ],
+      "account_verification_required": true
+    },
+    {
+      "name": "Stonehaven | GA | DSCR | Search",
+      "status": "PAUSED",
+      "location": "Georgia, United States",
+      "location_option": "PRESENCE",
+      "language": "English",
+      "network": "GOOGLE_SEARCH",
+      "search_partners": false,
+      "display_expansion": false,
+      "proposed_average_daily_budget_usd": 25,
+      "approved_budget_usd": null,
+      "bid_strategy": null,
+      "start_date": null,
+      "ad_groups": [
+        {
+          "name": "DSCR intent",
+          "keywords": [
+            {
+              "text": "dscr loan georgia",
+              "match_type": "EXACT"
+            },
+            {
+              "text": "dscr loan georgia",
+              "match_type": "PHRASE"
+            },
+            {
+              "text": "dscr mortgage broker georgia",
+              "match_type": "EXACT"
+            },
+            {
+              "text": "dscr mortgage broker georgia",
+              "match_type": "PHRASE"
+            },
+            {
+              "text": "rental property loan georgia",
+              "match_type": "EXACT"
+            },
+            {
+              "text": "rental property loan georgia",
+              "match_type": "PHRASE"
+            },
+            {
+              "text": "dscr refinance georgia",
+              "match_type": "EXACT"
+            },
+            {
+              "text": "dscr refinance georgia",
+              "match_type": "PHRASE"
+            }
+          ],
+          "responsive_search_ad": {
+            "headlines": [
+              "Georgia DSCR Loan Options",
+              "Rental Property Financing",
+              "Request a DSCR Deal Review",
+              "Discuss Your Rental Loan",
+              "Stonehaven Lending",
+              "Compare Loan Structures",
+              "Talk With a Mortgage Broker",
+              "Plan Your Rental Refinance"
+            ],
+            "descriptions": [
+              "Share the property, rent, and requested loan amount for a preliminary broker review.",
+              "Explore DSCR financing for investment property. Eligibility varies by lender and state.",
+              "Compare loan structure, costs, and prepayment terms with a Stonehaven broker.",
+              "Buying or refinancing a rental? Discuss your scenario and the information needed next."
+            ],
+            "final_url": "https://stonehavencre.com/dscr-review",
+            "final_url_suffix": "utm_source=google&utm_medium=cpc&utm_campaign=ga_dscr_search&utm_content={creative}&utm_term={keyword}&utm_id={campaignid}",
+            "status": "PAUSED"
+          }
+        }
+      ],
+      "negative_phrase_keywords": [
+        "jobs",
+        "careers",
+        "salary",
+        "loan officer training",
+        "login",
+        "customer service number",
+        "definition homework"
+      ],
+      "primary_conversion_proposal": "generate_lead",
+      "secondary_interactions": [
+        "phone_click"
+      ],
+      "account_verification_required": true
+    }
+  ]
+}
