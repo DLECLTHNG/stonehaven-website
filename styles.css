@@ -304,3 +304,11 @@ details[open] .faq-q::after{content:'\2013';}
 
 /* forced hero line-breaks wrap naturally on small screens */
 @media(max-width:640px){.page-hero h1 br,.funnel-hero h1 br{display:none;}}
+
+/* Long articles must remain visible without scroll-animation thresholds. */
+.blog-article{padding:48px 44px;}
+@media(max-width:640px){
+  .blog-article{padding:28px 18px;}
+  .blog-article table{width:100%;table-layout:fixed;}
+  .blog-article th,.blog-article td{white-space:normal!important;overflow-wrap:anywhere;}
+}

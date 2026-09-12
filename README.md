@@ -1,47 +1,34 @@
-# Stonehaven Lending — Website
+# Stonehaven Lending website
 
-The live marketing site for Stonehaven Lending (residential • commercial),
-serving stonehavencre.com via Netlify. Navy/gold logo, gold accent palette
-(`#B08230`). Bilingual (EN/ES). Pure static HTML/CSS/JS — **no build step,
-no framework.** Push to `main` auto-deploys.
+Static HTML, CSS, JavaScript and Python page generators for the live mortgage brokerage site at https://stonehavencre.com. English pages live at the root and Spanish pages under `es/`.
 
-Rebranded from "Stonehaven Commercial" on 2026-07-13: brand name everywhere
-(titles, meta, JSON-LD schema, headers, footers, alt text, EN + ES), header
-subtitle COMMERCIAL → LENDING, logo assets (`assets/mark.png` emblem crop,
-`assets/logo-full.png`, `assets/og-logo.png` 1200×630), accent copper → gold,
-and positioning copy repositioned to residential & commercial. Product pages
-still describe the Commercial / SBA / DSCR programs.
+## Development
 
-## Files
-- `index.html` — home
-- `commercial.html`, `sba.html`, `dscr.html` — product pages
-- `contact.html` — contact
-- funnel pages: `book.html`, `dscr-analyzer.html`, `sba-guide.html`,
-  `terms-sheet.html`, `thanks-*.html`
-- `styles.css` / `funnel.css` — shared styles
-- `es/` — Spanish versions
+Run `python3 scripts/dev-server.py 8125`, then open http://127.0.0.1:8125. This server supports clean page URLs. Use `node scripts/family-dev-server.mjs 8902` for local Family form testing.
 
-## Preview locally
-Any static server works, e.g.:
+Run `node scripts/check-site.mjs` for all tests, four linters and the release content gate. No npm dependencies are required. CI uses Node 22 and Python 3.12. Netlify runs the same checks before removing internal files and publishing. GitHub checks also verify generator output matches the committed pages.
+
+## Page ownership
+
+Read `docs/PROJECT-HANDOFF.md` before editing. Family, DSCR persona and HELOC landing pages are generated. Rebuild in this order:
+
+```sh
+python3 scripts/build-family-lps.py
+python3 scripts/build-dscr-personas.py
+python3 scripts/build-heloc-personas.py
+python3 scripts/build-heloc-ads.py
 ```
-npx serve .
-```
-Then open the URL it prints.
 
-## Going live with this variant (when decided)
-Do NOT drag-and-drop onto the existing Netlify site — that would replace
-stonehavencre.com. Create a new Netlify site (or a new branch + branch
-deploy) and decide the domain question first. The canonical URLs, OG tags,
-and sitemap still reference `stonehavencre.com` and must be updated to the
-final domain before launch.
+The DSCR generator also owns a marked block in `dscr.html`. DSCR and HELOC generators read the footer in `residential.html`. Update generators when changing generated markup or asset cache keys.
 
-## Known placeholders / to-dos
-- **Phone:** `(800) 555-0100` placeholder, same as production.
-- **Contact email:** `office@stonehavencre.com` (live via Google Workspace).
-- Forms POST to Netlify Forms per `js/funnel.js` (same contract as production);
-  the CRM cutover is the `INTAKE_ENDPOINT` constant at the top of that file.
+## Blog publishing
 
-## Spanish copy
-Sentence case, usted, literal accents — see `docs/STYLE-es.md`. Lint before committing Spanish pages:
+Run `node scripts/new-post.mjs path/to/brief.json`. A brief requires `slug`, `date`, `type` (`guide` or `closing`), and `en` and `es` objects containing `title`, `desc`, `eyebrow`, `body` and `terms`. The type selects the disclosure. The script validates both languages and rejects an existing slug before making changes, preventing duplicate cards, redirects and sitemap entries. It saves new source briefs under `docs/blog-briefs/`; commit them with the output.
 
-    node scripts/lint-es-casing.mjs
+Older posts have no saved briefs. Edit those published pages in both languages. Do not rerun the new-post command to update an existing post.
+
+## Release and integrations
+
+Pushing to upstream `main` publishes immediately on Netlify. Review a feature branch before release. Response headers and CSP belong in `_headers`. Internal docs, scripts, tests and withdrawn downloads are removed during the build.
+
+Public contact details are in `js/site-config.js`. Leads currently use Netlify Forms. The handoff documents unresolved CRM intake authentication and CAPTCHA compatibility; setting an endpoint alone does not complete that integration.
