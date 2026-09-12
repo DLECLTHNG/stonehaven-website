@@ -1,0 +1,109 @@
+{
+  "slug": "dscr-loans-michigan-investor-guide",
+  "date": "2026-09-12",
+  "type": "guide",
+  "en": {
+    "title": "DSCR loans in Michigan: investor guide",
+    "seo_title": "DSCR loans in Michigan",
+    "desc": "DSCR loans in Michigan: taxable-value uncapping after ownership changes. Review local records, rental evidence and a practical property scenario.",
+    "eyebrow": "DSCR · Michigan",
+    "terms": [
+      [
+        "Purpose",
+        "Investment rental property review"
+      ],
+      [
+        "Local focus",
+        "Taxable-value uncapping after ownership changes"
+      ],
+      [
+        "Availability",
+        "Varies by state, property, lender and program"
+      ]
+    ],
+    "body": [
+      "A debt service coverage ratio (DSCR) loan uses rental income to evaluate an investment property under the selected lender's rules. For rental property in Michigan, this guide focuses on taxable-value uncapping after ownership changes. Start with the local records below before relying on a projected loan payment.",
+      {
+        "h": "Taxable-value uncapping after ownership changes"
+      },
+      "Michigan explains that a qualifying transfer of ownership causes taxable value to uncap in the following calendar year, while specified transfers are excluded. A buyer should therefore request a post-transfer tax estimate. The prior owner's capped taxable value can make a rental look stronger on paper than the buyer's future carrying costs support.",
+      "State reference: <a href=\"https://www.michigan.gov/taxes/property/change-ownership\">Michigan Department of Treasury: changes in ownership and uncapping</a>.",
+      {
+        "h": "Documents and questions for this property review"
+      },
+      "Request the existing taxable value, transfer-related information and a county or municipal estimate for the post-transfer period. Label any possible exception as unresolved until the responsible authority confirms it. Show the lender the expected ongoing cost instead of selecting whichever historical bill produces the strongest ratio.",
+      {
+        "h": "A property review example"
+      },
+      "<strong>Hypothetical planning example, not a completed transaction.</strong> A Grand Rapids buyer models a rental using the seller's long-held taxable value. Recalculate with the assessor's post-transfer estimate before choosing the loan amount. If coverage becomes tight, review the acquisition price, loan structure and actual lease support instead of treating the old bill as evidence the investment will work.",
+      {
+        "h": "Does a low current tax bill carry over after purchase?"
+      },
+      "Not automatically. Confirm whether the transfer triggers uncapping and which year the updated taxable value affects.",
+      {
+        "h": "Connect local costs to the DSCR calculation"
+      },
+      "Many residential rental programs divide qualifying monthly rent by the full housing payment, including principal, interest, taxes, insurance and applicable association dues. Confirm the selected program's formula and accepted rent evidence. Keep vacancy, management, maintenance and capital work in a separate operating budget: meeting a lender's ratio does not establish profitability. <a href=\"/dscr-program-calculator\">Use the DSCR Program Calculator</a> and <a href=\"/blog/dscr-loans-explained\">read the full DSCR qualification guide</a> for the broader framework.",
+      {
+        "h": "Request a property scenario review"
+      },
+      "Stonehaven Lending is a mortgage brokerage arranging business-purpose DSCR financing nationwide, with availability varying by state, property, lender and program. <a href=\"/dscr-review\">Request a DSCR review</a> with the property location, legal unit count, intended use, purchase or refinance goal and available rent and expense records."
+    ]
+  },
+  "es": {
+    "title": "Préstamos DSCR en Michigan: guía de inversión",
+    "seo_title": "Préstamos DSCR en Michigan",
+    "desc": "Préstamos DSCR en Michigan: actualización del valor imponible tras cambiar de dueño. Revise registros locales, evidencia de renta y un escenario práctico.",
+    "eyebrow": "DSCR · Michigan",
+    "terms": [
+      [
+        "Propósito",
+        "Revisión de propiedad de alquiler"
+      ],
+      [
+        "Enfoque local",
+        "Actualización del valor imponible tras cambiar de dueño"
+      ],
+      [
+        "Disponibilidad",
+        "Varía por estado, propiedad, prestamista y programa"
+      ]
+    ],
+    "body": [
+      "Un préstamo DSCR utiliza ingresos de alquiler para evaluar una propiedad de inversión según las reglas del prestamista. La razón DSCR mide la cobertura del servicio de la deuda. Para un alquiler en Michigan, esta guía aborda actualización del valor imponible tras cambiar de dueño. Revise los registros locales antes de confiar en un pago proyectado.",
+      {
+        "h": "Actualización del valor imponible tras cambiar de dueño"
+      },
+      "Michigan explica que una transferencia de titularidad que reúne las condiciones elimina el límite del valor imponible al año siguiente, con exclusiones específicas. Solicite una estimación posterior a la transferencia. El valor limitado del vendedor puede hacer que el alquiler parezca más sólido de lo que permiten los costos futuros del comprador.",
+      "Fuente estatal: <a href=\"https://www.michigan.gov/taxes/property/change-ownership\">Michigan Department of Treasury: changes in ownership and uncapping</a>.",
+      {
+        "h": "Documentos y preguntas para revisar esta propiedad"
+      },
+      "Solicite valor gravable actual, información de transferencia y estimación local para el período posterior. Considere pendiente cualquier posible excepción hasta que la autoridad responsable la confirme. Muestre al prestamista el gasto esperado, sin elegir el recibo histórico que produzca la razón más favorable.",
+      {
+        "h": "Ejemplo de revisión de una propiedad"
+      },
+      "<strong>Ejemplo hipotético de planificación, no una operación cerrada.</strong> Un comprador de Grand Rapids calcula un alquiler usando el valor imponible que el vendedor conserva desde hace años. Recalcule con la estimación posterior a la transferencia antes de elegir el préstamo. Si la cobertura se reduce, revise precio, estructura y respaldo de renta en vez de confiar en la factura anterior.",
+      {
+        "h": "¿Una factura fiscal baja continúa después de comprar?"
+      },
+      "No automáticamente. Confirme si la transferencia elimina el límite y en qué año afecta el valor actualizado.",
+      {
+        "h": "Conecte los costos locales con el cálculo DSCR"
+      },
+      "Muchos programas residenciales de inversión dividen renta mensual calificada entre pago completo, incluidos capital, intereses, impuestos, seguro y asociación aplicable. Confirme la fórmula del programa y la evidencia de renta aceptada. Presupueste por separado vacantes, administración, mantenimiento y obras de capital: cumplir la razón del prestamista no demuestra rentabilidad. <a href=\"/es/dscr-program-calculator\">Use la calculadora DSCR por programa</a> y <a href=\"/es/blog/dscr-loans-explained\">consulte la guía completa de calificación DSCR</a>.",
+      {
+        "h": "Solicite una revisión de su escenario"
+      },
+      "Stonehaven Lending es una correduría hipotecaria que gestiona financiamiento DSCR de propósito comercial a nivel nacional, con disponibilidad variable por estado, propiedad, prestamista y programa. <a href=\"/es/dscr-review\">Solicite una revisión DSCR</a> con ubicación, unidades legales, uso previsto, objetivo de compra o refinanciamiento y registros de renta y gastos disponibles."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Michigan Department of Treasury: changes in ownership and uncapping",
+      "url": "https://www.michigan.gov/taxes/property/change-ownership",
+      "checked_at": "2026-09-12"
+    }
+  ],
+  "series": "dscr"
+}

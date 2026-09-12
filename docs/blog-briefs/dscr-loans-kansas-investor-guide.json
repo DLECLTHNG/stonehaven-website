@@ -1,0 +1,109 @@
+{
+  "slug": "dscr-loans-kansas-investor-guide",
+  "date": "2026-09-12",
+  "type": "guide",
+  "en": {
+    "title": "DSCR loans in Kansas: investor guide",
+    "seo_title": "DSCR loans in Kansas",
+    "desc": "DSCR loans in Kansas: county valuation data versus a parcel-level decision. Review local records, rental evidence and a practical property scenario.",
+    "eyebrow": "DSCR · Kansas",
+    "terms": [
+      [
+        "Purpose",
+        "Investment rental property review"
+      ],
+      [
+        "Local focus",
+        "County valuation data versus a parcel-level decision"
+      ],
+      [
+        "Availability",
+        "Varies by state, property, lender and program"
+      ]
+    ],
+    "body": [
+      "A debt service coverage ratio (DSCR) loan uses rental income to evaluate an investment property under the selected lender's rules. For rental property in Kansas, this guide focuses on county valuation data versus a parcel-level decision. Start with the local records below before relying on a projected loan payment.",
+      {
+        "h": "County valuation data versus a parcel-level decision"
+      },
+      "Kansas publishes county-level valuation and tax maps that can help an investor frame questions about a market. Those summaries are context, not a substitute for the parcel's tax account or a rent appraisal. Keep the county comparison separate from the evidence used to decide whether the specific rental supports the proposed debt.",
+      "State reference: <a href=\"https://www.ksrevenue.gov/pvdvaluationmaps.html\">Kansas Department of Revenue: valuation and tax maps</a>.",
+      {
+        "h": "Documents and questions for this property review"
+      },
+      "Use the state county maps to select questions, then replace broad comparisons with the parcel account and local answers. Obtain rent support for the actual building and its unit configuration. A county's valuation trend can frame a market discussion, but it does not establish this property's tax expense, appraised value or qualifying income.",
+      {
+        "h": "A property review example"
+      },
+      "<strong>Hypothetical planning example, not a completed transaction.</strong> A Wichita investor is attracted to a county comparison showing a favorable average expense. Obtain the target home's tax record, insurance quote and comparable lease evidence anyway. A county averages many properties with different values and uses; a DSCR lender evaluates the collateral and income in the submitted file.",
+      {
+        "h": "Can state valuation maps replace a rent appraisal?"
+      },
+      "No. They provide tax and valuation context. The lender still needs property-specific collateral and income support.",
+      {
+        "h": "Connect local costs to the DSCR calculation"
+      },
+      "Many residential rental programs divide qualifying monthly rent by the full housing payment, including principal, interest, taxes, insurance and applicable association dues. Confirm the selected program's formula and accepted rent evidence. Keep vacancy, management, maintenance and capital work in a separate operating budget: meeting a lender's ratio does not establish profitability. <a href=\"/dscr-program-calculator\">Use the DSCR Program Calculator</a> and <a href=\"/blog/dscr-loans-explained\">read the full DSCR qualification guide</a> for the broader framework.",
+      {
+        "h": "Request a property scenario review"
+      },
+      "Stonehaven Lending is a mortgage brokerage arranging business-purpose DSCR financing nationwide, with availability varying by state, property, lender and program. <a href=\"/dscr-review\">Request a DSCR review</a> with the property location, legal unit count, intended use, purchase or refinance goal and available rent and expense records."
+    ]
+  },
+  "es": {
+    "title": "Préstamos DSCR en Kansas: guía de inversión",
+    "seo_title": "Préstamos DSCR en Kansas",
+    "desc": "Préstamos DSCR en Kansas: datos del condado frente a una decisión por parcela. Revise registros locales, evidencia de renta y un escenario práctico.",
+    "eyebrow": "DSCR · Kansas",
+    "terms": [
+      [
+        "Propósito",
+        "Revisión de propiedad de alquiler"
+      ],
+      [
+        "Enfoque local",
+        "Datos del condado frente a una decisión por parcela"
+      ],
+      [
+        "Disponibilidad",
+        "Varía por estado, propiedad, prestamista y programa"
+      ]
+    ],
+    "body": [
+      "Un préstamo DSCR utiliza ingresos de alquiler para evaluar una propiedad de inversión según las reglas del prestamista. La razón DSCR mide la cobertura del servicio de la deuda. Para un alquiler en Kansas, esta guía aborda datos del condado frente a una decisión por parcela. Revise los registros locales antes de confiar en un pago proyectado.",
+      {
+        "h": "Datos del condado frente a una decisión por parcela"
+      },
+      "Kansas publica mapas de valoración e impuestos por condado que ayudan a formular preguntas sobre un mercado. Esos resúmenes aportan contexto, pero no sustituyen la cuenta fiscal de la parcela ni la tasación de renta. Separe la comparación de condados de la evidencia para determinar si el alquiler concreto sostiene la deuda.",
+      "Fuente estatal: <a href=\"https://www.ksrevenue.gov/pvdvaluationmaps.html\">Kansas Department of Revenue: valuation and tax maps</a>.",
+      {
+        "h": "Documentos y preguntas para revisar esta propiedad"
+      },
+      "Use los mapas de condados para orientar preguntas y sustituya comparaciones generales por la cuenta de la parcela. Obtenga respaldo de renta del edificio y sus unidades. Una tendencia del condado orienta el análisis, pero no establece impuestos, valor tasado ni ingresos calificados de esta propiedad.",
+      {
+        "h": "Ejemplo de revisión de una propiedad"
+      },
+      "<strong>Ejemplo hipotético de planificación, no una operación cerrada.</strong> Un inversionista de Wichita se interesa por un promedio favorable en una comparación de condados. Aun así, obtenga registro fiscal, seguro y evidencia de contratos comparables de la vivienda elegida. Un promedio reúne usos y valores distintos; el prestamista DSCR evalúa la garantía y los ingresos del expediente concreto.",
+      {
+        "h": "¿Los mapas estatales sustituyen la tasación de renta?"
+      },
+      "No. Aportan contexto fiscal y de valoración. El prestamista necesita respaldo de ingresos y garantía de la propiedad específica.",
+      {
+        "h": "Conecte los costos locales con el cálculo DSCR"
+      },
+      "Muchos programas residenciales de inversión dividen renta mensual calificada entre pago completo, incluidos capital, intereses, impuestos, seguro y asociación aplicable. Confirme la fórmula del programa y la evidencia de renta aceptada. Presupueste por separado vacantes, administración, mantenimiento y obras de capital: cumplir la razón del prestamista no demuestra rentabilidad. <a href=\"/es/dscr-program-calculator\">Use la calculadora DSCR por programa</a> y <a href=\"/es/blog/dscr-loans-explained\">consulte la guía completa de calificación DSCR</a>.",
+      {
+        "h": "Solicite una revisión de su escenario"
+      },
+      "Stonehaven Lending es una correduría hipotecaria que gestiona financiamiento DSCR de propósito comercial a nivel nacional, con disponibilidad variable por estado, propiedad, prestamista y programa. <a href=\"/es/dscr-review\">Solicite una revisión DSCR</a> con ubicación, unidades legales, uso previsto, objetivo de compra o refinanciamiento y registros de renta y gastos disponibles."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Kansas Department of Revenue: valuation and tax maps",
+      "url": "https://www.ksrevenue.gov/pvdvaluationmaps.html",
+      "checked_at": "2026-09-12"
+    }
+  ],
+  "series": "dscr"
+}

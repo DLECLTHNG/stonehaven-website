@@ -1,0 +1,109 @@
+{
+  "slug": "dscr-loans-illinois-investor-guide",
+  "date": "2026-09-12",
+  "type": "guide",
+  "en": {
+    "title": "DSCR loans in Illinois: investor guide",
+    "seo_title": "DSCR loans in Illinois",
+    "desc": "DSCR loans in Illinois: assessment year versus payment year. Review local records, rental evidence and a practical property scenario.",
+    "eyebrow": "DSCR · Illinois",
+    "terms": [
+      [
+        "Purpose",
+        "Investment rental property review"
+      ],
+      [
+        "Local focus",
+        "Assessment year versus payment year"
+      ],
+      [
+        "Availability",
+        "Varies by state, property, lender and program"
+      ]
+    ],
+    "body": [
+      "A debt service coverage ratio (DSCR) loan uses rental income to evaluate an investment property under the selected lender's rules. For rental property in Illinois, this guide focuses on assessment year versus payment year. Start with the local records below before relying on a projected loan payment.",
+      {
+        "h": "Assessment year versus payment year"
+      },
+      "Illinois describes property taxation as generally following a two-year cycle: valuation occurs in one year and the resulting bills are calculated and paid in the next. For a rental purchase, identify which assessment period a quoted bill represents. Also distinguish settlement tax prorations from the recurring expense used to size the loan.",
+      "State reference: <a href=\"https://tax.illinois.gov/questionsandanswers/answer.311.html\">Illinois Department of Revenue: property tax collection and assessment cycle</a>.",
+      {
+        "h": "Documents and questions for this property review"
+      },
+      "Label each tax document with both its assessment year and payment year. Ask the closing professional to separate the seller's proration from the buyer's expected continuing expense. If a pending assessment affects the next bill, provide the supporting notice rather than treating an older paid bill as a forward estimate.",
+      {
+        "h": "A property review example"
+      },
+      "<strong>Hypothetical planning example, not a completed transaction.</strong> A Chicago-area buyer sees a seller credit for taxes on the settlement estimate and treats it as a lower annual expense. That credit addresses allocation between the parties; it does not establish future taxes. Obtain the applicable assessment and bill history, then ask the lender which forward estimate it will use.",
+      {
+        "h": "Does a tax proration reduce the property's ongoing taxes?"
+      },
+      "It allocates a closing obligation. Underwrite the continuing rental with the applicable tax estimate, separate from the negotiated settlement credit.",
+      {
+        "h": "Connect local costs to the DSCR calculation"
+      },
+      "Many residential rental programs divide qualifying monthly rent by the full housing payment, including principal, interest, taxes, insurance and applicable association dues. Confirm the selected program's formula and accepted rent evidence. Keep vacancy, management, maintenance and capital work in a separate operating budget: meeting a lender's ratio does not establish profitability. <a href=\"/dscr-program-calculator\">Use the DSCR Program Calculator</a> and <a href=\"/blog/dscr-loans-explained\">read the full DSCR qualification guide</a> for the broader framework.",
+      {
+        "h": "Request a property scenario review"
+      },
+      "Stonehaven Lending is a mortgage brokerage arranging business-purpose DSCR financing nationwide, with availability varying by state, property, lender and program. <a href=\"/dscr-review\">Request a DSCR review</a> with the property location, legal unit count, intended use, purchase or refinance goal and available rent and expense records."
+    ]
+  },
+  "es": {
+    "title": "Préstamos DSCR en Illinois: guía de inversión",
+    "seo_title": "Préstamos DSCR en Illinois",
+    "desc": "Préstamos DSCR en Illinois: año de evaluación frente al año de pago. Revise registros locales, evidencia de renta y un escenario práctico.",
+    "eyebrow": "DSCR · Illinois",
+    "terms": [
+      [
+        "Propósito",
+        "Revisión de propiedad de alquiler"
+      ],
+      [
+        "Enfoque local",
+        "Año de evaluación frente al año de pago"
+      ],
+      [
+        "Disponibilidad",
+        "Varía por estado, propiedad, prestamista y programa"
+      ]
+    ],
+    "body": [
+      "Un préstamo DSCR utiliza ingresos de alquiler para evaluar una propiedad de inversión según las reglas del prestamista. La razón DSCR mide la cobertura del servicio de la deuda. Para un alquiler en Illinois, esta guía aborda año de evaluación frente al año de pago. Revise los registros locales antes de confiar en un pago proyectado.",
+      {
+        "h": "Año de evaluación frente al año de pago"
+      },
+      "Illinois describe un ciclo fiscal generalmente de dos años: se determina el valor en uno y se calculan y pagan las facturas en el siguiente. Identifique qué período representa el impuesto cotizado en una compra. Distinga también los ajustes fiscales del cierre del gasto recurrente que sirve para calcular el préstamo.",
+      "Fuente estatal: <a href=\"https://tax.illinois.gov/questionsandanswers/answer.311.html\">Illinois Department of Revenue: property tax collection and assessment cycle</a>.",
+      {
+        "h": "Documentos y preguntas para revisar esta propiedad"
+      },
+      "Identifique en cada documento el año de evaluación y el de pago. Pida al profesional de cierre separar el prorrateo del vendedor del gasto continuo del comprador. Si una evaluación pendiente afecta el próximo recibo, aporte el aviso sin presentar un recibo anterior como proyección.",
+      {
+        "h": "Ejemplo de revisión de una propiedad"
+      },
+      "<strong>Ejemplo hipotético de planificación, no una operación cerrada.</strong> Un comprador cerca de Chicago ve un crédito fiscal del vendedor en la estimación de cierre y lo interpreta como menor gasto anual. El crédito distribuye obligaciones entre las partes, pero no establece impuestos futuros. Obtenga evaluación e historial fiscal y pregunte qué estimación utilizará el prestamista.",
+      {
+        "h": "¿Un ajuste fiscal en el cierre reduce los impuestos futuros?"
+      },
+      "Distribuye una obligación del cierre. Evalúe el alquiler con la estimación fiscal aplicable, por separado del crédito negociado.",
+      {
+        "h": "Conecte los costos locales con el cálculo DSCR"
+      },
+      "Muchos programas residenciales de inversión dividen renta mensual calificada entre pago completo, incluidos capital, intereses, impuestos, seguro y asociación aplicable. Confirme la fórmula del programa y la evidencia de renta aceptada. Presupueste por separado vacantes, administración, mantenimiento y obras de capital: cumplir la razón del prestamista no demuestra rentabilidad. <a href=\"/es/dscr-program-calculator\">Use la calculadora DSCR por programa</a> y <a href=\"/es/blog/dscr-loans-explained\">consulte la guía completa de calificación DSCR</a>.",
+      {
+        "h": "Solicite una revisión de su escenario"
+      },
+      "Stonehaven Lending es una correduría hipotecaria que gestiona financiamiento DSCR de propósito comercial a nivel nacional, con disponibilidad variable por estado, propiedad, prestamista y programa. <a href=\"/es/dscr-review\">Solicite una revisión DSCR</a> con ubicación, unidades legales, uso previsto, objetivo de compra o refinanciamiento y registros de renta y gastos disponibles."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Illinois Department of Revenue: property tax collection and assessment cycle",
+      "url": "https://tax.illinois.gov/questionsandanswers/answer.311.html",
+      "checked_at": "2026-09-12"
+    }
+  ],
+  "series": "dscr"
+}

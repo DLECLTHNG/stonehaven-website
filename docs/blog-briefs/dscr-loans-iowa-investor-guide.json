@@ -1,0 +1,109 @@
+{
+  "slug": "dscr-loans-iowa-investor-guide",
+  "date": "2026-09-12",
+  "type": "guide",
+  "en": {
+    "title": "DSCR loans in Iowa: investor guide",
+    "seo_title": "DSCR loans in Iowa",
+    "desc": "DSCR loans in Iowa: assessed value, taxable value and the rollback. Review local records, rental evidence and a practical property scenario.",
+    "eyebrow": "DSCR · Iowa",
+    "terms": [
+      [
+        "Purpose",
+        "Investment rental property review"
+      ],
+      [
+        "Local focus",
+        "Assessed value, taxable value and the rollback"
+      ],
+      [
+        "Availability",
+        "Varies by state, property, lender and program"
+      ]
+    ],
+    "body": [
+      "A debt service coverage ratio (DSCR) loan uses rental income to evaluate an investment property under the selected lender's rules. For rental property in Iowa, this guide focuses on assessed value, taxable value and the rollback. Start with the local records below before relying on a projected loan payment.",
+      {
+        "h": "Assessed value, taxable value and the rollback"
+      },
+      "Iowa publishes assessment limitations and equalization information separately from a property's individual valuation. When reviewing a rental, distinguish the assessed value from the taxable figure used for the relevant year. A headline change in assessment does not, by itself, tell you the monthly tax expense the lender should include.",
+      "State reference: <a href=\"https://revenue.iowa.gov/taxes/tax-guidance/property-tax/equalization-and-assessment-limitations\">Iowa Department of Revenue: equalization and assessment limitations</a>.",
+      {
+        "h": "Documents and questions for this property review"
+      },
+      "Keep the assessment notice, relevant limitation information and actual taxable-value calculation together. Verify the applicable property class and tax period with the county. The lender needs a supported expense amount, so explain how the bill relates to assessed value rather than submitting the assessment increase alone.",
+      {
+        "h": "A property review example"
+      },
+      "<strong>Hypothetical planning example, not a completed transaction.</strong> A Des Moines buyer receives an assessment notice that differs from the value in a listing calculator. Ask for the tax-year calculation that bridges assessed value, applicable limitations and local levies. Use that reconciled estimate alongside documented rent; do not assume the listing is right simply because its number is lower.",
+      {
+        "h": "Is the assessed value always the taxable value?"
+      },
+      "Not necessarily. Verify the applicable assessment limitation and tax-year calculation with the local authority.",
+      {
+        "h": "Connect local costs to the DSCR calculation"
+      },
+      "Many residential rental programs divide qualifying monthly rent by the full housing payment, including principal, interest, taxes, insurance and applicable association dues. Confirm the selected program's formula and accepted rent evidence. Keep vacancy, management, maintenance and capital work in a separate operating budget: meeting a lender's ratio does not establish profitability. <a href=\"/dscr-program-calculator\">Use the DSCR Program Calculator</a> and <a href=\"/blog/dscr-loans-explained\">read the full DSCR qualification guide</a> for the broader framework.",
+      {
+        "h": "Request a property scenario review"
+      },
+      "Stonehaven Lending is a mortgage brokerage arranging business-purpose DSCR financing nationwide, with availability varying by state, property, lender and program. <a href=\"/dscr-review\">Request a DSCR review</a> with the property location, legal unit count, intended use, purchase or refinance goal and available rent and expense records."
+    ]
+  },
+  "es": {
+    "title": "Préstamos DSCR en Iowa: guía de inversión",
+    "seo_title": "Préstamos DSCR en Iowa",
+    "desc": "Préstamos DSCR en Iowa: valor evaluado, valor imponible y ajuste fiscal. Revise registros locales, evidencia de renta y un escenario práctico.",
+    "eyebrow": "DSCR · Iowa",
+    "terms": [
+      [
+        "Propósito",
+        "Revisión de propiedad de alquiler"
+      ],
+      [
+        "Enfoque local",
+        "Valor evaluado, valor imponible y ajuste fiscal"
+      ],
+      [
+        "Disponibilidad",
+        "Varía por estado, propiedad, prestamista y programa"
+      ]
+    ],
+    "body": [
+      "Un préstamo DSCR utiliza ingresos de alquiler para evaluar una propiedad de inversión según las reglas del prestamista. La razón DSCR mide la cobertura del servicio de la deuda. Para un alquiler en Iowa, esta guía aborda valor evaluado, valor imponible y ajuste fiscal. Revise los registros locales antes de confiar en un pago proyectado.",
+      {
+        "h": "Valor evaluado, valor imponible y ajuste fiscal"
+      },
+      "Iowa publica limitaciones de evaluación e información de igualación por separado del valor individual de la propiedad. Distinga el valor evaluado del valor imponible utilizado en el año correspondiente. Un cambio anunciado en la evaluación no determina por sí solo el gasto fiscal mensual que debe incluir el prestamista.",
+      "Fuente estatal: <a href=\"https://revenue.iowa.gov/taxes/tax-guidance/property-tax/equalization-and-assessment-limitations\">Iowa Department of Revenue: equalization and assessment limitations</a>.",
+      {
+        "h": "Documentos y preguntas para revisar esta propiedad"
+      },
+      "Reúna aviso de evaluación, limitaciones pertinentes y cálculo del valor gravable. Confirme clase y período con el condado. El prestamista necesita un gasto respaldado; explique la relación entre recibo y valor evaluado en vez de presentar únicamente el aumento de evaluación.",
+      {
+        "h": "Ejemplo de revisión de una propiedad"
+      },
+      "<strong>Ejemplo hipotético de planificación, no una operación cerrada.</strong> Un comprador de Des Moines recibe una evaluación distinta al valor usado por la calculadora del anuncio. Solicite el cálculo del año que conecte valor, limitaciones y gravámenes locales. Use esa estimación conciliada junto con la renta documentada; un número inferior en el anuncio no demuestra que sea correcto.",
+      {
+        "h": "¿El valor evaluado siempre coincide con el imponible?"
+      },
+      "No necesariamente. Confirme con la autoridad local la limitación de evaluación y el cálculo del año fiscal.",
+      {
+        "h": "Conecte los costos locales con el cálculo DSCR"
+      },
+      "Muchos programas residenciales de inversión dividen renta mensual calificada entre pago completo, incluidos capital, intereses, impuestos, seguro y asociación aplicable. Confirme la fórmula del programa y la evidencia de renta aceptada. Presupueste por separado vacantes, administración, mantenimiento y obras de capital: cumplir la razón del prestamista no demuestra rentabilidad. <a href=\"/es/dscr-program-calculator\">Use la calculadora DSCR por programa</a> y <a href=\"/es/blog/dscr-loans-explained\">consulte la guía completa de calificación DSCR</a>.",
+      {
+        "h": "Solicite una revisión de su escenario"
+      },
+      "Stonehaven Lending es una correduría hipotecaria que gestiona financiamiento DSCR de propósito comercial a nivel nacional, con disponibilidad variable por estado, propiedad, prestamista y programa. <a href=\"/es/dscr-review\">Solicite una revisión DSCR</a> con ubicación, unidades legales, uso previsto, objetivo de compra o refinanciamiento y registros de renta y gastos disponibles."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Iowa Department of Revenue: equalization and assessment limitations",
+      "url": "https://revenue.iowa.gov/taxes/tax-guidance/property-tax/equalization-and-assessment-limitations",
+      "checked_at": "2026-09-12"
+    }
+  ],
+  "series": "dscr"
+}

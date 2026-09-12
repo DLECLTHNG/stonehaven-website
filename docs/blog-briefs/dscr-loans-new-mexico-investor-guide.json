@@ -1,0 +1,109 @@
+{
+  "slug": "dscr-loans-new-mexico-investor-guide",
+  "date": "2026-09-12",
+  "type": "guide",
+  "en": {
+    "title": "DSCR loans in New Mexico: investor guide",
+    "seo_title": "DSCR loans in New Mexico",
+    "desc": "DSCR loans in New Mexico: ownership changes and the taxable-value assumption. Review local records, rental evidence and a practical property scenario.",
+    "eyebrow": "DSCR · New Mexico",
+    "terms": [
+      [
+        "Purpose",
+        "Investment rental property review"
+      ],
+      [
+        "Local focus",
+        "Ownership changes and the taxable-value assumption"
+      ],
+      [
+        "Availability",
+        "Varies by state, property, lender and program"
+      ]
+    ],
+    "body": [
+      "A debt service coverage ratio (DSCR) loan uses rental income to evaluate an investment property under the selected lender's rules. For rental property in New Mexico, this guide focuses on ownership changes and the taxable-value assumption. Start with the local records below before relying on a projected loan payment.",
+      {
+        "h": "Ownership changes and the taxable-value assumption"
+      },
+      "New Mexico's property-tax code addresses residential valuation limits and the treatment of ownership changes. A buyer should ask the county assessor how the transfer affects the next applicable valuation. An inherited taxable-value assumption can distort DSCR, even where the projected lease income is well supported by the market.",
+      "State reference: <a href=\"https://realfile.tax.newmexico.gov/Property%20Tax%20Code.pdf\">New Mexico Taxation and Revenue Department: property tax code, March 2026</a>.",
+      {
+        "h": "Documents and questions for this property review"
+      },
+      "Ask the county assessor how the proposed ownership transfer affects the applicable valuation period. Retain the prior tax account as a comparison and label the buyer's estimate separately. If a listing suggests a valuation limit will continue, obtain an explanation for the actual transaction before using that assumption to size debt.",
+      {
+        "h": "A property review example"
+      },
+      "<strong>Hypothetical planning example, not a completed transaction.</strong> An Albuquerque investor purchases a long-held rental and plans only minor repairs. The limited renovation budget does not answer the ownership-change tax question. Obtain the post-purchase estimate, identify any separate parcel or improvement charges and test the proposed financing with those documented costs before relying on the seller's operating summary.",
+      {
+        "h": "Does a valuation limit guarantee the seller's taxes will continue?"
+      },
+      "No. Confirm how the ownership transfer and any improvements affect the property's valuation under the applicable rules.",
+      {
+        "h": "Connect local costs to the DSCR calculation"
+      },
+      "Many residential rental programs divide qualifying monthly rent by the full housing payment, including principal, interest, taxes, insurance and applicable association dues. Confirm the selected program's formula and accepted rent evidence. Keep vacancy, management, maintenance and capital work in a separate operating budget: meeting a lender's ratio does not establish profitability. <a href=\"/dscr-program-calculator\">Use the DSCR Program Calculator</a> and <a href=\"/blog/dscr-loans-explained\">read the full DSCR qualification guide</a> for the broader framework.",
+      {
+        "h": "Request a property scenario review"
+      },
+      "Stonehaven Lending is a mortgage brokerage arranging business-purpose DSCR financing nationwide, with availability varying by state, property, lender and program. <a href=\"/dscr-review\">Request a DSCR review</a> with the property location, legal unit count, intended use, purchase or refinance goal and available rent and expense records."
+    ]
+  },
+  "es": {
+    "title": "Préstamos DSCR en Nuevo México: guía de inversión",
+    "seo_title": "Préstamos DSCR en Nuevo México",
+    "desc": "Préstamos DSCR en Nuevo México: cambio de titularidad y supuesto de valor imponible. Revise registros locales, evidencia de renta y un escenario práctico.",
+    "eyebrow": "DSCR · Nuevo México",
+    "terms": [
+      [
+        "Propósito",
+        "Revisión de propiedad de alquiler"
+      ],
+      [
+        "Enfoque local",
+        "Cambio de titularidad y supuesto de valor imponible"
+      ],
+      [
+        "Disponibilidad",
+        "Varía por estado, propiedad, prestamista y programa"
+      ]
+    ],
+    "body": [
+      "Un préstamo DSCR utiliza ingresos de alquiler para evaluar una propiedad de inversión según las reglas del prestamista. La razón DSCR mide la cobertura del servicio de la deuda. Para un alquiler en Nuevo México, esta guía aborda cambio de titularidad y supuesto de valor imponible. Revise los registros locales antes de confiar en un pago proyectado.",
+      {
+        "h": "Cambio de titularidad y supuesto de valor imponible"
+      },
+      "El código fiscal de Nuevo México trata los límites de valoración residencial y los cambios de titularidad. Pregunte al tasador cómo afecta la transferencia a la siguiente valoración aplicable. Conservar el supuesto fiscal anterior puede distorsionar DSCR aunque la renta proyectada tenga buen respaldo de mercado.",
+      "Fuente estatal: <a href=\"https://realfile.tax.newmexico.gov/Property%20Tax%20Code.pdf\">New Mexico Taxation and Revenue Department: property tax code, March 2026</a>.",
+      {
+        "h": "Documentos y preguntas para revisar esta propiedad"
+      },
+      "Consulte al tasador del condado cómo afecta la transferencia al período de valoración aplicable. Conserve la cuenta anterior como comparación e identifique aparte la estimación del comprador. Si el anuncio presupone que continúa un límite, confirme su aplicación a la operación antes de dimensionar la deuda.",
+      {
+        "h": "Ejemplo de revisión de una propiedad"
+      },
+      "<strong>Ejemplo hipotético de planificación, no una operación cerrada.</strong> Un inversionista de Albuquerque compra un alquiler conservado por años y planea reparaciones menores. Un presupuesto pequeño de obra no resuelve los impuestos por cambio de dueño. Obtenga la estimación posterior a la compra y cargos de parcelas o mejoras antes de usar el resumen operativo del vendedor.",
+      {
+        "h": "¿Un límite de valoración garantiza que continúen los impuestos del vendedor?"
+      },
+      "No. Confirme cómo afectan la transferencia y las mejoras al valor según las reglas aplicables.",
+      {
+        "h": "Conecte los costos locales con el cálculo DSCR"
+      },
+      "Muchos programas residenciales de inversión dividen renta mensual calificada entre pago completo, incluidos capital, intereses, impuestos, seguro y asociación aplicable. Confirme la fórmula del programa y la evidencia de renta aceptada. Presupueste por separado vacantes, administración, mantenimiento y obras de capital: cumplir la razón del prestamista no demuestra rentabilidad. <a href=\"/es/dscr-program-calculator\">Use la calculadora DSCR por programa</a> y <a href=\"/es/blog/dscr-loans-explained\">consulte la guía completa de calificación DSCR</a>.",
+      {
+        "h": "Solicite una revisión de su escenario"
+      },
+      "Stonehaven Lending es una correduría hipotecaria que gestiona financiamiento DSCR de propósito comercial a nivel nacional, con disponibilidad variable por estado, propiedad, prestamista y programa. <a href=\"/es/dscr-review\">Solicite una revisión DSCR</a> con ubicación, unidades legales, uso previsto, objetivo de compra o refinanciamiento y registros de renta y gastos disponibles."
+    ]
+  },
+  "sources": [
+    {
+      "title": "New Mexico Taxation and Revenue Department: property tax code, March 2026",
+      "url": "https://realfile.tax.newmexico.gov/Property%20Tax%20Code.pdf",
+      "checked_at": "2026-09-12"
+    }
+  ],
+  "series": "dscr"
+}
