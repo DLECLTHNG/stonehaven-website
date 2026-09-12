@@ -122,6 +122,7 @@
 <!-- Netlify Forms registration: defines the site-wide "lead" form all funnel
      forms submit to (via js/funnel.js) until the CRM intake endpoint is live. -->
 <form name="lead" method="POST" data-netlify="true" netlify-honeypot="company_website" hidden>
+  <input type="hidden" name="extra"/>
   <input type="text" name="name"/>
   <input type="email" name="email"/>
   <input type="tel" name="phone"/>

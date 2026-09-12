@@ -138,6 +138,7 @@ async function persist(rec, event) {
   const base = process.env.URL || SHARED.siteUrl;
   const nf = new URLSearchParams();
   nf.append("form-name", "lead");
+  nf.append("extra", JSON.stringify({state:rec.state,timeline:rec.timing,inquiry_id:rec.id,notice_version:rec.notice_version,purchase_price:rec.price ? String(rec.price) : '',credit_band:rec.credit || '',utm:rec.attributionObj}));
   nf.append("name", rec.name); nf.append("email", rec.email); nf.append("phone", fmtPhone(rec.phone));
   nf.append("product", "Residential"); nf.append("about", about); nf.append("page", rec.page); nf.append("lang", "en");
   const r = await fetch(base + "/contact", { method: "POST", headers: { "Content-Type": "application/x-www-form-urlencoded" }, body: nf.toString() });

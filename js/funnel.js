@@ -286,6 +286,7 @@
         // page's path, never the bare "/" (edge 404s naked-root POSTs).
         var nf = new URLSearchParams();
         nf.append("form-name", "lead");
+        nf.append("extra", JSON.stringify(payload.extra));
         ["name", "email", "phone", "product", "about", "page", "lang"].forEach(function (k) {
           nf.append(k, payload[k] || "");
         });

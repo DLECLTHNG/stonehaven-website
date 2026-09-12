@@ -1,45 +1,23 @@
 # Saved website form relay
 
-Activated September 12, 2026. Netlify capture and CRM delivery verified with a synthetic DSCR inquiry.
+The owner has authorized all website inquiry types to be retained in Netlify, emailed through the existing notification hook, and imported into the CRM. This supersedes the earlier Residential/Family exclusion.
 
 ## Delivery
 
-The browser continues to submit to Netlify Forms. Netlify saves the inquiry and sends the existing new-lead email. Its reserved `submission-created` event function forwards the saved record to the CRM over HTTPS with a server-only credential. Netlify validates platform event signatures before invoking event functions: https://docs.netlify.com/build/functions/trigger-on-events/
+Browser forms submit to Netlify Forms. The existing submission-created email hook targets office@stonehavencre.com. The signed Netlify submission-created event forwards the saved lead to the authenticated CRM endpoint. Keep the browser intakeEndpoint empty and FAMILY_CRM_INTAKE_URL and CRM_WEBHOOK_URL unset to preserve this single capture path.
 
-The handler forwards only the `lead` form, skips honeypots, and requires a stable Netlify submission ID. It retries temporary failures up to three times. A response is accepted only when the CRM reports `created` or `duplicate` with a lead ID. Exhausted failures raise a function error containing the Netlify submission ID, without contact details or credentials. The original record stays in Netlify Forms. This is not an unlimited durable retry queue; failed records require replay from the saved inbox.
+Commercial, SBA and DSCR follow existing CRM intake. Residential, HELOC and Family Opportunity use authenticated saved-inquiry capture: new-stage CRM records, stable submission deduplication, activity notes, audit and internal notifications. The existing Residential underwriting intake remains governed separately. Saved inquiry capture fabricates no disclosure or consent evidence and emits no borrower auto-replies or external automation events.
 
-The CRM verifies the shared key in constant time. Its server-only relay switch, request size limit, validation, rate limits and Residential admission checks remain in force. Browser callers still require production Origin and CAPTCHA checks. Relay requests do not enqueue automatic borrower replies.
+Dedicated HELOC pages map to Residential / HELOC; Family pages map to Residential / Family Opportunity. FHA and VA pages retain those categories. Generic Residential inquiries stay Residential without guessing a loan program. Cash-out comparison inquiries use the explicit goal when available.
 
-## Email requirement
+The shared form transport saves structured extra fields alongside the readable description. HELOC requested amount and estimated value populate CRM fields; remaining mortgage balance and all other answers remain in inquiry details. The CRM's existing Residential view is enabled and supports the new category filters.
 
-The owner explicitly requires new-lead email alerts to continue. Read-only inspection of Netlify on September 12 confirmed the existing `submission_created` email hook, ID `6a4ff2f9b66b0eb4617aa52c`, targets `office@stonehavencre.com` and is not marked disabled. No notification setting was changed. The synthetic inquiry exercised the existing notification hook. The hook remains configured after deployment; inbox receipt has not been confirmed.
+## Security and operation
 
-Keep `js/site-config.js` `intakeEndpoint` empty and `FAMILY_CRM_INTAKE_URL` unset. Direct-to-CRM paths bypass Netlify capture and its email hook. Do not use `CRM_WEBHOOK_URL` as a second CRM intake path; that older optional browser relay can create duplicate delivery.
+The CRM requires the server-only relay key and stable Netlify submission identity. Origin/CAPTCHA handling for direct browser intake remains unchanged. No secret is committed. The event function retries transient failures three times; exhausted failures leave the original inquiry in Netlify and produce a function error. There is no unlimited durable retry queue.
 
-## Deployment configuration
-
-CRM: deploy the reviewed `codex/website-crm-intake` change based on currently deployed commit `74809b81756e037015a54178b344c7b5f74f3cef`. Upstream main differs from that deployed revision, so do not deploy main indiscriminately. Configure `WEBSITE_RELAY_SECRET` with a random secret at least 32 characters long and set `WEBSITE_RELAY_ENABLED=1` to enable only the authenticated relay. The browser transport and its stored settings remain unchanged.
-
-Netlify: configure the matching `WEBSITE_RELAY_SECRET`, `WEBSITE_CRM_INTAKE_URL=https://stonehaven-crm.onrender.com/api/intake/website`, and finally `WEBSITE_CRM_RELAY_ENABLED=1`. Secrets belong only in deployment environment variables, never in browser scripts or git. A dedicated relay secret was configured in Render and in Netlify for production only. Netlify uses its plan-default scopes. The site has no injection snippets, and the exact production build with a canary secret produced no files containing that value.
-
-Render deployment `dep-dailmie8h83s739p3egg` is live at commit `9afe6d4b87cbf0d0b8fa43681f9f4402695b2eb1`. Netlify deployment `6aa55cff0366be0008cde3a6` published website commit `db0d30283478097c95e39870d01dd01fdac50335`. The production-only Netlify relay switch is enabled.
-
-## Residential boundary
-
-The deployed CRM is substantially newer than the handoff's local checkout. Its existing `ingestLead` service requires a reviewed Residential mapping and exact disclosure evidence. Current website forms do not supply that CRM evidence. The transport preserves this restriction and excludes these inquiries from CRM forwarding. Do not claim Residential import is working or fabricate evidence from the submitted notice version.
-
-The owner chose to keep Residential and Family Opportunity inquiries in email and Netlify for now. The relay explicitly skips Residential product submissions and the Residential, HELOC, and Family page families. It does not attempt a CRM import for them.
+Deploy CRM using an explicit commit based on the running release, because upstream main differs from the live revision. No schema migration or new environment variable is required by this update. Deploy the website after the CRM is live.
 
 ## Validation
 
-Website checks: `node scripts/check-site.mjs`, including six relay tests.
-CRM targeted tests: `node node_modules/vitest/vitest.mjs run --config vitest.website-relay.config.ts`, nine mocked route/service tests.
-CRM TypeScript check: passed using the locked dependencies and freshly generated Prisma client under Node 22. Changed CRM files pass ESLint.
-
-The targeted tests make no real database writes, borrower communications or production lead submissions. They establish transport behavior and the Residential exclusion.
-
-## Live verification
-
-A synthetic DSCR inquiry labeled `STONEHAVEN-RELAY-CHECK-20260912-1410` was submitted through the public `/contact` form transport. Netlify saved submission `6aa55d6e620a949e5a462732`. A subsequent authenticated replay returned HTTP 200, status `duplicate`, and CRM lead `d75503ef-04bb-459e-a77b-79743c154116`, confirming the event had already imported the lead and the replay did not create a second lead. The clearly labeled test record remains for review. No actual borrower contact details were used.
-
-GitHub Actions passed after removing previously tracked Python bytecode cache files. The CRM production build, TypeScript and changed-file lint checks passed. Public blog inspection confirmed the new index and article content are visible.
+14 targeted CRM tests cover authentication, phone-only capture, actual saved-inquiry creation, category mapping, preserved figures, deduplication, editable labels and suppression of borrower outreach. Website tests cover forwarding all product types and structured fields. Live acceptance and deduplication checks use clearly labeled synthetic inquiries only. Historical inquiries are not automatically backfilled.

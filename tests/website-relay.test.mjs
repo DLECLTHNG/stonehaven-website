@@ -43,9 +43,11 @@ test('invalid destination and missing key fail before sending contact informatio
  process.env.WEBSITE_CRM_INTAKE_URL='https://crm.example.com/api/intake/website';process.env.WEBSITE_RELAY_SECRET='';await assert.rejects(handler(event),/configuration/);
 });
 
-test('Residential and Family inquiries stay in Forms and email by owner choice',async t=>{
- setup(t);global.fetch=async()=>{assert.fail('Residential must not be relayed');};
+test('Residential, HELOC and Family records are forwarded with their saved details',async t=>{
+ setup(t);const sent=[];
+ global.fetch=async(_,o)=>{sent.push(JSON.parse(o.body));return new Response(JSON.stringify({status:'created',lead:{id:'res-1'}}));};
  for(const data of [{product:'Residential',page:'contact'},{product:'Not sure',page:'family-parents'},{product:'DSCR',page:'heloc-persona'},{product:'Not sure',page:'mortgage-calculator'}]) {
-  assert.equal((await handler({body:JSON.stringify({payload:{id:'saved-123',form_name:'lead',data}})})).statusCode,204);
+  assert.equal((await handler({body:JSON.stringify({payload:{id:'saved-123',form_name:'lead',data:{...data,extra:JSON.stringify({home_value:'450000',mortgage_balance:'200000',requested_amount:'75000'})}}})})).statusCode,200);
  }
+ for(const body of sent){assert.equal(body.product,'Residential');assert.equal(body.extra.requested_amount,'75000');assert.equal(body.extra.netlify_submission_id,'saved-123');}
 });

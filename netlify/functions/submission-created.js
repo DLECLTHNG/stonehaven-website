@@ -11,11 +11,10 @@ exports.handler = async (event) => {
   if (!data || (submission.form_name || data['form-name']) !== 'lead') return { statusCode: 204, body: '' };
   if (data.company_website || data.hp || submission.spam === true) return { statusCode: 204, body: '' };
   if (typeof submission.id !== 'string' || !/^[A-Za-z0-9_-]{1,100}$/.test(submission.id)) throw new Error('Missing form submission identity');
-  // Owner-selected rollout: Residential, HELOC and Family inquiries stay in
-  // Netlify Forms and email until their separate CRM intake is ready.
+  // Page identity determines the Residential lane for dedicated home-loan forms.
   const residentialPage = /^(family-|residential(?:-|$)|heloc(?:-|$))/.test(data.page || '') ||
     ['cash-out', 'mortgage-calculator', 'refinance-calculator'].includes(data.page);
-  if (data.product === 'Residential' || residentialPage) return { statusCode: 204, body: '' };
+
   const key = process.env.WEBSITE_RELAY_SECRET || '';
   let url;
   try { url = new URL(process.env.WEBSITE_CRM_INTAKE_URL); } catch { throw new Error('CRM relay URL missing'); }
@@ -28,7 +27,12 @@ exports.handler = async (event) => {
   }
   // Preserve captured context. Browser forms currently save structured answers
   // within about; no inference of consent or product eligibility is made here.
-  payload.extra = { netlify_submission_id: submission.id };
+  if (residentialPage) payload.product = 'Residential';
+  let extra = {};
+  if (typeof data.extra === 'string' && data.extra.length <= 24000) {
+    try { const parsed = JSON.parse(data.extra); if (parsed && typeof parsed === 'object' && !Array.isArray(parsed)) extra = parsed; } catch {}
+  }
+  payload.extra = { ...extra, netlify_submission_id: submission.id };
   let failure = 'network';
   for (let attempt = 0; attempt < 3; attempt++) {
     try {
