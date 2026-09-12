@@ -1,3 +1,8 @@
+> **SUPERSEDED 2026-09-12.** This brief covered only the Family Opportunity work.
+> For a handoff of the whole project, use `docs/CODEX-BRIEF.md` and
+> `docs/PROJECT-HANDOFF.md`. This file is kept because its Family-specific
+> framing is still correct, but it is no longer the place to start.
+
 # Codex kickoff brief: Family Opportunity Mortgage
 
 Paste this in as the opening message, then let the agent read the full

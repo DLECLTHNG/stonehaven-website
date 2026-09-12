@@ -1,8 +1,21 @@
 # Draft handoff: DSCR series (10) and Family Opportunity series (4)
 
-Prepared 2026-09-12. Nothing has been published, committed, or pushed. All fourteen articles
-plus two editorial maps sit in `docs/`, which the Netlify build deletes before deploy, so none
-of it can reach stonehavencre.com by accident.
+> **SUPERSEDED IN PART, 2026-09-12.** This file was accurate when written. It is now
+> partly out of date, and `docs/PROJECT-HANDOFF.md` is the current entry point.
+>
+> What changed: **the DSCR series has since been published**, with its Spanish
+> mirrors, in commit `8710f0a`. All ten articles are live and verified. The
+> statement below that nothing was published, and item 3 below saying ten Spanish
+> mirrors are the largest remaining task, are both now wrong.
+>
+> What still holds: the Family Opportunity series of four articles is still
+> unpublished in `docs/family-drafts/`, and the confirmation items listed further
+> down remain open. Several of them now describe **live content** rather than
+> pre-publication checks, which makes them more urgent, not less. See section 8
+> of `docs/PROJECT-HANDOFF.md`.
+
+Prepared 2026-09-12. All fourteen articles plus two editorial maps sit in `docs/`, which the
+Netlify build deletes before deploy, so none of it can reach stonehavencre.com by accident.
 
 - DSCR series: `docs/blog-drafts/` (10 articles, content map, QA script)
 - Family series: `docs/family-drafts/` (4 posts, editorial map, QA script)

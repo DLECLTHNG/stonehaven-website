@@ -3,7 +3,10 @@
 Prepared 2026-09-11 for a new agent or engineer picking this up cold.
 Scope: the Family Opportunity landing pages, their inquiry endpoint, and the
 CRM/measurement integrations around them. It does not cover the rest of the
-Stonehaven website (HELOC, DSCR, commercial), which is unrelated and untouched.
+Stonehaven website (HELOC, DSCR, commercial).
+
+> Still current, and still the deep dive on Family Opportunity. For the project
+> as a whole, start at `docs/PROJECT-HANDOFF.md`.
 
 This file lives in `docs/`, which the Netlify build command deletes before
 publish, so it never reaches the public site.
