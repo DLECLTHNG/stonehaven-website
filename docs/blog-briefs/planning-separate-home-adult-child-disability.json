@@ -1,0 +1,95 @@
+{
+  "slug": "planning-separate-home-adult-child-disability",
+  "date": "2026-09-12",
+  "type": "guide",
+  "product": "Family",
+  "familyAudience": "adult-child",
+  "en": {
+    "title": "Planning a separate home for an adult child with a disability",
+    "desc": "Separate the person’s housing preferences, the mortgage review, ownership questions, and benefits advice when planning a family-supported home.",
+    "eyebrow": "Family housing · Planning",
+    "terms": [
+      [
+        "Focus",
+        "Decisions before choosing a home"
+      ],
+      [
+        "Review",
+        "Subject to lender requirements"
+      ]
+    ],
+    "body": [
+      "A separate home is one possible housing arrangement, not a definition of independence or a substitute for chosen support. Start with the adult child’s preferences and the practical reasons for considering a move. Keep the financing discussion alongside that planning rather than allowing a loan label to decide the living arrangement.",
+      {
+        "h": "Keep the person’s choices central"
+      },
+      "Discuss location, privacy, transportation, daily routines, and the people the adult child wants involved. Consider different types of housing and support without assuming one answer fits every family. A property can look suitable in a listing while raising practical questions that require a visit or specialist advice.",
+      {
+        "h": "Understand the limited mortgage provision"
+      },
+      "<a href=\"https://selling-guide.fanniemae.com/sel/b2-1.1-01/occupancy-types\">Fannie Mae’s occupancy guidance</a> addresses parents or legal guardians providing housing for an adult child with a disability who cannot work or has insufficient income to qualify independently. The lender determines whether the circumstances fit and completes ordinary underwriting. Disability alone does not establish mortgage approval.",
+      {
+        "h": "Separate ownership and benefits questions"
+      },
+      "Before deciding who should own the property or pay particular expenses, seek advice appropriate to the person’s actual benefits and legal arrangements. For SSI specifically, <a href=\"https://www.ssa.gov/ssi/spotlights/spot-living-arrangements.htm\">Social Security explains how living arrangements and help with shelter can affect benefits</a>. Do not assume mortgage occupancy treatment answers that separate question or that one benefit program’s rules apply to another.",
+      "Ask a qualified benefits adviser or attorney about the proposed arrangement before signing ownership documents. The broker can explain a lender’s financing requirements, but the mortgage review does not replace advice about benefits, trusts, legal authority, or long-term planning.",
+      {
+        "h": "Plan for the ordinary work of keeping a home"
+      },
+      "Who will arrange repairs, receive service providers, manage bills, and respond if the usual support person is unavailable? Discuss what the adult child wants to do personally and what assistance they choose. Write down unresolved responsibilities rather than treating closing day as the end of the plan.",
+      {
+        "h": "An illustrative family discussion"
+      },
+      "A parent and adult child compare staying in the current arrangement with moving to a nearby home. They separately review the person’s preferences, practical support, legal and benefits questions, and financing possibilities. This is a hypothetical planning example, not a customer story or a recommendation about anyone’s care.",
+      {
+        "h": "What belongs in the first inquiry?"
+      },
+      "Start with the property state, general purchase plans, and the financing question. Do not send diagnoses, medical records, Social Security numbers, or benefits documents through the public form. Ask how any required information can be handled through an appropriate secure process if you choose to proceed.",
+      "<a href=\"/family-housing-options\">Discuss family housing options</a>. Stonehaven Lending is a mortgage brokerage, not a direct lender. The inquiry is not an application or approval. Program availability, documentation, and lender underwriting still apply. You can also read the <a href=\"/editorial-policy\">editorial standards</a> for how our guides distinguish illustrations from actual transactions."
+    ]
+  },
+  "es": {
+    "title": "Planificar una vivienda separada para un hijo adulto con discapacidad",
+    "desc": "Separe las preferencias de vivienda, la revisión hipotecaria, la titularidad y el asesoramiento sobre beneficios al planificar un hogar.",
+    "eyebrow": "Vivienda familiar · Planificación",
+    "terms": [
+      [
+        "Enfoque",
+        "Decisiones antes de elegir una vivienda"
+      ],
+      [
+        "Revisión",
+        "Sujeto a requisitos del prestamista"
+      ]
+    ],
+    "body": [
+      "Una vivienda separada es una opción, no una definición de independencia ni un sustituto del apoyo elegido. Empiece con las preferencias del hijo adulto y las razones prácticas para considerar una mudanza. El nombre de un préstamo no debe decidir dónde ni cómo vive una persona.",
+      {
+        "h": "Mantenga centrales sus decisiones"
+      },
+      "Converse sobre ubicación, privacidad, transporte, rutinas y las personas que desea involucrar. Considere opciones de vivienda y apoyo sin suponer una respuesta universal. Un anuncio puede parecer adecuado y aun así plantear preguntas que requieren una visita o asesoramiento especializado.",
+      {
+        "h": "Entienda el alcance de la disposición hipotecaria"
+      },
+      "La <a href=\"https://selling-guide.fanniemae.com/sel/b2-1.1-01/occupancy-types\">guía de ocupación de Fannie Mae (en inglés)</a> contempla a padres o tutores legales que proporcionan vivienda a un hijo adulto con discapacidad que no puede trabajar o no tiene ingresos suficientes para calificar independientemente. El prestamista determina si aplica y realiza la evaluación habitual. La discapacidad por sí sola no establece aprobación.",
+      {
+        "h": "Separe titularidad y beneficios"
+      },
+      "Antes de decidir la propiedad o quién pagará gastos, busque asesoramiento sobre los beneficios y arreglos legales reales. Para SSI, <a href=\"https://www.ssa.gov/ssi/spotlights/spot-living-arrangements.htm\">el Seguro Social explica cómo la vivienda y la ayuda para alojamiento pueden afectar beneficios (en inglés)</a>. La clasificación hipotecaria no resuelve esa pregunta ni hace iguales las reglas de programas distintos.",
+      "Consulte a un asesor de beneficios o abogado antes de firmar documentos de propiedad. El bróker explica requisitos de financiamiento; la revisión hipotecaria no sustituye asesoramiento sobre beneficios, fideicomisos, autoridad legal o planificación futura.",
+      {
+        "h": "Planifique las tareas de mantener un hogar"
+      },
+      "¿Quién coordinará reparaciones, recibirá proveedores, administrará facturas y responderá si falta el apoyo habitual? Converse sobre lo que la persona quiere hacer y la ayuda que elige. Anote responsabilidades pendientes; el cierre no termina la planificación.",
+      {
+        "h": "Conversación ilustrativa"
+      },
+      "Un padre y su hijo adulto comparan seguir en la situación actual con una vivienda cercana. Revisan por separado preferencias, apoyo, asuntos legales y beneficios, y financiamiento. Es un ejemplo hipotético, no una historia de clientes ni una recomendación de atención personal.",
+      {
+        "h": "¿Qué corresponde a la primera consulta?"
+      },
+      "Empiece con el estado del inmueble, planes generales y pregunta de financiamiento. No envíe diagnósticos, expedientes médicos, Seguro Social o documentos de beneficios por el formulario público. Si decide continuar, pregunte por un proceso seguro para la información requerida.",
+      "<a href=\"/family-housing-options\">Converse sobre opciones de vivienda familiar (formulario en inglés)</a>. Stonehaven Lending es un corretaje hipotecario, no un prestamista directo. La consulta no es solicitud hipotecaria ni aprobación. Se aplican documentación, disponibilidad y evaluación. Consulte nuestros <a href=\"/es/editorial-policy\">criterios editoriales</a>."
+    ]
+  }
+}
