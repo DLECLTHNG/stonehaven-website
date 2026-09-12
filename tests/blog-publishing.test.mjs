@@ -69,3 +69,18 @@ test('long published articles and blog indexes never depend on reveal thresholds
     }
   }
 });
+test('Family publishing requires an audience and never inherits advertising tags', t => {
+  for (const audience of ['parents','adult-child']) {
+    const f=fixture(t);
+    assert.notEqual(f.publish({...f.brief,product:'Family'}).status,0);
+    const result=f.publish({...f.brief,product:'Family',familyAudience:audience});
+    assert.equal(result.status,0,result.stderr);
+    for(const prefix of ['', 'es/']) {
+      const page=f.read(prefix+'blog/publishing-test.html');
+      assert.doesNotMatch(page,/site-config\.js|funnel\.js|facebook\.com|googletagmanager|fbq\(/i);
+      assert.equal((page.match(/src="\/js\/blog-ui.js"/g)||[]).length,1);
+      assert.ok(page.includes('href="'+(audience==='parents'?'/buy-a-home-for-parents':'/family-housing-options')+'"'));
+      assert.doesNotMatch(page,/class="[^"]*\breveal\b/);
+    }
+  }
+});

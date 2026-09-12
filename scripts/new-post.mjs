@@ -7,7 +7,8 @@ if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(b.slug || '')) throw new Error('A safe lo
 if (!/^\d{4}-\d{2}-\d{2}$/.test(b.date || '')) throw new Error('date must be YYYY-MM-DD');
 if (new Date(b.date).toISOString().slice(0, 10) !== b.date || b.date > new Date().toISOString().slice(0, 10)) throw new Error('Use a real publication date that is not in the future');
 if (!['guide', 'closing'].includes(b.type)) throw new Error('type must be guide or closing');
-if (b.product && !['HELOC', 'DSCR'].includes(b.product)) throw new Error('Unsupported product');
+if (b.product && !['HELOC', 'DSCR', 'Family'].includes(b.product)) throw new Error('Unsupported product');
+if (b.product === 'Family' && !['parents', 'adult-child'].includes(b.familyAudience)) throw new Error('Choose a Family audience');
 for (const lang of ['en', 'es']) {
   const p = b[lang];
   if (!p || !['title', 'desc', 'eyebrow'].every(k => typeof p[k] === 'string' && p[k].trim()) ||
@@ -67,6 +68,19 @@ ${shell.slice(shell.indexOf('<section class="lead">'),shell.indexOf('</main>'))}
       ? ['Revise sus opciones de HELOC', 'Empiece con el valor estimado de su vivienda, el saldo hipotecario y el monto que desea solicitar.', 'Solicitar una revisión']
       : ['Review your HELOC options', 'Start with your estimated home value, mortgage balance, and the amount you want to request.', 'Request a HELOC review'];
     out = out.replace(/<section class="lead">[\s\S]*?<\/section>/, `<section class="lead"><div class="wrap"><div class="lead-card"><h2>${cta[0]}</h2><p class="sub">${cta[1]}</p><p><a class="btn-primary" href="${prefix}/heloc#callback">${cta[2]}</a></p><p class="fine">${disclosures[b.type][lang]}</p></div></div></section>`);
+  }
+  if (b.product === 'Family') {
+    const destination = b.familyAudience === 'adult-child' ? '/family-housing-options' : '/buy-a-home-for-parents';
+    const cta = lang === 'es'
+      ? ['Hablemos de la vivienda que está considerando', 'Una conversación sobre el inmueble y el financiamiento. No envíe información médica ni documentos de beneficios por el formulario público.', 'Iniciar una conversación (formulario en inglés)']
+      : ['Talk through the home you are considering', 'Start with the property and financing question. Keep medical information and benefits documents out of the public inquiry form.', 'Start a family housing conversation'];
+    out = out.replace(/<section class="lead">[\s\S]*?<\/section>/, `<section class="lead"><div class="wrap"><div class="lead-card"><h2>${cta[0]}</h2><p class="sub">${cta[1]}</p><p><a class="btn-primary" href="${destination}">${cta[2]}</a></p><p class="fine">${disclosures[b.type][lang]}</p></div></div></section>`);
+    out = out.replace(/(<p style="margin-top:22px;font-size:13px;color:var\(--stone-400\);line-height:1\.7;">)[\s\S]*?<\/p>/, (_, start) => start + (lang === 'es' ? 'Una conversación breve puede aclarar el siguiente paso de revisión. No es aprobación.' : 'A short conversation can clarify the next review step. It is not approval.') + '</p>');
+    // Match the existing Family-article privacy boundary, including noscript pixels.
+    out = out.replace(/<script\b(?![^>]*type="application\/ld\+json")[^>]*>[\s\S]*?<\/script>/gi, '')
+      .replace(/<noscript>[\s\S]*?<\/noscript>/gi, '')
+      .replace(/class="([^"]*)"/g, (_, value) => `class="${value.split(/\s+/).filter(x => x !== 'reveal').join(' ')}"`)
+      .replace('</head>', '<script src="/js/blog-ui.js" defer></script>\n</head>');
   }
   out=out.replace(/href="\/(es\/)?blog" style="color:var\(--stone-400\);">/,`href="${lang==='es'?'/blog/':'/es/blog/'}${b.slug}" style="color:var(--stone-400);">`);
   fs.mkdirSync(file.replace(/\/[^/]+$/,''),{recursive:true}); fs.writeFileSync(file,out);
