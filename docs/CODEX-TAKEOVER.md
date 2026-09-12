@@ -5,7 +5,7 @@
 Original website revision: `b11f583ae30ea74676796cfac94bad2d2a81de20`.
 Working branch: `codex/website-takeover` in `/Users/c/Documents/ChatGPT/STONEHAVEN CODING/stonehaven-website`.
 
-The supplied handoff and brief were treated as project context. The original checkout and production have not been changed. This first improvement pass covers blog usability and publishing reliability; it does not claim to finish every open item in the handoff.
+The supplied handoff and brief were treated as project context. The original checkout remains untouched. The reviewed changes were published to production on September 12, 2026. This first improvement pass covers blog usability and publishing reliability; it does not claim to finish every open item in the handoff.
 
 ## What was learned
 
@@ -31,13 +31,13 @@ The site is a static bilingual mortgage brokerage website with product pages, ca
 - Browser inspection covered the desktop index and English/Spanish mobile article visibility, wrapping and booking text.
 - `git diff --check` passes.
 
-The build was tested locally. Remote GitHub Actions and a Netlify cloud deployment have not run for this branch. The checks enforce existing rules; they do not establish legal approval of every article.
+The build was tested locally. GitHub Actions and the Netlify production deployment passed. The checks enforce existing rules; they do not establish legal approval of every article.
 
 ## Next priorities
 
-1. Connect and verify the website-to-CRM lead path after establishing the CRM's deployment and server authentication contract.
+1. Supported website forms now reach the CRM after Netlify capture. See `WEBSITE-CRM-RELAY.md` for deployment and synthetic delivery evidence. Existing office email notifications are preserved; inbox receipt remains unconfirmed.
 2. Resolve the handoff's unverified illustrative figures and rate assumptions with the owner. No numeric assumptions were changed in this pass.
 3. Review homepage and product-page conversion paths, accessibility and performance, using the working design as the baseline.
 4. Decide the Family content rollout and Spanish review process. Tracking, indexing and unpublished Family articles were not changed.
 
-Review the prepared changes before publishing. A push to upstream main is a production release.
+Future pushes to upstream main are production releases.

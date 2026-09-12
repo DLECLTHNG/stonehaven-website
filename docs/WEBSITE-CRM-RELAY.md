@@ -1,6 +1,6 @@
 # Saved website form relay
 
-Prepared September 12, 2026. Production relay settings are configured; deployment and live delivery verification are in progress.
+Activated September 12, 2026. Netlify capture and CRM delivery verified with a synthetic DSCR inquiry.
 
 ## Delivery
 
@@ -12,7 +12,7 @@ The CRM verifies the shared key in constant time. Its server-only relay switch, 
 
 ## Email requirement
 
-The owner explicitly requires new-lead email alerts to continue. Read-only inspection of Netlify on September 12 confirmed the existing `submission_created` email hook, ID `6a4ff2f9b66b0eb4617aa52c`, targets `office@stonehavencre.com` and is not marked disabled. No notification setting was changed. Configuration was verified; no test email was sent.
+The owner explicitly requires new-lead email alerts to continue. Read-only inspection of Netlify on September 12 confirmed the existing `submission_created` email hook, ID `6a4ff2f9b66b0eb4617aa52c`, targets `office@stonehavencre.com` and is not marked disabled. No notification setting was changed. The synthetic inquiry exercised the existing notification hook. The hook remains configured after deployment; inbox receipt has not been confirmed.
 
 Keep `js/site-config.js` `intakeEndpoint` empty and `FAMILY_CRM_INTAKE_URL` unset. Direct-to-CRM paths bypass Netlify capture and its email hook. Do not use `CRM_WEBHOOK_URL` as a second CRM intake path; that older optional browser relay can create duplicate delivery.
 
@@ -22,7 +22,7 @@ CRM: deploy the reviewed `codex/website-crm-intake` change based on currently de
 
 Netlify: configure the matching `WEBSITE_RELAY_SECRET`, `WEBSITE_CRM_INTAKE_URL=https://stonehaven-crm.onrender.com/api/intake/website`, and finally `WEBSITE_CRM_RELAY_ENABLED=1`. Secrets belong only in deployment environment variables, never in browser scripts or git. A dedicated relay secret was configured in Render and in Netlify for production only. Netlify uses its plan-default scopes. The site has no injection snippets, and the exact production build with a canary secret produced no files containing that value.
 
-Enable after checking the CRM response with a synthetic inquiry and verifying the intended email recipient receives the existing Netlify notification. A real end-to-end receipt and database verification are still required.
+Render deployment `dep-dailmie8h83s739p3egg` is live at commit `9afe6d4b87cbf0d0b8fa43681f9f4402695b2eb1`. Netlify deployment `6aa55cff0366be0008cde3a6` published website commit `db0d30283478097c95e39870d01dd01fdac50335`. The production-only Netlify relay switch is enabled.
 
 ## Residential boundary
 
@@ -36,4 +36,10 @@ Website checks: `node scripts/check-site.mjs`, including six relay tests.
 CRM targeted tests: `node node_modules/vitest/vitest.mjs run --config vitest.website-relay.config.ts`, nine mocked route/service tests.
 CRM TypeScript check: passed using the locked dependencies and freshly generated Prisma client under Node 22. Changed CRM files pass ESLint.
 
-The targeted tests make no real database writes, borrower communications or production lead submissions. They establish transport behavior, not live delivery or production Residential admission.
+The targeted tests make no real database writes, borrower communications or production lead submissions. They establish transport behavior and the Residential exclusion.
+
+## Live verification
+
+A synthetic DSCR inquiry labeled `STONEHAVEN-RELAY-CHECK-20260912-1410` was submitted through the public `/contact` form transport. Netlify saved submission `6aa55d6e620a949e5a462732`. A subsequent authenticated replay returned HTTP 200, status `duplicate`, and CRM lead `d75503ef-04bb-459e-a77b-79743c154116`, confirming the event had already imported the lead and the replay did not create a second lead. The clearly labeled test record remains for review. No actual borrower contact details were used.
+
+GitHub Actions passed after removing previously tracked Python bytecode cache files. The CRM production build, TypeScript and changed-file lint checks passed. Public blog inspection confirmed the new index and article content are visible.
