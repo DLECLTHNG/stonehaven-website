@@ -40,20 +40,25 @@ availability varies by state". A grep inside the Netlify build command fails the
 deploy on several of these, so a violation breaks the release rather than
 shipping quietly.
 
-**Before you push, run the gates.** Section 5 of the handoff lists them. There is
-no single aggregate command. Everything passes today, so any failure you see is
-something you introduced.
+**Before you push, run the gates, and understand that almost none of them are
+automatic.** Only the grep inside the Netlify build can fail a deploy. The four
+linters are stricter than that grep and **nothing runs them**: there is no
+`package.json` and no CI job that invokes them. They are a manual discipline, so
+running them before every push is the only time they run at all. Section 5 lists
+the commands. Everything passes today, so any failure you see is yours.
 
 **Highest value work available**, detail in section 10 of the handoff:
 
 1. Confirm four placeholder cost figures and an illustrative rate that are
-   already live in ten published DSCR articles. This is the only open item
-   touching content the public can already see.
-2. Connect the CRM. Do not just set the environment variable: section 7 explains
+   already live in ten published DSCR articles.
+2. Fix the disclaimer on those same ten articles. They inherit the blog's
+   closed-deal boilerplate, which states they describe transactions already
+   closed. They are educational explainers built on hypotheticals, so the
+   disclosure is inaccurate on live pages.
+3. Connect the CRM. Do not just set the environment variable: section 7 explains
    a real incompatibility that makes it fail closed in production.
-3. Decide where educational guides live, because the blog is branded "Closings"
-   and its disclaimer asserts the posts are closed transactions.
-4. Publish or drop four finished Family Opportunity blog drafts in
+4. Wire the four linters into CI, since nothing runs them today.
+5. Publish or drop four finished Family Opportunity blog drafts in
    `docs/family-drafts/`.
 
 **One open decision is not yours to clear.** The owner asked for the Meta Pixel

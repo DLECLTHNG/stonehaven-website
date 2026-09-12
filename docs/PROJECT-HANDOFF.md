@@ -96,12 +96,12 @@ Before editing any `.html`, check whether a generator owns it.
 | `scripts/build-dscr-personas.py` | `scripts/dscr_lp_config_a.py`, `dscr_lp_config_b.py` | the 17 pages in `dscr/`, **and it injects a section into `dscr.html` between markers** |
 | `scripts/build-heloc-personas.py` | `scripts/heloc_personas_config.py` | the HELOC persona pages in `heloc/` |
 | `scripts/build-heloc-ads.py` | `scripts/heloc_ads_config.py` | the HELOC ad landing pages in `heloc/` |
+| `scripts/new-post.mjs` | a JSON brief | one blog post **plus its Spanish mirror**, and it edits both blog indexes, `_redirects` and `sitemap.xml` |
 
 Two traps in that table. `dscr.html` is hand-written **except** for the block the
 persona generator owns, so a hand edit inside those markers is lost on the next
 build. And the two HELOC generators both write into `heloc/`, so a slug defined
 in both configs would have one silently overwrite the other.
-| `scripts/new-post.mjs` | a JSON brief | one blog post **plus its Spanish mirror**, and it edits both blog indexes, `_redirects` and `sitemap.xml` |
 
 `scripts/credit_bands.py` is shared by several generators and holds the owner's
 standard ten credit-score bands. Change it in one place and rebuild.
@@ -165,9 +165,68 @@ grep -rlE 'STONEHAVEN_OWNER_FACT_REQUIRED|555-0100|Call ,|call  to|Llame al ,|Ll
 
 There is no single aggregate command. Run all of the above before pushing.
 
-**The release gate is not advisory.** It runs inside the Netlify build command,
-and a match fails the deploy. It exists to stop placeholder phone numbers,
-direct-lender claims and prohibited superlatives reaching production.
+### Only one of these is actually automated
+
+This is the most misleading thing about the project, so read it carefully.
+
+**The grep in `netlify.toml` is the only automated gate.** It runs inside the
+build, and a match fails the deploy outright. There is no warning mode and no
+per-file exemption.
+
+**The four linters are not gates. Nothing runs them.** There is no
+`package.json` anywhere in the repository, and the single GitHub workflow,
+`.github/workflows/site-monitor.yml`, is post-deploy synthetic monitoring that
+never invokes a linter. Worse, the build command deletes `scripts` and `tests`
+*before* the grep runs, so the linters could not execute during a build even if
+something tried.
+
+So the linters are a manual discipline that depends on someone remembering. They
+are also stricter than the deploy gate: they catch percentages, APR mentions,
+tax-deductibility claims, disability-related form fields and much else that the
+grep does not.
+
+Two consequences worth acting on:
+
+- Running the linters before every push is not optional hygiene. It is the only
+  time they run at all.
+- **Wiring them into CI is the highest-value hardening available on this
+  project.** A newcomer will reasonably assume they already block deploys.
+
+The deploy grep is also case-sensitive in places. `[Gg]uaranteed approval` does
+not catch `GUARANTEED APPROVAL`, and the direct-lender pattern is fully
+case-sensitive, so a page shouting in capitals would pass a gate the linters
+would fail.
+
+### The rules those checks encode
+
+Worth knowing before you write anything, because most are invisible until
+something fails.
+
+- **Brokerage, never lender.** Capital is always "arranged through" a third
+  party. The deploy gate bans the direct-lender claim in English and Spanish.
+- **No pricing outside `/blog`.** All three page linters ban any decimal
+  percentage and the word APR. Inside `/blog`, rates are permitted as facts of a
+  closed deal and every rate must carry its closing date. Residential rates must
+  always be paired with an APR, because a bare rate is a Regulation Z trigger
+  term.
+- **The Family pages ban every percentage and dollar amount outright**, which is
+  what keeps those consumer-purpose pages clear of Regulation Z trigger terms.
+- **No tax advice.** The HELOC linter bans any `tax-deduct` wording. Note this
+  rule exists only as that one regex: it is **not** written down as policy and
+  **not** enforced on DSCR, blog or Family content. Treat it as a sitewide rule
+  anyway.
+- **No guarantees or superlatives.** No guaranteed approval, no lowest rate, no
+  "everyone qualifies", no "approved in X days".
+- **No em dashes sitewide.** Note a conflict: `docs/STYLE-es.md` permits en
+  dashes for numeric ranges, but the Family linter bans en dashes outright on its
+  four pages. On those pages the linter wins.
+- **Spanish is sentence case**, addresses the reader as *usted*, and its legal
+  disclosures are reviewed text that must not be edited in a copy pass.
+- **Deal write-ups carry no names, addresses or parcel ids**, and loan amounts
+  are rounded.
+- **The disability page may not ask about income, benefits, capacity to work or
+  anything medical.** The Family linter fails the build on those words appearing
+  in its form.
 
 Local preview:
 
@@ -275,6 +334,40 @@ status changed. Several items it framed as pre-publication checks are now
 - **A pending Florida ballot measure** in November 2026 would cut the
   non-homestead assessment cap. The Tampa article flags it as pending rather than
   law. If it passes, that article needs updating.
+- **Two of the placeholder figures appear in one more article each** than the
+  drafts handoff recorded. The $7,800 also appears in the Charlotte article and
+  the $340 hazard insurance also appears in the Georgia cash-out article.
+
+### The disclaimer on those articles asserts something untrue
+
+This was not in the drafts handoff and is worth fixing.
+
+`scripts/new-post.mjs` applies the blog's standard boilerplate to every post, and
+that boilerplate opens: *"Write-ups are illustrative of transactions already
+closed."* The back-link reads "All closings".
+
+The ten DSCR articles are educational explainers built on hypotheticals. They do
+not describe closed transactions. So the disclosure makes a false statement about
+the content it is disclaiming, on live pages, on a licensed broker's site.
+
+The fix is a second disclosure variant for educational posts rather than editing
+the articles. This is the same root cause as the "Closings" branding question in
+section 10.
+
+### Ten Spanish pages are live without a native reviewer
+
+`docs/owner-facts-required.md` gates new Spanish content on a named native
+reviewer, which has never been supplied. The ten Spanish DSCR mirrors shipped
+anyway. That converts a pre-publication blocker into live unreviewed content.
+
+### `docs/owner-facts-required.md` is itself partly stale
+
+It still lists the business phone, the office address and the state licences as
+outstanding blockers. All three are in fact published sitewide and are marked
+verified in `docs/dscr-personas/claims_register.md`. Do not read that register as
+current truth without checking the site. What genuinely remains outstanding is
+the named author, the reviewer, team bios, proof and case-study material, the
+scheduler, and the Spanish reviewer.
 
 ---
 
@@ -303,24 +396,27 @@ state matrix is recorded as an unverified fact in the internal claims register.
    This is the only item touching content already in front of the public.
 2. **CRM integration.** Section 7. Needs a code change on the CRM side, then the
    feature branch merged to `main`.
-3. **Decide where educational guides live.** The blog is branded "Closings" and
-   its disclaimer asserts the posts are closed transactions. Ten educational
-   guides now sit under that framing. Either add a second disclaimer variant for
-   guides, or move guides to the planned `/resources/dscr` hub.
-4. **Publish or drop the four Family Opportunity blog drafts.**
-5. **Meta Conversions API.** Code is written and tested, needs the token.
-6. **Family pages have no Spanish mirrors.** `/es/family-home-financing`,
+3. **Fix the disclaimer on the ten educational articles.** They carry the
+   closed-deal boilerplate, which states something untrue about them. This is the
+   same root cause as the "Closings" branding question: either add a second
+   disclosure variant for guides, or move guides to the planned `/resources/dscr`
+   hub. Section 8.
+4. **Wire the four linters into CI.** They are the strictest compliance checks in
+   the project and nothing currently runs them. Section 5.
+5. **Publish or drop the four Family Opportunity blog drafts.**
+6. **Meta Conversions API.** Code is written and tested, needs the token.
+7. **Family pages have no Spanish mirrors.** `/es/family-home-financing`,
    `/es/buy-a-home-for-parents` and `/es/family-housing-options` all return 404,
    while the rest of the site is bilingual. Either build them or accept the gap
    deliberately.
-7. **The Family landing pages are still `noindex`.** `INDEXABLE = False` in
+8. **The Family landing pages are still `noindex`.** `INDEXABLE = False` in
    `scripts/family_lp_config.py`. Paid traffic works; organic does not.
-8. **Open owner decision on tracking.** The owner asked for the Meta Pixel on
+9. **Open owner decision on tracking.** The owner asked for the Meta Pixel on
    `/family-housing-options`, the page about financing a home for an adult child
    with a disability. It was not implemented, for reasons set out in section 4 of
    `docs/family-opportunity-handoff.md`. Treat it as a decision needing the owner
    and their legal adviser, not a backlog ticket.
-9. **Six stray macOS duplicate files** sit untracked at the repo root, including
+10. **Six stray macOS duplicate files** sit untracked at the repo root, including
    copies of live pages carrying Pixel snippets. Git deploys exclude them so they
    are inert today, but they would ship under a manual drag-and-drop deploy.
    Recommend deleting them.
