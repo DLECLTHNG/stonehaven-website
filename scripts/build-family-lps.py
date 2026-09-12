@@ -14,7 +14,7 @@ def heading(s): return esc(s.rstrip(".").strip())     # owner rule: no trailing 
 def check_no_em(s, where):
     if "—" in s or "–" in s: raise SystemExit("em/en dash found in " + where)
 
-VER = "1"
+VER = "2"
 STATES_JS = [c for c, _ in C.SERVICE_STATES]
 
 def head(title, desc, path, noindex):

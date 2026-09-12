@@ -108,7 +108,7 @@ def head(p, intents_json):
 <noscript><style>.reveal{opacity:1 !important;transform:none !important;}</style></noscript>
 <script src="../js/site-config.js?v=6" defer></script>
 <script src="../js/heloc-fields.js?v=1" defer></script>
-<script src="../js/funnel.js?v=9" defer></script>
+<script src="../js/funnel.js?v=10" defer></script>
 <script src="../js/heloc-persona.js?v=1" defer></script>
 <style>
 .pp-hero{padding:150px 0 44px;}

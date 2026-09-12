@@ -116,6 +116,12 @@
   }
   window.shTrack = track;
 
+  // One GA4 conversion across product-specific success events. Keep this out
+  // of Meta's event mapper so existing Lead events are not counted twice.
+  function analyticsOnly(name, params) {
+    try { if (typeof window.gtag === "function") window.gtag("event", name, params); } catch (e) {}
+  }
+
   /* ---------- 3 · form submission per WEBSITE_FORM_CONTRACT ---------- */
   // Any <form data-sh-form> is wired automatically. Attributes:
   //   data-sh-form      : source id, e.g. "dscr-analyzer" (sent as `page`)
@@ -178,8 +184,10 @@
       };
       equityGoal.addEventListener('change', syncEquity); syncEquity();
     }
+    var inFlight = false;
     form.addEventListener("submit", function (e) {
       e.preventDefault();
+      if (inFlight) return;
 
       // honeypot — silently succeed so bots learn nothing
       var hp = form.querySelector('[name="company_website"]');
@@ -224,12 +232,14 @@
         extra: extra
       };
 
+      inFlight = true;
       var evt = form.getAttribute("data-sh-event") || "lead";
       track("form_submit_attempted", { page: payload.page });
       var btn = form.querySelector('[type="submit"]');
       if (btn) { btn.disabled = true; btn.style.opacity = ".6"; }
 
       function done() {
+        analyticsOnly("generate_lead", { form_id: payload.page, product: payload.product, language: payload.lang });
         // One event_id shared by the browser pixel and the server relay,
         // so Meta deduplicates the two copies of the conversion.
         var eventId = "sh-" + payload.page + "-" + Date.now() + "-" + Math.floor(Math.random() * 1e6);
@@ -257,6 +267,7 @@
       // visitor sees an accessible error with a retry and a verified
       // alternate channel — values are preserved, button re-enabled.
       function showError() {
+        inFlight = false;
         if (btn) { btn.disabled = false; btn.style.opacity = ""; }
         var es = (form.getAttribute("data-sh-lang") || document.documentElement.lang || "en").indexOf("es") === 0;
         var box = form.querySelector(".lead-error");
@@ -333,6 +344,11 @@
 
   document.addEventListener("DOMContentLoaded", function () {
     Array.prototype.forEach.call(document.querySelectorAll("form[data-sh-form]"), wireForm);
+
+    document.addEventListener("click", function (event) {
+      var a = event.target.closest && event.target.closest('a[href^="tel:"]');
+      if (a) analyticsOnly("phone_click", { page_path: window.location.pathname, language: document.documentElement.lang || "en" });
+    });
 
     /* nav scroll + mobile menu + reveal (same behavior as the rest of the site) */
     var nav = document.getElementById("nav");
