@@ -18,6 +18,8 @@ import { readFileSync, readdirSync, statSync } from "node:fs";
 import { join } from "node:path";
 
 const ALLOW = new Set([
+  // State names and the Family Opportunity product name.
+  "alabama","alaska","arizona","arkansas","california","carolina","colorado","connecticut","dakota","del","delaware","family","florida","georgia","hampshire","hawái","idaho","illinois","indiana","iowa","island","jersey","kansas","kentucky","luisiana","maine","maryland","massachusetts","michigan","minnesota","misisipi","misuri","montana","mortgage","méxico","nebraska","nevada","norte","nueva","nuevo","occidental","ohio","oklahoma","oregón","pensilvania","rhode","sur","tennessee","texas","utah","vermont","virginia","washington","wisconsin","wyoming","york",
   // brand / people / places
   "stonehaven","lending","dawn","m.","muñoz","chris","de","leeuw","georgia","alabama","tennessee","florida",
   "carolina","norte","sur","atlanta","brookhaven","birmingham","huntsville","montgomery","mobile","tuscaloosa","nashville","memphis","knoxville","chattanooga","miami","orlando","tampa","jacksonville","panhandle","bay","st","st.","petersburg","pinellas","charlotte","raleigh","durham","greensboro","winston-salem","asheville","charleston","columbia","greenville","myrtle","beach","triángulo","golfo","redstone","homestead","sc","alpharetta","londres","london","roswell","street","suite","estados","unidos","ee.","uu.",

@@ -1,0 +1,109 @@
+{
+  "slug": "dscr-loans-texas-investor-guide",
+  "date": "2026-09-12",
+  "type": "guide",
+  "en": {
+    "title": "DSCR loans in Texas: investor guide",
+    "seo_title": "DSCR loans in Texas",
+    "desc": "DSCR loans in Texas: every taxing district belongs in the DSCR worksheet. Review local records, rental evidence and a practical property scenario.",
+    "eyebrow": "DSCR · Texas",
+    "terms": [
+      [
+        "Purpose",
+        "Investment rental property review"
+      ],
+      [
+        "Local focus",
+        "Every taxing district belongs in the DSCR worksheet"
+      ],
+      [
+        "Availability",
+        "Varies by state, property, lender and program"
+      ]
+    ],
+    "body": [
+      "A debt service coverage ratio (DSCR) loan uses rental income to evaluate an investment property under the selected lender's rules. For rental property in Texas, this guide focuses on every taxing district belongs in the DSCR worksheet. Start with the local records below before relying on a projected loan payment.",
+      {
+        "h": "Every taxing district belongs in the DSCR worksheet"
+      },
+      "Texas explains that local taxing units can include the county, school district, city and special districts. A county-only expense can therefore omit part of a rental's carrying cost. Obtain the complete parcel-level estimate and ask which residence exemptions, if any, actually apply to the proposed investment ownership.",
+      "State reference: <a href=\"https://comptroller.texas.gov/taxes/property-tax/basics.php\">Texas Comptroller: property tax system basics</a>.",
+      {
+        "h": "Documents and questions for this property review"
+      },
+      "Gather the parcel's taxing-unit list and complete tax statements, including any separate district account. Identify exemptions reflected in the seller's bill and ask how the planned investment ownership affects them. Reconcile the annual total with the calculator rather than treating one county statement as the entire property-tax burden.",
+      {
+        "h": "A property review example"
+      },
+      "<strong>Hypothetical planning example, not a completed transaction.</strong> A Houston-area investor compares two houses with similar prices and projected rents but different district assignments. Request the full tax estimate for each and identify recurring association charges. Test the same proposed loan structure against those verified expenses. The property with the lower asking price does not necessarily have the stronger coverage.",
+      {
+        "h": "Is the county tax line the full property-tax expense?"
+      },
+      "Not necessarily. Confirm all local taxing units and the complete account for the specific parcel.",
+      {
+        "h": "Connect local costs to the DSCR calculation"
+      },
+      "Many residential rental programs divide qualifying monthly rent by the full housing payment, including principal, interest, taxes, insurance and applicable association dues. Confirm the selected program's formula and accepted rent evidence. Keep vacancy, management, maintenance and capital work in a separate operating budget: meeting a lender's ratio does not establish profitability. <a href=\"/dscr-program-calculator\">Use the DSCR Program Calculator</a> and <a href=\"/blog/dscr-loans-explained\">read the full DSCR qualification guide</a> for the broader framework.",
+      {
+        "h": "Request a property scenario review"
+      },
+      "Stonehaven Lending is a mortgage brokerage arranging business-purpose DSCR financing nationwide, with availability varying by state, property, lender and program. <a href=\"/dscr-review\">Request a DSCR review</a> with the property location, legal unit count, intended use, purchase or refinance goal and available rent and expense records."
+    ]
+  },
+  "es": {
+    "title": "Préstamos DSCR en Texas: guía de inversión",
+    "seo_title": "Préstamos DSCR en Texas",
+    "desc": "Préstamos DSCR en Texas: todos los distritos fiscales deben entrar en el cálculo. Revise registros locales, evidencia de renta y un escenario práctico.",
+    "eyebrow": "DSCR · Texas",
+    "terms": [
+      [
+        "Propósito",
+        "Revisión de propiedad de alquiler"
+      ],
+      [
+        "Enfoque local",
+        "Todos los distritos fiscales deben entrar en el cálculo"
+      ],
+      [
+        "Disponibilidad",
+        "Varía por estado, propiedad, prestamista y programa"
+      ]
+    ],
+    "body": [
+      "Un préstamo DSCR utiliza ingresos de alquiler para evaluar una propiedad de inversión según las reglas del prestamista. La razón DSCR mide la cobertura del servicio de la deuda. Para un alquiler en Texas, esta guía aborda todos los distritos fiscales deben entrar en el cálculo. Revise los registros locales antes de confiar en un pago proyectado.",
+      {
+        "h": "Todos los distritos fiscales deben entrar en el cálculo"
+      },
+      "Texas explica que las entidades fiscales locales pueden incluir condado, distrito escolar, ciudad y distritos especiales. Un gasto que solo incluye el condado puede omitir parte del costo. Obtenga una estimación completa por parcela y confirme qué exenciones residenciales, si alguna, corresponden a la titularidad de inversión.",
+      "Fuente estatal: <a href=\"https://comptroller.texas.gov/taxes/property-tax/basics.php\">Texas Comptroller: property tax system basics</a>.",
+      {
+        "h": "Documentos y preguntas para revisar esta propiedad"
+      },
+      "Reúna lista de entidades fiscales y recibos completos, incluidas cuentas separadas de distritos. Identifique exenciones del vendedor y consulte su tratamiento bajo la inversión prevista. Concilie el total anual con la calculadora, sin considerar un solo recibo del condado como toda la carga fiscal.",
+      {
+        "h": "Ejemplo de revisión de una propiedad"
+      },
+      "<strong>Ejemplo hipotético de planificación, no una operación cerrada.</strong> Un inversionista cerca de Houston compara casas de precio y renta similares en distritos distintos. Solicite impuestos completos y cuotas recurrentes de asociación de cada una. Pruebe la misma estructura de préstamo con gastos verificados. El precio de compra menor no necesariamente produce mejor cobertura.",
+      {
+        "h": "¿El impuesto del condado representa todo el gasto fiscal?"
+      },
+      "No necesariamente. Confirme todas las entidades fiscales locales y la cuenta completa de la parcela.",
+      {
+        "h": "Conecte los costos locales con el cálculo DSCR"
+      },
+      "Muchos programas residenciales de inversión dividen renta mensual calificada entre pago completo, incluidos capital, intereses, impuestos, seguro y asociación aplicable. Confirme la fórmula del programa y la evidencia de renta aceptada. Presupueste por separado vacantes, administración, mantenimiento y obras de capital: cumplir la razón del prestamista no demuestra rentabilidad. <a href=\"/es/dscr-program-calculator\">Use la calculadora DSCR por programa</a> y <a href=\"/es/blog/dscr-loans-explained\">consulte la guía completa de calificación DSCR</a>.",
+      {
+        "h": "Solicite una revisión de su escenario"
+      },
+      "Stonehaven Lending es una correduría hipotecaria que gestiona financiamiento DSCR de propósito comercial a nivel nacional, con disponibilidad variable por estado, propiedad, prestamista y programa. <a href=\"/es/dscr-review\">Solicite una revisión DSCR</a> con ubicación, unidades legales, uso previsto, objetivo de compra o refinanciamiento y registros de renta y gastos disponibles."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Texas Comptroller: property tax system basics",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/basics.php",
+      "checked_at": "2026-09-12"
+    }
+  ],
+  "series": "dscr"
+}

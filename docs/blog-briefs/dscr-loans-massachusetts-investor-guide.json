@@ -1,0 +1,109 @@
+{
+  "slug": "dscr-loans-massachusetts-investor-guide",
+  "date": "2026-09-12",
+  "type": "guide",
+  "en": {
+    "title": "DSCR loans in Massachusetts: investor guide",
+    "seo_title": "DSCR loans in Massachusetts",
+    "desc": "DSCR loans in Massachusetts: municipal assessments and small multifamily records. Review local records, rental evidence and a practical property scenario.",
+    "eyebrow": "DSCR · Massachusetts",
+    "terms": [
+      [
+        "Purpose",
+        "Investment rental property review"
+      ],
+      [
+        "Local focus",
+        "Municipal assessments and small multifamily records"
+      ],
+      [
+        "Availability",
+        "Varies by state, property, lender and program"
+      ]
+    ],
+    "body": [
+      "A debt service coverage ratio (DSCR) loan uses rental income to evaluate an investment property under the selected lender's rules. For rental property in Massachusetts, this guide focuses on municipal assessments and small multifamily records. Start with the local records below before relying on a projected loan payment.",
+      {
+        "h": "Municipal assessments and small multifamily records"
+      },
+      "Massachusetts provides municipal assessment and valuation resources, including information about residential exemptions and local assessment administration. For an investment property, obtain the municipal account and identify any owner-occupancy assumptions. A small multifamily review should reconcile the legal unit count, rents and expenses instead of borrowing a neighboring single-family home's numbers.",
+      "State reference: <a href=\"https://www.mass.gov/info-details/determining-property-values\">Massachusetts Department of Revenue: determining property values</a>.",
+      {
+        "h": "Documents and questions for this property review"
+      },
+      "Compare the municipal property description with the legal unit configuration and the lender's appraisal. Identify any exemption or occupancy assumption in the tax account. For a multifamily property, map each lease and included utility to its unit before comparing the building's total rent with its complete housing payment.",
+      {
+        "h": "A property review example"
+      },
+      "<strong>Hypothetical planning example, not a completed transaction.</strong> A Worcester investor evaluates a building with separately rented apartments and shared utilities. Ask who pays each utility, whether the rent includes those services and how the lender treats the leases. Use the assessment record to check the property description, then build a separate operating budget for owner-paid expenses.",
+      {
+        "h": "Should I compare gross rents without checking utilities?"
+      },
+      "No. Clarify included services and owner-paid expenses, then confirm the lender's rent treatment and your separate cash-flow budget.",
+      {
+        "h": "Connect local costs to the DSCR calculation"
+      },
+      "Many residential rental programs divide qualifying monthly rent by the full housing payment, including principal, interest, taxes, insurance and applicable association dues. Confirm the selected program's formula and accepted rent evidence. Keep vacancy, management, maintenance and capital work in a separate operating budget: meeting a lender's ratio does not establish profitability. <a href=\"/dscr-program-calculator\">Use the DSCR Program Calculator</a> and <a href=\"/blog/dscr-loans-explained\">read the full DSCR qualification guide</a> for the broader framework.",
+      {
+        "h": "Request a property scenario review"
+      },
+      "Stonehaven Lending is a mortgage brokerage arranging business-purpose DSCR financing nationwide, with availability varying by state, property, lender and program. <a href=\"/dscr-review\">Request a DSCR review</a> with the property location, legal unit count, intended use, purchase or refinance goal and available rent and expense records."
+    ]
+  },
+  "es": {
+    "title": "Préstamos DSCR en Massachusetts: guía de inversión",
+    "seo_title": "Préstamos DSCR en Massachusetts",
+    "desc": "Préstamos DSCR en Massachusetts: evaluación municipal y registros multifamiliares. Revise registros locales, evidencia de renta y un escenario práctico.",
+    "eyebrow": "DSCR · Massachusetts",
+    "terms": [
+      [
+        "Propósito",
+        "Revisión de propiedad de alquiler"
+      ],
+      [
+        "Enfoque local",
+        "Evaluación municipal y registros multifamiliares"
+      ],
+      [
+        "Disponibilidad",
+        "Varía por estado, propiedad, prestamista y programa"
+      ]
+    ],
+    "body": [
+      "Un préstamo DSCR utiliza ingresos de alquiler para evaluar una propiedad de inversión según las reglas del prestamista. La razón DSCR mide la cobertura del servicio de la deuda. Para un alquiler en Massachusetts, esta guía aborda evaluación municipal y registros multifamiliares. Revise los registros locales antes de confiar en un pago proyectado.",
+      {
+        "h": "Evaluación municipal y registros multifamiliares"
+      },
+      "Massachusetts ofrece recursos de valoración municipal, exenciones residenciales y administración de evaluaciones. Obtenga la cuenta municipal de la inversión e identifique supuestos de ocupación del propietario. En un edificio multifamiliar pequeño, concilie unidades legales, rentas y gastos sin copiar los números de una vivienda unifamiliar vecina.",
+      "Fuente estatal: <a href=\"https://www.mass.gov/info-details/determining-property-values\">Massachusetts Department of Revenue: determining property values</a>.",
+      {
+        "h": "Documentos y preguntas para revisar esta propiedad"
+      },
+      "Compare descripción municipal, configuración legal de unidades y tasación del prestamista. Identifique exenciones o supuestos de ocupación en la cuenta fiscal. En multifamiliares, asigne cada contrato y servicio incluido a su unidad antes de comparar renta total y pago completo.",
+      {
+        "h": "Ejemplo de revisión de una propiedad"
+      },
+      "<strong>Ejemplo hipotético de planificación, no una operación cerrada.</strong> Un inversionista en Worcester evalúa apartamentos alquilados por separado con servicios compartidos. Pregunte quién paga cada servicio, si está incluido en la renta y cómo trata el prestamista los contratos. Compruebe la descripción oficial y prepare por separado los gastos que paga el propietario.",
+      {
+        "h": "¿Debo comparar rentas brutas sin revisar los servicios?"
+      },
+      "No. Aclare servicios incluidos y gastos del propietario; después confirme el tratamiento de renta y su presupuesto de flujo de efectivo.",
+      {
+        "h": "Conecte los costos locales con el cálculo DSCR"
+      },
+      "Muchos programas residenciales de inversión dividen renta mensual calificada entre pago completo, incluidos capital, intereses, impuestos, seguro y asociación aplicable. Confirme la fórmula del programa y la evidencia de renta aceptada. Presupueste por separado vacantes, administración, mantenimiento y obras de capital: cumplir la razón del prestamista no demuestra rentabilidad. <a href=\"/es/dscr-program-calculator\">Use la calculadora DSCR por programa</a> y <a href=\"/es/blog/dscr-loans-explained\">consulte la guía completa de calificación DSCR</a>.",
+      {
+        "h": "Solicite una revisión de su escenario"
+      },
+      "Stonehaven Lending es una correduría hipotecaria que gestiona financiamiento DSCR de propósito comercial a nivel nacional, con disponibilidad variable por estado, propiedad, prestamista y programa. <a href=\"/es/dscr-review\">Solicite una revisión DSCR</a> con ubicación, unidades legales, uso previsto, objetivo de compra o refinanciamiento y registros de renta y gastos disponibles."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Massachusetts Department of Revenue: determining property values",
+      "url": "https://www.mass.gov/info-details/determining-property-values",
+      "checked_at": "2026-09-12"
+    }
+  ],
+  "series": "dscr"
+}

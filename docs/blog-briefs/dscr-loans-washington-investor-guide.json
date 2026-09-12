@@ -1,0 +1,109 @@
+{
+  "slug": "dscr-loans-washington-investor-guide",
+  "date": "2026-09-12",
+  "type": "guide",
+  "en": {
+    "title": "DSCR loans in Washington: investor guide",
+    "seo_title": "DSCR loans in Washington",
+    "desc": "DSCR loans in Washington: tax-code areas and changing parcel information. Review local records, rental evidence and a practical property scenario.",
+    "eyebrow": "DSCR · Washington",
+    "terms": [
+      [
+        "Purpose",
+        "Investment rental property review"
+      ],
+      [
+        "Local focus",
+        "Tax-code areas and changing parcel information"
+      ],
+      [
+        "Availability",
+        "Varies by state, property, lender and program"
+      ]
+    ],
+    "body": [
+      "A debt service coverage ratio (DSCR) loan uses rental income to evaluate an investment property under the selected lender's rules. For rental property in Washington, this guide focuses on tax-code areas and changing parcel information. Start with the local records below before relying on a projected loan payment.",
+      {
+        "h": "Tax-code areas and changing parcel information"
+      },
+      "Washington's tax-district lookup helps identify tax-code areas and directs parcel assessment questions to the county assessor and annual bill questions to the treasurer. The tool also notes that geographic data is updated periodically. Use it to orient the review, then confirm current property-specific information with the county before final loan sizing.",
+      "State reference: <a href=\"https://webgis.dor.wa.gov/taxratelookup/PropertyTax.aspx\">Washington Department of Revenue: tax district and tax-code-area lookup</a>.",
+      {
+        "h": "Documents and questions for this property review"
+      },
+      "Record the tax-code area shown in the lookup and confirm the parcel's current account with the county. Direct valuation questions to the assessor and bill questions to the treasurer. If the map and a newer notice differ, resolve the difference before using the location-based result as the final expense input.",
+      {
+        "h": "A property review example"
+      },
+      "<strong>Hypothetical planning example, not a completed transaction.</strong> A Spokane investor compares properties near a jurisdiction boundary and sees different expenses in two listing calculators. Use the district lookup and county records to reconcile the difference. Then check lease evidence and legal-use requirements locally. A supported rent estimate still needs a correct full-payment denominator for a useful DSCR result.",
+      {
+        "h": "Can the state map alone verify my annual tax bill?"
+      },
+      "Use it as a locator, then confirm the parcel assessment and complete bill with the responsible county offices.",
+      {
+        "h": "Connect local costs to the DSCR calculation"
+      },
+      "Many residential rental programs divide qualifying monthly rent by the full housing payment, including principal, interest, taxes, insurance and applicable association dues. Confirm the selected program's formula and accepted rent evidence. Keep vacancy, management, maintenance and capital work in a separate operating budget: meeting a lender's ratio does not establish profitability. <a href=\"/dscr-program-calculator\">Use the DSCR Program Calculator</a> and <a href=\"/blog/dscr-loans-explained\">read the full DSCR qualification guide</a> for the broader framework.",
+      {
+        "h": "Request a property scenario review"
+      },
+      "Stonehaven Lending is a mortgage brokerage arranging business-purpose DSCR financing nationwide, with availability varying by state, property, lender and program. <a href=\"/dscr-review\">Request a DSCR review</a> with the property location, legal unit count, intended use, purchase or refinance goal and available rent and expense records."
+    ]
+  },
+  "es": {
+    "title": "Préstamos DSCR en Washington: guía de inversión",
+    "seo_title": "Préstamos DSCR en Washington",
+    "desc": "Préstamos DSCR en Washington: áreas de código fiscal e información de parcela. Revise registros locales, evidencia de renta y un escenario práctico.",
+    "eyebrow": "DSCR · Washington",
+    "terms": [
+      [
+        "Propósito",
+        "Revisión de propiedad de alquiler"
+      ],
+      [
+        "Enfoque local",
+        "Áreas de código fiscal e información de parcela"
+      ],
+      [
+        "Disponibilidad",
+        "Varía por estado, propiedad, prestamista y programa"
+      ]
+    ],
+    "body": [
+      "Un préstamo DSCR utiliza ingresos de alquiler para evaluar una propiedad de inversión según las reglas del prestamista. La razón DSCR mide la cobertura del servicio de la deuda. Para un alquiler en Washington, esta guía aborda áreas de código fiscal e información de parcela. Revise los registros locales antes de confiar en un pago proyectado.",
+      {
+        "h": "Áreas de código fiscal e información de parcela"
+      },
+      "El buscador de Washington identifica áreas fiscales y dirige consultas de evaluación al tasador y de factura anual al tesorero. También indica que los datos geográficos se actualizan periódicamente. Úselo para orientar la revisión y confirme después la información vigente con el condado antes de fijar el préstamo.",
+      "Fuente estatal: <a href=\"https://webgis.dor.wa.gov/taxratelookup/PropertyTax.aspx\">Washington Department of Revenue: tax district and tax-code-area lookup</a>.",
+      {
+        "h": "Documentos y preguntas para revisar esta propiedad"
+      },
+      "Anote el área fiscal del buscador y confirme la cuenta actual con el condado. Dirija preguntas de valor al tasador y de cobro al tesorero. Si mapa y aviso reciente difieren, resuelva la diferencia antes de usar el resultado geográfico como gasto definitivo.",
+      {
+        "h": "Ejemplo de revisión de una propiedad"
+      },
+      "<strong>Ejemplo hipotético de planificación, no una operación cerrada.</strong> Un inversionista de Spokane compara propiedades cerca de un límite de jurisdicción y ve gastos distintos en calculadoras de anuncios. Concilie la diferencia con el buscador y los registros del condado. Revise contratos y uso legal localmente. Una renta respaldada necesita un pago completo correcto para producir un DSCR útil.",
+      {
+        "h": "¿El mapa estatal verifica por sí solo mi factura anual?"
+      },
+      "Úselo para localizar y confirme después evaluación y factura completa con las oficinas responsables del condado.",
+      {
+        "h": "Conecte los costos locales con el cálculo DSCR"
+      },
+      "Muchos programas residenciales de inversión dividen renta mensual calificada entre pago completo, incluidos capital, intereses, impuestos, seguro y asociación aplicable. Confirme la fórmula del programa y la evidencia de renta aceptada. Presupueste por separado vacantes, administración, mantenimiento y obras de capital: cumplir la razón del prestamista no demuestra rentabilidad. <a href=\"/es/dscr-program-calculator\">Use la calculadora DSCR por programa</a> y <a href=\"/es/blog/dscr-loans-explained\">consulte la guía completa de calificación DSCR</a>.",
+      {
+        "h": "Solicite una revisión de su escenario"
+      },
+      "Stonehaven Lending es una correduría hipotecaria que gestiona financiamiento DSCR de propósito comercial a nivel nacional, con disponibilidad variable por estado, propiedad, prestamista y programa. <a href=\"/es/dscr-review\">Solicite una revisión DSCR</a> con ubicación, unidades legales, uso previsto, objetivo de compra o refinanciamiento y registros de renta y gastos disponibles."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Washington Department of Revenue: tax district and tax-code-area lookup",
+      "url": "https://webgis.dor.wa.gov/taxratelookup/PropertyTax.aspx",
+      "checked_at": "2026-09-12"
+    }
+  ],
+  "series": "dscr"
+}

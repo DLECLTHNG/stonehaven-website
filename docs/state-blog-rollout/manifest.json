@@ -1,0 +1,399 @@
+{
+  "prepared": "2026-09-12",
+  "base_commit": "afea0aa",
+  "publication_status": "review_branch",
+  "records": [
+    {
+      "state": "Alabama",
+      "state_code": "AL",
+      "program": "dscr",
+      "action": "new_article",
+      "slug": "dscr-loans-alabama-investor-guide"
+    },
+    {
+      "state": "Alaska",
+      "state_code": "AK",
+      "program": "dscr",
+      "action": "new_article",
+      "slug": "dscr-loans-alaska-investor-guide"
+    },
+    {
+      "state": "Arizona",
+      "state_code": "AZ",
+      "program": "dscr",
+      "action": "new_article",
+      "slug": "dscr-loans-arizona-investor-guide"
+    },
+    {
+      "state": "Arkansas",
+      "state_code": "AR",
+      "program": "dscr",
+      "action": "new_article",
+      "slug": "dscr-loans-arkansas-investor-guide"
+    },
+    {
+      "state": "California",
+      "state_code": "CA",
+      "program": "dscr",
+      "action": "new_article",
+      "slug": "dscr-loans-california-investor-guide"
+    },
+    {
+      "state": "Colorado",
+      "state_code": "CO",
+      "program": "dscr",
+      "action": "new_article",
+      "slug": "dscr-loans-colorado-investor-guide"
+    },
+    {
+      "state": "Connecticut",
+      "state_code": "CT",
+      "program": "dscr",
+      "action": "new_article",
+      "slug": "dscr-loans-connecticut-investor-guide"
+    },
+    {
+      "state": "Delaware",
+      "state_code": "DE",
+      "program": "dscr",
+      "action": "new_article",
+      "slug": "dscr-loans-delaware-investor-guide"
+    },
+    {
+      "state": "Florida",
+      "state_code": "FL",
+      "program": "dscr",
+      "action": "new_article",
+      "slug": "dscr-loans-florida-investor-guide"
+    },
+    {
+      "state": "Georgia",
+      "state_code": "GA",
+      "program": "dscr",
+      "action": "expand_existing",
+      "slug": "dscr-loans-georgia-investor-guide"
+    },
+    {
+      "state": "Hawaii",
+      "state_code": "HI",
+      "program": "dscr",
+      "action": "new_article",
+      "slug": "dscr-loans-hawaii-investor-guide"
+    },
+    {
+      "state": "Idaho",
+      "state_code": "ID",
+      "program": "dscr",
+      "action": "new_article",
+      "slug": "dscr-loans-idaho-investor-guide"
+    },
+    {
+      "state": "Illinois",
+      "state_code": "IL",
+      "program": "dscr",
+      "action": "new_article",
+      "slug": "dscr-loans-illinois-investor-guide"
+    },
+    {
+      "state": "Indiana",
+      "state_code": "IN",
+      "program": "dscr",
+      "action": "new_article",
+      "slug": "dscr-loans-indiana-investor-guide"
+    },
+    {
+      "state": "Iowa",
+      "state_code": "IA",
+      "program": "dscr",
+      "action": "new_article",
+      "slug": "dscr-loans-iowa-investor-guide"
+    },
+    {
+      "state": "Kansas",
+      "state_code": "KS",
+      "program": "dscr",
+      "action": "new_article",
+      "slug": "dscr-loans-kansas-investor-guide"
+    },
+    {
+      "state": "Kentucky",
+      "state_code": "KY",
+      "program": "dscr",
+      "action": "new_article",
+      "slug": "dscr-loans-kentucky-investor-guide"
+    },
+    {
+      "state": "Louisiana",
+      "state_code": "LA",
+      "program": "dscr",
+      "action": "new_article",
+      "slug": "dscr-loans-louisiana-investor-guide"
+    },
+    {
+      "state": "Maine",
+      "state_code": "ME",
+      "program": "dscr",
+      "action": "new_article",
+      "slug": "dscr-loans-maine-investor-guide"
+    },
+    {
+      "state": "Maryland",
+      "state_code": "MD",
+      "program": "dscr",
+      "action": "new_article",
+      "slug": "dscr-loans-maryland-investor-guide"
+    },
+    {
+      "state": "Massachusetts",
+      "state_code": "MA",
+      "program": "dscr",
+      "action": "new_article",
+      "slug": "dscr-loans-massachusetts-investor-guide"
+    },
+    {
+      "state": "Michigan",
+      "state_code": "MI",
+      "program": "dscr",
+      "action": "new_article",
+      "slug": "dscr-loans-michigan-investor-guide"
+    },
+    {
+      "state": "Minnesota",
+      "state_code": "MN",
+      "program": "dscr",
+      "action": "new_article",
+      "slug": "dscr-loans-minnesota-investor-guide"
+    },
+    {
+      "state": "Mississippi",
+      "state_code": "MS",
+      "program": "dscr",
+      "action": "new_article",
+      "slug": "dscr-loans-mississippi-investor-guide"
+    },
+    {
+      "state": "Missouri",
+      "state_code": "MO",
+      "program": "dscr",
+      "action": "new_article",
+      "slug": "dscr-loans-missouri-investor-guide"
+    },
+    {
+      "state": "Montana",
+      "state_code": "MT",
+      "program": "dscr",
+      "action": "new_article",
+      "slug": "dscr-loans-montana-investor-guide"
+    },
+    {
+      "state": "Nebraska",
+      "state_code": "NE",
+      "program": "dscr",
+      "action": "new_article",
+      "slug": "dscr-loans-nebraska-investor-guide"
+    },
+    {
+      "state": "Nevada",
+      "state_code": "NV",
+      "program": "dscr",
+      "action": "new_article",
+      "slug": "dscr-loans-nevada-investor-guide"
+    },
+    {
+      "state": "New Hampshire",
+      "state_code": "NH",
+      "program": "dscr",
+      "action": "new_article",
+      "slug": "dscr-loans-new-hampshire-investor-guide"
+    },
+    {
+      "state": "New Jersey",
+      "state_code": "NJ",
+      "program": "dscr",
+      "action": "new_article",
+      "slug": "dscr-loans-new-jersey-investor-guide"
+    },
+    {
+      "state": "New Mexico",
+      "state_code": "NM",
+      "program": "dscr",
+      "action": "new_article",
+      "slug": "dscr-loans-new-mexico-investor-guide"
+    },
+    {
+      "state": "New York",
+      "state_code": "NY",
+      "program": "dscr",
+      "action": "new_article",
+      "slug": "dscr-loans-new-york-investor-guide"
+    },
+    {
+      "state": "North Carolina",
+      "state_code": "NC",
+      "program": "dscr",
+      "action": "new_article",
+      "slug": "dscr-loans-north-carolina-investor-guide"
+    },
+    {
+      "state": "North Dakota",
+      "state_code": "ND",
+      "program": "dscr",
+      "action": "new_article",
+      "slug": "dscr-loans-north-dakota-investor-guide"
+    },
+    {
+      "state": "Ohio",
+      "state_code": "OH",
+      "program": "dscr",
+      "action": "new_article",
+      "slug": "dscr-loans-ohio-investor-guide"
+    },
+    {
+      "state": "Oklahoma",
+      "state_code": "OK",
+      "program": "dscr",
+      "action": "new_article",
+      "slug": "dscr-loans-oklahoma-investor-guide"
+    },
+    {
+      "state": "Oregon",
+      "state_code": "OR",
+      "program": "dscr",
+      "action": "new_article",
+      "slug": "dscr-loans-oregon-investor-guide"
+    },
+    {
+      "state": "Pennsylvania",
+      "state_code": "PA",
+      "program": "dscr",
+      "action": "new_article",
+      "slug": "dscr-loans-pennsylvania-investor-guide"
+    },
+    {
+      "state": "Rhode Island",
+      "state_code": "RI",
+      "program": "dscr",
+      "action": "new_article",
+      "slug": "dscr-loans-rhode-island-investor-guide"
+    },
+    {
+      "state": "South Carolina",
+      "state_code": "SC",
+      "program": "dscr",
+      "action": "new_article",
+      "slug": "dscr-loans-south-carolina-investor-guide"
+    },
+    {
+      "state": "South Dakota",
+      "state_code": "SD",
+      "program": "dscr",
+      "action": "new_article",
+      "slug": "dscr-loans-south-dakota-investor-guide"
+    },
+    {
+      "state": "Tennessee",
+      "state_code": "TN",
+      "program": "dscr",
+      "action": "new_article",
+      "slug": "dscr-loans-tennessee-investor-guide"
+    },
+    {
+      "state": "Texas",
+      "state_code": "TX",
+      "program": "dscr",
+      "action": "new_article",
+      "slug": "dscr-loans-texas-investor-guide"
+    },
+    {
+      "state": "Utah",
+      "state_code": "UT",
+      "program": "dscr",
+      "action": "new_article",
+      "slug": "dscr-loans-utah-investor-guide"
+    },
+    {
+      "state": "Vermont",
+      "state_code": "VT",
+      "program": "dscr",
+      "action": "new_article",
+      "slug": "dscr-loans-vermont-investor-guide"
+    },
+    {
+      "state": "Virginia",
+      "state_code": "VA",
+      "program": "dscr",
+      "action": "new_article",
+      "slug": "dscr-loans-virginia-investor-guide"
+    },
+    {
+      "state": "Washington",
+      "state_code": "WA",
+      "program": "dscr",
+      "action": "new_article",
+      "slug": "dscr-loans-washington-investor-guide"
+    },
+    {
+      "state": "West Virginia",
+      "state_code": "WV",
+      "program": "dscr",
+      "action": "new_article",
+      "slug": "dscr-loans-west-virginia-investor-guide"
+    },
+    {
+      "state": "Wisconsin",
+      "state_code": "WI",
+      "program": "dscr",
+      "action": "new_article",
+      "slug": "dscr-loans-wisconsin-investor-guide"
+    },
+    {
+      "state": "Wyoming",
+      "state_code": "WY",
+      "program": "dscr",
+      "action": "new_article",
+      "slug": "dscr-loans-wyoming-investor-guide"
+    },
+    {
+      "state": "Georgia",
+      "state_code": "GA",
+      "program": "family",
+      "action": "new_article",
+      "slug": "family-opportunity-mortgage-georgia"
+    },
+    {
+      "state": "Alabama",
+      "state_code": "AL",
+      "program": "family",
+      "action": "new_article",
+      "slug": "family-opportunity-mortgage-alabama"
+    },
+    {
+      "state": "Tennessee",
+      "state_code": "TN",
+      "program": "family",
+      "action": "new_article",
+      "slug": "family-opportunity-mortgage-tennessee"
+    },
+    {
+      "state": "Florida",
+      "state_code": "FL",
+      "program": "family",
+      "action": "new_article",
+      "slug": "family-opportunity-mortgage-florida"
+    },
+    {
+      "state": "North Carolina",
+      "state_code": "NC",
+      "program": "family",
+      "action": "new_article",
+      "slug": "family-opportunity-mortgage-north-carolina"
+    },
+    {
+      "state": "South Carolina",
+      "state_code": "SC",
+      "program": "family",
+      "action": "new_article",
+      "slug": "family-opportunity-mortgage-south-carolina"
+    }
+  ]
+}
