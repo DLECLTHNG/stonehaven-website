@@ -48,3 +48,21 @@ window.SH_CONFIG = {
   /* Network behavior for form delivery */
   submitTimeoutMs: 15000
 };
+
+/* Load the dedicated ad integration without delaying form initialization. */
+(function () {
+  var body = document.body;
+  if (!body || body.getAttribute("data-fo-sensitive") === "1" ||
+      body.getAttribute("data-fo-kind") === "confirm" || navigator.globalPrivacyControl === true) return;
+  window.shChatGPTPending = window.shChatGPTPending || [];
+  window.shChatGPTLead = window.shChatGPTLead || function (id) {
+    return new Promise(function (resolve) {
+      window.shChatGPTPending.push({ id: id, resolve: resolve });
+      setTimeout(resolve, 1000);
+    });
+  };
+  var script = document.createElement("script");
+  script.src = "/js/chatgpt-pixel.js?v=1";
+  script.async = true;
+  document.head.appendChild(script);
+})();

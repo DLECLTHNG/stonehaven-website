@@ -246,7 +246,9 @@
         ev("inquiry_submitted");
         ev("generate_lead");
         if (pixel && !j.dry_run) { try { window.fbq("track", "Lead", {}, { eventID: eid }); } catch (e3) {} }
-        window.location.assign("/request-received");
+        var chatGPTConversion;
+        try { if (AD_TAGS_ALLOWED && !j.dry_run && window.shChatGPTLead) chatGPTConversion = window.shChatGPTLead(eid); } catch (e4) {}
+        Promise.resolve(chatGPTConversion).then(function () { window.location.assign("/request-received"); });
         return;
       }
       if (res.status === 400 && j.errors) {
