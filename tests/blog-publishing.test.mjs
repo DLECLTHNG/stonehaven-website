@@ -43,6 +43,18 @@ test('repeat publication refuses before changing either index or routing file', 
   assert.notEqual(f.publish().status, 0);
   assert.deepEqual(files.map(f.read), before);
 });
+test('partner guides use bilingual contact invitations without offering compensation', t => {
+  const f = fixture(t);
+  assert.notEqual(f.publish({...f.brief, audience: 'partners', product: 'HELOC'}).status, 0);
+  assert.equal(f.publish({...f.brief, audience: 'partners'}).status, 0);
+  const en = f.read('blog/publishing-test.html');
+  const es = f.read('es/blog/publishing-test.html');
+  assert.ok(en.includes('href="/contact#inquire"'));
+  assert.ok(es.includes('href="/es/contact"'));
+  assert.ok(en.includes('does not offer or promise referral compensation'));
+  assert.ok(es.includes('no ofrece ni promete compensación'));
+  assert.ok(!en.includes('Have a Similar Deal?'));
+});
 test('invalid Spanish content and unsafe slugs fail before English output', t => {
   const f = fixture(t);
   const before = f.read('blog.html');

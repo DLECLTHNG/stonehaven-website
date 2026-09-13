@@ -1,0 +1,102 @@
+{
+  "slug": "commercial-mortgage-referrals-cpas-attorneys",
+  "en": {
+    "title": "Commercial Mortgage Referrals for CPAs and Attorneys",
+    "desc": "A guide to introducing clients with rental-property, commercial real estate and business-premises financing questions while protecting client information.",
+    "eyebrow": "Referral partners",
+    "terms": [
+      [
+        "For",
+        "CPAs, attorneys and professional advisers"
+      ],
+      [
+        "Financing questions",
+        "Commercial property, rental real estate and business premises"
+      ],
+      [
+        "Initial inquiry",
+        "General scenario, timing and client permission"
+      ]
+    ],
+    "body": [
+      "A financing question often emerges during an accounting or legal conversation. A business owner is considering purchasing premises. A rental-property client has a loan approaching maturity. A transaction needs financing terms before advisers can evaluate the broader plan. A mortgage introduction can help identify the lending questions that need answers.",
+      "Stonehaven Lending is a mortgage brokerage arranging financing through third-party lenders. We welcome professional introductions for commercial real estate, rental-property and business-premises scenarios. The legal, tax and accounting conclusions remain with the client’s advisers.",
+      {
+        "h": "Identify the decision the client needs to make"
+      },
+      "For an owner-occupied business property, explain whether the client is purchasing, refinancing or considering a move from leased space. The relevant financing path may involve <a href=\"/commercial\">commercial real estate lending</a> or an <a href=\"/sba\">SBA program</a>, depending on the facts. Mention the operating business, property use and intended ownership structure without assuming eligibility.",
+      "For a rental-property owner, distinguish acquisition financing from a refinance or cash-out request. The current balance, loan maturity, use of proceeds and intended occupancy can change the review. A <a href=\"/dscr\">DSCR discussion</a> is a product conversation, not a substitute for determining the transaction’s actual purpose.",
+      "For a transaction in progress, identify the financing deadline and the question blocking the next decision. It might be a requested loan amount, property type, ownership change or document requirement. An initial review is more useful when it addresses one defined issue rather than a general request for the best loan.",
+      {
+        "h": "Share enough to frame the scenario"
+      },
+      "A first introduction can identify your professional role, the property state and type, approximate value or price, requested amount, financing purpose and timing. Discuss with the client who should participate in the next conversation. If identifying information is not yet necessary, start with a general description.",
+      "Do not send tax returns, privileged communications, account statements or other sensitive records through a public inquiry form. Obtain the client’s permission before sharing information, and use the appropriate document process if the financing review proceeds. Clarify what updates may be returned to your office.",
+      {
+        "h": "Keep the adviser’s role clear"
+      },
+      "A lender’s acceptance of an ownership structure does not establish its tax or legal suitability. Similarly, a planning estimate does not confirm that financing is available. Coordinating these questions can help the client understand which decisions depend on underwriting and which belong with professional advisers.",
+      "Before making an introduction, consider your professional obligations, conflicts and confidentiality requirements. <a href=\"https://www.aicpa-cima.com/resources/article/professional-responsibilities\">AICPA guidance</a> addresses commission and referral-fee disclosure among members’ responsibilities. Attorneys should evaluate their own jurisdiction’s professional-conduct rules. Disclosure alone does not authorize a payment prohibited by another law.",
+      {
+        "h": "No automatic compensation arrangement"
+      },
+      "This page invites professional conversations and does not offer referral compensation. Any proposed commercial relationship needs a separate review of the transaction, applicable states, parties and professional restrictions. Do not infer that a business-purpose loan permits every professional to receive a fee.",
+      {
+        "h": "Connect the financing question with the right next step"
+      },
+      "<a href=\"/contact#inquire\">Introduce your practice to Stonehaven</a> and describe the types of client questions you encounter. For an active scenario, include the timing and a non-sensitive summary. Ask which information is needed next before sharing a full file.",
+      "Clients with managed rentals may also benefit from <a href=\"/blog/dscr-referral-partners-property-managers\">our property-manager guide</a>. For a mortgage professional working alongside your office, see <a href=\"/blog/mortgage-broker-dscr-commercial-referral-partner\">our guide to broker scenario introductions</a>."
+    ]
+  },
+  "es": {
+    "title": "Referencias de hipotecas comerciales para contadores y abogados",
+    "desc": "Cómo presentar clientes con preguntas sobre inmuebles comerciales, alquileres y locales de negocios, protegiendo su información y el papel de sus asesores.",
+    "eyebrow": "Relaciones profesionales",
+    "terms": [
+      [
+        "Dirigido a",
+        "Contadores, abogados y asesores profesionales"
+      ],
+      [
+        "Consultas",
+        "Inmuebles comerciales, alquileres y locales de negocios"
+      ],
+      [
+        "Primer contacto",
+        "Resumen, plazo y permiso del cliente"
+      ]
+    ],
+    "body": [
+      "Una pregunta de financiamiento puede surgir durante una consulta contable o legal. Un empresario considera comprar un local. Un propietario de alquileres tiene un préstamo próximo a vencer. Una operación necesita aclarar el financiamiento antes de evaluar el plan completo. Una presentación hipotecaria puede ayudar a identificar las preguntas que deben resolverse.",
+      "Stonehaven Lending gestiona financiamiento mediante prestamistas externos. Recibimos presentaciones profesionales relacionadas con bienes raíces comerciales, alquileres y locales de negocios. Las conclusiones legales, fiscales y contables corresponden a los asesores del cliente.",
+      {
+        "h": "Identifique la decisión del cliente"
+      },
+      "Para un inmueble ocupado por el negocio, explique si el cliente comprará, refinanciará o dejará un espacio arrendado. El camino puede incluir <a href=\"/es/commercial\">financiamiento comercial</a> o un <a href=\"/es/sba\">programa SBA</a>, según el caso. Describa el negocio, uso del inmueble y estructura de propiedad prevista sin asumir elegibilidad.",
+      "Para un propietario de alquileres, distinga una adquisición de un refinanciamiento o retiro de capital. El saldo, vencimiento, destino de los fondos y ocupación pueden cambiar la revisión. Conversar sobre <a href=\"/es/dscr\">DSCR</a> no sustituye la determinación del propósito real.",
+      "En una operación en curso, indique el plazo de financiamiento y la pregunta que impide avanzar. Puede tratarse del monto, tipo de inmueble, cambio de propietario o documentos. Una revisión inicial resulta más útil cuando aborda un asunto definido.",
+      {
+        "h": "Comparta lo necesario para entender el caso"
+      },
+      "La primera presentación puede incluir su función profesional, estado y tipo de inmueble, valor o precio aproximado, monto, propósito y plazo. Acuerde con el cliente quién participará en la siguiente conversación. Si todavía no hacen falta datos identificativos, comience con una descripción general.",
+      "No envíe declaraciones fiscales, comunicaciones privilegiadas, estados de cuenta ni documentos sensibles mediante un formulario público. Obtenga permiso del cliente y utilice el proceso apropiado si avanza la revisión. Aclare qué actualizaciones puede recibir su oficina.",
+      {
+        "h": "Mantenga claro el papel del asesor"
+      },
+      "Que un prestamista acepte una estructura de propiedad no demuestra su conveniencia legal o fiscal. Una estimación tampoco confirma la disponibilidad del préstamo. Coordinar las preguntas ayuda a distinguir las decisiones de suscripción de las que corresponden a los asesores.",
+      "Antes de la presentación, considere sus obligaciones profesionales, conflictos y confidencialidad. La <a href=\"https://www.aicpa-cima.com/resources/article/professional-responsibilities\">guía de AICPA</a> incluye responsabilidades sobre divulgación de comisiones y pagos por referencias. Los abogados deben evaluar las reglas de su jurisdicción. Divulgar un pago no autoriza algo prohibido por otra ley.",
+      {
+        "h": "No existe un acuerdo automático de compensación"
+      },
+      "Esta página invita a conversar y no ofrece pagos por referencias. Cualquier relación comercial propuesta requiere revisar la operación, los estados, las partes y las restricciones profesionales. Un propósito comercial no significa que cualquier profesional pueda recibir una comisión.",
+      {
+        "h": "Defina el siguiente paso"
+      },
+      "<a href=\"/es/contact\">Presente su práctica a Stonehaven</a> y describa las preguntas de sus clientes. Para un caso activo, incluya el plazo y un resumen sin datos privados. Pregunte qué información hace falta antes de compartir un expediente.",
+      "También puede consultar <a href=\"/es/blog/dscr-referral-partners-property-managers\">la guía para administradores de propiedades</a> y <a href=\"/es/blog/mortgage-broker-dscr-commercial-referral-partner\">la guía de presentaciones entre profesionales hipotecarios</a>."
+    ]
+  },
+  "date": "2026-09-13",
+  "type": "guide",
+  "audience": "partners"
+}
