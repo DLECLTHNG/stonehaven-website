@@ -243,6 +243,8 @@
         // One event_id shared by the browser pixel and the server relay,
         // so Meta deduplicates the two copies of the conversion.
         var eventId = "sh-" + payload.page + "-" + Date.now() + "-" + Math.floor(Math.random() * 1e6);
+        var chatGPTConversion;
+        try { if (window.shChatGPTLead) chatGPTConversion = window.shChatGPTLead(eventId); } catch (e) {}
         track(evt, { page: payload.page, product: payload.product }, { eventID: eventId });
         if (form.hasAttribute("data-sh-capi")) {
           try {
@@ -254,7 +256,7 @@
             }).catch(function () {});
           } catch (e) {}
         }
-        if (thanks) window.location.href = thanks;
+        if (thanks) Promise.resolve(chatGPTConversion).then(function () { window.location.href = thanks; });
         else {
           form.style.display = "none";
           var ok = form.parentElement.querySelector(".lead-success");
