@@ -160,7 +160,7 @@ def body(p):
 <section class="lead" id="review"><div class="wrap"><div class="lead-card reveal" style="text-align:center;">
   <span class="eyebrow">Start Here</span>
   <h2>Put the scenario in front of a specialist</h2>
-  <p class="sub">Rough numbers are enough to start. The review compares the paths that actually fit, and says so when a different one wins.</p>
+  <p class="sub">Share the rough numbers and your mobile number. A specialist will follow up by text to review the financing paths that fit your scenario.</p>
   <div style="margin-top:20px;display:flex;flex-direction:column;align-items:center;gap:14px;"><a class="btn-primary" href="/dscr-review">Review My Deal</a><a class="btn-quiet" href="/dscr-analyzer">Calculate My DSCR</a></div>
   <p style="font-size:12px;color:var(--stone-400);max-width:560px;margin:16px auto 0;line-height:1.6;">%(disc)s</p>
 </div></div></section>

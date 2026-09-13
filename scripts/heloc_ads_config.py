@@ -116,5 +116,5 @@ dict(slug="keep-your-rate", ad="LOCK IN HERO", purpose="Home improvement",
  modules=[dict(type="diagram"), dict(type="estimator")],
  faqs=[("Does keeping my rate mean my monthly costs do not change?","No. Your first mortgage payment is unchanged; the HELOC adds its own second payment with its own costs. Total monthly outgo goes up by the HELOC payment."),
        ("Is this a refinance?","No. The first mortgage is not refinanced or changed. The HELOC is a separate second lien on the same home."),
-       ("How fast can I see a number?","The estimate is instant from the value and balance you enter. A specialist confirms the real figure on a callback, usually within one business day.")]),
+       ("How fast can I see a number?","The estimate is instant from the value and balance you enter. A specialist confirms the real figure by text, usually within one business day.")]),
 ]

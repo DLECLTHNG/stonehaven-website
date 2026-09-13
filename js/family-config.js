@@ -9,7 +9,7 @@ window.SH_FAMILY = {
     "NC",
     "SC"
   ],
-  "noticeVersion": "fo-notice-2026-09-11",
+  "noticeVersion": "fo-notice-2026-09-13",
   "phoneE164": "+14709704979",
   "phoneDisplay": "(470) 970-4979",
   "timeoutMs": 15000,

@@ -215,11 +215,11 @@ def body(p):
     <div class="lf-field full"><label for="f-email">Email</label><input id="f-email" type="email" name="email" autocomplete="email" required/></div>
     <p class="pp-geo" id="pi-geo" hidden>Thank you for your interest. Stonehaven does not currently arrange home loans in that state; we serve GA, AL, TN, FL, NC and SC.</p>
     <div class="lead-actions">
-      <span class="note">We treat every inquiry in confidence. No hard credit pull at this stage. By submitting, you agree Stonehaven may contact you about your inquiry by phone, email or text. Consent is not a condition of service.</span>
+      <span class="note">We treat every inquiry in confidence. No hard credit pull at this stage. By submitting, you agree Stonehaven may contact you about your inquiry by text or email. Consent is not a condition of service.</span>
       <button type="submit" class="lead-submit">Compare my options</button>
     </div>
   </form>
-  <div class="lead-success" id="leadSuccess"><div class="ok">Thank you, received.</div><p>A licensed specialist will call you back, usually within one business day.</p></div>
+  <div class="lead-success" id="leadSuccess"><div class="ok">Thank you, received.</div><p>A licensed specialist will text you, usually within one business day.</p></div>
 </div></div></section>
 
 <section class="faq"><div class="wrap">
@@ -229,7 +229,7 @@ def body(p):
 
 <section class="lead"><div class="wrap"><div class="lead-card reveal" style="text-align:center;">
   <span class="eyebrow">When You Are Ready</span>
-  <h2>One comparison, one callback</h2>
+  <h2>Compare your options by text</h2>
   <p class="sub">Start above, or call <a href="tel:+14709704979">(470) 970-4979</a>. A licensed specialist handles it personally.</p>
   <div style="margin-top:20px;"><a class="btn-primary" href="#intake" data-cta="final">Compare my options</a></div>
 </div></div></section>
