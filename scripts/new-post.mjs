@@ -8,6 +8,8 @@ if (!/^\d{4}-\d{2}-\d{2}$/.test(b.date || '')) throw new Error('date must be YYY
 if (new Date(b.date).toISOString().slice(0, 10) !== b.date || b.date > new Date().toISOString().slice(0, 10)) throw new Error('Use a real publication date that is not in the future');
 if (!['guide', 'closing'].includes(b.type)) throw new Error('type must be guide or closing');
 if (b.product && !['HELOC', 'DSCR', 'Family'].includes(b.product)) throw new Error('Unsupported product');
+if (b.audience && b.audience !== 'partners') throw new Error('Unsupported audience');
+if (b.audience === 'partners' && b.product) throw new Error('Partner guides use their own contact CTA');
 if (b.product === 'Family' && !['parents', 'adult-child'].includes(b.familyAudience)) throw new Error('Choose a Family audience');
 for (const lang of ['en', 'es']) {
   const p = b[lang];
@@ -35,6 +37,8 @@ for(const lang of ['en','es']){
    .replace(/<meta name="description" content="[^"]*"\/>/,`<meta name="description" content="${esc(p.desc)}"/>`)
    .replace(/<meta property="og:title" content="[^"]*"\/>/,`<meta property="og:title" content="${esc(p.title)}"/>`)
    .replace(/<meta property="og:description" content="[^"]*"\/>/,`<meta property="og:description" content="${esc(p.desc)}"/>`)
+   .replace(/<meta name="twitter:title" content="[^"]*"\/>/,`<meta name="twitter:title" content="${esc(p.title)}"/>`)
+   .replace(/<meta name="twitter:description" content="[^"]*"\/>/,`<meta name="twitter:description" content="${esc(p.desc)}"/>`)
    .replace(/https:\/\/stonehavencre\.com\/(es\/)?blog"/g,m=>m) // hreflang handled below
    .replace(/<link rel="canonical" href="[^"]*"\/>/,`<link rel="canonical" href="https://stonehavencre.com${path}"/>`)
    .replace(/hreflang="en" href="[^"]*"/,`hreflang="en" href="https://stonehavencre.com/blog/${b.slug}"`)
@@ -63,6 +67,13 @@ ${shell.slice(shell.indexOf('<section class="lead">'),shell.indexOf('</main>'))}
   const prefix = lang === 'es' ? '/es' : '';
   const policy = `<p class="editorial-note" style="margin-top:22px;font-size:13px;"><a href="${prefix}/editorial-policy">${lang === 'es' ? 'Criterios editoriales y correcciones' : 'Editorial standards and corrections'}</a> · <a href="/management">${lang === 'es' ? 'Nuestro equipo' : 'Meet the team'}</a></p>`;
   out = out.replace('</article>', policy + '\n</article>');
+  if (b.audience === 'partners') {
+    out = out.replace(/(<p style="margin-top:22px;font-size:13px;color:var\(--stone-400\);line-height:1\.7;">)[\s\S]*?<\/p>/, (_, start) => start + (lang === 'es' ? 'Comience con su función profesional y la pregunta de financiamiento. La revisión inicial no constituye aprobación.' : 'Start with your professional role and financing question. An initial review is not approval.') + '</p>');
+    const cta = lang === 'es'
+      ? ['Conversemos sobre una relación profesional', 'Indique su nombre, empresa, función profesional y los estados o tipos de inmuebles con los que trabaja. No incluya documentos privados de clientes.', 'Contactar a Stonehaven', 'Esta invitación no ofrece ni promete compensación por referencias. Cualquier acuerdo propuesto requiere una revisión independiente.']
+      : ['Start a referral partner conversation', 'Tell us your name, firm, professional role, and the states or property types you work with. Leave private client documents out of the initial inquiry.', 'Contact Stonehaven', 'This invitation does not offer or promise referral compensation. Any proposed arrangement requires separate review.'];
+    out = out.replace(/<section class="lead">[\s\S]*?<\/section>/, `<section class="lead"><div class="wrap"><div class="lead-card"><h2>${cta[0]}</h2><p class="sub">${cta[1]}</p><p><a class="btn-primary" href="${prefix}/contact${lang === 'es' ? '' : '#inquire'}">${cta[2]}</a></p><p class="fine">${cta[3]}</p><p class="fine">${disclosures[b.type][lang]}</p></div></div></section>`);
+  }
   if (b.product === 'HELOC') {
     const cta = lang === 'es'
       ? ['Revise sus opciones de HELOC', 'Empiece con el valor estimado de su vivienda, el saldo hipotecario y el monto que desea solicitar.', 'Solicitar una revisión']
