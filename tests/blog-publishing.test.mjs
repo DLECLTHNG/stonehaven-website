@@ -28,6 +28,10 @@ test('publishes a bilingual guide, links, metadata and retained brief', t => {
     assert.ok(!page.includes('Las reseñas ilustran operaciones ya cerradas.'));
     assert.ok(page.includes(prefix ? 'ejemplos hipotéticos' : 'hypothetical examples'));
     assert.ok(page.includes('content="A &quot;quoted&quot; description"'));
+    assert.ok(page.includes('property="og:type" content="article"'));
+    const article = JSON.parse(page.match(/<script type="application\/ld\+json">(.*?)<\/script>/s)[1]);
+    assert.equal(article.mainEntityOfPage['@id'], `https://stonehavencre.com/${prefix}blog/publishing-test`);
+    assert.equal(article.author.url, 'https://stonehavencre.com/management');
     assert.equal(f.read('sitemap.xml').split(`<loc>https://stonehavencre.com/${prefix}blog/publishing-test</loc>`).length - 1, 1);
     assert.equal(f.read('_redirects').split(`/${prefix}blog/publishing-test.html /${prefix}blog/publishing-test 301!`).length - 1, 1);
     const index = f.read(`${prefix}blog.html`);

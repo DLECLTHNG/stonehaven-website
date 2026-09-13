@@ -35,6 +35,7 @@ for(const lang of ['en','es']){
   let shell=fs.readFileSync(idx[lang],'utf8');
   shell=shell.replace(/<title>[^<]*<\/title>/,`<title>${esc(p.title)} | Stonehaven Lending</title>`)
    .replace(/<meta name="description" content="[^"]*"\/>/,`<meta name="description" content="${esc(p.desc)}"/>`)
+   .replace(/<meta property="og:type" content="[^"]*"\/>/, '<meta property="og:type" content="article"/>')
    .replace(/<meta property="og:title" content="[^"]*"\/>/,`<meta property="og:title" content="${esc(p.title)}"/>`)
    .replace(/<meta property="og:description" content="[^"]*"\/>/,`<meta property="og:description" content="${esc(p.desc)}"/>`)
    .replace(/<meta name="twitter:title" content="[^"]*"\/>/,`<meta name="twitter:title" content="${esc(p.title)}"/>`)
@@ -45,7 +46,7 @@ for(const lang of ['en','es']){
    .replace(/hreflang="es" href="[^"]*"/,`hreflang="es" href="https://stonehavencre.com/es/blog/${b.slug}"`)
    .replace(/hreflang="x-default" href="[^"]*"/,`hreflang="x-default" href="https://stonehavencre.com/blog/${b.slug}"`)
    .replace(/<meta property="og:url" content="[^"]*"\/>/,`<meta property="og:url" content="https://stonehavencre.com${path}"/>`)
-   .replace(/<script type="application\/ld\+json">.*?<\/script>/s,`<script type="application/ld+json">${JSON.stringify({"@context":"https://schema.org","@type":"BlogPosting","headline":p.title,"description":p.desc,"datePublished":b.date,"dateModified":b.date,"inLanguage":lang,"url":"https://stonehavencre.com"+path,"author":{"@type":"Organization","name":"Stonehaven Lending"},"publisher":{"@type":"Organization","name":"Stonehaven Lending","url":"https://stonehavencre.com/","identifier":{"@type":"PropertyValue","propertyID":"NMLS","value":"1752355"}},"isPartOf":{"@type":"Blog","url":"https://stonehavencre.com"+(lang==='es'?'/es':'')+"/blog"}})}</script>`);
+   .replace(/<script type="application\/ld\+json">.*?<\/script>/s,`<script type="application/ld+json">${JSON.stringify({"@context":"https://schema.org","@type":"BlogPosting","@id":"https://stonehavencre.com"+path+"#article","mainEntityOfPage":{"@type":"WebPage","@id":"https://stonehavencre.com"+path},"articleSection":p.eyebrow,"headline":p.title,"description":p.desc,"datePublished":b.date,"dateModified":b.date,"inLanguage":lang,"url":"https://stonehavencre.com"+path,"author":{"@type":"Organization","name":"Stonehaven Lending","url":"https://stonehavencre.com/management"},"publisher":{"@type":"Organization","name":"Stonehaven Lending","url":"https://stonehavencre.com/","identifier":{"@type":"PropertyValue","propertyID":"NMLS","value":"1752355"}},"isPartOf":{"@type":"Blog","url":"https://stonehavencre.com"+(lang==='es'?'/es':'')+"/blog"}})}</script>`);
   // depth fix: post lives one level deeper
   shell=shell.replace(/(href|src)="(\.\.\/)?(assets\/|styles\.css|funnel\.css|js\/)/g,(m,a,_,c)=>`${a}="${lang==='es'?'../../':'../'}${c}`);
   const body=p.body.map(x=>typeof x==='string'?`<p style="margin-top:16px;">${x}</p>`:`<h2 style="margin-top:28px;font-size:22px;">${x.h}</h2>`).join('\n');
