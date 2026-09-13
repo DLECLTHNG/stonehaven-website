@@ -32,7 +32,7 @@ Key facts:
 - [HELOC / Home Equity](https://stonehavencre.com/heloc): borrow against equity without changing the current first-mortgage rate; includes a HELOC vs home-equity-loan vs cash-out comparison
 - [Cash-Out Refinance](https://stonehavencre.com/cash-out-refinance): replace the mortgage and take cash - compared honestly against second-lien options; GA, AL, TN, FL, NC & SC
 - [Management](https://stonehavencre.com/management): founders Dawn M. Munoz and Chris De Leeuw
-- [Closings blog](https://stonehavencre.com/blog): anonymized write-ups of closed transactions (structure and terms; no parties named)
+- [Financing guides and closings blog](https://stonehavencre.com/blog): educational financing guides, referral-partner resources, and anonymized closed-transaction write-ups
 - [Calculation Methodology](https://stonehavencre.com/calculation-methodology): the exact formulas behind every figure on this site
 - [Contact](https://stonehavencre.com/contact)
 - [Privacy Policy](https://stonehavencre.com/privacy)
@@ -74,3 +74,16 @@ Key facts:
 
 ## En español
 - [Inicio](https://stonehavencre.com/es/), [Residencial](https://stonehavencre.com/es/residential), [DSCR](https://stonehavencre.com/es/dscr), [Comercial](https://stonehavencre.com/es/commercial), [SBA](https://stonehavencre.com/es/sba), [HELOC](https://stonehavencre.com/es/heloc), [Contacto](https://stonehavencre.com/es/contact), [Blog / Cierres](https://stonehavencre.com/es/blog)
+
+## Referral partner guides
+
+Educational introductions for professionals. No referral compensation is offered or promised by these guides.
+
+- [Mortgage Referral Partners: A Guide for Real Estate Agents](https://stonehavencre.com/blog/mortgage-referral-partners-real-estate-agents)
+- [Referencias hipotecarias: guía para agentes inmobiliarios](https://stonehavencre.com/es/blog/mortgage-referral-partners-real-estate-agents)
+- [DSCR Referral Partners: Property Managers and Investor Agents](https://stonehavencre.com/blog/dscr-referral-partners-property-managers)
+- [Referencias DSCR para administradores de propiedades y agentes](https://stonehavencre.com/es/blog/dscr-referral-partners-property-managers)
+- [Commercial Mortgage Referrals for CPAs and Attorneys](https://stonehavencre.com/blog/commercial-mortgage-referrals-cpas-attorneys)
+- [Referencias de hipotecas comerciales para contadores y abogados](https://stonehavencre.com/es/blog/commercial-mortgage-referrals-cpas-attorneys)
+- [DSCR and Commercial Loan Referrals for Mortgage Brokers](https://stonehavencre.com/blog/mortgage-broker-dscr-commercial-referral-partner)
+- [Referencias DSCR y comerciales para profesionales hipotecarios](https://stonehavencre.com/es/blog/mortgage-broker-dscr-commercial-referral-partner)
