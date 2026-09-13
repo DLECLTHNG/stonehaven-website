@@ -19,20 +19,20 @@
   if (!root) return;
   var lang = (document.documentElement.lang || "en").slice(0, 2);
   var T = {
-    en: { next: "Next", back: "Back", callCta: "Get My Callback", quoteCta: "Get My Instant Quote",
+    en: { next: "Next", back: "Back", callCta: "Text Me About My Options", quoteCta: "Get My Instant Quote",
           geo: "Thank you - Stonehaven doesn't currently serve that state. Home loans are available in GA, AL, TN, FL, NC and SC.",
           need: "Please answer to continue.", phone: "Please enter a valid mobile number.", email: "Please enter a valid email.",
           stepOf: "Step {a} of {b}",
           saveH: "Save your estimate", saveP: "Enter a mobile number and a specialist will text you this range, then follow up personally.",
           savePh: "Mobile number", saveBtn: "Text me my estimate", saveOk: "Saved. A specialist will text your estimate to that number shortly.",
-          saveConsent: "By continuing, you agree Stonehaven may contact you by phone, email or text about this request. Consent is not a condition of service. Message and data rates may apply; reply STOP to opt out." },
-    es: { next: "Siguiente", back: "Atrás", callCta: "Quiero mi llamada", quoteCta: "Quiero mi cotización al instante",
+          saveConsent: "By continuing, you agree Stonehaven may contact you by text or email about this request. Consent is not a condition of service. Message and data rates may apply; reply STOP to opt out." },
+    es: { next: "Siguiente", back: "Atrás", callCta: "Quiero recibir un mensaje", quoteCta: "Quiero mi cotización al instante",
           geo: "Gracias - Stonehaven no atiende ese estado por ahora. Los préstamos de vivienda están disponibles en GA, AL, TN, FL, NC y SC.",
           need: "Responda para continuar.", phone: "Ingrese un número de celular válido.", email: "Ingrese un correo válido.",
           stepOf: "Paso {a} de {b}",
           saveH: "Guarde su estimación", saveP: "Ingrese un número de celular y un especialista le enviará este rango por mensaje de texto y luego le dará seguimiento personalmente.",
           savePh: "Número de celular", saveBtn: "Envíenme mi estimación", saveOk: "Guardado. Un especialista le enviará su estimación por mensaje de texto en breve.",
-          saveConsent: "Al continuar, acepta que Stonehaven pueda contactarle por teléfono, correo o mensaje de texto sobre esta solicitud. El consentimiento no es condición para el servicio. Pueden aplicar tarifas de mensajes y datos; responda STOP para cancelar." }
+          saveConsent: "Al continuar, acepta que Stonehaven pueda contactarle por mensaje de texto o correo sobre esta solicitud. El consentimiento no es condición para el servicio. Pueden aplicar tarifas de mensajes y datos; responda STOP para cancelar." }
   }[lang] || null;
   if (!T) T = { next: "Next" };
 

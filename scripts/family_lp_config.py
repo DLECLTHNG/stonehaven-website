@@ -54,15 +54,15 @@ FOOTER_DISCLOSURE = ("Stonehaven Lending is a mortgage brokerage, not a direct l
 
 # Version stamp stored with every inquiry so the record shows which notice the
 # visitor saw. Bump when the notice wording changes.
-CONSENT_NOTICE_VERSION = "fo-notice-2026-09-11"
-CONSENT_NOTICE = ("By selecting Request a Call, you ask Stonehaven Lending to contact you about this inquiry at the "
-                  "phone number provided, and by email if supplied. This is an inquiry, not a mortgage application.")
+CONSENT_NOTICE_VERSION = "fo-notice-2026-09-13"
+CONSENT_NOTICE = ("By selecting Request a Text, you ask Stonehaven Lending to text you about this inquiry at the "
+                  "mobile number provided, and contact you by email if supplied. Message and data rates may apply. Reply STOP to opt out. This is an inquiry, not a mortgage application.")
 
 FORM = dict(
     endpoint="/.netlify/functions/family-inquiry",   # server function: validates, rate-limits, persists, returns inquiry id
     heading="Let's talk through the options",
     intro="Tell us where you are looking and how to reach you.",
-    button="Request a Call",
+    button="Request a Text",
     timing_label="Purchase timing (optional)",
     timing_options=[("exploring", "Exploring"), ("within_3_months", "Within 3 months"),
                     ("3_to_6_months", "3 to 6 months"), ("more_than_6_months", "More than 6 months")],
@@ -93,11 +93,11 @@ INDEXABLE = False   # draft previews stay noindex; flip to True at launch (confi
 
 SHARED = dict(
     eyebrow="Family Opportunity Mortgage",
-    cta="Request a Call",
+    cta="Request a Text",
     how_link="How it works",
     person_h="A real person on the other end",
     person_p=("Questions about the family-occupancy approach go to a co-founder, not a call center. "
-              "Call, email, or request a call and the follow-up comes from Stonehaven directly."),
+              "Request a text and receive personal follow-up from Stonehaven."),
     closing_note="A mortgage application and any credit authorization are separate steps that come later, only if you choose to proceed.",
     illustration_note="Illustration for context only. Not a client story.",
 )
@@ -112,7 +112,7 @@ dict(
     label="family overview",
     title="Buying a Home for a Family Member | Stonehaven Lending",
     description=("Conventional family-occupancy guidelines may let you finance a home for a family member using "
-                 "primary-residence terms while you live elsewhere. Request a call from Stonehaven Lending."),
+                 "primary-residence terms while you live elsewhere. Request a text from Stonehaven Lending."),
     h1="Buying a home for someone in your family.",
     sub=("Certain conventional mortgage guidelines may let you finance a home a family member lives in using "
          "primary-residence terms, even when you live elsewhere. Stonehaven can help you find the route that fits."),
@@ -161,7 +161,7 @@ dict(
     label="parents",
     title="Buy a Home for Your Parents, Keep Your Own | Stonehaven Lending",
     description=("Conventional family-occupancy guidelines may let you finance a home your parents live in using "
-                 "primary-residence terms while you live elsewhere. Request a call from Stonehaven Lending."),
+                 "primary-residence terms while you live elsewhere. Request a text from Stonehaven Lending."),
     h1="Buy a home for your parents. Keep your own home.",
     sub=("Certain conventional mortgage guidelines may let you finance a home for your parents using primary-residence "
          "terms, even when you live elsewhere. Stonehaven can help you explore whether this approach fits."),
@@ -214,7 +214,7 @@ dict(
     label="adult child with a disability",
     title="A Home for an Adult Child with a Disability | Stonehaven Lending",
     description=("Parents or legal guardians may be able to finance a separate home for an adult child with a "
-                 "disability under conventional family-occupancy guidelines. Request a call from Stonehaven Lending."),
+                 "disability under conventional family-occupancy guidelines. Request a text from Stonehaven Lending."),
     h1="A home of their own. A plan you can build together.",
     sub=("Explore a conventional mortgage option for parents or legal guardians buying a home for an adult child with a "
          "disability. Eligible arrangements may receive primary-residence terms even when the borrower lives elsewhere."),
@@ -256,7 +256,7 @@ CONFIRMATION = dict(
     slug="request-received",
     title="Request Received | Stonehaven Lending",
     h1="Thank you. Your request has been received.",
-    body=("A Stonehaven team member will contact you to discuss your inquiry. You can also call %s. "
+    body=("A Stonehaven team member will text you to discuss your inquiry. You can also call %s. "
           "This request does not approve financing or authorize a credit check."),
     reference_label="Your reference",
     correction="Need to correct a detail? Email",

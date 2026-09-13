@@ -96,7 +96,7 @@ def form_card(p):
   <p class="intro">{esc(C.FORM['intro'])}</p>
   <form id="inquiry-form" novalidate autocomplete="on" method="post" action="{C.FORM['endpoint']}">
     <div class="fo-field"><label for="f-name">Full name</label><input id="f-name" name="name" type="text" autocomplete="name" required maxlength="120" aria-describedby="e-name"/><p class="fo-err" id="e-name"></p></div>
-    <div class="fo-field"><label for="f-phone">Phone number</label><input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required aria-describedby="e-phone" placeholder="(000) 000-0000"/><p class="fo-err" id="e-phone"></p></div>
+    <div class="fo-field"><label for="f-phone">Mobile number</label><input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required aria-describedby="e-phone" placeholder="(000) 000-0000"/><p class="fo-err" id="e-phone"></p></div>
     <div class="fo-field"><label for="f-state">Property state</label><select id="f-state" name="state" required aria-describedby="e-state"><option value="">Choose a state</option>{opts}</select><p class="fo-err" id="e-state"></p></div>
     <div class="fo-field"><label for="f-email">Email <span class="opt">(optional)</span></label><input id="f-email" name="email" type="email" inputmode="email" autocomplete="email" maxlength="254" aria-describedby="e-email"/><p class="fo-err" id="e-email"></p></div>
     <div class="fo-field"><label for="f-price">{esc(C.FORM['price_label'])} <span class="opt">(optional)</span></label><input id="f-price" name="price" type="text" inputmode="numeric" autocomplete="off" maxlength="12" aria-describedby="h-price e-price"/><p class="fo-hint" id="h-price">{esc(C.FORM['price_hint'])}</p><p class="fo-err" id="e-price"></p></div>

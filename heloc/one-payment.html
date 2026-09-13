@@ -71,14 +71,14 @@
 <div class="est-box"><div class="est-grid">
 <label><span>Home value, roughly ($)</span><input id="e-value" type="number" inputmode="numeric" min="0" step="10000" value="400000"/></label>
 <label><span>Mortgage balance, roughly ($)</span><input id="e-balance" type="number" inputmode="numeric" min="0" step="10000" value="250000"/></label></div>
-<div class="est-range" id="e-range">-</div><div class="est-verdict" id="e-verdict"></div><p class="est-note" id="e-note">Headroom at common 80 to 90 percent combined loan-to-value caps. A specialist confirms the real number on a callback.</p></div>
+<div class="est-range" id="e-range">-</div><div class="est-verdict" id="e-verdict"></div><p class="est-note" id="e-note">Headroom at common 80 to 90 percent combined loan-to-value caps. A specialist confirms the real number by text.</p></div>
 </div></div></section>
 <!-- HELOC:GROWTH:START -->
 <section class="hp-wrap hp-section" id="growth-planning"><div class="hp-card"><h2>Use the same payoff horizon</h2><p>Compare interest, fees and remaining principal on the same date. An interest-only payment does not reduce the borrowed balance.</p></div><div class="hp-card"><h2>Make room for alternatives</h2><p>Compare paying existing debt directly, a personal loan or a credit-counseling plan. Consolidation does not fix repeated borrowing, and a lower payment does not establish savings.</p></div><p><a href="/heloc-planning-tools#payments">Open the planning tool</a> · <a href="/blog/heloc-debt-consolidation-total-cost">Read the full guide</a> · <a href="/es/heloc/one-payment">Español</a></p></section>
 <!-- HELOC:GROWTH:END -->
 <section class="lead" id="intake"><div class="wrap"><div class="lead-card reveal">
   <span class="eyebrow">Get Your Numbers Confirmed</span>
-  <h2>A specialist calls you back</h2>
+  <h2>A specialist texts you</h2>
   <p class="sub">Send the basics and a licensed specialist confirms the real figure, usually within one business day.</p>
   <form class="lead-form" data-sh-form="heloc-ad" data-sh-product="Residential" data-sh-event="heloc_callback" data-sh-capi data-sh-thanks="/thanks-callback" novalidate method="POST" action="/thanks-callback" data-netlify="true" netlify-honeypot="company_website"><input type="hidden" name="growth_topic" value="one-payment"/><input type="hidden" name="form-name" value="lead"/>
     <input type="text" name="company_website" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true"/>
@@ -95,11 +95,11 @@
     <div class="lf-field full"><label for="f-email">Email</label><input id="f-email" type="email" name="email" autocomplete="email" required/></div>
     <p class="pp-geo" id="pi-geo" hidden>Thank you for your interest. Stonehaven does not currently arrange home loans in that state; we serve GA, AL, TN, FL, NC and SC.</p>
     <div class="lead-actions">
-      <span class="note">We treat every inquiry in confidence. No hard credit pull at this stage. By submitting, you agree Stonehaven may contact you about your inquiry by phone, email or text. Consent is not a condition of service.</span>
+      <span class="note">We treat every inquiry in confidence. No hard credit pull at this stage. By submitting, you agree Stonehaven may contact you about your inquiry by text or email. Consent is not a condition of service.</span>
       <button type="submit" class="lead-submit">See how much</button>
     </div>
   </form>
-  <div class="lead-success" id="leadSuccess"><div class="ok">Thank you, received.</div><p>A licensed specialist will call you back, usually within one business day.</p></div>
+  <div class="lead-success" id="leadSuccess"><div class="ok">Thank you, received.</div><p>A licensed specialist will text you, usually within one business day.</p></div>
 </div></div></section>
 <section class="faq"><div class="wrap">
   <div class="head reveal"><span class="eyebrow">Questions</span><h2>Asked before starting</h2></div>
@@ -120,7 +120,7 @@
     var lo=H.availableEquity(v,b,80), hi=H.availableEquity(v,b,90);
     if(!lo||!hi)return;
     if(hi.available<=0){$("e-range").textContent="$0";$("e-verdict").textContent="no headroom at common caps";$("e-note").textContent="At common lender caps there is no room above the balance today. A specialist can still walk through options and timing.";}
-    else{$("e-range").textContent=moneyK(lo.available)+" \u2013 "+moneyK(hi.available);$("e-verdict").textContent="potentially accessible";$("e-note").textContent="Headroom at common 80 to 90 percent combined loan-to-value caps. A specialist confirms the real number on a callback.";}
+    else{$("e-range").textContent=moneyK(lo.available)+" \u2013 "+moneyK(hi.available);$("e-verdict").textContent="potentially accessible";$("e-note").textContent="Headroom at common 80 to 90 percent combined loan-to-value caps. A specialist confirms the real number by text.";}
     if(arguments.length&&$("f-value")&&!$("f-value").dataset.touched)$("f-value").value=v;
     if(arguments.length&&$("f-balance")&&!$("f-balance").dataset.touched)$("f-balance").value=b;
     var form=document.querySelector("form[data-sh-form]");

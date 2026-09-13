@@ -35,7 +35,7 @@ window.SH_CONFIG = {
   helocApplyUrl: "",
 
   /* HELOC landing pages (/heloc-wizard, /heloc-instant + /es mirrors).
-     THE ONE SWITCH: "call" (default) = callback flow, CTA "Get My Callback",
+     THE ONE SWITCH: "call" (default) = callback flow, CTA "Text Me About My Options",
      lead -> Netlify Forms + CRM webhook + Meta Lead event.
      "instant_quote" = CTA "Get My Instant Quote"; lead is still captured, then
      the visitor is redirected to helocInstantQuoteUrl with what they entered
