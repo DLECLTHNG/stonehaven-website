@@ -40,6 +40,7 @@ def shell(lang,slug,title,desc,body,lp=False):
  prefix='/es' if lang=='es' else ''; path=prefix+'/'+slug
  src=(R/(('es/' if lang=='es' else '')+'heloc.html')).read_text()
  head=src.split('<main>')[0]
+ head=re.sub(r'<script src="/js/heloc-topic-context\.js" defer></script>','',head)
  head=re.sub(r'(href|src)="(?:\.\./)?(assets/|js/|styles.css|funnel.css)',r'\1="/\2',head)
  head=re.sub(r'<title>.*?</title>',f'<title>{E(title)} | Stonehaven</title>',head)
  head=re.sub(r'<meta name="description"[^>]*>',f'<meta name="description" content="{E(desc,quote=True)}"/>',head)
@@ -87,7 +88,7 @@ for item in DATA:
 # Tools use blank user-entered assumptions, never a advertised rate or implied offer.
 def field(key,en,es,lang,minimum=0,maximum=100000000,step='0.01'):
  return f'<label for="hp-{key}">{E(es if lang=="es" else en)}<input id="hp-{key}" data-key="{key}" type="number" inputmode="decimal" min="{minimum}" max="{maximum}" step="{step}" required autocomplete="off"/></label>'
-def button(lang):return '<button type="button" data-calculate>'+('Calcular' if lang=='es' else 'Calculate')+'</button><p data-error class="hp-error" role="alert"></p><div data-result class="hp-results" aria-live="polite" hidden></div>'
+def button(lang):return '<button type="button" data-calculate>'+('Calcular' if lang=='es' else 'Calculate')+'</button><button type="button" data-print-current>'+('Imprimir esta herramienta' if lang=='es' else 'Print this tool')+'</button><p data-error class="hp-error" role="alert"></p><div data-result class="hp-results" aria-live="polite" hidden></div>'
 for lang in ['en','es']:
  es=lang=='es';p='/es' if es else ''; title='Herramientas para planificar un HELOC' if es else 'HELOC planning tools'
  desc='Compare ofertas, pagos y etapas del proyecto con sus propios supuestos.' if es else 'Compare offers, payments and project stages using your own assumptions.'
@@ -96,9 +97,9 @@ for lang in ['en','es']:
  terms=[('Lender / offer label','Prestamista / etiqueta'),('Credit limit and amount needed','Límite y monto necesario'),('Index + margin; introductory end date','Índice + margen; fin de introducción'),('Rate caps and floors','Límites y mínimos de tasa'),('Minimum initial draw and holding period','Adelanto mínimo y período obligatorio'),('Draw period and repayment term','Período de disposición y plazo de pago'),('Payment calculation; balloon, if any','Cálculo del pago; pago global, si existe'),('Closing, annual and inactivity fees','Cargos de cierre, anuales e inactividad'),('Early closure / fee reimbursement','Cierre anticipado / reembolso de cargos'),('Fixed-rate conversion terms and fees','Términos y cargos de conversión a tasa fija'),('Sale / payoff process and expected timing','Proceso de venta / liquidación y plazo esperado')]
  for letter in ['A','B']:
   body+=f'<div class="hp-card"><h3>'+('Oferta ' if es else 'Offer ')+letter+'</h3>'
-  for i,(a,b) in enumerate(terms):body+=f'<label for="offer-{letter}-{i}">{E(b if es else a)}<input id="offer-{letter}-{i}" type="text" maxlength="180" autocomplete="off"/></label>'
+  for i,(a,b) in enumerate(terms):body+=f'<label for="offer-{letter}-{i}">{E(b if es else a)}<textarea id="offer-{letter}-{i}" rows="3" maxlength="600" autocomplete="off"></textarea></label>'
   body+='</div>'
- body+='</div><button type="button" data-print-planning>'+('Imprimir o guardar PDF' if es else 'Print or save PDF')+'</button></section>'
+ body+='</div><button type="button" data-print-planning="offers">'+('Imprimir o guardar PDF' if es else 'Print or save PDF')+'</button></section>'
  body+='<section class="hp-section" id="payments"><h2>'+('Pagos, cambio de tasa y costo total' if es else 'Payments, rate change and total cost')+'</h2><p>'+('Modelo mensual ilustrativo de un solo adelanto. La deuda actual se modela como préstamo de tasa fija amortizado, no como pago mínimo real de tarjetas. La nueva línea paga solo intereses durante disposición y luego amortiza. Sin nuevos retiros, pagos adicionales ni cargos recurrentes. El interés diario y los términos reales pueden cambiar los resultados. Ingrese sus propios supuestos, no son cotizaciones.' if es else 'Illustrative monthly model of one advance. Existing debt is modeled as a fixed-rate amortizing loan, not actual credit-card minimums. The new line pays interest only during the draw period, then amortizes. No further draws, extra payments or recurring fees are modeled. Daily accrual and actual contract terms can change results. Enter your own assumptions; these are not quotes.')+'</p><div class="hp-grid">'
  for args in [('amount','Amount borrowed ($)','Monto prestado ($)',1,100000000,'0.01'),('old-rate','Existing debt annual rate (%)','Tasa anual de deuda actual (%)',0,100,'0.001'),('old-months','Existing debt remaining months','Meses restantes de deuda actual',1,360,'1'),('rate','New starting annual rate (%)','Nueva tasa anual inicial (%)',0,100,'0.001'),('draw','Interest-only draw months (0 for amortizing now)','Meses de solo intereses (0 para amortizar ahora)',0,240,'1'),('repay','Repayment months after draw period','Meses de pago tras disposición',1,360,'1'),('fees','One-time fees ($)','Cargos únicos ($)',0,10000000,'0.01'),('horizon','Comparison horizon in months','Período de comparación en meses',1,600,'1'),('change','Rate changes at start of month','Cambio de tasa al inicio del mes',1,600,'1'),('later','Annual rate after change (%)','Tasa anual después del cambio (%)',0,100,'0.001')]:
   key,a,b,mn,mx,step=args;body+=field(key,a,b,lang,mn,mx,step)
@@ -126,3 +127,18 @@ for p in ['/heloc-planning-tools','/es/heloc-planning-tools']:
  if f'<loc>https://stonehavencre.com{p}</loc>' not in text:text=text.replace('</urlset>',f'  <url><loc>https://stonehavencre.com{p}</loc><lastmod>2026-09-12</lastmod></url>\n</urlset>')
 sitemap.write_text(text)
 print('Built HELOC landing pages, planning tools and article library')
+
+# Carry a public article topic through tools and landing pages into the saved lead.
+articles=json.loads((R/'docs/heloc-growth/articles.json').read_text())
+allow=','.join(a['slug'] for a in articles)
+for lang in ['', 'es/']:
+ paths={lang+'heloc.html':None,lang+'heloc-planning-tools.html':None}
+ paths.update({lang+'heloc/'+item[0]+'.html':None for item in DATA})
+ paths.update({lang+'blog/'+a['slug']+'.html':a['slug'] for a in articles})
+ for relative,article in paths.items():
+  file=R/relative;text=file.read_text()
+  text=re.sub(r' data-heloc-(?:topics|article)="[^"]*"','',text)
+  attrs=' data-heloc-topics="'+allow+'"'+(' data-heloc-article="'+article+'"' if article else '')
+  text=re.sub(r'<html\b([^>]*)>',lambda m:'<html'+m[1]+attrs+'>',text,count=1)
+  if '/js/heloc-topic-context.js' not in text:text=text.replace('</head>','<script src="/js/heloc-topic-context.js" defer></script></head>')
+  file.write_text(text)

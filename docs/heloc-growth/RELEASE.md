@@ -31,3 +31,11 @@ Run scripts/build-heloc-growth.py after the existing generators, as configured i
 Validation includes calculation fixtures, all 41 HELOC intake surfaces, bilingual content and privacy checks, full site link/SEO checks, generator reproducibility and Chrome checks with intercepted submissions. No live test leads were submitted. Browser coverage includes 320, 390 and 1440 pixel tool layouts and all 12 landing-page language variants.
 
 Search ranking and lead quality must be measured after indexing; publishing this package does not establish either outcome. External backlink outreach and paid campaigns require their own execution and were not sent or launched by this release.
+
+## Completion pass, September 13, 2026
+
+Closed the article-to-tool-to-inquiry attribution gap: an allowlisted public article slug is carried as article_topic and saved with the existing lead extras and human-readable context. No financial values or contact details are copied into navigation, and the helper uses no browser storage or network calls. Landing-page topic and campaign attribution remain separate.
+
+The offer worksheet accepts multiline terms and prints their complete contents. Visitors can print one tool or the full plan. Payment comparisons also show the highest monthly payment within the chosen horizon. The program register records confirmed availability and explicitly leaves unknown lender terms unconfirmed.
+
+All current build deliverables are complete. Search Console impressions, clicks, indexing and qualified-lead outcomes require real account data and an observation period. No baseline or ranking improvement is claimed. Paid media spending and third-party backlink outreach have not been initiated.
