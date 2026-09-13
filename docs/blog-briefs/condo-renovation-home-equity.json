@@ -1,0 +1,75 @@
+{
+  "slug": "condo-renovation-home-equity",
+  "date": "2026-09-12",
+  "type": "guide",
+  "product": "HELOC",
+  "growthTopic": "condo-renovation-home-equity",
+  "en": {
+    "title": "Condo renovation and home equity: questions before a quote becomes a plan",
+    "desc": "Coordinate association, contractor, and lender questions before a condo renovation.",
+    "eyebrow": "Home equity planning",
+    "terms": [
+      [
+        "Focus",
+        "A homeowner decision"
+      ],
+      [
+        "Review",
+        "Lender requirements apply"
+      ]
+    ],
+    "body": [
+      {
+        "h": "Separate the three reviews"
+      },
+      "The association, contractor, and lender answer different questions. Confirm what work the association permits, what the contractor proposes, and whether the property fits a lender program. Approval by one party does not answer the other two questions.",
+      {
+        "h": "Include costs outside the unit"
+      },
+      "Keep association dues, known assessments, insurance, and other ownership costs in the budget. Ask about scheduling, common-area access, and work restrictions before choosing the project timeline. Avoid a financing estimate that includes only the interior quote.",
+      {
+        "h": "Confirm property fit before expanding the scope"
+      },
+      "Provide accurate property details and the requested amount. Condo eligibility varies by program, and this guide does not establish an available loan for every project. Start with a broker review before relying on a particular line limit.",
+      {
+        "h": "Prepare the next conversation"
+      },
+      "Use the <a href=\"/heloc-planning-tools#project\">home equity planning worksheet</a> to organize your assumptions. Leave anything you do not know blank for discussion. The worksheet does not check eligibility or obtain a lender offer. You can <a href=\"/heloc/contractor-quotes\">request a broker conversation</a> when you are ready to review your estimated home value, mortgage balance, and requested amount. Do not send account numbers or financial documents through a public inquiry form.",
+      "<a href=\"https://www.citizensbank.com/learning/home-equity-application-checklist.aspx\">Read the source guidance</a>. Provider examples describe that provider only. This guide is educational. A home-secured loan puts the property at risk if repayment fails. Program availability, documentation, costs, and approval depend on the lender and your circumstances."
+    ]
+  },
+  "es": {
+    "title": "Reforma de condominio y patrimonio: preguntas antes de planificar",
+    "desc": "Coordine preguntas de asociación, contratista y prestamista antes de reformar.",
+    "eyebrow": "Planificación del patrimonio de vivienda",
+    "terms": [
+      [
+        "Tema",
+        "Una decisión sobre su vivienda"
+      ],
+      [
+        "Revisión",
+        "Sujeta a los requisitos del prestamista"
+      ]
+    ],
+    "body": [
+      {
+        "h": "Distinga tres revisiones"
+      },
+      "Asociación, contratista y prestamista responden preguntas distintas. Confirme qué permite la asociación, qué propone el contratista y si el inmueble encaja en el programa. Una aprobación no responde las otras dos preguntas.",
+      {
+        "h": "Incluya costos fuera de la unidad"
+      },
+      "Mantenga cuotas, derramas conocidas, seguro y otros gastos en el presupuesto. Pregunte por horarios, acceso común y restricciones antes de fijar fechas. Evite calcular solo el presupuesto interior.",
+      {
+        "h": "Confirme elegibilidad antes de ampliar"
+      },
+      "Proporcione datos correctos y monto. La elegibilidad varía y esta guía no establece un préstamo para todo proyecto. Empiece con una revisión antes de depender de un límite determinado.",
+      {
+        "h": "Prepare la siguiente conversación"
+      },
+      "Use la <a href=\"/es/heloc-planning-tools#project\">herramienta de planificación</a> para organizar sus supuestos. Deje en blanco lo que no sepa para comentarlo después. La herramienta no determina elegibilidad ni obtiene una oferta. Puede <a href=\"/es/heloc/contractor-quotes\">solicitar una conversación con un corredor</a> para revisar el valor estimado, saldo hipotecario y monto solicitado. No envíe números de cuenta ni documentos financieros por un formulario público.",
+      "<a href=\"https://www.citizensbank.com/learning/home-equity-application-checklist.aspx\">Consulte la fuente en inglés</a>. Los ejemplos de un proveedor corresponden solo a ese proveedor. Esta guía es educativa. Un préstamo garantizado por la vivienda pone el inmueble en riesgo si no se paga. La disponibilidad, documentación, costos y aprobación dependen del prestamista y de sus circunstancias."
+    ]
+  }
+}

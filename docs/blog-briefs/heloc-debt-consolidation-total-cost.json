@@ -1,0 +1,83 @@
+{
+  "slug": "heloc-debt-consolidation-total-cost",
+  "date": "2026-09-12",
+  "type": "guide",
+  "product": "HELOC",
+  "growthTopic": "heloc-debt-consolidation-total-cost",
+  "en": {
+    "title": "HELOC debt consolidation: compare the full repayment plan",
+    "desc": "Compare payment relief, interest, fees, and remaining debt before moving balances onto your home.",
+    "eyebrow": "Home equity planning",
+    "terms": [
+      [
+        "Focus",
+        "A homeowner decision"
+      ],
+      [
+        "Review",
+        "Lender requirements apply"
+      ]
+    ],
+    "body": [
+      {
+        "h": "Start with the balances you have"
+      },
+      "List each balance, current interest rate, required payment, and the date you expect to finish paying it. Separate promotional balances from ordinary rates. Decide whether your comparison assumes only minimum payments or a fixed monthly budget. These are different plans and can produce different results. Leave new spending out of the initial model so you can see what retiring the existing balances would require.",
+      {
+        "h": "Keep the payoff horizon visible"
+      },
+      "For a hypothetical comparison, a homeowner could look at five years for both the existing debt and new borrowing, then separately consider a longer new-loan term. At the end of five years, compare payments made plus any remaining balance and upfront fees. A smaller payment is not the same as less debt. Our planning tool shows an assumed fixed-rate existing debt beside constant-rate and changing-rate new borrowing. It is not a simulation of every credit-card minimum-payment formula.",
+      {
+        "h": "Understand the change in security"
+      },
+      "Using home equity to repay unsecured balances changes what is at stake if you cannot pay. The existing mortgage may still have its own payment. Review the complete household budget, not just the accounts being consolidated. The CFPB also discusses alternatives such as speaking with creditors and a nonprofit credit counselor. If the budget still requires borrowing for routine expenses, another loan may not solve the underlying problem.",
+      {
+        "h": "Set a review point before you commit"
+      },
+      "Ask the broker to show the effect of fees, a higher future rate, and the repayment stage. Decide how the paid accounts will be used afterward and what cash reserve remains. Do not include a tax deduction or a credit-score improvement as an assumed benefit. Those outcomes are not established by moving the balances.",
+      {
+        "h": "Prepare the next conversation"
+      },
+      "Use the <a href=\"/heloc-planning-tools#payments\">home equity planning worksheet</a> to organize your assumptions. Leave anything you do not know blank for discussion. The worksheet does not check eligibility or obtain a lender offer. You can <a href=\"/heloc/one-payment\">request a broker conversation</a> when you are ready to review your estimated home value, mortgage balance, and requested amount. Do not send account numbers or financial documents through a public inquiry form.",
+      "<a href=\"https://www.consumerfinance.gov/ask-cfpb/what-do-i-need-to-know-if-im-thinking-about-consolidating-my-credit-card-debt-en-1861/\">Read the source guidance</a>. Provider examples describe that provider only. This guide is educational. A home-secured loan puts the property at risk if repayment fails. Program availability, documentation, costs, and approval depend on the lender and your circumstances."
+    ]
+  },
+  "es": {
+    "title": "Consolidar deudas con un HELOC: compare el plan completo",
+    "desc": "Compare pagos, intereses, cargos y saldo pendiente antes de trasladar deudas a su vivienda.",
+    "eyebrow": "Planificación del patrimonio de vivienda",
+    "terms": [
+      [
+        "Tema",
+        "Una decisión sobre su vivienda"
+      ],
+      [
+        "Revisión",
+        "Sujeta a los requisitos del prestamista"
+      ]
+    ],
+    "body": [
+      {
+        "h": "Empiece con los saldos actuales"
+      },
+      "Anote cada saldo, tasa, pago requerido y fecha prevista de liquidación. Separe tasas promocionales de las habituales. Decida si comparará pagos mínimos o un presupuesto mensual fijo. Son planes distintos con resultados diferentes. Excluya nuevas compras del modelo inicial para ver qué exigiría liquidar las deudas actuales.",
+      {
+        "h": "Mantenga visible el plazo de liquidación"
+      },
+      "En una comparación hipotética, podría usar cinco años para ambas opciones y después considerar por separado un plazo nuevo más largo. Compare los pagos realizados, el saldo pendiente y los cargos iniciales. Una cuota menor no equivale a menos deuda. La herramienta compara una deuda actual a tasa fija supuesta con nuevos préstamos a tasa constante o cambiante. No reproduce todas las fórmulas de pagos mínimos de tarjetas.",
+      {
+        "h": "Entienda el cambio de garantía"
+      },
+      "Usar el patrimonio de vivienda para pagar saldos sin garantía cambia lo que está en riesgo si no puede pagar. La hipoteca actual puede conservar su propio pago. Revise el presupuesto familiar completo. La CFPB también explica alternativas como hablar con acreedores o con un asesor de crédito sin fines de lucro. Si aún necesita endeudarse para gastos habituales, otro préstamo quizá no resuelva el problema.",
+      {
+        "h": "Revise el plan antes de comprometerse"
+      },
+      "Pida al corredor el efecto de los cargos, una tasa futura más alta y la etapa de amortización. Decida cómo utilizará después las cuentas pagadas y qué reserva conservará. No dé por hecho una deducción fiscal ni una mejora de puntaje. Trasladar los saldos no establece esos resultados.",
+      {
+        "h": "Prepare la siguiente conversación"
+      },
+      "Use la <a href=\"/es/heloc-planning-tools#payments\">herramienta de planificación</a> para organizar sus supuestos. Deje en blanco lo que no sepa para comentarlo después. La herramienta no determina elegibilidad ni obtiene una oferta. Puede <a href=\"/es/heloc/one-payment\">solicitar una conversación con un corredor</a> para revisar el valor estimado, saldo hipotecario y monto solicitado. No envíe números de cuenta ni documentos financieros por un formulario público.",
+      "<a href=\"https://www.consumerfinance.gov/ask-cfpb/what-do-i-need-to-know-if-im-thinking-about-consolidating-my-credit-card-debt-en-1861/\">Consulte la fuente en inglés</a>. Los ejemplos de un proveedor corresponden solo a ese proveedor. Esta guía es educativa. Un préstamo garantizado por la vivienda pone el inmueble en riesgo si no se paga. La disponibilidad, documentación, costos y aprobación dependen del prestamista y de sus circunstancias."
+    ]
+  }
+}

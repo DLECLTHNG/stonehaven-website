@@ -1,0 +1,83 @@
+{
+  "slug": "compare-heloc-offers",
+  "date": "2026-09-12",
+  "type": "guide",
+  "product": "HELOC",
+  "growthTopic": "compare-heloc-offers",
+  "en": {
+    "title": "How to compare two HELOC offers",
+    "desc": "Compare access, rate structure, fees, and repayment terms with an ungated offer worksheet.",
+    "eyebrow": "Home equity planning",
+    "terms": [
+      [
+        "Focus",
+        "A homeowner decision"
+      ],
+      [
+        "Review",
+        "Lender requirements apply"
+      ]
+    ],
+    "body": [
+      {
+        "h": "Confirm that you are comparing the same product"
+      },
+      "The label on a marketing page is not a complete description of a loan. Ask whether the offer is an open line, a closed-end loan, or a line with particular advance and repayment rules. Compare the amount available for your actual purpose after any financed charges. If one offer provides a different amount, ask for comparable figures before choosing by payment.",
+      {
+        "h": "Record the rate and the cash costs separately"
+      },
+      "Write down the note rate, APR, opening fees, ongoing charges, and potential early-closure costs. Also record which numbers are estimates and when an offer expires. A promotional rate needs an end date and an explanation of later pricing. Our offer worksheet intentionally leaves unknown terms blank; zero means something different from a term you have not confirmed.",
+      {
+        "h": "Ask what happens after the first payment"
+      },
+      "Compare the initial advance, later borrowing access, repayment start, rate-change rules, and remaining balance at your expected payoff date. A fixed portion of a line may work differently from a fixed home equity loan. The useful question is how the offered contract fits your plan. Do not assume a product feature described by another lender is included in your offer.",
+      {
+        "h": "Use the correct disclosures"
+      },
+      "The CFPB explains that HELOC borrowers do not receive the standard Loan Estimate and Closing Disclosure used for many closed-end mortgages. Ask for the applicable home-equity disclosures and agreement. Bring questions to the broker without sending unredacted account documents through a public form. A comparison conversation is not a promise to beat another lender.",
+      {
+        "h": "Prepare the next conversation"
+      },
+      "Use the <a href=\"/heloc-planning-tools#offers\">home equity planning worksheet</a> to organize your assumptions. Leave anything you do not know blank for discussion. The worksheet does not check eligibility or obtain a lender offer. You can <a href=\"/heloc/compare-offers\">request a broker conversation</a> when you are ready to review your estimated home value, mortgage balance, and requested amount. Do not send account numbers or financial documents through a public inquiry form.",
+      "<a href=\"https://www.consumerfinance.gov/ask-cfpb/what-are-government-recording-charges-for-a-mortgage-en-159/\">Read the source guidance</a>. Provider examples describe that provider only. This guide is educational. A home-secured loan puts the property at risk if repayment fails. Program availability, documentation, costs, and approval depend on the lender and your circumstances."
+    ]
+  },
+  "es": {
+    "title": "Cómo comparar dos ofertas de HELOC",
+    "desc": "Compare acceso al dinero, tasas, cargos y condiciones de pago con una hoja de trabajo abierta.",
+    "eyebrow": "Planificación del patrimonio de vivienda",
+    "terms": [
+      [
+        "Tema",
+        "Una decisión sobre su vivienda"
+      ],
+      [
+        "Revisión",
+        "Sujeta a los requisitos del prestamista"
+      ]
+    ],
+    "body": [
+      {
+        "h": "Confirme que compara el mismo producto"
+      },
+      "La etiqueta de una página comercial no describe todo el préstamo. Pregunte si es una línea abierta, un préstamo cerrado o una línea con reglas particulares de retiro y pago. Compare el monto disponible para su objetivo después de cargos financiados. Si las ofertas dan montos distintos, solicite cifras comparables antes de elegir por cuota.",
+      {
+        "h": "Registre la tasa y los costos por separado"
+      },
+      "Anote tasa del préstamo, APR, cargos de apertura, cargos periódicos y posibles costos por cierre anticipado. Indique qué cifras son estimaciones y cuándo vence la oferta. Una tasa promocional necesita fecha de terminación y explicación del precio posterior. La hoja deja en blanco condiciones desconocidas: cero no significa lo mismo que un dato sin confirmar.",
+      {
+        "h": "Pregunte qué sucede después del primer pago"
+      },
+      "Compare retiro inicial, acceso posterior, inicio de amortización, cambios de tasa y saldo en la fecha prevista de pago. Una porción fija de una línea puede funcionar de forma distinta a un préstamo hipotecario fijo. Lo útil es saber cómo encaja el contrato ofrecido en su plan. No suponga que incluye una característica anunciada por otro prestamista.",
+      {
+        "h": "Use las divulgaciones correctas"
+      },
+      "La CFPB explica que un HELOC no utiliza los formularios estándar Loan Estimate y Closing Disclosure de muchas hipotecas cerradas. Solicite las divulgaciones y el contrato correspondientes. Comente sus preguntas sin enviar documentos con datos de cuenta por un formulario público. Comparar no es una promesa de superar a otro prestamista.",
+      {
+        "h": "Prepare la siguiente conversación"
+      },
+      "Use la <a href=\"/es/heloc-planning-tools#offers\">herramienta de planificación</a> para organizar sus supuestos. Deje en blanco lo que no sepa para comentarlo después. La herramienta no determina elegibilidad ni obtiene una oferta. Puede <a href=\"/es/heloc/compare-offers\">solicitar una conversación con un corredor</a> para revisar el valor estimado, saldo hipotecario y monto solicitado. No envíe números de cuenta ni documentos financieros por un formulario público.",
+      "<a href=\"https://www.consumerfinance.gov/ask-cfpb/what-are-government-recording-charges-for-a-mortgage-en-159/\">Consulte la fuente en inglés</a>. Los ejemplos de un proveedor corresponden solo a ese proveedor. Esta guía es educativa. Un préstamo garantizado por la vivienda pone el inmueble en riesgo si no se paga. La disponibilidad, documentación, costos y aprobación dependen del prestamista y de sus circunstancias."
+    ]
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "slug": "selling-home-with-heloc",
+  "date": "2026-09-12",
+  "type": "guide",
+  "product": "HELOC",
+  "growthTopic": "selling-home-with-heloc",
+  "en": {
+    "title": "Selling after opening a HELOC: questions before listing",
+    "desc": "Prepare payoff, closure, and sale-proceeds questions before relying on an equity estimate.",
+    "eyebrow": "Home equity planning",
+    "terms": [
+      [
+        "Focus",
+        "A homeowner decision"
+      ],
+      [
+        "Review",
+        "Lender requirements apply"
+      ]
+    ],
+    "body": [
+      {
+        "h": "Use payoff information, not a rough balance"
+      },
+      "A statement balance is a starting point, not the final amount needed for a future closing. Ask the lender and closing professional what payoff information they need and when it should be requested. Interest, fees, and timing can affect the figures.",
+      {
+        "h": "Ask about closure as well as payoff"
+      },
+      "Clarify whether paying the balance also closes borrowing access and which steps release the lien. Review any early-closure terms before assuming a short-lived line has no extra cost. Do not keep using a line while relying on an outdated payoff statement.",
+      {
+        "h": "Estimate the cash left after the sale"
+      },
+      "Build a sale worksheet with expected price, all secured debts, transaction costs, and other known obligations. Label uncertain items. The amount of equity shown by a simple calculator is not the same as net cash available after a sale.",
+      {
+        "h": "Prepare the next conversation"
+      },
+      "Use the <a href=\"/heloc-planning-tools#offers\">home equity planning worksheet</a> to organize your assumptions. Leave anything you do not know blank for discussion. The worksheet does not check eligibility or obtain a lender offer. You can <a href=\"/heloc/compare-offers\">request a broker conversation</a> when you are ready to review your estimated home value, mortgage balance, and requested amount. Do not send account numbers or financial documents through a public inquiry form.",
+      "<a href=\"https://www.consumerfinance.gov/ask-cfpb/what-fees-can-my-lender-charge-if-i-take-out-a-heloc-en-249/\">Read the source guidance</a>. Provider examples describe that provider only. This guide is educational. A home-secured loan puts the property at risk if repayment fails. Program availability, documentation, costs, and approval depend on the lender and your circumstances."
+    ]
+  },
+  "es": {
+    "title": "Vender después de abrir un HELOC: preguntas antes de anunciar",
+    "desc": "Prepare preguntas sobre liquidación, cierre y producto de venta antes de usar una estimación.",
+    "eyebrow": "Planificación del patrimonio de vivienda",
+    "terms": [
+      [
+        "Tema",
+        "Una decisión sobre su vivienda"
+      ],
+      [
+        "Revisión",
+        "Sujeta a los requisitos del prestamista"
+      ]
+    ],
+    "body": [
+      {
+        "h": "Use información de liquidación"
+      },
+      "El saldo del estado de cuenta es un punto inicial, no el monto final para un cierre futuro. Pregunte al prestamista y profesional de cierre qué información requieren y cuándo pedirla. Intereses, cargos y fechas afectan las cifras.",
+      {
+        "h": "Pregunte por cierre y liquidación"
+      },
+      "Aclare si pagar el saldo cierra el acceso y qué pasos liberan la garantía. Revise condiciones anticipadas antes de suponer que una línea breve no cuesta más. No siga usando crédito mientras se basa en una liquidación desactualizada.",
+      {
+        "h": "Calcule el efectivo restante"
+      },
+      "Prepare una hoja con precio previsto, deudas garantizadas, costos de transacción y obligaciones conocidas. Identifique incertidumbres. El patrimonio de una calculadora no equivale al efectivo neto después de vender.",
+      {
+        "h": "Prepare la siguiente conversación"
+      },
+      "Use la <a href=\"/es/heloc-planning-tools#offers\">herramienta de planificación</a> para organizar sus supuestos. Deje en blanco lo que no sepa para comentarlo después. La herramienta no determina elegibilidad ni obtiene una oferta. Puede <a href=\"/es/heloc/compare-offers\">solicitar una conversación con un corredor</a> para revisar el valor estimado, saldo hipotecario y monto solicitado. No envíe números de cuenta ni documentos financieros por un formulario público.",
+      "<a href=\"https://www.consumerfinance.gov/ask-cfpb/what-fees-can-my-lender-charge-if-i-take-out-a-heloc-en-249/\">Consulte la fuente en inglés</a>. Los ejemplos de un proveedor corresponden solo a ese proveedor. Esta guía es educativa. Un préstamo garantizado por la vivienda pone el inmueble en riesgo si no se paga. La disponibilidad, documentación, costos y aprobación dependen del prestamista y de sus circunstancias."
+    ]
+  }
+}

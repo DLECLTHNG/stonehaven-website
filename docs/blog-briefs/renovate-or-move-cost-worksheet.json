@@ -1,0 +1,75 @@
+{
+  "slug": "renovate-or-move-cost-worksheet",
+  "date": "2026-09-12",
+  "type": "guide",
+  "product": "HELOC",
+  "growthTopic": "renovate-or-move-cost-worksheet",
+  "en": {
+    "title": "Renovate or move: build a complete cost worksheet",
+    "desc": "Compare a renovation with moving around total costs and the home you need.",
+    "eyebrow": "Home equity planning",
+    "terms": [
+      [
+        "Focus",
+        "A homeowner decision"
+      ],
+      [
+        "Review",
+        "Lender requirements apply"
+      ]
+    ],
+    "body": [
+      {
+        "h": "Describe what the home must do"
+      },
+      "List the specific problems you want to solve: layout, work space, upkeep, or proximity. Separate requirements from preferences. A renovation quote is useful only if the finished work solves the actual problem. A different address also needs to meet those requirements.",
+      {
+        "h": "Build two complete budgets"
+      },
+      "For renovating, record construction, temporary arrangements, contingency, financing, and ongoing ownership costs. For moving, record expected transaction, moving, repair, financing, and ownership costs. Use estimates labeled as estimates rather than claiming a standard local price.",
+      {
+        "h": "Stress the plan before choosing"
+      },
+      "Test a delayed project or sale and a higher borrowing cost. Keep the comparison period equal and include the debt remaining at its end. A low existing mortgage rate is relevant, but it should sit beside the suitability and complete cost of each home.",
+      {
+        "h": "Prepare the next conversation"
+      },
+      "Use the <a href=\"/heloc-planning-tools#project\">home equity planning worksheet</a> to organize your assumptions. Leave anything you do not know blank for discussion. The worksheet does not check eligibility or obtain a lender offer. You can <a href=\"/heloc/contractor-quotes\">request a broker conversation</a> when you are ready to review your estimated home value, mortgage balance, and requested amount. Do not send account numbers or financial documents through a public inquiry form.",
+      "<a href=\"https://consumer.ftc.gov/articles/how-avoid-home-improvement-scam\">Read the source guidance</a>. Provider examples describe that provider only. This guide is educational. A home-secured loan puts the property at risk if repayment fails. Program availability, documentation, costs, and approval depend on the lender and your circumstances."
+    ]
+  },
+  "es": {
+    "title": "¿Renovar o mudarse? Prepare una comparación completa",
+    "desc": "Compare renovación y mudanza según costos completos y la vivienda que necesita.",
+    "eyebrow": "Planificación del patrimonio de vivienda",
+    "terms": [
+      [
+        "Tema",
+        "Una decisión sobre su vivienda"
+      ],
+      [
+        "Revisión",
+        "Sujeta a los requisitos del prestamista"
+      ]
+    ],
+    "body": [
+      {
+        "h": "Describa lo que necesita de la vivienda"
+      },
+      "Enumere problemas concretos: distribución, trabajo, mantenimiento o cercanía. Distinga necesidades de preferencias. Un presupuesto de reforma sirve si el resultado resuelve el problema. Otra dirección también debe cumplir esos requisitos.",
+      {
+        "h": "Prepare dos presupuestos completos"
+      },
+      "Para renovar, registre obra, arreglos temporales, reserva, financiamiento y gastos continuos. Para mudarse, incluya transacción, traslado, reparaciones, financiamiento y gastos de propiedad. Identifique cada estimación en lugar de afirmar un precio local estándar.",
+      {
+        "h": "Ponga a prueba el plan"
+      },
+      "Pruebe retrasos de obra o venta y costos mayores de préstamo. Use el mismo período e incluya saldo al final. Una tasa hipotecaria actual baja importa, pero debe considerarse junto con utilidad y costo completo de cada vivienda.",
+      {
+        "h": "Prepare la siguiente conversación"
+      },
+      "Use la <a href=\"/es/heloc-planning-tools#project\">herramienta de planificación</a> para organizar sus supuestos. Deje en blanco lo que no sepa para comentarlo después. La herramienta no determina elegibilidad ni obtiene una oferta. Puede <a href=\"/es/heloc/contractor-quotes\">solicitar una conversación con un corredor</a> para revisar el valor estimado, saldo hipotecario y monto solicitado. No envíe números de cuenta ni documentos financieros por un formulario público.",
+      "<a href=\"https://consumer.ftc.gov/articles/how-avoid-home-improvement-scam\">Consulte la fuente en inglés</a>. Los ejemplos de un proveedor corresponden solo a ese proveedor. Esta guía es educativa. Un préstamo garantizado por la vivienda pone el inmueble en riesgo si no se paga. La disponibilidad, documentación, costos y aprobación dependen del prestamista y de sus circunstancias."
+    ]
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "slug": "heloc-vs-home-equity-contract",
+  "date": "2026-09-12",
+  "type": "guide",
+  "product": "HELOC",
+  "growthTopic": "heloc-vs-home-equity-contract",
+  "en": {
+    "title": "HELOC or home equity contract: compare different obligations",
+    "desc": "Understand why a monthly loan payment and a future settlement are different comparisons.",
+    "eyebrow": "Home equity planning",
+    "terms": [
+      [
+        "Focus",
+        "A homeowner decision"
+      ],
+      [
+        "Review",
+        "Lender requirements apply"
+      ]
+    ],
+    "body": [
+      {
+        "h": "Identify the legal and economic structure"
+      },
+      "Ask exactly what agreement is being offered. A home equity contract can use a future settlement tied to property value rather than the payment schedule of a loan. Do not choose based only on whether there is a monthly payment. The CFPB has documented complexities in this market.",
+      {
+        "h": "Test more than one future outcome"
+      },
+      "For each proposal, ask for the amount received after costs and what would be owed at different sale dates and property values. Record valuation assumptions, caps, deadlines, and the process for a disagreement. A single optimistic example cannot describe all outcomes.",
+      {
+        "h": "Plan how the obligation would be settled"
+      },
+      "Ask what happens if you cannot refinance or do not want to sell when settlement is due. Obtain advice appropriate to the actual contract. Stonehaven can discuss home-equity borrowing options; this article does not claim that it offers home equity contracts or guarantees an alternative.",
+      {
+        "h": "Prepare the next conversation"
+      },
+      "Use the <a href=\"/heloc-planning-tools#offers\">home equity planning worksheet</a> to organize your assumptions. Leave anything you do not know blank for discussion. The worksheet does not check eligibility or obtain a lender offer. You can <a href=\"/heloc/compare-offers\">request a broker conversation</a> when you are ready to review your estimated home value, mortgage balance, and requested amount. Do not send account numbers or financial documents through a public inquiry form.",
+      "<a href=\"https://www.consumerfinance.gov/data-research/research-reports/issue-spotlight-home-equity-contracts-market-overview/\">Read the source guidance</a>. Provider examples describe that provider only. This guide is educational. A home-secured loan puts the property at risk if repayment fails. Program availability, documentation, costs, and approval depend on the lender and your circumstances."
+    ]
+  },
+  "es": {
+    "title": "HELOC o contrato sobre patrimonio: compare obligaciones distintas",
+    "desc": "Entienda por qué una cuota y una liquidación futura requieren comparaciones distintas.",
+    "eyebrow": "Planificación del patrimonio de vivienda",
+    "terms": [
+      [
+        "Tema",
+        "Una decisión sobre su vivienda"
+      ],
+      [
+        "Revisión",
+        "Sujeta a los requisitos del prestamista"
+      ]
+    ],
+    "body": [
+      {
+        "h": "Identifique la estructura"
+      },
+      "Pregunte qué acuerdo ofrecen. Un contrato sobre patrimonio puede usar una liquidación futura vinculada al valor en lugar del calendario de un préstamo. No elija solo por la existencia de cuota mensual. La CFPB ha documentado complejidades de este mercado.",
+      {
+        "h": "Pruebe varios resultados futuros"
+      },
+      "Pida monto neto y obligación para diferentes fechas de venta y valores. Registre supuestos, límites, vencimientos y proceso de desacuerdo. Un ejemplo optimista no describe todos los resultados.",
+      {
+        "h": "Planifique la liquidación"
+      },
+      "Pregunte qué sucede si no puede refinanciar o no desea vender al vencer. Obtenga asesoría sobre el contrato. Stonehaven puede conversar sobre préstamos; el artículo no afirma que ofrezca estos contratos ni garantice otra opción.",
+      {
+        "h": "Prepare la siguiente conversación"
+      },
+      "Use la <a href=\"/es/heloc-planning-tools#offers\">herramienta de planificación</a> para organizar sus supuestos. Deje en blanco lo que no sepa para comentarlo después. La herramienta no determina elegibilidad ni obtiene una oferta. Puede <a href=\"/es/heloc/compare-offers\">solicitar una conversación con un corredor</a> para revisar el valor estimado, saldo hipotecario y monto solicitado. No envíe números de cuenta ni documentos financieros por un formulario público.",
+      "<a href=\"https://www.consumerfinance.gov/data-research/research-reports/issue-spotlight-home-equity-contracts-market-overview/\">Consulte la fuente en inglés</a>. Los ejemplos de un proveedor corresponden solo a ese proveedor. Esta guía es educativa. Un préstamo garantizado por la vivienda pone el inmueble en riesgo si no se paga. La disponibilidad, documentación, costos y aprobación dependen del prestamista y de sus circunstancias."
+    ]
+  }
+}

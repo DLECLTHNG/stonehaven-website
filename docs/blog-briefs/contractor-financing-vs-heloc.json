@@ -1,0 +1,83 @@
+{
+  "slug": "contractor-financing-vs-heloc",
+  "date": "2026-09-12",
+  "type": "guide",
+  "product": "HELOC",
+  "growthTopic": "contractor-financing-vs-heloc",
+  "en": {
+    "title": "Contractor financing or a HELOC: compare before signing",
+    "desc": "Have a renovation quote? Compare the project price, borrowing structure, payment dates, and complete financing cost.",
+    "eyebrow": "Home equity planning",
+    "terms": [
+      [
+        "Focus",
+        "A homeowner decision"
+      ],
+      [
+        "Review",
+        "Lender requirements apply"
+      ]
+    ],
+    "body": [
+      {
+        "h": "Separate the project decision from the financing decision"
+      },
+      "A contractor quote answers what the work costs. A financing offer answers how you will pay for it. Review both documents before treating a monthly payment as the project budget. Ask whether the price changes if you pay without the offered financing, whether optional work is included, and which party is providing the credit. A convenient application is useful, but it is only one part of the comparison.",
+      {
+        "h": "Match the funds to the payment schedule"
+      },
+      "Write down the deposit date, material payments, progress invoices, and final payment. Then ask each lender when funds would actually be accessible and whether an initial advance is required. Do not sign a project schedule that assumes an unapproved loan will close on time. If an offer uses promotional terms, identify when those terms end and what happens to any unpaid balance.",
+      {
+        "h": "Compare the same project over the same period"
+      },
+      "Use the same project amount for both options. Record the cash price, fees, starting payment, possible payment changes, payoff horizon, and balance remaining at that horizon. A longer repayment period can make an expensive option look easier to afford. Include the effect on your existing mortgage when comparing a separate equity loan with a refinance. If the project changes, update the comparison before accepting more work.",
+      {
+        "h": "Questions before a deposit"
+      },
+      "Ask who receives each payment, what evidence shows that a milestone is complete, and how a change order changes the price and timing. The FTC recommends comparing financing and obtaining written estimates. Verify the contractor independently; financing approval does not establish workmanship, permits, or completion. Keep a copy of the work contract separate from the credit agreement.",
+      {
+        "h": "Prepare the next conversation"
+      },
+      "Use the <a href=\"/heloc-planning-tools#project\">home equity planning worksheet</a> to organize your assumptions. Leave anything you do not know blank for discussion. The worksheet does not check eligibility or obtain a lender offer. You can <a href=\"/heloc/contractor-quotes\">request a broker conversation</a> when you are ready to review your estimated home value, mortgage balance, and requested amount. Do not send account numbers or financial documents through a public inquiry form.",
+      "<a href=\"https://consumer.ftc.gov/articles/how-avoid-home-improvement-scam\">Read the source guidance</a>. Provider examples describe that provider only. This guide is educational. A home-secured loan puts the property at risk if repayment fails. Program availability, documentation, costs, and approval depend on the lender and your circumstances."
+    ]
+  },
+  "es": {
+    "title": "Financiamiento del contratista o HELOC: qué comparar antes de firmar",
+    "desc": "Compare el precio del proyecto, la estructura del préstamo, las fechas de pago y el costo del financiamiento.",
+    "eyebrow": "Planificación del patrimonio de vivienda",
+    "terms": [
+      [
+        "Tema",
+        "Una decisión sobre su vivienda"
+      ],
+      [
+        "Revisión",
+        "Sujeta a los requisitos del prestamista"
+      ]
+    ],
+    "body": [
+      {
+        "h": "Separe la decisión del proyecto de la del financiamiento"
+      },
+      "La cotización indica cuánto cuesta el trabajo. La oferta de financiamiento indica cómo lo pagará. Revise ambos documentos antes de considerar una cuota mensual como presupuesto. Pregunte si cambia el precio sin ese financiamiento, si incluye trabajos opcionales y quién concede el crédito. Una solicitud cómoda es útil, pero solo es una parte de la comparación.",
+      {
+        "h": "Coordine los fondos con el calendario de pagos"
+      },
+      "Anote el depósito, los pagos de materiales, las facturas por avances y el pago final. Pregunte cuándo estarían disponibles los fondos y si se exige un retiro inicial. No firme un calendario que dependa de que un préstamo sin aprobar cierre a tiempo. Si hay condiciones promocionales, identifique cuándo terminan y qué ocurre con el saldo pendiente.",
+      {
+        "h": "Compare el mismo proyecto durante el mismo período"
+      },
+      "Use el mismo monto del proyecto para ambas opciones. Registre precio, cargos, pago inicial, posibles cambios, plazo de liquidación y saldo al terminar ese plazo. Un período más largo puede hacer que una opción costosa parezca más accesible. Incluya el efecto sobre su hipoteca actual al comparar un préstamo separado con un refinanciamiento. Actualice los números si cambia el trabajo.",
+      {
+        "h": "Preguntas antes del depósito"
+      },
+      "Pregunte quién recibe cada pago, cómo se acredita un avance y cómo una orden de cambio afecta precio y fechas. La FTC recomienda comparar financiamiento y obtener presupuestos escritos. Verifique al contratista por separado: aprobar un préstamo no garantiza calidad, permisos ni terminación. Guarde el contrato de obra separado del acuerdo de crédito.",
+      {
+        "h": "Prepare la siguiente conversación"
+      },
+      "Use la <a href=\"/es/heloc-planning-tools#project\">herramienta de planificación</a> para organizar sus supuestos. Deje en blanco lo que no sepa para comentarlo después. La herramienta no determina elegibilidad ni obtiene una oferta. Puede <a href=\"/es/heloc/contractor-quotes\">solicitar una conversación con un corredor</a> para revisar el valor estimado, saldo hipotecario y monto solicitado. No envíe números de cuenta ni documentos financieros por un formulario público.",
+      "<a href=\"https://consumer.ftc.gov/articles/how-avoid-home-improvement-scam\">Consulte la fuente en inglés</a>. Los ejemplos de un proveedor corresponden solo a ese proveedor. Esta guía es educativa. Un préstamo garantizado por la vivienda pone el inmueble en riesgo si no se paga. La disponibilidad, documentación, costos y aprobación dependen del prestamista y de sus circunstancias."
+    ]
+  }
+}

@@ -1,0 +1,2 @@
+/* Validate service area before the shared Netlify lead handler runs. */
+(function(){'use strict';document.querySelectorAll('form[data-sh-form="heloc-callback"]').forEach(function(form){form.addEventListener('submit',function(event){var state=form.elements.state;if(!state||!['Georgia','Alabama','Tennessee','Florida','North Carolina','South Carolina'].includes(state.value)){event.preventDefault();event.stopImmediatePropagation();if(state){state.focus();state.reportValidity();}}},true);});})();

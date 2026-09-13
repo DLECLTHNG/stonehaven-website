@@ -1,0 +1,75 @@
+{
+  "slug": "heloc-appraisal-property-condition",
+  "date": "2026-09-12",
+  "type": "guide",
+  "product": "HELOC",
+  "growthTopic": "heloc-appraisal-property-condition",
+  "en": {
+    "title": "HELOC valuation: questions about your home and its condition",
+    "desc": "Understand what to ask about valuation without assuming an appraisal waiver.",
+    "eyebrow": "Home equity planning",
+    "terms": [
+      [
+        "Focus",
+        "A homeowner decision"
+      ],
+      [
+        "Review",
+        "Lender requirements apply"
+      ]
+    ],
+    "body": [
+      {
+        "h": "An estimate is not the lender value"
+      },
+      "An online estimate can help start a conversation, but ask which valuation method the lender requires for your property. Record the method, cost, expected timing, and what happens if more information is needed. Do not promise a contractor a borrowing amount based only on a website estimate.",
+      {
+        "h": "Describe work in progress accurately"
+      },
+      "Tell the broker whether construction has begun, key rooms are usable, or there are unresolved repair issues. Ask whether these facts affect the available program or timing. Do not assume that planned improvements are already reflected in the value used for a HELOC.",
+      {
+        "h": "Prepare for a different result"
+      },
+      "Compare a lower accepted value with the same requested amount. If the plan no longer fits, consider scope, timing, and alternative structures rather than simply increasing the estimate. Ask the lender how questions about the valuation can be raised through its process.",
+      {
+        "h": "Prepare the next conversation"
+      },
+      "Use the <a href=\"/heloc-planning-tools#project\">home equity planning worksheet</a> to organize your assumptions. Leave anything you do not know blank for discussion. The worksheet does not check eligibility or obtain a lender offer. You can <a href=\"/heloc/contractor-quotes\">request a broker conversation</a> when you are ready to review your estimated home value, mortgage balance, and requested amount. Do not send account numbers or financial documents through a public inquiry form.",
+      "<a href=\"https://www.citizensbank.com/learning/home-equity-application-checklist.aspx\">Read the source guidance</a>. Provider examples describe that provider only. This guide is educational. A home-secured loan puts the property at risk if repayment fails. Program availability, documentation, costs, and approval depend on the lender and your circumstances."
+    ]
+  },
+  "es": {
+    "title": "Valoración para HELOC: preguntas sobre la vivienda y su estado",
+    "desc": "Sepa qué preguntar sobre valoración sin dar por hecho una exención.",
+    "eyebrow": "Planificación del patrimonio de vivienda",
+    "terms": [
+      [
+        "Tema",
+        "Una decisión sobre su vivienda"
+      ],
+      [
+        "Revisión",
+        "Sujeta a los requisitos del prestamista"
+      ]
+    ],
+    "body": [
+      {
+        "h": "Una estimación no es el valor del prestamista"
+      },
+      "Una estimación en línea ayuda a comenzar, pero pregunte qué método exige el prestamista. Registre método, costo, fechas y qué sucede si necesita más información. No prometa al contratista un monto basado solo en una página.",
+      {
+        "h": "Describa correctamente la obra en curso"
+      },
+      "Informe si comenzó la obra, si se utilizan las habitaciones principales o hay reparaciones pendientes. Pregunte cómo afecta programa y fechas. No suponga que mejoras futuras ya forman parte del valor para el HELOC.",
+      {
+        "h": "Prepárese para otro resultado"
+      },
+      "Compare un valor aceptado menor con el mismo monto solicitado. Si no encaja, revise alcance, fechas y alternativas en lugar de subir la estimación. Pregunte cómo presentar dudas mediante el proceso del prestamista.",
+      {
+        "h": "Prepare la siguiente conversación"
+      },
+      "Use la <a href=\"/es/heloc-planning-tools#project\">herramienta de planificación</a> para organizar sus supuestos. Deje en blanco lo que no sepa para comentarlo después. La herramienta no determina elegibilidad ni obtiene una oferta. Puede <a href=\"/es/heloc/contractor-quotes\">solicitar una conversación con un corredor</a> para revisar el valor estimado, saldo hipotecario y monto solicitado. No envíe números de cuenta ni documentos financieros por un formulario público.",
+      "<a href=\"https://www.citizensbank.com/learning/home-equity-application-checklist.aspx\">Consulte la fuente en inglés</a>. Los ejemplos de un proveedor corresponden solo a ese proveedor. Esta guía es educativa. Un préstamo garantizado por la vivienda pone el inmueble en riesgo si no se paga. La disponibilidad, documentación, costos y aprobación dependen del prestamista y de sus circunstancias."
+    ]
+  }
+}

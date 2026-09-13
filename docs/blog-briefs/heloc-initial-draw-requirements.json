@@ -1,0 +1,75 @@
+{
+  "slug": "heloc-initial-draw-requirements",
+  "date": "2026-09-12",
+  "type": "guide",
+  "product": "HELOC",
+  "growthTopic": "heloc-initial-draw-requirements",
+  "en": {
+    "title": "Must you draw the full HELOC amount when it opens?",
+    "desc": "Separate the credit limit, initial advance, and funds needed for later project stages.",
+    "eyebrow": "Home equity planning",
+    "terms": [
+      [
+        "Focus",
+        "A homeowner decision"
+      ],
+      [
+        "Review",
+        "Lender requirements apply"
+      ]
+    ],
+    "body": [
+      {
+        "h": "The limit and the first advance are different questions"
+      },
+      "A proposed credit limit does not tell you how much must be advanced at opening. Ask for the initial-draw requirement in writing, including whether fees are included in that advance. Then compare it with what you actually need for the first project payment. Some plans have minimum borrowing requirements; the CFPB recommends checking those terms.",
+      {
+        "h": "Map the project before choosing the amount"
+      },
+      "Use four planning entries: the first payment, the next stage, the later stage, and a contingency you choose. Compare their total with the assumed line amount. A gap means your plan needs another funding source, a revised scope, or a different borrowing discussion. The planner does not decide whether the property supports that credit limit.",
+      {
+        "h": "Check later access as carefully as the first advance"
+      },
+      "Ask how later requests work, whether repaid principal can be accessed again, and whether pricing differs for additional draws. Keep project funds and emergency savings distinct in your budget. Do not treat an unused credit line as guaranteed cash for every future circumstance. Choose the structure using actual contract terms rather than a general description of flexibility.",
+      {
+        "h": "Prepare the next conversation"
+      },
+      "Use the <a href=\"/heloc-planning-tools#project\">home equity planning worksheet</a> to organize your assumptions. Leave anything you do not know blank for discussion. The worksheet does not check eligibility or obtain a lender offer. You can <a href=\"/heloc/contractor-quotes\">request a broker conversation</a> when you are ready to review your estimated home value, mortgage balance, and requested amount. Do not send account numbers or financial documents through a public inquiry form.",
+      "<a href=\"https://www.consumerfinance.gov/ask-cfpb/what-is-a-home-equity-line-of-credit-heloc-en-107/\">Read the source guidance</a>. Provider examples describe that provider only. This guide is educational. A home-secured loan puts the property at risk if repayment fails. Program availability, documentation, costs, and approval depend on the lender and your circumstances."
+    ]
+  },
+  "es": {
+    "title": "¿Debe retirar todo el dinero al abrir un HELOC?",
+    "desc": "Distinga límite de crédito, retiro inicial y fondos para etapas posteriores.",
+    "eyebrow": "Planificación del patrimonio de vivienda",
+    "terms": [
+      [
+        "Tema",
+        "Una decisión sobre su vivienda"
+      ],
+      [
+        "Revisión",
+        "Sujeta a los requisitos del prestamista"
+      ]
+    ],
+    "body": [
+      {
+        "h": "El límite y el primer retiro son preguntas distintas"
+      },
+      "Un límite propuesto no indica cuánto debe retirar al abrir. Pida por escrito el requisito inicial y si incluye cargos. Compárelo con lo que necesita para el primer pago del proyecto. Algunos planes exigen mínimos de disposición; la CFPB recomienda revisarlos.",
+      {
+        "h": "Organice el proyecto antes de elegir el monto"
+      },
+      "Use cuatro datos: primer pago, siguiente etapa, etapa posterior y una reserva elegida por usted. Compare el total con la línea supuesta. Una diferencia exige otros fondos, cambiar el alcance o conversar sobre otra estructura. La herramienta no determina si la vivienda permite ese límite.",
+      {
+        "h": "Revise el acceso posterior con el mismo cuidado"
+      },
+      "Pregunte cómo se solicitan fondos después, si puede volver a retirar capital pagado y si cambia el precio. Distinga los fondos de obra de sus ahorros de emergencia. No trate una línea sin usar como efectivo garantizado para cualquier situación futura. Elija con base en el contrato, no solo en la idea de flexibilidad.",
+      {
+        "h": "Prepare la siguiente conversación"
+      },
+      "Use la <a href=\"/es/heloc-planning-tools#project\">herramienta de planificación</a> para organizar sus supuestos. Deje en blanco lo que no sepa para comentarlo después. La herramienta no determina elegibilidad ni obtiene una oferta. Puede <a href=\"/es/heloc/contractor-quotes\">solicitar una conversación con un corredor</a> para revisar el valor estimado, saldo hipotecario y monto solicitado. No envíe números de cuenta ni documentos financieros por un formulario público.",
+      "<a href=\"https://www.consumerfinance.gov/ask-cfpb/what-is-a-home-equity-line-of-credit-heloc-en-107/\">Consulte la fuente en inglés</a>. Los ejemplos de un proveedor corresponden solo a ese proveedor. Esta guía es educativa. Un préstamo garantizado por la vivienda pone el inmueble en riesgo si no se paga. La disponibilidad, documentación, costos y aprobación dependen del prestamista y de sus circunstancias."
+    ]
+  }
+}

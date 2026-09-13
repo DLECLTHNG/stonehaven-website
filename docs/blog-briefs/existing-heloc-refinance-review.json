@@ -1,0 +1,75 @@
+{
+  "slug": "existing-heloc-refinance-review",
+  "date": "2026-09-12",
+  "type": "guide",
+  "product": "HELOC",
+  "growthTopic": "existing-heloc-refinance-review",
+  "en": {
+    "title": "Refinancing an existing HELOC: what to compare first",
+    "desc": "Compare the existing agreement with a new loan before assuming a refinance helps.",
+    "eyebrow": "Home equity planning",
+    "terms": [
+      [
+        "Focus",
+        "A homeowner decision"
+      ],
+      [
+        "Review",
+        "Lender requirements apply"
+      ]
+    ],
+    "body": [
+      {
+        "h": "Find the problem you want to solve"
+      },
+      "Is the issue an approaching repayment date, a different desired structure, or a request for additional funds? These are different goals. Start with the current balance, agreement dates, and payment terms so a broker can discuss the right question.",
+      {
+        "h": "Compare the old and new obligations"
+      },
+      "Put current payoff, any closure charges, proposed fees, new term, and remaining balance on one sheet. A fresh draw period may also extend the time you carry debt. Compare both the expected monthly payment and the cost over the period you actually plan to keep the borrowing.",
+      {
+        "h": "Keep servicing and new credit separate"
+      },
+      "Stonehaven can review a HELOC refinancing request, but does not become the servicer of your current account by receiving an inquiry. Contact the current lender for account questions or an upcoming payment you cannot manage. A new loan remains subject to approval.",
+      {
+        "h": "Prepare the next conversation"
+      },
+      "Use the <a href=\"/heloc-planning-tools#payments\">home equity planning worksheet</a> to organize your assumptions. Leave anything you do not know blank for discussion. The worksheet does not check eligibility or obtain a lender offer. You can <a href=\"/heloc/repayment-review\">request a broker conversation</a> when you are ready to review your estimated home value, mortgage balance, and requested amount. Do not send account numbers or financial documents through a public inquiry form.",
+      "<a href=\"https://www.consumerfinance.gov/ask-cfpb/what-is-a-home-equity-line-of-credit-heloc-en-107/\">Read the source guidance</a>. Provider examples describe that provider only. This guide is educational. A home-secured loan puts the property at risk if repayment fails. Program availability, documentation, costs, and approval depend on the lender and your circumstances."
+    ]
+  },
+  "es": {
+    "title": "Refinanciar un HELOC existente: qué comparar primero",
+    "desc": "Compare el contrato actual con un préstamo nuevo antes de suponer que conviene refinanciar.",
+    "eyebrow": "Planificación del patrimonio de vivienda",
+    "terms": [
+      [
+        "Tema",
+        "Una decisión sobre su vivienda"
+      ],
+      [
+        "Revisión",
+        "Sujeta a los requisitos del prestamista"
+      ]
+    ],
+    "body": [
+      {
+        "h": "Identifique lo que desea resolver"
+      },
+      "¿Se aproxima la amortización, desea otra estructura o necesita fondos adicionales? Son objetivos diferentes. Empiece con saldo, fechas y condiciones para que el corredor analice la pregunta adecuada.",
+      {
+        "h": "Compare obligaciones actuales y nuevas"
+      },
+      "Ponga en una hoja saldo a liquidar, cargos de cierre, cargos nuevos, plazo y saldo futuro. Una etapa nueva de disposición también puede prolongar la deuda. Compare cuota y costo durante el tiempo que realmente piensa mantenerla.",
+      {
+        "h": "Distinga administración y crédito nuevo"
+      },
+      "Stonehaven puede revisar un refinanciamiento, pero recibir una consulta no lo convierte en administrador de su cuenta actual. Contacte al prestamista actual para asuntos de cuenta o un pago que no pueda cubrir. Un préstamo nuevo requiere aprobación.",
+      {
+        "h": "Prepare la siguiente conversación"
+      },
+      "Use la <a href=\"/es/heloc-planning-tools#payments\">herramienta de planificación</a> para organizar sus supuestos. Deje en blanco lo que no sepa para comentarlo después. La herramienta no determina elegibilidad ni obtiene una oferta. Puede <a href=\"/es/heloc/repayment-review\">solicitar una conversación con un corredor</a> para revisar el valor estimado, saldo hipotecario y monto solicitado. No envíe números de cuenta ni documentos financieros por un formulario público.",
+      "<a href=\"https://www.consumerfinance.gov/ask-cfpb/what-is-a-home-equity-line-of-credit-heloc-en-107/\">Consulte la fuente en inglés</a>. Los ejemplos de un proveedor corresponden solo a ese proveedor. Esta guía es educativa. Un préstamo garantizado por la vivienda pone el inmueble en riesgo si no se paga. La disponibilidad, documentación, costos y aprobación dependen del prestamista y de sus circunstancias."
+    ]
+  }
+}

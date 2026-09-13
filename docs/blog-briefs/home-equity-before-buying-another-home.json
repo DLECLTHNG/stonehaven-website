@@ -1,0 +1,75 @@
+{
+  "slug": "home-equity-before-buying-another-home",
+  "date": "2026-09-12",
+  "type": "guide",
+  "product": "HELOC",
+  "growthTopic": "home-equity-before-buying-another-home",
+  "en": {
+    "title": "Using home equity before buying another home: coordinate both loans",
+    "desc": "Compare the timing and combined obligations before relying on borrowed purchase funds.",
+    "eyebrow": "Home equity planning",
+    "terms": [
+      [
+        "Focus",
+        "A homeowner decision"
+      ],
+      [
+        "Review",
+        "Lender requirements apply"
+      ]
+    ],
+    "body": [
+      {
+        "h": "Review the purchase and equity request together"
+      },
+      "Tell both lending teams where the purchase funds would come from. A home-equity inquiry on one property does not establish approval for the next purchase. Ask how the proposed borrowing affects the purchase application and which documents are needed.",
+      {
+        "h": "Model an overlap period"
+      },
+      "List both properties' payments and ownership expenses for a period when the current home has not sold. Add moving and transaction costs. If the plan only works with an immediate sale, identify that dependency before committing to a purchase deadline.",
+      {
+        "h": "Check the exit plan"
+      },
+      "Compare paying the line after a sale with keeping it longer if the sale is delayed. Ask about closure costs and property-use requirements. Do not assume borrowing for a down payment makes an otherwise unaffordable purchase workable.",
+      {
+        "h": "Prepare the next conversation"
+      },
+      "Use the <a href=\"/heloc-planning-tools#payments\">home equity planning worksheet</a> to organize your assumptions. Leave anything you do not know blank for discussion. The worksheet does not check eligibility or obtain a lender offer. You can <a href=\"/heloc/compare-offers\">request a broker conversation</a> when you are ready to review your estimated home value, mortgage balance, and requested amount. Do not send account numbers or financial documents through a public inquiry form.",
+      "<a href=\"https://www.citizensbank.com/learning/home-equity-application-checklist.aspx\">Read the source guidance</a>. Provider examples describe that provider only. This guide is educational. A home-secured loan puts the property at risk if repayment fails. Program availability, documentation, costs, and approval depend on the lender and your circumstances."
+    ]
+  },
+  "es": {
+    "title": "Usar patrimonio antes de comprar otra vivienda: coordine ambos préstamos",
+    "desc": "Compare fechas y obligaciones combinadas antes de depender de fondos prestados.",
+    "eyebrow": "Planificación del patrimonio de vivienda",
+    "terms": [
+      [
+        "Tema",
+        "Una decisión sobre su vivienda"
+      ],
+      [
+        "Revisión",
+        "Sujeta a los requisitos del prestamista"
+      ]
+    ],
+    "body": [
+      {
+        "h": "Revise compra y crédito juntos"
+      },
+      "Informe a ambos equipos de dónde vendrían los fondos. Una consulta sobre una propiedad no aprueba la próxima compra. Pregunte cómo afecta el préstamo propuesto a la solicitud y qué documentos necesita.",
+      {
+        "h": "Calcule un período de gastos simultáneos"
+      },
+      "Enumere pagos y gastos de ambas viviendas mientras no se venda la actual. Añada traslado y transacción. Si solo funciona con venta inmediata, identifique esa dependencia antes de comprometer una fecha de compra.",
+      {
+        "h": "Revise cómo finalizará el préstamo"
+      },
+      "Compare pagar la línea tras vender con mantenerla si se retrasa la venta. Pregunte por costos de cierre y uso de propiedad. No suponga que financiar el pago inicial hace viable una compra inasequible.",
+      {
+        "h": "Prepare la siguiente conversación"
+      },
+      "Use la <a href=\"/es/heloc-planning-tools#payments\">herramienta de planificación</a> para organizar sus supuestos. Deje en blanco lo que no sepa para comentarlo después. La herramienta no determina elegibilidad ni obtiene una oferta. Puede <a href=\"/es/heloc/compare-offers\">solicitar una conversación con un corredor</a> para revisar el valor estimado, saldo hipotecario y monto solicitado. No envíe números de cuenta ni documentos financieros por un formulario público.",
+      "<a href=\"https://www.citizensbank.com/learning/home-equity-application-checklist.aspx\">Consulte la fuente en inglés</a>. Los ejemplos de un proveedor corresponden solo a ese proveedor. Esta guía es educativa. Un préstamo garantizado por la vivienda pone el inmueble en riesgo si no se paga. La disponibilidad, documentación, costos y aprobación dependen del prestamista y de sus circunstancias."
+    ]
+  }
+}
