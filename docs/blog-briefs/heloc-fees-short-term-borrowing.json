@@ -1,0 +1,75 @@
+{
+  "slug": "heloc-fees-short-term-borrowing",
+  "date": "2026-09-12",
+  "type": "guide",
+  "product": "HELOC",
+  "growthTopic": "heloc-fees-short-term-borrowing",
+  "en": {
+    "title": "HELOC fees when you need the money for a short time",
+    "desc": "Compare opening costs, ongoing charges, and early-closure terms over your actual timeline.",
+    "eyebrow": "Home equity planning",
+    "terms": [
+      [
+        "Focus",
+        "A homeowner decision"
+      ],
+      [
+        "Review",
+        "Lender requirements apply"
+      ]
+    ],
+    "body": [
+      {
+        "h": "Start with your expected payoff date"
+      },
+      "A homeowner planning to repay soon faces a different comparison from someone expecting to carry a balance for many years. Record the amount you need and a realistic payoff date before comparing rates. If the date depends on a future sale, bonus, or refinance, write down what happens if that event is delayed. A lower starting payment does not answer that timing question.",
+      {
+        "h": "Ask about the costs at each stage"
+      },
+      "Use separate rows for opening charges, periodic charges, and costs triggered by closing the line. The CFPB identifies fees that can vary by plan, including inactivity and early-cancellation fees. Ask whether a waived expense must be reimbursed if you close early. Distinguish paying the balance to zero from formally closing the account.",
+      {
+        "h": "Use equal time periods"
+      },
+      "Compare the alternatives at 12, 36, or 60 months only when those horizons fit your plan. Include remaining principal and cash fees. If a quoted fee is not known, mark it unknown rather than entering zero. Our estimator handles one upfront fee amount; annual fees, closure costs, and new draws need to be added to your separate worksheet.",
+      {
+        "h": "Prepare the next conversation"
+      },
+      "Use the <a href=\"/heloc-planning-tools#payments\">home equity planning worksheet</a> to organize your assumptions. Leave anything you do not know blank for discussion. The worksheet does not check eligibility or obtain a lender offer. You can <a href=\"/heloc/compare-offers\">request a broker conversation</a> when you are ready to review your estimated home value, mortgage balance, and requested amount. Do not send account numbers or financial documents through a public inquiry form.",
+      "<a href=\"https://www.consumerfinance.gov/ask-cfpb/what-fees-can-my-lender-charge-if-i-take-out-a-heloc-en-249/\">Read the source guidance</a>. Provider examples describe that provider only. This guide is educational. A home-secured loan puts the property at risk if repayment fails. Program availability, documentation, costs, and approval depend on the lender and your circumstances."
+    ]
+  },
+  "es": {
+    "title": "Costos de un HELOC si necesita el dinero por poco tiempo",
+    "desc": "Compare apertura, cargos periódicos y cierre anticipado durante su plazo real.",
+    "eyebrow": "Planificación del patrimonio de vivienda",
+    "terms": [
+      [
+        "Tema",
+        "Una decisión sobre su vivienda"
+      ],
+      [
+        "Revisión",
+        "Sujeta a los requisitos del prestamista"
+      ]
+    ],
+    "body": [
+      {
+        "h": "Empiece con la fecha prevista de liquidación"
+      },
+      "Quien piensa pagar pronto necesita una comparación distinta de quien mantendrá el saldo muchos años. Anote monto y fecha realista antes de comparar tasas. Si depende de una venta, bonificación o refinanciamiento futuro, considere qué ocurre si se retrasa. Una cuota inicial menor no resuelve ese riesgo de calendario.",
+      {
+        "h": "Pregunte por los costos de cada etapa"
+      },
+      "Separe cargos de apertura, periódicos y los que se activan al cerrar. La CFPB identifica cargos variables según el plan, entre ellos inactividad y cancelación anticipada. Pregunte si debe reembolsar gastos exonerados al cerrar pronto. Distinga pagar el saldo a cero de cerrar formalmente la cuenta.",
+      {
+        "h": "Use períodos iguales"
+      },
+      "Compare a 12, 36 o 60 meses solo si esos plazos corresponden a su plan. Incluya principal pendiente y cargos en efectivo. Si desconoce un cargo, no escriba cero. El estimador considera un monto de cargos iniciales; los anuales, de cierre y retiros nuevos deben añadirse a una hoja separada.",
+      {
+        "h": "Prepare la siguiente conversación"
+      },
+      "Use la <a href=\"/es/heloc-planning-tools#payments\">herramienta de planificación</a> para organizar sus supuestos. Deje en blanco lo que no sepa para comentarlo después. La herramienta no determina elegibilidad ni obtiene una oferta. Puede <a href=\"/es/heloc/compare-offers\">solicitar una conversación con un corredor</a> para revisar el valor estimado, saldo hipotecario y monto solicitado. No envíe números de cuenta ni documentos financieros por un formulario público.",
+      "<a href=\"https://www.consumerfinance.gov/ask-cfpb/what-fees-can-my-lender-charge-if-i-take-out-a-heloc-en-249/\">Consulte la fuente en inglés</a>. Los ejemplos de un proveedor corresponden solo a ese proveedor. Esta guía es educativa. Un préstamo garantizado por la vivienda pone el inmueble en riesgo si no se paga. La disponibilidad, documentación, costos y aprobación dependen del prestamista y de sus circunstancias."
+    ]
+  }
+}

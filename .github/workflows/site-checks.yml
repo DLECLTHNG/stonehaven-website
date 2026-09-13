@@ -25,5 +25,6 @@ jobs:
           python3 scripts/build-heloc-personas.py
           python3 scripts/build-heloc-ads.py
           python3 scripts/build-seo-resources.py
+          python3 scripts/build-heloc-growth.py
           git diff --exit-code
           test -z "$(git ls-files --others --exclude-standard)"

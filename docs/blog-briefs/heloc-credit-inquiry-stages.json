@@ -1,0 +1,75 @@
+{
+  "slug": "heloc-credit-inquiry-stages",
+  "date": "2026-09-12",
+  "type": "guide",
+  "product": "HELOC",
+  "growthTopic": "heloc-credit-inquiry-stages",
+  "en": {
+    "title": "HELOC credit checks: separate the estimate from the application",
+    "desc": "Understand which stage you are entering before providing consent or personal information.",
+    "eyebrow": "Home equity planning",
+    "terms": [
+      [
+        "Focus",
+        "A homeowner decision"
+      ],
+      [
+        "Review",
+        "Lender requirements apply"
+      ]
+    ],
+    "body": [
+      {
+        "h": "Name the stage before asking about credit"
+      },
+      "An equity calculation, a broker conversation, and a lender application are different steps. Stonehaven's initial estimate and callback do not involve a hard credit pull. If you continue, ask the specific lender what inquiry it will make and when. Do not interpret an initial conversation as a completed underwriting decision.",
+      {
+        "h": "Read the action beside the button"
+      },
+      "Check whether you are requesting information or applying for credit. Review the consent text and the identity of the company receiving your information. Avoid sending a Social Security number through a general callback form.",
+      {
+        "h": "Do not reduce eligibility to a score"
+      },
+      "A self-reported score is an estimate. Property, income, existing debts, and lender criteria still matter. If you are comparing programs, ask for the conditions behind a stated credit threshold rather than treating a number as approval.",
+      {
+        "h": "Prepare the next conversation"
+      },
+      "Use the <a href=\"/heloc-planning-tools#offers\">home equity planning worksheet</a> to organize your assumptions. Leave anything you do not know blank for discussion. The worksheet does not check eligibility or obtain a lender offer. You can <a href=\"/heloc/compare-offers\">request a broker conversation</a> when you are ready to review your estimated home value, mortgage balance, and requested amount. Do not send account numbers or financial documents through a public inquiry form.",
+      "<a href=\"https://www.citizensbank.com/learning/home-equity-application-checklist.aspx\">Read the source guidance</a>. Provider examples describe that provider only. This guide is educational. A home-secured loan puts the property at risk if repayment fails. Program availability, documentation, costs, and approval depend on the lender and your circumstances."
+    ]
+  },
+  "es": {
+    "title": "Consultas de crédito para HELOC: distinga estimación y solicitud",
+    "desc": "Entienda la etapa del proceso antes de dar consentimiento o datos personales.",
+    "eyebrow": "Planificación del patrimonio de vivienda",
+    "terms": [
+      [
+        "Tema",
+        "Una decisión sobre su vivienda"
+      ],
+      [
+        "Revisión",
+        "Sujeta a los requisitos del prestamista"
+      ]
+    ],
+    "body": [
+      {
+        "h": "Identifique la etapa"
+      },
+      "Un cálculo, una conversación y una solicitud son pasos distintos. La estimación inicial y llamada de Stonehaven no requieren consulta crediticia dura. Si continúa, pregunte al prestamista qué consulta hará y cuándo. No interprete una conversación inicial como decisión de evaluación.",
+      {
+        "h": "Lea la acción del botón"
+      },
+      "Revise si pide información o solicita crédito. Lea consentimiento e identidad de quien recibe los datos. Evite enviar número de Seguro Social por un formulario general de llamada.",
+      {
+        "h": "No reduzca elegibilidad al puntaje"
+      },
+      "Un puntaje declarado es estimado. También importan vivienda, ingresos, deudas y criterios. Si compara programas, pregunte condiciones detrás de un umbral de crédito en lugar de tratarlo como aprobación.",
+      {
+        "h": "Prepare la siguiente conversación"
+      },
+      "Use la <a href=\"/es/heloc-planning-tools#offers\">herramienta de planificación</a> para organizar sus supuestos. Deje en blanco lo que no sepa para comentarlo después. La herramienta no determina elegibilidad ni obtiene una oferta. Puede <a href=\"/es/heloc/compare-offers\">solicitar una conversación con un corredor</a> para revisar el valor estimado, saldo hipotecario y monto solicitado. No envíe números de cuenta ni documentos financieros por un formulario público.",
+      "<a href=\"https://www.citizensbank.com/learning/home-equity-application-checklist.aspx\">Consulte la fuente en inglés</a>. Los ejemplos de un proveedor corresponden solo a ese proveedor. Esta guía es educativa. Un préstamo garantizado por la vivienda pone el inmueble en riesgo si no se paga. La disponibilidad, documentación, costos y aprobación dependen del prestamista y de sus circunstancias."
+    ]
+  }
+}

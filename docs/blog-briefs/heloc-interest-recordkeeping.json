@@ -1,0 +1,75 @@
+{
+  "slug": "heloc-interest-recordkeeping",
+  "date": "2026-09-12",
+  "type": "guide",
+  "product": "HELOC",
+  "growthTopic": "heloc-interest-recordkeeping",
+  "en": {
+    "title": "HELOC interest questions: records to organize for your tax adviser",
+    "desc": "Keep borrowing and project records organized without assuming a tax deduction.",
+    "eyebrow": "Home equity planning",
+    "terms": [
+      [
+        "Focus",
+        "A homeowner decision"
+      ],
+      [
+        "Review",
+        "Lender requirements apply"
+      ]
+    ],
+    "body": [
+      {
+        "h": "Keep the records separate from the conclusion"
+      },
+      "Save the credit agreement, statements, draw dates, and records of how funds were used. A year-end interest statement records interest; it does not by itself decide the tax treatment of every dollar. A tax adviser needs the circumstances behind the number.",
+      {
+        "h": "Track mixed uses clearly"
+      },
+      "If funds covered more than one purpose, keep a dated ledger linking each advance to invoices or other records. Do not assume all uses receive the same treatment. Preserve the original records and ask how repayments should be documented rather than inventing your own allocation rule.",
+      {
+        "h": "Use guidance for the correct tax year"
+      },
+      "The linked IRS Publication 936 is the 2025 edition at the time of this guide. It addresses use-of-proceeds and other requirements for home mortgage interest. This article makes no determination about your 2026 deduction. Ask your tax adviser to apply current-year rules before including any tax benefit in a borrowing comparison.",
+      {
+        "h": "Prepare the next conversation"
+      },
+      "Use the <a href=\"/heloc-planning-tools#offers\">home equity planning worksheet</a> to organize your assumptions. Leave anything you do not know blank for discussion. The worksheet does not check eligibility or obtain a lender offer. You can <a href=\"/heloc/compare-offers\">request a broker conversation</a> when you are ready to review your estimated home value, mortgage balance, and requested amount. Do not send account numbers or financial documents through a public inquiry form.",
+      "<a href=\"https://www.irs.gov/publications/p936\">Read the source guidance</a>. Provider examples describe that provider only. This guide is educational. A home-secured loan puts the property at risk if repayment fails. Program availability, documentation, costs, and approval depend on the lender and your circumstances."
+    ]
+  },
+  "es": {
+    "title": "Intereses de HELOC: registros para su asesor fiscal",
+    "desc": "Organice registros del préstamo y proyecto sin suponer una deducción.",
+    "eyebrow": "Planificación del patrimonio de vivienda",
+    "terms": [
+      [
+        "Tema",
+        "Una decisión sobre su vivienda"
+      ],
+      [
+        "Revisión",
+        "Sujeta a los requisitos del prestamista"
+      ]
+    ],
+    "body": [
+      {
+        "h": "Distinga registros y conclusión"
+      },
+      "Guarde contrato, estados, fechas y uso de fondos. Un informe anual registra intereses, pero no decide por sí solo el tratamiento de cada dólar. El asesor necesita conocer las circunstancias.",
+      {
+        "h": "Registre usos diferentes"
+      },
+      "Si cubrió varios objetivos, mantenga un registro fechado que relacione retiros con facturas. No suponga el mismo tratamiento para todo. Guarde originales y pregunte cómo documentar pagos sin inventar reglas de distribución.",
+      {
+        "h": "Use orientación del año correcto"
+      },
+      "La Publicación 936 enlazada corresponde a 2025 al preparar esta guía. Trata uso de fondos y otros requisitos. Este artículo no determina su deducción de 2026. Pida al asesor aplicar reglas del año correcto antes de incluir un beneficio fiscal en la comparación.",
+      {
+        "h": "Prepare la siguiente conversación"
+      },
+      "Use la <a href=\"/es/heloc-planning-tools#offers\">herramienta de planificación</a> para organizar sus supuestos. Deje en blanco lo que no sepa para comentarlo después. La herramienta no determina elegibilidad ni obtiene una oferta. Puede <a href=\"/es/heloc/compare-offers\">solicitar una conversación con un corredor</a> para revisar el valor estimado, saldo hipotecario y monto solicitado. No envíe números de cuenta ni documentos financieros por un formulario público.",
+      "<a href=\"https://www.irs.gov/publications/p936\">Consulte la fuente en inglés</a>. Los ejemplos de un proveedor corresponden solo a ese proveedor. Esta guía es educativa. Un préstamo garantizado por la vivienda pone el inmueble en riesgo si no se paga. La disponibilidad, documentación, costos y aprobación dependen del prestamista y de sus circunstancias."
+    ]
+  }
+}

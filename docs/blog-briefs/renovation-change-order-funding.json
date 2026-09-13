@@ -1,0 +1,75 @@
+{
+  "slug": "renovation-change-order-funding",
+  "date": "2026-09-12",
+  "type": "guide",
+  "product": "HELOC",
+  "growthTopic": "renovation-change-order-funding",
+  "en": {
+    "title": "A renovation change order: update the funding plan before agreeing",
+    "desc": "Keep scope, remaining funds, and payment dates aligned when a project changes.",
+    "eyebrow": "Home equity planning",
+    "terms": [
+      [
+        "Focus",
+        "A homeowner decision"
+      ],
+      [
+        "Review",
+        "Lender requirements apply"
+      ]
+    ],
+    "body": [
+      {
+        "h": "Price the change separately"
+      },
+      "Ask for the added or removed work, labor, materials, and timing in writing. Decide whether the change is necessary or optional. A verbal estimate should not silently become part of your borrowing plan.",
+      {
+        "h": "Rebuild the remaining budget"
+      },
+      "Start with invoices already paid, committed costs not yet paid, and the revised work. Add a contingency you choose. Compare that total with available cash and the actual remaining borrowing access. Do not count the original full line again after some of it has been used.",
+      {
+        "h": "Confirm funding before a new commitment"
+      },
+      "If additional borrowing is needed, ask about its requirements and timing before authorizing the change. A current HELOC does not guarantee a higher limit. Record who approved the revised work and keep the financing discussion separate from whether the contractor should perform it.",
+      {
+        "h": "Prepare the next conversation"
+      },
+      "Use the <a href=\"/heloc-planning-tools#project\">home equity planning worksheet</a> to organize your assumptions. Leave anything you do not know blank for discussion. The worksheet does not check eligibility or obtain a lender offer. You can <a href=\"/heloc/contractor-quotes\">request a broker conversation</a> when you are ready to review your estimated home value, mortgage balance, and requested amount. Do not send account numbers or financial documents through a public inquiry form.",
+      "<a href=\"https://consumer.ftc.gov/articles/how-avoid-home-improvement-scam\">Read the source guidance</a>. Provider examples describe that provider only. This guide is educational. A home-secured loan puts the property at risk if repayment fails. Program availability, documentation, costs, and approval depend on the lender and your circumstances."
+    ]
+  },
+  "es": {
+    "title": "Orden de cambio en una reforma: actualice el financiamiento",
+    "desc": "Coordine alcance, fondos restantes y fechas cuando cambie un proyecto.",
+    "eyebrow": "Planificación del patrimonio de vivienda",
+    "terms": [
+      [
+        "Tema",
+        "Una decisión sobre su vivienda"
+      ],
+      [
+        "Revisión",
+        "Sujeta a los requisitos del prestamista"
+      ]
+    ],
+    "body": [
+      {
+        "h": "Calcule el cambio por separado"
+      },
+      "Pida por escrito trabajo añadido o eliminado, mano de obra, materiales y fechas. Decida si es necesario u opcional. Una estimación verbal no debe incorporarse sin revisión al plan.",
+      {
+        "h": "Actualice el presupuesto restante"
+      },
+      "Empiece con facturas pagadas, compromisos pendientes y trabajo revisado. Añada una reserva elegida. Compare con efectivo y acceso real restante al crédito. No vuelva a contar toda la línea original si ya utilizó una parte.",
+      {
+        "h": "Confirme fondos antes de comprometerse"
+      },
+      "Si necesita más crédito, pregunte requisitos y fechas antes de autorizar. Tener HELOC no garantiza un límite mayor. Registre quién aprobó la obra y separe el financiamiento de la decisión sobre el contratista.",
+      {
+        "h": "Prepare la siguiente conversación"
+      },
+      "Use la <a href=\"/es/heloc-planning-tools#project\">herramienta de planificación</a> para organizar sus supuestos. Deje en blanco lo que no sepa para comentarlo después. La herramienta no determina elegibilidad ni obtiene una oferta. Puede <a href=\"/es/heloc/contractor-quotes\">solicitar una conversación con un corredor</a> para revisar el valor estimado, saldo hipotecario y monto solicitado. No envíe números de cuenta ni documentos financieros por un formulario público.",
+      "<a href=\"https://consumer.ftc.gov/articles/how-avoid-home-improvement-scam\">Consulte la fuente en inglés</a>. Los ejemplos de un proveedor corresponden solo a ese proveedor. Esta guía es educativa. Un préstamo garantizado por la vivienda pone el inmueble en riesgo si no se paga. La disponibilidad, documentación, costos y aprobación dependen del prestamista y de sus circunstancias."
+    ]
+  }
+}

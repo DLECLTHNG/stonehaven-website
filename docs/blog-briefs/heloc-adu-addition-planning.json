@@ -1,0 +1,75 @@
+{
+  "slug": "heloc-adu-addition-planning",
+  "date": "2026-09-12",
+  "type": "guide",
+  "product": "HELOC",
+  "growthTopic": "heloc-adu-addition-planning",
+  "en": {
+    "title": "HELOC for an addition or ADU: plan the financing and permissions",
+    "desc": "Keep project permission, property eligibility, and financing capacity separate.",
+    "eyebrow": "Home equity planning",
+    "terms": [
+      [
+        "Focus",
+        "A homeowner decision"
+      ],
+      [
+        "Review",
+        "Lender requirements apply"
+      ]
+    ],
+    "body": [
+      {
+        "h": "Confirm what can be built"
+      },
+      "Begin with the local planning authority and qualified design or construction professionals. An accessory dwelling unit or addition can raise different property-use and permitting questions. A mortgage conversation does not confirm that the project is legally permitted.",
+      {
+        "h": "Build a complete project budget"
+      },
+      "Include design, permits, site work, utility work, construction, and a contingency based on the actual scope. Compare when invoices arrive with available funds. Do not assume a projected future value is the value a HELOC lender will use today.",
+      {
+        "h": "Compare structures before committing"
+      },
+      "Ask whether the existing property and planned use fit the available home-equity program or need a different financing approach. If future rental income is part of the plan, discuss its treatment rather than assuming it qualifies. Keep a fallback for cost or approval changes.",
+      {
+        "h": "Prepare the next conversation"
+      },
+      "Use the <a href=\"/heloc-planning-tools#project\">home equity planning worksheet</a> to organize your assumptions. Leave anything you do not know blank for discussion. The worksheet does not check eligibility or obtain a lender offer. You can <a href=\"/heloc/contractor-quotes\">request a broker conversation</a> when you are ready to review your estimated home value, mortgage balance, and requested amount. Do not send account numbers or financial documents through a public inquiry form.",
+      "<a href=\"https://www.citizensbank.com/learning/home-equity-application-checklist.aspx\">Read the source guidance</a>. Provider examples describe that provider only. This guide is educational. A home-secured loan puts the property at risk if repayment fails. Program availability, documentation, costs, and approval depend on the lender and your circumstances."
+    ]
+  },
+  "es": {
+    "title": "HELOC para ampliación o ADU: planifique fondos y permisos",
+    "desc": "Distinga permisos, elegibilidad del inmueble y capacidad de financiamiento.",
+    "eyebrow": "Planificación del patrimonio de vivienda",
+    "terms": [
+      [
+        "Tema",
+        "Una decisión sobre su vivienda"
+      ],
+      [
+        "Revisión",
+        "Sujeta a los requisitos del prestamista"
+      ]
+    ],
+    "body": [
+      {
+        "h": "Confirme qué puede construir"
+      },
+      "Empiece con autoridad local y profesionales de diseño o construcción. Una ADU o ampliación plantea preguntas distintas de uso y permisos. La conversación hipotecaria no confirma autorización legal.",
+      {
+        "h": "Prepare el presupuesto completo"
+      },
+      "Incluya diseño, permisos, terreno, servicios, construcción y reserva según alcance. Compare facturas y disponibilidad. No suponga que el valor futuro previsto es el que usará hoy el prestamista.",
+      {
+        "h": "Compare estructuras antes de comprometerse"
+      },
+      "Pregunte si inmueble y uso previsto encajan o requieren otra estructura. Si planea renta futura, consulte su tratamiento sin asumir que califica. Prepare alternativas ante cambios de costo o aprobación.",
+      {
+        "h": "Prepare la siguiente conversación"
+      },
+      "Use la <a href=\"/es/heloc-planning-tools#project\">herramienta de planificación</a> para organizar sus supuestos. Deje en blanco lo que no sepa para comentarlo después. La herramienta no determina elegibilidad ni obtiene una oferta. Puede <a href=\"/es/heloc/contractor-quotes\">solicitar una conversación con un corredor</a> para revisar el valor estimado, saldo hipotecario y monto solicitado. No envíe números de cuenta ni documentos financieros por un formulario público.",
+      "<a href=\"https://www.citizensbank.com/learning/home-equity-application-checklist.aspx\">Consulte la fuente en inglés</a>. Los ejemplos de un proveedor corresponden solo a ese proveedor. Esta guía es educativa. Un préstamo garantizado por la vivienda pone el inmueble en riesgo si no se paga. La disponibilidad, documentación, costos y aprobación dependen del prestamista y de sus circunstancias."
+    ]
+  }
+}

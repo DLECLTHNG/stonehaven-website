@@ -1,0 +1,75 @@
+{
+  "slug": "rental-property-equity-heloc-dscr",
+  "date": "2026-09-12",
+  "type": "guide",
+  "product": "HELOC",
+  "growthTopic": "rental-property-equity-heloc-dscr",
+  "en": {
+    "title": "Rental-property equity: separate HELOC and DSCR questions",
+    "desc": "Identify property use and financing structure before comparing investor options.",
+    "eyebrow": "Home equity planning",
+    "terms": [
+      [
+        "Focus",
+        "A homeowner decision"
+      ],
+      [
+        "Review",
+        "Lender requirements apply"
+      ]
+    ],
+    "body": [
+      {
+        "h": "Start with the property that secures the loan"
+      },
+      "A line secured by a primary home and borrowing secured by a rental are different scenarios. Explain where the collateral is and how the funds would be used. Do not select owner-occupied on an inquiry for a property that is actually a rental.",
+      {
+        "h": "Compare the complete financing plan"
+      },
+      "Record the existing debt, proposed new debt, rental operating costs, and the expected cash remaining. If a refinance replaces a loan, compare the changed balance and term. If another lien is proposed, account for both obligations. Rental income alone does not establish every program's eligibility.",
+      {
+        "h": "Use the right review path"
+      },
+      "Review <a href=\"/dscr\">DSCR financing</a> for an investment-property discussion, or ask a broker which equity products are available for the actual property use. This guide does not establish an investor HELOC offering or a universal rental-income rule. Keep consumer and investor assumptions separate.",
+      {
+        "h": "Prepare the next conversation"
+      },
+      "Use the <a href=\"/heloc-planning-tools#offers\">home equity planning worksheet</a> to organize your assumptions. Leave anything you do not know blank for discussion. The worksheet does not check eligibility or obtain a lender offer. You can <a href=\"/heloc/compare-offers\">request a broker conversation</a> when you are ready to review your estimated home value, mortgage balance, and requested amount. Do not send account numbers or financial documents through a public inquiry form.",
+      "<a href=\"https://www.citizensbank.com/learning/home-equity-application-checklist.aspx\">Read the source guidance</a>. Provider examples describe that provider only. This guide is educational. A home-secured loan puts the property at risk if repayment fails. Program availability, documentation, costs, and approval depend on the lender and your circumstances."
+    ]
+  },
+  "es": {
+    "title": "Patrimonio de alquiler: distinga preguntas de HELOC y DSCR",
+    "desc": "Identifique uso del inmueble y estructura antes de comparar opciones de inversión.",
+    "eyebrow": "Planificación del patrimonio de vivienda",
+    "terms": [
+      [
+        "Tema",
+        "Una decisión sobre su vivienda"
+      ],
+      [
+        "Revisión",
+        "Sujeta a los requisitos del prestamista"
+      ]
+    ],
+    "body": [
+      {
+        "h": "Empiece con la propiedad que garantiza"
+      },
+      "Una línea sobre residencia principal y un préstamo sobre alquiler son casos distintos. Explique garantía y uso de fondos. No marque ocupación principal para una propiedad realmente alquilada.",
+      {
+        "h": "Compare el plan completo"
+      },
+      "Registre deuda actual, nueva deuda, gastos del alquiler y efectivo restante. Si refinancia, compare saldo y plazo nuevos. Si añade garantía, considere ambas obligaciones. La renta por sí sola no establece elegibilidad para todo programa.",
+      {
+        "h": "Use la revisión adecuada"
+      },
+      "Revise <a href=\"/es/dscr\">financiamiento DSCR</a> para inversión o pregunte qué productos existen según uso real. Esta guía no establece una oferta de HELOC para inversionistas ni una regla universal de renta. Distinga supuestos de consumo e inversión.",
+      {
+        "h": "Prepare la siguiente conversación"
+      },
+      "Use la <a href=\"/es/heloc-planning-tools#offers\">herramienta de planificación</a> para organizar sus supuestos. Deje en blanco lo que no sepa para comentarlo después. La herramienta no determina elegibilidad ni obtiene una oferta. Puede <a href=\"/es/heloc/compare-offers\">solicitar una conversación con un corredor</a> para revisar el valor estimado, saldo hipotecario y monto solicitado. No envíe números de cuenta ni documentos financieros por un formulario público.",
+      "<a href=\"https://www.citizensbank.com/learning/home-equity-application-checklist.aspx\">Consulte la fuente en inglés</a>. Los ejemplos de un proveedor corresponden solo a ese proveedor. Esta guía es educativa. Un préstamo garantizado por la vivienda pone el inmueble en riesgo si no se paga. La disponibilidad, documentación, costos y aprobación dependen del prestamista y de sus circunstancias."
+    ]
+  }
+}

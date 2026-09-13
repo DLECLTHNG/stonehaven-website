@@ -12,8 +12,8 @@ test('money accepts estimates and a paid-off mortgage without changing malformed
   assert.equal(H.amount('0', false), null);
 });
 test('every HELOC page and comparison flow collects all three amounts', () => {
-  const pages = ['heloc.html','es/heloc.html','heloc-wizard.html','es/heloc-wizard.html','heloc-instant.html','es/heloc-instant.html','cash-out-refinance.html','es/cash-out-refinance.html', ...readdirSync('heloc').filter(p => p.endsWith('.html')).map(p => 'heloc/' + p)];
-  assert.equal(pages.length, 32);
+  const pages = ['heloc.html','es/heloc.html','heloc-wizard.html','es/heloc-wizard.html','heloc-instant.html','es/heloc-instant.html','cash-out-refinance.html','es/cash-out-refinance.html', ...readdirSync('heloc').filter(p => p.endsWith('.html')).map(p => 'heloc/' + p), ...readdirSync('es/heloc').filter(p => p.endsWith('.html')).map(p => 'es/heloc/' + p)];
+  assert.equal(pages.length, 41);
   for (const page of pages) {
     const html = readFileSync(page, 'utf8');
     assert.match(html, /heloc-fields\.js/, page);

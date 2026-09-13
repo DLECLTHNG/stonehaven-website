@@ -1,0 +1,75 @@
+{
+  "slug": "heloc-draw-period-repayment-payments",
+  "date": "2026-09-12",
+  "type": "guide",
+  "product": "HELOC",
+  "growthTopic": "heloc-draw-period-repayment-payments",
+  "en": {
+    "title": "What happens to HELOC payments when the draw period ends?",
+    "desc": "See how balance, rate, and remaining repayment time affect a hypothetical payment.",
+    "eyebrow": "Home equity planning",
+    "terms": [
+      [
+        "Focus",
+        "A homeowner decision"
+      ],
+      [
+        "Review",
+        "Lender requirements apply"
+      ]
+    ],
+    "body": [
+      {
+        "h": "Identify the stage in your own agreement"
+      },
+      "Find the date when borrowing access ends and the section explaining payments afterward. Do not rely on the product name or the payment shown on an advertisement. Ask whether your agreement calls for scheduled principal repayment, a balance due at once, or another arrangement. The CFPB describes different repayment structures, so a sample from another lender is not enough to establish your own obligation.",
+      {
+        "h": "Change one assumption at a time"
+      },
+      "Our educational model allows an interest-only period followed by amortization. Start with your assumed drawn balance and rate, then change the repayment months while holding the other figures constant. Next test a different rate. This shows which assumption drives the change. The model does not include new borrowing during the modeled period and is not a forecast of future rates.",
+      {
+        "h": "Prepare before the transition"
+      },
+      "Ask your current lender for the expected payment under your actual agreement. If you want to discuss a new loan, keep that separate from a servicing request. Stonehaven can review a HELOC refinancing inquiry, but a new application is subject to underwriting and does not automatically extend an existing line. Avoid delaying a conversation until a payment is already due.",
+      {
+        "h": "Prepare the next conversation"
+      },
+      "Use the <a href=\"/heloc-planning-tools#payments\">home equity planning worksheet</a> to organize your assumptions. Leave anything you do not know blank for discussion. The worksheet does not check eligibility or obtain a lender offer. You can <a href=\"/heloc/repayment-review\">request a broker conversation</a> when you are ready to review your estimated home value, mortgage balance, and requested amount. Do not send account numbers or financial documents through a public inquiry form.",
+      "<a href=\"https://www.consumerfinance.gov/ask-cfpb/what-is-a-home-equity-line-of-credit-heloc-en-107/\">Read the source guidance</a>. Provider examples describe that provider only. This guide is educational. A home-secured loan puts the property at risk if repayment fails. Program availability, documentation, costs, and approval depend on the lender and your circumstances."
+    ]
+  },
+  "es": {
+    "title": "Cómo cambian los pagos al terminar el período de disposición",
+    "desc": "Vea cómo saldo, tasa y plazo de amortización afectan un pago hipotético.",
+    "eyebrow": "Planificación del patrimonio de vivienda",
+    "terms": [
+      [
+        "Tema",
+        "Una decisión sobre su vivienda"
+      ],
+      [
+        "Revisión",
+        "Sujeta a los requisitos del prestamista"
+      ]
+    ],
+    "body": [
+      {
+        "h": "Identifique la etapa de su contrato"
+      },
+      "Busque cuándo termina el acceso a fondos y cómo se paga después. No se base solo en el nombre del producto ni en una cuota publicitaria. Pregunte si debe amortizar capital, pagar el saldo de una vez o cumplir otra estructura. La CFPB describe distintos esquemas; el ejemplo de otro prestamista no establece su obligación.",
+      {
+        "h": "Cambie un supuesto a la vez"
+      },
+      "El modelo educativo permite una etapa de solo intereses seguida de amortización. Empiece con saldo y tasa supuestos y cambie los meses de pago manteniendo los demás datos. Luego pruebe otra tasa. Así podrá ver qué provoca la diferencia. El modelo no incluye retiros adicionales ni pronostica tasas futuras.",
+      {
+        "h": "Prepárese antes de la transición"
+      },
+      "Pida al prestamista actual el pago previsto según su contrato. Si desea hablar de un préstamo nuevo, distíngalo de una consulta de administración. Stonehaven puede revisar una solicitud de refinanciamiento de HELOC, sujeta a evaluación; no extiende automáticamente la línea existente. No espere hasta el vencimiento para preguntar.",
+      {
+        "h": "Prepare la siguiente conversación"
+      },
+      "Use la <a href=\"/es/heloc-planning-tools#payments\">herramienta de planificación</a> para organizar sus supuestos. Deje en blanco lo que no sepa para comentarlo después. La herramienta no determina elegibilidad ni obtiene una oferta. Puede <a href=\"/es/heloc/repayment-review\">solicitar una conversación con un corredor</a> para revisar el valor estimado, saldo hipotecario y monto solicitado. No envíe números de cuenta ni documentos financieros por un formulario público.",
+      "<a href=\"https://www.consumerfinance.gov/ask-cfpb/what-is-a-home-equity-line-of-credit-heloc-en-107/\">Consulte la fuente en inglés</a>. Los ejemplos de un proveedor corresponden solo a ese proveedor. Esta guía es educativa. Un préstamo garantizado por la vivienda pone el inmueble en riesgo si no se paga. La disponibilidad, documentación, costos y aprobación dependen del prestamista y de sus circunstancias."
+    ]
+  }
+}
