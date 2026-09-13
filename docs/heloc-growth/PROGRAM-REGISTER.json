@@ -1,0 +1,22 @@
+{
+  "verifiedDate": "2026-09-12",
+  "source": "Owner confirmation in this website task: all and yes, responding to first-lien paid-off-home HELOCs, refinancing existing HELOCs, bank-statement HELOCs and Florida residential approval.",
+  "reviewOwner": "Stonehaven residential broker",
+  "confirmedAvailability": ["First-lien HELOC on paid-off home", "Refinancing an existing HELOC", "Bank-statement HELOC", "Florida residential lending"],
+  "publishedServiceStates": ["GA", "AL", "TN", "FL", "NC", "SC"],
+  "stateEvidence": "Existing service scope retained; Florida specifically reconfirmed by owner. Individual lender eligibility remains subject to verification.",
+  "unconfirmedTerms": {
+    "lenderNames": null,
+    "occupancyEligibilityByLender": null,
+    "minimumCreditScore": null,
+    "maximumCombinedLTV": null,
+    "minimumMaximumLoan": null,
+    "statementPeriod": null,
+    "initialDrawAndHoldingPeriod": null,
+    "fees": null,
+    "rateIndexMarginCaps": null,
+    "fixedConversionTerms": null,
+    "drawAndRepaymentPeriods": null
+  },
+  "publishingRule": "Null means unconfirmed. Verify actual lender terms before adding concrete eligibility, rate, payment or fee claims. Recheck when lender programs or service authority change."
+}
