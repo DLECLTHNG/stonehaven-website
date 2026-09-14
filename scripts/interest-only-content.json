@@ -1,0 +1,294 @@
+{
+  "en": {
+    "title": "Interest-Only Mortgages: Options and Payment Planning",
+    "desc": "Explore interest-only mortgage options with Stonehaven. Compare initial payments, future principal repayment and eligibility in GA, AL, TN, FL, NC and SC.",
+    "eyebrow": "Interest-only mortgage options",
+    "h1": "Interest-only mortgages.<br><em>Plan beyond the first payment.</em>",
+    "intro": "An interest-only mortgage lets you pay the interest due during a defined period, without scheduled principal reduction. Stonehaven helps you compare that initial flexibility with the payments and repayment obligations that follow.",
+    "cta": "Text me about my options",
+    "note": "Residential inquiries in GA, AL, TN, FL, NC and SC. Program eligibility varies.",
+    "card": "Know the full payment picture",
+    "facts": [
+      [
+        "Initial period",
+        "Scheduled loan payments cover interest, without paying down principal"
+      ],
+      [
+        "Next phase",
+        "Principal must still be repaid under the loan’s terms"
+      ],
+      [
+        "Full housing cost",
+        "Budget for taxes, insurance and applicable association costs too"
+      ]
+    ],
+    "fit": "Reasons to explore the option",
+    "people": [
+      [
+        "Preserve cash reserves",
+        "Compare an interest-only structure when keeping funds available matters, while maintaining a workable plan for the loan balance."
+      ],
+      [
+        "Income arrives unevenly",
+        "Business owners and professionals with variable compensation can review the payment schedule alongside their documented income and reserves."
+      ],
+      [
+        "Compare a property strategy",
+        "For a rental property, ask about investor financing and the property’s cash flow. Occupancy and loan purpose affect which programs may be available."
+      ]
+    ],
+    "how": "Review the whole loan, from the start",
+    "steps": [
+      [
+        "Tell us your goal",
+        "Share your property state, purchase or refinance goal and expected ownership timeline. A specialist will follow up by text."
+      ],
+      [
+        "Compare both payment schedules",
+        "Ask for the interest-only period, rate structure, subsequent payments and final maturity. Compare these with a loan that repays principal from the first payment."
+      ],
+      [
+        "Check the repayment plan",
+        "Review income, assets, reserves, equity and debts. Consider whether later payments remain manageable without relying on a future sale or refinance."
+      ]
+    ],
+    "details": "A lower starting payment is only part of the decision",
+    "detailp": "At the same rate and balance, an interest-only payment is lower than a principal-and-interest payment because repayment of the balance is deferred. The balance does not shrink from interest payments alone. Later payments can rise substantially when principal repayment begins, and an adjustable rate can change the payment as well. A decline in property value can reduce equity. Refinancing and selling are not guaranteed exit options.",
+    "compare": "Interest-only vs. principal-and-interest payments",
+    "cols": [
+      "Feature",
+      "Interest-only structure",
+      "Amortizing structure"
+    ],
+    "rows": [
+      [
+        "Scheduled principal reduction",
+        "None during the interest-only period",
+        "Part of each scheduled payment repays principal"
+      ],
+      [
+        "Payment transition",
+        "Review when principal repayment begins and whether a balloon is due",
+        "Principal is repaid over the agreed amortization schedule"
+      ],
+      [
+        "Rate structure",
+        "May be fixed or adjustable, depending on the program",
+        "May also be fixed or adjustable"
+      ],
+      [
+        "What to compare",
+        "Initial and later payments, remaining balance, fees and total cost",
+        "Payment schedule, remaining balance, fees and total cost"
+      ]
+    ],
+    "tradeoff": "Request the actual terms for your file. An interest-only feature does not establish the rate, loan term, minimum credit score or required down payment. It can increase total interest paid compared with repaying the same balance sooner at the same rate.",
+    "faqtitle": "Questions before you start",
+    "faqs": [
+      [
+        "What happens when the interest-only period ends?",
+        "The loan agreement controls the next step. Payments may increase to repay principal and interest over the remaining term, or a balance may be due at maturity. Confirm the full schedule and any balloon payment before proceeding."
+      ],
+      [
+        "Is interest-only the same as an adjustable-rate mortgage?",
+        "No. Interest-only describes how payments are applied. Fixed or adjustable describes the interest rate. Ask about both features, including any adjustment dates and caps."
+      ],
+      [
+        "Can I make payments toward principal?",
+        "Ask whether the program permits additional principal payments, how to direct them and whether any prepayment charge applies. Also confirm whether paying extra changes the required payment or only the outstanding balance."
+      ],
+      [
+        "Does a smaller initial payment make qualification easier?",
+        "Not necessarily. The lender applies its income, credit, asset, debt and property requirements. Qualification may consider payments beyond the initial interest-only period."
+      ],
+      [
+        "Can I use interest-only financing for an investment property?",
+        "It may be available through eligible investor programs. Ask for a DSCR or investment-property review so the property use, rent and repayment structure are evaluated under the appropriate program."
+      ],
+      [
+        "Is this a HELOC?",
+        "An interest-only payment feature is not itself a line of credit. A HELOC is a separate product with its own draw and repayment terms. If you need revolving access to equity, compare home equity options."
+      ]
+    ],
+    "formtitle": "Explore your interest-only mortgage options",
+    "formintro": "Share the basics and your mobile number. A Stonehaven specialist will follow up by text.",
+    "labels": [
+      "Name",
+      "Email",
+      "Mobile number",
+      "Property state",
+      "Financing goal",
+      "Expected ownership timeline",
+      "Estimated purchase price or property value ($)",
+      "Requested loan amount ($)"
+    ],
+    "goals": [
+      "Purchase",
+      "Refinance",
+      "Cash-out refinance",
+      "Exploring"
+    ],
+    "history": [
+      "Less than 5 years",
+      "5-10 years",
+      "More than 10 years",
+      "Not sure"
+    ],
+    "choose": "Choose an option",
+    "consent": "By submitting, you ask Stonehaven Lending to contact you by text or email about this inquiry. Consent is not a condition of service. Message and data rates may apply; reply STOP to opt out.",
+    "success": "Thank you. We received your inquiry and will follow up by text.",
+    "related": "Explore related options",
+    "links": [
+      "Residential home loans",
+      "DSCR investor financing",
+      "Bank statement loans"
+    ],
+    "home": "Home"
+  },
+  "es": {
+    "title": "Hipotecas con pagos de solo intereses: opciones y planificación",
+    "desc": "Explore hipotecas con pagos de solo intereses. Compare pagos iniciales, devolución del capital y requisitos en GA, AL, TN, FL, NC y SC.",
+    "eyebrow": "Opciones hipotecarias de solo intereses",
+    "h1": "Hipotecas de solo intereses.<br><em>Planifique más allá del primer pago.</em>",
+    "intro": "Una hipoteca de solo intereses permite pagar los intereses durante un período definido, sin reducción programada del capital. Stonehaven le ayuda a comparar esa flexibilidad inicial con los pagos y obligaciones posteriores.",
+    "cta": "Quiero recibir un mensaje",
+    "note": "Consultas residenciales en GA, AL, TN, FL, NC y SC. La elegibilidad varía según el programa.",
+    "card": "Conozca el costo completo",
+    "facts": [
+      [
+        "Período inicial",
+        "Los pagos programados del préstamo cubren intereses, sin reducir el capital"
+      ],
+      [
+        "Etapa siguiente",
+        "El capital debe devolverse según el contrato"
+      ],
+      [
+        "Costo de vivienda",
+        "Incluya impuestos, seguro y cuotas de asociación cuando correspondan"
+      ]
+    ],
+    "fit": "Motivos para explorar esta opción",
+    "people": [
+      [
+        "Conservar reservas",
+        "Compare esta estructura si necesita mantener fondos disponibles, junto con un plan viable para devolver el saldo."
+      ],
+      [
+        "Ingresos variables",
+        "Empresarios y profesionales con remuneración variable pueden revisar los pagos junto con sus ingresos documentados y reservas."
+      ],
+      [
+        "Evaluar una inversión",
+        "Para una propiedad de alquiler, consulte las opciones para inversionistas y el flujo de rentas. El uso y propósito del préstamo afectan los programas disponibles."
+      ]
+    ],
+    "how": "Revise todo el préstamo desde el principio",
+    "steps": [
+      [
+        "Comparta su objetivo",
+        "Indique el estado del inmueble, su objetivo de compra o refinanciamiento y cuánto tiempo espera conservarlo. Un especialista le dará seguimiento por mensaje de texto."
+      ],
+      [
+        "Compare los pagos de ambas opciones",
+        "Pida el período de solo intereses, tipo de tasa, pagos posteriores y vencimiento. Compárelos con un préstamo que devuelve capital desde el primer pago."
+      ],
+      [
+        "Evalúe el plan de devolución",
+        "Revise ingresos, activos, reservas, patrimonio y deudas. Considere si puede afrontar los pagos posteriores sin depender de una venta o refinanciamiento futuro."
+      ]
+    ],
+    "details": "El pago inicial es solo una parte de la decisión",
+    "detailp": "Con la misma tasa y saldo, el pago de solo intereses es menor que el de capital e intereses porque se aplaza la devolución del capital. Pagar únicamente intereses no reduce el saldo. Los pagos posteriores pueden aumentar considerablemente cuando comienza la devolución del capital; una tasa ajustable también puede cambiar el pago. Una caída del valor del inmueble puede reducir su patrimonio. No se garantiza poder vender o refinanciar.",
+    "compare": "Compare las estructuras de pago",
+    "cols": [
+      "Característica",
+      "Solo intereses",
+      "Capital e intereses"
+    ],
+    "rows": [
+      [
+        "Reducción programada del capital",
+        "Ninguna durante el período de solo intereses",
+        "Una parte de cada pago devuelve capital"
+      ],
+      [
+        "Cambio de pagos",
+        "Revise cuándo comienza la devolución del capital y si hay un pago global",
+        "El capital se devuelve según el calendario de amortización"
+      ],
+      [
+        "Tipo de tasa",
+        "Puede ser fija o ajustable, según el programa",
+        "También puede ser fija o ajustable"
+      ],
+      [
+        "Qué comparar",
+        "Pagos iniciales y posteriores, saldo, cargos y costo total",
+        "Calendario de pagos, saldo, cargos y costo total"
+      ]
+    ],
+    "tradeoff": "Solicite las condiciones de su expediente. La opción de solo intereses no establece por sí sola tasa, plazo, puntaje mínimo ni entrada requerida. Puede aumentar el interés total frente a devolver antes el mismo saldo con la misma tasa.",
+    "faqtitle": "Preguntas antes de comenzar",
+    "faqs": [
+      [
+        "¿Qué ocurre al terminar el período de solo intereses?",
+        "Depende del contrato. Los pagos pueden aumentar para devolver capital e intereses durante el plazo restante, o puede quedar un saldo exigible al vencimiento. Confirme el calendario completo y cualquier pago global antes de continuar."
+      ],
+      [
+        "¿Solo intereses significa tasa ajustable?",
+        "No. Solo intereses describe cómo se aplican los pagos. Fija o ajustable describe la tasa. Pregunte por ambas características, incluidas las fechas de ajuste y los límites."
+      ],
+      [
+        "¿Puedo realizar pagos al capital?",
+        "Confirme si se permiten pagos adicionales al capital, cómo indicarlos y si existe un cargo por pago anticipado. Pregunte también si el abono cambia el pago requerido o únicamente el saldo."
+      ],
+      [
+        "¿Un pago inicial menor facilita la aprobación?",
+        "No necesariamente. El prestamista aplica requisitos de ingresos, crédito, activos, deudas e inmueble. La evaluación puede considerar pagos posteriores al período inicial."
+      ],
+      [
+        "¿Puede utilizarse para una propiedad de inversión?",
+        "Puede estar disponible mediante programas elegibles para inversionistas. Solicite una revisión DSCR o de inversión para evaluar uso, rentas y estructura de devolución bajo el programa correspondiente."
+      ],
+      [
+        "¿Es una HELOC?",
+        "Una característica de pagos de solo intereses no es por sí misma una línea de crédito. Una HELOC es otro producto con condiciones de disposición y devolución propias. Compare opciones de patrimonio si necesita acceso renovable a fondos."
+      ]
+    ],
+    "formtitle": "Explore opciones hipotecarias de solo intereses",
+    "formintro": "Comparta los datos básicos y su celular. Un especialista de Stonehaven le dará seguimiento por mensaje de texto.",
+    "labels": [
+      "Nombre",
+      "Correo electrónico",
+      "Número de celular",
+      "Estado del inmueble",
+      "Objetivo",
+      "¿Cuánto tiempo espera conservar el inmueble?",
+      "Precio de compra o valor estimado ($)",
+      "Monto de préstamo solicitado ($)"
+    ],
+    "goals": [
+      "Compra",
+      "Refinanciamiento",
+      "Refinanciamiento con retiro de efectivo",
+      "Explorando"
+    ],
+    "history": [
+      "Menos de 5 años",
+      "5-10 años",
+      "Más de 10 años",
+      "No estoy seguro"
+    ],
+    "choose": "Seleccione una opción",
+    "consent": "Al enviar, solicita que Stonehaven Lending le contacte por mensaje de texto o correo sobre esta consulta. El consentimiento no es condición del servicio. Pueden aplicar tarifas de mensajes y datos; responda STOP para cancelar.",
+    "success": "Gracias. Recibimos su consulta y le daremos seguimiento por mensaje de texto.",
+    "related": "Explore otras opciones",
+    "links": [
+      "Préstamos de vivienda",
+      "Financiamiento DSCR para inversionistas",
+      "Préstamos con estados de cuenta"
+    ],
+    "home": "Inicio"
+  }
+}
