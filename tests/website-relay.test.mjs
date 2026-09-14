@@ -46,7 +46,7 @@ test('invalid destination and missing key fail before sending contact informatio
 test('Residential, HELOC and Family records are forwarded with their saved details',async t=>{
  setup(t);const sent=[];
  global.fetch=async(_,o)=>{sent.push(JSON.parse(o.body));return new Response(JSON.stringify({status:'created',lead:{id:'res-1'}}));};
- for(const data of [{product:'Residential',page:'contact'},{product:'Not sure',page:'family-parents'},{product:'DSCR',page:'heloc-persona'},{product:'Not sure',page:'mortgage-calculator'},{product:'Not sure',page:'residential-bank-statement'}]) {
+ for(const data of [{product:'Residential',page:'contact'},{product:'Not sure',page:'family-parents'},{product:'DSCR',page:'heloc-persona'},{product:'Not sure',page:'mortgage-calculator'},{product:'Not sure',page:'residential-bank-statement'},{product:'Not sure',page:'residential-interest-only'}]) {
   assert.equal((await handler({body:JSON.stringify({payload:{id:'saved-123',form_name:'lead',data:{...data,extra:JSON.stringify({home_value:'450000',mortgage_balance:'200000',requested_amount:'75000'})}}})})).statusCode,200);
  }
  for(const body of sent){assert.equal(body.product,'Residential');assert.equal(body.extra.requested_amount,'75000');assert.equal(body.extra.netlify_submission_id,'saved-123');}

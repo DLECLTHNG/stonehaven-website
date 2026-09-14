@@ -27,5 +27,6 @@ jobs:
           python3 scripts/build-seo-resources.py
           python3 scripts/build-heloc-growth.py
           python3 scripts/build-bank-statement.py
+          python3 scripts/build-interest-only.py
           git diff --exit-code
           test -z "$(git ls-files --others --exclude-standard)"
