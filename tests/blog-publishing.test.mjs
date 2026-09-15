@@ -100,3 +100,12 @@ test('Family publishing requires an audience and never inherits advertising tags
     }
   }
 });
+
+test('Commercial guides route readers to the commercial deal review in each language', t => {
+  const f = fixture(t);
+  const result = f.publish({...f.brief, product: 'Commercial'});
+  assert.equal(result.status, 0, result.stderr);
+  assert.ok(f.read('blog/publishing-test.html').includes('href="/terms-sheet#deal-review"'));
+  assert.ok(f.read('es/blog/publishing-test.html').includes('href="/es/commercial#leadForm"'));
+  assert.ok(f.read('blog/publishing-test.html').includes('We follow up by text.'));
+});
