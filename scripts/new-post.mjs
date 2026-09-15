@@ -7,7 +7,7 @@ if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(b.slug || '')) throw new Error('A safe lo
 if (!/^\d{4}-\d{2}-\d{2}$/.test(b.date || '')) throw new Error('date must be YYYY-MM-DD');
 if (new Date(b.date).toISOString().slice(0, 10) !== b.date || b.date > new Date().toISOString().slice(0, 10)) throw new Error('Use a real publication date that is not in the future');
 if (!['guide', 'closing'].includes(b.type)) throw new Error('type must be guide or closing');
-if (b.product && !['HELOC', 'DSCR', 'Family'].includes(b.product)) throw new Error('Unsupported product');
+if (b.product && !['HELOC', 'DSCR', 'Family', 'Commercial'].includes(b.product)) throw new Error('Unsupported product');
 if (b.audience && b.audience !== 'partners') throw new Error('Unsupported audience');
 if (b.audience === 'partners' && b.product) throw new Error('Partner guides use their own contact CTA');
 if (b.product === 'Family' && !['parents', 'adult-child'].includes(b.familyAudience)) throw new Error('Choose a Family audience');
@@ -74,6 +74,14 @@ ${shell.slice(shell.indexOf('<section class="lead">'),shell.indexOf('</main>'))}
       ? ['Conversemos sobre una relación profesional', 'Indique su nombre, empresa, función profesional y los estados o tipos de inmuebles con los que trabaja. No incluya documentos privados de clientes.', 'Contactar a Stonehaven', 'Esta invitación no ofrece ni promete compensación por referencias. Cualquier acuerdo propuesto requiere una revisión independiente.']
       : ['Start a referral partner conversation', 'Tell us your name, firm, professional role, and the states or property types you work with. Leave private client documents out of the initial inquiry.', 'Contact Stonehaven', 'This invitation does not offer or promise referral compensation. Any proposed arrangement requires separate review.'];
     out = out.replace(/<section class="lead">[\s\S]*?<\/section>/, `<section class="lead"><div class="wrap"><div class="lead-card"><h2>${cta[0]}</h2><p class="sub">${cta[1]}</p><p><a class="btn-primary" href="${prefix}/contact${lang === 'es' ? '' : '#inquire'}">${cta[2]}</a></p><p class="fine">${cta[3]}</p><p class="fine">${disclosures[b.type][lang]}</p></div></div></section>`);
+  }
+  if (b.product === 'Commercial') {
+    out = out.replace(/(<p style="margin-top:22px;font-size:13px;color:var\(--stone-400\);line-height:1\.7;">)[\s\S]*?<\/p>/, (_, start) => start + (lang === 'es' ? 'Comparta su proyecto para recibir seguimiento por mensaje de texto. Una revisión inicial no constituye aprobación.' : 'Share your project for follow-up by text. An initial review is not approval.') + '</p>');
+    const cta = lang === 'es'
+      ? ['Revise su proyecto de construcción', 'Comparta compra o saldo, presupuesto, valor terminado estimado y experiencia. Le daremos seguimiento por mensaje de texto.', 'Solicitar revisión del proyecto']
+      : ['Get feedback on your construction project', 'Share acquisition or payoff, budget, estimated completed value and builder experience. We follow up by text.', 'Request a construction review'];
+    const destination = lang === 'es' ? '/es/commercial#leadForm' : '/terms-sheet#deal-review';
+    out = out.replace(/<section class="lead">[\s\S]*?<\/section>/, `<section class="lead"><div class="wrap"><div class="lead-card"><h2>${cta[0]}</h2><p class="sub">${cta[1]}</p><p><a class="btn-primary" href="${destination}">${cta[2]}</a></p><p class="fine">${disclosures[b.type][lang]}</p></div></div></section>`);
   }
   if (b.product === 'HELOC') {
     const cta = lang === 'es'
