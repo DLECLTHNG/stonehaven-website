@@ -32,7 +32,7 @@ const disclosures = JSON.parse(fs.readFileSync(new URL('./blog-disclosures.json'
 const esc=s=>s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');
 for(const lang of ['en','es']){
   const p=b[lang], path=(lang==='es'?'/es':'')+'/blog/'+b.slug, file=(lang==='es'?'es/':'')+'blog/'+b.slug+'.html';
-  let shell=fs.readFileSync(idx[lang],'utf8');
+  let shell=fs.readFileSync(idx[lang],'utf8').replace(/<!-- SEARCH-NAV:[A-Z]+:START -->[\s\S]*?<!-- SEARCH-NAV:[A-Z]+:END -->\n?/g, '');
   shell=shell.replace(/<title>[^<]*<\/title>/,`<title>${esc(p.title)} | Stonehaven Lending</title>`)
    .replace(/<meta name="description" content="[^"]*"\/>/,`<meta name="description" content="${esc(p.desc)}"/>`)
    .replace(/<meta property="og:type" content="[^"]*"\/>/, '<meta property="og:type" content="article"/>')

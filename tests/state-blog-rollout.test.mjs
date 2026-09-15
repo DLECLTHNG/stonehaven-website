@@ -64,8 +64,10 @@ test('Family articles have no advertising, tracking fallbacks or intake forms', 
     const page = read(`${prefix}blog/${r.slug}.html`);
     assert.ok(!/site-config\.js|funnel\.js|facebook|fbq\(|gtag\(|<form\b|<iframe\b/i.test(page), r.slug);
     const scripts = [...page.matchAll(/<script\b([^>]*)>/g)].map(x => x[1]);
-    assert.equal(scripts.length, 2);
-    assert.equal(scripts.filter(x => x.includes('application/ld+json')).length, 1);
+    assert.equal(scripts.length, 3);
+    assert.equal(scripts.filter(x => x.includes('application/ld+json')).length, 2);
+    const data = [...page.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/gs)].map(x => JSON.parse(x[1]));
+    assert.deepEqual(data.map(x => x['@type']).sort(), ['BlogPosting', 'BreadcrumbList']);
     assert.equal(scripts.filter(x => x.includes('js/blog-ui.js')).length, 1);
     assert.ok(page.includes('<meta name="referrer" content="no-referrer"/>'));
     assert.ok(page.includes('aria-controls="links" aria-expanded="false"'));

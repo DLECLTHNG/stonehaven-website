@@ -9,11 +9,12 @@ ORIGIN='https://stonehavencre.com'
 SKIP={'docs','downloads','scripts','tests','node_modules','.git','.github'}
 class Page(HTMLParser):
     def __init__(self, text):
-        super().__init__(convert_charrefs=True);self.links=[];self.ids=set();self.canon=[];self.noindex=False;self.desc=[];self.titles=[];self.h1=0;self.ld=[];self.in_title=False;self.in_ld=False;self.buf='';self.feed(text)
+        super().__init__(convert_charrefs=True);self.alternates=[];self.links=[];self.ids=set();self.canon=[];self.noindex=False;self.desc=[];self.titles=[];self.h1=0;self.ld=[];self.in_title=False;self.in_ld=False;self.buf='';self.feed(text)
     def handle_starttag(self,tag,attrs):
         a=dict(attrs)
         if a.get('id'):self.ids.add(a['id'])
         if tag=='a' and a.get('href'):self.links.append(a['href'])
+        if tag=='link' and a.get('hreflang'):self.alternates.append((a['hreflang'],a.get('href','')))
         if tag=='link' and a.get('rel')=='canonical':self.canon.append(a.get('href',''))
         if tag=='meta' and a.get('name')=='robots' and 'noindex' in a.get('content','').lower():self.noindex=True
         if tag=='meta' and a.get('name')=='description':self.desc.append(a.get('content',''))
@@ -55,6 +56,12 @@ for path,p in pages.items():
         for values,acc,label in [(p.titles,titles,'title'),(p.desc,descs,'description')]:
             if values and values[0] in acc:fail('Duplicate '+label+': '+path+' / '+acc[values[0]])
             elif values:acc[values[0]]=path
+    for lang,url in ([] if p.noindex else p.alternates):
+        dest=urlsplit(url).path
+        if not url.startswith(ORIGIN+'/') or dest not in pages or pages[dest].noindex:
+            fail('Invalid language alternate: '+path+' -> '+url)
+        elif not p.noindex and not any(back==ORIGIN+path for _,back in pages[dest].alternates):
+            fail('Nonreciprocal language alternate: '+path+' -> '+url)
     for raw in p.ld:
         try:
             data=json.loads(raw)
