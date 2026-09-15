@@ -24,3 +24,9 @@ test('release SEO gate catches broken destinations and anchors before publishing
  const f=fixture(t);f.write('index.html',f.page.replace('href="#details"','href="/missing"'));assert.match(f.run().stderr,/Broken link/);
  f.write('index.html',f.page.replace('href="#details"','href="#missing"'));assert.match(f.run().stderr,/Broken fragment/);
 });
+
+test('release SEO gate rejects a missing language alternate destination',t=>{
+ const f=fixture(t);
+ f.write('index.html',f.page.replace('</head>','<link rel="alternate" hreflang="es" href="https://stonehavencre.com/es/missing"></head>'));
+ const r=f.run();assert.notEqual(r.status,0);assert.match(r.stderr,/Invalid language alternate/);
+});
