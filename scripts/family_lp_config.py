@@ -19,8 +19,8 @@ BRAND = dict(
     name="Stonehaven Lending",
     entity_note="Stonehaven Lending",          # legal entity attribution: CONFIRM before launch
     tagline="Mortgage brokerage",
-    mark="/assets/mark.png",                  # existing approved brand mark (76px sitewide)
-    og_image="/assets/og-logo.png",
+    mark="/assets/stonehaven-handpainted-logo.png",                  # Full handpainted logo supplied by the owner.
+    og_image="/assets/stonehaven-handpainted-logo.png",
     nmls_id="1752355",
     nmls_consumer_access="https://www.nmlsconsumeraccess.org/EntityDetails.aspx/COMPANY/1752355",
 )
