@@ -49,11 +49,11 @@ def head(p):
 <meta property="og:type" content="website"/><meta property="og:site_name" content="Stonehaven Lending"/>
 <meta property="og:title" content="%(title)s"/><meta property="og:description" content="%(desc)s"/>
 <meta property="og:url" content="%(url)s"/>
-<meta property="og:image" content="https://stonehavencre.com/assets/og-logo.png"/>
-<link rel="icon" type="image/png" href="../assets/favicon.png"/><link rel="apple-touch-icon" href="../assets/apple-touch-icon.png"/>
+<meta property="og:image" content="https://stonehavencre.com/assets/stonehaven-handpainted-logo.png"/>
+<link rel="icon" type="image/png" href="../assets/stonehaven-handpainted-logo.png"/><link rel="apple-touch-icon" href="../assets/stonehaven-handpainted-logo.png"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="../styles.css"/><link rel="stylesheet" href="../funnel.css"/>
+<link rel="stylesheet" href="../styles.css?v=handpainted-20260916"/><link rel="stylesheet" href="../funnel.css"/>
 <noscript><style>.reveal{opacity:1 !important;transform:none !important;}</style></noscript>
 <script src="../js/site-config.js?v=6" defer></script>
 <script src="../js/funnel.js?v=10" defer></script>
@@ -64,7 +64,7 @@ def nav():
     return '''<body><noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=4039555362846500&ev=PageView&noscript=1" alt=""/></noscript><header class="nav" id="nav">
   <div class="wrap nav-inner">
     <a href="/" class="brand" aria-label="Stonehaven Lending home">
-      <img src="../assets/mark.png" width="76" height="76" alt="Stonehaven Lending"/>
+      <img src="../assets/stonehaven-handpainted-logo.png" width="76" height="76" alt="Stonehaven Lending"/>
       <span class="bt"><span class="b1">Stonehaven</span><span class="b2">Lending</span></span>
     </a>
     <nav class="links" id="links" aria-label="Primary">

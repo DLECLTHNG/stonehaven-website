@@ -174,3 +174,8 @@ p{margin:0;}
   .fo-tel{min-width:44px;justify-content:center;}
 }
 @media (max-width:360px){.fo-pills{grid-template-columns:1fr;}}
+
+/* Keep the complete supplied logo visible on family landing pages. */
+.fo-brand{gap:0;}
+.fo-brand img{width:100px;height:100px;object-fit:contain;}
+.fo-brand > span{display:none;}

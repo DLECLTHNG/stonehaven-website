@@ -312,3 +312,16 @@ details[open] .faq-q::after{content:'\2013';}
   .blog-article table{width:100%;table-layout:fixed;}
   .blog-article th,.blog-article td{white-space:normal!important;overflow-wrap:anywhere;}
 }
+
+/* Supplied full handpainted logo, including the wordmark and tagline. */
+header.nav{background:rgba(248,247,244,.97);}
+.nav-inner{height:120px;}
+.brand{flex-shrink:0;gap:0;}
+header.nav .brand img{width:120px;height:120px;object-fit:contain;mix-blend-mode:multiply;}
+.brand .bt{display:none;}
+.foot-brand .fb img{width:180px;height:180px;object-fit:contain;}
+.foot-brand .fb span{display:none;}
+@media(max-width:680px){
+  .nav-inner{height:100px;}
+  header.nav .brand img{width:100px;height:100px;}
+}
