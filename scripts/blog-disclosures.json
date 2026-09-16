@@ -6,5 +6,9 @@
   "guide": {
     "en": "This educational guide uses hypothetical examples and does not describe a completed transaction. These examples are not offers, rate quotes, or a promise that any similar transaction will be approved; every deal is subject to lender underwriting and program availability, which varies by state. Names, addresses, and identifying details are omitted or generalized. NMLS #1752355 · Equal Housing Opportunity.",
     "es": "Esta guía educativa utiliza ejemplos hipotéticos y no describe una operación cerrada. No son ofertas, cotizaciones de tasa ni una promesa de que una operación similar será aprobada; toda operación está sujeta a la evaluación del prestamista y a la disponibilidad del programa, que varía según el estado. Se omiten o generalizan nombres, direcciones y datos identificativos. NMLS #1752355 · Igualdad de oportunidades de vivienda."
+  },
+  "case-study": {
+    "en": "This anonymized financing case study presents a structure supplied for educational discussion. It does not establish that a transaction closed or that the displayed terms are currently available. Financing is subject to lender underwriting and state and program availability. NMLS #1752355 · Equal Housing Opportunity.",
+    "es": "Este caso anónimo presenta una estructura de financiamiento con fines educativos. No confirma que una operación haya cerrado ni que los términos mostrados estén disponibles actualmente. El financiamiento está sujeto a evaluación del prestamista y disponibilidad estatal y del programa. NMLS #1752355 · Igualdad de oportunidades de vivienda."
   }
 }

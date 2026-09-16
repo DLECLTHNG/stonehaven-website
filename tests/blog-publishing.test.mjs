@@ -109,3 +109,24 @@ test('Commercial guides route readers to the commercial deal review in each lang
   assert.ok(f.read('es/blog/publishing-test.html').includes('href="/es/commercial#leadForm"'));
   assert.ok(f.read('blog/publishing-test.html').includes('We follow up by text.'));
 });
+
+test('financing case study never inherits closed-deal or hypothetical claims', t => {
+  const f = fixture(t, 'case-study');
+  f.brief.product = 'Commercial';
+  f.brief.en.metaTitle = 'Development Case | Stonehaven';
+  f.brief.en.body = ['Supplied financing terms.', '<div><table><tbody><tr><th>Loan</th><td>$2.79M</td></tr></tbody></table></div>'];
+  const result = f.publish();
+  assert.equal(result.status, 0, result.stderr);
+  for (const prefix of ['', 'es/']) {
+    const page = f.read(`${prefix}blog/publishing-test.html`);
+    assert.ok(!page.includes('transactions already closed'));
+    assert.ok(!page.includes('hypothetical examples'));
+    assert.ok(!page.includes('operaciones ya cerradas'));
+    assert.ok(!page.includes('ejemplos hipotéticos'));
+    assert.ok(page.includes(prefix ? 'No confirma que una operación haya cerrado' : 'It does not establish that a transaction closed'));
+  }
+  const en = f.read('blog/publishing-test.html');
+  assert.ok(en.includes('<title>Development Case | Stonehaven</title>'));
+  assert.ok(en.includes('<div><table>'));
+  assert.ok(!en.includes('<p style="margin-top:16px;"><div>'));
+});
