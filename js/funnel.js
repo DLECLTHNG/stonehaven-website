@@ -363,10 +363,15 @@
       var esNav = (document.documentElement.lang || "en").indexOf("es") === 0;
       toggle.setAttribute("aria-expanded", "false");
       toggle.setAttribute("aria-controls", "links");
-      toggle.addEventListener("click", function () {
-        var open = links.classList.toggle("open");
+      function setMenu(open) {
+        links.classList.toggle("open", open);
         toggle.setAttribute("aria-expanded", open ? "true" : "false");
         toggle.setAttribute("aria-label", open ? (esNav ? "Cerrar men\u00fa" : "Close menu") : (esNav ? "Abrir men\u00fa" : "Open menu"));
+      }
+      toggle.addEventListener("click", function () { setMenu(!links.classList.contains("open")); });
+      links.addEventListener("click", function (event) { if (event.target.closest("a")) setMenu(false); });
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape" && links.classList.contains("open")) { setMenu(false); toggle.focus(); }
       });
     }
     var io = new IntersectionObserver(function (es) {

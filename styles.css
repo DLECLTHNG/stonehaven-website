@@ -13,9 +13,10 @@
   --white:#FFFFFF;
   --brass:#B08230;
   --ease:cubic-bezier(.22,.61,.36,1);
+  --header-height:120px;
 }
 *{margin:0;padding:0;box-sizing:border-box;}
-html{scroll-behavior:smooth;}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--header-height) + 18px);}
 body{
   font-family:'Inter',system-ui,sans-serif;
   font-weight:300;
@@ -256,7 +257,7 @@ footer{background:var(--slate-900);color:var(--stone-400);padding:64px 0 44px;}
 .lf-field textarea{resize:vertical;min-height:46px;}
 .lf-field select{appearance:none;background-image:url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D'10'%20height%3D'6'%20viewBox%3D'0%200%2010%206'%20fill%3D'none'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%3E%3Cpath%20d%3D'M1%201l4%204%204-4'%20stroke%3D'%238A95A1'%20stroke-width%3D'1.2'%2F%3E%3C%2Fsvg%3E");background-repeat:no-repeat;background-position:right 2px center;}
 .lead-actions{grid-column:1/-1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;margin-top:8px;}
-.lead-actions .note{font-size:12px;color:var(--stone-400);font-weight:300;text-align:center;max-width:600px;}
+.lead-actions .note{font-size:12px;color:var(--slate-400);font-weight:300;text-align:center;max-width:600px;}
 .lead-submit{background:var(--slate-900);color:var(--paper);border:none;border-radius:3px;padding:13px 30px;font-family:'Inter',sans-serif;font-size:14px;font-weight:500;letter-spacing:.02em;cursor:pointer;transition:background .25s var(--ease),transform .25s var(--ease);}
 .lead-submit:hover{background:var(--slate-700);transform:translateY(-1px);}
 .lead-success{display:none;text-align:center;padding:14px 0 2px;}
@@ -274,9 +275,8 @@ footer{background:var(--slate-900);color:var(--stone-400);padding:64px 0 44px;}
 /* ============ SEO build additions (breadcrumb, process, FAQ, NAP) ============ */
 .nav .links a.line.active{color:#1A2530;}
 .lang-opt{text-decoration:none;cursor:pointer;}
-/* Positioned in the gap between the fixed 88px header and the page-hero
-   text so it neither hides behind the header nor adds height above the hero. */
-.crumb{position:absolute;top:104px;left:0;right:0;display:flex;gap:.5rem;align-items:center;font-family:'Inter',sans-serif;font-size:.8rem;color:#8A95A1;letter-spacing:.02em;}
+/* Keep breadcrumbs below the fixed header at every breakpoint. */
+.crumb{position:absolute;top:calc(var(--header-height) + 16px);left:0;right:0;display:flex;gap:.5rem;align-items:center;font-family:'Inter',sans-serif;font-size:.8rem;color:#8A95A1;letter-spacing:.02em;}
 .crumb a{color:#5A6B7B;text-decoration:none;}
 .crumb a:hover{color:#B08230;}
 .crumb span[aria-current]{color:#3A4A5A;}
@@ -325,4 +325,25 @@ header.nav .brand img{width:120px;height:120px;object-fit:contain;mix-blend-mode
 @media(max-width:680px){
   .nav-inner{height:100px;}
   header.nav .brand img{width:100px;height:100px;}
+}
+
+/* Shared responsive polish for program pages, forms and navigation. */
+.page-hero h1{max-width:940px;margin-inline:auto;padding-inline:24px;text-wrap:balance;}
+.lf-field{min-width:0;}
+:focus-visible{outline:2px solid var(--brass);outline-offset:4px;}
+@media(max-width:1000px){
+  :root{--header-height:100px;}
+  .nav-inner{height:100px;}
+  header.nav .brand img{width:100px;height:100px;}
+  nav.links{position:fixed;top:100px;left:0;right:0;background:var(--paper);flex-direction:column;align-items:flex-start;padding:24px 26px;gap:14px;border-bottom:1px solid var(--line);transform:translateY(-160%);visibility:hidden;pointer-events:none;max-height:calc(100dvh - 100px);overflow-y:auto;overscroll-behavior:contain;transition:transform .25s var(--ease),visibility .25s;}
+  nav.links.open{transform:translateY(0);visibility:visible;pointer-events:auto;}
+  nav.links a{font-size:15px;min-height:32px;display:inline-flex;align-items:center;}
+  nav.links a.nav-phone{padding:0;border:0;}
+  .menu-toggle{display:flex;min-width:44px;min-height:44px;align-items:center;justify-content:center;}
+  a.nav-call{display:inline-block;}
+}
+@media(max-width:680px){
+  .lf-field input,.lf-field select,.lf-field textarea{font-size:16px;}
+  .foot-nav{flex-wrap:wrap;gap:28px 36px;}
+  .page-hero h1{padding-inline:20px;}
 }
