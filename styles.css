@@ -238,6 +238,7 @@ footer{background:var(--slate-900);color:var(--stone-400);padding:64px 0 44px;}
 .lang-sep{color:var(--stone-300);font-size:11px;}
 
 /* ---------- DISCREET LEAD FORM ---------- */
+.hp-field{position:absolute;left:-9999px;top:-9999px;height:0;width:0;overflow:hidden;}
 .lead{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
 .lead-card{max-width:680px;margin:0 auto;background:var(--surface,#fff);border:1px solid var(--line);border-radius:4px;padding:48px 46px;}
 .lead-card .eyebrow{display:block;text-align:center;margin-bottom:18px;}
@@ -254,8 +255,8 @@ footer{background:var(--slate-900);color:var(--stone-400);padding:64px 0 44px;}
 .lf-field input:focus,.lf-field select:focus,.lf-field textarea:focus{outline:none;border-bottom-color:var(--brass);}
 .lf-field textarea{resize:vertical;min-height:46px;}
 .lf-field select{appearance:none;background-image:url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D'10'%20height%3D'6'%20viewBox%3D'0%200%2010%206'%20fill%3D'none'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%3E%3Cpath%20d%3D'M1%201l4%204%204-4'%20stroke%3D'%238A95A1'%20stroke-width%3D'1.2'%2F%3E%3C%2Fsvg%3E");background-repeat:no-repeat;background-position:right 2px center;}
-.lead-actions{grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;gap:18px;margin-top:8px;flex-wrap:wrap;}
-.lead-actions .note{font-size:12px;color:var(--stone-400);font-weight:300;}
+.lead-actions{grid-column:1/-1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;margin-top:8px;}
+.lead-actions .note{font-size:12px;color:var(--stone-400);font-weight:300;text-align:center;max-width:600px;}
 .lead-submit{background:var(--slate-900);color:var(--paper);border:none;border-radius:3px;padding:13px 30px;font-family:'Inter',sans-serif;font-size:14px;font-weight:500;letter-spacing:.02em;cursor:pointer;transition:background .25s var(--ease),transform .25s var(--ease);}
 .lead-submit:hover{background:var(--slate-700);transform:translateY(-1px);}
 .lead-success{display:none;text-align:center;padding:14px 0 2px;}

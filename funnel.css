@@ -166,3 +166,7 @@
   .sticky-cta a{display:block;}
   body.has-sticky{padding-bottom:70px;}
 }
+
+/* Center the final submission independently of step navigation. */
+.rev-nav:has(> [type="submit"]){justify-content:center;}
+.rev-nav:has(> [type="submit"]) > span:empty{display:none;}
