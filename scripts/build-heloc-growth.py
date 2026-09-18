@@ -41,7 +41,7 @@ def shell(lang,slug,title,desc,body,lp=False):
  src=(R/(('es/' if lang=='es' else '')+'heloc.html')).read_text()
  head=src.split('<main>')[0]
  head=re.sub(r'<script src="/js/heloc-topic-context\.js" defer></script>','',head)
- head=re.sub(r'(href|src)="(?:\.\./)?(assets/|js/|styles.css?v=handpainted-20260916|funnel.css)',r'\1="/\2',head)
+ head=re.sub(r'(href|src)="(?:\.\./)?(assets/|js/|styles\.css|funnel\.css)',r'\1="/\2',head)
  head=re.sub(r'<title>.*?</title>',f'<title>{E(title)} | Stonehaven</title>',head)
  head=re.sub(r'<meta name="description"[^>]*>',f'<meta name="description" content="{E(desc,quote=True)}"/>',head)
  head=re.sub(r'<link rel="(?:canonical|alternate)"[^>]*>','',head)
