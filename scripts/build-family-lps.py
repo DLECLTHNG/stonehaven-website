@@ -15,6 +15,7 @@ def check_no_em(s, where):
     if "—" in s or "–" in s: raise SystemExit("em/en dash found in " + where)
 
 VER = "3"
+CSS_VER = "layout-20260918"
 STATES_JS = [c for c, _ in C.SERVICE_STATES]
 
 def head(title, desc, path, noindex):
@@ -37,7 +38,7 @@ def head(title, desc, path, noindex):
 <link rel="icon" type="image/png" href="/assets/stonehaven-handpainted-logo.png"/><link rel="apple-touch-icon" href="/assets/stonehaven-handpainted-logo.png"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="/family.css?v=handpainted-20260916?v={VER}"/>
+<link rel="stylesheet" href="/family.css?v={CSS_VER}"/>
 <script src="/js/chatgpt-pixel.js?v=1" defer></script>
 <script src="/js/family-config.js?v={VER}" defer></script>
 <script src="/js/family-lp.js?v={VER}" defer></script>
