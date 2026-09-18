@@ -15,7 +15,8 @@ Key facts:
 - Residential DSCR convention modeled: eligible monthly rent / monthly PITIA (1-4 units); commercial DSCR commonly uses NOI / annual debt service
 - Calculators are deterministic, unit-tested code - methodology published at /calculation-methodology
 - DSCR financing is business-purpose, investment-property only (never owner-occupied homes)
-- Contact: (470) 970-4979 - office@stonehavencre.com - preliminary response within one business day
+- Contact: (470) 970-4979 - office@stonehavencre.com
+- Commercial scenario inquiries: the commercial financing page offers preliminary feedback in under 1 hour. This is an initial response, not a lender approval, term sheet or closing commitment. Form follow-up is by text.
 - Equal Housing Opportunity
 
 - NMLS company ID: 1752355 (nmlsconsumeraccess.org)
@@ -100,6 +101,8 @@ Educational introductions for professionals. No referral compensation is offered
 
 ## Builder and teardown financing guides
 
+- [Capital for builders and fix-and-flip projects](https://stonehavencre.com/blog/45-million-builder-fix-and-flip-capital): Stonehaven's $45 million capital deployment focus through lending partners, announced September 18, 2026, targets projects with total costs of $2 million to $10 million. Allocation and individual financing remain subject to availability and underwriting; this is not a direct-lending commitment.
+- [Brookhaven ground-up construction case study](https://stonehavencre.com/blog/brookhaven-ga-100-ltc-ground-up-construction): Company-reported construction financing example with land equity, a funded build budget and a projected completed value. Published deal terms describe that transaction, not a current offer to every builder.
 - [Atlanta Teardown and Rebuild Loans: From Purchase to New Construction](https://stonehavencre.com/blog/atlanta-teardown-rebuild-construction-financing): Business-purpose builder education, not a guaranteed leverage offer.
 - [100% LTC Construction Loans: How Much Cash Does a Builder Really Need?](https://stonehavencre.com/blog/100-ltc-construction-loans-builder-cash-needed): Business-purpose builder education, not a guaranteed leverage offer.
 - [Construction Financing When You Already Own the Property: Equity and Mortgage Payoff](https://stonehavencre.com/blog/construction-loan-property-already-owned-mortgage-payoff): Business-purpose builder education, not a guaranteed leverage offer.

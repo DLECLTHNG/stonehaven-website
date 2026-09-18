@@ -30,3 +30,23 @@ test('release SEO gate rejects a missing language alternate destination',t=>{
  f.write('index.html',f.page.replace('</head>','<link rel="alternate" hreflang="es" href="https://stonehavencre.com/es/missing"></head>'));
  const r=f.run();assert.notEqual(r.status,0);assert.match(r.stderr,/Invalid language alternate/);
 });
+
+test('release SEO gate rejects missing breadcrumb pages inside graph and item objects',t=>{
+ const f=fixture(t);
+ for(const item of ['/missing',{'@id':'https://stonehavencre.com/resources#guides'}]){
+  const schema={'@context':'https://schema.org','@graph':[{'@type':['BreadcrumbList'],'itemListElement':[{'@type':'ListItem',position:1,name:'Missing',item}]}]};
+  f.write('index.html',f.page.replace('</head>',`<script type="application/ld+json">${JSON.stringify(schema)}</script></head>`));
+  const r=f.run();assert.notEqual(r.status,0);assert.match(r.stderr,/Broken breadcrumb destination/);
+ }
+});
+
+test('release SEO gate checks breadcrumb paths without requiring fragments or external pages locally',t=>{
+ const f=fixture(t);
+ const schema={'@type':'BreadcrumbList',itemListElement:[
+  {'@type':'ListItem',position:1,name:'Home',item:{'@id':'https://stonehavencre.com/#schema-entity'}},
+  {'@type':'ListItem',position:2,name:'External',item:'https://example.com/resources'},
+  {'@type':'ListItem',position:3,name:'Current page'}
+ ]};
+ f.write('index.html',f.page.replace('</head>',`<script type="application/ld+json">${JSON.stringify(schema)}</script></head>`));
+ const r=f.run();assert.equal(r.status,0,r.stderr);
+});

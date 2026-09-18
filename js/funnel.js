@@ -166,11 +166,15 @@
   }
 
   function wireForm(form) {
-    // Any form with a product_choice select keeps data-sh-product in sync,
-    // so the CRM payload always reflects the visitor's actual selection.
-    var productSel = form.querySelector('select[name="product_choice"]');
+    // Both current and legacy product selectors control the selected lane.
+    // Forms without a selector keep their fixed product classification.
+    var productSel = form.querySelector('select[name="product_choice"]') || form.querySelector('select[name="product"]');
     if (productSel) {
-      var syncProduct = function () { form.setAttribute("data-sh-product", productSel.value); };
+      var syncProduct = function () {
+        if (["Commercial", "SBA", "DSCR", "Residential", "Not sure"].indexOf(productSel.value) !== -1) {
+          form.setAttribute("data-sh-product", productSel.value);
+        }
+      };
       productSel.addEventListener("change", syncProduct);
       syncProduct();
     }
@@ -188,6 +192,7 @@
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       if (inFlight) return;
+      if (productSel) syncProduct();
 
       // honeypot — silently succeed so bots learn nothing
       var hp = form.querySelector('[name="company_website"]');

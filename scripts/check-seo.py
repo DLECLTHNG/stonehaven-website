@@ -33,6 +33,25 @@ def route(path):
 pages={route(p):Page(p.read_text()) for p in ROOT.rglob('*.html') if not any(x in SKIP or x.startswith('.') for x in p.relative_to(ROOT).parts)}
 errors=[]
 def fail(msg):errors.append(msg)
+def check_breadcrumbs(data,path):
+    """Check local breadcrumb pages, including nested @graph and item objects."""
+    if isinstance(data,list):
+        for item in data:check_breadcrumbs(item,path)
+    elif isinstance(data,dict):
+        types=data.get('@type',[])
+        if isinstance(types,str):types=[types]
+        if 'BreadcrumbList' in types:
+            for item in data.get('itemListElement',[]):
+                if not isinstance(item,dict):continue
+                href=item.get('item')
+                if isinstance(href,dict):href=href.get('@id') or href.get('url')
+                # The final item may omit its URL. External destinations and
+                # fragment identifiers are outside this local page check.
+                if not isinstance(href,str):continue
+                u=urlsplit(urljoin(ORIGIN+path,href))
+                if u.scheme in ['http','https'] and u.netloc=='stonehavencre.com' and unquote(u.path) not in pages:
+                    fail('Broken breadcrumb destination: '+path+' -> '+href)
+        for item in data.values():check_breadcrumbs(item,path)
 ns={'s':'http://www.sitemaps.org/schemas/sitemap/0.9'}
 entries=ET.parse(ROOT/'sitemap.xml').getroot().findall('s:url',ns);seen=set()
 today=datetime.datetime.now(datetime.timezone.utc).date()
@@ -66,6 +85,7 @@ for path,p in pages.items():
         try:
             data=json.loads(raw)
             if re.search(r'"@type"\s*:\s*"FAQPage"',raw):fail('Retired FAQ markup: '+path)
+            check_breadcrumbs(data,path)
         except ValueError:fail('Invalid JSON-LD: '+path)
     for href in p.links:
         u=urlsplit(urljoin(ORIGIN+path,href))
