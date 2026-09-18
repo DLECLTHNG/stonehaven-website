@@ -10,5 +10,9 @@
   "case-study": {
     "en": "This anonymized financing case study presents a structure supplied for educational discussion. It does not establish that a transaction closed or that the displayed terms are currently available. Financing is subject to lender underwriting and state and program availability. NMLS #1752355 · Equal Housing Opportunity.",
     "es": "Este caso anónimo presenta una estructura de financiamiento con fines educativos. No confirma que una operación haya cerrado ni que los términos mostrados estén disponibles actualmente. El financiamiento está sujeto a evaluación del prestamista y disponibilidad estatal y del programa. NMLS #1752355 · Igualdad de oportunidades de vivienda."
+  },
+  "announcement": {
+    "en": "This announcement reflects Stonehaven’s stated financing focus on its publication date. Capital availability may change. Stonehaven arranges financing through third-party capital providers; this is not a commitment to lend or a guarantee of approval. All financing is subject to underwriting and state and program availability. NMLS #1752355 · Equal Housing Opportunity.",
+    "es": "Este anuncio refleja el enfoque de financiamiento de Stonehaven en su fecha de publicación. La disponibilidad de capital puede cambiar. Stonehaven gestiona financiamiento mediante proveedores de capital externos; no es un compromiso de préstamo ni garantía de aprobación. Todo financiamiento está sujeto a evaluación y disponibilidad estatal y del programa. NMLS #1752355 · Igualdad de oportunidades de vivienda."
   }
 }

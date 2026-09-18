@@ -6,7 +6,7 @@ const b=JSON.parse(fs.readFileSync(process.argv[2],'utf8'));
 if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(b.slug || '')) throw new Error('A safe lowercase slug is required');
 if (!/^\d{4}-\d{2}-\d{2}$/.test(b.date || '')) throw new Error('date must be YYYY-MM-DD');
 if (new Date(b.date).toISOString().slice(0, 10) !== b.date || b.date > new Date().toISOString().slice(0, 10)) throw new Error('Use a real publication date that is not in the future');
-if (!['guide', 'closing', 'case-study'].includes(b.type)) throw new Error('type must be guide, closing or case-study');
+if (!['guide', 'closing', 'case-study', 'announcement'].includes(b.type)) throw new Error('type must be guide, closing, case-study or announcement');
 if (b.product && !['HELOC', 'DSCR', 'Family', 'Commercial'].includes(b.product)) throw new Error('Unsupported product');
 if (b.audience && b.audience !== 'partners') throw new Error('Unsupported audience');
 if (b.audience === 'partners' && b.product) throw new Error('Partner guides use their own contact CTA');
@@ -51,7 +51,7 @@ for(const lang of ['en','es']){
   shell=shell.replace(/(href|src)="(\.\.\/)?(assets\/|styles\.css|funnel\.css|js\/)/g,(m,a,_,c)=>`${a}="${lang==='es'?'../../':'../'}${c}`);
   const body=p.body.map(x=>typeof x==='string'?(/^(<table|<div|<ul|<ol)\b/.test(x)?x:`<p style="margin-top:16px;">${x}</p>`):`<h2 style="margin-top:28px;font-size:22px;">${x.h}</h2>`).join('\n');
   const terms=p.terms.map(([k,v])=>`<tr><td style="padding:8px 12px;border-bottom:1px solid rgba(20,35,50,.08);color:var(--stone-400);white-space:nowrap;">${k}</td><td style="padding:8px 12px;border-bottom:1px solid rgba(20,35,50,.08);">${v}</td></tr>`).join('');
-  const back=lang==='es'?'← Todos los artículos':'← All articles', tl=b.type==='guide'?(lang==='es'?'Resumen de la guía':'Guide overview'):(lang==='es'?'Términos de la operación':'Deal terms');
+  const back=lang==='es'?'← Todos los artículos':'← All articles', tl=b.type==='announcement'?(lang==='es'?'Resumen del anuncio':'Announcement overview'):b.type==='guide'?(lang==='es'?'Resumen de la guía':'Guide overview'):(lang==='es'?'Términos de la operación':'Deal terms');
   shell=shell.replace(/(<section class="lead">[\s\S]*?<span class="eyebrow">)[\s\S]*?(<\/span>)/, (_, start, end) => start + disclosures[b.type][lang] + end);
   const main=`<main>
 <section class="funnel-hero"><span class="eyebrow">${p.eyebrow}</span><h1>${p.title}</h1><p>${p.desc}</p><p style="font-size:13px;color:var(--stone-400);margin-top:16px;">Stonehaven Lending · ${b.date}</p></section>

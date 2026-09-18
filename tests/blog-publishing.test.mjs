@@ -130,3 +130,19 @@ test('financing case study never inherits closed-deal or hypothetical claims', t
   assert.ok(en.includes('<div><table>'));
   assert.ok(!en.includes('<p style="margin-top:16px;"><div>'));
 });
+
+test('capital announcements use dated availability disclosure without fictional closing claims', t => {
+  const f = fixture(t, 'announcement');
+  f.brief.product = 'Commercial';
+  const result = f.publish();
+  assert.equal(result.status, 0, result.stderr);
+  for (const prefix of ['', 'es/']) {
+    const page = f.read(`${prefix}blog/publishing-test.html`);
+    assert.ok(page.includes(prefix ? 'Resumen del anuncio' : 'Announcement overview'));
+    assert.ok(page.includes(prefix ? 'La disponibilidad de capital puede cambiar' : 'Capital availability may change'));
+    assert.ok(!page.includes('transactions already closed'));
+    assert.ok(!page.includes('hypothetical examples'));
+    assert.ok(!page.includes('operaciones ya cerradas'));
+    assert.ok(!page.includes('ejemplos hipotéticos'));
+  }
+});
