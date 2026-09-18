@@ -9,3 +9,26 @@
 .capital-inquiry .lead-form{margin-top:28px;text-align:left;}
 .capital-inquiry .field-help{font-size:12px;line-height:1.5;margin-top:6px;color:var(--slate-600);}
 @media(max-width:680px){.capital-hero{padding-top:145px;padding-bottom:42px;}.capital-hero h1{font-size:36px;}.capital-hero p{font-size:16px;}.capital-hero .eyebrow{line-height:1.6;}.capital-inquiry .lead-card{padding:28px 20px;}}
+
+/* Builder resources and centered project conversion actions. */
+.builder-resources{padding:64px 0 80px;}
+.builder-resources h2{font-family:'Cormorant',serif;font-size:clamp(30px,3.5vw,42px);font-weight:400;line-height:1.15;text-align:center;text-wrap:balance;margin:0 0 30px;}
+.builder-guide-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;}
+.builder-guide-card{display:flex;flex-direction:column;padding:28px;background:#fff;border:1px solid var(--line);text-decoration:none;color:var(--slate-900);}
+.builder-guide-card h3{font-family:'Cormorant',serif;font-size:27px;line-height:1.15;font-weight:400;margin:0 0 14px;text-wrap:balance;}
+.builder-guide-card p{font-size:15px;line-height:1.65;color:var(--slate-600);margin:0 0 24px;}
+.builder-guide-card span{margin-top:auto;font-size:13px;color:var(--brass);text-decoration:underline;text-underline-offset:4px;}
+.builder-guide-card:hover,.builder-guide-card:focus-visible{border-color:var(--brass);}
+.builder-capital-callout{margin-top:32px;padding:42px 28px;border:1px solid var(--line);text-align:center;background:var(--paper-2);}
+.builder-capital-callout .eyebrow{display:block;margin-bottom:16px;}
+.builder-capital-callout h2{margin-bottom:18px;}
+.builder-capital-callout p{max-width:620px;margin:0 auto 26px;color:var(--slate-600);line-height:1.7;}
+.capital-inquiry .lead-actions{flex-direction:column-reverse;align-items:center;text-align:center;gap:20px;}
+.capital-inquiry .lead-actions .note{max-width:600px;}
+@media(max-width:760px){.builder-guide-grid{grid-template-columns:1fr;}.builder-resources{padding:40px 0 52px;}.builder-guide-card{padding:24px;}.builder-capital-callout{padding:32px 22px;}.builder-capital-callout .btn-primary{white-space:normal;}}
+
+/* Center standalone article CTAs without changing form field alignment. */
+.lead-card > p:has(> .btn-primary){text-align:center;}
+.lead-card > p > .btn-primary{max-width:100%;white-space:normal;text-align:center;}
+
+.builder-resources{scroll-margin-top:120px;}
