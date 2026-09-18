@@ -346,4 +346,18 @@ header.nav .brand img{width:120px;height:120px;object-fit:contain;mix-blend-mode
   .lf-field input,.lf-field select,.lf-field textarea{font-size:16px;}
   .foot-nav{flex-wrap:wrap;gap:28px 36px;}
   .page-hero h1{padding-inline:20px;}
+  .page-hero > p{padding-inline:24px;}
+}
+
+/* Keep detailed comparison figures intact inside their own scroll region. */
+.article-table-scroll table{min-width:680px!important;table-layout:auto!important;}
+.article-table-scroll th,.article-table-scroll td{overflow-wrap:normal!important;word-break:normal;}
+.article-table-scroll th,.article-table-scroll td:first-child{color:var(--slate-600)!important;}
+.article-table-hint{display:none;}
+@media(min-width:701px){
+  .cre-inquiry .lf-field:has(> [name="project_value"],> [name="project_type"]) > label,
+  .capital-inquiry .lf-field:has(> [name="project_value"],> [name="project_type"]) > label{min-height:3.4em;}
+}
+@media(max-width:700px){
+  .article-table-hint{display:block;font-size:13px;color:var(--slate-600);margin:18px 0 -10px;}
 }

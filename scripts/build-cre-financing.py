@@ -22,7 +22,7 @@ def cards(items):
     return ''.join(f'<article class="cre-card"><h3>{e(h)}</h3><p>{e(p)}</p></article>' for h, p in items)
 
 
-def field(name, label, kind='text', required=True, options=None, help_text=None):
+def field(name, label, kind='text', required=True, options=None, help_text=None, full=False):
     field_id = 'cre-' + name
     attrs = ' required' if required else ''
     if help_text:
@@ -39,7 +39,8 @@ def field(name, label, kind='text', required=True, options=None, help_text=None)
             attrs += ' min="1" step="1" inputmode="numeric"'
         control = f'<input id="{field_id}" name="{name}" type="{kind}"{attrs}/>'
     help_html = f'<p class="cre-field-help" id="{field_id}-help">{e(help_text)}</p>' if help_text else ''
-    return f'<div class="lf-field"><label for="{field_id}">{e(label)}</label>{control}{help_html}</div>'
+    wrapper_class = 'lf-field full' if full else 'lf-field'
+    return f'<div class="{wrapper_class}"><label for="{field_id}">{e(label)}</label>{control}{help_html}</div>'
 
 
 def form(slug, lang, c):
@@ -70,7 +71,7 @@ def form(slug, lang, c):
                 ('Perplexity', 'Perplexity'), ('Other AI assistant', 'Otro asistente de IA'),
                 ('Referral', 'Recomendación'), ('Other', 'Otro')]
     fields += field('discovery_source', '¿Cómo nos encontró? (opcional)' if es else 'How did you find us? (optional)', required=False,
-                    options=[('', choose)] + [(v, text if es else v) for v, text in channels])
+                    options=[('', choose)] + [(v, text if es else v) for v, text in channels], full=slug != 'bridge-loans')
     fields += field('refinance_maturity', 'Vencimiento actual (opcional)' if es else 'Current loan maturity (optional)', 'date', False) if slug == 'bridge-loans' else ''
     intro = ('Comparta los datos básicos. Damos seguimiento por mensaje de texto y buscamos una respuesta inicial en menos de una hora. No es una aprobación de crédito.' if es else
              'Share the basics. We follow up by text and aim for initial deal feedback in under one hour. Initial feedback is not credit approval.')
