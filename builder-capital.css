@@ -1,0 +1,11 @@
+/* Scoped layout for the builder capital announcement. */
+.capital-hero{padding-left:24px;padding-right:24px;}
+.capital-hero h1{max-width:900px;margin:0 auto;text-wrap:balance;line-height:1.12;}
+.capital-hero h1 span{display:block;}
+.capital-hero h1 span+span{margin-top:12px;}
+.capital-highlights{padding-left:22px;margin:18px 0;}
+.capital-highlights li{margin:12px 0;}
+.capital-inquiry .lead-card{max-width:880px;margin:auto;}
+.capital-inquiry .lead-form{margin-top:28px;text-align:left;}
+.capital-inquiry .field-help{font-size:12px;line-height:1.5;margin-top:6px;color:var(--slate-600);}
+@media(max-width:680px){.capital-hero{padding-top:145px;padding-bottom:42px;}.capital-hero h1{font-size:36px;}.capital-hero p{font-size:16px;}.capital-hero .eyebrow{line-height:1.6;}.capital-inquiry .lead-card{padding:28px 20px;}}
