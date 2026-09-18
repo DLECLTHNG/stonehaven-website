@@ -1,0 +1,1295 @@
+{
+  "audit_date": "2026-09-18",
+  "baseline_commit": "6ded1bb",
+  "method": "GET canonical sitemap URLs with curl, 6 concurrent workers; no redirects followed",
+  "results": [
+    {
+      "url": "https://stonehavencre.com/",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/commercial",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/commercial",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/sba",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/sba",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/dscr",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/dscr",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/contact",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/contact",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/privacy",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/privacy",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/dscr-analyzer",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/dscr-analyzer",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/dscr-review",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/dscr-review",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/calculation-methodology",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/sba-loan-calculator",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/commercial-loan-calculator",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/resources/sba",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/resources/commercial",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/resources/sba-7a-vs-504",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/resources/sba-down-payment",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/resources/sba-timeline-documents",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/resources/how-lenders-size-commercial-loans",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/resources/bridge-vs-permanent-financing",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/resources/commercial-refinance-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/management",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/residential",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/residential/buy",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/residential/refinance",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/residential/fha",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/residential/va",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/mortgage-calculator",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/refinance-calculator",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/heloc",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/residential/georgia",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/resources/residential",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/resources/fha-vs-conventional",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/resources/how-much-home",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/resources/refinance-break-even",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/resources/first-time-buyer-checklist",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/resources/dscr-vs-conventional",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/residential",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/residential/buy",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/residential/refinance",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/residential/fha",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/residential/va",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/residential/georgia",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/mortgage-calculator",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/refinance-calculator",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/heloc",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/commercial/multifamily",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/commercial/mixed-use",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/commercial/commercial-property",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/commercial/multifamily",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/commercial/mixed-use",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/commercial/commercial-property",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/georgia-cash-out-refinance-70-ltv-15-year-conventional-auto-loan-payoff",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/georgia-cash-out-refinance-70-ltv-15-year-conventional-auto-loan-payoff",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/residential/alabama",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/residential/alabama",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/residential/tennessee",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/residential/tennessee",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/residential/florida",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/residential/florida",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/residential/north-carolina",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/residential/north-carolina",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/residential/south-carolina",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/residential/south-carolina",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/cash-out-refinance",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/cash-out-refinance",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/dscr-loans-explained",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/dscr-loans-explained",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/florida-dscr-cash-out-refinance-75-ltv-hard-money-payoff",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/florida-dscr-cash-out-refinance-75-ltv-hard-money-payoff",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/dscr-program-calculator",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/dscr-program-calculator",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/dscr-program-calculator-qualifying-rent",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/dscr-program-calculator-qualifying-rent",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/brookhaven-ga-100-ltc-ground-up-construction",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/brookhaven-ga-100-ltc-ground-up-construction",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/dscr/experienced-landlords",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/dscr/bridge-loan-refinance",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/dscr/cash-out-refinance",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/dscr/self-employed-investors",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/dscr/first-time-investors",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/dscr/brrrr-refinance",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/dscr/out-of-state-investors",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/dscr/portfolio-growth",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/dscr/long-term-rentals",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/dscr/short-term-rentals",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/dscr/rate-and-term-refinance",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/dscr/llc-investors",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/dscr/2-4-unit-properties",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/dscr/cash-purchase-refinance",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/dscr/hold-or-sell",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/dscr/veteran-investors",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/5-8-unit-dscr-financing-charlotte",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/5-8-unit-dscr-financing-charlotte",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/short-term-rental-dscr-tampa",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/short-term-rental-dscr-tampa",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/duplex-triplex-fourplex-dscr-atlanta",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/duplex-triplex-fourplex-dscr-atlanta",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/first-time-investor-dscr-loan-georgia",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/first-time-investor-dscr-loan-georgia",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/dscr-cash-out-refinance-georgia",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/dscr-cash-out-refinance-georgia",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/dscr-too-low-restructure",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/dscr-too-low-restructure",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/which-rent-counts-dscr-loan",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/which-rent-counts-dscr-loan",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/dscr-loan-down-payment-ltv",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/dscr-loan-down-payment-ltv",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/how-to-use-dscr-calculator",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/how-to-use-dscr-calculator",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/dscr-loans-georgia-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/dscr-loans-georgia-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/dscr-loans-alabama-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/dscr-loans-alabama-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/dscr-loans-alaska-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/dscr-loans-alaska-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/dscr-loans-arizona-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/dscr-loans-arizona-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/dscr-loans-arkansas-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/dscr-loans-arkansas-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/dscr-loans-california-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/dscr-loans-california-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/dscr-loans-colorado-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/dscr-loans-colorado-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/dscr-loans-connecticut-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/dscr-loans-connecticut-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/dscr-loans-delaware-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/dscr-loans-delaware-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/dscr-loans-florida-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/dscr-loans-florida-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/dscr-loans-hawaii-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/dscr-loans-hawaii-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/dscr-loans-idaho-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/dscr-loans-idaho-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/dscr-loans-illinois-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/dscr-loans-illinois-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/dscr-loans-indiana-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/dscr-loans-indiana-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/dscr-loans-iowa-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/dscr-loans-iowa-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/dscr-loans-kansas-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/dscr-loans-kansas-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/dscr-loans-kentucky-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/dscr-loans-kentucky-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/dscr-loans-louisiana-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/dscr-loans-louisiana-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/dscr-loans-maine-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/dscr-loans-maine-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/dscr-loans-maryland-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/dscr-loans-maryland-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/dscr-loans-massachusetts-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/dscr-loans-massachusetts-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/dscr-loans-michigan-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/dscr-loans-michigan-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/dscr-loans-minnesota-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/dscr-loans-minnesota-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/dscr-loans-mississippi-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/dscr-loans-mississippi-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/dscr-loans-missouri-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/dscr-loans-missouri-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/dscr-loans-montana-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/dscr-loans-montana-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/dscr-loans-nebraska-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/dscr-loans-nebraska-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/dscr-loans-nevada-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/dscr-loans-nevada-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/dscr-loans-new-hampshire-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/dscr-loans-new-hampshire-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/dscr-loans-new-jersey-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/dscr-loans-new-jersey-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/dscr-loans-new-mexico-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/dscr-loans-new-mexico-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/dscr-loans-new-york-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/dscr-loans-new-york-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/dscr-loans-north-carolina-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/dscr-loans-north-carolina-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/dscr-loans-north-dakota-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/dscr-loans-north-dakota-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/dscr-loans-ohio-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/dscr-loans-ohio-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/dscr-loans-oklahoma-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/dscr-loans-oklahoma-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/dscr-loans-oregon-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/dscr-loans-oregon-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/dscr-loans-pennsylvania-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/dscr-loans-pennsylvania-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/dscr-loans-rhode-island-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/dscr-loans-rhode-island-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/dscr-loans-south-carolina-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/dscr-loans-south-carolina-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/dscr-loans-south-dakota-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/dscr-loans-south-dakota-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/dscr-loans-tennessee-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/dscr-loans-tennessee-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/dscr-loans-texas-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/dscr-loans-texas-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/dscr-loans-utah-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/dscr-loans-utah-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/dscr-loans-vermont-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/dscr-loans-vermont-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/dscr-loans-virginia-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/dscr-loans-virginia-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/dscr-loans-washington-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/dscr-loans-washington-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/dscr-loans-west-virginia-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/dscr-loans-west-virginia-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/dscr-loans-wisconsin-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/dscr-loans-wisconsin-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/dscr-loans-wyoming-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/dscr-loans-wyoming-investor-guide",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/family-opportunity-mortgage-georgia",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/family-opportunity-mortgage-georgia",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/family-opportunity-mortgage-alabama",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/family-opportunity-mortgage-alabama",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/family-opportunity-mortgage-tennessee",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/family-opportunity-mortgage-tennessee",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/family-opportunity-mortgage-florida",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/family-opportunity-mortgage-florida",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/family-opportunity-mortgage-north-carolina",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/family-opportunity-mortgage-north-carolina",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/family-opportunity-mortgage-south-carolina",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/family-opportunity-mortgage-south-carolina",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/heloc-vs-cash-out-refinance",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/heloc-vs-cash-out-refinance",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/how-much-home-equity-can-i-borrow",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/how-much-home-equity-can-i-borrow",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/heloc-preparation-checklist",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/heloc-preparation-checklist",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/georgia-heloc-questions",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/georgia-heloc-questions",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/editorial-policy",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/editorial-policy",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/buy-house-for-parents-keep-own-home",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/buy-house-for-parents-keep-own-home",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/siblings-help-buy-home-for-parents",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/siblings-help-buy-home-for-parents",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/moving-parents-closer-home-buying-checklist",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/moving-parents-closer-home-buying-checklist",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/planning-separate-home-adult-child-disability",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/planning-separate-home-adult-child-disability",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/contractor-financing-vs-heloc",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/contractor-financing-vs-heloc",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/heloc-debt-consolidation-total-cost",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/heloc-debt-consolidation-total-cost",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/compare-heloc-offers",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/compare-heloc-offers",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/heloc-vs-fixed-home-equity-loan",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/heloc-vs-fixed-home-equity-loan",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/heloc-draw-period-repayment-payments",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/heloc-draw-period-repayment-payments",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/heloc-initial-draw-requirements",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/heloc-initial-draw-requirements",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/heloc-fees-short-term-borrowing",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/heloc-fees-short-term-borrowing",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/self-employed-heloc-income-documents",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/self-employed-heloc-income-documents",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/heloc-roof-hvac-replacement",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/heloc-roof-hvac-replacement",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/heloc-paid-off-home",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/heloc-paid-off-home",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/existing-heloc-refinance-review",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/existing-heloc-refinance-review",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/renovate-or-move-cost-worksheet",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/renovate-or-move-cost-worksheet",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/renovation-change-order-funding",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/renovation-change-order-funding",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/pay-heloc-down-faster",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/pay-heloc-down-faster",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/selling-home-with-heloc",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/selling-home-with-heloc",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/heloc-appraisal-property-condition",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/heloc-appraisal-property-condition",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/heloc-credit-inquiry-stages",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/heloc-credit-inquiry-stages",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/home-equity-accessible-home-project",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/home-equity-accessible-home-project",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/home-equity-before-buying-another-home",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/home-equity-before-buying-another-home",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/condo-renovation-home-equity",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/condo-renovation-home-equity",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/heloc-interest-recordkeeping",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/heloc-interest-recordkeeping",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/heloc-vs-home-equity-contract",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/heloc-vs-home-equity-contract",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/rental-property-equity-heloc-dscr",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/rental-property-equity-heloc-dscr",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/heloc-adu-addition-planning",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/heloc-adu-addition-planning",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/heloc-planning-tools",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/heloc-planning-tools",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/commercial-mortgage-referrals-cpas-attorneys",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/commercial-mortgage-referrals-cpas-attorneys",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/dscr-referral-partners-property-managers",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/dscr-referral-partners-property-managers",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/mortgage-broker-dscr-commercial-referral-partner",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/mortgage-broker-dscr-commercial-referral-partner",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/mortgage-referral-partners-real-estate-agents",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/mortgage-referral-partners-real-estate-agents",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/dscr-heloc-paid-off-investment-property",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/dscr-heloc-paid-off-investment-property",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/bank-statement-loans",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/bank-statement-loans",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/interest-only-loans",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/interest-only-loans",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/atlanta-teardown-rebuild-construction-financing",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/atlanta-teardown-rebuild-construction-financing",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/100-ltc-construction-loans-builder-cash-needed",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/100-ltc-construction-loans-builder-cash-needed",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/construction-loan-property-already-owned-mortgage-payoff",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/construction-loan-property-already-owned-mortgage-payoff",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/residential-development-financing-georgia-florida-texas-case-study",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/residential-development-financing-georgia-florida-texas-case-study",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/blog/45-million-builder-fix-and-flip-capital",
+      "status": 200
+    },
+    {
+      "url": "https://stonehavencre.com/es/blog/45-million-builder-fix-and-flip-capital",
+      "status": 200
+    }
+  ]
+}

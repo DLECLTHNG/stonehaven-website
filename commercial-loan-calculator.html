@@ -20,7 +20,7 @@
 <link rel="stylesheet" href="funnel.css?v=cleanup2-20260918"/>
 <noscript><style>.reveal{opacity:1 !important;transform:none !important;}</style></noscript>
 <script src="js/site-config.js?v=6" defer></script>
-<script src="js/funnel.js?v=11" defer></script>
+<script src="js/funnel.js?v=12" defer></script>
 <script src="js/commercial-calc.js?v=1"></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://stonehavencre.com/"}, {"@type": "ListItem", "position": 2, "name": "Commercial", "item": "https://stonehavencre.com/commercial"}, {"@type": "ListItem", "position": 3, "name": "Commercial Loan Calculator", "item": "https://stonehavencre.com/commercial-loan-calculator"}]}</script>
 
@@ -148,7 +148,7 @@
   var $=function(id){return document.getElementById(id);};
   var fired=false;
   function money(n){return "$"+Math.round(n).toLocaleString("en-US");}
-  function calc(){
+  function calc(event){
     var C=window.SH_CRE; if(!C) return;
     var value=+$("c-value").value||0, noi=+$("c-noi").value||0,
         rate=+$("c-rate").value||0, years=+$("c-years").value||30,
@@ -169,7 +169,7 @@
       : "The value caps proceeds before income does - the appraisal and your equity position set the ceiling here.";
     var form=document.querySelector('form[data-sh-form="commercial-calculator"]');
     if(form){form.setAttribute("data-sh-about-prefix","[CRE Calculator] value "+money(value)+" · NOI "+money(noi)+" · supported loan "+money(s.loan)+" ("+s.binding+"-bound) · est pmt "+money(s.payment)+"/mo");}
-    if(!fired&&window.shTrack){fired=true;window.shTrack("calc_used",{page:"commercial-loan-calculator"});}
+    if(event&&event.type==="input"&&!fired&&window.shTrack){fired=true;window.shTrack("calc_used",{page:"commercial-loan-calculator"});}
   }
   ["c-value","c-noi","c-rate","c-years","c-dscr","c-ltv"].forEach(function(id){
     var el=$(id); el.addEventListener("input",calc);
