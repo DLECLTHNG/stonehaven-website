@@ -127,6 +127,9 @@ p{margin:0;}
 .fo-person .lines{margin-top:12px;display:flex;flex-direction:column;gap:6px;font-size:15px;}
 .fo-person .lines a{display:inline-flex;align-items:center;min-height:32px;text-decoration:none;color:var(--navy);}
 .fo-person .lines a:hover{text-decoration:underline;}
+.fo-person > div:last-child{min-width:0;}
+.fo-person .lines a{overflow-wrap:anywhere;}
+@media(max-width:600px){.fo-person{flex-direction:column;gap:14px;padding:22px;}}
 
 /* closing */
 .fo-close{text-align:left;}

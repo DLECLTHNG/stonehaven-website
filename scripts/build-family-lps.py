@@ -15,7 +15,7 @@ def check_no_em(s, where):
     if "—" in s or "–" in s: raise SystemExit("em/en dash found in " + where)
 
 VER = "3"
-CSS_VER = "layout-20260918"
+CSS_VER = "polish-20260918"
 STATES_JS = [c for c, _ in C.SERVICE_STATES]
 
 def head(title, desc, path, noindex):
