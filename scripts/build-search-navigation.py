@@ -18,8 +18,36 @@ def title(s):
 def marker(kind,s):return f'<!-- SEARCH-NAV:{kind}:START -->{s}<!-- SEARCH-NAV:{kind}:END -->\n'
 def links(prefix,items):return ''.join(f'<li><a href="{prefix}{url}">{escape(label)}</a></li>' for url,label in items)
 def group(heading,prefix,items):return '<div><h3>'+heading+'</h3><ul>'+links(prefix,items)+'</ul></div>'
+def normalize_entities(text,path):
+ def walk(data):
+  if isinstance(data,list):
+   for node in data:walk(node)
+  elif isinstance(data,dict):
+   kinds=data.get('@type',[]);kinds=[kinds] if isinstance(kinds,str) else kinds
+   if any(k in kinds for k in ['Organization','FinancialService']) and data.get('name')=='Stonehaven Lending':
+    data['@id']=ORIGIN+'/#org'
+   if 'Person' in kinds and data.get('name') in ['Chris De Leeuw','Christiaan De Leeuw','Dawn M. Muñoz']:
+    chris=data['name']!='Dawn M. Muñoz'
+    data['@id']=ORIGIN+'/management#'+('chris-de-leeuw' if chris else 'dawn-munoz')
+    data['url']=data['@id']
+    if chris:data['name']='Chris De Leeuw'
+   if any(k in kinds for k in ['Article','BlogPosting']) and data.get('headline'):
+    url=data.get('url')
+    if not url and ('dateModified' in data or 'mainEntityOfPage' in data):url=ORIGIN+path
+    if isinstance(url,str) and url.startswith(ORIGIN+'/'):
+     data.setdefault('@id',url+'#article')
+     data.setdefault('mainEntityOfPage',{'@type':'WebPage','@id':url})
+   for value in list(data.values()):walk(value)
+ def replace(match):
+  data=json.loads(match[1]);walk(data)
+  return '<script type="application/ld+json">'+json.dumps(data,ensure_ascii=False)+'</script>'
+ return re.sub(r'<script type="application/ld\+json">(.*?)</script>',replace,text,flags=re.S)
+def cre_links(prefix,es):
+ return [('/commercial/construction-loans','Financiamiento para construcción' if es else 'Construction financing'),('/commercial/fix-and-flip','Capital para renovación y reventa' if es else 'Fix-and-flip financing'),('/commercial/bridge-loans','Préstamos puente comerciales' if es else 'Commercial bridge loans')]
 counts={'breadcrumbs':0,'topic_hubs':0,'program_links':0}
 for path,(file,text) in pages.items():
+ text=normalize_entities(text,path)
+ text=text.replace('<b>Christiaan De Leeuw</b>','<a href="/management#chris-de-leeuw"><b>Chris De Leeuw</b></a>')
  if re.search(r'<meta[^>]+name="robots"[^>]+content="[^"]*noindex',text) or '<main>' not in text:
   if text!=file.read_text():file.write_text(text)
   continue
@@ -53,13 +81,22 @@ for path,(file,text) in pages.items():
    items=[('/dscr-program-calculator','Calcular la renta y el préstamo DSCR' if es else 'Calculate DSCR rent and loan scenarios'),('/blog/dscr-loans-explained','Cómo funcionan los préstamos DSCR' if es else 'How DSCR loans work'),('/blog/dscr-program-calculator-qualifying-rent','Qué renta cuenta para calificar' if es else 'Which rental income counts for qualification'),('/blog/florida-dscr-cash-out-refinance-75-ltv-hard-money-payoff','Caso de Florida: refinanciar una propiedad de alquiler para liquidar un préstamo puente' if es else 'Florida case study: refinancing a rental to pay off a bridge loan')]
    h='Guías y ejemplos de financiamiento DSCR' if es else 'DSCR financing guides and examples';intro='Explore cómo se evalúa la renta, pruebe un escenario y revise un cierre anterior. Cada préstamo está sujeto a evaluación y condiciones del prestamista.' if es else 'Explore how rental income is evaluated, model a scenario and review a past closing. Each loan remains subject to underwriting and lender requirements.'
   elif local=='/resources/commercial':
-   items=[('/blog/atlanta-teardown-rebuild-construction-financing','Plan a teardown and rebuild'),('/blog/100-ltc-construction-loans-builder-cash-needed','Understand up to 100% LTC construction financing'),('/blog/construction-loan-property-already-owned-mortgage-payoff','Review existing property equity and payoff')]
-   h='Construction financing for builders';intro='Plan acquisition, project equity and construction cash flow before requesting terms.'
+   items=cre_links(prefix,es)+[('/resources/how-lenders-size-commercial-loans','Work through DSCR, LTV and debt yield'),('/resources/commercial-refinance-guide','Plan a commercial maturity or refinance'),('/blog/45-million-builder-fix-and-flip-capital','Explore the dated $45 million builder capital announcement')]
+   h='Commercial financing: programs and decisions';intro='Compare project financing, work through the numbers and prepare a complete scenario.'
   else:
    items=[('/bank-statement-loans','Hipotecas con estados de cuenta' if es else 'Bank statement mortgages'),('/interest-only-loans','Hipotecas de solo intereses' if es else 'Interest-only mortgages'),('/heloc','Opciones HELOC' if es else 'HELOC options')]
    items=[x for x in items if x[0]!=local];h='Compare opciones hipotecarias' if es else 'Compare mortgage options';intro='Explore documentación de ingresos, estructura de pagos y patrimonio disponible según su objetivo.' if es else 'Explore income documentation, payment structure and home equity options around your financing goal.'
   addition='<section class="wrap search-topics"><h2>'+h+'</h2><p>'+intro+'</p><ul class="search-program-links">'+links(prefix,items)+'</ul></section>'
   text=text.replace('</main>',marker('PROGRAMS',addition)+'</main>');counts['program_links']+=1
+ cre_articles=['45-million-builder-fix-and-flip-capital','atlanta-teardown-rebuild-construction-financing','100-ltc-construction-loans-builder-cash-needed','construction-loan-property-already-owned-mortgage-payoff','brookhaven-ga-100-ltc-ground-up-construction','residential-development-financing-georgia-florida-texas-case-study','commercial-mortgage-referrals-cpas-attorneys','mortgage-broker-dscr-commercial-referral-partner']
+ if local in ['/','/commercial','/blog'] or local in ['/blog/'+slug for slug in cre_articles]:
+  items=cre_links(prefix,es)
+  if local in ['/blog/atlanta-teardown-rebuild-construction-financing','/blog/100-ltc-construction-loans-builder-cash-needed','/blog/construction-loan-property-already-owned-mortgage-payoff']:
+   items.append(('/blog/45-million-builder-fix-and-flip-capital','Anuncio de capital para constructores del 18 de septiembre' if es else 'September 18 builder capital announcement'))
+  heading='Encuentre financiamiento para su proyecto' if es else 'Find financing for your project'
+  intro='Compare construcción, renovación para reventa y financiamiento puente. Presente costo total, préstamo solicitado y plan de salida para una revisión por mensaje de texto.' if es else 'Compare construction, fix-and-flip and bridge options. Share total project cost, requested financing and your exit plan for a review by text.'
+  addition='<section class="wrap search-topics"><h2>'+heading+'</h2><p>'+intro+'</p><ul class="search-program-links">'+links(prefix,items)+'</ul></section>'
+  text=text.replace('</main>',marker('CRE',addition)+'</main>')
  if 'SEARCH-NAV:' in text:text=text.replace('</head>','<link rel="stylesheet" href="/search-navigation.css?v=1"/></head>')
  file.write_text(text)
 print(json.dumps(counts))

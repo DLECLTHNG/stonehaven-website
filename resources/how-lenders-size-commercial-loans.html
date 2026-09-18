@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>How Lenders Size a Commercial Loan | Stonehaven</title>
-<meta name="description" content="Commercial loan sizing explained: the DSCR limit, the LTV limit, which one binds your deal, and what actually moves proceeds."/>
+<title>Commercial Loan Sizing: DSCR, LTV & Debt Yield | Stonehaven</title>
+<meta name="description" content="See how DSCR, LTV and debt yield limit a commercial loan, with a $6 million property example, sensitivity tests and a submission checklist."/>
 <link rel="canonical" href="https://stonehavencre.com/resources/how-lenders-size-commercial-loans"/>
 <meta property="og:type" content="article"/>
 <meta property="og:site_name" content="Stonehaven Lending"/>
-<meta property="og:title" content="How Lenders Size a Commercial Loan | Stonehaven"/>
-<meta property="og:description" content="Commercial loan sizing explained: the DSCR limit, the LTV limit, which one binds your deal, and what actually moves proceeds."/>
+<meta property="og:title" content="Commercial Loan Sizing: DSCR, LTV & Debt Yield | Stonehaven"/>
+<meta property="og:description" content="See how DSCR, LTV and debt yield limit a commercial loan, with a $6 million property example, sensitivity tests and a submission checklist."/>
 <meta property="og:url" content="https://stonehavencre.com/resources/how-lenders-size-commercial-loans"/>
 <meta property="og:image" content="https://stonehavencre.com/assets/stonehaven-handpainted-logo.png"/>
 <link rel="icon" type="image/png" href="../assets/stonehaven-handpainted-logo.png"/>
@@ -18,11 +18,40 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="../styles.css?v=cleanup-20260918"/>
 <link rel="stylesheet" href="../funnel.css?v=cleanup2-20260918"/>
+<style>
+.cre-guide{max-width:800px;margin:0 auto;color:var(--slate-700);font-size:16px;line-height:1.8;}
+.cre-guide h2{font-family:'Cormorant',Georgia,serif;font-size:clamp(29px,3.5vw,40px);font-weight:400;line-height:1.2;margin:48px 0 20px;color:var(--slate-900);}
+.cre-guide h3{font-size:19px;line-height:1.45;margin:30px 0 12px;color:var(--slate-900);}
+.cre-guide p,.cre-guide ul,.cre-guide ol{margin:0 0 22px;}
+.cre-guide ul,.cre-guide ol{padding-left:24px;}
+.cre-guide li{margin-bottom:10px;}
+.cre-guide a{color:#805b20;text-underline-offset:3px;}
+.cre-guide strong{font-weight:500;color:var(--slate-900);}
+.cre-guide .guide-answer,.cre-guide .guide-note{padding:24px;background:var(--white);border:1px solid var(--line);border-radius:4px;margin-bottom:28px;}
+.cre-guide .guide-answer p:last-child,.cre-guide .guide-note p:last-child{margin-bottom:0;}
+.cre-guide .guide-answer .eyebrow{display:block;margin-bottom:14px;color:var(--slate-400);}
+.cre-guide .guide-toc{background:var(--paper-2);padding:22px 24px;margin:28px 0;}
+.cre-guide .guide-toc ul{margin:12px 0 0;}
+.cre-guide .guide-table-hint{display:none;}
+@media(max-width:700px){.cre-guide .guide-table-hint{display:block;font-size:13px;color:var(--slate-600);margin-bottom:-12px;}}
+.cre-guide .guide-table{max-width:100%;overflow-x:auto;margin:24px 0;border:1px solid var(--line);border-radius:4px;}
+.cre-guide table{width:100%;min-width:580px;border-collapse:collapse;background:var(--white);font-size:14px;line-height:1.65;}
+.cre-guide caption{text-align:left;padding:14px 16px;font-weight:500;color:var(--slate-900);}
+.cre-guide th,.cre-guide td{padding:14px 16px;text-align:left;vertical-align:top;border-top:1px solid var(--line);}
+.cre-guide thead th{background:var(--paper-2);font-weight:500;color:var(--slate-900);}
+.cre-guide tbody th{font-weight:500;width:27%;}
+.cre-guide .guide-formula{font-weight:500;color:var(--slate-900);padding:18px 20px;background:var(--paper-2);overflow-wrap:anywhere;}
+.cre-guide .guide-small{font-size:14px;color:var(--slate-400);}
+.cre-guide .guide-sources{font-size:14px;}
+.guide-cta{display:flex;justify-content:center;margin-top:22px;}
+.guide-cta .btn-primary{max-width:100%;white-space:normal;text-align:center;}
+@media(max-width:600px){.cre-guide-section>.wrap{padding-left:24px;padding-right:24px;}.cre-guide .guide-answer,.cre-guide .guide-note,.cre-guide .guide-toc{padding:20px;}.cre-guide h2{margin-top:38px;}}
+</style>
 <noscript><style>.reveal{opacity:1 !important;transform:none !important;}</style></noscript>
 <script src="../js/site-config.js?v=6" defer></script>
-<script src="../js/funnel.js?v=12" defer></script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "How Lenders Size a Commercial Loan: DSCR, LTV, and the Limiting Factor", "author": {"@type": "Person", "name": "Christiaan De Leeuw"}, "publisher": {"@type": "Organization", "name": "Stonehaven Lending", "logo": {"@type": "ImageObject", "url": "https://stonehavencre.com/assets/stonehaven-handpainted-logo.png"}}, "datePublished": "2026-07-30", "dateModified": "2026-07-30", "mainEntityOfPage": "https://stonehavencre.com/resources/how-lenders-size-commercial-loans"}</script>
-<!-- SEARCH-NAV:SCHEMA:START --><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://stonehavencre.com/"}, {"@type": "ListItem", "position": 2, "name": "Commercial resources", "item": "https://stonehavencre.com/resources/commercial"}, {"@type": "ListItem", "position": 3, "name": "How Lenders Size a Commercial Loan", "item": "https://stonehavencre.com/resources/how-lenders-size-commercial-loans"}]}</script><!-- SEARCH-NAV:SCHEMA:END -->
+<script src="../js/funnel.js?v=13" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "How Lenders Size a Commercial Loan: DSCR, LTV and Debt Yield", "author": {"@type": "Person", "name": "Chris De Leeuw", "@id": "https://stonehavencre.com/management#chris-de-leeuw", "url": "https://stonehavencre.com/management#chris-de-leeuw"}, "publisher": {"@type": "Organization", "name": "Stonehaven Lending", "logo": {"@type": "ImageObject", "url": "https://stonehavencre.com/assets/stonehaven-handpainted-logo.png"}, "@id": "https://stonehavencre.com/#org"}, "datePublished": "2026-07-30", "dateModified": "2026-09-18", "mainEntityOfPage": "https://stonehavencre.com/resources/how-lenders-size-commercial-loans", "description": "See how DSCR, LTV and debt yield limit a commercial loan, with a $6 million property example, sensitivity tests and a submission checklist.", "inLanguage": "en", "@id": "https://stonehavencre.com/resources/how-lenders-size-commercial-loans#article"}</script>
+<!-- SEARCH-NAV:SCHEMA:START --><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://stonehavencre.com/"}, {"@type": "ListItem", "position": 2, "name": "Commercial resources", "item": "https://stonehavencre.com/resources/commercial"}, {"@type": "ListItem", "position": 3, "name": "Commercial Loan Sizing: DSCR, LTV & Debt Yield", "item": "https://stonehavencre.com/resources/how-lenders-size-commercial-loans"}]}</script><!-- SEARCH-NAV:SCHEMA:END -->
 <link rel="stylesheet" href="/search-navigation.css?v=1"/></head>
 <body><noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=4039555362846500&ev=PageView&noscript=1" alt=""/></noscript><header class="nav" id="nav">
   <div class="wrap nav-inner">
@@ -47,25 +76,41 @@
 <section class="funnel-hero">
   <span class="eyebrow">Commercial · Guide</span>
   <h1>How lenders size <br>a <em>commercial loan</em></h1>
-  <p>Two limits set proceeds - and one is binding your deal right now.</p>
-  <p style="font-size:13px;color:var(--stone-400);margin-top:16px;">By <b>Christiaan De Leeuw</b> · Stonehaven Lending · Updated July 30, 2026</p>
-</section><!-- SEARCH-NAV:TRAIL:START --><nav class="search-breadcrumb wrap" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/resources/commercial">Commercial resources</a></li><li><span aria-current="page">How Lenders Size a Commercial Loan</span></li></ol></nav><!-- SEARCH-NAV:TRAIL:END -->
+  <p>Compare the cash-flow, value and debt-yield limits before deciding how much your property can borrow.</p>
+  <p style="font-size:13px;color:var(--stone-400);margin-top:16px;">By <a href="/management#chris-de-leeuw"><b>Chris De Leeuw</b></a> · Stonehaven Lending · Published July 30, 2026 · Updated September 18, 2026</p>
+</section><!-- SEARCH-NAV:TRAIL:START --><nav class="search-breadcrumb wrap" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/resources/commercial">Commercial resources</a></li><li><span aria-current="page">Commercial Loan Sizing: DSCR, LTV &amp; Debt Yield</span></li></ol></nav><!-- SEARCH-NAV:TRAIL:END -->
 
-<section class="tight" id="answer" style="padding-bottom:10px;"><div class="wrap"><div class="prose reveal"><span class="eyebrow">The Short Answer</span><p style="color:var(--slate-700);font-size:17px;line-height:1.75;">The loan is the <b>lesser of two numbers</b>: what income services at a target coverage ratio (<b>DSCR</b>, commonly 1.20x-1.30x), and what value supports at maximum loan-to-value (<b>LTV</b>). The smaller is the <b>limiting factor</b>.</p></div></div></section>
-<section><div class="wrap"><div class="prose reveal"><span class="eyebrow">Limit One</span><h2>DSCR: income covers debt</h2><p>Underwriting rebuilds NOI from the rent roll and operating statements. NOI divided by the target ratio sets allowable debt service; rate and amortization turn that into a loan amount.</p></div></div></section>
-<section><div class="wrap"><div class="prose reveal"><span class="eyebrow">Limit Two</span><h2>LTV: value caps leverage</h2><p>The appraisal sets value; the lender's maximum LTV sets the ceiling. When LTV binds, it is about value and equity. Income does not move an LTV-bound loan.</p></div></div></section>
-<section><div class="wrap"><div class="prose reveal"><span class="eyebrow">The Point</span><h2>Work the limit that binds</h2><p>Our <a href="/commercial-loan-calculator">commercial loan calculator</a> names the limiting factor. DSCR-bound? Fight for income: rents, expenses, amortization. LTV-bound? Fight for value: appraisal, comps, or more equity.</p></div></div></section>
-<section><div class="wrap"><div class="prose reveal"><span class="eyebrow">Beyond the Two</span><h2>What else shapes proceeds</h2><p>Debt yield, stress tests, tenant concentration, rollover, sponsor strength sit on top - weighted differently by each lender. That spread is where a broker earns their keep.</p></div></div></section>
-<section class="lead">
-  <div class="wrap">
-    <div class="lead-card reveal" style="text-align:center;">
-      <span class="eyebrow">Have a Live Deal?</span>
-      <h2>See which limit binds yours</h2>
-      <p class="sub">Send the basics. A specialist replies in under 1 hour - real numbers, no obligation.</p>
-      <div style="margin-top:22px;"><a class="btn-primary" href="/terms-sheet#deal-review">Send my deal for review</a></div>
-    </div>
-  </div>
-</section>
+<section class="cre-guide-section"><div class="wrap"><article class="cre-guide">
+<div class="guide-answer" id="answer"><span class="eyebrow">The Short Answer</span><p><strong>A commercial real estate loan is limited by the most restrictive underwriting test.</strong> For an income-producing property, that usually means comparing debt-service coverage (DSCR), loan-to-value (LTV), and any minimum debt yield. The lowest supported amount is a starting ceiling, before other lender limits, closing costs and reserves.</p><p>A larger appraisal does not solve an income shortfall. A lower payment does not remove a lender's debt-yield requirement. Identify the test that limits your deal before trying to increase proceeds.</p></div>
+<nav class="guide-toc" aria-label="On this page"><strong>In this guide</strong><ul><li><a href="#formulas">The three loan-sizing formulas</a></li><li><a href="#worked-example">A $6 million property, worked step by step</a></li><li><a href="#sensitivity">What changes the supported loan?</a></li><li><a href="#construction">Construction and renovation are different</a></li><li><a href="#submission">What to send for a useful review</a></li></ul></nav>
+<h2 id="formulas">How DSCR, LTV and debt yield work together</h2>
+<p><strong>Net operating income (NOI)</strong> is property income after operating expenses, before mortgage debt service and owner income taxes. The lender may adjust vacancy, management fees, repairs, property taxes, insurance and reserves. A seller's stated NOI and a lender's underwritten cash flow can differ, so reconcile the inputs before comparing loan amounts.</p>
+<p class="guide-table-hint">Swipe the table to see all columns.</p><div class="guide-table" role="region" tabindex="0" aria-label="Commercial loan-sizing formulas"><table><caption>Commercial loan-sizing formulas</caption><thead><tr><th scope="col">Test</th><th scope="col">Formula</th><th scope="col">What it measures</th></tr></thead><tbody><tr><th scope="row">DSCR</th><td>Annual underwritten NOI ÷ annual debt service</td><td>Whether property income covers the payments used in underwriting.</td></tr><tr><th scope="row">DSCR loan limit</th><td>NOI ÷ minimum DSCR ÷ annual debt-service constant</td><td>The loan supported by cash flow under the assumed repayment structure.</td></tr><tr><th scope="row">LTV loan limit</th><td>Lender-accepted property value × maximum LTV</td><td>The lender’s advance relative to collateral value.</td></tr><tr><th scope="row">Debt-yield loan limit</th><td>NOI ÷ minimum debt yield, expressed as a decimal</td><td>Income relative to the loan balance, independent of payment amortization.</td></tr></tbody></table></div>
+<p class="guide-small">The <a href="https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf" rel="noopener">OCC's Commercial Real Estate Lending handbook</a> discusses DSCR, debt yield, value analysis and lender underwriting standards. It does not establish the hypothetical thresholds used below as available Stonehaven terms.</p>
+<h3>What is an annual debt-service constant?</h3>
+<p>The annual debt-service constant is annual principal-and-interest debt service divided by the original loan amount. It converts a payment limit into a loan amount. For example, an <strong>8% constant means $80,000 of annual debt service for each $1 million borrowed</strong>. It is a calculation assumption, not an interest rate, APR or financing quote. A lender's underwriting constant may reflect stressed payments rather than the initial payment.</p>
+<h2 id="worked-example">Example: sizing a loan on a $6 million property</h2>
+<p>Assume an income-producing commercial property has <strong>$400,000 of annual underwritten NOI</strong> and a lender-accepted value of <strong>$6 million</strong>. For this educational example only, use a 1.25x minimum DSCR, an 8% annual debt-service constant, a 70% maximum LTV and a 9% minimum debt yield. These are illustrative assumptions, not a program or commitment.</p>
+<p class="guide-table-hint">Swipe the table to see all columns.</p><div class="guide-table" role="region" tabindex="0" aria-label="Three limits on the same hypothetical property"><table><caption>Three limits on the same hypothetical property</caption><thead><tr><th scope="col">Sizing test</th><th scope="col">Calculation</th><th scope="col">Supported loan</th></tr></thead><tbody><tr><th scope="row">DSCR</th><td>$400,000 ÷ 1.25 = $320,000 annual debt service; $320,000 ÷ 0.08</td><td>$4,000,000</td></tr><tr><th scope="row">LTV</th><td>$6,000,000 × 70%</td><td>$4,200,000</td></tr><tr><th scope="row">Debt yield</th><td>$400,000 ÷ 0.09</td><td>$4,444,444, rounded</td></tr><tr><th scope="row">Lowest result</th><td>The DSCR limit is the most restrictive.</td><td>$4,000,000 before other limits</td></tr></tbody></table></div>
+<p>At a $4 million loan, the modeled DSCR is 1.25x, LTV is approximately 66.7%, and debt yield is 10%. Although the value supports $4.2 million, cash flow supports only $4 million under the payment assumption. Asking for a higher appraisal alone would not increase this modeled loan.</p>
+<div class="guide-note"><p><strong>Loan amount is not net cash.</strong> On a purchase, subtract the loan from the acquisition and closing budget to estimate required equity. On a refinance, deduct the existing payoff, financing costs and required reserves before calling anything cash out. The <a href="/resources/commercial-refinance-guide">commercial refinance guide</a> shows a proceeds shortfall example.</p></div>
+<h2 id="sensitivity">Which change actually increases proceeds?</h2>
+<p>Change one assumption at a time to find the constraint. The following alternatives keep every base-case input unchanged except the stated change.</p>
+<p class="guide-table-hint">Swipe the table to see all columns.</p><div class="guide-table" role="region" tabindex="0" aria-label="Sensitivity to one changed assumption"><table><caption>Sensitivity to one changed assumption</caption><thead><tr><th scope="col">Change from the base case</th><th scope="col">New lowest loan limit</th><th scope="col">Why it changes</th></tr></thead><tbody><tr><th scope="row">NOI falls to $360,000</th><td>$3,600,000</td><td>DSCR remains the constraint: $360,000 ÷ 1.25 ÷ 0.08.</td></tr><tr><th scope="row">Value falls to $5,500,000</th><td>$3,850,000</td><td>LTV now binds: $5,500,000 × 70%.</td></tr><tr><th scope="row">Minimum debt yield rises to 11%</th><td>$3,636,364, rounded</td><td>Debt yield now binds: $400,000 ÷ 0.11.</td></tr><tr><th scope="row">Value rises to $6,500,000</th><td>$4,000,000</td><td>The higher LTV ceiling does not change the DSCR ceiling.</td></tr></tbody></table></div>
+<ul><li><strong>If DSCR binds:</strong> verify collections, expense adjustments and the repayment assumption. A longer amortization can change payment-based sizing, but it may not change the lender's stressed test or debt-yield floor.</li><li><strong>If LTV binds:</strong> review the valuation basis and credible comparable evidence. More borrower equity or a smaller payoff may be needed; the appraisal cannot be assumed upward.</li><li><strong>If debt yield binds:</strong> a lower payment does not change NOI divided by the loan. Supportable NOI or a lower balance must address the gap.</li></ul>
+<p>Use the <a href="/commercial-loan-calculator">commercial loan calculator</a> for a first-pass DSCR and LTV comparison. Its output does not add a lender-specific debt-yield test, sponsor requirements or approval. Read the <a href="/calculation-methodology">calculation methodology</a> before applying the result to a live deal.</p>
+<h2 id="construction">Construction loan sizing adds costs, draws and the exit</h2>
+<p>A vacant teardown site has no stabilized rental NOI today. For <a href="/commercial/construction-loans">ground-up construction financing</a>, the review also examines eligible project costs, land equity, construction budget, completion value, draw timing and the sale or refinance exit. <strong>LTC is loan divided by lender-recognized project cost; LTV is loan divided by lender-accepted value.</strong> They are not interchangeable.</p>
+<p>Financing 100% of an approved construction budget is not automatically 100% of total project costs or completed value. Acquisition, existing liens, interest reserves, fees and excluded costs must be identified separately. A <a href="/commercial/fix-and-flip">fix-and-flip project</a> likewise needs a renovation budget and supportable resale plan. If the plan is to hold, model the permanent loan before relying on it to repay construction or <a href="/commercial/bridge-loans">bridge financing</a>.</p>
+<h2 id="submission">What to send for a commercial loan-sizing review</h2>
+<ul><li><strong>Property:</strong> address, asset type, units or square footage, occupancy and ownership structure.</li><li><strong>Income:</strong> current rent roll, trailing 12-month operating statement, recent collections and material lease expirations.</li><li><strong>Value and request:</strong> purchase contract or value estimate, requested loan and use of proceeds.</li><li><strong>Existing debt:</strong> balance, maturity, payment structure and any known prepayment cost.</li><li><strong>Business plan:</strong> repairs, lease-up assumptions, project budget and intended hold or sale.</li><li><strong>Sponsor:</strong> relevant experience, available equity and liquidity after closing.</li></ul>
+<h3>Is commercial DSCR the same as a rental-property DSCR loan?</h3>
+<p>Not always. This guide uses annual property NOI divided by debt service for commercial underwriting. Many 1–4 unit <a href="/dscr">DSCR rental-loan programs</a> instead compare eligible rent with housing payments under their own rules. Do not insert gross rent into the commercial NOI formula or mix the two methods.</p>
+<h3>Does clearing these ratios guarantee approval?</h3>
+<p>No. Property condition, environmental issues, tenant concentration, sponsor capacity, title, market, lender policy and documentation still matter. Stonehaven uses the initial sizing to discuss a realistic request with third-party lenders; the lender makes the credit decision.</p>
+
+</article></div></section>
+<section class="lead"><div class="wrap"><div class="lead-card reveal" style="text-align:center;"><span class="eyebrow">Commercial Loan Sizing</span><h2>Find the limit on your deal</h2><p class="sub">Share the property, income, value and requested financing. We follow up by text with preliminary feedback in under 1 hour.</p><div class="guide-cta"><a class="btn-primary" href="/terms-sheet#deal-review">Send my deal for review</a></div><p class="guide-small" style="font-size:13px;margin:22px auto 0;max-width:600px;">Stonehaven is a mortgage brokerage. Any financing is subject to lender underwriting, documentation, program availability and applicable licensing.</p></div></div></section>
 
 </main>
 <footer>

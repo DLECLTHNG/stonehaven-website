@@ -52,5 +52,30 @@
       "/dscr/hold-or-sell",
       "/dscr/veteran-investors"
     ]
+  },
+  {
+    "date": "2026-09-18",
+    "reason": "Publish evergreen CRE financing pages, expanded guides and asset pages, and clarify construction case and intake fields",
+    "paths": [
+      "/commercial/construction-loans",
+      "/commercial/fix-and-flip",
+      "/commercial/bridge-loans",
+      "/es/commercial/construction-loans",
+      "/es/commercial/fix-and-flip",
+      "/es/commercial/bridge-loans",
+      "/resources/how-lenders-size-commercial-loans",
+      "/resources/commercial-refinance-guide",
+      "/resources/bridge-vs-permanent-financing",
+      "/commercial/multifamily",
+      "/commercial/mixed-use",
+      "/commercial/commercial-property",
+      "/es/commercial/multifamily",
+      "/es/commercial/mixed-use",
+      "/es/commercial/commercial-property",
+      "/blog/brookhaven-ga-100-ltc-ground-up-construction",
+      "/es/blog/brookhaven-ga-100-ltc-ground-up-construction",
+      "/blog/45-million-builder-fix-and-flip-capital",
+      "/es/blog/45-million-builder-fix-and-flip-capital"
+    ]
   }
 ]
