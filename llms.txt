@@ -59,9 +59,15 @@ Key facts:
 - [South Carolina home loans](https://stonehavencre.com/residential/south-carolina): Charleston, Columbia, Greenville
 
 ## Commercial programs
+- [Construction financing](https://stonehavencre.com/commercial/construction-loans): Business-purpose ground-up and teardown financing; builder focus of $2 million to $10 million in total project cost, with cost, loan amount and completed value defined separately.
+- [Fix-and-flip financing](https://stonehavencre.com/commercial/fix-and-flip): Acquisition and renovation capital, rehab holdbacks, cash timing and resale or refinance planning.
+- [Commercial bridge loans](https://stonehavencre.com/commercial/bridge-loans): Transitional income-producing property, lease-up, existing debt and permanent-financing exit review.
 - [Multifamily](https://stonehavencre.com/commercial/multifamily)
 - [Mixed-use](https://stonehavencre.com/commercial/mixed-use)
 - [Commercial property](https://stonehavencre.com/commercial/commercial-property)
+- Spanish: [Construcción](https://stonehavencre.com/es/commercial/construction-loans), [renovación y reventa](https://stonehavencre.com/es/commercial/fix-and-flip), [financiamiento puente](https://stonehavencre.com/es/commercial/bridge-loans).
+
+These pages explain financing choices and illustrate project math. Any hypothetical percentages are assumptions, not offered loan terms. Up to 100% eligible loan-to-cost may be considered on qualifying construction scenarios; this does not promise no cash requirement or financing of 100% of completed property value.
 
 ## Resource guides
 - [Home loan resources](https://stonehavencre.com/resources/residential)

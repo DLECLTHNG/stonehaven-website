@@ -78,22 +78,138 @@
     });
   }
 
+  // Source context stays in this tab's session and in the submitted inquiry.
+  // It is never an analytics parameter, a user identity, or a browsing history.
   var UTM_KEYS = ["utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term", "utm_id", "gclid", "fbclid"];
+  var ATTR_KEY = "sh_source_context_v1";
+  var CHANNELS = ["organic_search", "ai_referral", "paid_campaign", "referral", "direct_or_unknown"];
+  var CRE_CONTENT = [
+    "/blog/45-million-builder-fix-and-flip-capital",
+    "/blog/atlanta-teardown-rebuild-construction-financing",
+    "/blog/100-ltc-construction-loans-builder-cash-needed",
+    "/blog/construction-loan-property-already-owned-mortgage-payoff",
+    "/blog/brookhaven-ga-100-ltc-ground-up-construction",
+    "/blog/commercial-mortgage-referrals-cpas-attorneys",
+    "/blog/mortgage-broker-dscr-commercial-referral-partner",
+    "/resources/how-lenders-size-commercial-loans",
+    "/resources/commercial-refinance-guide",
+    "/resources/bridge-vs-permanent-financing"
+  ];
+  function legalPolicyPath(raw) {
+    // Match legal documents, not financing destinations such as /terms-sheet.
+    return /^\/(?:es\/)?(?:privacy|terms)(?:\.html?)?\/?$/.test(raw || "");
+  }
+  function safePublicPath(raw) {
+    // Accept public marketing route shapes only. No encoded data, private
+    // endpoints, confirmation routes, query strings or fragments survive.
+    var path = typeof raw === "string" ? raw.split(/[?#]/)[0].replace(/\.html?$/, "").replace(/\/$/, "") : "";
+    if (path === "" || path === "/es") return raw && raw.charAt(0) === "/" ? (path || "/") : "";
+    if (path.length > 160 || !/^\/(?:es\/)?[a-z0-9-]+(?:\/[a-z0-9-]+)?$/.test(path)) return "";
+    if (/(?:family|parents|adult-child|disabil|thanks|request-received)/.test(path) || legalPolicyPath(path)) return "";
+    var plain = path.replace(/^\/es(?=\/)/, "");
+    return /^\/(?:blog|resources|commercial|residential|dscr|heloc|sba)(?:\/[a-z0-9-]+)?$/.test(plain) ||
+      /^\/(?:contact|book|management|cash-out-refinance|bank-statement-loans|interest-only-loans|mortgage-calculator|commercial-loan-calculator|dscr-analyzer|dscr-review|dscr-program-calculator|sba-loan-calculator|sba-guide|refinance-calculator|terms-sheet|heloc-instant|heloc-wizard|heloc-planning-tools|calculation-methodology|editorial-policy)$/.test(plain) ? path : "";
+  }
+  function privateContext() {
+    var body = document.body;
+    return (typeof navigator !== "undefined" && navigator.globalPrivacyControl === true) ||
+      (body && (body.getAttribute("data-fo-sensitive") === "1" || body.getAttribute("data-fo-kind") === "confirm")) ||
+      /(?:family|parents|adult-child|disabil|thanks|request-received)/.test(window.location.pathname) ||
+      /^\/(?:es\/)?(?:admin|account|api|private|login|portal|dashboard|secure|auth)(?:[\/-]|$)|^\/\./.test(window.location.pathname);
+  }
+  function removeStoredSources() {
+    try { sessionStorage.removeItem(ATTR_KEY); sessionStorage.removeItem("sh_utms"); } catch (e) {}
+  }
+  function cleanCampaign(input) {
+    var out = {};
+    if (!input || typeof input !== "object" || Array.isArray(input)) return out;
+    UTM_KEYS.forEach(function (key) {
+      if (typeof input[key] === "string") {
+        var value = input[key].replace(/[<>"'\x00-\x1f\x7f]/g, "").slice(0, 200);
+        if (value) out[key] = value;
+      }
+    });
+    return out;
+  }
   function readUtms() {
+    if (privateContext()) { removeStoredSources(); return {}; }
+    // Reading a legal policy does not start attribution or erase the valid
+    // source context from the inquiry path that brought a visitor here.
+    if (legalPolicyPath(window.location.pathname)) return {};
+    var found = {};
     try {
       var params = new URLSearchParams(window.location.search);
-      var found = {};
-      var any = false;
-      UTM_KEYS.forEach(function (k) {
-        var v = params.get(k);
-        if (v) { found[k] = v.slice(0, 200); any = true; }
-      });
-      if (any) sessionStorage.setItem("sh_utms", JSON.stringify(found));
-      var stored = sessionStorage.getItem("sh_utms");
-      return stored ? JSON.parse(stored) : {};
-    } catch (e) { return {}; }
+      UTM_KEYS.forEach(function (key) { if (params.get(key)) found[key] = params.get(key); });
+    } catch (e) {}
+    found = cleanCampaign(found);
+    // Storage failures must not discard the current campaign or stop a lead.
+    if (Object.keys(found).length) {
+      try { sessionStorage.setItem("sh_utms", JSON.stringify(found)); } catch (e) {}
+      return found;
+    }
+    try { return cleanCampaign(JSON.parse(sessionStorage.getItem("sh_utms") || "{}")); } catch (e) { return {}; }
   }
   var UTMS = readUtms();
+  function externalOrigin(raw) {
+    try {
+      var url = new URL(raw);
+      if (!/^https?:$/.test(url.protocol) || url.username || url.password) return "";
+      var host = url.hostname.toLowerCase();
+      // Do not retain local/intranet destinations or credentials. Referrer
+      // paths often contain searches or conversation IDs, so retain origin only.
+      if (!/^(?:[a-z0-9-]+\.)+[a-z]{2,}$/.test(host) || host.length > 190 ||
+          /(?:^|\.)(?:localhost|local|internal|test|invalid|example)$/.test(host) ||
+          /^(?:www\.)?stonehavencre\.com$/.test(host)) return "";
+      var own = window.location.hostname;
+      if (own && host === own.toLowerCase()) return "";
+      return url.protocol + "//" + host;
+    } catch (e) { return ""; }
+  }
+  function classifySource(origin, campaign) {
+    var medium = (campaign.utm_medium || "").toLowerCase();
+    if (/^(?:cpc|ppc|paid|paid_search|paid_social|display|cpm)$/.test(medium)) return "paid_campaign";
+    var host = origin.replace(/^https?:\/\//, "");
+    if (/^(?:(?:www\.)?(?:chatgpt\.com|perplexity\.ai|claude\.ai)|chat\.openai\.com|copilot\.microsoft\.com|gemini\.google\.com)$/.test(host)) return "ai_referral";
+    if (/^(?:(?:www\.)?google\.(?:com|co\.uk|com\.au|ca|de|fr|es|co\.in)|(?:www\.)?(?:bing\.com|duckduckgo\.com)|search\.(?:yahoo\.com|brave\.com))$/.test(host) || medium === "organic") return "organic_search";
+    return origin ? "referral" : "direct_or_unknown";
+  }
+  function creContentPath(path) {
+    return CRE_CONTENT.indexOf(path.replace(/^\/es(?=\/)/, "")) !== -1 ? path : "";
+  }
+  function readSourceContext() {
+    if (privateContext() || legalPolicyPath(window.location.pathname)) return null;
+    var path = safePublicPath(window.location.pathname), saved;
+    if (!path) return null;
+    try { saved = JSON.parse(sessionStorage.getItem(ATTR_KEY) || "null"); } catch (e) {}
+    var context;
+    if (saved && saved.version === 1 && CHANNELS.indexOf(saved.first_channel) !== -1 && safePublicPath(saved.first_landing_path)) {
+      context = { version: 1, first_landing_path: safePublicPath(saved.first_landing_path),
+        first_referrer_origin: externalOrigin(saved.first_referrer_origin), first_channel: saved.first_channel,
+        last_cre_content_path: creContentPath(safePublicPath(saved.last_cre_content_path)) };
+    } else {
+      var origin = externalOrigin(document.referrer || "");
+      context = { version: 1, first_landing_path: path, first_referrer_origin: origin,
+        first_channel: classifySource(origin, UTMS), last_cre_content_path: "" };
+    }
+    if (creContentPath(path)) context.last_cre_content_path = path;
+    try { sessionStorage.setItem(ATTR_KEY, JSON.stringify(context)); } catch (e) {}
+    return context;
+  }
+  var SOURCE_CONTEXT = readSourceContext();
+  function submissionAttribution() {
+    if (privateContext()) { removeStoredSources(); return null; }
+    if (legalPolicyPath(window.location.pathname)) return null;
+    return SOURCE_CONTEXT ? Object.assign({}, SOURCE_CONTEXT, { submission_path: safePublicPath(window.location.pathname) }) : null;
+  }
+  function submissionId() {
+    if (window.crypto && typeof window.crypto.randomUUID === "function") return "sh-" + window.crypto.randomUUID();
+    if (window.crypto && typeof window.crypto.getRandomValues === "function") {
+      var bytes = new Uint8Array(16); window.crypto.getRandomValues(bytes);
+      return "sh-" + Array.prototype.map.call(bytes, function (n) { return ("0" + n.toString(16)).slice(-2); }).join("");
+    }
+    // Opaque correlation only, never a security token or a persistent user ID.
+    return "sh-" + Date.now().toString(36) + "-" + Math.random().toString(36).slice(2) + Math.random().toString(36).slice(2);
+  }
 
   /* ---------- 2 · analytics events (safe no-ops until tags exist) ---------- */
   function track(eventName, params, opts) {
@@ -134,7 +250,7 @@
   // sees full context in the CRM without any CRM schema changes.
   // Honeypot: include <input name="company_website" class="hp-field"> — bots fill it, humans can't see it.
 
-  function buildAbout(form, extra) {
+  function buildAbout(form, extra, id, attribution) {
     var lines = [];
     // Keep the requested HELOC figures ahead of long notes and attribution.
     var heloc = window.SH_HELOC_FIELDS && window.SH_HELOC_FIELDS.applies(form);
@@ -143,25 +259,43 @@
       var el = form.querySelector('[name="' + key + '"]');
       if (el) lines.push(moneyLabels[key] + ": " + el.value);
     });
+    var priority = {};
+    if (form.getAttribute("data-sh-product") === "Commercial") {
+      var projectLabels = { total_project_cost: "Total project cost ($)", requested_amount: "Requested financing ($)",
+        project_value: "Estimated completed value ($)", project_type: "Project type", property_owned: "Property already owned",
+        timeline: "Target closing", state: "Property state" };
+      Object.keys(projectLabels).forEach(function (key) {
+        var el = form.querySelector('[name="' + key + '"]');
+        if (el && !el.disabled && el.value && !(heloc && moneyLabels[key])) {
+          lines.push(projectLabels[key] + ": " + el.value.trim().slice(0, 100)); priority[key] = 1;
+        }
+      });
+    }
+    // Place the concise source summary after project facts and ahead of free text so the CRM's
+    // 2,000-character fallback keeps it even when a prospect adds long notes.
+    if (id) lines.push("[submission] " + id);
+    if (attribution) lines.push("[source] " + attribution.first_channel + "; first=" + attribution.first_landing_path +
+      (attribution.first_referrer_origin ? "; ref=" + attribution.first_referrer_origin : "") +
+      "; submit=" + attribution.submission_path + (attribution.last_cre_content_path ? "; CRE=" + attribution.last_cre_content_path : ""));
     if (extra) lines.push(extra);
     var skip = { name: 1, email: 1, phone: 1, company_website: 1, "form-name": 1 };
     Array.prototype.forEach.call(form.elements, function (el) {
       // hidden inputs carry the step-engine answers (wizard/instant/persona
       // context) - include them; only the plumbing fields above are skipped
-      if (!el.name || skip[el.name] || el.type === "submit" || el.disabled || ((el.type === "checkbox" || el.type === "radio") && !el.checked) || (heloc && moneyLabels[el.name])) return;
+      if (!el.name || skip[el.name] || priority[el.name] || el.type === "submit" || el.disabled || ((el.type === "checkbox" || el.type === "radio") && !el.checked) || (heloc && moneyLabels[el.name])) return;
       var v = (el.value || "").trim();
       if (!v) return;
       var label = form.querySelector('label[for="' + el.id + '"]');
       var key = label ? label.textContent.replace(/\s*\(.*?\)\s*/g, "").trim() : el.name;
       lines.push(key + ": " + v.slice(0, 300));
     });
-    var utmStr = Object.keys(UTMS).map(function (k) { return k + "=" + UTMS[k]; }).join(" ");
+    var campaign = privateContext() || legalPolicyPath(window.location.pathname) ? {} : UTMS;
+    var utmStr = Object.keys(campaign).map(function (k) { return k + "=" + campaign[k]; }).join(" ");
     if (utmStr) lines.push("[attribution] " + utmStr);
-    // The query string is attacker-controllable via a crafted inbound link and
-    // ends up stored in the CRM, so bound it and drop anything that could form
-    // markup downstream. Defence in depth: the CRM must still encode on output.
-    var q = window.location.search.replace(/[<>"']/g, "").slice(0, 200);
-    lines.push("[url] " + window.location.pathname.slice(0, 120) + q);
+    // Arbitrary URL parameters can contain private data. Only the campaign
+    // allowlist above is retained; the fallback URL is a public path only.
+    var path = safePublicPath(window.location.pathname);
+    if (path && !privateContext()) lines.push("[url] " + path);
     return lines.join(" · ").slice(0, 2000);
   }
 
@@ -189,6 +323,7 @@
       equityGoal.addEventListener('change', syncEquity); syncEquity();
     }
     var inFlight = false;
+    var inquiryId = "";
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       if (inFlight) return;
@@ -223,14 +358,18 @@
         var v = (el.value || "").trim();
         if (v) extra[el.name] = v.slice(0, 300);
       });
-      if (Object.keys(UTMS).length) extra.utm = UTMS;
+      if (!privateContext() && Object.keys(UTMS).length) extra.utm = UTMS;
+      inquiryId = inquiryId || submissionId();
+      var attribution = submissionAttribution();
+      extra.submission_id = inquiryId;
+      if (attribution) extra.attribution = attribution;
 
       var payload = {
         name: nameEl ? nameEl.value.trim() : (emailEl ? emailEl.value.trim() : ""),
         email: emailEl ? emailEl.value.trim() : "",
         phone: (form.querySelector('[name="phone"]') || { value: "" }).value.trim(),
         product: form.getAttribute("data-sh-product") || "Not sure",
-        about: buildAbout(form, form.getAttribute("data-sh-about-prefix") || ""),
+        about: buildAbout(form, form.getAttribute("data-sh-about-prefix") || "", inquiryId, attribution),
         page: form.getAttribute("data-sh-form") || window.location.pathname,
         lang: form.getAttribute("data-sh-lang") || document.documentElement.lang || "en",
         token: "",
@@ -245,19 +384,27 @@
 
       function done() {
         analyticsOnly("generate_lead", { form_id: payload.page, product: payload.product, language: payload.lang });
-        // One event_id shared by the browser pixel and the server relay,
-        // so Meta deduplicates the two copies of the conversion.
-        var eventId = "sh-" + payload.page + "-" + Date.now() + "-" + Math.floor(Math.random() * 1e6);
+        // Created before delivery, preserved across fallback/manual retries,
+        // and shared only as the opaque conversion ID after accepted delivery.
+        var eventId = inquiryId;
         var chatGPTConversion;
         try { if (window.shChatGPTLead) chatGPTConversion = window.shChatGPTLead(eventId); } catch (e) {}
         track(evt, { page: payload.page, product: payload.product }, { eventID: eventId });
         if (form.hasAttribute("data-sh-capi")) {
           try {
+            // The optional legacy relay already supports contact matching and
+            // a CRM webhook. Keep new source context out of this ad integration;
+            // the saved Netlify submission and its CRM relay hold the full record.
+            var relayExtra = Object.assign({}, payload.extra);
+            delete relayExtra.attribution;
+            delete relayExtra.submission_id;
+            var relayPayload = Object.assign({}, payload, { extra: relayExtra,
+              about: buildAbout(form, form.getAttribute("data-sh-about-prefix") || "", "", null) });
             fetch("/.netlify/functions/lead-capi", {
               method: "POST",
               headers: { "Content-Type": "application/json" },
               body: JSON.stringify({ event_name: evt, event_id: eventId,
-                source_url: window.location.href.split("?")[0], payload: payload })
+                source_url: window.location.href.split(/[?#]/)[0], payload: relayPayload })
             }).catch(function () {});
           } catch (e) {}
         }

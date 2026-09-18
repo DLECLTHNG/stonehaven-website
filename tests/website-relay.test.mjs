@@ -51,3 +51,13 @@ test('Residential, HELOC and Family records are forwarded with their saved detai
  }
  for(const body of sent){assert.equal(body.product,'Residential');assert.equal(body.extra.requested_amount,'75000');assert.equal(body.extra.netlify_submission_id,'saved-123');}
 });
+
+test('private source attribution and project qualification retain the browser identity alongside the Netlify identity',async t=>{
+ setup(t);let saved;
+ global.fetch=async(_,options)=>{saved=JSON.parse(options.body);return new Response(JSON.stringify({status:'created',lead:{id:'cre-source-test'}}));};
+ const extra={submission_id:'sh-browser-inquiry',total_project_cost:'2400000',requested_amount:'1800000',project_value:'3600000',discovery_source:'ChatGPT or AI assistant',attribution:{version:1,first_landing_path:'/commercial/construction-loans',first_referrer_origin:'https://chatgpt.com',first_channel:'ai_referral',submission_path:'/contact',last_cre_content_path:'/resources/commercial-refinance-guide'}};
+ const response=await handler({body:JSON.stringify({payload:{id:'netlify-inquiry',form_name:'lead',data:{product:'Commercial',page:'cre-review',extra:JSON.stringify(extra)}}})});
+ assert.equal(response.statusCode,200);
+ assert.equal(saved.submission_id,'netlify-inquiry');
+ assert.deepEqual(saved.extra,{...extra,netlify_submission_id:'netlify-inquiry'});
+});
