@@ -6,8 +6,8 @@
     "address": "10 Roswell Street, Suite 102, Alpharetta, GA 30009",
     "company_nmls": "1752355",
     "phone": "+14709704979",
-    "builder_focus": "$2M-$10M total project cost, a preferred focus rather than an eligibility cap",
-    "case_boundary": "Brookhaven is a company-reported funded construction example. The Atlanta teardown guide is hypothetical. The Georgia/Florida/Texas development article discusses supplied terms with original location undisclosed and does not verify a closing."
+    "case_boundary": "Brookhaven is a company-reported funded construction example. The Atlanta teardown guide is hypothetical. The Georgia/Florida/Texas development article discusses supplied terms with original location undisclosed and does not verify a closing.",
+    "project_scope": "Construction, renovation, acquisition and refinance projects are reviewed individually across a range of sizes, subject to lender underwriting and availability."
   },
   "en": {
     "title": "Georgia Commercial Loan Broker | Stonehaven Lending",
@@ -16,7 +16,7 @@
     "eyebrow": "Alpharetta · Metro Atlanta · Georgia",
     "h1": "Georgia commercial financing.<br> <em>A clear plan for your next project.</em>",
     "intro": "Stonehaven Lending helps builders and commercial property owners compare financing through third-party lenders. Start with the property, the project budget and the plan to repay the loan.",
-    "answer": "Stonehaven is a mortgage brokerage based in Alpharetta, Georgia. We review construction, renovation, acquisition and refinance projects across Georgia. Our preferred builder focus is $2 million to $10 million in total project cost, not a loan-size limit. Commercial financing is arranged nationwide; availability varies by state, lender and project.",
+    "answer": "Stonehaven is a mortgage brokerage based in Alpharetta, Georgia. We review construction, renovation, acquisition and refinance projects across Georgia, with financing matched to the property, budget and repayment plan. Commercial financing is arranged nationwide; availability varies by state, lender and project.",
     "cta": "Request a commercial review by text",
     "cta_url": "/commercial#inquire",
     "facts": [
@@ -25,8 +25,8 @@
         "10 Roswell Street, Suite 102, Alpharetta, GA 30009"
       ],
       [
-        "Builder focus",
-        "$2M-$10M in total project cost"
+        "Project types",
+        "Construction, renovation, acquisition and refinance"
       ],
       [
         "Our role",
@@ -73,7 +73,7 @@
       {
         "title": "Keep project cost, loan amount and value separate",
         "paragraphs": [
-          "Provide the full budget, requested financing and supported value. These are different figures: a $2M-$10M total-cost focus does not mean the loan must fall in that range.",
+          "Provide the full budget, requested financing and supported value. Total project cost describes the complete budget; the requested loan and property value are separate figures that the lender reviews together.",
           "For an owned property, include payoff and remaining work. For a purchase, separate acquisition cash from later draws. If a proposal describes 100% financing, confirm eligible costs, your equity contribution, reserves and cash needed between draws."
         ],
         "link": {
@@ -126,7 +126,7 @@
       }
     ],
     "review_title": "Send your Georgia commercial scenario",
-    "review_text": "Share your project and mobile number for follow-up by text. Projects outside our preferred builder range can also be submitted for review; financing depends on lender underwriting and availability.",
+    "review_text": "Share your project and mobile number for follow-up by text. We review the property, budget and financing request individually; financing depends on lender underwriting and availability.",
     "disclosure": "An inquiry is not an approval, term sheet or commitment to lend. Stonehaven Lending is a mortgage brokerage. Commercial programs are arranged nationwide; availability varies by state. Company NMLS #1752355.",
     "standards": "About Stonehaven Lending",
     "standards_text": "Learn about our team and how we label educational content and company-reported transactions before starting your financing review.",
@@ -140,7 +140,7 @@
     "eyebrow": "Alpharetta · Área de Atlanta · Georgia",
     "h1": "Financiamiento comercial en Georgia.<br> <em>Un plan claro para su próximo proyecto.</em>",
     "intro": "Stonehaven Lending ayuda a desarrolladores y propietarios comerciales a comparar financiamiento con prestamistas externos. Empiece por el inmueble, el presupuesto y el plan para pagar el préstamo.",
-    "answer": "Stonehaven es una correduría hipotecaria con sede en Alpharetta, Georgia. Revisamos construcción, renovación, adquisición y refinanciamiento en todo el estado. Nuestro enfoque preferido para desarrolladores es de $2 millones a $10 millones en costo total, no un límite del préstamo. Gestionamos financiamiento comercial a nivel nacional; la disponibilidad varía por estado, prestamista y proyecto.",
+    "answer": "Stonehaven es una correduría hipotecaria con sede en Alpharetta, Georgia. Revisamos construcción, renovación, adquisición y refinanciamiento en todo el estado, según el inmueble, presupuesto y plan de pago. Gestionamos financiamiento comercial a nivel nacional; la disponibilidad varía por estado, prestamista y proyecto.",
     "cta": "Solicitar revisión comercial por texto",
     "cta_url": "/es/commercial#enquire",
     "facts": [
@@ -149,8 +149,8 @@
         "10 Roswell Street, Suite 102, Alpharetta, GA 30009"
       ],
       [
-        "Enfoque para desarrolladores",
-        "$2M-$10M de costo total del proyecto"
+        "Tipos de proyectos",
+        "Construcción, renovación, compra y refinanciamiento"
       ],
       [
         "Nuestra función",
@@ -197,7 +197,7 @@
       {
         "title": "Separe costo del proyecto, monto del préstamo y valor",
         "paragraphs": [
-          "Presente presupuesto total, financiamiento solicitado y valor fundamentado. Son cifras distintas: el enfoque de $2M-$10M de costo total no limita el préstamo a ese rango.",
+          "Presente presupuesto total, financiamiento solicitado y valor fundamentado. El costo total describe el presupuesto completo; el préstamo solicitado y el valor del inmueble son cifras distintas que el prestamista evalúa en conjunto.",
           "Si ya es propietario, indique deuda y trabajo restante. Para una compra, separe efectivo de adquisición de desembolsos posteriores. Si una propuesta menciona 100% de financiamiento, confirme costos elegibles, su aportación, reservas y efectivo entre desembolsos."
         ],
         "link": {
@@ -250,7 +250,7 @@
       }
     ],
     "review_title": "Comparta su proyecto comercial en Georgia",
-    "review_text": "Comparta su proyecto y celular para seguimiento por texto. También puede presentar proyectos fuera del rango preferido; el financiamiento depende de la evaluación y disponibilidad del prestamista.",
+    "review_text": "Comparta su proyecto y celular para seguimiento por texto. Revisamos el inmueble, presupuesto y monto solicitado de forma individual; el financiamiento depende de la evaluación y disponibilidad del prestamista.",
     "disclosure": "Una consulta no es una aprobación, carta de términos ni compromiso de préstamo. Stonehaven Lending es una correduría hipotecaria. Gestionamos programas comerciales a nivel nacional; la disponibilidad varía por estado. NMLS de la empresa #1752355.",
     "standards": "Acerca de Stonehaven Lending",
     "standards_text": "Conozca al equipo y cómo identificamos el contenido educativo y las transacciones reportadas por la empresa antes de iniciar su revisión.",

@@ -1,9 +1,9 @@
 {
-  "updated": "2026-09-18",
+  "updated": "2026-09-20",
   "purpose": "Evergreen bilingual CRE service pages, qualified builder, renovation and commercial bridge inquiries.",
   "confirmed_scope": [
     "Stonehaven is a mortgage brokerage, not a direct lender.",
-    "Builder focus is $2M-$10M total project cost, not loan size or completed value.",
+    "Review projects across a range of sizes; distinguish total project cost, requested loan amount and completed value. Financing remains subject to lender underwriting and program availability.",
     "Lender relationships may consider up to100% eligible LTC for qualifying deals; no guarantee or100% completed value financing.",
     "Commercial financing nationwide subject to state and program availability.",
     "Initial feedback target under1hour, not loan approval; follow up by text."
@@ -18,16 +18,16 @@
     "construction-loans": {
       "en": {
         "title": "Construction Loans for Builders | Up to 100% LTC | Stonehaven",
-        "description": "Ground-up and teardown construction financing for builders. Explore up to 100% eligible LTC, land equity and a $2M-$10M total project cost focus with Stonehaven.",
+        "description": "Ground-up and teardown construction financing for builders. Explore up to 100% eligible LTC, land equity, construction draws and project review with Stonehaven.",
         "name": "Construction loans for builders",
         "eyebrow": "Ground-up construction · Teardown and rebuild",
         "h1": "Construction financing.<br> <em>Built around your next project.</em>",
-        "intro": "Capital for builders planning ground-up construction, spec homes and teardown projects. Our current builder focus is $2 million to $10 million in total project cost.",
+        "intro": "Capital for builders planning ground-up construction, spec homes and teardown projects. We review your budget, land position and financing request to explore suitable lender options.",
         "answer": "Stonehaven arranges construction financing through third-party lenders. Qualifying deals may access up to 100% of eligible project costs. The actual structure depends on the budget, land equity, completed value, builder profile and repayment plan. It does not automatically cover every expense or mean zero cash is needed.",
         "facts": [
           [
-            "Project focus",
-            "$2M-$10M in total project cost"
+            "Project review",
+            "Budget, land equity and completed value"
           ],
           [
             "Potential leverage",
@@ -155,8 +155,8 @@
             "It may help, but the lender must accept the value and ownership basis. A mortgage payoff reduces the unencumbered equity, and separate cash may still be needed for excluded costs and construction cash flow."
           ],
           [
-            "Is $2M-$10M the loan amount or the finished value?",
-            "It is Stonehaven’s current builder focus by total project cost. It is not a published minimum or maximum loan amount, and it is not the completed value. Submit the three figures separately."
+            "How do project cost, loan amount and completed value differ?",
+            "Total project cost is the budget to acquire and complete the project. The loan amount is the financing requested, and completed value is the supported estimate of what the finished property will be worth. Submit all three separately so the lender can review cost, value and your required contribution."
           ],
           [
             "How does builder experience affect the review?",
@@ -206,16 +206,16 @@
       },
       "es": {
         "title": "Préstamos de construcción para desarrolladores | Stonehaven",
-        "description": "Financiamiento para obra nueva y demolición con reconstrucción. Hasta 100% del costo elegible en casos que califican; enfoque de $2M-$10M de costo total.",
+        "description": "Financiamiento de obra nueva y reconstrucción. Explore hasta 100% del costo elegible, patrimonio del terreno, desembolsos y revisión con Stonehaven.",
         "name": "Préstamos de construcción para desarrolladores",
         "eyebrow": "Obra nueva · Demolición y reconstrucción",
         "h1": "Financiamiento de construcción.<br> <em>Para su próximo proyecto.</em>",
-        "intro": "Capital para desarrolladores que planean obra nueva, viviendas para venta y demoliciones con reconstrucción. Nuestro enfoque actual es de $2 millones a $10 millones en costo total del proyecto.",
+        "intro": "Capital para desarrolladores que planean obra nueva, viviendas para venta y demoliciones con reconstrucción. Revisamos su presupuesto, situación del terreno y monto solicitado para explorar opciones adecuadas.",
         "answer": "Stonehaven gestiona financiamiento de construcción con prestamistas externos. Los proyectos que califican pueden acceder a hasta el 100% de los costos elegibles. La estructura depende del presupuesto, patrimonio del terreno, valor terminado, perfil del desarrollador y plan de pago. No cubre automáticamente todos los gastos ni significa que no se necesite efectivo.",
         "facts": [
           [
-            "Enfoque de proyectos",
-            "$2M-$10M de costo total del proyecto"
+            "Revisión del proyecto",
+            "Presupuesto, patrimonio del terreno y valor terminado"
           ],
           [
             "Financiamiento potencial",
@@ -343,8 +343,8 @@
             "Puede ayudar, pero el prestamista debe aceptar el valor y la base de propiedad. La deuda existente reduce el patrimonio libre y todavía puede requerirse efectivo para costos excluidos y flujo de construcción."
           ],
           [
-            "¿Los $2M-$10M son el préstamo o el valor final?",
-            "Son el enfoque actual por costo total del proyecto. No representan un mínimo ni máximo publicado de préstamo ni el valor terminado. Indique las tres cifras por separado."
+            "¿Cómo se distinguen costo del proyecto, préstamo y valor terminado?",
+            "El costo total es el presupuesto para adquirir y terminar el proyecto. El préstamo es el financiamiento solicitado y el valor terminado es la estimación fundamentada del valor del inmueble una vez concluido. Presente las tres cifras por separado para evaluar costos, valor y su aportación."
           ],
           [
             "¿Cómo influye la experiencia del desarrollador?",
@@ -395,17 +395,17 @@
     },
     "fix-and-flip": {
       "en": {
-        "title": "Fix and Flip Loans | Capital for $2M-$10M Projects | Stonehaven",
-        "description": "Explore fix-and-flip financing for acquisition and renovation. Compare eligible LTC, rehab draws, ARV and cash needed for $2M-$10M total-cost projects.",
+        "title": "Fix and Flip Loans | Purchase and Rehab Financing | Stonehaven",
+        "description": "Explore fix-and-flip financing for acquisition and renovation. Compare eligible LTC, rehab draws, after-repair value and the cash your project may require.",
         "name": "Fix and flip financing",
         "eyebrow": "Acquisition · Renovation · Resale",
         "h1": "Fix and flip capital.<br> <em>Room to execute the plan.</em>",
-        "intro": "Acquisition and renovation financing for investors improving property for resale. Our current builder and rehab focus is $2 million to $10 million in total project cost.",
+        "intro": "Acquisition and renovation financing for investors improving property for resale. We review the purchase, rehab budget and resale plan to explore suitable lender options.",
         "answer": "A fix-and-flip loan can finance the purchase and approved renovation of an investment property, with repayment planned from a sale. Stonehaven is a brokerage that helps compare lender structures, including up to 100% eligible LTC on qualifying deals. The renovation scope, after-repair value and cash available between draws all matter.",
         "facts": [
           [
-            "Project focus",
-            "$2M-$10M in total project cost"
+            "Project review",
+            "Purchase, renovation budget and resale plan"
           ],
           [
             "Financing review",
@@ -567,16 +567,16 @@
       },
       "es": {
         "title": "Préstamos fix and flip para inversionistas | Stonehaven",
-        "description": "Financiamiento de compra, remodelación y reventa. Compare LTC elegible, desembolsos y valor reparado para proyectos con costo total de $2M-$10M.",
+        "description": "Financiamiento de compra, remodelación y reventa. Compare LTC elegible, desembolsos, valor reparado y el efectivo que puede requerir su proyecto.",
         "name": "Financiamiento para compra, remodelación y reventa",
         "eyebrow": "Adquisición · Remodelación · Reventa",
         "h1": "Capital para fix and flip.<br> <em>Para ejecutar su proyecto.</em>",
-        "intro": "Financiamiento de adquisición y remodelación para inversionistas que mejoran propiedades para vender. Nuestro enfoque actual de construcción y rehabilitación es de $2 millones a $10 millones en costo total.",
+        "intro": "Financiamiento de adquisición y remodelación para inversionistas que mejoran propiedades para vender. Revisamos la compra, el presupuesto de obra y el plan de reventa para explorar opciones adecuadas.",
         "answer": "Un préstamo fix and flip puede financiar la compra y remodelación aprobada de un inmueble de inversión, con pago previsto mediante la venta. Stonehaven es una firma de corretaje que compara estructuras, incluido hasta 100% de LTC elegible en casos que califican. Importan el alcance, el valor después de reparar y el efectivo entre desembolsos.",
         "facts": [
           [
-            "Enfoque de proyectos",
-            "$2M-$10M de costo total"
+            "Revisión del proyecto",
+            "Compra, presupuesto de obra y plan de reventa"
           ],
           [
             "Revisión de financiamiento",
