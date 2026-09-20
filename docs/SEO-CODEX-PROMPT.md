@@ -164,13 +164,18 @@ list once more and close any gap, still without quoting Stonehaven terms.
 
 ## The measurement you are still blind without
 
-Your audit said it, and it is still true: no Search Console property exists,
-no Bing property, GA4 key events are unconfirmed, no backlink export, no
-Business Profile inspection, and no assistant citation benchmark has been run.
-Every query target in the repository is a hypothesis for that reason.
+Correction to your audit: a Search Console **Domain property already
+exists** and is DNS-verified; the apex carries two `google-site-verification`
+TXT records, and the owner supplied 25 "Discovered, currently not indexed"
+URLs from it on 15 September. What has never existed is *access* for anyone
+doing the work. Do not create a new property; a URL-prefix duplicate would
+split reporting. Still true: no Bing property, GA4 key events unconfirmed, no
+backlink export, no Business Profile inspection, no citation benchmark. Every
+query target in the repository is a hypothesis. `docs/SEARCH-CONSOLE-PLAYBOOK.md`
+covers the rest.
 
-Get the owner to open Search Console and Bing Webmaster Tools with DNS
-verification and grant you access, confirm `generate_lead` is the single
+Get the owner to add you as a Full user on the existing property, import it
+into Bing Webmaster Tools, confirm `generate_lead` is the single
 inquiry key event in GA4 so legacy events are not double counted, and then
 run your own C01 to C13 assistant prompt benchmark three times each in fresh
 sessions before anything in part B ships. Check the Search generative AI
@@ -189,7 +194,8 @@ generators not outputs; and a push to `main` is a production deploy.
 
 ## Questions for the owner, in one message
 
-1. Search Console, Bing Webmaster Tools and GA4: verify and grant access.
+1. Add a Full user to the existing Search Console property, audit its two
+   verifications, import it into Bing Webmaster Tools, and link GA4.
 2. Which agency and bank multifamily programs can Stonehaven actually place,
    and does that include Freddie Mac SBL and Fannie Mae Small Loan?
 3. Where do five to eight unit deals go today?
