@@ -250,7 +250,7 @@ At a Glance
 
 ### Commercial loan parameters
 
-Loan amount $1M – $50M+
+Loan amount Requested amount reviewed case by case
 
 Property types Multifamily · Industrial · Retail · Office · Mixed-use
 
@@ -340,7 +340,7 @@ Set as loan-to-value, by property and borrower. Owner-occupied? SBA financing (h
 
 What are typical commercial loan terms?
 
-$1M to $50M+, up to 30 years, fixed or floating. Request a term sheet for your property.
+Requested loan amounts are reviewed individually. Term, amortization, payment structure and lender limits depend on the property and business plan. Share your project for a lender comparison.
 
 What property types do you finance?
 
