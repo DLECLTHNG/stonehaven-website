@@ -459,7 +459,11 @@ state matrix is recorded as an unverified fact in the internal claims register.
    with a disability. It was not implemented, for reasons set out in section 4 of
    `docs/family-opportunity-handoff.md`. Treat it as a decision needing the owner
    and their legal adviser, not a backlog ticket.
-10. **Six stray macOS duplicate files** sit untracked at the repo root, including
+10. **SEO and AI-search visibility.** A full audit and a paste-ready Codex
+    brief live in `docs/SEO-CODEX-PROMPT.md`. Commercial, the main revenue
+    line, holds about six percent of the site's words and has no page for spec
+    homes, construction, agency multifamily or Georgia. Start there.
+11. **Six stray macOS duplicate files** sit untracked at the repo root, including
    copies of live pages carrying Pixel snippets. Git deploys exclude them so they
    are inert today, but they would ship under a manual drag-and-drop deploy.
    Recommend deleting them.
