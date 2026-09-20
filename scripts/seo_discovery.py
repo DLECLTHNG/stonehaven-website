@@ -8,7 +8,8 @@ ORIGIN = 'https://stonehavencre.com'
 PILLARS = ['/', '/commercial', '/commercial/construction-loans', '/commercial/fix-and-flip',
            '/commercial/bridge-loans', '/commercial/multifamily', '/commercial/mixed-use',
            '/commercial/commercial-property', '/commercial/multifamily-acquisition',
-           '/commercial/5-8-unit-financing', '/commercial/georgia', '/dscr', '/heloc', '/residential', '/sba',
+           '/commercial/5-8-unit-financing', '/commercial/georgia',
+           '/commercial/architect-financing-partners', '/dscr', '/heloc', '/residential', '/sba',
            '/bank-statement-loans', '/interest-only-loans', '/editorial-policy']
 
 class MainText(HTMLParser):

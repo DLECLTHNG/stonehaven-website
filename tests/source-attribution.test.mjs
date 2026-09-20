@@ -21,7 +21,14 @@ function page(options = {}) {
   const document = { referrer: options.referrer || '', body: { getAttribute: key => options.bodyAttrs?.[key] || null }, head: { appendChild() {} }, documentElement: { lang: 'en' },
     createElement: () => ({ style: {}, setAttribute() {} }), addEventListener: (key, value) => { docHandlers[key] = value; },
     querySelectorAll: selector => selector === 'form[data-sh-form]' ? [form] : [], getElementById: () => null };
-  const location = new URL(options.url || 'https://stonehavencre.com/commercial');
+  const locationURL = new URL(options.url || 'https://stonehavencre.com/commercial');
+  const location = {
+    get href() { return locationURL.href; },
+    set href(value) { locationURL.href = new URL(value, locationURL).href; },
+    get pathname() { return locationURL.pathname; },
+    get hostname() { return locationURL.hostname; },
+    get search() { return locationURL.search; }
+  };
   const navigator = { globalPrivacyControl: !!options.gpc };
   const window = { location, SH_CONFIG: { intakeEndpoint: options.intake || '' }, addEventListener() {}, crypto: { randomUUID: () => 'a71b8654-a00a-4346-b0a0-7706af89d130' },
     gtag: (...args) => events.push(args), fbq: (...args) => meta.push(args), shChatGPTLead: id => ads.push(id) };
@@ -300,5 +307,40 @@ test('removed route aliases and private or encoded paths never become attributio
     p.submit(); await flush();
     assert.equal(p.extra().attribution, undefined, path);
     assert.equal(p.data().about.includes('[url]'), false, path);
+  }
+});
+
+test('architect inquiries retain adviser identity, optional project context and Commercial routing without sending details to analytics', async () => {
+  for (const slug of ['architect-financing-partners', 'construction-financing-for-architects', 'development-financing-for-architects']) {
+    for (const prefix of ['', 'es/']) {
+      const route = '/' + prefix + 'commercial/' + slug;
+      const html = readFileSync(prefix + 'commercial/' + slug + '.html', 'utf8');
+      const formTag = html.match(/<form\b[^>]*data-sh-form=[^>]*>/)[0];
+      const formAttrs = Object.fromEntries([...formTag.matchAll(/(data-sh-[\w-]+)="([^"]*)"/g)].map(match => [match[1], match[2]]));
+      for (const activeProject of [false, true]) {
+        const fields = { firm: 'Synthetic Architecture Studio', partner_role: 'Architect', about: 'General partnership inquiry' };
+        if (activeProject) Object.assign(fields, { total_project_cost: '3500000', requested_amount: '2400000', project_value: '4900000', project_type: 'Mixed-use development', property_owned: 'Under contract', project_stage: 'Design / entitlement', timeline: '60-90 days' });
+        for (const key of Object.keys(fields)) assert.ok(html.includes('name="' + key + '"'), `missing ${key} on ${route}`);
+        const p = page({ url: 'https://stonehavencre.com' + route, referrer: 'https://www.google.com/', formAttrs, fields });
+        p.submit(); await flush();
+        const saved = p.data();
+        assert.equal(saved['form-name'], 'lead');
+        assert.equal(saved.product, 'Commercial');
+        assert.equal(saved.page, 'commercial-' + slug);
+        assert.equal(saved.lang, prefix ? 'es' : 'en');
+        assert.ok(saved.about.includes('Architect financing partner inquiry: ' + slug));
+        assert.ok(saved.about.includes('Architect'));
+        assert.equal(p.extra().firm, fields.firm);
+        assert.equal(p.extra().partner_role, 'Architect');
+        assert.equal(p.extra().attribution.submission_path, route);
+        if (activeProject) {
+          assert.equal(p.extra().project_stage, 'Design / entitlement');
+          assert.equal(p.extra().requested_amount, '2400000');
+          assert.ok(saved.about.includes('Estimated completed value ($): 4900000'));
+        }
+        assert.equal(p.events.filter(event => event[1] === 'generate_lead').length, 1);
+        assert.doesNotMatch(JSON.stringify([p.events, p.meta]), /Synthetic Architecture Studio|private@example.com|2400000|4900000/);
+      }
+    }
   }
 });
