@@ -69,7 +69,7 @@ def head(a):
 <link rel="icon" type="image/png" href="../assets/stonehaven-handpainted-logo.png"/><link rel="apple-touch-icon" href="../assets/stonehaven-handpainted-logo.png"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="../styles.css?v=polish-20260918"/><link rel="stylesheet" href="../funnel.css?v=cleanup2-20260918"/>
+<link rel="stylesheet" href="../styles.css?v=seo-20260920"/><link rel="stylesheet" href="../funnel.css?v=seo-20260920"/>
 <noscript><style>.reveal{opacity:1 !important;transform:none !important;}</style></noscript>
 <script src="../js/site-config.js?v=6" defer></script>
 <script src="../js/heloc-fields.js?v=1" defer></script>

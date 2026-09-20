@@ -1,0 +1,102 @@
+{
+  "updated": "2026-09-20",
+  "purpose": "Own the 5-8 unit financing question with a bilingual service page and an existing commercial inquiry destination.",
+  "confirmed_scope": [
+    "Owner confirmed broad real estate and CRE placement capability on September 20, 2026. This is not a promise of approval or an unlimited loan offer.",
+    "Business-purpose financing through third-party lenders, nationwide subject to state and program availability.",
+    "Residential lending remains limited to the six licensed states. No new residential licensing claim."
+  ],
+  "editorial_controls": [
+    "No advertised rates, universal lender thresholds, invented transactions, named reviewer or FAQPage schema.",
+    "5-8 unit calculator rules are described as the existing site model and must be confirmed for the actual lender.",
+    "One original hypothetical NOI calculation, with explicit expenses and debt-service assumptions."
+  ],
+  "sources_checked": [
+    {
+      "url": "https://selling-guide.fanniemae.com/sel/b2-3-01/general-property-eligibility",
+      "checked": "2026-09-20",
+      "scope": "Fannie Mae: General Property Eligibility"
+    },
+    {
+      "url": "https://multifamily.fanniemae.com/financing-options/small-loans/small-mortgage-loan-program-term-sheet",
+      "checked": "2026-09-20",
+      "scope": "Fannie Mae: Small Mortgage Loan Program Term Sheet"
+    },
+    {
+      "url": "https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf",
+      "checked": "2026-09-20",
+      "scope": "OCC: Commercial Real Estate Lending handbook"
+    },
+    {
+      "url": "/dscr-program-calculator",
+      "checked": "2026-09-20",
+      "scope": "Stonehaven: DSCR program calculator and its stated assumptions"
+    }
+  ],
+  "pages": {
+    "5-8-unit-financing": {
+      "en": {
+        "title": "5-8 Unit Multifamily Financing | Stonehaven Lending",
+        "description": "Buying or refinancing a 5-8 unit building? Compare specialist DSCR and commercial loan review, rent rolls, NOI and property condition with Stonehaven Lending.",
+        "name": "5-8 unit multifamily financing",
+        "eyebrow": "Small apartment buildings · Purchase and refinance",
+        "h1": "5-8 unit financing.<br><em>One building. The right review.</em>",
+        "intro": "Move beyond the four-unit boundary with a clear review of the building, its income and your plan. Stonehaven arranges financing through lenders nationwide; availability varies by state.",
+        "body_html": "<section class=\"cre-section cre-answer\"><div class=\"wrap\"><h2>Can a 5-8 unit property use a DSCR loan?</h2><p>Potentially, through a specialist program that accepts the building. A five-, six-, seven- or eight-unit property may also fit commercial multifamily financing. Unit count alone does not select the lender or prove eligibility. Stonehaven is a mortgage brokerage: we review the property and sponsor, then compare available lender paths for a purchase, refinance or improvement plan.</p><p>Start with the legal unit count, current rent roll, requested financing and property condition. A six-unit building with stable leases needs a different review from the same building with three vacant units and unfinished work.</p></div></section>\n<section class=\"cre-section cre-tint\"><div class=\"wrap\"><h2>What changes after four units?</h2><p>Fannie Mae's single-family property eligibility guidance covers one to four dwelling units. Its multifamily Small Mortgage Loan term sheet describes properties with five or more units, subject to its other requirements. Those are program boundaries, not a promise that every five-unit building qualifies for agency financing.</p><p>A local assessor's description, a seller's listing and the lender's unit classification can differ. Verify permitted units, leases, zoning and any commercial space. A building with apartments above a shop also needs a <a href=\"/commercial/mixed-use\">mixed-use financing review</a>; do not count the storefront as another apartment.</p></div></section>\n<section class=\"cre-section\"><div class=\"wrap\"><h2>Compare the underwriting paths</h2><ul><li><strong>Specialist DSCR:</strong> review the lender's permitted unit count, qualifying-rent formula, vacancy treatment and payment calculation. A program built for one to four units should not be assumed to accept more.</li><li><strong>Commercial multifamily:</strong> review operating statements and net operating income (NOI), alongside value, debt service, reserves, property condition and sponsor experience.</li><li><strong>Bridge or renovation financing:</strong> consider the work, draw schedule and lease-up period before assuming a permanent loan will fit. The proposed refinance or sale must support the exit.</li></ul><p>Ask how guaranties, prepayment provisions, maturity and required liquidity differ between proposals. A property-income review does not automatically remove sponsor documentation or personal obligations.</p></div></section>\n<section class=\"cre-section cre-tint\"><div class=\"wrap\"><h2>Organize the building before requesting terms</h2><ul><li><strong>Income:</strong> a dated rent roll, unit-by-unit leases, occupancy, concessions and rent receipts where requested.</li><li><strong>Expenses:</strong> recent operating statements, property taxes, insurance, utilities, maintenance and management costs.</li><li><strong>Transaction:</strong> contract or ownership basis, current payoff, requested loan, cash available and intended closing date.</li><li><strong>Property and sponsor:</strong> legal unit count, renovation scope, condition, ownership entity and relevant ownership or management experience.</li></ul><p>Share basic figures through the inquiry form. We can arrange a secure next step for leases, statements and private records. Do not upload tenant details or account information to a public form.</p></div></section>\n<section class=\"cre-section\" id=\"calculator\"><div class=\"wrap\"><h2>Use the calculator without confusing its assumptions with approval</h2><p>The <a href=\"/dscr-program-calculator\">DSCR program calculator</a> includes a 5-8 unit model. Its current assumptions count vacant units at 90% of market rent and flag vacancy above 35% on a refinance. These are the site's modeled rules, not universal lender standards or a confirmed offer for your building. The lender must confirm the applicable program and rent evidence.</p><p><strong>Hypothetical commercial comparison:</strong> six occupied units at $1,500 monthly rent produce $108,000 annual gross rent. Subtract an assumed $5,400 vacancy allowance and $40,000 operating expenses to get $62,600 NOI. Against $50,000 annual debt service, that is 1.252x DSCR. The expense and debt-service figures are assumptions, not quoted terms.</p><p>A gross-rent calculation and an NOI calculation use different inputs. Keep them separate, and read the <a href=\"/calculation-methodology\">calculation methodology</a> before comparing results.</p></div></section>\n<section class=\"cre-section cre-tint\"><div class=\"wrap\"><h2>Match the financing to the next stage</h2><p>For a leased building you want to hold, compare maturity and repayment structure with the expected ownership period. For renovations or lease-up, allow for carrying costs and a refinance that may support less debt than planned. See <a href=\"/commercial/bridge-loans\">commercial bridge financing</a> for that transition.</p><p>Planning a purchase? Our <a href=\"/commercial/multifamily-acquisition\">multifamily acquisition guide</a> connects the purchase budget to lender review. For broader apartment-property questions, start with <a href=\"/commercial/multifamily\">multifamily financing</a>.</p></div></section>",
+        "sources": [
+          [
+            "https://selling-guide.fanniemae.com/sel/b2-3-01/general-property-eligibility",
+            "Fannie Mae: General Property Eligibility"
+          ],
+          [
+            "https://multifamily.fanniemae.com/financing-options/small-loans/small-mortgage-loan-program-term-sheet",
+            "Fannie Mae: Small Mortgage Loan Program Term Sheet"
+          ],
+          [
+            "https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf",
+            "OCC: Commercial Real Estate Lending handbook"
+          ],
+          [
+            "/dscr-program-calculator",
+            "Stonehaven: DSCR program calculator and its stated assumptions"
+          ]
+        ],
+        "source_note": "Primary sources explain program boundaries and underwriting concepts. They do not establish that a particular lender will approve this property. Calculator references describe the site model, not an agency standard.",
+        "cta_title": "Review your 5-8 unit building",
+        "cta_intro": "Send the property state, unit count, purchase price or payoff, current rents, requested financing and timing. We follow up by text to identify the next review step.",
+        "cta_label": "Request a multifamily review"
+      },
+      "es": {
+        "title": "Financiamiento de 5-8 unidades | Stonehaven Lending",
+        "description": "¿Compra o refinancia un edificio de 5-8 unidades? Compare revisión DSCR y comercial, rentas, NOI y condición de la propiedad con Stonehaven Lending.",
+        "name": "Financiamiento de 5-8 unidades",
+        "eyebrow": "Edificios pequeños de apartamentos · Compra y refinanciamiento",
+        "h1": "Financiamiento de 5-8 unidades.<br><em>Una revisión para su edificio.</em>",
+        "intro": "Supere el límite de cuatro unidades con una revisión del inmueble, sus ingresos y su plan. Stonehaven tramita financiamiento mediante prestamistas a nivel nacional; la disponibilidad varía por estado.",
+        "body_html": "<section class=\"cre-section cre-answer\"><div class=\"wrap\"><h2>¿Puede una propiedad de 5-8 unidades usar un préstamo DSCR?</h2><p>Es posible mediante un programa especializado que acepte el edificio. Una propiedad de cinco, seis, siete u ocho unidades también puede encajar en financiamiento multifamiliar comercial. El número de unidades no determina por sí solo el prestamista ni demuestra elegibilidad. Stonehaven es una correduría hipotecaria: revisamos la propiedad y al inversionista, y comparamos las opciones disponibles para compra, refinanciamiento o mejoras.</p><p>Comience con las unidades legales, la relación actual de rentas, el monto solicitado y la condición del inmueble. Un edificio de seis unidades con contratos estables requiere una revisión distinta del mismo edificio con tres unidades vacantes y obras pendientes.</p></div></section>\n<section class=\"cre-section cre-tint\"><div class=\"wrap\"><h2>¿Qué cambia después de cuatro unidades?</h2><p>La guía de elegibilidad de propiedades unifamiliares de Fannie Mae comprende viviendas de una a cuatro unidades. Su ficha del programa multifamiliar Small Mortgage Loan describe propiedades de cinco o más unidades, sujetas a otros requisitos. Estos son límites de programas, no una promesa de que cualquier edificio de cinco unidades califique para financiamiento de agencia.</p><p>La descripción del registro fiscal, el anuncio del vendedor y la clasificación del prestamista pueden diferir. Verifique las unidades permitidas, los contratos, la zonificación y cualquier espacio comercial. Un edificio con apartamentos sobre una tienda también necesita una <a href=\"/es/commercial/mixed-use\">revisión de uso mixto</a>; no cuente el local como otro apartamento.</p></div></section>\n<section class=\"cre-section\"><div class=\"wrap\"><h2>Compare las formas de evaluación</h2><ul><li><strong>DSCR especializado:</strong> revise las unidades permitidas, la fórmula de renta aceptada, el tratamiento de vacantes y el cálculo del pago. No suponga que un programa de una a cuatro unidades acepta más.</li><li><strong>Multifamiliar comercial:</strong> revise los estados operativos y el ingreso operativo neto (NOI), junto con el valor, el servicio de deuda, las reservas, la condición y la experiencia del inversionista.</li><li><strong>Puente o renovación:</strong> considere las obras, los desembolsos y el período de arrendamiento antes de suponer que encaja un préstamo permanente. La venta o el refinanciamiento previsto debe respaldar la salida.</li></ul><p>Pregunte cómo varían las garantías, las condiciones de pago anticipado, el vencimiento y la liquidez requerida. Una evaluación basada en los ingresos del inmueble no elimina automáticamente los documentos del inversionista ni sus obligaciones personales.</p></div></section>\n<section class=\"cre-section cre-tint\"><div class=\"wrap\"><h2>Organice el expediente antes de solicitar condiciones</h2><ul><li><strong>Ingresos:</strong> relación de rentas fechada, contratos por unidad, ocupación, concesiones y comprobantes de cobro cuando se soliciten.</li><li><strong>Gastos:</strong> estados operativos recientes, impuestos, seguro, servicios, mantenimiento y administración.</li><li><strong>Operación:</strong> contrato o base de propiedad, saldo pendiente, préstamo solicitado, efectivo disponible y fecha deseada de cierre.</li><li><strong>Inmueble e inversionista:</strong> unidades legales, alcance de obras, condición, entidad propietaria y experiencia de propiedad o administración.</li></ul><p>Comparta cifras básicas mediante el formulario. Podemos coordinar un canal seguro para contratos, estados y registros privados. No envíe datos de inquilinos ni información de cuentas por un formulario público.</p></div></section>\n<section class=\"cre-section\" id=\"calculator\"><div class=\"wrap\"><h2>Use la calculadora sin confundir supuestos con aprobación</h2><p>La <a href=\"/es/dscr-program-calculator\">calculadora de programas DSCR</a> incluye un modelo de 5-8 unidades. Sus supuestos actuales cuentan las unidades vacantes al 90% de la renta de mercado y señalan una vacancia superior al 35% en un refinanciamiento. Son reglas del modelo del sitio, no normas universales ni una oferta confirmada para su edificio. El prestamista debe confirmar el programa y la evidencia de renta aplicables.</p><p><strong>Comparación comercial hipotética:</strong> seis unidades ocupadas a $1,500 mensuales generan $108,000 de renta bruta anual. Al restar $5,400 de vacancia supuesta y $40,000 de gastos operativos, el NOI resulta en $62,600. Frente a $50,000 de servicio de deuda anual, el DSCR es 1.252x. Los gastos y el servicio de deuda son supuestos, no condiciones cotizadas.</p><p>Un cálculo con renta bruta y otro con NOI utilizan entradas diferentes. Manténgalos separados y consulte la <a href=\"/calculation-methodology\">metodología de cálculo (en inglés)</a> antes de comparar resultados.</p></div></section>\n<section class=\"cre-section cre-tint\"><div class=\"wrap\"><h2>Adapte el financiamiento a la siguiente etapa</h2><p>Para un edificio arrendado que desea conservar, compare vencimiento y amortización con su plazo de propiedad. Para obras o arrendamiento, incluya gastos durante la transición y un refinanciamiento que podría admitir menos deuda de lo previsto. Consulte el <a href=\"/es/commercial/bridge-loans\">financiamiento puente comercial</a> para esa etapa.</p><p>¿Planea una compra? Nuestra <a href=\"/es/commercial/multifamily-acquisition\">guía de adquisición multifamiliar</a> conecta el presupuesto con la revisión del prestamista. Para otras preguntas sobre edificios de apartamentos, consulte <a href=\"/es/commercial/multifamily\">financiamiento multifamiliar</a>.</p></div></section>",
+        "sources": [
+          [
+            "https://selling-guide.fanniemae.com/sel/b2-3-01/general-property-eligibility",
+            "Fannie Mae: General Property Eligibility (en inglés)"
+          ],
+          [
+            "https://multifamily.fanniemae.com/financing-options/small-loans/small-mortgage-loan-program-term-sheet",
+            "Fannie Mae: Small Mortgage Loan Program Term Sheet (en inglés)"
+          ],
+          [
+            "https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf",
+            "OCC: Commercial Real Estate Lending handbook (en inglés)"
+          ],
+          [
+            "/es/dscr-program-calculator",
+            "Stonehaven: calculadora DSCR y sus supuestos publicados"
+          ]
+        ],
+        "source_note": "Las fuentes primarias explican límites de programas y conceptos de evaluación. No demuestran que un prestamista aprobará esta propiedad. Las referencias a la calculadora describen el modelo del sitio, no una norma de agencia.",
+        "cta_title": "Revise su edificio de 5-8 unidades",
+        "cta_intro": "Comparta estado, unidades, precio de compra o saldo, rentas actuales, financiamiento solicitado y plazo. Damos seguimiento por texto para identificar la siguiente revisión.",
+        "cta_label": "Solicitar revisión multifamiliar"
+      }
+    }
+  }
+}

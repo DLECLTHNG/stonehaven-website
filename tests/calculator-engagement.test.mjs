@@ -17,8 +17,10 @@ function fixture(page,globalName,module) {
   nodes[tag[1]]=node(tag[2].match(/<option[^>]*value="([^"]*)"/)[1]);
  }
  const document={getElementById:id=>nodes[id]||(nodes[id]=node()),querySelector:()=>({setAttribute(){}}),addEventListener:(type,fn)=>{if(type==='DOMContentLoaded')ready.push(fn)}};
- const window={[globalName]:require(module),shTrack:(name,params)=>events.push({name,params})};
+ // Inline handlers are parsed before the deferred math bundle executes.
+ const window={shTrack:(name,params)=>events.push({name,params})};
  vm.runInNewContext(source,{document,window});
+ window[globalName]=require(module);
  ready.forEach(fn=>fn({type:'DOMContentLoaded'}));
  return {nodes,events};
 }

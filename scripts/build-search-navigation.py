@@ -4,6 +4,10 @@ from pathlib import Path
 from html import escape, unescape
 from urllib.parse import urlsplit
 import re,json
+from search_metadata import load_title_overrides, normalize_page_metadata, normalize_sitemap
+from seo_brand_assets import normalize_brand_assets
+from seo_discovery import build_discovery_files
+from seo_contextual_links import transform as contextual_links
 R=Path(__file__).resolve().parent.parent
 ORIGIN='https://stonehavencre.com'
 skip={'docs','scripts','tests','downloads','node_modules'}
@@ -13,42 +17,20 @@ def route(p):
 def clean(s):
  return re.sub(r'<!-- SEARCH-NAV:[A-Z]+:START -->.*?<!-- SEARCH-NAV:[A-Z]+:END -->\n?','',s,flags=re.S).replace('<link rel="stylesheet" href="/search-navigation.css?v=1"/>','')
 pages={route(p):(p,clean(p.read_text())) for p in files}
+title_overrides=load_title_overrides(R)
 def title(s):
  m=re.search(r'<title>(.*?)</title>',s,re.S);return unescape(re.split(r'\s+[|]\s+|\s+·\s+Stonehaven',m[1])[0]) if m else ''
 def marker(kind,s):return f'<!-- SEARCH-NAV:{kind}:START -->{s}<!-- SEARCH-NAV:{kind}:END -->\n'
 def links(prefix,items):return ''.join(f'<li><a href="{prefix}{url}">{escape(label)}</a></li>' for url,label in items)
 def group(heading,prefix,items):return '<div><h3>'+heading+'</h3><ul>'+links(prefix,items)+'</ul></div>'
-def normalize_entities(text,path):
- def walk(data):
-  if isinstance(data,list):
-   for node in data:walk(node)
-  elif isinstance(data,dict):
-   kinds=data.get('@type',[]);kinds=[kinds] if isinstance(kinds,str) else kinds
-   if any(k in kinds for k in ['Organization','FinancialService']) and data.get('name')=='Stonehaven Lending':
-    data['@id']=ORIGIN+'/#org'
-   if 'Person' in kinds and data.get('name') in ['Chris De Leeuw','Christiaan De Leeuw','Dawn M. Muñoz']:
-    chris=data['name']!='Dawn M. Muñoz'
-    data['@id']=ORIGIN+'/management#'+('chris-de-leeuw' if chris else 'dawn-munoz')
-    data['url']=data['@id']
-    if chris:data['name']='Chris De Leeuw'
-   if any(k in kinds for k in ['Article','BlogPosting']) and data.get('headline'):
-    url=data.get('url')
-    if not url and ('dateModified' in data or 'mainEntityOfPage' in data):url=ORIGIN+path
-    if isinstance(url,str) and url.startswith(ORIGIN+'/'):
-     data.setdefault('@id',url+'#article')
-     data.setdefault('mainEntityOfPage',{'@type':'WebPage','@id':url})
-   for value in list(data.values()):walk(value)
- def replace(match):
-  data=json.loads(match[1]);walk(data)
-  return '<script type="application/ld+json">'+json.dumps(data,ensure_ascii=False)+'</script>'
- return re.sub(r'<script type="application/ld\+json">(.*?)</script>',replace,text,flags=re.S)
 def cre_links(prefix,es):
  return [('/commercial/construction-loans','Financiamiento para construcción' if es else 'Construction financing'),('/commercial/fix-and-flip','Capital para renovación y reventa' if es else 'Fix-and-flip financing'),('/commercial/bridge-loans','Préstamos puente comerciales' if es else 'Commercial bridge loans')]
 counts={'breadcrumbs':0,'topic_hubs':0,'program_links':0}
 for path,(file,text) in pages.items():
- text=normalize_entities(text,path)
+ text=normalize_page_metadata(text,path,title_overrides)
  text=text.replace('<b>Christiaan De Leeuw</b>','<a href="/management#chris-de-leeuw"><b>Chris De Leeuw</b></a>')
  if re.search(r'<meta[^>]+name="robots"[^>]+content="[^"]*noindex',text) or '<main>' not in text:
+  text=normalize_brand_assets(text)
   if text!=file.read_text():file.write_text(text)
   continue
  es=path.startswith('/es/');prefix='/es' if es else '';local=path[len(prefix):];addition=''
@@ -97,6 +79,11 @@ for path,(file,text) in pages.items():
   intro='Compare construcción, renovación para reventa y financiamiento puente. Presente costo total, préstamo solicitado y plan de salida para una revisión por mensaje de texto.' if es else 'Compare construction, fix-and-flip and bridge options. Share total project cost, requested financing and your exit plan for a review by text.'
   addition='<section class="wrap search-topics"><h2>'+heading+'</h2><p>'+intro+'</p><ul class="search-program-links">'+links(prefix,items)+'</ul></section>'
   text=text.replace('</main>',marker('CRE',addition)+'</main>')
+ text=contextual_links(text,path,pages)
  if 'SEARCH-NAV:' in text:text=text.replace('</head>','<link rel="stylesheet" href="/search-navigation.css?v=1"/></head>')
+ text=normalize_brand_assets(text)
  file.write_text(text)
+sitemap=R/'sitemap.xml'
+sitemap.write_text(normalize_sitemap(sitemap.read_text(),{path:file.read_text() for path,(file,_) in pages.items()}))
+build_discovery_files(R)
 print(json.dumps(counts))

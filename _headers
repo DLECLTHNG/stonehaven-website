@@ -43,3 +43,25 @@
 /.netlify/functions/*
   Cache-Control: no-store, max-age=0
   X-Robots-Tag: noindex, nofollow
+
+# Immutable delivery derivatives. Keep filenames versioned when artwork changes.
+/assets/stonehaven-apple-180-v1.png
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/stonehaven-icon-48-v1.png
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/stonehaven-logo-120-v1.webp
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/stonehaven-logo-240-v1.webp
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/stonehaven-logo-360-v1.webp
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/stonehaven-logo-512-v1.webp
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/stonehaven-social-v1.jpg
+  Cache-Control: public, max-age=31536000, immutable
