@@ -127,11 +127,11 @@
           ],
           [
             "During construction",
-            "Confirm inspection requirements, draw documentation, reimbursement timing, retainage and treatment of change orders. Keep a working-cash plan between draws."
+            "Confirm inspection requirements, draw documentation, reimbursement timing, retainage and treatment of change orders. Keep a working-cash plan between draws. Ask which milestones release funds and whether deposits require your cash before reimbursement."
           ],
           [
             "At completion",
-            "Build time for listing, sale or lease-up into the exit. Check maturity, extension conditions and the payoff calculation before relying on a refinance."
+            "Build time for listing, sale or lease-up into the exit. Check maturity, extension conditions and the payoff calculation before relying on a refinance. Match the proposed maturity to construction plus marketing time; get extension conditions, notice deadlines and any costs in writing."
           ]
         ],
         "docs_title": "What to send for an initial construction review",
@@ -159,6 +159,14 @@
             "It is Stonehaven’s current builder focus by total project cost. It is not a published minimum or maximum loan amount, and it is not the completed value. Submit the three figures separately."
           ],
           [
+            "How does builder experience affect the review?",
+            "An experienced builder can show comparable completions. A first-time sponsor should explain the contractor team, oversight and liquidity. Ask which experience requirements apply; this page does not promise a first-time-builder program."
+          ],
+          [
+            "Is interest charged on funds advanced or the full commitment?",
+            "Confirm the calculation basis in the proposal. If interest-only payments are proposed, request a sample draw-by-draw payment schedule, including any minimum-interest or unused-funds charges. Interest-only payments do not reduce principal."
+          ],
+          [
             "How quickly will I get feedback?",
             "We aim to provide initial deal feedback in under one hour after the inquiry reaches our team. That is an initial response, not a credit decision, term sheet or closing commitment. We follow up by text."
           ]
@@ -180,16 +188,21 @@
             "Compare financing for purchase, rehab and resale."
           ]
         ],
-        "source_note": "The OCC’s CRE handbook explains the role of construction budgets, borrower equity, draw controls and repayment planning. It is banking guidance, not a Stonehaven product sheet or a promise of eligibility.",
+        "source_note": "The OCC’s CRE handbook explains the role of construction budgets, borrower equity, draw controls and repayment planning. It is banking guidance, not a Stonehaven product sheet or a promise of eligibility. The CFPB overview provides consumer construction-loan background, not eligibility rules for a business-purpose project.",
         "sources": [
           [
             "https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf",
             "OCC: Commercial Real Estate Lending handbook"
+          ],
+          [
+            "https://www.consumerfinance.gov/ask-cfpb/what-is-a-construction-loan-en-108/",
+            "CFPB: construction-loan overview (consumer context)"
           ]
         ],
         "form_title": "Tell us about your construction project",
         "form_prefix": "Construction financing inquiry",
-        "default_type": "Ground-up construction"
+        "default_type": "Ground-up construction",
+        "updated": "2026-09-20"
       },
       "es": {
         "title": "Préstamos de construcción para desarrolladores | Stonehaven",
@@ -302,11 +315,11 @@
           ],
           [
             "Durante la construcción",
-            "Confirme inspecciones, documentación, tiempos de reembolso, retenciones y tratamiento de cambios de obra. Planifique efectivo entre desembolsos."
+            "Confirme inspecciones, documentación, tiempos de reembolso, retenciones y tratamiento de cambios de obra. Planifique efectivo entre desembolsos. Pregunte qué etapas permiten desembolsos y si los depósitos requieren efectivo propio antes del reembolso."
           ],
           [
             "Al terminar",
-            "Incluya tiempo para comercialización, venta o arrendamiento. Revise vencimiento, condiciones de prórroga y liquidación antes de depender de un refinanciamiento."
+            "Incluya tiempo para comercialización, venta o arrendamiento. Revise vencimiento, condiciones de prórroga y liquidación antes de depender de un refinanciamiento. Compare el vencimiento propuesto con el plazo de obra y comercialización; obtenga por escrito las condiciones, los avisos y los costos de cualquier prórroga."
           ]
         ],
         "docs_title": "Qué preparar para una revisión inicial",
@@ -334,6 +347,14 @@
             "Son el enfoque actual por costo total del proyecto. No representan un mínimo ni máximo publicado de préstamo ni el valor terminado. Indique las tres cifras por separado."
           ],
           [
+            "¿Cómo influye la experiencia del desarrollador?",
+            "Un desarrollador con experiencia puede mostrar proyectos comparables terminados. Quien inicia su primer proyecto debe explicar el equipo contratista, la supervisión y la liquidez. Pregunte qué experiencia se exige; esta página no promete un programa para principiantes."
+          ],
+          [
+            "¿Se cobran intereses sobre los fondos desembolsados o el compromiso total?",
+            "Confirme la base del cálculo en la propuesta. Si contempla pagos solo de intereses, pida un calendario de pagos por desembolso que incluya posibles cargos por intereses mínimos o fondos no utilizados. Los pagos solo de intereses no reducen el capital."
+          ],
+          [
             "¿Cuándo recibiré una respuesta?",
             "Buscamos responder inicialmente en menos de una hora desde que la consulta llega al equipo. Es una primera respuesta, no una decisión de crédito, carta de términos ni compromiso de cierre. Damos seguimiento por mensaje de texto."
           ]
@@ -355,16 +376,21 @@
             "Compare financiamiento de compra, remodelación y reventa."
           ]
         ],
-        "source_note": "El manual de CRE de la OCC explica presupuestos de construcción, patrimonio del prestatario, controles de desembolso y planificación de pago. Es orientación bancaria, no una ficha de producto de Stonehaven ni una promesa de elegibilidad.",
+        "source_note": "El manual de CRE de la OCC explica presupuestos de construcción, patrimonio del prestatario, controles de desembolso y planificación de pago. Es orientación bancaria, no una ficha de producto de Stonehaven ni una promesa de elegibilidad. La descripción de la CFPB aporta contexto sobre préstamos de construcción al consumidor, no reglas de elegibilidad para proyectos comerciales.",
         "sources": [
           [
             "https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf",
             "OCC: manual de préstamos inmobiliarios comerciales (en inglés)"
+          ],
+          [
+            "https://www.consumerfinance.gov/ask-cfpb/what-is-a-construction-loan-en-108/",
+            "CFPB: descripción de préstamos de construcción (contexto del consumidor, en inglés)"
           ]
         ],
         "form_title": "Cuéntenos sobre su proyecto de construcción",
         "form_prefix": "Construction financing inquiry",
-        "default_type": "Ground-up construction"
+        "default_type": "Ground-up construction",
+        "updated": "2026-09-20"
       }
     },
     "fix-and-flip": {

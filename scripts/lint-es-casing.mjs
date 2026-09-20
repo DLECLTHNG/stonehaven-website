@@ -26,6 +26,8 @@ const ALLOW = new Set([
   // acronyms & programs
   "dscr","sba","fha","va","heloc","nmls","llc","mlo","piti","pitia","ltv","cltv","noi","hoa","irrrl","coe","cdc",
   "cre","utm","ga","al","tn","fl","nc","et","fannie","mae","freddie","mac","hud","apr","tila","reg","z",
+  // Current Fannie Mae Small Mortgage Loans and Freddie Mac Conventional Small.
+  "small","loans","conventional",
   // formal document / product names kept capitalised on purpose
   "consumer","access","equal","housing","opportunity","igualdad","oportunidades","vivienda",
 ]);

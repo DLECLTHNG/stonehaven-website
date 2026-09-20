@@ -1,0 +1,128 @@
+# Stonehaven Lending
+
+Last updated: 2026-09-20.
+
+This file is a navigation aid, not a ranking or indexing signal. Full pillar text: [llms-full.txt](https://stonehavencre.com/llms-full.txt).
+
+> Stonehaven Lending is a bilingual (English/Spanish) U.S. mortgage brokerage.
+> It arranges home loans in Georgia, Alabama, Tennessee, Florida, North
+> Carolina and South Carolina, and commercial real estate, SBA 7(a)/504 and
+> DSCR rental-property financing nationwide. Stonehaven is not a direct lender;
+> financing is subject to lender underwriting and program availability, which
+> varies by state. Preliminary reviews and calculators are educational and are
+> not approvals, commitments, rate quotes or guarantees.
+
+Key facts:
+- Type: mortgage brokerage (residential + commercial); founder-run
+- Home loans: purchase, refinance, FHA, VA and HELOC in GA, AL, TN, FL, NC & SC
+- Commercial, DSCR and SBA financing: nationwide, availability varies by state
+- Residential DSCR convention modeled: eligible monthly rent / monthly PITIA (1-4 units); commercial DSCR commonly uses NOI / annual debt service
+- Calculators are deterministic, unit-tested code - methodology published at /calculation-methodology
+- DSCR financing is business-purpose, investment-property only (never owner-occupied homes)
+- Contact: (470) 970-4979 - office@stonehavencre.com
+- Commercial scenario inquiries: the commercial financing page offers preliminary feedback in under 1 hour. This is an initial response, not a lender approval, term sheet or closing commitment. Form follow-up is by text.
+- Equal Housing Opportunity
+
+- NMLS company ID: 1752355 (nmlsconsumeraccess.org)
+- Office: 10 Roswell Street, Suite 102, Alpharetta, GA 30009
+- Phone: (470) 970-4979
+- Residential mortgage licenses: GA #19721 (MLO #169068), AL #22874, TN #165060, FL #MBR3925, NC #B-198926, plus South Carolina (which issues no separate license number; verified under the company NMLS ID) - home loans available in these six states; commercial programs nationwide
+
+## Core pages
+- [Stonehaven Lending](https://stonehavencre.com/): overview - who Stonehaven finances and how to start
+- [Residential Home Loans](https://stonehavencre.com/residential): purchase, refinance, FHA, VA in GA, AL, TN, FL, NC & SC
+- [DSCR Loans for Rental Property](https://stonehavencre.com/dscr): pillar guide - definition, lender DSCR vs investor cash flow, scenarios, requirements, risks, FAQs
+- [Commercial Real Estate Financing](https://stonehavencre.com/commercial): acquisition, refinance, construction and bridge for income-producing property, nationwide
+- [SBA Financing](https://stonehavencre.com/sba): SBA 7(a) and 504 for owner-occupied real estate and business acquisition
+- [HELOC / Home Equity](https://stonehavencre.com/heloc): borrow against equity without changing the current first-mortgage rate; includes a HELOC vs home-equity-loan vs cash-out comparison
+- [Cash-Out Refinance](https://stonehavencre.com/cash-out-refinance): replace the mortgage and take cash - compared honestly against second-lien options; GA, AL, TN, FL, NC & SC
+- [Management](https://stonehavencre.com/management): founders Dawn M. Munoz and Chris De Leeuw
+- [Financing guides and closings blog](https://stonehavencre.com/blog): educational financing guides, referral-partner resources, and anonymized closed-transaction write-ups
+- [Calculation Methodology](https://stonehavencre.com/calculation-methodology): the exact formulas behind every figure on this site
+- [Contact](https://stonehavencre.com/contact)
+- [Privacy Policy](https://stonehavencre.com/privacy)
+
+## Calculators (deterministic, ungated)
+- [Mortgage Calculator](https://stonehavencre.com/mortgage-calculator): full PITI payment + affordability
+- [Refinance Calculator](https://stonehavencre.com/refinance-calculator): refinance break-even
+- [DSCR Loan Calculator](https://stonehavencre.com/dscr-analyzer): PITIA, DSCR, rent-needed and sizing at a target ratio
+- [DSCR Program Calculator](https://stonehavencre.com/dscr-program-calculator): program-rule engine - qualifying rent for 1-4 unit, 5-8 unit, short-term rental and condotel DSCR (115% receipt cap, 80% condotel haircut, 90% vacancy rule)
+- [Commercial Loan Calculator](https://stonehavencre.com/commercial-loan-calculator): DSCR vs LTV sizing
+- [SBA Loan Calculator](https://stonehavencre.com/sba-loan-calculator): 7(a)/504 payment and down-payment
+
+## Residential detail
+- [Buy a home](https://stonehavencre.com/residential/buy): conventional, FHA, VA compared
+- [Refinance](https://stonehavencre.com/residential/refinance): when a refinance makes sense - break-even framing
+- [FHA loans](https://stonehavencre.com/residential/fha): 3.5% down for qualifying credit, MIP trade stated plainly
+- [VA loans](https://stonehavencre.com/residential/va): zero down for eligible veterans, funding fee explained
+- [Georgia home loans](https://stonehavencre.com/residential/georgia): Alpharetta HQ, GA license #19721, statewide
+- [Alabama home loans](https://stonehavencre.com/residential/alabama): license #22874 - Birmingham, Huntsville, Mobile
+- [Tennessee home loans](https://stonehavencre.com/residential/tennessee): license #165060 - Nashville, Memphis, Knoxville
+- [Florida home loans](https://stonehavencre.com/residential/florida): license #MBR3925, bilingual - Miami, Orlando, Tampa
+- [North Carolina home loans](https://stonehavencre.com/residential/north-carolina): license #B-198926 - Charlotte, Raleigh-Durham
+- [South Carolina home loans](https://stonehavencre.com/residential/south-carolina): Charleston, Columbia, Greenville
+
+## Commercial programs
+- [Construction financing](https://stonehavencre.com/commercial/construction-loans): Business-purpose ground-up and teardown financing; builder focus of $2 million to $10 million in total project cost, with cost, loan amount and completed value defined separately.
+- [Fix-and-flip financing](https://stonehavencre.com/commercial/fix-and-flip): Acquisition and renovation capital, rehab holdbacks, cash timing and resale or refinance planning.
+- [Commercial bridge loans](https://stonehavencre.com/commercial/bridge-loans): Transitional income-producing property, lease-up, existing debt and permanent-financing exit review.
+- [Multifamily](https://stonehavencre.com/commercial/multifamily)
+- [Mixed-use](https://stonehavencre.com/commercial/mixed-use)
+- [Commercial property](https://stonehavencre.com/commercial/commercial-property)
+- Spanish: [Construcción](https://stonehavencre.com/es/commercial/construction-loans), [renovación y reventa](https://stonehavencre.com/es/commercial/fix-and-flip), [financiamiento puente](https://stonehavencre.com/es/commercial/bridge-loans).
+
+These pages explain financing choices and illustrate project math. Any hypothetical percentages are assumptions, not offered loan terms. Up to 100% eligible loan-to-cost may be considered on qualifying construction scenarios; this does not promise no cash requirement or financing of 100% of completed property value.
+
+## Resource guides
+- [Home loan resources](https://stonehavencre.com/resources/residential)
+- [FHA vs conventional](https://stonehavencre.com/resources/fha-vs-conventional): the mortgage-insurance math that decides
+- [How much home](https://stonehavencre.com/resources/how-much-home): DTI ratios and the honest affordability math
+- [Refinance break-even](https://stonehavencre.com/resources/refinance-break-even)
+- [First-time buyer checklist](https://stonehavencre.com/resources/first-time-buyer-checklist)
+- [DSCR vs conventional](https://stonehavencre.com/resources/dscr-vs-conventional): which loan fits a rental
+- [SBA resources](https://stonehavencre.com/resources/sba): [7(a) vs 504](https://stonehavencre.com/resources/sba-7a-vs-504), [down payment](https://stonehavencre.com/resources/sba-down-payment), [timeline & documents](https://stonehavencre.com/resources/sba-timeline-documents)
+- [Commercial resources](https://stonehavencre.com/resources/commercial): [how lenders size loans](https://stonehavencre.com/resources/how-lenders-size-commercial-loans), [when to refinance](https://stonehavencre.com/resources/commercial-refinance-guide), [bridge vs permanent](https://stonehavencre.com/resources/bridge-vs-permanent-financing)
+
+## En español
+- [Inicio](https://stonehavencre.com/es/), [Residencial](https://stonehavencre.com/es/residential), [DSCR](https://stonehavencre.com/es/dscr), [Comercial](https://stonehavencre.com/es/commercial), [SBA](https://stonehavencre.com/es/sba), [HELOC](https://stonehavencre.com/es/heloc), [Contacto](https://stonehavencre.com/es/contact), [Blog / Cierres](https://stonehavencre.com/es/blog)
+
+## Referral partner guides
+
+Educational introductions for professionals. No referral compensation is offered or promised by these guides.
+
+- [Mortgage Referral Partners: A Guide for Real Estate Agents](https://stonehavencre.com/blog/mortgage-referral-partners-real-estate-agents)
+- [Referencias hipotecarias: guía para agentes inmobiliarios](https://stonehavencre.com/es/blog/mortgage-referral-partners-real-estate-agents)
+- [DSCR Referral Partners: Property Managers and Investor Agents](https://stonehavencre.com/blog/dscr-referral-partners-property-managers)
+- [Referencias DSCR para administradores de propiedades y agentes](https://stonehavencre.com/es/blog/dscr-referral-partners-property-managers)
+- [Commercial Mortgage Referrals for CPAs and Attorneys](https://stonehavencre.com/blog/commercial-mortgage-referrals-cpas-attorneys)
+- [Referencias de hipotecas comerciales para contadores y abogados](https://stonehavencre.com/es/blog/commercial-mortgage-referrals-cpas-attorneys)
+- [DSCR and Commercial Loan Referrals for Mortgage Brokers](https://stonehavencre.com/blog/mortgage-broker-dscr-commercial-referral-partner)
+- [Referencias DSCR y comerciales para profesionales hipotecarios](https://stonehavencre.com/es/blog/mortgage-broker-dscr-commercial-referral-partner)
+
+## Bank statement mortgage options
+
+- [Bank statement loans](https://stonehavencre.com/bank-statement-loans): Self-employed mortgage review using personal or business account history. Residential inquiries in GA, AL, TN, FL, NC and SC.
+- [Préstamos con estados de cuenta](https://stonehavencre.com/es/bank-statement-loans): Información y consulta inicial en español.
+
+## Interest-only mortgage options
+
+- [Interest-only loans](https://stonehavencre.com/interest-only-loans): Initial interest payments, later principal repayment, rate structures and inquiry options in GA, AL, TN, FL, NC and SC.
+- [Hipotecas de solo intereses](https://stonehavencre.com/es/interest-only-loans): Información y consulta inicial en español.
+
+## Builder and teardown financing guides
+
+- [Capital for builders and fix-and-flip projects](https://stonehavencre.com/blog/45-million-builder-fix-and-flip-capital): Stonehaven's $45 million capital deployment focus through lending partners, announced September 18, 2026, targets projects with total costs of $2 million to $10 million. Allocation and individual financing remain subject to availability and underwriting; this is not a direct-lending commitment.
+- [Brookhaven ground-up construction case study](https://stonehavencre.com/blog/brookhaven-ga-100-ltc-ground-up-construction): Company-reported construction financing example with land equity, a funded build budget and a projected completed value. Published deal terms describe that transaction, not a current offer to every builder.
+- [Atlanta Teardown and Rebuild Loans: From Purchase to New Construction](https://stonehavencre.com/blog/atlanta-teardown-rebuild-construction-financing): Business-purpose builder education, not a guaranteed leverage offer.
+- [100% LTC Construction Loans: How Much Cash Does a Builder Really Need?](https://stonehavencre.com/blog/100-ltc-construction-loans-builder-cash-needed): Business-purpose builder education, not a guaranteed leverage offer.
+- [Construction Financing When You Already Own the Property: Equity and Mortgage Payoff](https://stonehavencre.com/blog/construction-loan-property-already-owned-mortgage-payoff): Business-purpose builder education, not a guaranteed leverage offer.
+
+## Editorial standards
+
+- [Editorial policy](https://stonehavencre.com/editorial-policy): sourcing, educational examples, transaction facts and corrections.
+
+## Multifamily and local commercial decisions
+
+- [Multifamily acquisition financing](https://stonehavencre.com/commercial/multifamily-acquisition): stabilized purchases, value-add plans, current Fannie Mae Small Mortgage Loans and Freddie Mac Conventional Small program context. Published agency loan-size ranges are distinct from Stonehaven’s preferred total project costs.
+- [Five to eight unit financing](https://stonehavencre.com/commercial/5-8-unit-financing): small multifamily underwriting, DSCR versus NOI assumptions and legal unit-count review.
+- [Georgia and metro Atlanta commercial financing](https://stonehavencre.com/commercial/georgia): the Alpharetta-based brokerage’s local construction, acquisition and refinancing paths, with nationwide commercial placement subject to availability.

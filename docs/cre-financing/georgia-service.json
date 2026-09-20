@@ -1,0 +1,260 @@
+{
+  "updated": "2026-09-20",
+  "route": "/commercial/georgia",
+  "status": "Owner confirmed broad real estate and commercial placement scope on September 20, 2026. This describes brokerage review, not guaranteed availability, amount or approval.",
+  "facts": {
+    "address": "10 Roswell Street, Suite 102, Alpharetta, GA 30009",
+    "company_nmls": "1752355",
+    "phone": "+14709704979",
+    "builder_focus": "$2M-$10M total project cost, a preferred focus rather than an eligibility cap",
+    "case_boundary": "Brookhaven is a company-reported funded construction example. The Atlanta teardown guide is hypothetical. The Georgia/Florida/Texas development article discusses supplied terms with original location undisclosed and does not verify a closing."
+  },
+  "en": {
+    "title": "Georgia Commercial Loan Broker | Stonehaven Lending",
+    "description": "Georgia commercial real estate financing from Stonehaven's Alpharetta team. Review construction, renovation, multifamily and bridge projects in metro Atlanta and statewide.",
+    "name": "Georgia commercial real estate financing",
+    "eyebrow": "Alpharetta · Metro Atlanta · Georgia",
+    "h1": "Georgia commercial financing.<br> <em>A clear plan for your next project.</em>",
+    "intro": "Stonehaven Lending helps builders and commercial property owners compare financing through third-party lenders. Start with the property, the project budget and the plan to repay the loan.",
+    "answer": "Stonehaven is a mortgage brokerage based in Alpharetta, Georgia. We review construction, renovation, acquisition and refinance projects across Georgia. Our preferred builder focus is $2 million to $10 million in total project cost, not a loan-size limit. Commercial financing is arranged nationwide; availability varies by state, lender and project.",
+    "cta": "Request a commercial review by text",
+    "cta_url": "/commercial#inquire",
+    "facts": [
+      [
+        "Georgia office",
+        "10 Roswell Street, Suite 102, Alpharetta, GA 30009"
+      ],
+      [
+        "Builder focus",
+        "$2M-$10M in total project cost"
+      ],
+      [
+        "Our role",
+        "A mortgage brokerage comparing third-party financing"
+      ]
+    ],
+    "sections": [
+      {
+        "title": "Choose the financing conversation that fits the property",
+        "intro": "A teardown, an occupied apartment building and a property between loans need different information. Explain what happens next, not just the amount you want to borrow.",
+        "cards": [
+          {
+            "title": "Ground-up construction and teardown",
+            "text": "Separate purchase or existing payoff from demolition, construction and soft costs. Review land equity, the draw schedule and completed-value assumptions together. For spec homes, include a supported sale plan.",
+            "href": "/commercial/construction-loans",
+            "label": "Explore construction financing"
+          },
+          {
+            "title": "Acquisition and substantial renovation",
+            "text": "Show current condition, planned work and the budget to reach resale or stabilization. A renovation allocation may not pay every deposit at closing. Compare available cash with reimbursement timing.",
+            "href": "/commercial/fix-and-flip",
+            "label": "Compare purchase and rehab financing"
+          },
+          {
+            "title": "Multifamily acquisition and refinance",
+            "text": "Start with rent roll, expenses, occupancy and existing debt. Stable income presents a different financing question from renovation or lease-up. Keep current performance separate from projected results.",
+            "href": "/commercial/multifamily",
+            "label": "Review multifamily financing"
+          }
+        ]
+      },
+      {
+        "title": "An Alpharetta base, with project-specific review",
+        "paragraphs": [
+          "Our Georgia office is at 10 Roswell Street, Suite 102, Alpharetta, GA 30009. Include the actual project location, municipality, property use and permit status. Local review starts with evidence for your property.",
+          "For a sale exit, explain how comparable properties relate to the finished product. For a rental exit, provide rents, improvements and operating expenses. We organize the financing discussion; valuation and final underwriting remain with the lender."
+        ],
+        "link": {
+          "href": "/commercial/bridge-loans",
+          "label": "Review commercial bridge financing",
+          "text": "If the property needs time before longer-term financing, compare the bridge payoff with the income and value the next loan would need."
+        }
+      },
+      {
+        "title": "Keep project cost, loan amount and value separate",
+        "paragraphs": [
+          "Provide the full budget, requested financing and supported value. These are different figures: a $2M-$10M total-cost focus does not mean the loan must fall in that range.",
+          "For an owned property, include payoff and remaining work. For a purchase, separate acquisition cash from later draws. If a proposal describes 100% financing, confirm eligible costs, your equity contribution, reserves and cash needed between draws."
+        ],
+        "link": {
+          "href": "/resources/how-lenders-size-commercial-loans",
+          "label": "Work through commercial loan sizing",
+          "text": "Our guide explains how cash flow and value can constrain proceeds, with explicitly hypothetical calculations."
+        }
+      },
+      {
+        "title": "Local project examples and financing guides",
+        "cards": [
+          {
+            "title": "Company-reported Brookhaven closing",
+            "text": "The reported Brookhaven closing financed the stated build budget with the builder's equity in the land. That is different from financing every project cost and does not guarantee another builder's terms.",
+            "href": "/blog/brookhaven-ga-100-ltc-ground-up-construction",
+            "label": "Read the reported Brookhaven example"
+          },
+          {
+            "title": "Educational Atlanta teardown guide",
+            "text": "The Atlanta guide explains purchase, existing payoff and construction planning through hypothetical examples. Use it to prepare a teardown review, not as evidence of completed transactions.",
+            "href": "/blog/atlanta-teardown-rebuild-construction-financing",
+            "label": "Plan an Atlanta teardown or rebuild"
+          },
+          {
+            "title": "Supplied development structure",
+            "text": "Compare acquisition and construction with an owned-property refinance. The supplied structure has an undisclosed original location and no verified closing; Georgia is a market discussed, not a confirmed transaction location.",
+            "href": "/blog/residential-development-financing-georgia-florida-texas-case-study",
+            "label": "Compare the supplied development structure"
+          }
+        ]
+      },
+      {
+        "title": "Prepare a useful first inquiry",
+        "paragraphs": [
+          "Estimates are welcome when labeled. Share the basics first; request a secure channel before sending private financial statements, account details or identity documents."
+        ],
+        "items": [
+          "Property location, type and whether you already own it.",
+          "Purchase price or current payoff, plus total project cost.",
+          "Requested loan amount, available equity and estimated completed value.",
+          "Construction or renovation scope, permit status and timeline.",
+          "Operating income and occupancy for an income-producing property.",
+          "Relevant experience, desired closing date and intended sale or refinance."
+        ],
+        "link": {
+          "href": "/resources/commercial",
+          "label": "Browse the commercial financing resources",
+          "text": "Use the guides to prepare your numbers and compare alternatives before a lender issues final terms."
+        }
+      }
+    ],
+    "review_title": "Send your Georgia commercial scenario",
+    "review_text": "Share your project and mobile number for follow-up by text. Projects outside our preferred builder range can also be submitted for review; financing depends on lender underwriting and availability.",
+    "disclosure": "An inquiry is not an approval, term sheet or commitment to lend. Stonehaven Lending is a mortgage brokerage. Commercial programs are arranged nationwide; availability varies by state. Company NMLS #1752355.",
+    "standards": "About Stonehaven Lending",
+    "standards_text": "Learn about our team and how we label educational content and company-reported transactions before starting your financing review.",
+    "team_label": "Meet the team",
+    "editorial_label": "Editorial standards"
+  },
+  "es": {
+    "title": "Bróker de préstamos comerciales en Georgia | Stonehaven Lending",
+    "description": "Financiamiento inmobiliario comercial desde Alpharetta. Revise proyectos de construcción, renovación, multifamiliares y préstamos puente en Atlanta y Georgia.",
+    "name": "Financiamiento inmobiliario comercial en Georgia",
+    "eyebrow": "Alpharetta · Área de Atlanta · Georgia",
+    "h1": "Financiamiento comercial en Georgia.<br> <em>Un plan claro para su próximo proyecto.</em>",
+    "intro": "Stonehaven Lending ayuda a desarrolladores y propietarios comerciales a comparar financiamiento con prestamistas externos. Empiece por el inmueble, el presupuesto y el plan para pagar el préstamo.",
+    "answer": "Stonehaven es una correduría hipotecaria con sede en Alpharetta, Georgia. Revisamos construcción, renovación, adquisición y refinanciamiento en todo el estado. Nuestro enfoque preferido para desarrolladores es de $2 millones a $10 millones en costo total, no un límite del préstamo. Gestionamos financiamiento comercial a nivel nacional; la disponibilidad varía por estado, prestamista y proyecto.",
+    "cta": "Solicitar revisión comercial por texto",
+    "cta_url": "/es/commercial#enquire",
+    "facts": [
+      [
+        "Oficina en Georgia",
+        "10 Roswell Street, Suite 102, Alpharetta, GA 30009"
+      ],
+      [
+        "Enfoque para desarrolladores",
+        "$2M-$10M de costo total del proyecto"
+      ],
+      [
+        "Nuestra función",
+        "Correduría hipotecaria que compara financiamiento externo"
+      ]
+    ],
+    "sections": [
+      {
+        "title": "Elija la revisión que corresponde al inmueble",
+        "intro": "Una demolición, un edificio de apartamentos ocupado y un inmueble entre préstamos necesitan información distinta. Explique el siguiente paso, además del monto que desea pedir.",
+        "cards": [
+          {
+            "title": "Obra nueva y reconstrucción",
+            "text": "Separe compra o saldo existente de demolición, obra y gastos indirectos. Revise juntos patrimonio del terreno, desembolsos y valor terminado. Para viviendas destinadas a venta, incluya un plan fundamentado.",
+            "href": "/es/commercial/construction-loans",
+            "label": "Explore financiamiento de construcción"
+          },
+          {
+            "title": "Adquisición y renovación importante",
+            "text": "Explique condición actual, trabajo previsto y presupuesto para venta o estabilización. La asignación para obra puede no pagar todos los depósitos al cierre. Compare efectivo disponible con los tiempos de reembolso.",
+            "href": "/es/commercial/fix-and-flip",
+            "label": "Compare financiamiento de compra y renovación"
+          },
+          {
+            "title": "Compra y refinanciamiento multifamiliar",
+            "text": "Empiece por rentas, gastos, ocupación y deuda. Los ingresos estables plantean preguntas distintas de una renovación o arrendamiento pendiente. Separe el desempeño actual de las proyecciones.",
+            "href": "/es/commercial/multifamily",
+            "label": "Revise financiamiento multifamiliar"
+          }
+        ]
+      },
+      {
+        "title": "Una sede en Alpharetta y revisión de cada proyecto",
+        "paragraphs": [
+          "Nuestra oficina está en 10 Roswell Street, Suite 102, Alpharetta, GA 30009. Indique ubicación, municipio, uso del inmueble y permisos. La revisión local empieza por la evidencia de su propiedad.",
+          "Si planea vender, explique la relación entre los comparables y el producto terminado. Si planea alquilar, presente rentas, mejoras y gastos. Organizamos la conversación financiera; la valoración y aprobación final corresponden al prestamista."
+        ],
+        "link": {
+          "href": "/es/commercial/bridge-loans",
+          "label": "Revise el financiamiento puente comercial",
+          "text": "Si el inmueble necesita tiempo antes de una solución de mayor plazo, compare el saldo del puente con los ingresos y el valor que requeriría el préstamo siguiente."
+        }
+      },
+      {
+        "title": "Separe costo del proyecto, monto del préstamo y valor",
+        "paragraphs": [
+          "Presente presupuesto total, financiamiento solicitado y valor fundamentado. Son cifras distintas: el enfoque de $2M-$10M de costo total no limita el préstamo a ese rango.",
+          "Si ya es propietario, indique deuda y trabajo restante. Para una compra, separe efectivo de adquisición de desembolsos posteriores. Si una propuesta menciona 100% de financiamiento, confirme costos elegibles, su aportación, reservas y efectivo entre desembolsos."
+        ],
+        "link": {
+          "href": "/resources/how-lenders-size-commercial-loans",
+          "label": "Revise cómo se calcula un préstamo comercial (en inglés)",
+          "text": "La guía explica cómo los ingresos y el valor pueden limitar el monto mediante cálculos expresamente hipotéticos."
+        }
+      },
+      {
+        "title": "Ejemplos locales y guías de financiamiento",
+        "cards": [
+          {
+            "title": "Cierre reportado en Brookhaven",
+            "text": "El cierre reportado de Brookhaven financió el presupuesto de obra declarado, con patrimonio del desarrollador en el terreno. Es distinto de financiar todos los costos y no garantiza condiciones para otro proyecto.",
+            "href": "/es/blog/brookhaven-ga-100-ltc-ground-up-construction",
+            "label": "Lea el ejemplo reportado de Brookhaven"
+          },
+          {
+            "title": "Guía educativa de demolición en Atlanta",
+            "text": "La guía de Atlanta explica compra, saldo existente y construcción con ejemplos hipotéticos. Sirve para preparar una revisión de reconstrucción, no como evidencia de transacciones cerradas.",
+            "href": "/es/blog/atlanta-teardown-rebuild-construction-financing",
+            "label": "Planifique una reconstrucción en Atlanta"
+          },
+          {
+            "title": "Estructura de desarrollo suministrada",
+            "text": "Compare adquisición y construcción con refinanciamiento de un inmueble propio. La estructura suministrada no revela ubicación ni verifica un cierre; Georgia es un mercado analizado, no una ubicación confirmada de la operación.",
+            "href": "/es/blog/residential-development-financing-georgia-florida-texas-case-study",
+            "label": "Compare la estructura suministrada"
+          }
+        ]
+      },
+      {
+        "title": "Prepare una primera consulta útil",
+        "paragraphs": [
+          "Puede utilizar estimaciones identificadas como tales. Comparta primero lo básico; solicite un canal seguro antes de enviar estados financieros privados, datos de cuentas o documentos de identidad."
+        ],
+        "items": [
+          "Ubicación, tipo de inmueble y si ya es propietario.",
+          "Precio de compra o saldo actual, junto con el costo total del proyecto.",
+          "Monto solicitado, patrimonio disponible y valor terminado estimado.",
+          "Alcance de obra o renovación, permisos y calendario.",
+          "Ingresos operativos y ocupación de inmuebles que generan renta.",
+          "Experiencia relevante, cierre deseado y plan de venta o refinanciamiento."
+        ],
+        "link": {
+          "href": "/resources/commercial",
+          "label": "Explore los recursos comerciales (en inglés)",
+          "text": "Use las guías para preparar sus cifras y comparar opciones antes de recibir condiciones definitivas del prestamista."
+        }
+      }
+    ],
+    "review_title": "Comparta su proyecto comercial en Georgia",
+    "review_text": "Comparta su proyecto y celular para seguimiento por texto. También puede presentar proyectos fuera del rango preferido; el financiamiento depende de la evaluación y disponibilidad del prestamista.",
+    "disclosure": "Una consulta no es una aprobación, carta de términos ni compromiso de préstamo. Stonehaven Lending es una correduría hipotecaria. Gestionamos programas comerciales a nivel nacional; la disponibilidad varía por estado. NMLS de la empresa #1752355.",
+    "standards": "Acerca de Stonehaven Lending",
+    "standards_text": "Conozca al equipo y cómo identificamos el contenido educativo y las transacciones reportadas por la empresa antes de iniciar su revisión.",
+    "team_label": "Conozca al equipo",
+    "editorial_label": "Criterios editoriales"
+  }
+}

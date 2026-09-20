@@ -14,25 +14,29 @@
 <meta property="og:title" content="Calculadora DSCR por programa | Stonehaven"/>
 <meta property="og:description" content="Calculadora DSCR con reglas reales de programa: renta calificada para 1–4 y 5–8 unidades, alquiler corto y condoteles - pago, PITIA y DSCR al instante."/>
 <meta property="og:url" content="https://stonehavencre.com/es/dscr-program-calculator"/>
-<meta property="og:image" content="https://stonehavencre.com/assets/stonehaven-handpainted-logo.png"/>
-<link rel="icon" type="image/png" href="../assets/stonehaven-handpainted-logo.png"/>
-<link rel="apple-touch-icon" href="../assets/stonehaven-handpainted-logo.png"/>
+<meta property="og:image" content="https://stonehavencre.com/assets/stonehaven-social-v1.jpg"/>
+<link sizes="48x48" rel="icon" type="image/png" href="/assets/stonehaven-icon-48-v1.png"/>
+<link sizes="180x180" rel="apple-touch-icon" href="/assets/stonehaven-apple-180-v1.png"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="../styles.css?v=polish-20260918"/>
-<link rel="stylesheet" href="../funnel.css?v=cleanup2-20260918"/>
+<link rel="stylesheet" href="../styles.css?v=seo-20260920"/>
+<link rel="stylesheet" href="../funnel.css?v=seo-20260920"/>
 <noscript><style>.reveal{opacity:1 !important;transform:none !important;}</style></noscript>
 <script src="../js/site-config.js?v=6" defer></script>
 <script src="../js/funnel.js?v=13" defer></script>
-<script src="../js/dscr-programs.js?v=1"></script>
+<script src="../js/dscr-programs.js?v=1" defer></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://stonehavencre.com/es/"}, {"@type": "ListItem", "position": 2, "name": "DSCR", "item": "https://stonehavencre.com/es/dscr"}, {"@type": "ListItem", "position": 3, "name": "Calculadora DSCR por programa", "item": "https://stonehavencre.com/es/dscr-program-calculator"}]}</script>
 
 <link rel="stylesheet" href="/seo-resources.css?v=1"/>
-</head>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:type" content="image/jpeg"/>
+<meta property="og:image:alt" content="Stonehaven Lending, Residential and Commercial"/>
+<link rel="stylesheet" href="/search-navigation.css?v=1"/></head>
 <body><noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=4039555362846500&ev=PageView&noscript=1" alt=""/></noscript><header class="nav" id="nav">
   <div class="wrap nav-inner">
     <a href="/es/" class="brand" aria-label="Stonehaven Lending inicio">
-      <img src="../assets/stonehaven-handpainted-logo.png" width="76" height="76" alt="Stonehaven Lending"/>
+      <img src="/assets/stonehaven-logo-240-v1.webp" srcset="/assets/stonehaven-logo-120-v1.webp 120w, /assets/stonehaven-logo-240-v1.webp 240w, /assets/stonehaven-logo-360-v1.webp 360w, /assets/stonehaven-logo-512-v1.webp 512w" sizes="(max-width: 1000px) 100px, 120px" width="120" height="120" decoding="async" alt="Stonehaven Lending"/>
       <span class="bt"><span class="b1">Stonehaven</span><span class="b2">Lending</span></span>
     </a>
     <nav class="links" id="links" aria-label="Principal">
@@ -74,9 +78,9 @@
   <div class="wrap">
     <div class="calc-wrap reveal">
       <div class="calc-inputs">
-        <h3>Tipo de propiedad</h3>
+        <h2>Tipo de propiedad</h2>
         <div class="pc-row" id="pc-progs"><button type="button" class="pc-opt on" data-prog="ltr14">Alquiler de 1–4 unidades</button><button type="button" class="pc-opt" data-prog="str14">Alquiler corto</button><button type="button" class="pc-opt" data-prog="condotel">Condotel</button><button type="button" class="pc-opt" data-prog="units58">5–8 unidades</button></div>
-        <h3>Transacción</h3>
+        <h2>Transacción</h2>
         <div class="pc-row" id="pc-txns"><button type="button" class="pc-opt on" data-txn="purchase">Compra</button><button type="button" class="pc-opt" data-txn="refinance">Refinanciamiento</button></div>
         <div class="calc-grid">
           <div class="lf-field"><label for="p-value">Valor de la propiedad ($)</label><input id="p-value" type="number" inputmode="numeric" min="0" value="450000"/></div>
@@ -85,10 +89,10 @@
           <div class="lf-field"><label for="p-amort">Amortización</label><select id="p-amort"><option value="fixed30">Fija a 30 años</option><option value="arm56">ARM 5/6</option><option value="fixed30-io">Fija 30 años · 10 años IO</option><option value="arm56-io30">ARM 5/6 · 10 años IO (30)</option><option value="arm56-io40">ARM 5/6 · 10 años IO (40)</option><option value="fixed40-io">Fija 40 años · 10 años IO</option></select></div>
           <div class="lf-field full" id="p-fti-wrap"><label for="p-fti">¿Primer inversionista?</label><select id="p-fti"><option value="no">No</option><option value="yes">Sí</option></select></div>
         </div>
-        <h3 style="margin-top:20px;">Detalle de unidades</h3>
+        <h2 style="margin-top:20px;">Detalle de unidades</h2>
         <div class="lf-field" id="p-count-wrap" style="max-width:180px;"><label for="p-count">Número de unidades</label><select id="p-count"></select></div>
         <div class="pc-units" id="pc-units"></div>
-        <h3 style="margin-top:20px;">Gastos mensuales de la propiedad</h3>
+        <h2 style="margin-top:20px;">Gastos mensuales de la propiedad</h2>
         <div class="calc-grid">
           <div class="lf-field"><label for="p-haz">Seguro de la vivienda ($/mes)</label><input id="p-haz" type="number" inputmode="numeric" min="0" value="150"/></div>
           <div class="lf-field"><label for="p-tax" title="Compra en CA o construcción nueva: use 1.25% del precio ÷ 12.">Impuestos ($/mes)</label><input id="p-tax" type="number" inputmode="numeric" min="0" value="400"/></div>
@@ -213,64 +217,26 @@ document.querySelectorAll("#pc-progs .pc-opt").forEach(function(b){b.addEventLis
 document.querySelectorAll("#pc-txns .pc-opt").forEach(function(b){b.addEventListener("click",function(){setTxn(b.getAttribute("data-txn"));});});
 ["p-value","p-loan","p-rate","p-amort","p-fti","p-haz","p-tax","p-com","p-gnd","p-count"].forEach(function(id){var el=$(id);el.addEventListener("input",id==="p-count"?renderUnits:calc);el.addEventListener("change",function(){if(id==="p-count")renderUnits();calc();});});
 document.addEventListener("DOMContentLoaded",function(){setProg("ltr14");});
-setProg("ltr14");
 })();
 </script>
+<!-- SEARCH-NAV:CONTEXT:START --><section class="wrap search-topics search-context"><h2>Prepare la siguiente decisión</h2><p>¿La propiedad tiene cinco a ocho unidades? Nuestra <a href="/es/commercial/5-8-unit-financing">guía de financiamiento para cinco a ocho unidades</a> explica cómo revisar las rentas, los gastos operativos y la clasificación legal antes de elegir una ruta. Los supuestos de la calculadora no confirman la elegibilidad de un programa.</p></section><!-- SEARCH-NAV:CONTEXT:END -->
 </main>
 <footer>
   <div class="wrap">
     <div class="foot-top">
       <div class="foot-brand">
-        <div class="fb"><img src="../assets/stonehaven-handpainted-logo.png" width="26" height="26" alt="" loading="lazy"/><span>Stonehaven Lending</span></div>
+        <div class="fb"><img src="/assets/stonehaven-logo-240-v1.webp" srcset="/assets/stonehaven-logo-120-v1.webp 120w, /assets/stonehaven-logo-240-v1.webp 240w, /assets/stonehaven-logo-360-v1.webp 360w, /assets/stonehaven-logo-512-v1.webp 512w" sizes="180px" width="180" height="180" decoding="async" alt="" loading="lazy"/><span>Stonehaven Lending</span></div>
         <p>Financiamiento de bienes raíces - Comercial, SBA y DSCR a nivel nacional.</p>
         <address class="foot-nap">Stonehaven Lending · 10 Roswell Street, Suite 102, Alpharetta, GA 30009 · <a href="tel:+14709704979">(470) 970-4979</a> · <a href="mailto:office@stonehavencre.com">office@stonehavencre.com</a></address>
       </div>
       <div class="foot-nav">
-        <div class="col"><h5>Financiamiento</h5><a href="/es/commercial">Comercial</a><a href="/es/sba">SBA</a><a href="/es/dscr">DSCR</a><a href="/es/residential">Residencial</a></div>
-        <div class="col"><h5>Firma</h5><a href="/es/">Inicio</a><a href="/es/contact">Contacto</a><a href="/es/privacy">Privacidad</a></div>
-        <div class="col"><h5>Contacto</h5><a href="mailto:office@stonehavencre.com">office@stonehavencre.com</a></div>
+        <div class="col"><p class="footer-label">Financiamiento</p><a href="/es/commercial">Comercial</a><a href="/es/sba">SBA</a><a href="/es/dscr">DSCR</a><a href="/es/residential">Residencial</a></div>
+        <div class="col"><p class="footer-label">Firma</p><a href="/es/">Inicio</a><a href="/es/contact">Contacto</a><a href="/es/privacy">Privacidad</a></div>
+        <div class="col"><p class="footer-label">Contacto</p><a href="mailto:office@stonehavencre.com">office@stonehavencre.com</a></div>
       </div>
     </div>
     <div class="foot-bottom"><p>© 2026 Stonehaven Lending · NMLS #1752355. Todos los derechos reservados.</p><p>Programas disponibles a nivel nacional.</p></div>
     <p class="foot-disc">Stonehaven Lending es una firma de corretaje hipotecario, no un prestamista directo; el financiamiento se gestiona y queda sujeto a underwriting del prestamista, documentación, disponibilidad de programa y licencias aplicables. Los resultados de la calculadora son ilustrativos y no constituyen un compromiso de préstamo, una oferta de crédito ni una garantía de tasa o plazo. Todo financiamiento está sujeto a aprobación de underwriting. La disponibilidad de programas varía según el estado. Igualdad de Oportunidades de Vivienda. Stonehaven Lending NMLS #1752355 · <a href="https://www.nmlsconsumeraccess.org/EntityDetails.aspx/COMPANY/1752355" style="color:inherit;text-decoration:underline;" rel="noopener">NMLS Consumer Access</a>.</p>
   </div>
 </footer>
-<script>
-(function(){
-  "use strict";
-  var $=function(id){return document.getElementById(id);};
-  var inputs=["c-price","c-down","c-rate","c-rent","c-tax","c-ins","c-hoa","c-target"].map($);
-  var fired=false;
-  function money(n){return "$"+Math.round(n).toLocaleString("en-US");}
-  function calc(){
-    var price=+$("c-price").value||0, down=(+$("c-down").value||0)/100,
-        rate=(+$("c-rate").value||0)/100, rent=+$("c-rent").value||0,
-        tax=+$("c-tax").value||0, ins=+$("c-ins").value||0, hoa=+$("c-hoa").value||0;
-    var out={r:$("r-ratio"),v:$("r-verdict"),p:$("r-pmt"),t:$("r-ti"),pit:$("r-pitia"),note:$("r-note")};
-    if(price<=0||rent<=0||rate<=0||down>=1){out.r.innerHTML="-<small>x</small>";out.v.textContent="";out.p.textContent="-";out.t.textContent="-";out.pit.textContent="-";out.note.textContent="Ingrese sus cifras - el ratio se actualiza mientras escribe.";return;}
-    var loan=price*(1-down), i=rate/12, nMo=360;
-    var pmt=loan*(i*Math.pow(1+i,nMo))/(Math.pow(1+i,nMo)-1);
-    var ti=(tax+ins)/12+hoa;
-    var pitia=pmt+ti;
-    var dscr=rent/pitia; // convención estándar para 1–4 unidades: renta ÷ PITIA
-    out.p.textContent=money(pmt)+"/mes"; out.t.textContent=money(ti)+"/mes"; out.pit.textContent=money(pitia)+"/mes";
-    var C=window.SH_CALC, tgt=+($("c-target")&&$("c-target").value)||1.2;
-    if(C){
-      var rn=C.rentNeeded(pitia,tgt), mp=C.maxPrincipalAndInterest(rent,tgt,ti), ml=C.maxLoanFromPI(mp,rate*100,30,false);
-      var set=function(id,v,suf){var el=$(id);if(el)el.textContent=isNaN(v)?"-":money(v)+(suf||"");};
-      set("r-rentneed",rn,"/mes"); set("r-maxpi",mp,"/mes"); set("r-maxloan",ml,"");
-    }
-    out.r.innerHTML=(Math.round(dscr*100)/100).toFixed(2)+"<small>x</small>";
-    out.v.className="verdict";
-    if(dscr>=1.25){out.v.classList.add("strong");out.v.textContent="Fuerte - el ratio suele abrir más opciones";out.note.textContent="Ratios de 1.25x o más típicamente abren la mejor estructura y apalancamiento.";}
-    else if(dscr>=1.0){out.v.classList.add("workable");out.v.textContent="Viable - probablemente encaja en un programa";out.note.textContent="Entre 1.0x y 1.25x la estructura importa - un especialista puede mostrarle qué sube su ratio.";}
-    else {out.v.classList.add("short");out.v.textContent="Aún no - esto es lo que lo mueve";out.note.textContent="Abajo de 1.0x la renta no cubre la deuda con estos términos. Más pago inicial u otra estructura muchas veces cierra la brecha - un especialista puede mostrarle cómo.";}
-    var form=document.querySelector('form[data-sh-form="dscr-analyzer"]');
-    if(form){form.setAttribute("data-sh-about-prefix","[Deal Analyzer ES] precio "+money(price)+" · inicial "+Math.round(down*100)+"% · tasa "+(rate*100).toFixed(2)+"% · renta "+money(rent)+"/mes · DSCR "+dscr.toFixed(2)+"x");}
-    if(!fired&&window.shTrack){fired=true;window.shTrack("calc_used",{page:"dscr-analyzer-es"});}
-  }
-  inputs.forEach(function(el){el.addEventListener("input",calc);});
-  document.addEventListener("DOMContentLoaded",calc);
-})();
-</script>
 </body></html>

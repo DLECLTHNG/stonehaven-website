@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Build bilingual CRE service pages from the retained, reviewable source brief."""
 from pathlib import Path
+from datetime import date
 from html import escape
 import json
 import re
@@ -93,6 +94,10 @@ def build(slug, lang, c):
     prefix = '/es' if es else ''
     route = prefix + '/commercial/' + slug
     url = ORIGIN + route
+    updated = c.get('updated', BRIEF['updated'])
+    day = date.fromisoformat(updated)
+    months_es = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre']
+    updated_label = f'Actualizado el {day.day} de {months_es[day.month - 1]} de {day.year}.' if es else f'Updated {day.strftime("%B")} {day.day}, {day.year}.'
     source = ROOT / ('es/' if es else '') / 'commercial/multifamily.html'
     base = source.read_text()
     base = re.sub(r'<!-- SEARCH-NAV:[A-Z]+:START -->.*?<!-- SEARCH-NAV:[A-Z]+:END -->\n?', '', base, flags=re.S)
@@ -121,7 +126,7 @@ def build(slug, lang, c):
                'areaServed': {'@type': 'Country', 'name': 'United States'},
                'provider': {'@type': 'FinancialService', '@id': ORIGIN + '/#org', 'name': 'Stonehaven Lending', 'url': ORIGIN + '/'}}
     page = {'@context': 'https://schema.org', '@type': 'WebPage', '@id': url, 'url': url, 'name': c['title'],
-            'description': c['description'], 'inLanguage': lang, 'dateModified': BRIEF['updated'],
+            'description': c['description'], 'inLanguage': lang, 'dateModified': updated,
             'mainEntity': {'@id': url + '#service'}, 'publisher': {'@id': ORIGIN + '/#org'},
             'citation': [link for link, label in c['sources']]}
     head = head.replace('</head>', '<link rel="stylesheet" href="/cre-financing.css?v=1"/>\n' + alternates + '\n' + ''.join(script(s) for s in [breadcrumb, service, page]) + '\n</head>')
@@ -140,7 +145,7 @@ def build(slug, lang, c):
     documents = f'<section class="cre-section cre-tint"><div class="wrap cre-docs"><div><h2>{e(c["docs_title"])}</h2><ul class="cre-checklist">' + ''.join('<li>' + e(item) + '</li>' for item in c['docs']) + f'</ul></div><aside class="cre-note"><h3>{e(c["exclusions_title"])}</h3><p>{e(c["exclusions"])}</p></aside></div></section>'
     questions = f'<section class="cre-section" id="questions"><div class="wrap"><h2>{"Preguntas antes de comenzar" if es else "Questions before you start"}</h2>' + ''.join(f'<details class="cre-faq"><summary>{e(q)}</summary><p>{e(a)}</p></details>' for q, a in c['faqs']) + '</div></section>'
     related = f'<section class="cre-section"><div class="wrap"><h2>{"Guías y ejemplos relacionados" if es else "Related guides and examples"}</h2><div class="cre-grid">' + ''.join(f'<a class="cre-card cre-link-card" href="{e(link)}"><h3>{e(label)}</h3><p>{e(text)}</p><span>{"Leer más" if es else "Explore"} →</span></a>' for link, label, text in c['links']) + '</div></div></section>'
-    sources = f'<section class="cre-section cre-sources"><div class="wrap"><h2>{"Fuentes y criterios editoriales" if es else "Sources and editorial standards"}</h2><p>{e(c["source_note"])}</p><ul>' + ''.join(f'<li><a href="{e(link)}" rel="noopener">{e(label)}</a></li>' for link, label in c['sources']) + '</ul><p>' + ('Actualizado el 18 de septiembre de 2026.' if es else 'Updated September 18, 2026.') + f' <a href="{prefix}/editorial-policy">' + ('Criterios editoriales' if es else 'Editorial standards') + '</a> · <a href="/management">' + ('Nuestro equipo' if es else 'Meet the team') + '</a></p></div></section>'
+    sources = f'<section class="cre-section cre-sources"><div class="wrap"><h2>{"Fuentes y criterios editoriales" if es else "Sources and editorial standards"}</h2><p>{e(c["source_note"])}</p><ul>' + ''.join(f'<li><a href="{e(link)}" rel="noopener">{e(label)}</a></li>' for link, label in c['sources']) + '</ul><p>' + updated_label + f' <a href="{prefix}/editorial-policy">' + ('Criterios editoriales' if es else 'Editorial standards') + '</a> · <a href="/management">' + ('Nuestro equipo' if es else 'Meet the team') + '</a></p></div></section>'
     output = head + '<main>\n' + '\n'.join([hero, trail, answer, fits, comparison, scenario, process, documents, questions, form(slug, lang, c), related, sources]) + '\n</main>' + footer
     (ROOT / (route.lstrip('/') + '.html')).write_text(output)
 

@@ -146,7 +146,7 @@ section{padding:120px 0;}
 .use{background:var(--paper);padding:30px 34px;transition:background .35s var(--ease);}
 .use:hover{background:var(--white);}
 .use .un{font-family:'Cormorant',serif;font-style:italic;color:var(--brass);font-size:15px;}
-.use h3{font-family:'Cormorant',serif;font-weight:500;font-size:21px;color:var(--slate-900);margin:8px 0 6px;}
+.use h2,.use h3{font-family:'Cormorant',serif;font-weight:500;font-size:21px;color:var(--slate-900);margin:8px 0 6px;}
 .use p{font-size:14px;color:var(--slate-400);font-weight:300;}
 
 /* CTA band */
@@ -190,7 +190,7 @@ footer{background:var(--slate-900);color:var(--stone-400);padding:64px 0 44px;}
 .foot-brand .fb span{font-family:'Cormorant',serif;font-size:18px;color:var(--stone-200);}
 .foot-brand p{font-size:13px;color:var(--stone-400);max-width:280px;font-weight:300;}
 .foot-nav{display:flex;gap:64px;flex-wrap:wrap;}
-.foot-nav .col h5{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--stone-200);margin-bottom:16px;}
+.foot-nav .col .footer-label{font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--stone-200);margin-bottom:16px;}
 .foot-nav .col a{display:block;color:var(--stone-400);text-decoration:none;font-size:13.5px;margin-bottom:11px;font-weight:300;transition:color .25s;}
 .foot-nav .col a:hover{color:var(--white);}
 .foot-bottom{padding-top:28px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;}
