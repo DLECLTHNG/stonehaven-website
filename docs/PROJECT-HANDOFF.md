@@ -5,6 +5,15 @@ Prepared 2026-09-12 for an agent or engineer taking over the whole project cold.
 Everything stated here as live was verified against production on 2026-09-12, not
 inferred from the repository. Where something is unverified, it says so.
 
+> **Partly stale as of 2026-09-18.** Codex has since shipped fifty-seven
+> commits on `main`. Sections 3, 5 and 8 in particular are out of date: there
+> are now ten generators, a real CI gate (`.github/workflows/site-checks.yml`
+> runs tests, all four linters, `check-seo.py` and generator drift on every
+> push, and Netlify runs the same check before stripping internal files), no
+> `FAQPage` anywhere, and 390 pages with 328 in the sitemap. For current
+> state read `docs/CODEX-TAKEOVER.md` and `docs/seo-implementation/` first,
+> then use this file for the parts that have not changed.
+
 This supersedes `docs/family-opportunity-handoff.md` as the entry point. That file
 is still accurate and remains the deep dive on the Family Opportunity work.
 `docs/DRAFTS-HANDOFF.md` is **stale**: see section 8.
@@ -459,10 +468,10 @@ state matrix is recorded as an unverified fact in the internal claims register.
    with a disability. It was not implemented, for reasons set out in section 4 of
    `docs/family-opportunity-handoff.md`. Treat it as a decision needing the owner
    and their legal adviser, not a backlog ticket.
-10. **SEO and AI-search visibility.** A full audit and a paste-ready Codex
-    brief live in `docs/SEO-CODEX-PROMPT.md`. Commercial, the main revenue
-    line, holds about six percent of the site's words and has no page for spec
-    homes, construction, agency multifamily or Georgia. Start there.
+10. **SEO and AI-search visibility.** A paste-ready next-phase brief lives in
+    `docs/SEO-CODEX-PROMPT.md`. It builds on Codex's own audit in
+    `docs/seo-implementation/2026-09-18-cre-seo-ai-audit.md`, whose first wave
+    has shipped.
 11. **Six stray macOS duplicate files** sit untracked at the repo root, including
    copies of live pages carrying Pixel snippets. Git deploys exclude them so they
    are inert today, but they would ship under a manual drag-and-drop deploy.
