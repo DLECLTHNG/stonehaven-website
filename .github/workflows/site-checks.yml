@@ -31,6 +31,7 @@ jobs:
           python3 scripts/build-cre-financing.py
           python3 scripts/build-cre-local.py
           python3 scripts/build-small-multifamily.py
+          python3 scripts/build-architect-financing.py
           python3 scripts/build-search-navigation.py
           git diff --exit-code
           test -z "$(git ls-files --others --exclude-standard)"

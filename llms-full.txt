@@ -406,6 +406,8 @@ Compare construction, fix-and-flip and bridge options. Share total project cost,
 
 For an apartment purchase, our multifamily acquisition financing guide (https://stonehavencre.com/commercial/multifamily-acquisition)  compares a stabilized property with an acquisition that needs improvements. For a smaller building, review 5–8 unit financing options (https://stonehavencre.com/commercial/5-8-unit-financing)  and the documents that distinguish a DSCR program review from commercial underwriting.
 
+If an architect is coordinating the design, our financing partner guide for architects (https://stonehavencre.com/commercial/architect-financing-partners)  explains how to organize the first conversation between the client, design team and brokerage. Intended use, design stage and budget help determine what to review first.
+
 For projects in the home state of our Alpharetta office, the Georgia and metro Atlanta commercial financing page (https://stonehavencre.com/commercial/georgia)  connects construction, acquisition and refinancing with the details needed for a project review. It separates educational examples from company-reported closings.
 
 Before choosing a requested loan amount, work through commercial loan sizing using DSCR, LTV and debt yield (https://stonehavencre.com/resources/how-lenders-size-commercial-loans) . The example shows why one constraint can limit the result from a calculator.
@@ -582,6 +584,10 @@ The OCC’s CRE handbook explains the role of construction budgets, borrower equ
 
 Updated September 20, 2026. Editorial standards (https://stonehavencre.com/editorial-policy)  · Meet the team (https://stonehavencre.com/management)
 
+### Prepare the next decision
+
+For a project in design or approaching construction, the construction financing guide for architects (https://stonehavencre.com/commercial/construction-financing-for-architects)  connects plans, scope, budget and the draw schedule. Review it with the client and builder to prepare questions about costs and change orders before seeking financing.
+
 ---
 
 # Fix and flip capital. Room to execute the plan.
@@ -738,6 +744,10 @@ The OCC’s CRE handbook describes rehabilitation lending and the need to assess
 - OCC: Commercial Real Estate Lending handbook (https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf)
 
 Updated September 20, 2026. Editorial standards (https://stonehavencre.com/editorial-policy)  · Meet the team (https://stonehavencre.com/management)
+
+### Prepare the next decision
+
+For a project in design or approaching construction, the construction financing guide for architects (https://stonehavencre.com/commercial/construction-financing-for-architects)  connects plans, scope, budget and the draw schedule. Review it with the client and builder to prepare questions about costs and change orders before seeking financing.
 
 ---
 
@@ -987,6 +997,8 @@ Share the property and plan. We follow up by text with preliminary feedback in u
 
 For an apartment purchase, our multifamily acquisition financing guide (https://stonehavencre.com/commercial/multifamily-acquisition)  compares a stabilized property with an acquisition that needs improvements. For a smaller building, review 5–8 unit financing options (https://stonehavencre.com/commercial/5-8-unit-financing)  and the documents that distinguish a DSCR program review from commercial underwriting.
 
+If the plan includes development or a substantial change to the property, the development financing guide for architects (https://stonehavencre.com/commercial/development-financing-for-architects)  organizes the review by stage: feasibility, land use, design, construction and sale or refinancing. Prepare these assumptions alongside the budget and income plan.
+
 ---
 
 # Mixed-use financing for buildings that do two jobs
@@ -1071,6 +1083,10 @@ Updated September 18, 2026
 ### Send the mix and the leases
 
 Share the income mix and property plan. We follow up by text with preliminary feedback in under 1 hour; lender terms require review.
+
+### Prepare the next decision
+
+If the plan includes development or a substantial change to the property, the development financing guide for architects (https://stonehavencre.com/commercial/development-financing-for-architects)  organizes the review by stage: feasibility, land use, design, construction and sale or refinancing. Prepare these assumptions alongside the budget and income plan.
 
 ---
 
@@ -1167,6 +1183,10 @@ Updated September 18, 2026
 
 Share the property, financing request and timeline. We follow up by text with preliminary feedback in under 1 hour; lender terms require review.
 
+### Prepare the next decision
+
+If the plan includes development or a substantial change to the property, the development financing guide for architects (https://stonehavencre.com/commercial/development-financing-for-architects)  organizes the review by stage: feasibility, land use, design, construction and sale or refinancing. Prepare these assumptions alongside the budget and income plan.
+
 ---
 
 # Financing for your next apartment acquisition.
@@ -1262,6 +1282,10 @@ Public program information checked September 20, 2026. Requirements can change. 
 - OCC: Commercial Real Estate Lending handbook (https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf)
 
 Updated September 20, 2026. Editorial standards (https://stonehavencre.com/editorial-policy)  · Meet the team (https://stonehavencre.com/management)
+
+### Prepare the next decision
+
+If the plan includes development or a substantial change to the property, the development financing guide for architects (https://stonehavencre.com/commercial/development-financing-for-architects)  organizes the review by stage: feasibility, land use, design, construction and sale or refinancing. Prepare these assumptions alongside the budget and income plan.
 
 ---
 
@@ -1447,6 +1471,102 @@ An inquiry is not an approval, term sheet or commitment to lend. Stonehaven Lend
 Learn about our team and how we label educational content and company-reported transactions before starting your financing review.
 
 Updated September 20, 2026. Meet the team (https://stonehavencre.com/management)  · Editorial standards (https://stonehavencre.com/editorial-policy)
+
+### Prepare the next decision
+
+If an architect is coordinating the design, our financing partner guide for architects (https://stonehavencre.com/commercial/architect-financing-partners)  explains how to organize the first conversation between the client, design team and brokerage. Intended use, design stage and budget help determine what to review first.
+
+---
+
+# Financing partners for architects. Connect the design to a funding plan.
+
+Source: https://stonehavencre.com/commercial/architect-financing-partners
+
+Architects · Client introductions · Project financing
+
+## Financing partners for architects.
+Connect the design to a funding plan.
+
+Give your client a clear next step for construction or development financing. Stonehaven reviews the project, identifies potential lender paths and coordinates the financing discussion with the client’s approval.
+
+Start a financing conversation (https://stonehavencre.com/commercial/architect-financing-partners#inquire)
+
+### How can an architect help a client find project financing?
+
+An architect can introduce the property owner or developer to a mortgage brokerage for a financing review while continuing to lead the design work. Stonehaven Lending arranges real estate financing through third-party lenders. We review the intended use, location, project stage, budget and requested amount, then discuss available options with the borrower.
+
+This is useful when a client has a buildable idea but needs to understand the capital plan before committing to the next stage. An early conversation can identify questions to resolve; it does not replace a lender’s approval or make unfinished plans financeable.
+
+### Keep each professional’s role clear
+
+- The architect:  explains the design, current scope, drawing status and project milestones within the owner-architect agreement.
+- The owner or developer:  chooses whether to seek financing, supplies borrower information and remains responsible for the loan and project obligations.
+- Stonehaven:  organizes the financing scenario, compares available lender routes and explains the next information needed.
+- The lender:  makes the credit decision and sets conditions, documentation and disbursement requirements.
+
+A financing introduction does not make the architect a mortgage originator, guarantor or representative authorized to accept loan terms for the client.
+
+### Choose the path that matches the client’s project
+
+- Ground-up, spec or teardown construction:  start with construction financing for architects (https://stonehavencre.com/commercial/construction-financing-for-architects)  to organize land, the build budget and draw timing.
+- Multifamily or mixed-use development:  use our development financing guide (https://stonehavencre.com/commercial/development-financing-for-architects)  to connect site control, approvals, construction and the exit.
+- Renovation for resale or investment:  review fix-and-flip financing (https://stonehavencre.com/commercial/fix-and-flip) , including acquisition and the improvement scope.
+- A client’s own home:  start with residential lending (https://stonehavencre.com/residential) . Owner-occupied home financing needs its own eligibility and consumer-lending review.
+
+Residential service is available in Georgia, Alabama, Tennessee, Florida, North Carolina and South Carolina. Business-purpose commercial financing is reviewed nationwide, with availability varying by state and lender.
+
+### A practical introduction workflow
+
+- Get the client’s permission.  Confirm what project information may be shared and who should join the financing discussion.
+- Send a short scenario.  Include the property state, intended use, ownership status, project stage, estimated total cost, requested financing and target date.
+- Separate known facts from estimates.  Label preliminary construction pricing, projected rents and proposed approvals clearly.
+- Bring the borrower into the review.  Financial statements, identification and credit information belong in an appropriate secure process, not an architect’s public inquiry.
+- Coordinate the next milestone.  Identify whether the next useful step is budget refinement, a lender review, additional equity planning or progress on approvals.
+
+### Protect the client relationship
+
+Share only information the client authorizes, and let the client choose their financing provider. For AIA members, the AIA Code of Ethics (https://www.aia.org/code-ethics-professional-conduct)  addresses confidentiality and conflicts of interest. Any professional responsibilities also depend on the agreement and applicable requirements.
+
+This page offers a professional introduction process, with no referral payment offered. Federal RESPA rules (https://www.consumerfinance.gov/rules-policy/regulations/1024/14/)  restrict payments for referrals of covered mortgage settlement services. Do not assume that describing a project as commercial resolves every licensing or compensation question.
+
+### Questions architects ask before making an introduction
+
+#### Can we discuss a concept before the client has final plans?
+
+Yes. Label the design stage and the decisions still outstanding. A preliminary conversation can identify financing questions, but a lender may require further plans, approvals, pricing or borrower information before issuing usable terms.
+
+#### Does the architect need to collect the client’s financial documents?
+
+No. Begin with a project summary. The borrower can supply private financial information directly through the appropriate next step after an introduction.
+
+#### Can architecture and engineering fees be part of the budget?
+
+Include them as separate budget lines. Whether a lender accepts or reimburses a cost depends on its program, when the cost was incurred and its documentation. Early design work should not be undertaken on an assumption of financing.
+
+#### What project sizes can we introduce?
+
+Share the actual project and requested amount. Stonehaven reviews a broad range of real estate scenarios individually; size alone does not establish lender availability or approval.
+
+ For architects and project advisers
+
+### Introduce an architectural project
+
+Tell us your role, the property state, project stage and financing need. Start with your own contact details and a client-approved summary. We follow up by text.
+
+No active project yet? Share your contact details and the types of projects your firm designs. Project figures can be left blank.
+
+Use your own contact details. Start with a general project summary and obtain client permission before sharing their information. Keep client names, financial records and private documents out of this form.
+
+For a client who will live in the home, use our residential inquiry. (https://stonehavencre.com/residential)
+
+### Sources and editorial standards
+
+These sources explain professional and referral considerations. They do not imply an AIA endorsement, a compensation arrangement or financing approval.
+
+- AIA: Code of Ethics and Professional Conduct (https://www.aia.org/code-ethics-professional-conduct)
+- CFPB: Regulation X, section 1024.14 (https://www.consumerfinance.gov/rules-policy/regulations/1024/14/)
+
+Updated September 20, 2026. Editorial standards (https://stonehavencre.com/editorial-policy)  · Meet the team (https://stonehavencre.com/management)
 
 ---
 
