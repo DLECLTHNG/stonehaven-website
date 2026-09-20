@@ -1362,6 +1362,10 @@ Primary sources explain program boundaries and underwriting concepts. They do no
 
 Updated September 20, 2026. Editorial standards (https://stonehavencre.com/editorial-policy)  · Meet the team (https://stonehavencre.com/management)
 
+### Prepare the next decision
+
+For a Charlotte property, the Charlotte five-to-eight-unit DSCR guide (https://stonehavencre.com/blog/5-8-unit-dscr-financing-charlotte)  connects legal unit count and property-record review with two calculation methods: rent by unit and net operating income. Check the property documents before applying calculator assumptions.
+
 ---
 
 # Georgia commercial financing. A clear plan for your next project.
@@ -2142,6 +2146,8 @@ Explore how rental income is evaluated, model a scenario and review a past closi
 ### Prepare the next decision
 
 Does the property have five to eight units? Our 5–8 unit financing guide (https://stonehavencre.com/commercial/5-8-unit-financing)  explains how to review rents, operating expenses and legal unit count before choosing a route. Calculator assumptions do not confirm eligibility for a program.
+
+If you already own a rental without a mortgage, the DSCR HELOC scenario for a paid-off rental property (https://stonehavencre.com/blog/dscr-heloc-paid-off-investment-property)  shows what to gather for a line intended for future investments. It is an educational example that distinguishes rental cash flow from personal debt-to-income qualification, not a closing or approval.
 
 If you can also document personal income, the DSCR versus conventional guide (https://stonehavencre.com/resources/dscr-vs-conventional)  separates borrower qualification from property cash flow before you choose a financing route.
 
