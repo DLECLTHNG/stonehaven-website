@@ -44,14 +44,14 @@ function fmtPhone(d) { return "(" + d.slice(0, 3) + ") " + d.slice(3, 6) + "-" +
 function validate(b) {
   const errors = {};
   const name = String(b.name || "").trim();
-  if (name.length < 2) errors.name = "Please enter your full name.";
+  if (typeof b.name !== 'string' || name.length < 2 || /[\r\n\x00]/.test(name)) errors.name = "Please enter your full name.";
   else if (name.length > 120) errors.name = "Please shorten your name.";
   const phone = normPhone(b.phone);
   if (!phone) errors.phone = "Please enter a valid phone number, including area code.";
   const state = String(b.state || "").toUpperCase();
   if (!SHARED.states.includes(state)) errors.state = "Please choose the property state.";
   const email = String(b.email || "").trim();
-  if (email && (email.length > 254 || !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email))) errors.email = "Please enter a valid email address, or leave it blank.";
+  if (typeof b.email !== 'string' || !email || email.length > 254 || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) errors.email = "Please enter a valid email address.";
   const timing = String(b.timing || "");
   const timingLabel = timing ? (SHARED.timing[timing] || "") : "";
   if (timing && !timingLabel) errors.timing = "Please choose one of the listed options.";

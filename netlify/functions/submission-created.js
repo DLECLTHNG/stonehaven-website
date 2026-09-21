@@ -10,6 +10,11 @@ exports.handler = async (event) => {
   const data = submission && submission.data;
   if (!data || (submission.form_name || data['form-name']) !== 'lead') return { statusCode: 204, body: '' };
   if (data.company_website || data.hp || submission.spam === true) return { statusCode: 204, body: '' };
+  const { leadErrors } = await import('../shared/lead-validation.mjs');
+  if (Object.keys(leadErrors(data)).length) {
+    console.warn('CRM relay skipped an invalid lead');
+    return { statusCode: 204, body: '' };
+  }
   if (typeof submission.id !== 'string' || !/^[A-Za-z0-9_-]{1,100}$/.test(submission.id)) throw new Error('Missing form submission identity');
   // Page identity determines the Residential lane for dedicated home-loan forms.
   const residentialPage = /^(family-|residential(?:-|$)|heloc(?:-|$))/.test(data.page || '') ||

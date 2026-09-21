@@ -334,15 +334,31 @@
       var thanks = form.getAttribute("data-sh-thanks");
       if (hp && hp.value) { if (thanks) window.location.href = thanks; return; }
 
-      // minimal validation: email always; name where present
+      // Every lead needs its own name and email, including calculator and popup forms.
       var emailEl = form.querySelector('[name="email"]');
       var nameEl = form.querySelector('[name="name"]');
-      var bad = false;
-      if (emailEl && !/.+@.+\..+/.test(emailEl.value.trim())) { emailEl.style.borderBottomColor = "#B0413A"; bad = true; }
-      if (nameEl && nameEl.hasAttribute("required") && !nameEl.value.trim()) { nameEl.style.borderBottomColor = "#B0413A"; bad = true; }
+      var es = (form.getAttribute("data-sh-lang") || document.documentElement.lang || "en").indexOf("es") === 0;
+      var invalid = [];
+      if (!nameEl || !nameEl.value.trim() || nameEl.value.trim().length > 120 || /[\r\n\x00]/.test(nameEl.value)) invalid.push({ el: nameEl, message: es ? "Ingrese su nombre completo." : "Please enter your full name." });
+      if (!emailEl || emailEl.value.trim().length > 254 || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailEl.value.trim())) invalid.push({ el: emailEl, message: es ? "Ingrese un correo electrónico válido." : "Please enter a valid email address." });
       var phoneEl = form.querySelector('[name="phone"]');
-      if (phoneEl && phoneEl.hasAttribute("required") && phoneEl.value.replace(/\D/g, "").length < 10) { phoneEl.style.borderBottomColor = "#B0413A"; bad = true; }
-      if (bad) return;
+      if (phoneEl && phoneEl.hasAttribute("required") && phoneEl.value.replace(/\D/g, "").length < 10) invalid.push({ el: phoneEl, message: es ? "Ingrese un número de teléfono válido." : "Please enter a valid phone number." });
+      var validationBox = form.querySelector('.lead-validation-error');
+      if (validationBox) validationBox.hidden = true;
+      if (invalid.length) {
+        if (!validationBox) {
+          validationBox = document.createElement('p');
+          validationBox.className = 'lead-validation-error';
+          validationBox.setAttribute('role', 'alert');
+          validationBox.style.cssText = 'color:var(--lead-error-color,#B0413A);font-size:14px;line-height:1.5;width:100%;grid-column:1/-1;text-align:center;';
+          form.appendChild(validationBox);
+        }
+        validationBox.textContent = invalid.map(function (item) { return item.message; }).join(' ');
+        validationBox.hidden = false;
+        invalid.forEach(function (item) { if (item.el) { item.el.style.borderBottomColor = '#B0413A'; item.el.setAttribute('aria-invalid', 'true'); } });
+        if (invalid[0].el) invalid[0].el.focus();
+        return;
+      }
       if (/^heloc-/.test(form.getAttribute("data-sh-form") || "") || (window.SH_HELOC_FIELDS && window.SH_HELOC_FIELDS.applies(form))) {
         if (!window.SH_HELOC_FIELDS || !window.SH_HELOC_FIELDS.validate(form)) return;
       }
@@ -365,8 +381,8 @@
       if (attribution) extra.attribution = attribution;
 
       var payload = {
-        name: nameEl ? nameEl.value.trim() : (emailEl ? emailEl.value.trim() : ""),
-        email: emailEl ? emailEl.value.trim() : "",
+        name: nameEl.value.trim(),
+        email: emailEl.value.trim(),
         phone: (form.querySelector('[name="phone"]') || { value: "" }).value.trim(),
         product: form.getAttribute("data-sh-product") || "Not sure",
         about: buildAbout(form, form.getAttribute("data-sh-about-prefix") || "", inquiryId, attribution),
@@ -492,7 +508,7 @@
       }).catch(showError);
     });
     Array.prototype.forEach.call(form.querySelectorAll("input,select,textarea"), function (i) {
-      i.addEventListener("input", function () { i.style.borderBottomColor = ""; });
+      i.addEventListener("input", function () { i.style.borderBottomColor = ""; i.removeAttribute('aria-invalid'); });
     });
   }
 

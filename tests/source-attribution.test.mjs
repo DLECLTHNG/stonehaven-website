@@ -9,13 +9,15 @@ function page(options = {}) {
   const storage = options.storage || new Map(), requests = [], events = [], meta = [], ads = [];
   const attrs = { 'data-sh-form': 'cre-review', 'data-sh-product': 'Commercial', ...(options.formAttrs || {}) };
   const input = { name: 'Synthetic Example', email: 'private@example.com', phone: '2025550123', company_website: '', ...(options.fields || {}) };
-  const fields = Object.fromEntries(Object.entries(input).map(([name, value]) => [name, { name, value, id: name, type: 'text', style: {}, hasAttribute: () => true, addEventListener() {} }]));
+  const fields = Object.fromEntries(Object.entries(input).map(([name, value]) => [name, { name, value, id: name, type: 'text', style: {}, hasAttribute: () => true, addEventListener() {}, setAttribute() {}, removeAttribute() {}, focus() {} }]));
+  for (const name of options.missingFields || []) delete fields[name];
+  let validationBox;
   const button = { style: {} }, handlers = {}, docHandlers = {}, error = { style: {} };
   const form = {
-    elements: Object.values(fields), style: {}, id: 'cre-form',
+    elements: Object.values(fields), style: {}, id: 'cre-form', appendChild: box => { validationBox = box; },
     getAttribute: key => attrs[key] || null, hasAttribute: key => key in attrs,
     addEventListener: (key, value) => { handlers[key] = value; },
-    querySelector: selector => selector === '[type="submit"]' ? button : selector === '.lead-error' ? error : fields[selector.match(/^\[name="([^"]+)"\]$/)?.[1]] || null,
+    querySelector: selector => selector === '[type="submit"]' ? button : selector === '.lead-error' ? error : selector === '.lead-validation-error' ? validationBox : fields[selector.match(/^\[name="([^"]+)"\]$/)?.[1]] || null,
     querySelectorAll: () => Object.values(fields), parentElement: { querySelector: () => ({ classList: { add() {} } }) }
   };
   const document = { referrer: options.referrer || '', body: { getAttribute: key => options.bodyAttrs?.[key] || null }, head: { appendChild() {} }, documentElement: { lang: 'en' },
@@ -343,4 +345,23 @@ test('architect inquiries retain adviser identity, optional project context and 
       }
     }
   }
+});
+
+
+test('blank or missing contact fields never submit or count as conversions', async () => {
+  for (const options of [
+    {fields:{name:'   '}}, {fields:{email:''}}, {fields:{email:'a @example.com'}},
+    {missingFields:['name']}, {missingFields:['email']}
+  ]) {
+    const p = page(options); p.submit(); await flush();
+    assert.equal(p.requests.length, 0);
+    assert.equal(p.ads.length, 0);
+    assert.equal(p.events.some(event => event[1] === 'generate_lead'), false);
+  }
+  const p = page({fields:{name:'',email:''}}); p.submit(); await flush();
+  p.fields.name.value='Test Person'; p.fields.email.value='test@example.com';
+  p.submit(); await flush();
+  assert.equal(p.requests.length, 1);
+  assert.equal(p.data().name, 'Test Person');
+  assert.equal(p.ads.length, 1);
 });

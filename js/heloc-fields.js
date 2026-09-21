@@ -5,6 +5,7 @@
 })(typeof self !== 'undefined' ? self : this, function () {
   'use strict';
   var keys = ['home_value', 'mortgage_balance', 'requested_amount'];
+  var minimumRequested = 30000;
   function amount(raw, allowZero) {
     var value = String(raw == null ? '' : raw).trim().replace(/^\$\s*/, '');
     if (!/^(?:\d+|\d{1,3}(?:,\d{3})+)(?:\.\d{1,2})?$/.test(value)) return null;
@@ -30,8 +31,10 @@
     var error = es ? 'Ingrese el valor estimado de su casa, el saldo de la hipoteca (0 si está pagada) y el monto que desea solicitar.' : 'Enter your estimated home value, mortgage balance (0 if paid off), and the amount you want to borrow.';
     var invalid = keys.map(function (key) {
       var el = form.querySelector('[name="' + key + '"]');
-      return !el || amount(el.value, key === 'mortgage_balance') === null ? { key: key, el: el } : null;
+      var value = el ? amount(el.value, key === 'mortgage_balance') : null;
+      return value === null || (key === 'requested_amount' && value < minimumRequested) ? { key: key, el: el } : null;
     }).filter(Boolean);
+    if (invalid.some(function (item) { return item.key === 'requested_amount'; })) error += es ? ' El monto mínimo de una solicitud HELOC es $30,000.' : ' The minimum HELOC request is $30,000.';
     var box = form.querySelector('.heloc-amount-error');
     if (!invalid.length) { if (box) box.remove(); return true; }
     if (!box) { box = document.createElement('p'); box.className = 'heloc-amount-error'; box.setAttribute('role', 'alert'); form.appendChild(box); }
@@ -40,5 +43,5 @@
     if (first && first.type !== 'hidden') { first.focus(); first.setCustomValidity(error); first.reportValidity(); first.addEventListener('input', function clear() { first.setCustomValidity(''); first.removeEventListener('input', clear); }); }
     return false;
   }
-  return { keys: keys, amount: amount, validate: validate, applies: applies, quoteDestination: quoteDestination };
+  return { keys: keys, minimumRequested: minimumRequested, amount: amount, validate: validate, applies: applies, quoteDestination: quoteDestination };
 });

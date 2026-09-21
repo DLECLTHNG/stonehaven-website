@@ -154,7 +154,7 @@
   }
   function digits(v) { return (v || "").replace(/\D/g, ""); }
   function phoneOk(v) { var d = digits(v); if (d.length === 11 && d.charAt(0) === "1") d = d.slice(1); return d.length === 10 && d.charAt(0) !== "0" && d.charAt(0) !== "1"; }
-  function emailOk(v) { return !v || /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v); }
+  function emailOk(v) { return v.length <= 254 && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v); }
 
   function validate() {
     var first = null;
@@ -165,7 +165,7 @@
     setErr(fields.phone, m); if (m && !first) first = fields.phone;
     m = STATES.indexOf(fields.state.value) === -1 ? "Please choose the property state." : "";
     setErr(fields.state, m); if (m && !first) first = fields.state;
-    m = emailOk((fields.email.value || "").trim()) ? "" : "Please enter a valid email address, or leave it blank.";
+    m = emailOk((fields.email.value || "").trim()) ? "" : "Please enter a valid email address.";
     setErr(fields.email, m); if (m && !first) first = fields.email;
     if (fields.price) {
       var raw = (fields.price.value || "").trim();

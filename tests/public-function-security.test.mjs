@@ -30,6 +30,17 @@ test('prototype property names cannot become Meta conversion events', async () =
 });
 test('changing user agent does not reset an IP rate limit', async () => {
   delete process.env.META_CAPI_TOKEN;delete process.env.CRM_WEBHOOK_URL;
-  for(let i=0;i<8;i++) assert.equal((await capi.handler(event({event_name:'lead',event_id:'test-'+i},'192.0.2.62','agent-'+i))).statusCode,200);
+  for(let i=0;i<8;i++) assert.equal((await capi.handler(event({event_name:'lead',event_id:'test-'+i,payload:{name:'Test Person',email:'test@example.com'}},'192.0.2.62','agent-'+i))).statusCode,200);
   assert.equal((await capi.handler(event({event_name:'lead',event_id:'test-9'},'192.0.2.62','different-agent'))).statusCode,429);
+});
+
+
+test('CAPI and optional CRM webhook reject missing contacts and below-minimum HELOCs before delivery', async t => {
+  const previous = global.fetch; t.after(() => { global.fetch = previous; });
+  global.fetch = async () => { assert.fail('Invalid lead must not be delivered'); };
+  for (const payload of [{}, {name:'',email:'test@example.com'}, {name:'Test Person',email:''},
+    {name:'Test Person',email:'test@example.com',page:'heloc-wizard-save',extra:{home_value:'400000',mortgage_balance:'0',requested_amount:'29999'}}]) {
+    const response = await capi.handler(event({event_name:'lead',event_id:'invalid-contact',payload},'192.0.2.92'));
+    assert.equal(response.statusCode, 422);
+  }
 });

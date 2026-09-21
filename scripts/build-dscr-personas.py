@@ -56,7 +56,7 @@ def head(p):
 <link rel="stylesheet" href="../styles.css?v=seo-20260920"/><link rel="stylesheet" href="../funnel.css?v=seo-20260920"/>
 <noscript><style>.reveal{opacity:1 !important;transform:none !important;}</style></noscript>
 <script src="../js/site-config.js?v=6" defer></script>
-<script src="../js/funnel.js?v=13" defer></script>
+<script src="../js/funnel.js?v=14" defer></script>
 %(lds)s</head>
 ''' % dict(title=p['title'], desc=p['desc'], robots=robots, url=url, lds=lds)
 
