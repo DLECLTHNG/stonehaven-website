@@ -1,6 +1,6 @@
 # Stonehaven Lending
 
-Last updated: 2026-09-20.
+Last updated: 2026-09-21.
 
 This file is a navigation aid, not a ranking or indexing signal. Full pillar text: [llms-full.txt](https://stonehavencre.com/llms-full.txt).
 
@@ -41,6 +41,14 @@ Key facts:
 - [Calculation Methodology](https://stonehavencre.com/calculation-methodology): the exact formulas behind every figure on this site
 - [Contact](https://stonehavencre.com/contact)
 - [Privacy Policy](https://stonehavencre.com/privacy)
+
+## First-time investment-property learning center
+- [Start here: first-time investor guides](https://stonehavencre.com/resources/first-time-property-investor): choose a learning path before selecting financing; English and Spanish versions.
+- [First investment property financing](https://stonehavencre.com/resources/first-investment-property-financing): occupancy, property condition, cash planning, borrower structure and lender placement.
+- [First fix-and-flip financing](https://stonehavencre.com/resources/first-fix-and-flip-financing): initial advance versus rehab holdback, LTC and ARV, cash needs and sale sensitivity.
+- [First DSCR loan](https://stonehavencre.com/resources/first-dscr-loan): qualifying rent versus actual cash flow, first-time landlord review and refinance proceeds.
+- [First rehab loan](https://stonehavencre.com/resources/first-rehab-loan): scope, contractor milestones, draws, contingencies and sale or rental exit.
+- [Investment property deal checklist](https://stonehavencre.com/resources/investment-property-deal-checklist): a one-page scenario, staged documents and written-term comparison.
 
 ## Calculators (deterministic, ungated)
 - [Mortgage Calculator](https://stonehavencre.com/mortgage-calculator): full PITI payment + affordability

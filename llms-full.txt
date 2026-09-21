@@ -1,6 +1,6 @@
 # Stonehaven Lending: public pillar content
 
-Last updated: 2026-09-20.
+Last updated: 2026-09-21.
 
 Generated from the public English pillar pages below. Navigation, input controls and site footers are omitted; explanatory main content and source links are retained. Canonical web pages remain authoritative. This file does not establish indexing, rankings or program eligibility.
 
@@ -170,6 +170,10 @@ Compare construction, fix-and-flip and bridge options. Share total project cost,
 - Construction financing (https://stonehavencre.com/commercial/construction-loans)
 - Fix-and-flip financing (https://stonehavencre.com/commercial/fix-and-flip)
 - Commercial bridge loans (https://stonehavencre.com/commercial/bridge-loans)
+
+### Prepare the next decision
+
+Planning your first investment? Our first-time investor learning center (https://stonehavencre.com/resources/first-time-property-investor)  connects rental, fix-and-flip and rehab financing with budgets, draws and deal preparation. You can start learning before you have a property under contract.
 
 ---
 
@@ -404,6 +408,8 @@ Compare construction, fix-and-flip and bridge options. Share total project cost,
 
 ### Prepare the next decision
 
+Planning your first investment? Our first-time investor learning center (https://stonehavencre.com/resources/first-time-property-investor)  connects rental, fix-and-flip and rehab financing with budgets, draws and deal preparation. You can start learning before you have a property under contract.
+
 For an apartment purchase, our multifamily acquisition financing guide (https://stonehavencre.com/commercial/multifamily-acquisition)  compares a stabilized property with an acquisition that needs improvements. For a smaller building, review 5–8 unit financing options (https://stonehavencre.com/commercial/5-8-unit-financing)  and the documents that distinguish a DSCR program review from commercial underwriting.
 
 If an architect is coordinating the design, our financing partner guide for architects (https://stonehavencre.com/commercial/architect-financing-partners)  explains how to organize the first conversation between the client, design team and brokerage. Intended use, design stage and budget help determine what to review first.
@@ -586,6 +592,8 @@ Updated September 20, 2026. Editorial standards (https://stonehavencre.com/edito
 
 ### Prepare the next decision
 
+If the investment needs improvements, our first rehab loan guide (https://stonehavencre.com/resources/first-rehab-loan)  connects the scope, contractor payments and draws with the planned sale or refinance. Use the investment deal checklist (https://stonehavencre.com/resources/investment-property-deal-checklist)  before comparing proposals.
+
 For a project in design or approaching construction, the construction financing guide for architects (https://stonehavencre.com/commercial/construction-financing-for-architects)  connects plans, scope, budget and the draw schedule. Review it with the client and builder to prepare questions about costs and change orders before seeking financing.
 
 ---
@@ -747,6 +755,8 @@ Updated September 20, 2026. Editorial standards (https://stonehavencre.com/edito
 
 ### Prepare the next decision
 
+For a first project, read our first fix-and-flip financing guide (https://stonehavencre.com/resources/first-fix-and-flip-financing) . Its worked example separates the acquisition advance, rehab funds, cash requirement and estimated profit after selling.
+
 For a project in design or approaching construction, the construction financing guide for architects (https://stonehavencre.com/commercial/construction-financing-for-architects)  connects plans, scope, budget and the draw schedule. Review it with the client and builder to prepare questions about costs and change orders before seeking financing.
 
 ---
@@ -906,6 +916,8 @@ The OCC explains that refinancing can be constrained by weaker cash flow, collat
 Updated September 20, 2026. Editorial standards (https://stonehavencre.com/editorial-policy)  · Meet the team (https://stonehavencre.com/management)
 
 ### Prepare the next decision
+
+If the investment needs improvements, our first rehab loan guide (https://stonehavencre.com/resources/first-rehab-loan)  connects the scope, contractor payments and draws with the planned sale or refinance. Use the investment deal checklist (https://stonehavencre.com/resources/investment-property-deal-checklist)  before comparing proposals.
 
 The exit needs its own review. Compare bridge versus permanent financing (https://stonehavencre.com/resources/bridge-vs-permanent-financing)  and use the commercial refinance guide (https://stonehavencre.com/resources/commercial-refinance-guide)  to check how payoff and costs affect replacement financing.
 
@@ -2145,6 +2157,8 @@ Explore how rental income is evaluated, model a scenario and review a past closi
 
 ### Prepare the next decision
 
+Our first DSCR loan guide (https://stonehavencre.com/resources/first-dscr-loan)  separates qualifying rent from real cash flow and explains what to prepare as a new landlord. It includes a refinance example with less cash available than expected.
+
 Does the property have five to eight units? Our 5–8 unit financing guide (https://stonehavencre.com/commercial/5-8-unit-financing)  explains how to review rents, operating expenses and legal unit count before choosing a route. Calculator assumptions do not confirm eligibility for a program.
 
 If you already own a rental without a mortgage, the DSCR HELOC scenario for a paid-off rental property (https://stonehavencre.com/blog/dscr-heloc-paid-off-investment-property)  shows what to gather for a line intended for future investments. It is an educational example that distinguishes rental cash flow from personal debt-to-income qualification, not a closing or approval.
@@ -3020,4 +3034,628 @@ Residential service is described in Georgia, Alabama, Tennessee, Florida, North 
 ### Report a correction
 
 Email office@stonehavencre.com (mailto:office@stonehavencre.com)  with the page address, the passage in question, and a relevant source. Do not include account numbers, Social Security numbers, or financial documents. For a personal scenario, use the contact form (https://stonehavencre.com/contact) .
+
+---
+
+# Your first investment property starts with a plan
+
+Source: https://stonehavencre.com/resources/first-time-property-investor
+
+Learn. Prepare. Invest.
+
+## Your first investment property starts with a plan
+
+Learn how rental, fix-and-flip and rehab financing work. Build your budget, understand lender requirements and prepare your first deal with Stonehaven.
+
+Stonehaven Lending · Updated September 21, 2026
+
+You do not need to know every lending term to start.  You need a clear plan for the property, an honest picture of the cash you can commit, and a way to repay the loan. These guides help you work through those decisions before choosing financing.
+
+### Choose the guide for your next decision
+
+Buying a rental, renovating a house to sell, and rebuilding a property involve different financing questions. Start with the investment-property overview if you are still choosing a strategy. Then follow the guide that matches what you want to do.
+
+Guide 1
+
+#### How to finance your first investment property
+
+Choose a financing route for rentals, duplexes, flips, mixed-use, apartments or development.
+
+Read the guide →  (https://stonehavencre.com/resources/first-investment-property-financing) Guide 2
+
+#### Financing your first fix-and-flip
+
+Understand the initial advance, repair funding, cash requirement and sale exit.
+
+Read the guide →  (https://stonehavencre.com/resources/first-fix-and-flip-financing) Guide 3
+
+#### Your first DSCR loan: from rent to financing
+
+Separate rental qualification from actual cash flow and plan for lender review.
+
+Read the guide →  (https://stonehavencre.com/resources/first-dscr-loan) Guide 4
+
+#### Your first rehab loan: funding the work and the exit
+
+Connect renovation scope, contractor milestones, funding draws and the planned exit.
+
+Read the guide →  (https://stonehavencre.com/resources/first-rehab-loan) Guide 5
+
+#### Prepare your first investment deal for a lender
+
+Organize a one-page scenario, documents and a consistent comparison of lender terms.
+
+Read the guide →  (https://stonehavencre.com/resources/investment-property-deal-checklist)
+
+### From an idea to a financeable project
+
+- Define the outcome.  Will you sell, hold for rent, or occupy part of the property? Describe the intended use accurately from the beginning.
+- Build the budget.  Separate the purchase, improvements, closing expenses, holding costs, contingency and cash reserves.
+- Test the numbers.  Look at a slower sale, lower rent, higher expenses or a smaller refinance. A deal should have a plan for more than its best outcome.
+- Review financing fit.  Match the lender to your experience, property condition, project size, location and exit plan.
+- Prepare and compare.  Use one consistent deal summary to compare written terms, cash requirements and conditions.
+
+You can come to Stonehaven before you have a property under contract. Tell us what you are learning, the type of project you have in mind and the questions you want to answer. If figures are not known yet, say so.
+
+### How Stonehaven fits into your journey
+
+Stonehaven Lending is a mortgage brokerage. We help you organize the scenario, review possible financing structures and seek placement through third-party lender relationships. A useful first conversation can identify a missing budget item, an unsuitable loan term or an exit assumption that needs more work.
+
+We can help compare rental financing, acquisition and rehab funding, bridge loans and commercial options. Lenders make credit decisions and set conditions. Contractors, inspectors, attorneys, accountants and property managers have separate roles; financing support does not replace their work.
+
+There is no need to make your first project sound bigger or more experienced than it is. An accurate picture gives us a better starting point.
+
+### Keep learning
+
+- How to finance your first investment property (https://stonehavencre.com/resources/first-investment-property-financing)
+- Prepare your first investment deal for a lender (https://stonehavencre.com/resources/investment-property-deal-checklist)
+
+Let’s work through your next step
+
+### Still working out where to start?
+
+Share the kind of investment you are considering and the financing questions on your mind. We can help you organize the next step.
+
+Ask about my first investment (https://stonehavencre.com/contact#inquire)
+
+Tell us this is your first investment. We follow up by text or email. Keep account numbers and private documents out of public forms.
+
+### Sources and scope
+
+Sources support the concepts identified in the guide. One lender’s criteria are not universal and do not establish terms available through Stonehaven. Examples are hypothetical, not closed transactions or offers.
+
+- Fannie Mae: General rental income information (conventional underwriting) (https://selling-guide.fanniemae.com/sel/b3-3.8-01/rental-income)
+- OCC Bulletin 2024-29: commercial refinance risk (https://www.occ.treas.gov/news-issuances/bulletins/2024/bulletin-2024-29.html)
+
+Editorial standards (https://stonehavencre.com/editorial-policy)
+
+---
+
+# How to finance your first investment property
+
+Source: https://stonehavencre.com/resources/first-investment-property-financing
+
+Learn. Prepare. Invest.
+
+## How to finance your first investment property
+
+Compare financing for a first rental, duplex, flip, rehab or commercial property. Learn how occupancy, cash, experience and the exit plan shape your options.
+
+Stonehaven Lending · Updated September 21, 2026
+
+Choose financing around the property’s use and condition, then test the cash requirement.  A ready-to-rent house, a renovation project and an apartment building may need different loans even at the same purchase price. Start with the plan, rather than the largest advertised loan amount.
+
+### Match the loan to the investment
+
+Starting routes to discuss, not eligibility promises
+ | Your plan | Financing to explore | First question
+ | Buy a ready-to-rent home | DSCR, conventional investment-property or bank portfolio financing | Can the rent support the payment, and which borrower requirements apply?
+ | Buy, repair and sell | Business-purpose fix-and-flip or rehab bridge financing | How much is advanced at closing, and how are repairs funded?
+ | Buy, rehab and hold | Rehab funding followed by a separately qualified rental refinance | Would the completed property qualify for enough takeout financing?
+ | Live in one unit and rent others | An appropriate owner-occupied mortgage | What occupancy and rental-income rules apply to the actual plan?
+ | Buy apartments, mixed-use or another commercial asset | Commercial acquisition, bridge or permanent financing | What income, condition and legal use will the lender underwrite?
+ | Build or redevelop | Construction or development financing | Are land, approvals, experience, budget and completion plan ready?
+
+A business-purpose investment loan is not a substitute for a mortgage on a home you intend to occupy. If you plan to live in the property, including a duplex or a renovation project, tell us before choosing a route. Residential availability depends on applicable licensing and program requirements.
+
+For five to eight units, start with our small multifamily financing guide (https://stonehavencre.com/commercial/5-8-unit-financing) . A property can be residential in appearance and still require a different lending analysis.
+
+### What a lender needs to understand about a first-time investor
+
+Being new to investing is one part of the file. A lender may review your credit history, liquidity, existing housing payment, documentation, property condition and the people carrying out the plan. The requirements differ between programs; there is no single credit score, down payment or reserve rule for every investment.
+
+- Experience:  identify what you have actually owned or completed. Construction employment or a contractor relationship should be described accurately, not presented as completed investment projects.
+- Cash:  distinguish money you own, money a partner will contribute and money you intend to borrow. The lender must accept the source and any associated debt.
+- Income route:  a conventional investment mortgage may consider documented personal income and debts. A DSCR program generally emphasizes qualifying property rent while still reviewing borrower and property eligibility.
+- Team:  prepare the contractor, management and professional support appropriate to the project. Adding an experienced person does not automatically make a borrower eligible.
+
+Fannie Mae’s current rental-income guidance (https://selling-guide.fanniemae.com/sel/b3-3.8-01/rental-income)  illustrates why conventional qualification is not simply “rent minus mortgage”: the treatment of rent depends on documented circumstances, including management history. That policy is separate from private DSCR underwriting.
+
+### Build a cash plan beyond the down payment
+
+Prepare two numbers: the amount needed to complete the purchase, and the liquidity needed to operate the project afterward. Earnest money may count toward the closing requirement, but do not count it again as available reserves.
+
+#### A simple rental-purchase budget
+
+Hypothetical assumptions: purchase price $250,000 , loan $187,500 , transaction costs $7,500 , immediate repairs $5,000  and a separate operating reserve $15,000 .
+
+The purchase equity is $62,500. Adding the other items gives a $90,000 planning cash requirement . A $5,000 earnest-money deposit already paid from these funds leaves $85,000 still to allocate. The reserve is retained liquidity, not a closing fee. These amounts are examples, not offered loan terms or a lender’s reserve requirement.
+
+Include taxes, insurance, utilities, association charges, vacancy, leasing expenses, maintenance and larger replacements in the operating plan. Ask who will pay for work before any reimbursement arrives.
+
+### Understand the structure before forming an LLC or adding a partner
+
+Decide who will own the property, borrow the money, contribute cash and sign any guarantee. Those roles can differ, but they must be documented and acceptable to the lender. An LLC does not itself create loan eligibility or eliminate personal responsibility under a signed guarantee.
+
+If a partner is providing funds, explain whether the money is equity or debt and how repayment or profit sharing is intended to work. Have an attorney document ownership and obligations, and ask the lender about any proposed subordinate financing before relying on it. Do not transfer title into an entity after closing without reviewing the loan documents and obtaining any required consent.
+
+Stonehaven can help organize the financing discussion and compare potential lender structures. Your attorney and tax adviser should evaluate the legal and tax consequences of ownership choices.
+
+### Decide what would make you pause
+
+- The purchase only works if an unsupported future value is accepted.
+- You have enough cash to close but no plan for vacancy, repairs or payment delays.
+- A short-term loan matures before the realistic construction and sale period.
+- You are relying on a future refinance without testing rent, valuation, seasoning and costs.
+- A seller or contractor asks you to omit a material fact from the lender’s file.
+
+Use these as questions to resolve, not automatic conclusions about every deal. A lower purchase price, smaller loan, different scope, more cash or a different project may change the result. A loan approval also does not establish that an investment is profitable.
+
+### How we help prepare and place the deal
+
+We start by separating what is known from what is estimated. We can review the use, location, condition, amount, budget and exit; identify relevant financing routes; and help present a consistent scenario to suitable lenders.
+
+When terms are available, compare the initial advance, draw funding, payments, fees, maturity, prepayment provisions, guarantees and conditions using the same assumptions. If a lender cannot support the requested structure, we can discuss what constraint is driving the answer and whether an alternative is worth reviewing.
+
+Use the deal-preparation checklist (https://stonehavencre.com/resources/investment-property-deal-checklist)  before the conversation. You do not need every document ready to ask an initial question.
+
+### Keep learning
+
+- Financing your first fix-and-flip (https://stonehavencre.com/resources/first-fix-and-flip-financing)
+- Your first DSCR loan: from rent to financing (https://stonehavencre.com/resources/first-dscr-loan)
+- Your first rehab loan: funding the work and the exit (https://stonehavencre.com/resources/first-rehab-loan)
+- Prepare your first investment deal for a lender (https://stonehavencre.com/resources/investment-property-deal-checklist)
+
+Let’s work through your next step
+
+### Let’s make your first deal easier to understand
+
+Tell us the property type, location, intended use and where you are in the process. We can help identify the financing questions to solve first.
+
+Discuss my financing options (https://stonehavencre.com/contact#inquire)
+
+Tell us this is your first investment. We follow up by text or email. Keep account numbers and private documents out of public forms.
+
+### Sources and scope
+
+Sources support the concepts identified in the guide. One lender’s criteria are not universal and do not establish terms available through Stonehaven. Examples are hypothetical, not closed transactions or offers.
+
+- Fannie Mae: General rental income information (conventional underwriting) (https://selling-guide.fanniemae.com/sel/b3-3.8-01/rental-income)
+
+Editorial standards (https://stonehavencre.com/editorial-policy)
+
+---
+
+# Financing your first fix-and-flip
+
+Source: https://stonehavencre.com/resources/first-fix-and-flip-financing
+
+Learn. Prepare. Invest.
+
+## Financing your first fix-and-flip
+
+Learn how first-time flippers finance a purchase and renovation, manage rehab draws, compare LTC and ARV, and budget for the sale and loan payoff.
+
+Stonehaven Lending · Updated September 21, 2026
+
+A fix-and-flip loan usually combines an acquisition advance with renovation funding released under a draw process.  The total commitment is not the amount deposited at closing. For a first project, understand the cash you must bring, the work you must fund temporarily and how the loan will be repaid when you sell.
+
+### Can you get a fix-and-flip loan with no completed flips?
+
+Some lender programs consider first-time investors. Others require completed projects or apply different limits to inexperienced borrowers. Stonehaven can review the scenario with lenders whose criteria may fit; a strong property does not remove borrower requirements.
+
+A useful first file contains an itemized contractor scope, a realistic timeline, evidence for the estimated resale value and available funds. Explain any related construction or real estate experience without calling it a completed flip. A first cosmetic renovation and a first structural rebuild are very different execution risks.
+
+This guide concerns property acquired for business-purpose resale. If you intend to occupy the home, start with a residential financing review (https://stonehavencre.com/residential) .
+
+### Know what LTC, LTV and ARV actually measure
+
+Compare the same loan against different bases
+ | Term | Meaning | Question to ask
+ | LTC: loan to cost | Loan amount divided by lender-recognized project cost | Does the cost basis include only purchase and rehab, or also fees and other items?
+ | LTV: loan to value | Loan amount divided by the value the lender accepts | Is this current value, purchase value or a completed valuation?
+ | ARV: after-repair value | Estimated market value after the proposed work | What scope and comparable sales support it?
+ | Rehab holdback | Loan proceeds reserved for eligible work | What must happen before each portion is released?
+
+Stonehaven has lender relationships that may consider up to 100% of eligible costs on qualifying scenarios. That does not establish first-time-investor eligibility, 100% ARV financing or no cash needed. Ask what “100% LTC” or “LTCV” means in the actual written proposal, including its denominator, excluded expenses and any additional collateral. Avoid comparing percentages with different bases.
+
+### Separate the loan commitment from cash at closing
+
+#### A first flip, worked through
+
+Assume a $200,000 purchase, $60,000 renovation budget and $350,000 projected ARV. A hypothetical $220,000 loan includes a $160,000 acquisition advance and $60,000 rehab holdback.
+
+The loan equals approximately 84.6% of the $260,000 purchase-plus-rehab cost  and 62.9% of the $350,000 ARV . These are two descriptions of the same assumed loan, not lender limits.
+
+Planning cash for this example
+ | Item | Amount | Why it matters
+ | Purchase equity | $40,000 | $200,000 purchase less $160,000 initial advance
+ | Acquisition and financing costs | $10,000 | Hypothetical costs outside the advance
+ | Renovation contingency | $10,000 | Budgeted capacity for changes, not assumed profit
+ | Holding and liquidity reserve | $15,000 | Funds retained for project obligations
+ | Planning cash total | $75,000 | Before any additional float needed to bridge draw timing
+
+Build a weekly cash schedule as well. If the contractor needs $12,000 before a reimbursable milestone, identify which funds can cover that gap without consuming money committed elsewhere. A fully financed rehab budget can still require working cash.
+
+### How renovation draws affect your schedule
+
+A draw is a release of part of the rehab funding. A lender may require completed work, an inspection, invoices and other supporting items. Advance or reimbursement arrangements vary. Get the actual process before signing a contractor payment schedule; do not promise a contractor funds on a date the lender has not committed to.
+
+- Confirm whether interest is charged on outstanding advances, the full commitment or another contractual basis.
+- Identify inspection fees, draw minimums, retainage and evidence needed for release.
+- Ask how change orders, cost overruns and contractor replacement are handled.
+- Confirm whether permits and insurance must be in place before work or funding.
+
+The rehab financing guide (https://stonehavencre.com/resources/first-rehab-loan)  works through a draw and contingency example in more detail.
+
+### Underwrite the sale, including a slower outcome
+
+Estimate the sale price after testing local comparable sales and the finished scope. Then deduct acquisition, renovation, finance and holding costs, selling expenses and any contingency actually spent. Loan principal is a financing source and payoff obligation; do not subtract it a second time after already counting all project costs when calculating project profit.
+
+#### A profit estimate is not a cushion you already own
+
+Using the $350,000 sale assumption, deduct $200,000 purchase, $60,000 work, $10,000 acquisition/financing costs, $15,000 holding costs and $25,000 selling costs. The modeled result is $40,000 before income taxes and uncounted expenses .
+
+A $20,000 lower sale, $10,000 rehab overrun and $5,000 extra holding cost reduce that result to $5,000 . Those are stress assumptions, not market forecasts. Any unspent reserve remains your money; do not treat the same reserve as both an expense and a separate loss.
+
+Check maturity, extension eligibility and extension costs. An extension or a switch to a rental refinance is a separate decision, not a guaranteed fallback. Discuss a rental exit before closing if it is part of your plan.
+
+### How Stonehaven can help with your first flip
+
+We can review your scope, cash plan, experience and exit, then seek a suitable lender fit. Placement means presenting the deal to an appropriate funding source and working through its requirements; it is not an approval before underwriting.
+
+We can help compare the cash at closing and during the project, identify cost exclusions, and clarify the loan’s repayment and draw structure. You remain responsible for inspections, contractor performance, the purchase decision and the work. Start with the deal checklist (https://stonehavencre.com/resources/investment-property-deal-checklist) , including the property’s state, purchase price, repair budget, estimated value and target close.
+
+### Keep learning
+
+- Your first rehab loan: funding the work and the exit (https://stonehavencre.com/resources/first-rehab-loan)
+- Prepare your first investment deal for a lender (https://stonehavencre.com/resources/investment-property-deal-checklist)
+- Your first DSCR loan: from rent to financing (https://stonehavencre.com/resources/first-dscr-loan)
+
+Let’s work through your next step
+
+### Bring us your first flip scenario
+
+We can help review the purchase, rehab budget, cash requirement and proposed exit before seeking lender terms. Let us know you are preparing your first investment project.
+
+Review my first flip (https://stonehavencre.com/commercial/fix-and-flip#inquire)
+
+Tell us this is your first investment. We follow up by text or email. Keep account numbers and private documents out of public forms.
+
+### Sources and scope
+
+Sources support the concepts identified in the guide. One lender’s criteria are not universal and do not establish terms available through Stonehaven. Examples are hypothetical, not closed transactions or offers.
+
+- Lima One Capital: example of lender-specific fix-and-flip eligibility (https://www.limaone.com/hard-money-fix-n-flip/)
+- Lima One Capital: example of a construction draw process (https://www.limaone.com/construction-draw-process-explained/)
+
+Editorial standards (https://stonehavencre.com/editorial-policy)
+
+---
+
+# Your first DSCR loan: from rent to financing
+
+Source: https://stonehavencre.com/resources/first-dscr-loan
+
+Learn. Prepare. Invest.
+
+## Your first DSCR loan: from rent to financing
+
+Understand DSCR rental financing, qualifying rent, PITIA, cash reserves and lender review. Work through a first-rental example and a refinance stress test.
+
+Stonehaven Lending · Updated September 21, 2026
+
+A DSCR loan is a rental-property financing route that generally uses qualifying property rent rather than a personal debt-to-income calculation.  It still involves credit, assets, valuation, property and program review. Passing a DSCR test is not the same as having positive spendable cash flow.
+
+### Can a first-time landlord use DSCR financing?
+
+Some programs consider a borrower buying their first rental. Others set experience, existing homeownership or additional reserve conditions. Explain both your investment history and current housing situation. Being a first-time investor and being a first-time homebuyer are different facts that can matter to underwriting.
+
+A DSCR loan commonly fits a business-purpose rental that meets the lender’s property and condition rules. A house that needs substantial work before it can be rented may need rehab financing first. A property you intend to live in requires an appropriate owner-occupied review.
+
+DSCR is not “no documentation.” Expect a review of identity, credit, assets, ownership structure, the property and the rent evidence. Requirements and availability vary by lender and state.
+
+### Calculate qualifying coverage, then calculate real cash flow
+
+For many one-to-four-unit rental programs, the starting ratio is qualifying monthly rent ÷ the qualifying monthly housing payment . PITIA stands for principal, interest, taxes, insurance and association dues, when applicable. Confirm the actual lender’s rent selection and payment calculation, including any interest-only or stressed-payment treatment.
+
+#### The same property can pass one test and still feel tight
+
+Assume the lender accepts monthly rent of $2,500 and a qualifying PITIA of $2,000. DSCR is $2,500 ÷ $2,000 = 1.25 . The gross difference is $500.
+
+Your operating budget also sets aside $125 for vacancy, $200 for management, $150 for maintenance and $125 for longer-term replacements. Those allowances total $600. The planning result is negative $100 per month , before other unmodeled costs. The 1.25 ratio is an example, not a minimum offered by every lender.
+
+Commercial DSCR often uses annual net operating income divided by annual debt service instead. Do not substitute gross rent for NOI on an apartment or commercial loan. Our commercial loan-sizing guide (https://stonehavencre.com/resources/how-lenders-size-commercial-loans)  explains the distinction.
+
+### Know which rent the lender will accept
+
+A seller’s listing projection, a signed lease, appraiser-supported market rent and short-term-rental revenue are not interchangeable. Ask which evidence applies to the chosen program, whether any adjustment is made, and how vacancies or leases above market are treated.
+
+- Existing tenant:  supply the lease and requested evidence of collected rent through the agreed document channel.
+- Vacant but rent-ready:  ask whether market rent is acceptable and how it will be established.
+- Short-term rental:  confirm local use restrictions, association rules, insurance and the lender’s accepted revenue method.
+- Multiple units:  verify the legal unit count and provide rent and expense information by unit where requested.
+
+Use the DSCR program calculator (https://stonehavencre.com/dscr-program-calculator)  as a planning tool. Its output does not confirm a lender’s rent method, program eligibility or an available quote.
+
+### Compare the whole loan, not just the initial payment
+
+- Borrower and title:  ask whether individual or entity ownership is permitted and who signs a guarantee. An LLC is not a substitute for reviewing liability.
+- Cash to close:  include purchase equity, costs and required reserves. Verify the source and availability of all funds.
+- Payment structure:  distinguish a fixed rate from a variable rate, and amortization length from the actual loan maturity.
+- Interest-only period:  model the later payment and remaining balance. A smaller initial payment does not mean principal has been repaid.
+- Prepayment:  ask how an early sale or refinance would affect costs and permitted repayment.
+- Conditions:  identify appraisal, insurance, lease, entity, title and other requirements still outstanding.
+
+If conventional investment financing is also possible, compare it with DSCR using the same loan amount and intended holding period. Our DSCR versus conventional guide (https://stonehavencre.com/resources/dscr-vs-conventional)  can help frame that discussion.
+
+### For BRRRR, qualify the refinance before relying on it
+
+BRRRR means buy, rehab, rent, refinance and repeat. The refinance is a future application. Completion, rent, ownership seasoning, value, costs and the lender’s then-current requirements can change the proceeds. Do not assume it will return all of your original cash.
+
+#### What if the refinance is smaller?
+
+Assume a completed property value of $300,000 and, solely for this example, a 75% value-based loan limit. That produces $225,000 before the rent-based limit or other constraints. If the existing payoff is $210,000 and new costs are $8,000, the potential remaining proceeds are $7,000.
+
+If the accepted value is instead $280,000, the same modeled limit is $210,000. After the payoff and costs, you would need $8,000 of additional cash . A rent or credit constraint could reduce proceeds further.
+
+Work through this before taking the acquisition loan, particularly when that loan has a short maturity. Our rehab guide (https://stonehavencre.com/resources/first-rehab-loan)  connects the work budget to the rental exit.
+
+### How Stonehaven helps prepare a first DSCR deal
+
+Share the property type and state, purchase or refinance amount, rent estimate, taxes, insurance, association dues and any repairs. Tell us what is confirmed, what is a seller estimate and what still needs checking.
+
+We can compare potential lender fits, help identify the limiting assumption and organize a deal for placement. That may mean considering a smaller loan, additional equity, a different payment structure or a rehab-first route. Final terms depend on underwriting, valuation, documentation and program availability.
+
+You can ask a question before submitting a full file. When ready, use the existing DSCR review form so your inquiry reaches the appropriate team.
+
+### Keep learning
+
+- How to finance your first investment property (https://stonehavencre.com/resources/first-investment-property-financing)
+- Your first rehab loan: funding the work and the exit (https://stonehavencre.com/resources/first-rehab-loan)
+- Prepare your first investment deal for a lender (https://stonehavencre.com/resources/investment-property-deal-checklist)
+
+Let’s work through your next step
+
+### Let’s review your first rental
+
+Bring the rent, purchase or payoff figure and estimated property expenses. We can help test the financing assumptions and identify the next documents needed.
+
+Review my first DSCR deal (https://stonehavencre.com/dscr-review)
+
+Tell us this is your first investment. We follow up by text or email. Keep account numbers and private documents out of public forms.
+
+### Sources and scope
+
+Sources support the concepts identified in the guide. One lender’s criteria are not universal and do not establish terms available through Stonehaven. Examples are hypothetical, not closed transactions or offers.
+
+- Kiavi: example of a lender-specific rental/DSCR program (https://www.kiavi.com/loans/rental)
+- Kiavi: first-rental DSCR methodology and program example (https://www.kiavi.com/blog/dscr-loan-guide-how-to-finance-your-first-rental-property)
+
+Editorial standards (https://stonehavencre.com/editorial-policy)
+
+---
+
+# Your first rehab loan: funding the work and the exit
+
+Source: https://stonehavencre.com/resources/first-rehab-loan
+
+Learn. Prepare. Invest.
+
+## Your first rehab loan: funding the work and the exit
+
+Plan acquisition and renovation funding for a first investment rehab. Understand draws, contingencies, contractor payments and the sale or rental refinance exit.
+
+Stonehaven Lending · Updated September 21, 2026
+
+Rehab financing has two connected jobs: fund the property and fund eligible improvements on a workable schedule.  Decide whether you will sell or rent the finished property, then align the loan term, draw process, contractor contract and exit financing with that plan.
+
+### Which kind of rehab are you actually financing?
+
+“Rehab loan” describes several different situations. A cosmetic rental refresh, a vacant house with major systems work and a structural redevelopment do not present the same budget, timeline or property-eligibility questions.
+
+Start with condition and intended use
+ | Situation | What to discuss | What to verify
+ | Investor renovation followed by resale | Fix-and-flip or rehab bridge funding | Experience, scope, draws and sale timeline
+ | Investor renovation followed by rent | Rehab funding plus a potential rental takeout | Completion, rent, seasoning and refinance proceeds
+ | A home you will occupy | An eligible residential renovation mortgage | Occupancy, borrower qualification and approved work
+ | Major commercial repositioning | Commercial bridge, construction or development financing | Permits, legal use, commercial budget and stabilized income
+
+Fannie Mae’s HomeStyle Renovation framework shows that some conventional renovation structures can include eligible investment-property scenarios. That does not make every property, borrower or contractor eligible, or establish that a particular option is available for your file. Discuss the actual occupancy and scope before choosing a program.
+
+### Build a scope a lender and contractor can both use
+
+Separate work by trade or task, with quantities, costs, timing and responsibility. “Full renovation, $75,000” gives too little information to compare bids, establish draw milestones or evaluate overruns.
+
+- Visible work:  roofs, systems, kitchens, bathrooms, finishes and exterior items as applicable.
+- Preconstruction:  inspections, plans, permits and professional fees.
+- Execution:  labor, materials, disposal, access and temporary utilities.
+- Uncertainty:  known defects needing investigation and a separately identified contingency.
+- Completion:  required final inspections, certificates, tenant readiness or sale preparation.
+
+Use property inspections and contractor estimates to refine the scope before removing contractual protections. The appraisal estimates collateral value; it is not your construction inspection or a warranty that a budget is adequate.
+
+### Map the draw process to your cash calendar
+
+The loan documents control how rehab funds are released. Ask whether a draw is based on work completed, costs paid, materials delivered or another approved milestone, and what evidence the lender needs. Reimbursement timing and contractor payment timing may not match.
+
+- Agree the scope and budget before the loan closes.
+- Identify funds available for deposits and work before reimbursement.
+- Keep invoices, payment records, permits and change approvals organized.
+- Request the draw with the required evidence and allow for review or inspection.
+- Reconcile the amount received against the remaining work and remaining loan funds.
+
+#### A draw shortfall can appear before the project is over budget
+
+Assume a $60,000 rehab allocation. The contractor requests $20,000 for the first stage. You have $12,000 of cash allocated to that stage, and the lender will reimburse only after the work is verified. That leaves an $8,000 timing gap , even though the full project budget still balances.
+
+Possible items to discuss are a revised milestone schedule, lender-approved advance arrangements or additional acceptable working cash. Do not assume you can cover it with unapproved subordinate debt or money already reserved for another obligation.
+
+Ask who services the loan and draws, how fees are charged, whether funds are retained until completion, and what happens if a contractor changes. A lender’s advertised turnaround is not a substitute for the contract and a realistic cash buffer.
+
+### Treat the contingency as available money, not another loan
+
+Choose a contingency with your contractor and advisers based on the building, scope and uncertainty. The lender may apply its own requirement. Make clear whether it is funded inside the loan, supplied as borrower cash, or merely a number in your spreadsheet.
+
+#### What happens when the work costs more?
+
+A $60,000 scope plus a separately funded $9,000 contingency gives a $69,000 planning budget. If verified extra work costs $12,000, the planned contingency covers $9,000 and leaves $3,000 to resolve . Do not count on a larger loan without a new review.
+
+Obtain written approval where required before changing the scope. An upgrade that raises your costs does not necessarily raise the appraised value or the lender’s advance. Keep a running cost-to-complete estimate so the last phase does not depend on funds already spent.
+
+### Choose the sale or rental exit before closing
+
+For a sale, allow time for construction, inspections, listing, contract negotiations and the buyer’s financing. Compare that timeline with maturity and any extension conditions. Model a lower sale price and additional holding time.
+
+For a rental, build an operating budget and assess the prospective refinance separately. A finished house is not automatically financeable at the amount needed to pay off the rehab loan. The first DSCR loan guide (https://stonehavencre.com/resources/first-dscr-loan)  shows how value, rent and costs can leave a payoff shortfall.
+
+The OCC’s refinance-risk guidance reinforces the need to test a future loan against changed market and borrower conditions. It does not establish a guaranteed takeout or extension for a private rehab loan.
+
+If you are already mid-project, bring the current balance, maturity, work completed, funds remaining and a fresh cost-to-complete estimate. Those facts are more useful than repeating the original budget after circumstances have changed.
+
+### How Stonehaven can assist with structure and placement
+
+We can help distinguish the acquisition advance from the rehab commitment, identify questions about draw timing and assess possible sale or refinance routes. We seek lender placement based on the actual scope, experience, property, location and cash available.
+
+A useful review may identify a smaller first phase, more working cash or a different financing route. Changes still need to make operational sense and receive any required lender approval. Stonehaven arranges financing through third-party lenders; we do not control contractor performance, appraisals or the future resale market.
+
+Start with your deal summary (https://stonehavencre.com/resources/investment-property-deal-checklist) . Include whether you already own the property and which costs are estimates rather than agreed bids.
+
+### Keep learning
+
+- Financing your first fix-and-flip (https://stonehavencre.com/resources/first-fix-and-flip-financing)
+- Your first DSCR loan: from rent to financing (https://stonehavencre.com/resources/first-dscr-loan)
+- Prepare your first investment deal for a lender (https://stonehavencre.com/resources/investment-property-deal-checklist)
+
+Let’s work through your next step
+
+### Let’s connect the rehab budget to the financing
+
+Share the purchase or payoff, scope, work budget, ownership position and planned exit. We can help identify the financing questions before the project starts.
+
+Discuss my rehab project (https://stonehavencre.com/commercial/bridge-loans#inquire)
+
+Tell us this is your first investment. We follow up by text or email. Keep account numbers and private documents out of public forms.
+
+### Sources and scope
+
+Sources support the concepts identified in the guide. One lender’s criteria are not universal and do not establish terms available through Stonehaven. Examples are hypothetical, not closed transactions or offers.
+
+- Fannie Mae: HomeStyle Renovation framework (https://singlefamily.fanniemae.com/originating-underwriting/mortgage-products/homestyle-renovation)
+- Lima One Capital: example of a construction draw process (https://www.limaone.com/construction-draw-process-explained/)
+- OCC Bulletin 2024-29: commercial refinance risk (https://www.occ.treas.gov/news-issuances/bulletins/2024/bulletin-2024-29.html)
+
+Editorial standards (https://stonehavencre.com/editorial-policy)
+
+---
+
+# Prepare your first investment deal for a lender
+
+Source: https://stonehavencre.com/resources/investment-property-deal-checklist
+
+Learn. Prepare. Invest.
+
+## Prepare your first investment deal for a lender
+
+Build a clear lender-ready summary for a first rental, flip or rehab. Organize the budget, financing request, experience, documents and exit questions.
+
+Stonehaven Lending · Updated September 21, 2026
+
+A useful deal summary lets a lender understand what you are buying, what will change, where the money comes from and how it gets repaid.  You do not need to sound like an experienced developer. Label estimates, disclose gaps and keep the same assumptions across every version of the file.
+
+### Start with a one-page scenario
+
+Use the following outline in your own notes. Unknown items can be marked “to confirm.” For a first conversation, a concise summary is more useful than an unsorted document bundle.
+
+Your first deal summary
+ | Item | What to prepare
+ | Property and use | State, property type, legal units, current condition and whether anyone related to you will occupy it
+ | Control and timing | Owned, under contract or still searching; purchase price or existing payoff; target close and any contract deadlines
+ | Plan | Sell, hold for rent, renovate, build or refinance; current stage and realistic completion timeline
+ | Budget | Acquisition, work, soft costs, transaction costs, holding costs, contingency and reserves, listed separately
+ | Value and income | Current and projected value with support; existing or expected rent with its source; taxes, insurance and other expenses
+ | Requested financing | Initial acquisition/payoff advance, future rehab funding and any other requested use of proceeds
+ | Borrower and team | Actual experience, proposed ownership, contractor or manager, available cash and any partners
+ | Exit and alternative | Sale or refinance assumptions, maturity fit and the plan if timing or proceeds disappoint
+
+### Stage the documents instead of sending everything at once
+
+#### For the initial discussion
+
+Bring the summary, an itemized budget if work is planned, and the main question you want answered. Avoid guessing private figures just to complete a box. If there is no active property, describe the strategy and location you are considering.
+
+#### When the lender requests a file
+
+- Purchase agreement or current loan and payoff information.
+- Property records, leases, rent roll and operating information appropriate to the deal.
+- Contractor scope, bids, schedule, experience and insurance where applicable.
+- Borrower/entity documents and verified funds as requested.
+- Evidence supporting the proposed value or income, clearly separated from independent valuation.
+
+Use the agreed secure document channel for identity documents, bank statements, tax records and other private material. Public inquiry forms are for a general scenario, not account numbers or confidential files. Get permission before sharing another person’s information.
+
+### Compare written terms on the same assumptions
+
+Create one comparison sheet for the same project budget and expected holding period. A higher loan amount can still leave less usable cash if it includes fees, reserves or a larger holdback.
+
+- At closing:  total commitment, initial advance, payoff deductions, financed costs and cash you must bring.
+- During the project:  payment calculation, funding milestones, inspection costs, retainage and required liquidity.
+- At exit:  maturity, balloon balance, prepayment cost, extension conditions and repayment requirements.
+- Before funding:  appraisal, credit, title, insurance, borrower, entity, contractor and other remaining conditions.
+- Responsibility:  guarantors, collateral, covenants and who services the loan and draw requests.
+
+A preliminary quote, term sheet and final credit approval are different stages. Ask what is binding, what can change, when any fee becomes nonrefundable and what must be completed before money is available. Have counsel review documents where appropriate.
+
+### What deal placement and structuring mean at Stonehaven
+
+Structuring  means working through the financing arrangement: who borrows, what the loan funds, how much cash is needed, when advances occur and how repayment is expected to happen. It does not mean finding a way to omit facts a lender needs.
+
+Placement  means matching that scenario with potential lender criteria and presenting the information for review. We can help clarify feedback, compare proposals and organize follow-up requirements. We cannot commit a lender to approval or guarantee that a future refinance will be available.
+
+If feedback is “not yet,” ask which fact prevents the current request from working. A missing scope, insufficient draw cash and an unsupported rent assumption call for different next steps. An honest constraint can be useful information before you commit more money to a project.
+
+### Before you sign or close
+
+- Reconcile the latest budget, loan structure and cash sources. Remove old numbers from the working file.
+- Confirm the property’s intended use, legal unit count and required approvals with the appropriate professionals.
+- Align the contractor’s payments with the financing process and your available liquidity.
+- Read the final payment, maturity, guarantee and prepayment terms rather than relying on the first quote.
+- Know what you will do if the sale, rent or refinance differs from the base case.
+
+These guides are a starting point for better questions. They do not replace the lender’s requirements, a property inspection or legal and tax advice for your circumstances.
+
+### Keep learning
+
+- How to finance your first investment property (https://stonehavencre.com/resources/first-investment-property-financing)
+- Financing your first fix-and-flip (https://stonehavencre.com/resources/first-fix-and-flip-financing)
+- Your first DSCR loan: from rent to financing (https://stonehavencre.com/resources/first-dscr-loan)
+- Your first rehab loan: funding the work and the exit (https://stonehavencre.com/resources/first-rehab-loan)
+
+Let’s work through your next step
+
+### Have a rough scenario? Start there.
+
+Tell us what you know and what you still need to work out. We can help organize the financing conversation and identify what a lender will need next.
+
+Discuss my first deal (https://stonehavencre.com/contact#inquire)
+
+Tell us this is your first investment. We follow up by text or email. Keep account numbers and private documents out of public forms.
+
+### Sources and scope
+
+Sources support the concepts identified in the guide. One lender’s criteria are not universal and do not establish terms available through Stonehaven. Examples are hypothetical, not closed transactions or offers.
+
+- OCC Bulletin 2024-29: commercial refinance risk (https://www.occ.treas.gov/news-issuances/bulletins/2024/bulletin-2024-29.html)
+
+Editorial standards (https://stonehavencre.com/editorial-policy)
 
