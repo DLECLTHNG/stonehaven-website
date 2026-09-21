@@ -6,6 +6,7 @@ import re
 
 ORIGIN = 'https://stonehavencre.com'
 PILLARS = ['/', '/commercial', '/commercial/construction-loans', '/commercial/fix-and-flip',
+           '/commercial/land-development-loans',
            '/commercial/bridge-loans', '/commercial/multifamily', '/commercial/mixed-use',
            '/commercial/commercial-property', '/commercial/multifamily-acquisition',
            '/commercial/5-8-unit-financing', '/commercial/georgia',

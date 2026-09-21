@@ -1080,6 +1080,464 @@
         "form_prefix": "Commercial bridge financing inquiry",
         "default_type": "Commercial bridge"
       }
+    },
+    "land-development-loans": {
+      "en": {
+        "updated": "2026-09-21",
+        "title": "Land Development & Residential Lot Loans | Stonehaven",
+        "description": "Explore land acquisition, residential development and finished-lot financing. Stonehaven helps structure project funding, compare lenders and plan lot releases.",
+        "name": "Land development and residential lot financing",
+        "eyebrow": "LAND ACQUISITION · DEVELOPMENT · FINISHED LOTS",
+        "h1": "Land development loans<br><em>From site to finished lots</em>",
+        "intro": "From a site under contract to a subdivision ready for homebuilders, Stonehaven helps developers arrange capital for land acquisition, site improvements and finished lots. Bring us the project, the budget and the plan for getting repaid.",
+        "answer": "Land acquisition and development financing, often called A&D financing, supports the purchase and preparation of land for a business-purpose real estate project. Residential lot financing addresses the lots a developer sells or a builder holds before home construction. Stonehaven is a mortgage brokerage: we help package the project, compare suitable lending sources and work through the financing structure with you.",
+        "facts": [
+          [
+            "Project scope",
+            "Land acquisition, residential subdivisions, horizontal development and finished-lot inventory."
+          ],
+          [
+            "Financing size",
+            "Share the total project cost and requested financing. We assess the capital need, available equity and repayment plan for each deal."
+          ],
+          [
+            "Location and structure",
+            "Business-purpose projects nationwide, subject to lender availability and applicable requirements. Recourse and non-recourse requests are reviewed case by case."
+          ]
+        ],
+        "fit_title": "Capital for the stage your project is in",
+        "fits": [
+          [
+            "Land acquisition and development",
+            "You have a site under contract and need to connect the acquisition with the work that makes it developable. We help separate the purchase requirement from the development budget so the capital request is clear."
+          ],
+          [
+            "Subdivision and horizontal development",
+            "You own or control the land and are preparing buildable lots. Present the work in phases, with a clear scope for grading, access, utilities and the other site improvements your project needs."
+          ],
+          [
+            "Finished-lot acquisition and inventory",
+            "You are purchasing completed lots, holding inventory for your own builds or selling lots to other homebuilders. We help explain how lot ownership, construction starts and sale proceeds connect."
+          ]
+        ],
+        "comparison_title": "Compare financing for your development",
+        "comparison_intro": "A bank relationship and a specialty lender can each have a place. Stonehaven helps compare actual proposals against your budget and schedule. These are questions to ask, not promised terms or a ranking of lenders.",
+        "columns": [
+          "What to compare",
+          "Bank financing",
+          "Private or specialty financing",
+          "Stonehaven’s role"
+        ],
+        "rows": [
+          [
+            "Project stage",
+            "Confirm whether the bank will fund acquisition, site work, lot inventory or a combination.",
+            "Confirm the specific stages the lender accepts and whether later phases need separate approval.",
+            "Present the current stage and identify the next funding milestone."
+          ],
+          [
+            "Borrower cash",
+            "Ask which costs and land equity count toward the borrower contribution.",
+            "Ask about cash at closing, reserves, holdbacks and costs paid outside the loan.",
+            "Build a sources-and-uses comparison so the cash requirement is visible."
+          ],
+          [
+            "Guarantees",
+            "Read the proposed repayment and completion obligations.",
+            "Read the same obligations even when the proposal is described as non-recourse.",
+            "Identify the terms that need lender clarification and review with your counsel."
+          ],
+          [
+            "Closing and draws",
+            "Confirm the approval steps, outstanding conditions and draw process.",
+            "Confirm the same items and who authorizes each advance.",
+            "Help coordinate the information needed to move the financing forward."
+          ],
+          [
+            "Lot sales and repayment",
+            "Ask for the release schedule and required principal paydowns.",
+            "Compare release conditions, extension options and any prepayment terms.",
+            "Check how the proposed repayment structure fits your lot-sale plan."
+          ]
+        ],
+        "scenario_title": "What a 40-lot development request could look like",
+        "scenario_intro": "A hypothetical example, not a Stonehaven closing or an available loan offer. The developer plans to acquire a site, complete the site work and sell finished lots to builders.",
+        "scenario_rows": [
+          [
+            "Planned finished lots",
+            "40"
+          ],
+          [
+            "Land acquisition",
+            "$1,400,000"
+          ],
+          [
+            "Site-development budget",
+            "$2,600,000"
+          ],
+          [
+            "Soft costs, reserves and contingency",
+            "$800,000"
+          ],
+          [
+            "Total modeled project cost",
+            "$4,800,000"
+          ],
+          [
+            "Requested loan commitment",
+            "$3,360,000"
+          ],
+          [
+            "Requested loan / total modeled cost",
+            "70% LTC"
+          ],
+          [
+            "Remaining modeled project funding",
+            "$1,440,000"
+          ],
+          [
+            "Assumed lot sales: 40 × $175,000",
+            "$7,000,000 gross"
+          ]
+        ],
+        "scenario_analysis": [
+          "The $3.36 million request covers 70% of the modeled $4.8 million cost. The remaining $1.44 million must be addressed through acceptable equity or another approved source. This percentage is an illustration, not a Stonehaven program limit.",
+          "A loan commitment is not the same as cash received at closing. The proposal should show the acquisition advance, development funds held for later draws and any costs the borrower must pay before reimbursement.",
+          "The $7 million figure is projected gross sales, not an appraisal, profit or cash available today. A useful stress test asks what happens if fewer lots close on schedule, prices change or additional work is needed.",
+          "For a separate repayment illustration, a $175,000 lot sale with an agreed $110,000 principal release payment leaves $65,000 before other closing costs and obligations. That remainder is not automatically distributable profit. Use the actual release agreement when planning cash flow."
+        ],
+        "process_title": "How Stonehaven helps move the project forward",
+        "process": [
+          [
+            "1. Turn the plan into a financing request",
+            "Tell us what you control today, what needs funding next and how the loan will be repaid. We help separate total cost, requested financing and projected sales so they are not treated as interchangeable numbers."
+          ],
+          [
+            "2. Work through lender placement",
+            "We present the scenario to suitable lending sources and help compare the available structures. The discussion includes land basis, borrower contribution, funding stages, repayment and guarantee requirements."
+          ],
+          [
+            "3. Coordinate the path to closing",
+            "Once there is a viable lending path, we help organize outstanding information and lender questions. Before closing, confirm who handles draws, inspections, lot releases and subsequent phases."
+          ]
+        ],
+        "docs_title": "What to prepare for a development-loan review",
+        "docs": [
+          "Site location, acreage, current ownership or purchase contract, acquisition basis and any existing payoff.",
+          "Lot count, proposed use, project phases and the current zoning, entitlement and permit status.",
+          "A budget separating land, site work, professional fees, reserves and contingency.",
+          "Site plans and an anticipated schedule for development, completion and sales.",
+          "Builder purchase or lot-takedown agreements, if in place, plus the proposed sales plan.",
+          "Developer experience, project team and a summary of funds available for the borrower contribution.",
+          "Relevant third-party reports already available. The lender will specify what else is required."
+        ],
+        "exclusions_title": "Developing homes for sale or building your own home?",
+        "exclusions": "This page is for business-purpose development and lot financing. If you are building a home to live in, use our residential lending page so we can review the appropriate consumer-mortgage route and state availability. For documents, start with the form below and we will arrange the appropriate next step.",
+        "faqs": [
+          [
+            "Can I request non-recourse land-development financing?",
+            "Yes, tell us that non-recourse is a priority so we can evaluate suitable placement options. Availability and the exact obligations are lender- and project-specific. A non-recourse label does not by itself confirm that completion obligations, exceptions or other guarantees are absent. Review the actual terms with the lender and your legal adviser."
+          ],
+          [
+            "Can land I already own contribute to the deal?",
+            "We can review a project with owned land. Share the acquisition basis, current debt and any recent valuation. Whether the land receives equity credit, and how much, depends on the lender’s accepted basis and the financing structure. Existing ownership does not automatically eliminate the need for cash."
+          ],
+          [
+            "Does the site have to be fully entitled or shovel-ready?",
+            "Tell us the exact stage rather than waiting to make an introduction. A site still seeking approvals requires a different discussion from a permitted development. We can review the proposed path, but the lender determines what must be completed before it can commit or fund."
+          ],
+          [
+            "How do lot releases work?",
+            "When a financed lot is sold, the lender may require a specified principal payment before releasing its lien on that lot. The release schedule affects the cash available for remaining work. Review the release amounts and conditions before assuming that each sale will fund the next phase."
+          ],
+          [
+            "Can you also help finance the homes built on the lots?",
+            "Yes, we can review the home-construction stage as well as the land and lot stage. These may require separate facilities or separate approvals. Our construction financing page explains the next step for builders planning ground-up homes or teardown-and-rebuild projects."
+          ],
+          [
+            "Can a first-time developer send a project?",
+            "Yes. Describe your experience accurately and identify the builder, civil engineer and other experienced team members involved. We can help you prepare a coherent financing request and identify what needs more work. Acceptance and terms still depend on lender review."
+          ],
+          [
+            "How quickly will I hear back?",
+            "We aim to provide initial deal feedback in under one hour and follow up by text. Initial feedback is a first look at the scenario, not a lender approval or a commitment to close on a particular date. Include your target closing date so timing is part of the review."
+          ]
+        ],
+        "links": [
+          [
+            "/commercial/construction-loans",
+            "Ground-up construction financing",
+            "Connect completed lots with the capital needed to build and sell homes."
+          ],
+          [
+            "/commercial/development-financing-for-architects",
+            "Development financing for project teams",
+            "Bring site planning, design and capital discussions together earlier."
+          ],
+          [
+            "/resources/first-time-property-investor",
+            "First-time investor learning center",
+            "Build your understanding of budgets, loan structures and preparing a deal."
+          ],
+          [
+            "/commercial/bridge-loans",
+            "Commercial bridge financing",
+            "Review a transitional funding need and the proposed repayment plan."
+          ],
+          [
+            "/resources/how-lenders-size-commercial-loans",
+            "How lenders size a loan",
+            "Keep loan amount, cost, value and repayment capacity separate."
+          ],
+          [
+            "/residential",
+            "Financing for a home you will live in",
+            "Explore the residential route and the states we currently serve."
+          ]
+        ],
+        "source_note": "The OCC materials below provide background on bank development-loan review, valuation and lot releases. They do not establish Stonehaven loan terms or require every private lender to use the same approach. The example is illustrative; actual financing is subject to lender underwriting, documentation and availability.",
+        "sources": [
+          [
+            "https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf",
+            "OCC: Commercial Real Estate Lending handbook"
+          ],
+          [
+            "https://www.occ.treas.gov/news-issuances/bulletins/2005/bulletin-2005-32.html",
+            "OCC: Residential Tract Development Lending FAQs"
+          ]
+        ],
+        "form_title": "Tell us about your land or development project",
+        "form_prefix": "Land acquisition, development and residential lot financing inquiry",
+        "default_type": "Land acquisition and development"
+      },
+      "es": {
+        "updated": "2026-09-21",
+        "title": "Financiamiento de terrenos y lotes | Stonehaven",
+        "description": "Explore financiamiento para adquirir terrenos, desarrollar comunidades residenciales y comprar lotes terminados. Prepare su proyecto con Stonehaven.",
+        "name": "Financiamiento de terrenos y lotes residenciales",
+        "eyebrow": "ADQUISICIÓN · DESARROLLO · LOTES TERMINADOS",
+        "h1": "Financiamiento de terrenos<br><em>Del proyecto al lote terminado</em>",
+        "intro": "Desde un terreno bajo contrato hasta una subdivisión lista para constructores, Stonehaven ayuda a tramitar capital para adquisición, mejoras del sitio y lotes terminados. Comparta el proyecto, el presupuesto y el plan de pago.",
+        "answer": "El financiamiento de adquisición y desarrollo, conocido como A&D, apoya la compra y preparación de terrenos para un proyecto inmobiliario con fines comerciales. El financiamiento de lotes residenciales aborda los lotes que un desarrollador vende o un constructor mantiene antes de edificar viviendas. Stonehaven es una correduría hipotecaria: ayudamos a preparar el expediente, comparar fuentes de crédito y revisar la estructura del financiamiento.",
+        "facts": [
+          [
+            "Alcance del proyecto",
+            "Adquisición de terrenos, subdivisiones residenciales, infraestructura del sitio e inventario de lotes terminados."
+          ],
+          [
+            "Monto de financiamiento",
+            "Comparta el costo total y el financiamiento solicitado. Evaluamos la necesidad de capital, la aportación disponible y el plan de pago de cada proyecto."
+          ],
+          [
+            "Ubicación y estructura",
+            "Proyectos con fines comerciales a nivel nacional, sujetos a disponibilidad y requisitos aplicables. Las solicitudes con o sin recurso se revisan caso por caso."
+          ]
+        ],
+        "fit_title": "Capital para la etapa de su proyecto",
+        "fits": [
+          [
+            "Adquisición y desarrollo de terrenos",
+            "Tiene un terreno bajo contrato y necesita conectar la compra con las obras que permiten desarrollarlo. Ayudamos a separar los fondos de adquisición del presupuesto de desarrollo para presentar una solicitud clara."
+          ],
+          [
+            "Subdivisiones e infraestructura del sitio",
+            "Es dueño del terreno o tiene control contractual y prepara lotes edificables. Presente la obra por etapas, con el alcance de nivelación, accesos, servicios y las demás mejoras necesarias."
+          ],
+          [
+            "Adquisición e inventario de lotes terminados",
+            "Compra lotes terminados, mantiene inventario para construir o vende lotes a otros constructores. Ayudamos a explicar cómo se relacionan la propiedad de los lotes, el inicio de las obras y los ingresos por ventas."
+          ]
+        ],
+        "comparison_title": "Compare el financiamiento según el proyecto",
+        "comparison_intro": "Un banco y un prestamista especializado pueden tener funciones distintas. Stonehaven ayuda a comparar propuestas reales con su presupuesto y calendario. Estos son temas para revisar, no condiciones prometidas ni una clasificación de prestamistas.",
+        "columns": [
+          "Qué comparar",
+          "Financiamiento bancario",
+          "Capital privado o especializado",
+          "Función de Stonehaven"
+        ],
+        "rows": [
+          [
+            "Etapa del proyecto",
+            "Confirme si el banco financia adquisición, mejoras, inventario de lotes o una combinación.",
+            "Confirme las etapas que admite el prestamista y si las fases posteriores requieren otra aprobación.",
+            "Presentar la etapa actual e identificar el próximo hito de financiamiento."
+          ],
+          [
+            "Aportación del solicitante",
+            "Pregunte qué costos y patrimonio del terreno se reconocen como aportación.",
+            "Pregunte por efectivo al cierre, reservas, fondos retenidos y costos fuera del préstamo.",
+            "Comparar fuentes y usos para que la necesidad de efectivo sea visible."
+          ],
+          [
+            "Garantías",
+            "Revise las obligaciones de pago y de terminación de la obra.",
+            "Revise las mismas obligaciones aunque la propuesta se describa como sin recurso.",
+            "Identificar los términos que requieren aclaración del prestamista y revisión con su abogado."
+          ],
+          [
+            "Cierre y desembolsos",
+            "Confirme los pasos de aprobación, las condiciones pendientes y el proceso de desembolsos.",
+            "Confirme los mismos puntos y quién autoriza cada anticipo.",
+            "Ayudar a coordinar la información necesaria para avanzar."
+          ],
+          [
+            "Venta de lotes y pago",
+            "Solicite el calendario de liberaciones y los pagos de capital exigidos.",
+            "Compare condiciones de liberación, prórrogas y posibles condiciones de pago anticipado.",
+            "Revisar cómo encaja el plan de pago con las ventas previstas de lotes."
+          ]
+        ],
+        "scenario_title": "Cómo podría presentarse un desarrollo de 40 lotes",
+        "scenario_intro": "Ejemplo hipotético, no un cierre de Stonehaven ni una oferta de préstamo disponible. El desarrollador propone comprar el terreno, completar las mejoras y vender lotes terminados a constructores.",
+        "scenario_rows": [
+          [
+            "Lotes terminados previstos",
+            "40"
+          ],
+          [
+            "Adquisición del terreno",
+            "$1,400,000"
+          ],
+          [
+            "Presupuesto de obras del sitio",
+            "$2,600,000"
+          ],
+          [
+            "Gastos indirectos, reservas y contingencia",
+            "$800,000"
+          ],
+          [
+            "Costo total del ejemplo",
+            "$4,800,000"
+          ],
+          [
+            "Préstamo solicitado",
+            "$3,360,000"
+          ],
+          [
+            "Préstamo / costo total del ejemplo",
+            "70% LTC"
+          ],
+          [
+            "Financiamiento restante del proyecto",
+            "$1,440,000"
+          ],
+          [
+            "Ventas supuestas: 40 × $175,000",
+            "$7,000,000 brutos"
+          ]
+        ],
+        "scenario_analysis": [
+          "La solicitud de $3.36 millones cubre el 70% del costo modelado de $4.8 millones. Los $1.44 millones restantes deben cubrirse con capital admisible u otra fuente aprobada. El porcentaje es ilustrativo, no un límite de programa de Stonehaven.",
+          "Un compromiso de préstamo no equivale a recibir todo el dinero al cierre. La propuesta debe mostrar el anticipo de adquisición, los fondos de desarrollo reservados para desembolsos posteriores y los costos que el solicitante paga antes de un reembolso.",
+          "Los $7 millones representan ventas brutas previstas, no un avalúo, utilidad ni efectivo disponible hoy. Conviene evaluar qué ocurre si se venden menos lotes según el calendario, cambian los precios o se necesita obra adicional.",
+          "Como ejemplo separado de pago, una venta de lote de $175,000 con un pago de capital acordado de $110,000 para liberar el gravamen deja $65,000 antes de otros costos y obligaciones. Ese saldo no es automáticamente utilidad distribuible. Use el acuerdo real de liberación al planear el flujo de efectivo."
+        ],
+        "process_title": "Cómo ayuda Stonehaven a avanzar el proyecto",
+        "process": [
+          [
+            "1. Convertir el plan en una solicitud",
+            "Explique qué controla hoy, qué necesita financiar a continuación y cómo se pagará el préstamo. Ayudamos a distinguir costo total, financiamiento solicitado y ventas previstas."
+          ],
+          [
+            "2. Buscar fuentes de financiamiento",
+            "Presentamos el escenario a fuentes de crédito adecuadas y ayudamos a comparar las estructuras disponibles. La revisión incluye base del terreno, aportación del solicitante, etapas de desembolso, pago y garantías."
+          ],
+          [
+            "3. Coordinar el camino al cierre",
+            "Cuando existe una vía de financiamiento viable, ayudamos a organizar información pendiente y preguntas del prestamista. Antes del cierre, confirme quién gestiona desembolsos, inspecciones, liberación de lotes y fases posteriores."
+          ]
+        ],
+        "docs_title": "Qué preparar para revisar el préstamo",
+        "docs": [
+          "Ubicación, superficie, propiedad actual o contrato de compra, base de adquisición y saldo de deuda existente.",
+          "Número de lotes, uso propuesto, fases y estado actual de zonificación, autorizaciones y permisos.",
+          "Presupuesto que separe terreno, obra, honorarios profesionales, reservas y contingencia.",
+          "Planos del sitio y calendario previsto de desarrollo, terminación y ventas.",
+          "Acuerdos de compra de lotes con constructores, si existen, y el plan de ventas.",
+          "Experiencia del desarrollador, equipo del proyecto y resumen de fondos disponibles para la aportación.",
+          "Informes de terceros que ya estén disponibles. El prestamista indicará qué más se requiere."
+        ],
+        "exclusions_title": "¿Desarrolla viviendas para vender o construye su propia casa?",
+        "exclusions": "Esta página trata del financiamiento de desarrollo y lotes con fines comerciales. Si construye una vivienda para habitarla, use nuestra página residencial para revisar la ruta hipotecaria de consumo y la disponibilidad por estado. Para documentos, comience con el formulario y coordinaremos el siguiente paso apropiado.",
+        "faqs": [
+          [
+            "¿Puedo solicitar financiamiento de desarrollo sin recurso?",
+            "Sí. Indique que una estructura sin recurso es una prioridad para evaluar opciones de colocación adecuadas. La disponibilidad y las obligaciones dependen del prestamista y del proyecto. La etiqueta sin recurso no confirma por sí sola que no existan obligaciones de terminación, excepciones u otras garantías. Revise las condiciones reales con el prestamista y su asesor legal."
+          ],
+          [
+            "¿Puede contribuir al proyecto un terreno que ya poseo?",
+            "Podemos revisar un proyecto con terreno propio. Comparta la base de adquisición, la deuda actual y cualquier valoración reciente. El reconocimiento del patrimonio, y su monto, dependen de la base aceptada por el prestamista y la estructura. Ser dueño del terreno no elimina automáticamente la necesidad de efectivo."
+          ],
+          [
+            "¿El terreno debe tener todas las autorizaciones y estar listo para obra?",
+            "Indique la etapa exacta sin esperar para presentar el proyecto. Un terreno pendiente de autorizaciones requiere una revisión distinta de un desarrollo con permisos. Podemos revisar la ruta propuesta, pero el prestamista decide qué debe completarse antes de comprometer o desembolsar fondos."
+          ],
+          [
+            "¿Cómo funciona la liberación de lotes?",
+            "Cuando se vende un lote financiado, el prestamista puede exigir un pago de capital antes de liberar el gravamen de ese lote. El calendario de liberación afecta el efectivo disponible para terminar la obra. Revise los montos y condiciones antes de suponer que cada venta financiará la próxima fase."
+          ],
+          [
+            "¿También pueden ayudar a financiar las viviendas de esos lotes?",
+            "Sí, podemos revisar la etapa de construcción de viviendas y la etapa del terreno y los lotes. Pueden requerir préstamos o aprobaciones separados. Nuestra página de financiamiento de construcción explica el siguiente paso para obra nueva o demolición y reconstrucción."
+          ],
+          [
+            "¿Puede presentar un proyecto un desarrollador sin experiencia previa?",
+            "Sí. Describa su experiencia con precisión e identifique al constructor, ingeniero civil y otros integrantes con experiencia. Podemos ayudar a preparar una solicitud coherente e identificar lo que necesita más trabajo. La aceptación y las condiciones dependen de la revisión del prestamista."
+          ],
+          [
+            "¿Cuándo recibiré una respuesta?",
+            "Buscamos dar una respuesta inicial sobre el proyecto en menos de una hora y seguimos por mensaje de texto. Es una primera revisión, no una aprobación del prestamista ni un compromiso de cerrar en una fecha determinada. Incluya su fecha objetivo de cierre para considerar el calendario."
+          ]
+        ],
+        "links": [
+          [
+            "/es/commercial/construction-loans",
+            "Financiamiento de obra nueva",
+            "Conecte los lotes terminados con el capital para construir y vender viviendas."
+          ],
+          [
+            "/es/commercial/development-financing-for-architects",
+            "Financiamiento para equipos de desarrollo",
+            "Conecte planificación del sitio, diseño y capital desde una etapa temprana."
+          ],
+          [
+            "/es/resources/first-time-property-investor",
+            "Guías para nuevos inversionistas",
+            "Aprenda sobre presupuestos, estructuras de préstamo y preparación del expediente."
+          ],
+          [
+            "/es/commercial/bridge-loans",
+            "Financiamiento puente comercial",
+            "Revise una necesidad temporal de capital y su plan de pago."
+          ],
+          [
+            "/resources/how-lenders-size-commercial-loans",
+            "Cómo se calcula el monto de un préstamo (en inglés)",
+            "Distinga monto solicitado, costo, valor y capacidad de pago."
+          ],
+          [
+            "/es/residential",
+            "Financiamiento para la casa que habitará",
+            "Explore la ruta residencial y los estados donde ofrecemos estos préstamos."
+          ]
+        ],
+        "source_note": "Los materiales de la OCC ofrecen contexto sobre revisión bancaria de préstamos de desarrollo, valoración y liberación de lotes. No establecen condiciones de Stonehaven ni obligan a todos los prestamistas privados a usar el mismo enfoque. El ejemplo es ilustrativo; el financiamiento real está sujeto a evaluación, documentación y disponibilidad.",
+        "sources": [
+          [
+            "https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf",
+            "OCC: manual de préstamos inmobiliarios comerciales"
+          ],
+          [
+            "https://www.occ.treas.gov/news-issuances/bulletins/2005/bulletin-2005-32.html",
+            "OCC: preguntas sobre desarrollo de conjuntos residenciales"
+          ]
+        ],
+        "form_title": "Cuéntenos sobre su terreno o desarrollo",
+        "form_prefix": "Land acquisition, development and residential lot financing inquiry",
+        "default_type": "Land acquisition and development"
+      }
     }
   }
 }

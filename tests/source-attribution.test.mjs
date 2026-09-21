@@ -365,3 +365,26 @@ test('blank or missing contact fields never submit or count as conversions', asy
   assert.equal(p.data().name, 'Test Person');
   assert.equal(p.ads.length, 1);
 });
+
+test('land development inquiries retain project details and Commercial classification without exposing them to analytics', async () => {
+  for (const prefix of ['', 'es/']) {
+    const route = '/' + prefix + 'commercial/land-development-loans';
+    const html = readFileSync(prefix + 'commercial/land-development-loans.html', 'utf8');
+    const formTag = html.match(/<form\b[^>]*data-sh-form=[^>]*>/)[0];
+    const formAttrs = Object.fromEntries([...formTag.matchAll(/(data-sh-[\w-]+)="([^"]*)"/g)].map(match => [match[1], match[2]]));
+    const fields = { total_project_cost: '4800000', requested_amount: '3360000', project_value: '7000000',
+      project_type: 'Land acquisition and development', property_owned: 'Under contract', timeline: '60-90 days',
+      lot_count: '40', project_stage: 'Entitled, permits pending', builder_contracts: 'Builder discussions underway', exit_strategy: 'Sell finished lots' };
+    for (const key of Object.keys(fields)) assert.ok(html.includes('name="' + key + '"'), `missing ${key} on ${route}`);
+    const p = page({ url: 'https://stonehavencre.com' + route, referrer: 'https://www.google.com/', formAttrs, fields });
+    p.submit(); await flush();
+    assert.equal(p.data()['form-name'], 'lead');
+    assert.equal(p.data().product, 'Commercial');
+    assert.equal(p.data().page, 'commercial-land-development-loans');
+    assert.equal(p.data().lang, prefix ? 'es' : 'en');
+    for (const [key, value] of Object.entries(fields)) assert.equal(p.extra()[key], value);
+    assert.equal(p.extra().attribution.submission_path, route);
+    assert.equal(p.events.filter(event => event[1] === 'generate_lead').length, 1);
+    assert.doesNotMatch(JSON.stringify([p.events, p.meta]), /4800000|3360000|7000000|Builder discussions underway|private@example.com/);
+  }
+});

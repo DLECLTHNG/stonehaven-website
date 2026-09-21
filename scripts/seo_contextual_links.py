@@ -98,6 +98,9 @@ def reading_paths(pages, local, es):
         return link(pages, path, label)
     paragraphs = []
     heading = 'Prepare la siguiente decisión' if es else 'Prepare the next decision'
+    if local in ['/commercial', '/commercial/construction-loans', '/commercial/development-financing-for-architects', '/resources/commercial', '/blog/residential-development-financing-georgia-florida-texas-case-study']:
+        paragraphs.append(('¿Está comprando un terreno, preparando una subdivisión o financiando lotes terminados? Revise nuestro '+a('/commercial/land-development-loans', 'land development and residential lot financing', 'financiamiento de terrenos y lotes residenciales')+' para conectar adquisición, obras del sitio, acuerdos con constructores y liberación de lotes.') if es else
+                          'Acquiring a site, developing a subdivision or financing finished lots? Explore our '+a('/commercial/land-development-loans', 'land development and residential lot financing')+' page to connect acquisition, site work, builder contracts and lot releases in one project review.')
     if local in ['/', '/commercial', '/resources/commercial', '/resources/residential', '/blog']:
         paragraphs.append(('¿Está preparando su primera inversión? Nuestro '+a('/resources/first-time-property-investor', 'first-time investor learning center', 'centro de guías para nuevos inversionistas')+' conecta financiamiento de alquiler, renovación y reventa con presupuestos, desembolsos y preparación del expediente. Puede empezar a aprender antes de tener una propiedad bajo contrato.') if es else
                           'Planning your first investment? Our '+a('/resources/first-time-property-investor', 'first-time investor learning center')+' connects rental, fix-and-flip and rehab financing with budgets, draws and deal preparation. You can start learning before you have a property under contract.')
