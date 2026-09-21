@@ -62,12 +62,34 @@ def form(slug, lang, c):
              ('Fix and flip', 'Compra, remodelación y reventa'), ('Commercial bridge', 'Puente comercial'),
              ('Value-add / lease-up', 'Mejoras / arrendamiento'), ('Commercial refinance', 'Refinanciamiento comercial'),
              ('Other CRE project', 'Otro proyecto comercial')]
+    if slug == 'land-development-loans':
+        types = [('Land acquisition and development', 'Adquisición y desarrollo de terrenos'),
+                 ('Horizontal / subdivision development', 'Infraestructura o subdivisión'),
+                 ('Finished-lot acquisition / inventory', 'Compra o inventario de lotes terminados'),
+                 ('Land development plus home construction', 'Desarrollo de terrenos y construcción de viviendas'),
+                 ('Other business-purpose project', 'Otro proyecto con fines comerciales')]
     ordered = sorted(types, key=lambda item: item[0] != c['default_type'])
     fields += field('project_type', 'Tipo de proyecto' if es else 'Project type', options=[('', choose)] + [(v, text if es else v) for v, text in ordered])
     fields += field('property_owned', '¿Ya es dueño del inmueble?' if es else 'Do you own the property already?', options=[('', choose), ('Yes', 'Sí' if es else 'Yes'), ('Under contract', 'Bajo contrato' if es else 'Under contract'), ('No', 'No')])
     times = [('As soon as possible', 'Lo antes posible'), ('Within 30 days', 'Dentro de 30 días'),
              ('30-60 days', '30-60 días'), ('60-90 days', '60-90 días'), ('More than 90 days / exploring', 'Más de 90 días / explorando')]
     fields += field('timeline', '¿Cuándo desea cerrar?' if es else 'When do you want to close?', options=[('', choose)] + [(v, text if es else v) for v, text in times])
+    if slug == 'land-development-loans':
+        fields += field('lot_count', 'Número de lotes (opcional)' if es else 'Number of lots (optional)', 'number', False)
+        stages = [('Concept / feasibility', 'Concepto o viabilidad'), ('Entitlements in progress', 'Autorizaciones en trámite'),
+                  ('Entitled, permits pending', 'Autorizado, permisos pendientes'), ('Permitted / ready for site work', 'Con permisos, listo para obra'),
+                  ('Site work underway', 'Obras del sitio en curso'), ('Finished lots', 'Lotes terminados')]
+        fields += field('project_stage', 'Etapa del proyecto (opcional)' if es else 'Project stage (optional)', required=False,
+                        options=[('', choose)] + [(v, text if es else v) for v, text in stages])
+        contracts = [('Signed lot purchase / takedown agreements', 'Acuerdos de compra de lotes firmados'),
+                     ('Builder discussions underway', 'En conversaciones con constructores'),
+                     ('No builder contracts yet', 'Aún sin contratos con constructores'), ('Building the homes ourselves', 'Construiremos las viviendas')]
+        fields += field('builder_contracts', 'Acuerdos con constructores (opcional)' if es else 'Builder contracts (optional)', required=False,
+                        options=[('', choose)] + [(v, text if es else v) for v, text in contracts])
+        exits = [('Sell finished lots', 'Vender lotes terminados'), ('Build and sell homes', 'Construir y vender viviendas'),
+                 ('Refinance / hold', 'Refinanciar o mantener'), ('Still evaluating', 'Aún en evaluación')]
+        fields += field('exit_strategy', 'Plan de salida (opcional)' if es else 'Exit plan (optional)', required=False,
+                        options=[('', choose)] + [(v, text if es else v) for v, text in exits])
     channels = [('Google', 'Google'), ('ChatGPT', 'ChatGPT'), ('Bing / Copilot', 'Bing / Copilot'),
                 ('Perplexity', 'Perplexity'), ('Other AI assistant', 'Otro asistente de IA'),
                 ('Referral', 'Recomendación'), ('Other', 'Otro')]
@@ -153,4 +175,4 @@ def build(slug, lang, c):
 for route_slug, languages in BRIEF['pages'].items():
     for language, content in languages.items():
         build(route_slug, language, content)
-print('Built 6 bilingual CRE service pages.')
+print(f'Built {sum(len(languages) for languages in BRIEF["pages"].values())} CRE service pages.')
