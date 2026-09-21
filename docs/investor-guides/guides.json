@@ -1,0 +1,651 @@
+{
+  "published": "2026-09-21",
+  "updated": "2026-09-21",
+  "sources": {
+    "fannie-rent": {
+      "url": "https://selling-guide.fanniemae.com/sel/b3-3.8-01/rental-income",
+      "en": "Fannie Mae: General rental income information (conventional underwriting)",
+      "es": "Fannie Mae: información general sobre ingresos de alquiler (evaluación convencional, en inglés)"
+    },
+    "homestyle": {
+      "url": "https://singlefamily.fanniemae.com/originating-underwriting/mortgage-products/homestyle-renovation",
+      "en": "Fannie Mae: HomeStyle Renovation framework",
+      "es": "Fannie Mae: marco del programa HomeStyle Renovation (en inglés)"
+    },
+    "flip": {
+      "url": "https://www.limaone.com/hard-money-fix-n-flip/",
+      "en": "Lima One Capital: example of lender-specific fix-and-flip eligibility",
+      "es": "Lima One Capital: ejemplo de criterios de un prestamista para renovación y reventa (en inglés)"
+    },
+    "draws": {
+      "url": "https://www.limaone.com/construction-draw-process-explained/",
+      "en": "Lima One Capital: example of a construction draw process",
+      "es": "Lima One Capital: ejemplo de un proceso de desembolsos de obra (en inglés)"
+    },
+    "dscr": {
+      "url": "https://www.kiavi.com/loans/rental",
+      "en": "Kiavi: example of a lender-specific rental/DSCR program",
+      "es": "Kiavi: ejemplo de un programa de alquiler y DSCR de un prestamista (en inglés)"
+    },
+    "kiavi-first": {
+      "url": "https://www.kiavi.com/blog/dscr-loan-guide-how-to-finance-your-first-rental-property",
+      "en": "Kiavi: first-rental DSCR methodology and program example",
+      "es": "Kiavi: metodología DSCR y ejemplo para una primera propiedad de alquiler (en inglés)"
+    },
+    "occ": {
+      "url": "https://www.occ.treas.gov/news-issuances/bulletins/2024/bulletin-2024-29.html",
+      "en": "OCC Bulletin 2024-29: commercial refinance risk",
+      "es": "Boletín OCC 2024-29: riesgo de refinanciamiento comercial (en inglés)"
+    }
+  },
+  "pages": {
+    "first-time-property-investor": {
+      "en": {
+        "name": "Your first investment property starts with a plan",
+        "title": "First-Time Investor Financing Guides | Stonehaven",
+        "description": "Learn how rental, fix-and-flip and rehab financing work. Build your budget, understand lender requirements and prepare your first deal with Stonehaven.",
+        "h1": "Your first investment property starts with a plan",
+        "answer": "<strong>You do not need to know every lending term to start.</strong> You need a clear plan for the property, an honest picture of the cash you can commit, and a way to repay the loan. These guides help you work through those decisions before choosing financing.",
+        "sections": [
+          {
+            "id": "choose",
+            "heading": "Choose the guide for your next decision",
+            "html": "<p>Buying a rental, renovating a house to sell, and rebuilding a property involve different financing questions. Start with the investment-property overview if you are still choosing a strategy. Then follow the guide that matches what you want to do.</p><!-- GUIDE-CARDS -->"
+          },
+          {
+            "id": "journey",
+            "heading": "From an idea to a financeable project",
+            "html": "<ol><li><strong>Define the outcome.</strong> Will you sell, hold for rent, or occupy part of the property? Describe the intended use accurately from the beginning.</li><li><strong>Build the budget.</strong> Separate the purchase, improvements, closing expenses, holding costs, contingency and cash reserves.</li><li><strong>Test the numbers.</strong> Look at a slower sale, lower rent, higher expenses or a smaller refinance. A deal should have a plan for more than its best outcome.</li><li><strong>Review financing fit.</strong> Match the lender to your experience, property condition, project size, location and exit plan.</li><li><strong>Prepare and compare.</strong> Use one consistent deal summary to compare written terms, cash requirements and conditions.</li></ol><p>You can come to Stonehaven before you have a property under contract. Tell us what you are learning, the type of project you have in mind and the questions you want to answer. If figures are not known yet, say so.</p>"
+          },
+          {
+            "id": "support",
+            "heading": "How Stonehaven fits into your journey",
+            "html": "<p>Stonehaven Lending is a mortgage brokerage. We help you organize the scenario, review possible financing structures and seek placement through third-party lender relationships. A useful first conversation can identify a missing budget item, an unsuitable loan term or an exit assumption that needs more work.</p><p>We can help compare rental financing, acquisition and rehab funding, bridge loans and commercial options. Lenders make credit decisions and set conditions. Contractors, inspectors, attorneys, accountants and property managers have separate roles; financing support does not replace their work.</p><p>There is no need to make your first project sound bigger or more experienced than it is. An accurate picture gives us a better starting point.</p>"
+          }
+        ],
+        "related": [
+          "first-investment-property-financing",
+          "investment-property-deal-checklist"
+        ],
+        "cta": "/contact#inquire",
+        "cta_title": "Still working out where to start?",
+        "cta_text": "Share the kind of investment you are considering and the financing questions on your mind. We can help you organize the next step.",
+        "cta_label": "Ask about my first investment",
+        "card": "",
+        "sources": [
+          "fannie-rent",
+          "occ"
+        ]
+      },
+      "es": {
+        "name": "Su primera inversión inmobiliaria empieza con un plan",
+        "title": "Guías para nuevos inversionistas | Stonehaven",
+        "description": "Aprenda cómo funcionan los préstamos para alquiler, renovación y reventa. Prepare su presupuesto, conozca los requisitos y organice su primera inversión.",
+        "h1": "Su primera inversión inmobiliaria empieza con un plan",
+        "answer": "<strong>No necesita conocer todos los términos financieros para empezar.</strong> Necesita un plan claro para el inmueble, una idea realista del efectivo disponible y una forma de pagar el préstamo. Estas guías le ayudan a resolver esas decisiones antes de elegir financiamiento.",
+        "sections": [
+          {
+            "id": "choose",
+            "heading": "Elija la guía para su próxima decisión",
+            "html": "<p>Comprar para alquilar, renovar una casa para venderla y reconstruir un inmueble plantean preguntas distintas. Empiece por la guía general si todavía está eligiendo una estrategia. Después, siga la guía que corresponda a lo que quiere hacer.</p><!-- GUIDE-CARDS -->"
+          },
+          {
+            "id": "journey",
+            "heading": "De una idea a un proyecto listo para evaluación",
+            "html": "<ol><li><strong>Defina el resultado.</strong> ¿Venderá, mantendrá el inmueble en alquiler u ocupará una parte? Describa el uso previsto con precisión desde el principio.</li><li><strong>Prepare el presupuesto.</strong> Separe compra, mejoras, gastos de cierre, mantenimiento durante el proyecto, contingencia y reservas.</li><li><strong>Ponga a prueba los números.</strong> Considere una venta más lenta, menor renta, gastos mayores o un refinanciamiento menor. El proyecto necesita un plan que contemple más que el mejor resultado.</li><li><strong>Revise la compatibilidad.</strong> Los criterios del prestamista deben corresponder a su experiencia, condición del inmueble, tamaño, ubicación y estrategia de salida.</li><li><strong>Prepare y compare.</strong> Utilice un mismo resumen para comparar condiciones escritas, efectivo necesario y requisitos.</li></ol><p>Puede acudir a Stonehaven antes de tener una propiedad bajo contrato. Cuéntenos qué está aprendiendo, qué proyecto considera y qué preguntas quiere resolver. Si aún no conoce un importe, indíquelo.</p>"
+          },
+          {
+            "id": "support",
+            "heading": "Cómo le acompaña Stonehaven",
+            "html": "<p>Stonehaven Lending es una correduría hipotecaria. Le ayudamos a organizar el escenario, revisar posibles estructuras y buscar financiamiento mediante relaciones con prestamistas externos. Una primera conversación útil puede identificar un gasto omitido, un plazo inadecuado o un supuesto de salida que requiere más trabajo.</p><p>Podemos ayudarle a comparar financiamiento de alquiler, adquisición y rehabilitación, préstamos puente y opciones comerciales. Los prestamistas toman las decisiones crediticias y establecen condiciones. Contratistas, inspectores, abogados, contadores y administradores desempeñan funciones distintas; el apoyo financiero no sustituye su trabajo.</p><p>No necesita presentar su primer proyecto como más grande ni su experiencia como mayor de lo que son. Una descripción precisa nos da un mejor punto de partida.</p>"
+          }
+        ],
+        "related": [
+          "first-investment-property-financing",
+          "investment-property-deal-checklist"
+        ],
+        "cta": "/contact#inquire",
+        "cta_title": "¿Todavía está decidiendo cómo empezar?",
+        "cta_text": "Comparta el tipo de inversión que considera y sus preguntas sobre financiamiento. Podemos ayudarle a organizar el siguiente paso.",
+        "cta_label": "Consultar sobre mi primera inversión",
+        "card": "",
+        "sources": [
+          "fannie-rent",
+          "occ"
+        ]
+      }
+    },
+    "first-investment-property-financing": {
+      "en": {
+        "name": "How to finance your first investment property",
+        "title": "First Investment Property Financing Guide | Stonehaven",
+        "description": "Compare financing for a first rental, duplex, flip, rehab or commercial property. Learn how occupancy, cash, experience and the exit plan shape your options.",
+        "h1": "How to finance your first investment property",
+        "answer": "<strong>Choose financing around the property’s use and condition, then test the cash requirement.</strong> A ready-to-rent house, a renovation project and an apartment building may need different loans even at the same purchase price. Start with the plan, rather than the largest advertised loan amount.",
+        "sections": [
+          {
+            "id": "match",
+            "heading": "Match the loan to the investment",
+            "html": "<div class=\"ig-table\" role=\"region\" tabindex=\"0\" aria-label=\"Starting routes to discuss, not eligibility promises\"><table><caption>Starting routes to discuss, not eligibility promises</caption><thead><tr><th scope=\"col\">Your plan</th><th scope=\"col\">Financing to explore</th><th scope=\"col\">First question</th></tr></thead><tbody><tr><th scope=\"row\">Buy a ready-to-rent home</th><td>DSCR, conventional investment-property or bank portfolio financing</td><td>Can the rent support the payment, and which borrower requirements apply?</td></tr><tr><th scope=\"row\">Buy, repair and sell</th><td>Business-purpose fix-and-flip or rehab bridge financing</td><td>How much is advanced at closing, and how are repairs funded?</td></tr><tr><th scope=\"row\">Buy, rehab and hold</th><td>Rehab funding followed by a separately qualified rental refinance</td><td>Would the completed property qualify for enough takeout financing?</td></tr><tr><th scope=\"row\">Live in one unit and rent others</th><td>An appropriate owner-occupied mortgage</td><td>What occupancy and rental-income rules apply to the actual plan?</td></tr><tr><th scope=\"row\">Buy apartments, mixed-use or another commercial asset</th><td>Commercial acquisition, bridge or permanent financing</td><td>What income, condition and legal use will the lender underwrite?</td></tr><tr><th scope=\"row\">Build or redevelop</th><td>Construction or development financing</td><td>Are land, approvals, experience, budget and completion plan ready?</td></tr></tbody></table></div><p>A business-purpose investment loan is not a substitute for a mortgage on a home you intend to occupy. If you plan to live in the property, including a duplex or a renovation project, tell us before choosing a route. Residential availability depends on applicable licensing and program requirements.</p><p>For five to eight units, start with our <a href=\"/commercial/5-8-unit-financing\">small multifamily financing guide</a>. A property can be residential in appearance and still require a different lending analysis.</p>"
+          },
+          {
+            "id": "qualification",
+            "heading": "What a lender needs to understand about a first-time investor",
+            "html": "<p>Being new to investing is one part of the file. A lender may review your credit history, liquidity, existing housing payment, documentation, property condition and the people carrying out the plan. The requirements differ between programs; there is no single credit score, down payment or reserve rule for every investment.</p><ul><li><strong>Experience:</strong> identify what you have actually owned or completed. Construction employment or a contractor relationship should be described accurately, not presented as completed investment projects.</li><li><strong>Cash:</strong> distinguish money you own, money a partner will contribute and money you intend to borrow. The lender must accept the source and any associated debt.</li><li><strong>Income route:</strong> a conventional investment mortgage may consider documented personal income and debts. A DSCR program generally emphasizes qualifying property rent while still reviewing borrower and property eligibility.</li><li><strong>Team:</strong> prepare the contractor, management and professional support appropriate to the project. Adding an experienced person does not automatically make a borrower eligible.</li></ul><p>Fannie Mae’s current <a href=\"https://selling-guide.fanniemae.com/sel/b3-3.8-01/rental-income\" rel=\"noopener\">rental-income guidance</a> illustrates why conventional qualification is not simply “rent minus mortgage”: the treatment of rent depends on documented circumstances, including management history. That policy is separate from private DSCR underwriting.</p>"
+          },
+          {
+            "id": "cash",
+            "heading": "Build a cash plan beyond the down payment",
+            "html": "<p>Prepare two numbers: the amount needed to complete the purchase, and the liquidity needed to operate the project afterward. Earnest money may count toward the closing requirement, but do not count it again as available reserves.</p><div class=\"ig-example\"><h3>A simple rental-purchase budget</h3><p>Hypothetical assumptions: purchase price <strong>$250,000</strong>, loan <strong>$187,500</strong>, transaction costs <strong>$7,500</strong>, immediate repairs <strong>$5,000</strong> and a separate operating reserve <strong>$15,000</strong>.</p><p>The purchase equity is $62,500. Adding the other items gives a <strong>$90,000 planning cash requirement</strong>. A $5,000 earnest-money deposit already paid from these funds leaves $85,000 still to allocate. The reserve is retained liquidity, not a closing fee. These amounts are examples, not offered loan terms or a lender’s reserve requirement.</p></div><p>Include taxes, insurance, utilities, association charges, vacancy, leasing expenses, maintenance and larger replacements in the operating plan. Ask who will pay for work before any reimbursement arrives.</p>"
+          },
+          {
+            "id": "structure",
+            "heading": "Understand the structure before forming an LLC or adding a partner",
+            "html": "<p>Decide who will own the property, borrow the money, contribute cash and sign any guarantee. Those roles can differ, but they must be documented and acceptable to the lender. An LLC does not itself create loan eligibility or eliminate personal responsibility under a signed guarantee.</p><p>If a partner is providing funds, explain whether the money is equity or debt and how repayment or profit sharing is intended to work. Have an attorney document ownership and obligations, and ask the lender about any proposed subordinate financing before relying on it. Do not transfer title into an entity after closing without reviewing the loan documents and obtaining any required consent.</p><p>Stonehaven can help organize the financing discussion and compare potential lender structures. Your attorney and tax adviser should evaluate the legal and tax consequences of ownership choices.</p>"
+          },
+          {
+            "id": "risk",
+            "heading": "Decide what would make you pause",
+            "html": "<ul><li>The purchase only works if an unsupported future value is accepted.</li><li>You have enough cash to close but no plan for vacancy, repairs or payment delays.</li><li>A short-term loan matures before the realistic construction and sale period.</li><li>You are relying on a future refinance without testing rent, valuation, seasoning and costs.</li><li>A seller or contractor asks you to omit a material fact from the lender’s file.</li></ul><p>Use these as questions to resolve, not automatic conclusions about every deal. A lower purchase price, smaller loan, different scope, more cash or a different project may change the result. A loan approval also does not establish that an investment is profitable.</p>"
+          },
+          {
+            "id": "help",
+            "heading": "How we help prepare and place the deal",
+            "html": "<p>We start by separating what is known from what is estimated. We can review the use, location, condition, amount, budget and exit; identify relevant financing routes; and help present a consistent scenario to suitable lenders.</p><p>When terms are available, compare the initial advance, draw funding, payments, fees, maturity, prepayment provisions, guarantees and conditions using the same assumptions. If a lender cannot support the requested structure, we can discuss what constraint is driving the answer and whether an alternative is worth reviewing.</p><p>Use the <a href=\"/resources/investment-property-deal-checklist\">deal-preparation checklist</a> before the conversation. You do not need every document ready to ask an initial question.</p>"
+          }
+        ],
+        "related": [
+          "first-fix-and-flip-financing",
+          "first-dscr-loan",
+          "first-rehab-loan",
+          "investment-property-deal-checklist"
+        ],
+        "cta": "/contact#inquire",
+        "cta_title": "Let’s make your first deal easier to understand",
+        "cta_text": "Tell us the property type, location, intended use and where you are in the process. We can help identify the financing questions to solve first.",
+        "cta_label": "Discuss my financing options",
+        "card": "Choose a financing route for rentals, duplexes, flips, mixed-use, apartments or development.",
+        "sources": [
+          "fannie-rent"
+        ]
+      },
+      "es": {
+        "name": "Cómo financiar su primera propiedad de inversión",
+        "title": "Primera propiedad de inversión: financiamiento | Stonehaven",
+        "description": "Compare financiamiento para su primer alquiler, dúplex, proyecto de reventa o inmueble comercial. Revise ocupación, efectivo, experiencia y estrategia de salida.",
+        "h1": "Cómo financiar su primera propiedad de inversión",
+        "answer": "<strong>Elija el financiamiento según el uso y la condición del inmueble; después, revise cuánto efectivo necesita.</strong> Una casa lista para alquilar, una rehabilitación y un edificio de apartamentos pueden necesitar préstamos distintos, incluso con el mismo precio. Empiece por el plan, no por el monto más alto anunciado.",
+        "sections": [
+          {
+            "id": "match",
+            "heading": "Relacione el préstamo con la inversión",
+            "html": "<div class=\"ig-table\" role=\"region\" tabindex=\"0\" aria-label=\"Rutas iniciales para conversar, no promesas de elegibilidad\"><table><caption>Rutas iniciales para conversar, no promesas de elegibilidad</caption><thead><tr><th scope=\"col\">Su plan</th><th scope=\"col\">Financiamiento que puede explorar</th><th scope=\"col\">Primera pregunta</th></tr></thead><tbody><tr><th scope=\"row\">Comprar una vivienda lista para alquilar</th><td>DSCR, préstamo convencional para inversión o financiamiento de cartera bancaria</td><td>¿La renta respalda el pago y qué requisitos del prestatario aplican?</td></tr><tr><th scope=\"row\">Comprar, reparar y vender</th><td>Préstamo comercial para renovación y reventa o puente de rehabilitación</td><td>¿Cuánto se desembolsa al cierre y cómo se pagan las reparaciones?</td></tr><tr><th scope=\"row\">Comprar, rehabilitar y conservar</th><td>Financiamiento de obra seguido de un refinanciamiento de alquiler con evaluación independiente</td><td>¿El inmueble terminado respaldaría suficiente financiamiento para pagar el préstamo anterior?</td></tr><tr><th scope=\"row\">Vivir en una unidad y alquilar otras</th><td>Una hipoteca adecuada para ocupación propia</td><td>¿Qué reglas de ocupación e ingreso de alquiler corresponden al plan real?</td></tr><tr><th scope=\"row\">Comprar apartamentos, uso mixto u otro activo comercial</th><td>Adquisición comercial, préstamo puente o financiamiento permanente</td><td>¿Qué ingresos, condición y uso legal evaluará el prestamista?</td></tr><tr><th scope=\"row\">Construir o redesarrollar</th><td>Financiamiento de construcción o desarrollo</td><td>¿Están listos terreno, permisos, experiencia, presupuesto y plan de terminación?</td></tr></tbody></table></div><p>Un préstamo de inversión con fines comerciales no sustituye una hipoteca para una vivienda que piensa ocupar. Si vivirá en el inmueble, incluido un dúplex o una casa en renovación, díganoslo antes de elegir. La disponibilidad residencial depende de las licencias y los requisitos aplicables.</p><p>Para cinco a ocho unidades, consulte la <a href=\"/es/commercial/5-8-unit-financing\">guía de financiamiento multifamiliar pequeño</a>. Un inmueble puede parecer residencial y aun así necesitar una evaluación crediticia diferente.</p>"
+          },
+          {
+            "id": "qualification",
+            "heading": "Qué necesita comprender el prestamista sobre un nuevo inversionista",
+            "html": "<p>Su falta de experiencia es solo una parte del expediente. El prestamista puede revisar historial crediticio, liquidez, pago actual de vivienda, documentación, condición del inmueble y equipo. Los requisitos varían: no existe una única puntuación de crédito, aportación o reserva para todas las inversiones.</p><ul><li><strong>Experiencia:</strong> identifique lo que realmente ha poseído o terminado. El trabajo en construcción o una relación con un contratista no deben presentarse como proyectos de inversión ya completados.</li><li><strong>Efectivo:</strong> distinga sus fondos, las aportaciones de socios y el dinero que piensa pedir prestado. El prestamista debe aceptar el origen y cualquier deuda asociada.</li><li><strong>Evaluación de ingresos:</strong> una hipoteca convencional de inversión puede considerar ingresos personales documentados y deudas. Un programa DSCR suele centrarse en la renta admitida, sin eliminar la revisión del prestatario y el inmueble.</li><li><strong>Equipo:</strong> prepare el apoyo de contratistas, administradores y profesionales que corresponda. Incorporar a una persona experimentada no crea elegibilidad automáticamente.</li></ul><p>Las <a href=\"https://selling-guide.fanniemae.com/sel/b3-3.8-01/rental-income\" rel=\"noopener\">reglas actuales de Fannie Mae sobre renta (en inglés)</a> muestran por qué la evaluación convencional no consiste simplemente en restar la hipoteca al alquiler: el tratamiento depende de circunstancias documentadas, incluida la experiencia de administración. Esa política es distinta de la evaluación DSCR privada.</p>"
+          },
+          {
+            "id": "cash",
+            "heading": "Prepare un plan de efectivo más allá de la aportación inicial",
+            "html": "<p>Calcule dos cifras: los fondos para completar la compra y la liquidez para operar después. Un depósito de garantía puede contar para el cierre, pero no debe volver a contarlo como reserva disponible.</p><div class=\"ig-example\"><h3>Un presupuesto sencillo para comprar un alquiler</h3><p>Supuestos hipotéticos: precio de <strong>$250,000</strong>, préstamo de <strong>$187,500</strong>, gastos de la operación de <strong>$7,500</strong>, reparaciones inmediatas de <strong>$5,000</strong> y reserva operativa separada de <strong>$15,000</strong>.</p><p>La aportación para la compra es de $62,500. Al sumar los demás conceptos, se obtiene una <strong>necesidad de efectivo planificada de $90,000</strong>. Si ya pagó un depósito de $5,000 con esos fondos, quedan $85,000 por asignar. La reserva es liquidez que conserva, no un cargo de cierre. Son ejemplos, no condiciones ofrecidas ni una exigencia de reservas del prestamista.</p></div><p>Incluya impuestos, seguros, servicios, cuotas de asociación, desocupación, arrendamiento, mantenimiento y reemplazos importantes en el plan operativo. Determine quién pagará el trabajo antes de recibir cualquier reembolso.</p>"
+          },
+          {
+            "id": "structure",
+            "heading": "Comprenda la estructura antes de formar una LLC o incorporar socios",
+            "html": "<p>Defina quién será dueño, quién pedirá el préstamo, quién aportará efectivo y quién firmará garantías. Esas funciones pueden ser distintas, pero deben documentarse y ser aceptables para el prestamista. Una LLC no genera por sí sola elegibilidad ni elimina la responsabilidad personal de una garantía firmada.</p><p>Si un socio aporta fondos, aclare si son capital o deuda y cómo se pagarán o repartirán beneficios. Un abogado debe documentar propiedad y obligaciones. Consulte cualquier financiamiento subordinado con el prestamista antes de depender de él. No transfiera el título a una entidad después del cierre sin revisar los documentos y obtener el consentimiento que corresponda.</p><p>Stonehaven puede organizar la conversación financiera y comparar posibles estructuras. Su abogado y asesor fiscal deben evaluar las consecuencias legales y tributarias de las decisiones de propiedad.</p>"
+          },
+          {
+            "id": "risk",
+            "heading": "Decida qué le haría pausar",
+            "html": "<ul><li>La compra solo funciona si aceptan un valor futuro sin respaldo.</li><li>Tiene fondos para cerrar, pero no un plan para vacantes, reparaciones o retrasos de pagos.</li><li>El préstamo vence antes de un plazo realista de construcción y venta.</li><li>Depende de un refinanciamiento futuro sin evaluar renta, valor, antigüedad de propiedad y costos.</li><li>Un vendedor o contratista le pide omitir un dato importante del expediente.</li></ul><p>Son preguntas que debe resolver, no conclusiones automáticas sobre cada operación. Un menor precio, préstamo o alcance, más efectivo o un proyecto diferente pueden cambiar el resultado. La aprobación de un préstamo tampoco demuestra que la inversión sea rentable.</p>"
+          },
+          {
+            "id": "help",
+            "heading": "Cómo ayudamos a preparar y presentar el proyecto",
+            "html": "<p>Empezamos separando los datos confirmados de las estimaciones. Podemos revisar uso, ubicación, condición, monto, presupuesto y salida; identificar rutas de financiamiento; y presentar un escenario coherente a prestamistas adecuados.</p><p>Cuando haya propuestas, compare anticipo inicial, desembolsos, pagos, cargos, vencimiento, prepago, garantías y condiciones con los mismos supuestos. Si una estructura no es viable para un prestamista, podemos conversar sobre la restricción y si merece revisar otra opción.</p><p>Utilice la <a href=\"/es/resources/investment-property-deal-checklist\">lista para preparar el proyecto</a>. No necesita tener todos los documentos para hacer una pregunta inicial.</p>"
+          }
+        ],
+        "related": [
+          "first-fix-and-flip-financing",
+          "first-dscr-loan",
+          "first-rehab-loan",
+          "investment-property-deal-checklist"
+        ],
+        "cta": "/contact#inquire",
+        "cta_title": "Hagamos más comprensible su primera inversión",
+        "cta_text": "Cuéntenos el tipo de inmueble, ubicación, uso previsto y etapa. Podemos ayudarle a identificar las primeras preguntas de financiamiento que debe resolver.",
+        "cta_label": "Conversar sobre mis opciones",
+        "card": "Elija una ruta para alquileres, dúplex, reventa, uso mixto, apartamentos o desarrollo.",
+        "sources": [
+          "fannie-rent"
+        ]
+      }
+    },
+    "first-fix-and-flip-financing": {
+      "en": {
+        "name": "Financing your first fix-and-flip",
+        "title": "First Fix-and-Flip Loan Guide | Stonehaven",
+        "description": "Learn how first-time flippers finance a purchase and renovation, manage rehab draws, compare LTC and ARV, and budget for the sale and loan payoff.",
+        "h1": "Financing your first fix-and-flip",
+        "answer": "<strong>A fix-and-flip loan usually combines an acquisition advance with renovation funding released under a draw process.</strong> The total commitment is not the amount deposited at closing. For a first project, understand the cash you must bring, the work you must fund temporarily and how the loan will be repaid when you sell.",
+        "sections": [
+          {
+            "id": "fit",
+            "heading": "Can you get a fix-and-flip loan with no completed flips?",
+            "html": "<p>Some lender programs consider first-time investors. Others require completed projects or apply different limits to inexperienced borrowers. Stonehaven can review the scenario with lenders whose criteria may fit; a strong property does not remove borrower requirements.</p><p>A useful first file contains an itemized contractor scope, a realistic timeline, evidence for the estimated resale value and available funds. Explain any related construction or real estate experience without calling it a completed flip. A first cosmetic renovation and a first structural rebuild are very different execution risks.</p><p>This guide concerns property acquired for business-purpose resale. If you intend to occupy the home, start with a <a href=\"/residential\">residential financing review</a>.</p>"
+          },
+          {
+            "id": "terms",
+            "heading": "Know what LTC, LTV and ARV actually measure",
+            "html": "<div class=\"ig-table\" role=\"region\" tabindex=\"0\" aria-label=\"Compare the same loan against different bases\"><table><caption>Compare the same loan against different bases</caption><thead><tr><th scope=\"col\">Term</th><th scope=\"col\">Meaning</th><th scope=\"col\">Question to ask</th></tr></thead><tbody><tr><th scope=\"row\">LTC: loan to cost</th><td>Loan amount divided by lender-recognized project cost</td><td>Does the cost basis include only purchase and rehab, or also fees and other items?</td></tr><tr><th scope=\"row\">LTV: loan to value</th><td>Loan amount divided by the value the lender accepts</td><td>Is this current value, purchase value or a completed valuation?</td></tr><tr><th scope=\"row\">ARV: after-repair value</th><td>Estimated market value after the proposed work</td><td>What scope and comparable sales support it?</td></tr><tr><th scope=\"row\">Rehab holdback</th><td>Loan proceeds reserved for eligible work</td><td>What must happen before each portion is released?</td></tr></tbody></table></div><p>Stonehaven has lender relationships that may consider up to 100% of eligible costs on qualifying scenarios. That does not establish first-time-investor eligibility, 100% ARV financing or no cash needed. Ask what “100% LTC” or “LTCV” means in the actual written proposal, including its denominator, excluded expenses and any additional collateral. Avoid comparing percentages with different bases.</p>"
+          },
+          {
+            "id": "example",
+            "heading": "Separate the loan commitment from cash at closing",
+            "html": "<div class=\"ig-example\"><h3>A first flip, worked through</h3><p>Assume a $200,000 purchase, $60,000 renovation budget and $350,000 projected ARV. A hypothetical $220,000 loan includes a $160,000 acquisition advance and $60,000 rehab holdback.</p><p>The loan equals approximately <strong>84.6% of the $260,000 purchase-plus-rehab cost</strong> and <strong>62.9% of the $350,000 ARV</strong>. These are two descriptions of the same assumed loan, not lender limits.</p></div><div class=\"ig-table\" role=\"region\" tabindex=\"0\" aria-label=\"Planning cash for this example\"><table><caption>Planning cash for this example</caption><thead><tr><th scope=\"col\">Item</th><th scope=\"col\">Amount</th><th scope=\"col\">Why it matters</th></tr></thead><tbody><tr><th scope=\"row\">Purchase equity</th><td>$40,000</td><td>$200,000 purchase less $160,000 initial advance</td></tr><tr><th scope=\"row\">Acquisition and financing costs</th><td>$10,000</td><td>Hypothetical costs outside the advance</td></tr><tr><th scope=\"row\">Renovation contingency</th><td>$10,000</td><td>Budgeted capacity for changes, not assumed profit</td></tr><tr><th scope=\"row\">Holding and liquidity reserve</th><td>$15,000</td><td>Funds retained for project obligations</td></tr><tr><th scope=\"row\">Planning cash total</th><td>$75,000</td><td>Before any additional float needed to bridge draw timing</td></tr></tbody></table></div><p>Build a weekly cash schedule as well. If the contractor needs $12,000 before a reimbursable milestone, identify which funds can cover that gap without consuming money committed elsewhere. A fully financed rehab budget can still require working cash.</p>"
+          },
+          {
+            "id": "draws",
+            "heading": "How renovation draws affect your schedule",
+            "html": "<p>A draw is a release of part of the rehab funding. A lender may require completed work, an inspection, invoices and other supporting items. Advance or reimbursement arrangements vary. Get the actual process before signing a contractor payment schedule; do not promise a contractor funds on a date the lender has not committed to.</p><ul><li>Confirm whether interest is charged on outstanding advances, the full commitment or another contractual basis.</li><li>Identify inspection fees, draw minimums, retainage and evidence needed for release.</li><li>Ask how change orders, cost overruns and contractor replacement are handled.</li><li>Confirm whether permits and insurance must be in place before work or funding.</li></ul><p>The <a href=\"/resources/first-rehab-loan\">rehab financing guide</a> works through a draw and contingency example in more detail.</p>"
+          },
+          {
+            "id": "exit",
+            "heading": "Underwrite the sale, including a slower outcome",
+            "html": "<p>Estimate the sale price after testing local comparable sales and the finished scope. Then deduct acquisition, renovation, finance and holding costs, selling expenses and any contingency actually spent. Loan principal is a financing source and payoff obligation; do not subtract it a second time after already counting all project costs when calculating project profit.</p><div class=\"ig-example\"><h3>A profit estimate is not a cushion you already own</h3><p>Using the $350,000 sale assumption, deduct $200,000 purchase, $60,000 work, $10,000 acquisition/financing costs, $15,000 holding costs and $25,000 selling costs. The modeled result is <strong>$40,000 before income taxes and uncounted expenses</strong>.</p><p>A $20,000 lower sale, $10,000 rehab overrun and $5,000 extra holding cost reduce that result to <strong>$5,000</strong>. Those are stress assumptions, not market forecasts. Any unspent reserve remains your money; do not treat the same reserve as both an expense and a separate loss.</p></div><p>Check maturity, extension eligibility and extension costs. An extension or a switch to a rental refinance is a separate decision, not a guaranteed fallback. Discuss a rental exit before closing if it is part of your plan.</p>"
+          },
+          {
+            "id": "placement",
+            "heading": "How Stonehaven can help with your first flip",
+            "html": "<p>We can review your scope, cash plan, experience and exit, then seek a suitable lender fit. Placement means presenting the deal to an appropriate funding source and working through its requirements; it is not an approval before underwriting.</p><p>We can help compare the cash at closing and during the project, identify cost exclusions, and clarify the loan’s repayment and draw structure. You remain responsible for inspections, contractor performance, the purchase decision and the work. Start with the <a href=\"/resources/investment-property-deal-checklist\">deal checklist</a>, including the property’s state, purchase price, repair budget, estimated value and target close.</p>"
+          }
+        ],
+        "related": [
+          "first-rehab-loan",
+          "investment-property-deal-checklist",
+          "first-dscr-loan"
+        ],
+        "cta": "/commercial/fix-and-flip#inquire",
+        "cta_title": "Bring us your first flip scenario",
+        "cta_text": "We can help review the purchase, rehab budget, cash requirement and proposed exit before seeking lender terms. Let us know you are preparing your first investment project.",
+        "cta_label": "Review my first flip",
+        "card": "Understand the initial advance, repair funding, cash requirement and sale exit.",
+        "sources": [
+          "flip",
+          "draws"
+        ]
+      },
+      "es": {
+        "name": "Cómo financiar su primera renovación para reventa",
+        "title": "Primer préstamo para renovación y reventa | Stonehaven",
+        "description": "Aprenda a financiar su primera compra y renovación para reventa. Compare LTC y ARV, planifique desembolsos y calcule el efectivo necesario hasta la venta.",
+        "h1": "Cómo financiar su primera renovación para reventa",
+        "answer": "<strong>Un préstamo para renovación y reventa suele combinar un anticipo de adquisición con fondos de obra sujetos a un proceso de desembolsos.</strong> El compromiso total no equivale al dinero disponible al cierre. Comprenda cuánto debe aportar, qué trabajo financiará temporalmente y cómo pagará el préstamo al vender.",
+        "sections": [
+          {
+            "id": "fit",
+            "heading": "¿Puede obtener financiamiento sin haber completado una reventa?",
+            "html": "<p>Algunos programas consideran nuevos inversionistas. Otros exigen proyectos terminados o aplican límites diferentes a quienes no tienen experiencia. Stonehaven puede revisar el escenario con prestamistas cuyos criterios puedan encajar; una buena propiedad no elimina los requisitos del prestatario.</p><p>Un expediente inicial útil contiene alcance detallado del contratista, plazo realista, respaldo del valor de venta estimado y fondos disponibles. Describa su experiencia relacionada con construcción o bienes raíces sin presentarla como una reventa completada. Una primera renovación cosmética y una primera reconstrucción estructural implican riesgos de ejecución distintos.</p><p>Esta guía trata inmuebles adquiridos para reventa con fines comerciales. Si piensa ocupar la vivienda, empiece por una <a href=\"/es/residential\">revisión de financiamiento residencial</a>.</p>"
+          },
+          {
+            "id": "terms",
+            "heading": "Qué miden LTC, LTV y ARV",
+            "html": "<div class=\"ig-table\" role=\"region\" tabindex=\"0\" aria-label=\"El mismo préstamo frente a bases diferentes\"><table><caption>El mismo préstamo frente a bases diferentes</caption><thead><tr><th scope=\"col\">Término</th><th scope=\"col\">Significado</th><th scope=\"col\">Pregunta importante</th></tr></thead><tbody><tr><th scope=\"row\">LTC: préstamo sobre costo</th><td>Monto del préstamo dividido entre costos reconocidos por el prestamista</td><td>¿Incluye solo compra y obra, o también cargos y otros conceptos?</td></tr><tr><th scope=\"row\">LTV: préstamo sobre valor</th><td>Monto del préstamo dividido entre el valor aceptado</td><td>¿Usa valor actual, de compra o terminado?</td></tr><tr><th scope=\"row\">ARV: valor después de reparar</th><td>Valor de mercado estimado tras las obras propuestas</td><td>¿Qué alcance y ventas comparables lo respaldan?</td></tr><tr><th scope=\"row\">Fondos retenidos para obra</th><td>Parte del préstamo reservada para trabajo elegible</td><td>¿Qué debe ocurrir antes de liberar cada parte?</td></tr></tbody></table></div><p>Stonehaven mantiene relaciones con prestamistas que pueden considerar hasta el 100% de costos elegibles en escenarios que califiquen. Eso no confirma elegibilidad para un principiante, financiamiento del 100% del ARV ni ausencia de efectivo necesario. Pregunte qué significa “100% LTC” o “LTCV” en la propuesta escrita, incluido denominador, gastos excluidos y cualquier garantía adicional. No compare porcentajes calculados sobre bases distintas.</p>"
+          },
+          {
+            "id": "example",
+            "heading": "Separe el compromiso total del efectivo al cierre",
+            "html": "<div class=\"ig-example\"><h3>Una primera reventa, paso a paso</h3><p>Suponga una compra de $200,000, obra de $60,000 y ARV proyectado de $350,000. Un préstamo hipotético de $220,000 incluye $160,000 para adquirir y $60,000 retenidos para la rehabilitación.</p><p>Equivale aproximadamente al <strong>84.6% del costo de compra y obra de $260,000</strong> y al <strong>62.9% del ARV de $350,000</strong>. Son dos descripciones del mismo préstamo supuesto, no límites de un prestamista.</p></div><div class=\"ig-table\" role=\"region\" tabindex=\"0\" aria-label=\"Efectivo planificado en este ejemplo\"><table><caption>Efectivo planificado en este ejemplo</caption><thead><tr><th scope=\"col\">Concepto</th><th scope=\"col\">Monto</th><th scope=\"col\">Por qué importa</th></tr></thead><tbody><tr><th scope=\"row\">Aportación para la compra</th><td>$40,000</td><td>Precio de $200,000 menos anticipo inicial de $160,000</td></tr><tr><th scope=\"row\">Gastos de adquisición y financiamiento</th><td>$10,000</td><td>Costos hipotéticos fuera del anticipo</td></tr><tr><th scope=\"row\">Contingencia de renovación</th><td>$10,000</td><td>Capacidad para cambios, no beneficio supuesto</td></tr><tr><th scope=\"row\">Reserva de mantenimiento y liquidez</th><td>$15,000</td><td>Fondos conservados para obligaciones del proyecto</td></tr><tr><th scope=\"row\">Total de efectivo planificado</th><td>$75,000</td><td>Antes de liquidez adicional para cubrir el plazo entre desembolsos</td></tr></tbody></table></div><p>Prepare también un calendario semanal. Si el contratista necesita $12,000 antes de un hito reembolsable, identifique fondos para cubrirlo sin consumir dinero destinado a otra obligación. Financiar todo el presupuesto de obra aún puede exigir efectivo de trabajo.</p>"
+          },
+          {
+            "id": "draws",
+            "heading": "Cómo los desembolsos afectan el calendario",
+            "html": "<p>Un desembolso libera parte de los fondos de rehabilitación. El prestamista puede exigir obra terminada, inspección, facturas y otros documentos. Los anticipos y reembolsos varían. Conozca el proceso antes de firmar el calendario del contratista; no prometa fondos en una fecha que el prestamista no haya comprometido.</p><ul><li>Confirme si los intereses se calculan sobre el saldo desembolsado, el compromiso total u otra base contractual.</li><li>Identifique cargos de inspección, mínimos, retenciones y evidencia para liberar fondos.</li><li>Pregunte cómo se manejan cambios de alcance, sobrecostos y reemplazo de contratista.</li><li>Confirme si permisos y seguros deben estar vigentes antes de trabajar o recibir fondos.</li></ul><p>La <a href=\"/es/resources/first-rehab-loan\">guía de rehabilitación</a> desarrolla un ejemplo de desembolsos y contingencia.</p>"
+          },
+          {
+            "id": "exit",
+            "heading": "Evalúe la venta, incluido un resultado más lento",
+            "html": "<p>Estime el precio tras revisar ventas comparables y alcance terminado. Después deduzca compra, renovación, financiamiento, mantenimiento, venta y contingencia efectivamente gastada. El principal del préstamo es una fuente de fondos y una obligación de pago; no lo reste de nuevo después de contar todos los costos al calcular el beneficio del proyecto.</p><div class=\"ig-example\"><h3>Un beneficio estimado no es efectivo que ya tiene</h3><p>De una venta de $350,000, deduzca $200,000 de compra, $60,000 de obra, $10,000 de adquisición y financiamiento, $15,000 de mantenimiento y $25,000 de venta. El resultado es <strong>$40,000 antes de impuestos sobre ingresos y gastos no incluidos</strong>.</p><p>Una venta $20,000 menor, sobrecosto de obra de $10,000 y mantenimiento adicional de $5,000 reducen el resultado a <strong>$5,000</strong>. Son supuestos de estrés, no pronósticos. Las reservas no gastadas siguen siendo su dinero; no cuente una misma reserva como gasto y pérdida adicional.</p></div><p>Revise vencimiento y condiciones y costos de prórroga. Una extensión o un refinanciamiento de alquiler requiere otra decisión, no es una alternativa garantizada. Si contempla conservar el inmueble, háblelo antes del cierre.</p>"
+          },
+          {
+            "id": "placement",
+            "heading": "Cómo puede ayudar Stonehaven en su primera reventa",
+            "html": "<p>Podemos revisar alcance, efectivo, experiencia y salida, y buscar un prestamista compatible. Gestionar la colocación consiste en presentar el proyecto a una fuente adecuada y trabajar sus requisitos; no equivale a aprobarlo antes de la evaluación.</p><p>Podemos comparar efectivo al cierre y durante la obra, identificar exclusiones y aclarar pagos y desembolsos. Usted sigue siendo responsable de inspecciones, desempeño del contratista, decisión de compra y ejecución. Empiece con la <a href=\"/es/resources/investment-property-deal-checklist\">lista del proyecto</a>: estado, compra, reparaciones, valor estimado y cierre deseado.</p>"
+          }
+        ],
+        "related": [
+          "first-rehab-loan",
+          "investment-property-deal-checklist",
+          "first-dscr-loan"
+        ],
+        "cta": "/commercial/fix-and-flip#inquire",
+        "cta_title": "Comparta su primera operación de reventa",
+        "cta_text": "Podemos revisar compra, presupuesto de obra, efectivo y salida antes de solicitar condiciones. Indique que está preparando su primer proyecto de inversión.",
+        "cta_label": "Revisar mi primera reventa",
+        "card": "Comprenda anticipo inicial, fondos para reparaciones, efectivo y salida mediante venta.",
+        "sources": [
+          "flip",
+          "draws"
+        ]
+      }
+    },
+    "first-dscr-loan": {
+      "en": {
+        "name": "Your first DSCR loan: from rent to financing",
+        "title": "First DSCR Loan Guide for New Investors | Stonehaven",
+        "description": "Understand DSCR rental financing, qualifying rent, PITIA, cash reserves and lender review. Work through a first-rental example and a refinance stress test.",
+        "h1": "Your first DSCR loan: from rent to financing",
+        "answer": "<strong>A DSCR loan is a rental-property financing route that generally uses qualifying property rent rather than a personal debt-to-income calculation.</strong> It still involves credit, assets, valuation, property and program review. Passing a DSCR test is not the same as having positive spendable cash flow.",
+        "sections": [
+          {
+            "id": "first",
+            "heading": "Can a first-time landlord use DSCR financing?",
+            "html": "<p>Some programs consider a borrower buying their first rental. Others set experience, existing homeownership or additional reserve conditions. Explain both your investment history and current housing situation. Being a first-time investor and being a first-time homebuyer are different facts that can matter to underwriting.</p><p>A DSCR loan commonly fits a business-purpose rental that meets the lender’s property and condition rules. A house that needs substantial work before it can be rented may need rehab financing first. A property you intend to live in requires an appropriate owner-occupied review.</p><p>DSCR is not “no documentation.” Expect a review of identity, credit, assets, ownership structure, the property and the rent evidence. Requirements and availability vary by lender and state.</p>"
+          },
+          {
+            "id": "calculation",
+            "heading": "Calculate qualifying coverage, then calculate real cash flow",
+            "html": "<p>For many one-to-four-unit rental programs, the starting ratio is <strong>qualifying monthly rent ÷ the qualifying monthly housing payment</strong>. PITIA stands for principal, interest, taxes, insurance and association dues, when applicable. Confirm the actual lender’s rent selection and payment calculation, including any interest-only or stressed-payment treatment.</p><div class=\"ig-example\"><h3>The same property can pass one test and still feel tight</h3><p>Assume the lender accepts monthly rent of $2,500 and a qualifying PITIA of $2,000. DSCR is <strong>$2,500 ÷ $2,000 = 1.25</strong>. The gross difference is $500.</p><p>Your operating budget also sets aside $125 for vacancy, $200 for management, $150 for maintenance and $125 for longer-term replacements. Those allowances total $600. The planning result is <strong>negative $100 per month</strong>, before other unmodeled costs. The 1.25 ratio is an example, not a minimum offered by every lender.</p></div><p>Commercial DSCR often uses annual net operating income divided by annual debt service instead. Do not substitute gross rent for NOI on an apartment or commercial loan. Our <a href=\"/resources/how-lenders-size-commercial-loans\">commercial loan-sizing guide</a> explains the distinction.</p>"
+          },
+          {
+            "id": "rent",
+            "heading": "Know which rent the lender will accept",
+            "html": "<p>A seller’s listing projection, a signed lease, appraiser-supported market rent and short-term-rental revenue are not interchangeable. Ask which evidence applies to the chosen program, whether any adjustment is made, and how vacancies or leases above market are treated.</p><ul><li><strong>Existing tenant:</strong> supply the lease and requested evidence of collected rent through the agreed document channel.</li><li><strong>Vacant but rent-ready:</strong> ask whether market rent is acceptable and how it will be established.</li><li><strong>Short-term rental:</strong> confirm local use restrictions, association rules, insurance and the lender’s accepted revenue method.</li><li><strong>Multiple units:</strong> verify the legal unit count and provide rent and expense information by unit where requested.</li></ul><p>Use the <a href=\"/dscr-program-calculator\">DSCR program calculator</a> as a planning tool. Its output does not confirm a lender’s rent method, program eligibility or an available quote.</p>"
+          },
+          {
+            "id": "structure",
+            "heading": "Compare the whole loan, not just the initial payment",
+            "html": "<ul><li><strong>Borrower and title:</strong> ask whether individual or entity ownership is permitted and who signs a guarantee. An LLC is not a substitute for reviewing liability.</li><li><strong>Cash to close:</strong> include purchase equity, costs and required reserves. Verify the source and availability of all funds.</li><li><strong>Payment structure:</strong> distinguish a fixed rate from a variable rate, and amortization length from the actual loan maturity.</li><li><strong>Interest-only period:</strong> model the later payment and remaining balance. A smaller initial payment does not mean principal has been repaid.</li><li><strong>Prepayment:</strong> ask how an early sale or refinance would affect costs and permitted repayment.</li><li><strong>Conditions:</strong> identify appraisal, insurance, lease, entity, title and other requirements still outstanding.</li></ul><p>If conventional investment financing is also possible, compare it with DSCR using the same loan amount and intended holding period. Our <a href=\"/resources/dscr-vs-conventional\">DSCR versus conventional guide</a> can help frame that discussion.</p>"
+          },
+          {
+            "id": "refinance",
+            "heading": "For BRRRR, qualify the refinance before relying on it",
+            "html": "<p>BRRRR means buy, rehab, rent, refinance and repeat. The refinance is a future application. Completion, rent, ownership seasoning, value, costs and the lender’s then-current requirements can change the proceeds. Do not assume it will return all of your original cash.</p><div class=\"ig-example\"><h3>What if the refinance is smaller?</h3><p>Assume a completed property value of $300,000 and, solely for this example, a 75% value-based loan limit. That produces $225,000 before the rent-based limit or other constraints. If the existing payoff is $210,000 and new costs are $8,000, the potential remaining proceeds are $7,000.</p><p>If the accepted value is instead $280,000, the same modeled limit is $210,000. After the payoff and costs, you would need <strong>$8,000 of additional cash</strong>. A rent or credit constraint could reduce proceeds further.</p></div><p>Work through this before taking the acquisition loan, particularly when that loan has a short maturity. Our <a href=\"/resources/first-rehab-loan\">rehab guide</a> connects the work budget to the rental exit.</p>"
+          },
+          {
+            "id": "help",
+            "heading": "How Stonehaven helps prepare a first DSCR deal",
+            "html": "<p>Share the property type and state, purchase or refinance amount, rent estimate, taxes, insurance, association dues and any repairs. Tell us what is confirmed, what is a seller estimate and what still needs checking.</p><p>We can compare potential lender fits, help identify the limiting assumption and organize a deal for placement. That may mean considering a smaller loan, additional equity, a different payment structure or a rehab-first route. Final terms depend on underwriting, valuation, documentation and program availability.</p><p>You can ask a question before submitting a full file. When ready, use the existing DSCR review form so your inquiry reaches the appropriate team.</p>"
+          }
+        ],
+        "related": [
+          "first-investment-property-financing",
+          "first-rehab-loan",
+          "investment-property-deal-checklist"
+        ],
+        "cta": "/dscr-review",
+        "cta_title": "Let’s review your first rental",
+        "cta_text": "Bring the rent, purchase or payoff figure and estimated property expenses. We can help test the financing assumptions and identify the next documents needed.",
+        "cta_label": "Review my first DSCR deal",
+        "card": "Separate rental qualification from actual cash flow and plan for lender review.",
+        "sources": [
+          "dscr",
+          "kiavi-first"
+        ]
+      },
+      "es": {
+        "name": "Su primer préstamo DSCR: de la renta al financiamiento",
+        "title": "Primer préstamo DSCR para inversionistas | Stonehaven",
+        "description": "Comprenda renta admitida, PITIA, reservas y evaluación de un préstamo DSCR. Revise un ejemplo de primer alquiler y un refinanciamiento menor al esperado.",
+        "h1": "Su primer préstamo DSCR: de la renta al financiamiento",
+        "answer": "<strong>Un préstamo DSCR es una ruta para propiedades de alquiler que generalmente utiliza renta admitida en lugar de una relación personal entre deudas e ingresos.</strong> Aun así exige revisión de crédito, activos, valor, inmueble y programa. Cumplir la prueba DSCR no equivale a generar efectivo disponible positivo.",
+        "sections": [
+          {
+            "id": "first",
+            "heading": "¿Puede usar DSCR un propietario de alquiler primerizo?",
+            "html": "<p>Algunos programas consideran la compra de un primer alquiler. Otros establecen condiciones de experiencia, propiedad previa de vivienda o reservas adicionales. Explique su historial de inversión y su situación de vivienda actual. Ser nuevo inversionista y comprar su primera vivienda son hechos diferentes que pueden importar.</p><p>Un préstamo DSCR suele corresponder a un alquiler con fines comerciales que cumpla las reglas de condición y propiedad del prestamista. Una casa que necesita obra importante antes de alquilarse puede requerir rehabilitación financiada primero. Una propiedad que piensa ocupar exige la revisión adecuada para ocupación propia.</p><p>DSCR no significa “sin documentos”. Espere revisión de identidad, crédito, activos, estructura de propiedad, inmueble y evidencia de renta. Los requisitos y disponibilidad varían por prestamista y estado.</p>"
+          },
+          {
+            "id": "calculation",
+            "heading": "Calcule cobertura de calificación y flujo real por separado",
+            "html": "<p>En muchos programas de alquiler de una a cuatro unidades, la relación inicial es <strong>renta mensual admitida ÷ pago mensual de vivienda utilizado para calificar</strong>. PITIA corresponde a principal, intereses, impuestos, seguros y cuotas de asociación cuando aplican. Confirme la renta y el cálculo real del prestamista, incluido cualquier tratamiento de solo intereses o pago de estrés.</p><div class=\"ig-example\"><h3>Un inmueble puede cumplir una prueba y tener un presupuesto ajustado</h3><p>Suponga renta admitida de $2,500 al mes y PITIA de calificación de $2,000. El DSCR es <strong>$2,500 ÷ $2,000 = 1.25</strong>. La diferencia bruta es de $500.</p><p>Su presupuesto también aparta $125 para vacantes, $200 para administración, $150 para mantenimiento y $125 para reemplazos futuros. Suman $600. El resultado planificado es <strong>negativo en $100 al mes</strong>, antes de otros gastos. La relación de 1.25 es un ejemplo, no un mínimo ofrecido por todos los prestamistas.</p></div><p>El DSCR comercial suele usar ingreso operativo neto anual dividido entre servicio anual de deuda. No sustituya NOI por renta bruta en un préstamo comercial o de apartamentos. La <a href=\"/resources/how-lenders-size-commercial-loans\">guía de dimensionamiento comercial (en inglés)</a> explica la diferencia.</p>"
+          },
+          {
+            "id": "rent",
+            "heading": "Identifique qué renta aceptará el prestamista",
+            "html": "<p>La proyección del anuncio, un contrato firmado, renta de mercado respaldada por tasación e ingresos de alquiler de corta estancia no son equivalentes. Pregunte qué evidencia corresponde, qué ajustes se aplican y cómo se tratan vacantes o contratos por encima del mercado.</p><ul><li><strong>Inquilino existente:</strong> facilite contrato y evidencia de cobros solicitada mediante el canal acordado.</li><li><strong>Vacante pero listo para alquilar:</strong> pregunte si se acepta renta de mercado y cómo se establecerá.</li><li><strong>Corta estancia:</strong> confirme restricciones locales, reglas de asociación, seguro y método de ingresos admitido.</li><li><strong>Varias unidades:</strong> verifique el número legal y prepare renta y gastos por unidad cuando se soliciten.</li></ul><p>Use la <a href=\"/es/dscr-program-calculator\">calculadora DSCR</a> para planificar. El resultado no confirma método de renta, elegibilidad ni una cotización disponible.</p>"
+          },
+          {
+            "id": "structure",
+            "heading": "Compare el préstamo completo, no solo el pago inicial",
+            "html": "<ul><li><strong>Prestatario y título:</strong> pregunte si se permite propiedad individual o mediante entidad y quién garantiza. Una LLC no sustituye revisar la responsabilidad.</li><li><strong>Efectivo al cierre:</strong> incluya aportación, gastos y reservas requeridas. Verifique origen y disponibilidad.</li><li><strong>Estructura de pagos:</strong> distinga tasa fija de variable y plazo de amortización del vencimiento real.</li><li><strong>Solo intereses:</strong> calcule el pago posterior y saldo restante. Un pago menor no significa que se haya amortizado principal.</li><li><strong>Prepago:</strong> pregunte cómo una venta o refinanciamiento anticipado afectaría costos y pagos permitidos.</li><li><strong>Condiciones:</strong> identifique requisitos pendientes de tasación, seguro, contrato, entidad, título y otros.</li></ul><p>Si también es posible el financiamiento convencional de inversión, compárelo con DSCR usando igual monto y período previsto de tenencia. La <a href=\"/resources/dscr-vs-conventional\">comparación DSCR y convencional (en inglés)</a> ayuda a preparar esa conversación.</p>"
+          },
+          {
+            "id": "refinance",
+            "heading": "En BRRRR, evalúe el refinanciamiento antes de depender de él",
+            "html": "<p>BRRRR significa comprar, rehabilitar, alquilar, refinanciar y repetir. El refinanciamiento es una solicitud futura. Terminación, renta, antigüedad de propiedad, valor, costos y requisitos vigentes pueden cambiar los fondos. No suponga que recuperará todo su efectivo original.</p><div class=\"ig-example\"><h3>¿Qué ocurre si el refinanciamiento es menor?</h3><p>Suponga un valor terminado de $300,000 y, solo para este ejemplo, un límite del 75% basado en valor. Produce $225,000 antes del límite por renta u otras restricciones. Si el saldo para liquidar es $210,000 y los nuevos costos son $8,000, quedarían potencialmente $7,000.</p><p>Si el valor aceptado es $280,000, el mismo límite supuesto produce $210,000. Después de liquidación y gastos, necesitaría <strong>$8,000 de efectivo adicional</strong>. Una restricción de renta o crédito podría reducir aún más los fondos.</p></div><p>Revise esto antes del préstamo de adquisición, especialmente si vence pronto. La <a href=\"/es/resources/first-rehab-loan\">guía de rehabilitación</a> conecta el presupuesto de obra con la salida de alquiler.</p>"
+          },
+          {
+            "id": "help",
+            "heading": "Cómo ayudamos a preparar un primer DSCR",
+            "html": "<p>Comparta tipo y estado del inmueble, compra o refinanciamiento solicitado, renta estimada, impuestos, seguros, cuotas y reparaciones. Indique qué está confirmado, qué proviene del vendedor y qué falta revisar.</p><p>Podemos comparar posibles prestamistas, identificar el supuesto limitante y organizar la presentación. Quizá convenga revisar un préstamo menor, más capital, otra estructura de pagos o rehabilitación primero. Las condiciones finales dependen de evaluación, valor, documentación y disponibilidad.</p><p>Puede hacer una pregunta antes de presentar un expediente completo. Cuando esté listo, use el formulario de revisión DSCR para que la consulta llegue al equipo correspondiente.</p>"
+          }
+        ],
+        "related": [
+          "first-investment-property-financing",
+          "first-rehab-loan",
+          "investment-property-deal-checklist"
+        ],
+        "cta": "/dscr-review",
+        "cta_title": "Revisemos su primera propiedad de alquiler",
+        "cta_text": "Comparta renta, precio o saldo y gastos estimados del inmueble. Podemos revisar los supuestos y los próximos documentos necesarios.",
+        "cta_label": "Revisar mi primer proyecto DSCR",
+        "card": "Separe la calificación por renta del flujo real y prepare la revisión del prestamista.",
+        "sources": [
+          "dscr",
+          "kiavi-first"
+        ]
+      }
+    },
+    "first-rehab-loan": {
+      "en": {
+        "name": "Your first rehab loan: funding the work and the exit",
+        "title": "First Rehab Loan & BRRRR Financing Guide | Stonehaven",
+        "description": "Plan acquisition and renovation funding for a first investment rehab. Understand draws, contingencies, contractor payments and the sale or rental refinance exit.",
+        "h1": "Your first rehab loan: funding the work and the exit",
+        "answer": "<strong>Rehab financing has two connected jobs: fund the property and fund eligible improvements on a workable schedule.</strong> Decide whether you will sell or rent the finished property, then align the loan term, draw process, contractor contract and exit financing with that plan.",
+        "sections": [
+          {
+            "id": "route",
+            "heading": "Which kind of rehab are you actually financing?",
+            "html": "<p>“Rehab loan” describes several different situations. A cosmetic rental refresh, a vacant house with major systems work and a structural redevelopment do not present the same budget, timeline or property-eligibility questions.</p><div class=\"ig-table\" role=\"region\" tabindex=\"0\" aria-label=\"Start with condition and intended use\"><table><caption>Start with condition and intended use</caption><thead><tr><th scope=\"col\">Situation</th><th scope=\"col\">What to discuss</th><th scope=\"col\">What to verify</th></tr></thead><tbody><tr><th scope=\"row\">Investor renovation followed by resale</th><td>Fix-and-flip or rehab bridge funding</td><td>Experience, scope, draws and sale timeline</td></tr><tr><th scope=\"row\">Investor renovation followed by rent</th><td>Rehab funding plus a potential rental takeout</td><td>Completion, rent, seasoning and refinance proceeds</td></tr><tr><th scope=\"row\">A home you will occupy</th><td>An eligible residential renovation mortgage</td><td>Occupancy, borrower qualification and approved work</td></tr><tr><th scope=\"row\">Major commercial repositioning</th><td>Commercial bridge, construction or development financing</td><td>Permits, legal use, commercial budget and stabilized income</td></tr></tbody></table></div><p>Fannie Mae’s HomeStyle Renovation framework shows that some conventional renovation structures can include eligible investment-property scenarios. That does not make every property, borrower or contractor eligible, or establish that a particular option is available for your file. Discuss the actual occupancy and scope before choosing a program.</p>"
+          },
+          {
+            "id": "scope",
+            "heading": "Build a scope a lender and contractor can both use",
+            "html": "<p>Separate work by trade or task, with quantities, costs, timing and responsibility. “Full renovation, $75,000” gives too little information to compare bids, establish draw milestones or evaluate overruns.</p><ul><li><strong>Visible work:</strong> roofs, systems, kitchens, bathrooms, finishes and exterior items as applicable.</li><li><strong>Preconstruction:</strong> inspections, plans, permits and professional fees.</li><li><strong>Execution:</strong> labor, materials, disposal, access and temporary utilities.</li><li><strong>Uncertainty:</strong> known defects needing investigation and a separately identified contingency.</li><li><strong>Completion:</strong> required final inspections, certificates, tenant readiness or sale preparation.</li></ul><p>Use property inspections and contractor estimates to refine the scope before removing contractual protections. The appraisal estimates collateral value; it is not your construction inspection or a warranty that a budget is adequate.</p>"
+          },
+          {
+            "id": "draw",
+            "heading": "Map the draw process to your cash calendar",
+            "html": "<p>The loan documents control how rehab funds are released. Ask whether a draw is based on work completed, costs paid, materials delivered or another approved milestone, and what evidence the lender needs. Reimbursement timing and contractor payment timing may not match.</p><ol><li>Agree the scope and budget before the loan closes.</li><li>Identify funds available for deposits and work before reimbursement.</li><li>Keep invoices, payment records, permits and change approvals organized.</li><li>Request the draw with the required evidence and allow for review or inspection.</li><li>Reconcile the amount received against the remaining work and remaining loan funds.</li></ol><div class=\"ig-example\"><h3>A draw shortfall can appear before the project is over budget</h3><p>Assume a $60,000 rehab allocation. The contractor requests $20,000 for the first stage. You have $12,000 of cash allocated to that stage, and the lender will reimburse only after the work is verified. That leaves an <strong>$8,000 timing gap</strong>, even though the full project budget still balances.</p><p>Possible items to discuss are a revised milestone schedule, lender-approved advance arrangements or additional acceptable working cash. Do not assume you can cover it with unapproved subordinate debt or money already reserved for another obligation.</p></div><p>Ask who services the loan and draws, how fees are charged, whether funds are retained until completion, and what happens if a contractor changes. A lender’s advertised turnaround is not a substitute for the contract and a realistic cash buffer.</p>"
+          },
+          {
+            "id": "contingency",
+            "heading": "Treat the contingency as available money, not another loan",
+            "html": "<p>Choose a contingency with your contractor and advisers based on the building, scope and uncertainty. The lender may apply its own requirement. Make clear whether it is funded inside the loan, supplied as borrower cash, or merely a number in your spreadsheet.</p><div class=\"ig-example\"><h3>What happens when the work costs more?</h3><p>A $60,000 scope plus a separately funded $9,000 contingency gives a $69,000 planning budget. If verified extra work costs $12,000, the planned contingency covers $9,000 and leaves <strong>$3,000 to resolve</strong>. Do not count on a larger loan without a new review.</p></div><p>Obtain written approval where required before changing the scope. An upgrade that raises your costs does not necessarily raise the appraised value or the lender’s advance. Keep a running cost-to-complete estimate so the last phase does not depend on funds already spent.</p>"
+          },
+          {
+            "id": "exit",
+            "heading": "Choose the sale or rental exit before closing",
+            "html": "<p>For a sale, allow time for construction, inspections, listing, contract negotiations and the buyer’s financing. Compare that timeline with maturity and any extension conditions. Model a lower sale price and additional holding time.</p><p>For a rental, build an operating budget and assess the prospective refinance separately. A finished house is not automatically financeable at the amount needed to pay off the rehab loan. The <a href=\"/resources/first-dscr-loan\">first DSCR loan guide</a> shows how value, rent and costs can leave a payoff shortfall.</p><p>The OCC’s refinance-risk guidance reinforces the need to test a future loan against changed market and borrower conditions. It does not establish a guaranteed takeout or extension for a private rehab loan.</p><p>If you are already mid-project, bring the current balance, maturity, work completed, funds remaining and a fresh cost-to-complete estimate. Those facts are more useful than repeating the original budget after circumstances have changed.</p>"
+          },
+          {
+            "id": "help",
+            "heading": "How Stonehaven can assist with structure and placement",
+            "html": "<p>We can help distinguish the acquisition advance from the rehab commitment, identify questions about draw timing and assess possible sale or refinance routes. We seek lender placement based on the actual scope, experience, property, location and cash available.</p><p>A useful review may identify a smaller first phase, more working cash or a different financing route. Changes still need to make operational sense and receive any required lender approval. Stonehaven arranges financing through third-party lenders; we do not control contractor performance, appraisals or the future resale market.</p><p>Start with your <a href=\"/resources/investment-property-deal-checklist\">deal summary</a>. Include whether you already own the property and which costs are estimates rather than agreed bids.</p>"
+          }
+        ],
+        "related": [
+          "first-fix-and-flip-financing",
+          "first-dscr-loan",
+          "investment-property-deal-checklist"
+        ],
+        "cta": "/commercial/bridge-loans#inquire",
+        "cta_title": "Let’s connect the rehab budget to the financing",
+        "cta_text": "Share the purchase or payoff, scope, work budget, ownership position and planned exit. We can help identify the financing questions before the project starts.",
+        "cta_label": "Discuss my rehab project",
+        "card": "Connect renovation scope, contractor milestones, funding draws and the planned exit.",
+        "sources": [
+          "homestyle",
+          "draws",
+          "occ"
+        ]
+      },
+      "es": {
+        "name": "Su primer préstamo de rehabilitación: obra y salida",
+        "title": "Primer préstamo de rehabilitación y BRRRR | Stonehaven",
+        "description": "Planifique adquisición y renovación de su primera inversión. Comprenda desembolsos, contingencias, pagos al contratista y salida mediante venta o refinanciamiento.",
+        "h1": "Su primer préstamo de rehabilitación: obra y salida",
+        "answer": "<strong>El financiamiento de rehabilitación tiene dos funciones conectadas: financiar el inmueble y pagar mejoras elegibles en un calendario viable.</strong> Decida si venderá o alquilará al terminar y ajuste plazo, desembolsos, contrato de obra y financiamiento de salida a ese plan.",
+        "sections": [
+          {
+            "id": "route",
+            "heading": "¿Qué tipo de rehabilitación necesita financiar?",
+            "html": "<p>“Préstamo de rehabilitación” describe situaciones distintas. Una actualización cosmética de un alquiler, una casa vacante con sistemas deteriorados y un redesarrollo estructural no plantean iguales preguntas de presupuesto, plazo o elegibilidad.</p><div class=\"ig-table\" role=\"region\" tabindex=\"0\" aria-label=\"Empiece por condición y uso previsto\"><table><caption>Empiece por condición y uso previsto</caption><thead><tr><th scope=\"col\">Situación</th><th scope=\"col\">Qué conversar</th><th scope=\"col\">Qué verificar</th></tr></thead><tbody><tr><th scope=\"row\">Renovación para reventa</th><td>Financiamiento de renovación y reventa o puente</td><td>Experiencia, alcance, desembolsos y plazo de venta</td></tr><tr><th scope=\"row\">Renovación para conservar en alquiler</th><td>Obra más posible préstamo de alquiler posterior</td><td>Terminación, renta, antigüedad y fondos de refinanciamiento</td></tr><tr><th scope=\"row\">Vivienda que ocupará usted</th><td>Hipoteca residencial de renovación elegible</td><td>Ocupación, calificación personal y trabajo aprobado</td></tr><tr><th scope=\"row\">Transformación comercial importante</th><td>Préstamo puente, construcción o desarrollo comercial</td><td>Permisos, uso legal, presupuesto e ingreso estabilizado</td></tr></tbody></table></div><p>El marco HomeStyle Renovation de Fannie Mae muestra que algunas estructuras convencionales de renovación pueden incluir inversiones elegibles. No hace elegible a todo inmueble, prestatario o contratista, ni establece disponibilidad para su expediente. Describa ocupación y alcance reales antes de elegir un programa.</p>"
+          },
+          {
+            "id": "scope",
+            "heading": "Prepare un alcance útil para prestamista y contratista",
+            "html": "<p>Separe el trabajo por oficio o tarea, con cantidades, costos, calendario y responsable. “Renovación completa, $75,000” aporta poca información para comparar ofertas, establecer hitos o evaluar sobrecostos.</p><ul><li><strong>Trabajo visible:</strong> techo, sistemas, cocina, baños, acabados y exterior según corresponda.</li><li><strong>Preparación:</strong> inspecciones, planos, permisos y honorarios profesionales.</li><li><strong>Ejecución:</strong> mano de obra, materiales, retiro de escombros, acceso y servicios temporales.</li><li><strong>Incertidumbre:</strong> defectos que necesitan investigación y contingencia identificada por separado.</li><li><strong>Terminación:</strong> inspecciones finales, certificados, preparación para inquilinos o venta.</li></ul><p>Utilice inspecciones y presupuestos del contratista para precisar el alcance antes de renunciar a protecciones contractuales. La tasación estima valor de garantía; no sustituye su inspección de construcción ni garantiza suficiencia del presupuesto.</p>"
+          },
+          {
+            "id": "draw",
+            "heading": "Relacione desembolsos y calendario de efectivo",
+            "html": "<p>Los documentos del préstamo controlan cómo se liberan los fondos. Pregunte si se basan en obra terminada, costos pagados, materiales entregados u otro hito aprobado, y qué evidencia se exige. El momento del reembolso puede diferir del pago al contratista.</p><ol><li>Acuerde alcance y presupuesto antes del cierre.</li><li>Identifique efectivo para depósitos y obra anterior al reembolso.</li><li>Organice facturas, pagos, permisos y cambios aprobados.</li><li>Solicite el desembolso con evidencia y permita tiempo para revisión o inspección.</li><li>Compare lo recibido con obra pendiente y fondos restantes.</li></ol><div class=\"ig-example\"><h3>Puede faltar liquidez antes de exceder el presupuesto</h3><p>Suponga una asignación de obra de $60,000. El contratista pide $20,000 para la primera etapa. Usted tiene $12,000 destinados a ella y el prestamista reembolsa tras verificar el trabajo. Existe una <strong>brecha de calendario de $8,000</strong>, aunque el presupuesto total todavía cuadre.</p><p>Puede conversar sobre un calendario distinto, anticipos aprobados por el prestamista o efectivo de trabajo adicional aceptable. No suponga que puede cubrirlo con deuda subordinada no aprobada o fondos ya comprometidos.</p></div><p>Pregunte quién administra préstamo y desembolsos, cómo se cobran cargos, si hay retenciones finales y qué ocurre al cambiar contratista. Un plazo anunciado no sustituye el contrato ni una reserva de liquidez realista.</p>"
+          },
+          {
+            "id": "contingency",
+            "heading": "La contingencia debe ser dinero disponible",
+            "html": "<p>Determine la contingencia con su contratista y asesores según edificio, alcance e incertidumbre. El prestamista puede imponer su propio requisito. Aclare si se financia dentro del préstamo, se aporta en efectivo o solo aparece como una cifra en la hoja de cálculo.</p><div class=\"ig-example\"><h3>¿Qué pasa cuando aumenta el costo?</h3><p>Un alcance de $60,000 más una contingencia separada y financiada de $9,000 produce un presupuesto de $69,000. Si el trabajo adicional verificado cuesta $12,000, la contingencia cubre $9,000 y quedan <strong>$3,000 por resolver</strong>. No cuente con ampliar el préstamo sin otra revisión.</p></div><p>Obtenga aprobación escrita cuando corresponda antes de cambiar el alcance. Una mejora más costosa no aumenta necesariamente el valor tasado ni el anticipo. Mantenga una estimación actualizada del costo pendiente para que la última fase no dependa de dinero ya gastado.</p>"
+          },
+          {
+            "id": "exit",
+            "heading": "Elija salida de venta o alquiler antes de cerrar",
+            "html": "<p>Para vender, contemple construcción, inspecciones, comercialización, negociación y financiamiento del comprador. Compare ese plazo con vencimiento y condiciones de extensión. Modele menor precio y más tiempo de mantenimiento.</p><p>Para alquilar, prepare un presupuesto operativo y evalúe el refinanciamiento por separado. Terminar la casa no garantiza un préstamo suficiente para liquidar la deuda de rehabilitación. La <a href=\"/es/resources/first-dscr-loan\">guía del primer DSCR</a> muestra cómo valor, renta y costos pueden crear un faltante.</p><p>La orientación de la OCC sobre riesgo de refinanciamiento refuerza la necesidad de revisar un préstamo futuro bajo condiciones distintas de mercado y del prestatario. No establece financiamiento posterior ni prórroga garantizados para un préstamo privado.</p><p>Si la obra ya está en marcha, prepare saldo, vencimiento, trabajo terminado, fondos disponibles y costo actualizado de terminación. Esos datos son más útiles que repetir el presupuesto original cuando la situación cambió.</p>"
+          },
+          {
+            "id": "help",
+            "heading": "Cómo ayuda Stonehaven con estructura y colocación",
+            "html": "<p>Podemos separar anticipo de adquisición y compromiso de rehabilitación, identificar preguntas sobre desembolsos y revisar posibles salidas de venta o refinanciamiento. Buscamos compatibilidad con prestamistas según alcance, experiencia, inmueble, ubicación y efectivo reales.</p><p>Una revisión puede identificar una primera fase menor, más liquidez u otra ruta. Los cambios deben ser operativamente viables y recibir las aprobaciones necesarias. Stonehaven gestiona financiamiento externo; no controla contratistas, tasaciones ni mercado futuro de venta.</p><p>Empiece por el <a href=\"/es/resources/investment-property-deal-checklist\">resumen del proyecto</a>. Incluya si ya es dueño y qué importes son estimaciones frente a ofertas acordadas.</p>"
+          }
+        ],
+        "related": [
+          "first-fix-and-flip-financing",
+          "first-dscr-loan",
+          "investment-property-deal-checklist"
+        ],
+        "cta": "/commercial/bridge-loans#inquire",
+        "cta_title": "Conectemos el presupuesto de obra con el financiamiento",
+        "cta_text": "Comparta compra o saldo, alcance, presupuesto, situación de propiedad y salida. Podemos identificar las preguntas de financiamiento antes de empezar.",
+        "cta_label": "Conversar sobre mi rehabilitación",
+        "card": "Conecte alcance, hitos del contratista, desembolsos y estrategia de salida.",
+        "sources": [
+          "homestyle",
+          "draws",
+          "occ"
+        ]
+      }
+    },
+    "investment-property-deal-checklist": {
+      "en": {
+        "name": "Prepare your first investment deal for a lender",
+        "title": "Investment Property Deal Checklist | Stonehaven",
+        "description": "Build a clear lender-ready summary for a first rental, flip or rehab. Organize the budget, financing request, experience, documents and exit questions.",
+        "h1": "Prepare your first investment deal for a lender",
+        "answer": "<strong>A useful deal summary lets a lender understand what you are buying, what will change, where the money comes from and how it gets repaid.</strong> You do not need to sound like an experienced developer. Label estimates, disclose gaps and keep the same assumptions across every version of the file.",
+        "sections": [
+          {
+            "id": "summary",
+            "heading": "Start with a one-page scenario",
+            "html": "<p>Use the following outline in your own notes. Unknown items can be marked “to confirm.” For a first conversation, a concise summary is more useful than an unsorted document bundle.</p><div class=\"ig-table\" role=\"region\" tabindex=\"0\" aria-label=\"Your first deal summary\"><table><caption>Your first deal summary</caption><thead><tr><th scope=\"col\">Item</th><th scope=\"col\">What to prepare</th></tr></thead><tbody><tr><th scope=\"row\">Property and use</th><td>State, property type, legal units, current condition and whether anyone related to you will occupy it</td></tr><tr><th scope=\"row\">Control and timing</th><td>Owned, under contract or still searching; purchase price or existing payoff; target close and any contract deadlines</td></tr><tr><th scope=\"row\">Plan</th><td>Sell, hold for rent, renovate, build or refinance; current stage and realistic completion timeline</td></tr><tr><th scope=\"row\">Budget</th><td>Acquisition, work, soft costs, transaction costs, holding costs, contingency and reserves, listed separately</td></tr><tr><th scope=\"row\">Value and income</th><td>Current and projected value with support; existing or expected rent with its source; taxes, insurance and other expenses</td></tr><tr><th scope=\"row\">Requested financing</th><td>Initial acquisition/payoff advance, future rehab funding and any other requested use of proceeds</td></tr><tr><th scope=\"row\">Borrower and team</th><td>Actual experience, proposed ownership, contractor or manager, available cash and any partners</td></tr><tr><th scope=\"row\">Exit and alternative</th><td>Sale or refinance assumptions, maturity fit and the plan if timing or proceeds disappoint</td></tr></tbody></table></div>"
+          },
+          {
+            "id": "documents",
+            "heading": "Stage the documents instead of sending everything at once",
+            "html": "<h3>For the initial discussion</h3><p>Bring the summary, an itemized budget if work is planned, and the main question you want answered. Avoid guessing private figures just to complete a box. If there is no active property, describe the strategy and location you are considering.</p><h3>When the lender requests a file</h3><ul><li>Purchase agreement or current loan and payoff information.</li><li>Property records, leases, rent roll and operating information appropriate to the deal.</li><li>Contractor scope, bids, schedule, experience and insurance where applicable.</li><li>Borrower/entity documents and verified funds as requested.</li><li>Evidence supporting the proposed value or income, clearly separated from independent valuation.</li></ul><p>Use the agreed secure document channel for identity documents, bank statements, tax records and other private material. Public inquiry forms are for a general scenario, not account numbers or confidential files. Get permission before sharing another person’s information.</p>"
+          },
+          {
+            "id": "terms",
+            "heading": "Compare written terms on the same assumptions",
+            "html": "<p>Create one comparison sheet for the same project budget and expected holding period. A higher loan amount can still leave less usable cash if it includes fees, reserves or a larger holdback.</p><ul><li><strong>At closing:</strong> total commitment, initial advance, payoff deductions, financed costs and cash you must bring.</li><li><strong>During the project:</strong> payment calculation, funding milestones, inspection costs, retainage and required liquidity.</li><li><strong>At exit:</strong> maturity, balloon balance, prepayment cost, extension conditions and repayment requirements.</li><li><strong>Before funding:</strong> appraisal, credit, title, insurance, borrower, entity, contractor and other remaining conditions.</li><li><strong>Responsibility:</strong> guarantors, collateral, covenants and who services the loan and draw requests.</li></ul><p>A preliminary quote, term sheet and final credit approval are different stages. Ask what is binding, what can change, when any fee becomes nonrefundable and what must be completed before money is available. Have counsel review documents where appropriate.</p>"
+          },
+          {
+            "id": "placement",
+            "heading": "What deal placement and structuring mean at Stonehaven",
+            "html": "<p><strong>Structuring</strong> means working through the financing arrangement: who borrows, what the loan funds, how much cash is needed, when advances occur and how repayment is expected to happen. It does not mean finding a way to omit facts a lender needs.</p><p><strong>Placement</strong> means matching that scenario with potential lender criteria and presenting the information for review. We can help clarify feedback, compare proposals and organize follow-up requirements. We cannot commit a lender to approval or guarantee that a future refinance will be available.</p><p>If feedback is “not yet,” ask which fact prevents the current request from working. A missing scope, insufficient draw cash and an unsupported rent assumption call for different next steps. An honest constraint can be useful information before you commit more money to a project.</p>"
+          },
+          {
+            "id": "before",
+            "heading": "Before you sign or close",
+            "html": "<ol><li>Reconcile the latest budget, loan structure and cash sources. Remove old numbers from the working file.</li><li>Confirm the property’s intended use, legal unit count and required approvals with the appropriate professionals.</li><li>Align the contractor’s payments with the financing process and your available liquidity.</li><li>Read the final payment, maturity, guarantee and prepayment terms rather than relying on the first quote.</li><li>Know what you will do if the sale, rent or refinance differs from the base case.</li></ol><p>These guides are a starting point for better questions. They do not replace the lender’s requirements, a property inspection or legal and tax advice for your circumstances.</p>"
+          }
+        ],
+        "related": [
+          "first-investment-property-financing",
+          "first-fix-and-flip-financing",
+          "first-dscr-loan",
+          "first-rehab-loan"
+        ],
+        "cta": "/contact#inquire",
+        "cta_title": "Have a rough scenario? Start there.",
+        "cta_text": "Tell us what you know and what you still need to work out. We can help organize the financing conversation and identify what a lender will need next.",
+        "cta_label": "Discuss my first deal",
+        "card": "Organize a one-page scenario, documents and a consistent comparison of lender terms.",
+        "sources": [
+          "occ"
+        ]
+      },
+      "es": {
+        "name": "Prepare su primera inversión para un prestamista",
+        "title": "Lista para financiar su primera inversión | Stonehaven",
+        "description": "Prepare un resumen claro para financiar su primer alquiler, reventa o rehabilitación. Organice presupuesto, experiencia, documentos y preguntas sobre las condiciones.",
+        "h1": "Prepare su primera inversión para un prestamista",
+        "answer": "<strong>Un resumen útil explica qué comprará, qué cambiará, de dónde sale el dinero y cómo se pagará el préstamo.</strong> No necesita sonar como un desarrollador experimentado. Identifique estimaciones, explique faltantes y mantenga los mismos supuestos en todas las versiones.",
+        "sections": [
+          {
+            "id": "summary",
+            "heading": "Empiece por un escenario de una página",
+            "html": "<p>Use este esquema en sus propias notas. Puede marcar “por confirmar” lo que desconozca. Para una primera conversación, un resumen conciso resulta más útil que documentos sin organizar.</p><div class=\"ig-table\" role=\"region\" tabindex=\"0\" aria-label=\"Resumen de su primer proyecto\"><table><caption>Resumen de su primer proyecto</caption><thead><tr><th scope=\"col\">Concepto</th><th scope=\"col\">Qué preparar</th></tr></thead><tbody><tr><th scope=\"row\">Inmueble y uso</th><td>Estado, tipo, unidades legales, condición y si lo ocupará usted o una persona relacionada</td></tr><tr><th scope=\"row\">Control y plazo</th><td>Propio, bajo contrato o en búsqueda; precio o saldo; cierre y fechas contractuales</td></tr><tr><th scope=\"row\">Plan</th><td>Vender, alquilar, renovar, construir o refinanciar; etapa y plazo realista</td></tr><tr><th scope=\"row\">Presupuesto</th><td>Compra, obra, costos indirectos, operación, mantenimiento, contingencia y reservas por separado</td></tr><tr><th scope=\"row\">Valor e ingresos</th><td>Valor actual y proyectado con respaldo; renta y su fuente; impuestos, seguros y gastos</td></tr><tr><th scope=\"row\">Financiamiento solicitado</th><td>Anticipo de adquisición o liquidación, fondos futuros de obra y otros usos</td></tr><tr><th scope=\"row\">Prestatario y equipo</th><td>Experiencia real, propiedad propuesta, contratista o administrador, efectivo y socios</td></tr><tr><th scope=\"row\">Salida y alternativa</th><td>Supuestos de venta o refinanciamiento, vencimiento y plan si fallan plazos o fondos</td></tr></tbody></table></div>"
+          },
+          {
+            "id": "documents",
+            "heading": "Organice documentos por etapa",
+            "html": "<h3>Para la conversación inicial</h3><p>Prepare resumen, presupuesto detallado si habrá obra y la pregunta principal. No invente datos privados para llenar una casilla. Sin una propiedad activa, describa la estrategia y ubicación que considera.</p><h3>Cuando el prestamista solicite el expediente</h3><ul><li>Contrato de compra o información del préstamo y saldo actuales.</li><li>Registros del inmueble, contratos, relación de rentas e información operativa pertinente.</li><li>Alcance, presupuestos, calendario, experiencia y seguro del contratista cuando apliquen.</li><li>Documentación del prestatario y entidad, y fondos verificados según lo solicitado.</li><li>Respaldo de valor o ingresos propuestos, separado de la valoración independiente.</li></ul><p>Use el canal seguro acordado para identificaciones, estados bancarios, declaraciones fiscales y material privado. Los formularios públicos reciben escenarios generales, no cuentas ni archivos confidenciales. Obtenga permiso antes de compartir información de terceros.</p>"
+          },
+          {
+            "id": "terms",
+            "heading": "Compare condiciones escritas con los mismos supuestos",
+            "html": "<p>Use una hoja comparativa con igual presupuesto y período de tenencia. Un préstamo mayor puede dejar menos efectivo utilizable si incluye cargos, reservas o más fondos retenidos.</p><ul><li><strong>Al cierre:</strong> compromiso total, anticipo, deducciones, costos financiados y aportación necesaria.</li><li><strong>Durante el proyecto:</strong> cálculo de pagos, hitos, inspecciones, retenciones y liquidez.</li><li><strong>A la salida:</strong> vencimiento, saldo final, prepago, extensiones y requisitos de liquidación.</li><li><strong>Antes del desembolso:</strong> condiciones de tasación, crédito, título, seguro, prestatario, entidad y contratista.</li><li><strong>Responsabilidades:</strong> garantes, garantías, obligaciones y administración del préstamo y desembolsos.</li></ul><p>Una cotización preliminar, hoja de condiciones y aprobación final son etapas distintas. Pregunte qué obliga, qué puede cambiar, cuándo un cargo deja de ser reembolsable y qué falta para disponer del dinero. Solicite revisión jurídica cuando corresponda.</p>"
+          },
+          {
+            "id": "placement",
+            "heading": "Qué significan estructura y colocación en Stonehaven",
+            "html": "<p><strong>Estructurar</strong> consiste en revisar quién pide el préstamo, qué financia, cuánto efectivo se necesita, cuándo se libera y cómo se pagará. No consiste en omitir información necesaria para el prestamista.</p><p><strong>Gestionar la colocación</strong> significa relacionar el escenario con criterios de posibles prestamistas y presentar la información. Podemos aclarar observaciones, comparar propuestas y organizar requisitos posteriores. No podemos comprometer una aprobación ni garantizar refinanciamiento futuro.</p><p>Si la respuesta es “todavía no”, pregunte qué impide la solicitud actual. Un alcance incompleto, falta de liquidez para desembolsos y renta sin respaldo requieren soluciones distintas. Conocer una restricción puede ser útil antes de comprometer más dinero.</p>"
+          },
+          {
+            "id": "before",
+            "heading": "Antes de firmar o cerrar",
+            "html": "<ol><li>Reconcilie presupuesto, estructura y fuentes de efectivo actualizados. Retire cifras antiguas del expediente de trabajo.</li><li>Confirme uso, unidades legales y aprobaciones con los profesionales apropiados.</li><li>Alinee pagos del contratista con financiamiento y liquidez disponible.</li><li>Lea pagos, vencimiento, garantías y prepago finales; no dependa de la primera propuesta.</li><li>Defina qué hará si venta, renta o refinanciamiento difieren del caso base.</li></ol><p>Estas guías ayudan a formular mejores preguntas. No sustituyen requisitos del prestamista, inspección del inmueble ni asesoría legal y fiscal para su situación.</p>"
+          }
+        ],
+        "related": [
+          "first-investment-property-financing",
+          "first-fix-and-flip-financing",
+          "first-dscr-loan",
+          "first-rehab-loan"
+        ],
+        "cta": "/contact#inquire",
+        "cta_title": "¿Tiene un escenario preliminar? Empecemos ahí.",
+        "cta_text": "Díganos qué conoce y qué falta resolver. Podemos organizar la conversación e identificar la siguiente información que necesitará el prestamista.",
+        "cta_label": "Conversar sobre mi primer proyecto",
+        "card": "Organice escenario, documentos y una comparación coherente de las condiciones.",
+        "sources": [
+          "occ"
+        ]
+      }
+    }
+  }
+}

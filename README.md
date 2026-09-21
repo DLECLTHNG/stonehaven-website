@@ -21,6 +21,10 @@ python3 scripts/build-heloc-ads.py
 
 The DSCR generator also owns a marked block in `dscr.html`. DSCR and HELOC generators read the footer in `residential.html`. Update generators when changing generated markup or asset cache keys.
 
+## Investor resource guides
+
+Bilingual beginner guides live under `resources/` and `es/resources/`. Edit `docs/investor-guides/guides.json`, run `python3 scripts/build-investor-guides.py`, then `python3 scripts/build-search-navigation.py`. The guide generator maintains new canonical sitemap entries and forced `.html` redirects; the final navigation build adds language alternates, contextual links and discovery text.
+
 ## Blog publishing
 
 Run `node scripts/new-post.mjs path/to/brief.json`. A brief requires `slug`, `date`, `type` (`guide` or `closing`), and `en` and `es` objects containing `title`, `desc`, `eyebrow`, `body` and `terms`. The type selects the disclosure. The script validates both languages and rejects an existing slug before making changes, preventing duplicate cards, redirects and sitemap entries. It saves new source briefs under `docs/blog-briefs/`; commit them with the output.
