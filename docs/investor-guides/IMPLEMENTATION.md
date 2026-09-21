@@ -50,3 +50,11 @@ The guides link to existing contact, fix-and-flip, bridge and DSCR review forms.
 - Twelve example calculations checked, including purchase equity, draw gap, LTC, ARV ratio, flip profit sensitivity, DSCR, operating cash flow and refinance proceeds.
 
 The pull request and deployment checks provide the release record. Verify the live canonical pages after deployment before reporting publication complete.
+
+## Formatting QA follow-up, September 21, 2026
+
+A fresh review of all twelve published pages confirmed heading wrapping, centered CTAs, table containment and 16px article text at small-phone and laptop sizes. It identified two refinements: the longest Spanish contents menu extended below a 600px-high laptop viewport, and narrow tables offered no visible swipe instruction. On short desktop windows, the contents menu now scrolls naturally with the page. Phone tables include a localized instruction to reveal remaining columns. Small hero and CTA labels also use darker text for easier reading.
+
+The stylesheet version is advanced to `v=2` through the retained generator. Article content, metadata, inquiry destinations and lead routing remain unchanged.
+
+Follow-up validation covered all twelve pages at 320×640, 390×844, 600×900, 768×1024, 1024×600 and 1440×900: 72 layouts with no page or heading overflow, off-center CTA, undersized CTA target or missing mobile table cue. Viewport screenshots confirmed the short-window Spanish menu and mobile table layout; horizontal scrolling exposes the remaining columns without scrolling the page. All 110 site tests and fourteen generator drift checks passed.

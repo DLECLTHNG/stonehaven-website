@@ -34,7 +34,7 @@ def render(slug,lang,c):
     item={'@context':'https://schema.org','@type':'CollectionPage' if slug==HUB else 'Article','@id':url,'url':url,'name':c['title'],'headline':c['h1'],'description':c['description'],'inLanguage':lang,'datePublished':DATA['published'],'dateModified':DATA['updated'],'mainEntityOfPage':url,'author':{'@type':'Organization','name':'Stonehaven Lending','@id':ORIGIN+'/#org'},'publisher':{'@type':'Organization','name':'Stonehaven Lending','@id':ORIGIN+'/#org'},'citation':[DATA['sources'][key]['url'] for key in c['sources']]}
     if slug==HUB:item['mainEntity']={'@type':'ItemList','itemListElement':[{'@type':'ListItem','position':i+1,'url':ORIGIN+route(key,lang),'name':value[lang]['name']} for i,(key,value) in enumerate((item for item in DATA['pages'].items() if item[0]!=HUB))]}
     schema.append(item)
-    head=head.replace('</head>','<link rel="stylesheet" href="/investor-guides.css?v=1"/>'+alternates+''.join('<script type="application/ld+json">'+json.dumps(x,ensure_ascii=False)+'</script>' for x in schema)+'</head>')
+    head=head.replace('</head>','<link rel="stylesheet" href="/investor-guides.css?v=2"/>'+alternates+''.join('<script type="application/ld+json">'+json.dumps(x,ensure_ascii=False)+'</script>' for x in schema)+'</head>')
     trail='<nav class="ig-breadcrumb wrap" aria-label="'+('Ruta de navegación' if es else 'Breadcrumb')+'"><ol>'+''.join('<li>'+('<span aria-current="page">'+e(label)+'</span>' if path==route(slug,lang) else '<a href="'+path+'">'+e(label)+'</a>')+'</li>' for path,label in crumbs)+'</ol></nav>'
     d=date.fromisoformat(DATA['updated'])
     months_es=('enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre')
