@@ -19,7 +19,7 @@
       if (target && !target.dataset.touched) target.value = source.value;
     });
     var valid = Number.isFinite(value) && value > 0 && Number.isFinite(balance) && balance >= 0;
-    var requestValid = Number.isFinite(request) && request > 0;
+    var requestValid = Number.isFinite(request) && request >= 30000;
     if (!valid) {
       $('e-range').textContent = '-';
       $('e-verdict').textContent = es ? 'Revise los datos' : 'Check your figures';
@@ -35,7 +35,7 @@
     $('e-note').textContent = es ? 'Supuestos del 80% y 90% de préstamo-valor combinado, antes de otros gravámenes y costos. No son límites ofrecidos.' : 'Assumes 80% and 90% combined loan-to-value caps, before other liens and costs. These are not offered limits.';
     $('e-request-note').textContent = requestValid
       ? (es ? 'Saldo más solicitud: ' : 'Mortgage plus request: ') + money(balance + request) + '. ' + (es ? 'La elegibilidad requiere revisión del prestamista.' : 'Eligibility requires lender review.')
-      : (es ? 'Añada el monto que desea solicitar para preparar su consulta.' : 'Add the amount you want to request to prepare your inquiry.');
+      : (es ? 'El monto mínimo de una solicitud HELOC es $30,000.' : 'The minimum HELOC request is $30,000.');
     if (event) {
       if (!tracked && window.shTrack) { tracked = true; window.shTrack('calc_used', { page: es ? 'heloc-es' : 'heloc' }); }
     }

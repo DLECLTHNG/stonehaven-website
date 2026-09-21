@@ -5,7 +5,7 @@ const require = createRequire(import.meta.url);
 process.env.FAMILY_DRY_RUN = "1";
 const fn = require("../netlify/functions/family-inquiry.js");
 const post = (body, headers = {}) => fn.handler({ httpMethod: "POST", headers: { origin: "https://stonehavencre.com", "x-nf-client-connection-ip": headers.ip || "1.1.1." + Math.floor(Math.random() * 250), ...headers }, body: JSON.stringify(body) });
-const good = () => ({ page: "family-parents", name: "Test Person", phone: "(470) 555-0123", state: "GA", email: "", timing: "exploring", notice_version: "fo-notice-2026-09-11", attribution: { utm_source: "meta", fbclid: "x" }, path: "/buy-a-home-for-parents" });
+const good = () => ({ page: "family-parents", name: "Test Person", phone: "(470) 555-0123", state: "GA", email: "test@example.com", timing: "exploring", notice_version: "fo-notice-2026-09-11", attribution: { utm_source: "meta", fbclid: "x" }, path: "/buy-a-home-for-parents" });
 
 test("rejects non-POST", async () => { const r = await fn.handler({ httpMethod: "GET", headers: {} }); assert.equal(r.statusCode, 405); });
 test("rejects foreign origin", async () => { const r = await post(good(), { origin: "https://evil.example" }); assert.equal(r.statusCode, 403); });
@@ -82,4 +82,13 @@ test("the parent-income question is accepted only on the parents page", async ()
     assert.ok(!/occupant_income/.test(String(body)));
     assert.ok(!/income/i.test(String(body)));
   } finally { globalThis.fetch = orig; process.env.FAMILY_DRY_RUN = "1"; }
+});
+
+
+test("Family inquiries cannot omit email or use whitespace-only contact details", async () => {
+  for (const fields of [{email:''}, {email:'   '}, {email:undefined}, {name:'   '}]) {
+    const r = await post({...good(), ...fields});
+    assert.equal(r.statusCode, 400);
+    assert.ok(Object.keys(JSON.parse(r.body).errors).length);
+  }
 });

@@ -14,7 +14,7 @@ def heading(s): return esc(s.rstrip(".").strip())     # owner rule: no trailing 
 def check_no_em(s, where):
     if "—" in s or "–" in s: raise SystemExit("em/en dash found in " + where)
 
-VER = "3"
+VER = "4"
 CSS_VER = "polish-20260918"
 STATES_JS = [c for c, _ in C.SERVICE_STATES]
 
@@ -99,7 +99,7 @@ def form_card(p):
     <div class="fo-field"><label for="f-name">Full name</label><input id="f-name" name="name" type="text" autocomplete="name" required maxlength="120" aria-describedby="e-name"/><p class="fo-err" id="e-name"></p></div>
     <div class="fo-field"><label for="f-phone">Mobile number</label><input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required aria-describedby="e-phone" placeholder="(000) 000-0000"/><p class="fo-err" id="e-phone"></p></div>
     <div class="fo-field"><label for="f-state">Property state</label><select id="f-state" name="state" required aria-describedby="e-state"><option value="">Choose a state</option>{opts}</select><p class="fo-err" id="e-state"></p></div>
-    <div class="fo-field"><label for="f-email">Email <span class="opt">(optional)</span></label><input id="f-email" name="email" type="email" inputmode="email" autocomplete="email" maxlength="254" aria-describedby="e-email"/><p class="fo-err" id="e-email"></p></div>
+    <div class="fo-field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" inputmode="email" autocomplete="email" maxlength="254" required aria-describedby="e-email"/><p class="fo-err" id="e-email"></p></div>
     <div class="fo-field"><label for="f-price">{esc(C.FORM['price_label'])} <span class="opt">(optional)</span></label><input id="f-price" name="price" type="text" inputmode="numeric" autocomplete="off" maxlength="12" aria-describedby="h-price e-price"/><p class="fo-hint" id="h-price">{esc(C.FORM['price_hint'])}</p><p class="fo-err" id="e-price"></p></div>
     <div class="fo-field"><label for="f-credit">{esc(C.FORM['credit_label'])} <span class="opt">(optional)</span></label><select id="f-credit" name="credit" aria-describedby="h-credit">{credit_opts}</select><p class="fo-hint" id="h-credit">{esc(C.FORM['credit_hint'])}</p></div>
     {extra}

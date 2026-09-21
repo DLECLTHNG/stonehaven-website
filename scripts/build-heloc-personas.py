@@ -107,8 +107,8 @@ def head(p, intents_json):
 <link rel="stylesheet" href="../styles.css?v=seo-20260920"/><link rel="stylesheet" href="../funnel.css?v=seo-20260920"/>
 <noscript><style>.reveal{opacity:1 !important;transform:none !important;}</style></noscript>
 <script src="../js/site-config.js?v=6" defer></script>
-<script src="../js/heloc-fields.js?v=1" defer></script>
-<script src="../js/funnel.js?v=13" defer></script>
+<script src="../js/heloc-fields.js?v=2" defer></script>
+<script src="../js/funnel.js?v=14" defer></script>
 <script src="../js/heloc-persona.js?v=1" defer></script>
 <style>
 .pp-hero{padding:150px 0 44px;}
@@ -207,7 +207,7 @@ def body(p):
     <div class="lf-field"><label for="pi-purpose">Borrowing purpose</label><select id="pi-purpose" name="purpose"><option>Home improvement</option><option>Debt consolidation</option><option>Other</option></select></div>
     <div class="lf-field"><label for="f-value">Estimated home value ($)</label><input id="f-value" type="number" inputmode="numeric" min="1" name="home_value" placeholder="400,000" step="0.01" required/></div>
     <div class="lf-field"><label for="f-balance">Mortgage balance ($, enter 0 if paid off)</label><input id="f-balance" type="number" inputmode="numeric" min="0" name="mortgage_balance" placeholder="250,000" step="0.01" required/></div>
-    <div class="lf-field"><label for="f-amount">How much do you want to borrow? ($)</label><input id="f-amount" type="number" inputmode="numeric" min="1" name="requested_amount" placeholder="60,000" step="0.01" required/></div>
+    <div class="lf-field"><label for="f-amount">How much do you want to borrow? ($30,000 minimum)</label><input id="f-amount" type="number" inputmode="numeric" min="30000" name="requested_amount" placeholder="60,000" step="0.01" required/></div>
     <div class="lf-field"><label for="f-credit">Estimated credit score <span style="text-transform:none;letter-spacing:0;color:#AAB8C7;">(best guess is fine)</span></label><select id="f-credit" name="credit_band">%(credit_opts)s</select></div>
     <div class="lf-field"><label for="f-timing">Timing</label><select id="f-timing" name="timeline"><option>As soon as practical</option><option>1-3 months</option><option>3-6 months</option><option>Exploring</option></select></div>
     <div class="lf-field"><label for="f-name">Name</label><input id="f-name" type="text" name="name" autocomplete="name" required/></div>

@@ -17,8 +17,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="/family.css?v=polish-20260918"/>
 <script src="/js/chatgpt-pixel.js?v=1" defer></script>
-<script src="/js/family-config.js?v=3" defer></script>
-<script src="/js/family-lp.js?v=3" defer></script>
+<script src="/js/family-config.js?v=4" defer></script>
+<script src="/js/family-lp.js?v=4" defer></script>
 <meta property="og:image:width" content="1200"/>
 <meta property="og:image:height" content="630"/>
 <meta property="og:image:type" content="image/jpeg"/>
@@ -55,7 +55,7 @@
     <div class="fo-field"><label for="f-name">Full name</label><input id="f-name" name="name" type="text" autocomplete="name" required maxlength="120" aria-describedby="e-name"/><p class="fo-err" id="e-name"></p></div>
     <div class="fo-field"><label for="f-phone">Mobile number</label><input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required aria-describedby="e-phone" placeholder="(000) 000-0000"/><p class="fo-err" id="e-phone"></p></div>
     <div class="fo-field"><label for="f-state">Property state</label><select id="f-state" name="state" required aria-describedby="e-state"><option value="">Choose a state</option><option value="GA">Georgia</option><option value="AL">Alabama</option><option value="TN">Tennessee</option><option value="FL">Florida</option><option value="NC">North Carolina</option><option value="SC">South Carolina</option></select><p class="fo-err" id="e-state"></p></div>
-    <div class="fo-field"><label for="f-email">Email <span class="opt">(optional)</span></label><input id="f-email" name="email" type="email" inputmode="email" autocomplete="email" maxlength="254" aria-describedby="e-email"/><p class="fo-err" id="e-email"></p></div>
+    <div class="fo-field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" inputmode="email" autocomplete="email" maxlength="254" required aria-describedby="e-email"/><p class="fo-err" id="e-email"></p></div>
     <div class="fo-field"><label for="f-price">Purchase price, roughly ($) <span class="opt">(optional)</span></label><input id="f-price" name="price" type="text" inputmode="numeric" autocomplete="off" maxlength="12" aria-describedby="h-price e-price"/><p class="fo-hint" id="h-price">A rough figure is fine. Leave blank if you are still looking.</p><p class="fo-err" id="e-price"></p></div>
     <div class="fo-field"><label for="f-credit">Credit score range <span class="opt">(optional)</span></label><select id="f-credit" name="credit" aria-describedby="h-credit"><option value="not-sure" selected>Select a range</option><option value="850-780">850-780</option><option value="779-760">779-760</option><option value="759-740">759-740</option><option value="739-720">739-720</option><option value="719-700">719-700</option><option value="699-680">699-680</option><option value="679-660">679-660</option><option value="659-640">659-640</option><option value="639-620">639-620</option><option value="619-600">619-600</option></select><p class="fo-hint" id="h-credit">Your own range, not your family member&#x27;s. A rough answer is fine.</p></div>
     
@@ -63,7 +63,7 @@
     <div class="fo-hp" aria-hidden="true"><label for="f-website">Leave this field empty</label><input id="f-website" name="company_website" type="text" tabindex="-1" autocomplete="off"/></div>
     <button type="submit" class="fo-btn wide">Request a Text</button>
     <div class="fo-alert" role="alert" tabindex="-1"></div>
-    <p class="fo-notice">By selecting Request a Text, you ask Stonehaven Lending to text you about this inquiry at the mobile number provided, and contact you by email if supplied. Message and data rates may apply. Reply STOP to opt out. This is an inquiry, not a mortgage application. See our <a href="/privacy">Privacy Policy</a>.</p>
+    <p class="fo-notice">By selecting Request a Text, you ask Stonehaven Lending to text you about this inquiry at the mobile number provided, and contact you by email. Message and data rates may apply. Reply STOP to opt out. This is an inquiry, not a mortgage application. See our <a href="/privacy">Privacy Policy</a>.</p>
   </form>
 </section>
   </div>

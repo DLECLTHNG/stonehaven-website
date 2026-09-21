@@ -54,9 +54,9 @@ FOOTER_DISCLOSURE = ("Stonehaven Lending is a mortgage brokerage, not a direct l
 
 # Version stamp stored with every inquiry so the record shows which notice the
 # visitor saw. Bump when the notice wording changes.
-CONSENT_NOTICE_VERSION = "fo-notice-2026-09-13"
+CONSENT_NOTICE_VERSION = "fo-notice-2026-09-21"
 CONSENT_NOTICE = ("By selecting Request a Text, you ask Stonehaven Lending to text you about this inquiry at the "
-                  "mobile number provided, and contact you by email if supplied. Message and data rates may apply. Reply STOP to opt out. This is an inquiry, not a mortgage application.")
+                  "mobile number provided, and contact you by email. Message and data rates may apply. Reply STOP to opt out. This is an inquiry, not a mortgage application.")
 
 FORM = dict(
     endpoint="/.netlify/functions/family-inquiry",   # server function: validates, rate-limits, persists, returns inquiry id

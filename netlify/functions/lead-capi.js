@@ -125,6 +125,8 @@ exports.handler = async (event) => {
 
   const payload = cleanPayload(body.payload);
   const source_url = safeSourceUrl(body.source_url);
+  const { leadErrors } = await import('../shared/lead-validation.mjs');
+  if (Object.keys(leadErrors(payload, new URL(source_url).pathname)).length) return { statusCode: 422, headers: { 'Cache-Control': 'no-store' }, body: JSON.stringify({ ok: false }) };
   const tasks = [];
 
   // ---- Meta Conversions API (dedups with the browser pixel via event_id)

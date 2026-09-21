@@ -23,14 +23,18 @@
           geo: "Thank you - Stonehaven doesn't currently serve that state. Home loans are available in GA, AL, TN, FL, NC and SC.",
           need: "Please answer to continue.", phone: "Please enter a valid mobile number.", email: "Please enter a valid email.",
           stepOf: "Step {a} of {b}",
-          saveH: "Save your estimate", saveP: "Enter a mobile number and a specialist will text you this range, then follow up personally.",
+          minimum: "The minimum HELOC request is $30,000.", lowEquity: "This estimate is below our $30,000 HELOC minimum.",
+          saveName: "Full name", saveEmail: "Email",
+          saveH: "Save your estimate", saveP: "Enter your name, email and mobile number. A specialist will text you this range and follow up personally.",
           savePh: "Mobile number", saveBtn: "Text me my estimate", saveOk: "Saved. A specialist will text your estimate to that number shortly.",
           saveConsent: "By continuing, you agree Stonehaven may contact you by text or email about this request. Consent is not a condition of service. Message and data rates may apply; reply STOP to opt out." },
     es: { next: "Siguiente", back: "Atrás", callCta: "Quiero recibir un mensaje", quoteCta: "Quiero mi cotización al instante",
           geo: "Gracias - Stonehaven no atiende ese estado por ahora. Los préstamos de vivienda están disponibles en GA, AL, TN, FL, NC y SC.",
           need: "Responda para continuar.", phone: "Ingrese un número de celular válido.", email: "Ingrese un correo válido.",
           stepOf: "Paso {a} de {b}",
-          saveH: "Guarde su estimación", saveP: "Ingrese un número de celular y un especialista le enviará este rango por mensaje de texto y luego le dará seguimiento personalmente.",
+          minimum: "El monto mínimo de una solicitud HELOC es $30,000.", lowEquity: "Esta estimación está por debajo de nuestro mínimo HELOC de $30,000.",
+          saveName: "Nombre completo", saveEmail: "Correo electrónico",
+          saveH: "Guarde su estimación", saveP: "Ingrese su nombre, correo electrónico y número de celular. Un especialista le enviará este rango por mensaje de texto y le dará seguimiento personalmente.",
           savePh: "Número de celular", saveBtn: "Envíenme mi estimación", saveOk: "Guardado. Un especialista le enviará su estimación por mensaje de texto en breve.",
           saveConsent: "Al continuar, acepta que Stonehaven pueda contactarle por mensaje de texto o correo sobre esta solicitud. El consentimiento no es condición para el servicio. Pueden aplicar tarifas de mensajes y datos; responda STOP para cancelar." }
   }[lang] || null;
@@ -69,9 +73,9 @@
     var hi = Math.min(CAP, Math.max(0, Math.floor((hv * 0.85 - bal) / 5000) * 5000));
     if (lo > hi) lo = hi;
     setHidden("est_available_low", lo); setHidden("est_available_high", hi);
-    var low = step.getAttribute("data-low"); /* fallback copy when equity is thin */
-    if (hi < 10000) { if (low) host.textContent = low; host.classList.add("est-thin"); }
-    else { host.textContent = money0(lo) + " – " + money0(hi); host.classList.remove("est-thin"); }
+    /* Do not present a below-minimum range as an available HELOC. */
+    if (hi < window.SH_HELOC_FIELDS.minimumRequested) { host.textContent = T.lowEquity; host.classList.add("est-thin"); }
+    else { host.textContent = money0(Math.max(window.SH_HELOC_FIELDS.minimumRequested, lo)) + " - " + money0(hi); host.classList.remove("est-thin"); }
     var sum = step.querySelector("[data-summary]");
     if (sum) {
       sum.innerHTML = "";
@@ -133,6 +137,7 @@
     if (type === "money") {
       var inp = step.querySelector("input"); var v = window.SH_HELOC_FIELDS.amount(inp.value, key === "mortgage_balance");
       if (v === null) { err(step, T.need); return false; }
+      if (key === 'requested_amount' && v < window.SH_HELOC_FIELDS.minimumRequested) { err(step, T.minimum); return false; }
       answers[key] = v; setHidden(key, v); return true;
     }
     if (type === "select") {
@@ -156,8 +161,8 @@
     if (type === "contact") {
       var ok = true;
       var n = step.querySelector('input[name="name"]'), e = step.querySelector('input[name="email"]'), ph = step.querySelector('input[name="phone"]');
-      if (n && !n.value.trim()) ok = false;
-      if (e && !/.+@.+\..+/.test(e.value.trim())) { err(step, T.email); ok = false; }
+      if (!n || !n.value.trim() || n.value.trim().length > 120) ok = false;
+      if (!e || e.value.trim().length > 254 || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e.value.trim())) { err(step, T.email); ok = false; }
       if (ph && ph.value.replace(/\D/g, "").length < 10) { err(step, T.phone); ok = false; }
       if (!ok && !step.querySelector(".lp-err").textContent) err(step, T.need);
       return ok;
@@ -225,7 +230,7 @@
   /* ---------- save-your-estimate nudge (wizard only) ----------
      Fires once per session, only after the estimate step has run, when the
      visitor hesitates on the contact step: 20s idle, pointer leaving the
-     window (desktop) or tapping Back. One field (mobile) + consent; the
+     window (desktop) or tapping Back. Required contact details + consent; the
      wizard answers and estimate ride along as hidden fields so the lead is
      complete. Submission goes through funnel.js like every other form. */
   function saveNudge() {
@@ -234,7 +239,7 @@
     try { if (sessionStorage.getItem(KEY)) return; } catch (e) {}
     var shown = false, idleTimer = null, backArmed = false;
     var css = document.createElement("style");
-    css.textContent = ".lp-save{position:fixed;left:0;right:0;bottom:0;z-index:80;background:#142332;color:#fff;padding:18px 18px calc(18px + env(safe-area-inset-bottom));box-shadow:0 -8px 30px rgba(20,35,50,.35);transform:translateY(110%);visibility:hidden;pointer-events:none;transition:transform .35s ease}.lp-save.on{transform:none;visibility:visible;pointer-events:auto}.lp-save .in{max-width:560px;margin:0 auto;position:relative}.lp-save h3{font-family:Cormorant,Georgia,serif;font-weight:500;font-size:24px;margin:0 0 4px}.lp-save .rng{font-family:Cormorant,Georgia,serif;font-size:30px;color:#E4C98F;margin:2px 0 8px}.lp-save p{font-size:13.5px;line-height:1.5;margin:0 0 10px;color:#D6DCE3}.lp-save form{display:flex;flex-direction:column;align-items:center;gap:8px}.lp-save input[type=tel]{width:100%;box-sizing:border-box}.lp-save input{flex:1;font:inherit;font-size:17px;padding:12px;border:1px solid #3A4A5A;border-radius:8px;background:#fff;color:#142332;min-width:0}.lp-save button[type=submit]{align-self:center;max-width:100%;font:inherit;font-weight:600;padding:12px 16px;border:0;border-radius:8px;background:#B08230;color:#fff;cursor:pointer;white-space:normal;text-align:center}.lp-save .cl{position:absolute;top:-6px;right:-4px;background:none;border:0;color:#D6DCE3;font-size:22px;cursor:pointer;padding:4px 8px}.lp-save .con{font-size:11px;line-height:1.45;color:#AAB8C7;margin:8px 0 0}.lp-save .lead-success{display:none;color:#fff;padding:6px 0 0;font-size:14px}.lp-save .lead-success.show{display:block}";
+    css.textContent = ".lp-save{--lead-error-color:#FFB4AB;max-height:90dvh;overflow-y:auto;box-sizing:border-box;position:fixed;left:0;right:0;bottom:0;z-index:80;background:#142332;color:#fff;padding:18px 18px calc(18px + env(safe-area-inset-bottom));box-shadow:0 -8px 30px rgba(20,35,50,.35);transform:translateY(110%);visibility:hidden;pointer-events:none;transition:transform .35s ease}.lp-save.on{transform:none;visibility:visible;pointer-events:auto}.lp-save .in{max-width:560px;margin:0 auto;position:relative}.lp-save h3{font-family:Cormorant,Georgia,serif;font-weight:500;font-size:24px;margin:0 0 4px}.lp-save .rng{font-family:Cormorant,Georgia,serif;font-size:30px;color:#E4C98F;margin:2px 0 8px}.lp-save p{font-size:13.5px;line-height:1.5;margin:0 0 10px;color:#D6DCE3}.lp-save form{display:flex;flex-direction:column;align-items:center;gap:8px}.lp-save label{display:flex;flex-direction:column;gap:4px;width:100%;font-size:13px}.lp-save input{width:100%;box-sizing:border-box}.lp-save input{flex:1;font:inherit;font-size:17px;padding:12px;border:1px solid #3A4A5A;border-radius:8px;background:#fff;color:#142332;min-width:0}.lp-save button[type=submit]{align-self:center;max-width:100%;font:inherit;font-weight:600;padding:12px 16px;border:0;border-radius:8px;background:#B08230;color:#fff;cursor:pointer;white-space:normal;text-align:center}.lp-save .cl{position:absolute;top:-6px;right:-4px;background:none;border:0;color:#D6DCE3;font-size:22px;cursor:pointer;padding:4px 8px}.lp-save .con{font-size:11px;line-height:1.45;color:#AAB8C7;margin:8px 0 0}.lp-save .lead-success{display:none;color:#fff;padding:6px 0 0;font-size:14px}.lp-save .lead-success.show{display:block}";
     document.head.appendChild(css);
     var box = document.createElement("div");
     box.className = "lp-save"; box.setAttribute("role", "dialog"); box.setAttribute("aria-label", T.saveH);
@@ -242,7 +247,9 @@
       '<form data-sh-form="heloc-wizard-save" data-sh-product="Residential" data-sh-event="heloc_callback" data-sh-capi data-sh-lang="' + lang + '" novalidate method="POST" action="/thanks-callback" data-netlify="true" netlify-honeypot="company_website">' +
       '<input type="hidden" name="form-name" value="lead"/><input type="text" name="company_website" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px"/>' +
       '<input type="hidden" name="lp_variant" value="heloc-wizard-save"/><input type="hidden" name="persona" value="heloc-wizard-save"/>' +
-      '<input type="tel" name="phone" inputmode="tel" autocomplete="tel" placeholder="' + T.savePh + '" required aria-label="' + T.savePh + '"/><button type="submit">' + T.saveBtn + '</button></form>' +
+      '<label>' + T.saveName + '<input type="text" name="name" autocomplete="name" maxlength="120" required/></label>' +
+      '<label>' + T.saveEmail + '<input type="email" name="email" autocomplete="email" maxlength="254" required/></label>' +
+      '<label>' + T.savePh + '<input type="tel" name="phone" inputmode="tel" autocomplete="tel" required/></label><button type="submit">' + T.saveBtn + '</button></form>' +
       '<p class="con">' + T.saveConsent + '</p><div class="lead-success"><span>' + T.saveOk + '</span></div></div>';
     root.appendChild(box);
     var sform = box.querySelector("form");
@@ -250,7 +257,7 @@
     function showIt(reason) {
       if (shown) return;
       var est = form.querySelector('input[name="est_available_high"]');
-      if (!est || !(+est.value > 0)) return;              /* needs a real estimate */
+      if (!est || +est.value < window.SH_HELOC_FIELDS.minimumRequested) return;
       if (steps[i].getAttribute("data-key") !== "contact") return;
       var mainPhone = form.querySelector('input[name="phone"]');
       if (mainPhone && mainPhone.value.replace(/\D/g, "").length >= 10) return; /* already engaged */
@@ -262,7 +269,12 @@
         var c = document.createElement("input"); c.type = "hidden"; c.name = h.name; c.value = h.value; sform.appendChild(c);
       });
       var lo = form.querySelector('input[name="est_available_low"]');
-      var rng = money0(+lo.value) + " – " + money0(+est.value);
+      var rng = money0(Math.max(window.SH_HELOC_FIELDS.minimumRequested, +lo.value)) + " - " + money0(+est.value);
+      ['name', 'email', 'phone'].forEach(function (key) {
+        var source = form.querySelector('[name="' + key + '"]');
+        var target = sform.querySelector('[name="' + key + '"]');
+        if (source && target) target.value = source.value;
+      });
       box.querySelector("[data-save-range]").textContent = rng;
       sform.setAttribute("data-sh-about-prefix", "[SAVE ESTIMATE: text " + rng + " to this number]");
       box.classList.add("on");
@@ -279,10 +291,13 @@
     /* arm the idle timer when the contact step appears */
     var obs = new MutationObserver(function () { if (!contactStep.hidden) armIdle(); else clearTimeout(idleTimer); });
     obs.observe(contactStep, { attributes: true, attributeFilter: ["hidden"] });
-    /* after a successful save, mirror the phone into the main form */
+    /* Preserve contact details if the visitor returns to the main form. */
     sform.addEventListener("submit", function () {
-      var mp = form.querySelector('input[name="phone"]'); var sp = sform.querySelector('input[name="phone"]');
-      if (mp && sp && !mp.value) mp.value = sp.value;
+      ['name', 'email', 'phone'].forEach(function (key) {
+        var main = form.querySelector('[name="' + key + '"]');
+        var saved = sform.querySelector('[name="' + key + '"]');
+        if (main && saved && !main.value) main.value = saved.value;
+      });
     });
   }
   try { saveNudge(); } catch (e) {}

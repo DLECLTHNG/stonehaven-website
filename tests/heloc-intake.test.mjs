@@ -23,10 +23,25 @@ test('every HELOC page and comparison flow collects all three amounts', () => {
       if (/heloc-(wizard|instant)/.test(page)) assert.match(form, new RegExp('data-key="' + key + '" data-type="money"[^>]*>[\\s\\S]*?<input[^>]*required'), page + ' ' + key);
       else assert.match(form, new RegExp('<input[^>]*name="' + key + '"[^>]*required'), page + ' ' + key);
     }
+    if (/heloc-(wizard|instant)/.test(page)) assert.match(form, /(?:Minimum|Mínimo) \$30,000/, page);
+    else assert.match(form.match(/<input[^>]*name="requested_amount"[^>]*>/)[0], /min="30000"/, page);
   }
 });
 test('quote destinations strip query and fragment data and reject unsafe schemes', () => {
   const url = H.quoteDestination('https://quote.example/start?email=private@example.com&home_value=500000#phone=123', 'https://stonehavencre.com', 'heloc-instant');
   assert.equal(url, 'https://quote.example/start?src=stonehaven-heloc-instant');
   for (const raw of ['', 'javascript:alert(1)', 'http://quote.example', 'https://user:pass@quote.example']) assert.equal(H.quoteDestination(raw, 'https://stonehavencre.com', 'heloc'), null);
+});
+
+
+test('browser HELOC validation rejects amounts below minimum and accepts the boundary', t => {
+ const previous=global.document; global.document={documentElement:{lang:'en'}};
+ t.after(()=>{global.document=previous;});
+ for(const value of ['29999.99','30000','30000.01']) {
+  const fields=Object.fromEntries(Object.entries({home_value:'400000',mortgage_balance:'0',requested_amount:value}).map(([key,value])=>[key,{value,type:'hidden'}]));
+  const error={remove(){},textContent:''};
+  const form={getAttribute:()=> 'en',querySelector:selector=>selector==='.heloc-amount-error'?error:fields[selector.match(/name="([^"]+)"/)?.[1]]};
+  assert.equal(H.validate(form),Number(value)>=30000);
+  if(Number(value)<30000) assert.match(error.textContent,/\$30,000/);
+ }
 });

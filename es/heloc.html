@@ -37,8 +37,8 @@
 @media(max-width:480px){.nav .brand{gap:8px;margin-right:8px;}.nav .brand .bt .b1{font-size:22px;}.nav .brand .bt .b2{font-size:9px;letter-spacing:.22em;}.nav a.nav-phone{padding:0;margin-right:8px!important;font-size:12px;white-space:nowrap;}}
 </style>
 <script src="../js/site-config.js?v=6" defer></script>
-<script src="../js/heloc-fields.js?v=1" defer></script>
-<script src="../js/funnel.js?v=13" defer></script>
+<script src="../js/heloc-fields.js?v=2" defer></script>
+<script src="../js/funnel.js?v=14" defer></script>
 <script src="../js/heloc-calc.js?v=1" defer></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Service", "name": "Línea de crédito sobre el valor de la vivienda (HELOC)", "serviceType": "Corretaje hipotecario residencial", "description": "Comparación de HELOC, préstamo sobre el valor de la vivienda y refinanciamiento con retiro de efectivo, gestionada.", "url": "https://stonehavencre.com/es/heloc", "inLanguage": "es", "areaServed": [{"@type": "State", "name": "Georgia"}, {"@type": "State", "name": "Alabama"}, {"@type": "State", "name": "Tennessee"}, {"@type": "State", "name": "Florida"}, {"@type": "State", "name": "North Carolina"}, {"@type": "State", "name": "South Carolina"}], "provider": {"@type": "FinancialService", "name": "Stonehaven Lending", "url": "https://stonehavencre.com/", "identifier": {"@type": "PropertyValue", "propertyID": "NMLS", "value": "1752355"}, "@id": "https://stonehavencre.com/#org", "email": "office@stonehavencre.com", "logo": "https://stonehavencre.com/assets/stonehaven-logo-512-v1.webp"}}</script>
 
@@ -75,7 +75,7 @@
         <div class="calc-grid">
           <div class="lf-field full"><label for="e-value">Valor aproximado de la casa ($)</label><input id="e-value" type="number" inputmode="numeric" min="0" step="10000" value="450000" style="font-size:18px;"/></div>
           <div class="lf-field full"><label for="e-balance">Saldo aproximado de la hipoteca ($)</label><input id="e-balance" type="number" inputmode="numeric" min="0" step="10000" value="250000" style="font-size:18px;"/></div>
-<div class="lf-field full"><label for="e-request">¿Cuánto desea solicitar? ($)</label><input id="e-request" type="number" inputmode="numeric" min="1" step="1" placeholder="60000" aria-describedby="e-request-note" style="font-size:18px;"/></div>
+<div class="lf-field full"><label for="e-request">¿Cuánto desea solicitar? (mínimo $30,000)</label><input id="e-request" type="number" inputmode="numeric" min="30000" step="1" placeholder="60000" aria-describedby="e-request-note" style="font-size:18px;"/></div>
         </div>
       </div>
       <div class="calc-result" aria-live="polite">
@@ -142,7 +142,7 @@
           </select>
         </div>
         <div class="lf-field"><label for="cb-value">Valor est. de la casa ($)</label><input id="cb-value" type="number" inputmode="numeric" min="1" name="home_value" step="0.01" required/></div>
-        <div class="lf-field"><label for="cb-balance">Saldo de la hipoteca ($, ingrese 0 si está pagada)</label><input id="cb-balance" type="number" inputmode="numeric" min="0" name="mortgage_balance" step="0.01" required/></div><div class="lf-field"><label for="cb-amount">¿Cuánto desea solicitar? ($)</label><input id="cb-amount" type="number" inputmode="numeric" min="1" step="0.01" name="requested_amount" required/></div><div class="lf-field"><label for="cb-credit">Puntaje de crédito estimado <span style="text-transform:none;letter-spacing:0;color:#AAB8C7;">(una estimación está bien)</span></label><select id="cb-credit" name="credit_band"><option value="not-sure" selected>Seleccione un rango</option><option value="850-780">850-780</option><option value="779-760">779-760</option><option value="759-740">759-740</option><option value="739-720">739-720</option><option value="719-700">719-700</option><option value="699-680">699-680</option><option value="679-660">679-660</option><option value="659-640">659-640</option><option value="639-620">639-620</option><option value="619-600">619-600</option></select></div>
+        <div class="lf-field"><label for="cb-balance">Saldo de la hipoteca ($, ingrese 0 si está pagada)</label><input id="cb-balance" type="number" inputmode="numeric" min="0" name="mortgage_balance" step="0.01" required/></div><div class="lf-field"><label for="cb-amount">¿Cuánto desea solicitar? (mínimo $30,000)</label><input id="cb-amount" type="number" inputmode="numeric" min="30000" step="0.01" name="requested_amount" required/></div><div class="lf-field"><label for="cb-credit">Puntaje de crédito estimado <span style="text-transform:none;letter-spacing:0;color:#AAB8C7;">(una estimación está bien)</span></label><select id="cb-credit" name="credit_band"><option value="not-sure" selected>Seleccione un rango</option><option value="850-780">850-780</option><option value="779-760">779-760</option><option value="759-740">759-740</option><option value="739-720">739-720</option><option value="719-700">719-700</option><option value="699-680">699-680</option><option value="679-660">679-660</option><option value="659-640">659-640</option><option value="639-620">639-620</option><option value="619-600">619-600</option></select></div>
         <div class="lf-field full"><label for="cb-state">Estado donde está la propiedad</label>
           <select id="cb-state" name="state">
             <option value="Georgia">Georgia</option>
@@ -200,5 +200,5 @@
 
 <div class="heloc-sticky"><a href="#callback">&#9993;&nbsp; Quiero recibir un mensaje</a></div>
 
-<script src="/js/heloc-estimate.js?v=1" defer></script>
+<script src="/js/heloc-estimate.js?v=3" defer></script>
 </body></html>
