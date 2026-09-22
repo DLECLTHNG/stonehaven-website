@@ -110,6 +110,29 @@ test('Commercial guides route readers to the commercial deal review in each lang
   assert.ok(f.read('blog/publishing-test.html').includes('We follow up by text.'));
 });
 
+test('DSCR guides send readers to the matching rental-property review, not a generic call booking', t => {
+  const f = fixture(t);
+  const result = f.publish({...f.brief, product: 'DSCR'});
+  assert.equal(result.status, 0, result.stderr);
+  for (const prefix of ['', 'es/']) {
+    const page = f.read(prefix + 'blog/publishing-test.html');
+    assert.ok(page.includes('href="/' + prefix + 'dscr-review"'));
+    assert.doesNotMatch(page, /Request a 15-minute call/);
+  }
+});
+
+test('keeping an existing HELOC can route to refinance intake without requesting a new line', t => {
+  const f = fixture(t);
+  assert.notEqual(f.publish({...f.brief, product: 'HELOC', inquiry: 'https://external.test'}).status, 0);
+  assert.equal(f.publish({...f.brief, product: 'HELOC', inquiry: 'Residential'}).status, 0);
+  for (const prefix of ['', 'es/']) {
+    const page = f.read(prefix + 'blog/publishing-test.html');
+    const cta = page.match(/<section class="lead">[\s\S]*?<\/section>/)[0];
+    assert.ok(cta.includes('href="/' + prefix + 'residential#inquire"'));
+    assert.doesNotMatch(cta, /heloc#callback/);
+  }
+});
+
 test('financing case study never inherits closed-deal or hypothetical claims', t => {
   const f = fixture(t, 'case-study');
   f.brief.product = 'Commercial';

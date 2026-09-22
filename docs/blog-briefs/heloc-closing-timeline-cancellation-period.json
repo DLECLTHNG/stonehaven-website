@@ -1,0 +1,132 @@
+{
+  "slug": "heloc-closing-timeline-cancellation-period",
+  "date": "2026-09-22",
+  "type": "guide",
+  "product": "HELOC",
+  "en": {
+    "metaTitle": "HELOC Closing and Funding Timeline | Stonehaven",
+    "title": "When can you use your HELOC after closing?",
+    "desc": "Separate application review, signing, the applicable cancellation period and actual access to funds before scheduling a contractor payment.",
+    "eyebrow": "HELOC · Closing and funding",
+    "terms": [
+      [
+        "Main question",
+        "When will the money actually be available?"
+      ],
+      [
+        "Timing",
+        "Lender review, signing, any cancellation period and funding"
+      ],
+      [
+        "Scope",
+        "Consumer HELOC planning for a principal residence"
+      ]
+    ],
+    "body": [
+      "<strong>Signing your HELOC documents does not necessarily mean you can use the money that day.</strong> Application approval, account opening, any applicable cancellation period and the first usable advance are separate steps. Before scheduling a contractor deposit or another time-sensitive payment, ask the lender to confirm the expected funding date and how you will access the funds.",
+      {
+        "h": "Start with the payment deadline, then work backward"
+      },
+      "A practical timeline begins with the date you need usable money, not simply the date you hope to sign. Write down whether the recipient needs a cleared check, an electronic transfer or another payment method. Then allow for the lender's closing and funding process and any transfer processing that follows. An estimated date should stay labeled as an estimate until the lender confirms what remains outstanding.",
+      "For example, a contractor may want a deposit on Monday even though the HELOC signing is scheduled for the preceding Friday. The signed agreement alone does not establish that Monday's deposit is funded. Discuss the payment schedule before signing the construction contract or ordering nonrefundable materials. A deposit commitment and a credit approval are different obligations.",
+      {
+        "h": "Understand the stages of the application"
+      },
+      "<ul><li><strong>Initial review:</strong> the proposed amount, property, existing debt and borrower circumstances are discussed.</li><li><strong>Documentation and property review:</strong> the lender evaluates the required information, valuation and title matters.</li><li><strong>Closing readiness:</strong> outstanding conditions are addressed and the final agreement and disclosures are prepared.</li><li><strong>Account opening:</strong> you sign the required documents through the lender's closing process.</li><li><strong>Funding and access:</strong> any required cancellation period and remaining funding conditions are completed before money is made available.</li></ul>",
+      "This is a planning sequence, not a promised number of days. A title issue, missing document, property review or changed application detail can alter the schedule. Ask which person owns the next step and what information is needed from you. Our <a href=\"/blog/heloc-preparation-checklist\">HELOC preparation checklist</a> can help organize the initial conversation.",
+      {
+        "h": "The cancellation period for a principal-residence HELOC"
+      },
+      "For a covered consumer HELOC secured by your principal dwelling, Regulation Z generally provides a right to cancel. The period ordinarily runs until midnight of the third business day after the latest applicable event: account opening, delivery of the required cancellation notice or receipt of the material disclosures. The lender generally must wait until that period ends and it is reasonably satisfied you have not canceled before releasing an advance to you. Exceptions exist, so follow the notice for your transaction. See <a href=\"https://www.consumerfinance.gov/rules-policy/regulations/1026/15/\">Regulation Z section 1026.15</a>.",
+      "For this cancellation clock, Saturdays generally count; Sundays and specified federal legal public holidays do not. This is not necessarily the same calendar used for a lender's office hours or bank transfers. The definition appears in <a href=\"https://www.consumerfinance.gov/rules-policy/regulations/1026/2/\">Regulation Z section 1026.2</a>. The lender's written notice should identify your cancellation deadline.",
+      {
+        "h": "A simple timing example"
+      },
+      "Assume a covered HELOC account opens on a Monday and you receive all required material disclosures and the cancellation notice that same day. Assume no federal legal public holiday falls during the period. Tuesday is day one, Wednesday is day two and Thursday is day three. The ordinary cancellation period ends at midnight on Thursday.",
+      "That example does not promise a Friday deposit into your bank account. The lender still needs to complete its funding process and be reasonably satisfied that you have not canceled. Transfer processing or a missing closing requirement can affect actual availability. If the final required document arrives later than Monday, the timing must be reconsidered using the later event. Confirm the specific dates with the lender instead of applying a generic internet countdown to your transaction.",
+      {
+        "h": "Request HELOC disclosures, not the wrong mortgage form"
+      },
+      "HELOCs use different disclosures from many closed-end mortgages. The CFPB explains that a HELOC borrower does not receive the standard Loan Estimate and Closing Disclosure used for many other home loans. Ask for the relevant home-equity disclosures and agreement early enough to review them. See <a href=\"https://www.consumerfinance.gov/ask-cfpb/what-documents-should-i-receive-before-closing-on-a-mortgage-loan-en-181/\">the CFPB's closing-document guidance</a>.",
+      "Review the credit limit, initial advance, fees, draw period, repayment requirements and access method. Confirm whether any charges are paid separately or taken from the advance. A $60,000 approved limit does not, by itself, tell you the amount that will reach your checking account at opening. Our guide to <a href=\"/blog/heloc-initial-draw-requirements\">initial HELOC draws</a> explains the distinction.",
+      {
+        "h": "Questions to settle before a payment is due"
+      },
+      "<ul><li>What conditions are still open, and who is resolving each one?</li><li>What is the expected signing date, and what could change it?</li><li>Does this transaction have a cancellation period, and what deadline appears on the notice?</li><li>How much will the first advance provide after any deductions?</li><li>How will the funds be delivered, and when can I actually use them?</li><li>What is my backup plan if the recipient's payment deadline comes first?</li></ul>",
+      {
+        "h": "Common questions"
+      },
+      "<strong>Does every HELOC have the same cancellation right?</strong> No. This guide addresses covered consumer transactions secured by a principal dwelling. Do not assume the same rule applies to an investment-property or business-purpose line. Confirm the transaction-specific documents.",
+      "<strong>Can I cancel verbally?</strong> For the federal right discussed here, use written notice and follow the lender's cancellation instructions. Keep proof of timely delivery or mailing. Ask a qualified adviser about a disputed or unclear deadline.",
+      "<strong>Should I waive the period to meet a contractor deadline?</strong> Do not build a routine project schedule around a waiver. The regulation has a narrow process for a bona fide personal financial emergency, not a general shortcut for convenience.",
+      {
+        "h": "Prepare a realistic funding conversation"
+      },
+      "Stonehaven is a mortgage broker. We can help organize a HELOC request and the timing questions for the lender. We follow up by text, and our HELOC inquiries start at $30,000. Share your estimated home value, mortgage balance, requested amount and the date funds are needed using our <a href=\"/heloc#callback\">HELOC inquiry form</a>.",
+      "Residential inquiries are available in Georgia, Alabama, Tennessee, Florida, North Carolina and South Carolina, subject to lender and program requirements. Initial feedback is not approval or a guaranteed closing date. A HELOC is secured by your home, which may be at risk if you do not repay. Keep account documents and other private information out of the public form."
+    ]
+  },
+  "es": {
+    "metaTitle": "HELOC: cierre y disponibilidad del dinero | Stonehaven",
+    "title": "¿Cuándo puede utilizar su HELOC después del cierre?",
+    "desc": "Distinga la evaluación, la firma, el plazo de cancelación aplicable y el acceso real al dinero antes de programar un pago al contratista.",
+    "eyebrow": "HELOC · Cierre y desembolso",
+    "terms": [
+      [
+        "Pregunta principal",
+        "¿Cuándo estará disponible el dinero?"
+      ],
+      [
+        "Calendario",
+        "Revisión, firma, posible plazo de cancelación y desembolso"
+      ],
+      [
+        "Alcance",
+        "HELOC de consumo sobre una vivienda principal"
+      ]
+    ],
+    "body": [
+      "<strong>Firmar los documentos del HELOC no significa necesariamente que pueda usar el dinero ese día.</strong> La aprobación, la apertura de cuenta, el plazo de cancelación aplicable y el primer retiro disponible son etapas distintas. Antes de programar un anticipo al contratista u otro pago urgente, pida al prestamista que confirme la fecha prevista de desembolso y cómo accederá a los fondos.",
+      {
+        "h": "Empiece por la fecha del pago y planifique hacia atrás"
+      },
+      "Un calendario útil comienza con la fecha en que necesita dinero disponible, no solo con la fecha en que espera firmar. Anote si el destinatario necesita un cheque cobrado, una transferencia electrónica u otro método. Después, contemple el proceso de cierre y desembolso, además del procesamiento de la transferencia. Una fecha estimada debe seguir identificada como tal hasta que el prestamista confirme qué falta.",
+      "Por ejemplo, el contratista puede exigir un anticipo el lunes aunque la firma del HELOC esté prevista para el viernes anterior. El acuerdo firmado no demuestra por sí solo que el pago del lunes esté financiado. Hable del calendario antes de firmar el contrato de obra o pedir materiales no reembolsables. El compromiso de pagar un anticipo y la aprobación de crédito son obligaciones distintas.",
+      {
+        "h": "Entienda las etapas de la solicitud"
+      },
+      "<ul><li><strong>Revisión inicial:</strong> se comentan el monto, el inmueble, la deuda existente y las circunstancias del solicitante.</li><li><strong>Documentos e inmueble:</strong> el prestamista evalúa la información necesaria, la valuación y el título.</li><li><strong>Preparación del cierre:</strong> se resuelven condiciones pendientes y se preparan el contrato y las divulgaciones finales.</li><li><strong>Apertura de cuenta:</strong> usted firma los documentos mediante el proceso del prestamista.</li><li><strong>Desembolso y acceso:</strong> se completa el plazo de cancelación que corresponda y las condiciones restantes antes de disponer del dinero.</li></ul>",
+      "Es una secuencia de planificación, no una promesa de días. Un problema de título, un documento pendiente, la revisión del inmueble o un cambio en la solicitud pueden modificarla. Pregunte quién es responsable del siguiente paso y qué necesita de usted. Nuestra <a href=\"/es/blog/heloc-preparation-checklist\">lista para preparar un HELOC</a> ayuda a organizar la conversación inicial.",
+      {
+        "h": "El plazo de cancelación de un HELOC sobre la vivienda principal"
+      },
+      "Para un HELOC de consumo cubierto por la norma y garantizado por su vivienda principal, la Regulación Z generalmente permite cancelar. El plazo normalmente termina a medianoche del tercer día hábil después del último evento aplicable: apertura de la cuenta, entrega del aviso de cancelación o recepción de las divulgaciones materiales. Generalmente, el prestamista debe esperar hasta que termine ese plazo y tener certeza razonable de que usted no canceló antes de entregar un retiro. Existen excepciones: siga el aviso de su operación. Consulte la <a href=\"https://www.consumerfinance.gov/rules-policy/regulations/1026/15/\">sección 1026.15 de la Regulación Z</a>, en inglés.",
+      "Para este cálculo, los sábados generalmente cuentan; los domingos y ciertos feriados federales legales no. No es necesariamente el mismo calendario de las oficinas del prestamista o de las transferencias bancarias. La definición aparece en la <a href=\"https://www.consumerfinance.gov/rules-policy/regulations/1026/2/\">sección 1026.2</a>, en inglés. El aviso escrito del prestamista debe identificar el plazo para cancelar.",
+      {
+        "h": "Un ejemplo sencillo del calendario"
+      },
+      "Suponga que una cuenta de HELOC cubierta por la norma se abre un lunes y ese mismo día recibe todas las divulgaciones materiales y el aviso de cancelación. Suponga que no hay un feriado federal legal durante el período. El martes es el primer día, el miércoles el segundo y el jueves el tercero. El plazo ordinario termina a medianoche del jueves.",
+      "El ejemplo no promete que el viernes tenga el dinero depositado. El prestamista todavía debe completar su proceso de desembolso y tener certeza razonable de que no canceló. El procesamiento de una transferencia o un requisito de cierre pendiente pueden afectar la disponibilidad. Si el último documento requerido llega después del lunes, hay que revisar el calendario usando ese evento posterior. Confirme las fechas concretas con el prestamista en vez de aplicar una cuenta regresiva genérica de internet.",
+      {
+        "h": "Pida las divulgaciones correctas para un HELOC"
+      },
+      "Un HELOC utiliza divulgaciones distintas de muchas hipotecas de monto cerrado. La CFPB explica que un prestatario de HELOC no recibe los formularios estándar Loan Estimate y Closing Disclosure que se usan en muchos otros préstamos de vivienda. Pida las divulgaciones y el contrato correspondientes con tiempo para revisarlos. Consulte la <a href=\"https://www.consumerfinance.gov/ask-cfpb/what-documents-should-i-receive-before-closing-on-a-mortgage-loan-en-181/\">guía de documentos de cierre de la CFPB</a>, en inglés.",
+      "Revise el límite, el retiro inicial, los cargos, el período de retiros, las obligaciones de pago y el método de acceso. Confirme si los cargos se pagan por separado o se descuentan del retiro. Un límite aprobado de $60,000 no indica por sí solo cuánto llegará a su cuenta al abrir. Nuestra guía de <a href=\"/es/blog/heloc-initial-draw-requirements\">retiros iniciales del HELOC</a> explica la diferencia.",
+      {
+        "h": "Preguntas que conviene resolver antes del pago"
+      },
+      "<ul><li>¿Qué condiciones faltan y quién está resolviendo cada una?</li><li>¿Cuál es la fecha prevista de firma y qué podría cambiarla?</li><li>¿Esta operación tiene plazo de cancelación y qué fecha indica el aviso?</li><li>¿Cuánto entregará el primer retiro después de las deducciones?</li><li>¿Cómo llegará el dinero y cuándo podré utilizarlo?</li><li>¿Qué alternativa tengo si la fecha exigida para pagar llega primero?</li></ul>",
+      {
+        "h": "Preguntas frecuentes"
+      },
+      "<strong>¿Todos los HELOC tienen el mismo derecho de cancelación?</strong> No. Esta guía trata operaciones de consumo cubiertas por la norma y garantizadas por una vivienda principal. No suponga que se aplica igual a una línea para inversión o con fines comerciales. Confirme los documentos de su operación.",
+      "<strong>¿Puedo cancelar verbalmente?</strong> Para el derecho federal descrito aquí, utilice un aviso escrito y siga las instrucciones del prestamista. Conserve prueba del envío o la entrega a tiempo. Consulte a un asesor calificado si la fecha es dudosa o existe una disputa.",
+      "<strong>¿Debo renunciar al plazo para cumplir una fecha del contratista?</strong> No base un calendario ordinario de obra en una renuncia. La norma contempla un procedimiento limitado para una emergencia financiera personal real, no un atajo general por conveniencia.",
+      {
+        "h": "Prepare una conversación realista sobre el desembolso"
+      },
+      "Stonehaven es un corredor hipotecario. Podemos ayudarle a organizar una solicitud de HELOC y las preguntas de calendario para el prestamista. Damos seguimiento por mensaje de texto y las consultas empiezan en $30,000. Comparta el valor estimado de la vivienda, el saldo hipotecario, el monto solicitado y la fecha en que necesita fondos mediante el <a href=\"/es/heloc#callback\">formulario de HELOC</a>.",
+      "Atendemos consultas residenciales en Georgia, Alabama, Tennessee, Florida, North Carolina y South Carolina, sujetas a requisitos del prestamista y del programa. La revisión inicial no constituye aprobación ni garantiza una fecha de cierre. La vivienda garantiza el HELOC y puede estar en riesgo si no paga. No envíe documentos de cuenta ni información privada por el formulario público."
+    ]
+  }
+}

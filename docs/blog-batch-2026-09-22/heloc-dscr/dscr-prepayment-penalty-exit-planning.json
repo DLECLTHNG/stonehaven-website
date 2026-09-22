@@ -1,0 +1,132 @@
+{
+  "slug": "dscr-prepayment-penalty-exit-planning",
+  "date": "2026-09-22",
+  "type": "guide",
+  "product": "DSCR",
+  "en": {
+    "metaTitle": "DSCR Prepayment Penalties and Exit Plans | Stonehaven",
+    "title": "DSCR prepayment penalties: compare the cost of selling or refinancing early",
+    "desc": "Learn which prepayment terms to check, model an early payoff and compare rental financing against your likely sale or refinance date.",
+    "eyebrow": "DSCR · Exit planning",
+    "terms": [
+      [
+        "Decision",
+        "Match the loan with the intended holding period"
+      ],
+      [
+        "Check",
+        "Penalty trigger, formula, dates and partial-payment rules"
+      ],
+      [
+        "Example",
+        "Hypothetical contract terms, not current pricing"
+      ]
+    ],
+    "body": [
+      "<strong>A DSCR prepayment penalty can change the economics of an early sale or refinance.</strong> Before choosing a rental-property loan, ask whether a charge applies, exactly which event triggers it and how it is calculated. A lower monthly payment is only one part of the comparison if your plan involves refinancing, selling or paying down a large portion of the balance soon.",
+      {
+        "h": "Read the actual prepayment language"
+      },
+      "A prepayment provision is a contractual rule about paying principal ahead of schedule. Some DSCR offers include one, while other structures may be available without it or with a different period. Availability depends on the lender, property, borrower structure and applicable state requirements. Do not assume a headline such as “three-year prepay” explains the complete obligation.",
+      "Ask for the proposed note and any prepayment rider or addendum. Identify the starting date, ending date, calculation base and treatment of both partial payments and full payoff. Confirm whether the terms apply on a sale, a refinance or both. If a quote uses “hard” or “soft” terminology, have the lender explain the contract language rather than relying on the label.",
+      "Published lender materials illustrate the variation. One <a href=\"https://www.limaone.com/loan-prepayment-penalty-real-estate-rental/\">rental-loan guide</a> describes fixed and declining prepayment structures as well as alternatives without a penalty. A <a href=\"https://corr.pennymac.com/announcements/announcement-26-80\">2026 lender announcement</a> also changes prepayment eligibility. These are examples of program-specific rules, not offers from Stonehaven or a complete statement of state law.",
+      {
+        "h": "Six questions that make offers comparable"
+      },
+      "<ul><li><strong>Trigger:</strong> does the charge apply to a sale, refinance, partial paydown or specified combination?</li><li><strong>Base:</strong> is it calculated on outstanding principal, the amount prepaid or another defined figure?</li><li><strong>Schedule:</strong> is it a fixed percentage, a declining schedule, an interest calculation or another formula?</li><li><strong>Dates:</strong> when does each step change, and when does the provision expire?</li><li><strong>Allowance:</strong> is any partial repayment permitted without a charge, and how is the allowance measured?</li><li><strong>Alternative:</strong> what different loan structure is available if the expected exit is earlier?</li></ul>",
+      "Record unknown answers as unknown. A blank term is not the same as a zero-dollar charge. Keep the proposed terms next to your expected sale date and a realistic backup date, because the investment plan can change after closing.",
+      {
+        "h": "A hypothetical payoff calculation"
+      },
+      "Suppose a business-purpose rental loan has a contractual declining penalty of 5%, 4%, 3%, 2% and 1% in years one through five. For this example, the charge applies to the outstanding principal on a full payoff, and no exemption applies. These are assumed terms for arithmetic only, not a description of every DSCR program.",
+      "If the outstanding principal at an early payoff in the second contractual year is $300,000, a 4% charge would be $12,000. The starting subtotal is therefore $312,000 before accrued interest, other lawful payoff charges and any transaction costs. A lender-issued payoff statement provides the actual amount and its valid-through date; a monthly statement does not replace it.",
+      "If the same $300,000 principal were subject to a 3% charge after the next step-down, the penalty would be $9,000, a $3,000 difference. That simplified comparison holds principal constant to isolate the penalty. Actual principal, interest and other costs change with time. Waiting only saves money if the overall costs and risks of waiting fit the plan, not merely because the percentage becomes smaller.",
+      {
+        "h": "Compare the whole holding period"
+      },
+      "Create separate scenarios for the intended exit, an earlier opportunity to sell and a delayed exit. For each, compare upfront cash costs, interest expense, prepayment charges, other transaction costs and the balance still owed. Track principal repayment separately so a loan with more amortization is not mistakenly treated as more expensive solely because its payment is higher.",
+      "For example, a projected $250 lower monthly payment represents $6,000 less cash paid over 24 months. It does not by itself offset a $12,000 early-payoff charge. The comparison also needs the two loans' remaining balances, upfront costs and any difference in principal repaid. There is no reliable “best deal” conclusion from payment alone.",
+      "Our <a href=\"/dscr/hold-or-sell\">hold-or-sell financing review</a> can help organize the exit question. If you are moving from renovation financing into a rental loan, also review the <a href=\"/dscr/bridge-loan-refinance\">bridge-to-DSCR path</a>. Treat the existing loan's payoff terms and the replacement loan's prepayment terms as two separate decisions.",
+      {
+        "h": "Do not assume a future refinance will be available"
+      },
+      "Your exit plan should still work if a refinance takes longer than expected or does not produce the desired proceeds. Future rent, property value, credit, lender requirements and financing costs may differ from today's estimates. The <a href=\"https://occ.treas.gov/news-issuances/bulletins/2024/bulletin-2024-29.html\">OCC's guidance on refinance risk</a> explains why reliance on a future loan needs its own assessment.",
+      "For a one-to-four-unit rental, keep the selected program's qualifying-rent and housing-payment calculation separate from your actual operating cash flow. A projected program DSCR is not a guarantee that a replacement loan will close or that the property will generate enough money for every expense. Use the <a href=\"/dscr-program-calculator\">DSCR program calculator</a> to test assumptions, then confirm them with underwriting.",
+      {
+        "h": "Common questions"
+      },
+      "<strong>Can a DSCR loan have no prepayment penalty?</strong> Ask for the available alternatives for your scenario. A different prepayment structure can come with other changes to the offer. Compare the complete terms instead of assuming an option is available in every state.",
+      "<strong>Does selling the property automatically avoid the penalty?</strong> No general assumption is safe. Read the provision for the actual loan and request a payoff quote for the intended closing date.",
+      "<strong>Can I make extra principal payments?</strong> Check whether the contract includes an allowance, how the measurement period works and what happens if you exceed it. Do not infer the rule from another lender's website.",
+      "<strong>Does an LLC remove the need to review the penalty?</strong> No. Entity borrowing does not make the note's repayment provisions disappear. Have your legal adviser review unclear contract language.",
+      {
+        "h": "Bring the exit plan to the first conversation"
+      },
+      "Stonehaven is a mortgage broker arranging financing through lenders. We can compare placement options with your intended holding period in view. Start with property location, value, rent, loan amount, existing payoff terms and the date you may sell or refinance through our <a href=\"/dscr-review\">DSCR review form</a>. We follow up by text.",
+      "These are business-purpose financing discussions. Program availability and terms vary by state and lender, and initial feedback is not approval. Share a summary in the public form, then use the designated secure process for the existing note, rider and payoff documents."
+    ]
+  },
+  "es": {
+    "metaTitle": "Penalidades por prepago DSCR y salida | Stonehaven",
+    "title": "Penalidades por prepago DSCR: compare el costo de vender o refinanciar antes",
+    "desc": "Revise los términos de pago anticipado, calcule una liquidación y compare el préstamo de alquiler con su fecha prevista de venta o refinanciamiento.",
+    "eyebrow": "DSCR · Planificación de la salida",
+    "terms": [
+      [
+        "Decisión",
+        "Ajustar el préstamo al plazo previsto de tenencia"
+      ],
+      [
+        "Revisión",
+        "Evento, fórmula, fechas y reglas de abonos parciales"
+      ],
+      [
+        "Ejemplo",
+        "Condiciones hipotéticas, no precios actuales"
+      ]
+    ],
+    "body": [
+      "<strong>Una penalidad por prepago de un préstamo DSCR puede cambiar el resultado de una venta o refinanciamiento anticipado.</strong> Antes de elegir financiamiento para un inmueble de alquiler, pregunte si existe un cargo, qué evento lo activa y cómo se calcula. Un pago mensual menor es solo una parte de la comparación si planea refinanciar, vender o abonar mucho capital pronto.",
+      {
+        "h": "Lea la cláusula real de prepago"
+      },
+      "La cláusula de prepago establece cómo se trata el pago de capital antes del calendario acordado. Algunas ofertas DSCR la incluyen; puede haber otras estructuras sin penalidad o con un período diferente. La disponibilidad depende del prestamista, el inmueble, la estructura del solicitante y los requisitos estatales aplicables. La frase “prepago de tres años” no explica toda la obligación.",
+      "Pida el pagaré propuesto y cualquier anexo de prepago. Identifique cuándo empieza y termina, la base de cálculo y cómo trata los abonos parciales y la liquidación total. Confirme si se aplica al vender, refinanciar o en ambos casos. Si la cotización usa las etiquetas inglesas “hard” o “soft”, solicite una explicación del contrato en vez de depender de la etiqueta.",
+      "Los materiales publicados por prestamistas muestran esa variación. Una <a href=\"https://www.limaone.com/loan-prepayment-penalty-real-estate-rental/\">guía de préstamos de alquiler</a> describe estructuras de prepago fijas y decrecientes, además de alternativas sin penalidad. Un <a href=\"https://corr.pennymac.com/announcements/announcement-26-80\">anuncio de un prestamista de 2026</a> también modifica la elegibilidad. Son ejemplos en inglés de reglas particulares, no ofertas de Stonehaven ni una descripción completa de las leyes estatales.",
+      {
+        "h": "Seis preguntas para comparar ofertas"
+      },
+      "<ul><li><strong>Evento:</strong> ¿el cargo se aplica a venta, refinanciamiento, abono parcial o alguna combinación?</li><li><strong>Base:</strong> ¿se calcula sobre el capital pendiente, el monto pagado u otra cifra definida?</li><li><strong>Calendario:</strong> ¿usa un porcentaje fijo, porcentajes decrecientes, intereses u otra fórmula?</li><li><strong>Fechas:</strong> ¿cuándo cambia cada tramo y cuándo termina la cláusula?</li><li><strong>Exención parcial:</strong> ¿permite algún abono sin cargo y cómo se mide ese límite?</li><li><strong>Alternativa:</strong> ¿qué estructura distinta existe si prevé salir antes?</li></ul>",
+      "Registre como desconocido lo que no se haya confirmado. Un espacio en blanco no significa que el cargo sea cero. Compare las condiciones con la fecha prevista de venta y otra fecha alternativa realista: el plan puede cambiar después del cierre.",
+      {
+        "h": "Un cálculo hipotético de liquidación"
+      },
+      "Suponga que un préstamo de alquiler con fines comerciales tiene una penalidad contractual de 5%, 4%, 3%, 2% y 1% durante los años uno a cinco. Para este ejemplo, el porcentaje se aplica al capital pendiente al liquidar totalmente y no existe una exención aplicable. Son supuestos para calcular, no una descripción de todos los programas DSCR.",
+      "Si el capital pendiente al liquidar durante el segundo año contractual es $300,000, un cargo de 4% sería $12,000. El subtotal inicial sería $312,000 antes de intereses acumulados, otros cargos de liquidación permitidos y gastos de la operación. La cotización de liquidación emitida por el prestamista establece el monto real y su fecha de validez; un estado de cuenta mensual no la sustituye.",
+      "Si los mismos $300,000 estuvieran sujetos a 3% después del siguiente cambio, la penalidad sería $9,000: una diferencia de $3,000. Esta comparación mantiene el capital constante para aislar el cargo. En la realidad, el capital, los intereses y otros costos cambian con el tiempo. Esperar solo ahorra dinero si los costos totales y riesgos de la espera encajan con el plan, no simplemente porque baje el porcentaje.",
+      {
+        "h": "Compare todo el período de tenencia"
+      },
+      "Prepare escenarios para la salida prevista, una oportunidad de venta anticipada y una salida demorada. Compare en cada uno los costos iniciales, intereses, penalidades, otros gastos y saldo pendiente. Registre por separado el capital amortizado para no considerar un préstamo más caro solo porque su pago es mayor y devuelve más principal.",
+      "Por ejemplo, un pago mensual previsto $250 menor representa $6,000 menos de desembolsos en 24 meses. Eso no compensa por sí solo una penalidad de $12,000. También hay que comparar saldos pendientes, costos iniciales y diferencias en capital pagado. No puede determinarse de forma fiable cuál oferta conviene más usando únicamente la cuota.",
+      "Nuestra <a href=\"/dscr/hold-or-sell\">revisión para conservar o vender, en inglés</a> ayuda a organizar la decisión de salida. Si pasa de financiamiento de rehabilitación a un préstamo de alquiler, revise también el <a href=\"/dscr/bridge-loan-refinance\">proceso de préstamo puente a DSCR, en inglés</a>. Trate las condiciones de liquidación del préstamo actual y las de prepago del nuevo como dos decisiones distintas.",
+      {
+        "h": "No dé por seguro un refinanciamiento futuro"
+      },
+      "El plan debe considerar que el refinanciamiento pueda tardar más o no entregar los fondos deseados. La renta, el valor, el crédito, los requisitos y el costo del financiamiento futuro pueden diferir de las estimaciones actuales. La <a href=\"https://occ.treas.gov/news-issuances/bulletins/2024/bulletin-2024-29.html\">orientación de la OCC sobre riesgo de refinanciamiento</a>, en inglés, explica por qué depender de un préstamo futuro requiere una evaluación propia.",
+      "En un alquiler de una a cuatro unidades, separe el cálculo de renta y pago de vivienda admitidos por el programa de su flujo operativo real. Un DSCR proyectado no garantiza que el nuevo préstamo cierre ni que el inmueble produzca suficiente para cada gasto. Use la <a href=\"/es/dscr-program-calculator\">calculadora del programa DSCR</a> para probar supuestos y después confírmelos durante la evaluación.",
+      {
+        "h": "Preguntas frecuentes"
+      },
+      "<strong>¿Puede existir un préstamo DSCR sin penalidad?</strong> Pida las alternativas disponibles para su caso. Una estructura de prepago distinta puede cambiar otras condiciones de la oferta. Compare todo y no suponga que una opción existe en cada estado.",
+      "<strong>¿Vender el inmueble evita automáticamente el cargo?</strong> No conviene suponerlo. Lea la cláusula del préstamo real y pida una cotización de liquidación para la fecha de cierre prevista.",
+      "<strong>¿Puedo hacer abonos adicionales al capital?</strong> Revise si hay un monto permitido, cómo se mide el período y qué pasa al superarlo. No deduzca la regla de la página de otro prestamista.",
+      "<strong>¿Una LLC elimina la necesidad de revisar el cargo?</strong> No. Pedir prestado mediante una entidad no elimina las condiciones de pago del pagaré. Pida a su asesor legal que revise el lenguaje dudoso.",
+      {
+        "h": "Comparta el plan de salida desde el principio"
+      },
+      "Stonehaven es un corredor hipotecario que gestiona financiamiento mediante prestamistas. Podemos comparar opciones de colocación considerando el tiempo que planea conservar el inmueble. Comparta ubicación, valor, renta, monto solicitado, condiciones de liquidación actuales y la posible fecha de venta o refinanciamiento mediante el <a href=\"/es/dscr-review\">formulario de revisión DSCR</a>. Damos seguimiento por mensaje de texto.",
+      "Estas consultas corresponden a financiamiento con fines comerciales. Disponibilidad y condiciones varían por estado y prestamista; la revisión inicial no es aprobación. Comparta solo un resumen en el formulario público y use el proceso seguro indicado para el pagaré, los anexos y los documentos de liquidación."
+    ]
+  }
+}

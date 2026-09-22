@@ -3,6 +3,7 @@ import assert from "node:assert/strict";
 import { createRequire } from "node:module";
 const require = createRequire(import.meta.url);
 process.env.FAMILY_DRY_RUN = "1";
+process.env.NETLIFY_DEV = "true";
 const fn = require("../netlify/functions/family-inquiry.js");
 const post = (body, headers = {}) => fn.handler({ httpMethod: "POST", headers: { origin: "https://stonehavencre.com", "x-nf-client-connection-ip": headers.ip || "1.1.1." + Math.floor(Math.random() * 250), ...headers }, body: JSON.stringify(body) });
 const good = () => ({ page: "family-parents", name: "Test Person", phone: "(470) 555-0123", state: "GA", email: "test@example.com", timing: "exploring", notice_version: "fo-notice-2026-09-11", attribution: { utm_source: "meta", fbclid: "x" }, path: "/buy-a-home-for-parents" });
@@ -10,7 +11,7 @@ const good = () => ({ page: "family-parents", name: "Test Person", phone: "(470)
 test("rejects non-POST", async () => { const r = await fn.handler({ httpMethod: "GET", headers: {} }); assert.equal(r.statusCode, 405); });
 test("rejects foreign origin", async () => { const r = await post(good(), { origin: "https://evil.example" }); assert.equal(r.statusCode, 403); });
 test("validates required fields with field-level errors", async () => {
-  const r = await post({ page: "family-parents", name: "A", phone: "123", state: "NY", email: "nope" });
+  const r = await post({ page: "family-parents", name: "---", phone: "123", state: "NY", email: "nope" });
   assert.equal(r.statusCode, 400);
   const j = JSON.parse(r.body); assert.deepEqual(Object.keys(j.errors).sort(), ["email", "name", "phone", "state"]);
 });

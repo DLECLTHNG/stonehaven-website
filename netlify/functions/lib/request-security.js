@@ -14,4 +14,9 @@ function allowedOrigin(raw) {
     return allowed.includes(raw);
   } catch { return false; }
 }
-module.exports = { allowedOrigin };
+function deliveryUrl(raw) {
+  const url = new URL(raw);
+  if (url.protocol !== 'https:' || url.username || url.password || url.hash) throw new Error('Invalid delivery URL');
+  return url.href;
+}
+module.exports = { allowedOrigin, deliveryUrl };

@@ -41,17 +41,15 @@ function normPhone(v) {
 }
 function fmtPhone(d) { return "(" + d.slice(0, 3) + ") " + d.slice(3, 6) + "-" + d.slice(6); }
 
-function validate(b) {
-  const errors = {};
+async function validate(b) {
+  const { contactErrors } = await import('../shared/lead-validation.mjs');
+  const errors = contactErrors(b);
   const name = String(b.name || "").trim();
-  if (typeof b.name !== 'string' || name.length < 2 || /[\r\n\x00]/.test(name)) errors.name = "Please enter your full name.";
-  else if (name.length > 120) errors.name = "Please shorten your name.";
   const phone = normPhone(b.phone);
   if (!phone) errors.phone = "Please enter a valid phone number, including area code.";
   const state = String(b.state || "").toUpperCase();
   if (!SHARED.states.includes(state)) errors.state = "Please choose the property state.";
   const email = String(b.email || "").trim();
-  if (typeof b.email !== 'string' || !email || email.length > 254 || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) errors.email = "Please enter a valid email address.";
   const timing = String(b.timing || "");
   const timingLabel = timing ? (SHARED.timing[timing] || "") : "";
   if (timing && !timingLabel) errors.timing = "Please choose one of the listed options.";
@@ -87,7 +85,7 @@ function validate(b) {
   return { errors, name, phone, state, email, timing: timingLabel, page, price, credit, extra };
 }
 
-const { allowedOrigin } = require("./lib/request-security");
+const { allowedOrigin, deliveryUrl } = require("./lib/request-security");
 
 function limited(ipHash) {
   const t = now();
@@ -106,7 +104,10 @@ function attributionLine(a) {
 }
 
 async function persist(rec, event) {
-  if (process.env.FAMILY_DRY_RUN === "1") return { stored: false, dry_run: true };
+  if (process.env.FAMILY_DRY_RUN === "1") {
+    if (process.env.NETLIFY_DEV !== "true") throw new Error("Dry run is local only");
+    return { stored: false, dry_run: true };
+  }
   const about = [
     "[Family Opportunity inquiry " + rec.id + "]",
     "Page: " + SHARED.pages[rec.page],
@@ -123,8 +124,8 @@ async function persist(rec, event) {
 
   const crm = process.env.FAMILY_CRM_INTAKE_URL;
   if (crm) {
-    const r = await fetch(crm, {
-      method: "POST", headers: { "Content-Type": "application/json" },
+    const r = await fetch(deliveryUrl(crm), {
+      method: "POST", redirect: "error", signal: AbortSignal.timeout(5000), headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name: rec.name, email: rec.email, phone: fmtPhone(rec.phone), product: "Residential", about,
         page: rec.page, lang: "en", token: "",
         extra: { state: rec.state, timeline: rec.timing, inquiry_id: rec.id, notice_version: rec.notice_version,
@@ -135,13 +136,13 @@ async function persist(rec, event) {
     if (!r.ok) throw new Error("crm " + r.status);
     return { stored: true, dry_run: false };
   }
-  const base = process.env.URL || SHARED.siteUrl;
+  const base = deliveryUrl(process.env.URL || SHARED.siteUrl);
   const nf = new URLSearchParams();
   nf.append("form-name", "lead");
   nf.append("extra", JSON.stringify({state:rec.state,timeline:rec.timing,inquiry_id:rec.id,notice_version:rec.notice_version,purchase_price:rec.price ? String(rec.price) : '',credit_band:rec.credit || '',utm:rec.attributionObj}));
   nf.append("name", rec.name); nf.append("email", rec.email); nf.append("phone", fmtPhone(rec.phone));
   nf.append("product", "Residential"); nf.append("about", about); nf.append("page", rec.page); nf.append("lang", "en");
-  const r = await fetch(base + "/contact", { method: "POST", headers: { "Content-Type": "application/x-www-form-urlencoded" }, body: nf.toString() });
+  const r = await fetch(new URL("/contact", base).href, { method: "POST", redirect: "error", signal: AbortSignal.timeout(5000), headers: { "Content-Type": "application/x-www-form-urlencoded" }, body: nf.toString() });
   if (!r.ok) throw new Error("forms " + r.status);
   return { stored: true, dry_run: false };
 }
@@ -153,9 +154,9 @@ async function capi(rec, event) {
   const user_data = { ph: [h("1" + rec.phone)], client_user_agent: event.headers["user-agent"] || undefined,
     client_ip_address: event.headers["x-nf-client-connection-ip"] || undefined };
   if (rec.email) user_data.em = [h(rec.email.toLowerCase())];
-  await fetch("https://graph.facebook.com/v21.0/" + pixel + "/events?access_token=" + encodeURIComponent(token), {
-    method: "POST", headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ data: [{ event_name: "Lead", event_time: Math.floor(now() / 1000), event_id: rec.event_id,
+  await fetch("https://graph.facebook.com/v21.0/" + pixel + "/events", {
+    method: "POST", redirect: "error", signal: AbortSignal.timeout(5000), headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ access_token: token, data: [{ event_name: "Lead", event_time: Math.floor(now() / 1000), event_id: rec.event_id,
       action_source: "website", event_source_url: SHARED.siteUrl + "/buy-a-home-for-parents", user_data }] })
   }).catch(() => {});
 }
@@ -166,7 +167,7 @@ exports.handler = async (event) => {
   if (event.isBase64Encoded || Buffer.byteLength(event.body || "", "utf8") > 32 * 1024) return json(413, { ok: false, error: "body_too_large" });
   let b;
   try { b = JSON.parse(event.body || "{}"); } catch { return json(400, { ok: false, error: "json" }); }
-  if (!b || typeof b !== "object") return json(400, { ok: false, error: "json" });
+  if (!b || typeof b !== "object" || Array.isArray(b)) return json(400, { ok: false, error: "json" });
 
   // Honeypot: pretend success, store nothing.
   if (b.company_website) return json(200, { ok: true, inquiry_id: newId(), received_at: new Date().toISOString() });
@@ -174,7 +175,7 @@ exports.handler = async (event) => {
   const ip = event.headers["x-nf-client-connection-ip"] || event.headers["client-ip"] || "";
   if (limited(h(ip))) return json(429, { ok: false, error: "rate_limited" });
 
-  const v = validate(b);
+  const v = await validate(b);
   if (Object.keys(v.errors).length) return json(400, { ok: false, errors: v.errors });
 
   const key = h(v.phone + "|" + v.page);

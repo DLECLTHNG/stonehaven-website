@@ -1,0 +1,130 @@
+{
+  "slug": "construction-loan-interest-reserve-vs-contingency",
+  "date": "2026-09-22",
+  "type": "guide",
+  "product": "Commercial",
+  "en": {
+    "title": "Construction loan interest reserves vs. contingency: budget for both",
+    "metaTitle": "Construction Interest Reserves vs. Contingency | Stonehaven",
+    "desc": "Learn how construction interest reserves, contingency and working cash differ. Use a practical budget example to prepare a builder financing request.",
+    "eyebrow": "Commercial · Construction cash planning",
+    "terms": [
+      [
+        "For",
+        "Builders and developers planning business-purpose projects"
+      ],
+      [
+        "Main distinction",
+        "Interest reserve pays financing costs; contingency addresses unexpected project costs"
+      ],
+      [
+        "Example",
+        "Hypothetical budget, not a loan offer or completed deal"
+      ],
+      [
+        "Next step",
+        "Review the budget, draw schedule and repayment plan together"
+      ]
+    ],
+    "body": [
+      "<strong>An interest reserve and a construction contingency serve different purposes.</strong> An interest reserve sets aside money for loan interest during a defined period. A contingency provides a budget allowance for unforeseen project costs. Neither automatically supplies the working cash needed to pay contractors before a lender releases a draw. A builder financing request should show all three separately.",
+      "This distinction matters when comparing construction term sheets. Two lenders may describe the same headline loan-to-cost percentage while treating interest, contingencies, deposits and other costs differently. The useful question is how much money reaches each purpose, when it becomes available and who funds any shortfall.",
+      {
+        "h": "Separate the three cash needs before requesting terms"
+      },
+      "<ul><li><strong>Interest reserve:</strong> a designated amount for interest payments. It may be loan-funded or borrower-funded, depending on the agreement.</li><li><strong>Construction contingency:</strong> an allowance for eligible, unexpected costs such as concealed conditions or changes required during the project.</li><li><strong>Working cash:</strong> accessible funds for deposits, work awaiting reimbursement and other payments that cannot wait for the next approved draw.</li></ul>",
+      "The OCC describes interest reserves as part of construction and lease-up financing and emphasizes the timing of disbursements, completion and repayment. That banking guidance is useful background, but it does not establish a reserve requirement or program promise for every lender. See the <a href=\"https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf\">OCC Commercial Real Estate Lending handbook</a>.",
+      {
+        "h": "A hypothetical construction budget with distinct reserves"
+      },
+      "Consider a business-purpose project with the following illustrative cost plan. These are planning numbers selected to show the arithmetic, not Stonehaven loan terms. The contingency is a chosen assumption, not a statement that this percentage is sufficient for every build.",
+      "<table><caption>Illustrative project uses</caption><thead><tr><th scope=\"col\">Budget item</th><th scope=\"col\">Amount</th></tr></thead><tbody><tr><td>Land acquisition</td><td>$600,000</td></tr><tr><td>Hard construction costs</td><td>$1,500,000</td></tr><tr><td>Professional fees, permits and other soft costs</td><td>$180,000</td></tr><tr><td>Construction contingency</td><td>$150,000</td></tr><tr><td>Interest reserve</td><td>$120,000</td></tr><tr><td>Total modeled uses</td><td>$2,550,000</td></tr></tbody></table>",
+      "If a hypothetical loan commitment is $2,040,000, it equals 80% of this modeled cost. The remaining funding requirement is $510,000. That calculation alone does not tell the borrower how much must be wired at closing or retained afterward. Existing land equity, lender cost eligibility, closing disbursements and reserve funding all need their own reconciliation. An unfunded loan commitment is not cash in the operating account.",
+      "Avoid adding the same reserve twice. If the $120,000 interest reserve is already included in both the budget and committed financing, it is not an additional free allowance. If the lender excludes a cost category, rebuild the sources-and-uses statement so the borrower contribution remains visible. Our <a href=\"/blog/100-ltc-construction-loans-builder-cash-needed\">guide to 100% eligible LTC and builder cash needs</a> explains why a leverage headline does not settle this question.",
+      {
+        "h": "Stress-test the schedule, not just the construction price"
+      },
+      "Suppose the original $120,000 reserve plan represents 12 months of an assumed average $10,000 monthly interest cost. Three additional months at the same assumed monthly cost require another $30,000. This is a cash-planning illustration, not a quoted interest rate or a loan-payment calculation. Actual interest depends on the note, outstanding advances, timing and any interest charged on previously financed costs.",
+      "A separate $45,000 construction change order would reduce the $150,000 contingency to $105,000 if the lender approves that use. Paying the additional $30,000 of interest from the same contingency would reduce the remaining protection again and may not be permitted. Put each request through the lender's approval process rather than assuming budget categories can be moved freely.",
+      "Build three versions of the timeline: the expected completion and exit, a modest delay, and a longer delay that reaches loan maturity. Include inspection availability, utility connections, final approvals and the time to sell or refinance. A finished building and a repaid construction loan are different milestones.",
+      {
+        "h": "Ask these questions when comparing financing"
+      },
+      "<ul><li>Is the interest reserve within the stated loan commitment, separately funded, or absent?</li><li>Is interest charged only on drawn balances or on another contractual basis?</li><li>What reserve assumptions were used for draw timing and repayment?</li><li>Who approves contingency use, and what documentation is required?</li><li>Must borrower equity be used before advances begin?</li><li>What happens if the reserve runs low before the project is complete?</li><li>What extension conditions, fees and additional cash requirements apply?</li></ul>",
+      "A larger reserve does not repair an unrealistic exit. The <a href=\"https://www.occ.treas.gov/news-issuances/bulletins/2024/bulletin-2024-29.html\">OCC's refinance-risk guidance</a> emphasizes reviewing repayment capacity under changed conditions. For your own model, reduce the expected sale proceeds or refinance amount and see whether the remaining debt and costs can still be paid.",
+      {
+        "h": "What Stonehaven can help prepare"
+      },
+      "Stonehaven is a mortgage brokerage that arranges financing through third-party lenders. We can review the proposed budget and capital request, identify questions for lender placement and compare how potential structures handle reserves and draws. Send the project location, ownership or purchase position, itemized budget, requested financing, experience and expected exit. Start with our <a href=\"/commercial/construction-loans\">construction financing page</a>; we follow up by text. Availability and final terms depend on the lender and project.",
+      {
+        "h": "Frequently asked questions"
+      },
+      "<strong>Does an interest reserve mean I never make a payment?</strong> No. It is a limited funding source governed by the loan agreement. A shortfall or ineligible expense may still require borrower cash.",
+      "<strong>Is contingency money paid to me at closing?</strong> Not necessarily. A budget allowance may remain controlled and only become available after an approved request. Confirm the actual disbursement rules.",
+      "<strong>Can owned land replace all cash reserves?</strong> Land equity may help the overall financing structure, but it cannot pay a contractor invoice unless cash is available through an approved advance or another documented source. Review both equity and liquidity.",
+      "<strong>Can the lender increase the reserve later?</strong> An increase is a new credit decision or contractual accommodation, not an automatic entitlement. Plan the cash response before relying on an extension or additional loan proceeds."
+    ]
+  },
+  "es": {
+    "title": "Reserva de intereses y contingencia: cómo presupuestar ambas en una obra",
+    "metaTitle": "Reserva de intereses y contingencia de obra | Stonehaven",
+    "desc": "Distinga la reserva de intereses, la contingencia y el efectivo operativo. Use un ejemplo práctico para preparar el financiamiento de su construcción.",
+    "eyebrow": "Comercial · Planificación de efectivo para construcción",
+    "terms": [
+      [
+        "Para",
+        "Constructores y desarrolladores con proyectos de inversión"
+      ],
+      [
+        "Diferencia principal",
+        "La reserva paga intereses; la contingencia cubre costos imprevistos del proyecto"
+      ],
+      [
+        "Ejemplo",
+        "Presupuesto hipotético, no oferta ni operación cerrada"
+      ],
+      [
+        "Siguiente paso",
+        "Revisar juntos el presupuesto, los desembolsos y la salida"
+      ]
+    ],
+    "body": [
+      "<strong>La reserva de intereses y la contingencia de obra cumplen funciones diferentes.</strong> La primera aparta dinero para intereses durante un período definido. La segunda incluye una provisión presupuestaria para costos imprevistos del proyecto. Ninguna proporciona automáticamente el efectivo necesario para pagar al contratista antes de que el prestamista autorice un desembolso. Presente las tres necesidades por separado al solicitar financiamiento.",
+      "Esta diferencia importa al comparar propuestas de construcción. Dos prestamistas pueden anunciar el mismo porcentaje de préstamo sobre costo, pero tratar de forma distinta los intereses, las contingencias, los anticipos y otros gastos. Lo útil es saber cuánto dinero se asigna a cada propósito, cuándo estará disponible y quién cubrirá cualquier faltante.",
+      {
+        "h": "Separe las tres necesidades de efectivo antes de solicitar términos"
+      },
+      "<ul><li><strong>Reserva de intereses:</strong> monto destinado a pagar intereses. Según el contrato, puede financiarlo el préstamo o aportarlo el prestatario.</li><li><strong>Contingencia de construcción:</strong> provisión para gastos imprevistos elegibles, como condiciones ocultas o cambios exigidos durante la obra.</li><li><strong>Efectivo operativo:</strong> fondos disponibles para anticipos, trabajos pendientes de reembolso y pagos que no pueden esperar al siguiente desembolso aprobado.</li></ul>",
+      "La OCC describe las reservas de intereses dentro del financiamiento de construcción y ocupación inicial, y destaca el calendario de desembolsos, terminación y pago. Esa guía bancaria aporta contexto, pero no establece un requisito ni una promesa aplicable a todos los prestamistas. Consulte el <a href=\"https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf\">manual de préstamos inmobiliarios comerciales de la OCC (en inglés)</a>.",
+      {
+        "h": "Un presupuesto hipotético con reservas separadas"
+      },
+      "Considere el siguiente plan ilustrativo para un proyecto de inversión. Los importes muestran la aritmética y no representan términos de préstamo de Stonehaven. La contingencia es un supuesto elegido para el ejemplo, no una afirmación de que ese porcentaje sea suficiente para todas las obras.",
+      "<table><caption>Usos ilustrativos del capital del proyecto</caption><thead><tr><th scope=\"col\">Partida</th><th scope=\"col\">Importe</th></tr></thead><tbody><tr><td>Compra del terreno</td><td>$600,000</td></tr><tr><td>Costos directos de construcción</td><td>$1,500,000</td></tr><tr><td>Honorarios, permisos y otros costos indirectos</td><td>$180,000</td></tr><tr><td>Contingencia de obra</td><td>$150,000</td></tr><tr><td>Reserva de intereses</td><td>$120,000</td></tr><tr><td>Total de usos modelados</td><td>$2,550,000</td></tr></tbody></table>",
+      "Si un compromiso de préstamo hipotético es de $2,040,000, equivale al 80% del costo modelado. El financiamiento restante necesario es de $510,000. Ese cálculo no indica por sí solo cuánto debe transferirse al cierre ni cuánto debe conservarse después. El patrimonio neto del terreno, los costos elegibles, los desembolsos iniciales y las reservas requieren una conciliación propia. Un compromiso todavía no desembolsado no es efectivo en la cuenta operativa.",
+      "Evite contar dos veces una reserva. Si los $120,000 ya están incluidos en el presupuesto y en el financiamiento comprometido, no son una asignación adicional gratuita. Si un prestamista excluye una categoría, ajuste el cuadro de fuentes y usos para que la aportación del prestatario permanezca visible. Nuestra <a href=\"/es/blog/100-ltc-construction-loans-builder-cash-needed\">guía sobre el 100% del costo elegible y el efectivo del constructor</a> explica por qué el porcentaje anunciado no resuelve esta pregunta.",
+      {
+        "h": "Pruebe el calendario, además del precio de la obra"
+      },
+      "Suponga que la reserva original de $120,000 representa 12 meses con un costo medio de intereses supuesto de $10,000 mensuales. Tres meses adicionales con el mismo costo exigirían otros $30,000. Es un ejemplo de planificación de efectivo, no una tasa cotizada ni el cálculo de una cuota. Los intereses reales dependen del pagaré, los fondos desembolsados, las fechas y cualquier interés sobre costos financiados previamente.",
+      "Una orden de cambio separada de $45,000 reduciría la contingencia de $150,000 a $105,000 si el prestamista autoriza ese uso. Pagar también los $30,000 adicionales de intereses con esa contingencia reduciría nuevamente la protección y podría no estar permitido. Solicite autorización en lugar de asumir que puede transferir libremente importes entre categorías.",
+      "Prepare tres calendarios: terminación y salida previstas, un retraso moderado y un retraso mayor que alcance el vencimiento. Incluya inspecciones, conexiones de servicios, autorizaciones finales y tiempo para vender o refinanciar. Terminar el edificio y pagar el préstamo de construcción son hitos diferentes.",
+      {
+        "h": "Preguntas para comparar propuestas de financiamiento"
+      },
+      "<ul><li>¿La reserva de intereses está dentro del compromiso, se aporta por separado o no existe?</li><li>¿Se cobran intereses sobre fondos desembolsados o sobre otra base contractual?</li><li>¿Qué calendario de desembolsos y pago se utilizó para calcular la reserva?</li><li>¿Quién autoriza el uso de contingencia y qué documentos solicita?</li><li>¿Debe utilizarse primero la aportación del prestatario?</li><li>¿Qué ocurre si la reserva disminuye antes de terminar la obra?</li><li>¿Qué condiciones, cargos y aportaciones adicionales exige una prórroga?</li></ul>",
+      "Una reserva mayor no corrige una salida poco realista. La <a href=\"https://www.occ.treas.gov/news-issuances/bulletins/2024/bulletin-2024-29.html\">guía de la OCC sobre riesgo de refinanciamiento (en inglés)</a> destaca la revisión de la capacidad de pago bajo condiciones diferentes. En su modelo, reduzca los ingresos de venta o el nuevo préstamo y compruebe si todavía puede pagar deuda y gastos.",
+      {
+        "h": "Cómo puede ayudar Stonehaven"
+      },
+      "Stonehaven es una firma de corretaje hipotecario que gestiona financiamiento mediante prestamistas externos. Podemos revisar el presupuesto y la solicitud, identificar preguntas para presentar el proyecto y comparar el tratamiento de reservas y desembolsos. Comparta ubicación, compra o propiedad actual, presupuesto detallado, monto solicitado, experiencia y salida prevista. Empiece en nuestra <a href=\"/es/commercial/construction-loans\">página de financiamiento de construcción</a>. Damos seguimiento por mensaje de texto. La disponibilidad y los términos finales dependen del prestamista y del proyecto.",
+      {
+        "h": "Preguntas frecuentes"
+      },
+      "<strong>¿La reserva significa que nunca debo hacer un pago?</strong> No. Es una fuente limitada regulada por el contrato. Un faltante o gasto no elegible puede exigir efectivo del prestatario.",
+      "<strong>¿Recibo la contingencia al cierre?</strong> No necesariamente. La provisión puede mantenerse bajo control y liberarse únicamente después de una solicitud aprobada. Confirme las reglas de desembolso.",
+      "<strong>¿Un terreno propio sustituye todas las reservas en efectivo?</strong> Su valor puede ayudar a estructurar el préstamo, pero no paga una factura sin un desembolso autorizado u otra fuente documentada. Revise tanto el patrimonio como la liquidez.",
+      "<strong>¿Puede aumentarse la reserva después?</strong> Un aumento requiere una decisión crediticia o modificación contractual, no es un derecho automático. Planifique cómo cubrirá el faltante antes de depender de una prórroga o de fondos adicionales."
+    ]
+  }
+}

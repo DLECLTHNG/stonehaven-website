@@ -1,0 +1,130 @@
+{
+  "slug": "dscr-loan-reserves-cash-to-close",
+  "date": "2026-09-22",
+  "type": "guide",
+  "product": "DSCR",
+  "en": {
+    "metaTitle": "DSCR Reserves and Cash to Close | Stonehaven",
+    "title": "DSCR loan reserves: how much cash should remain after closing?",
+    "desc": "Build a rental-property cash plan that separates the down payment, closing costs, lender reserves and repairs you will fund after purchase.",
+    "eyebrow": "DSCR · Investor cash planning",
+    "terms": [
+      [
+        "Property focus",
+        "Business-purpose rental investment"
+      ],
+      [
+        "Main distinction",
+        "Money spent at closing versus assets retained afterward"
+      ],
+      [
+        "Example",
+        "Illustrative purchase budget, not a loan offer"
+      ]
+    ],
+    "body": [
+      "<strong>A DSCR loan can require more available money than the down payment and closing costs.</strong> The lender may require documented reserves after closing, while your property needs its own operating cash. Before making an offer, create separate entries for money spent on the purchase, funds retained to meet underwriting requirements and money you intend to use for repairs or vacancies.",
+      {
+        "h": "What DSCR reserves mean"
+      },
+      "Reserves are eligible assets the lender verifies as a financial cushion after the transaction. A program may express them as a number of monthly housing payments. Ask which payment is used, how many months apply and which assets qualify. A retirement or investment account may receive different treatment from cash, and an amount shown on a statement is not automatically the amount counted by underwriting.",
+      "There is no single reserve rule across all DSCR lenders. For example, <a href=\"https://visiolending.com/lending-process/\">one lender's published process</a> distinguishes cash needed to close from required reserves and specifies how it treats different account types. A <a href=\"https://corr.pennymac.com/announcements/announcement-26-80\">July 2026 lender update</a> also illustrates that reserve and investor requirements change. Those references describe their own programs, not a universal Stonehaven requirement.",
+      {
+        "h": "Separate four uses of cash"
+      },
+      "<ul><li><strong>Acquisition funds:</strong> down payment and the balance of transaction costs after deposits and permitted credits.</li><li><strong>Lender reserves:</strong> eligible assets that must remain after the transaction under the selected program.</li><li><strong>Immediate property work:</strong> repairs, cleaning, safety items or leasing expenses you already expect to pay.</li><li><strong>Your operating cushion:</strong> money for interruptions and expenses beyond the lender's minimum assessment.</li></ul>",
+      "These are planning categories, not necessarily four different bank accounts. The important point is to avoid treating the same dollar as both spent and still available. If you plan to use cash for a repair immediately after closing, show that use explicitly, even when the underwriting review initially counts the balance as reserves.",
+      {
+        "h": "A hypothetical $400,000 rental purchase"
+      },
+      "Assume a $400,000 purchase with a $300,000 loan. The buyer contributes $100,000 toward the price. For this example only, transaction costs are $12,000 and prepaids plus initial escrow funding are $4,500. The program requires six months of a $2,400 qualifying housing payment, or $14,400 in reserves. The investor also budgets $4,000 for immediate work, separate from the reserve amount.",
+      "<ul><li>Down payment: $100,000.</li><li>Transaction costs: $12,000.</li><li>Prepaids and initial escrow funding: $4,500.</li><li>Assets retained as assumed lender reserves: $14,400.</li><li>Separate immediate-work budget: $4,000.</li><li><strong>Total resources in this plan: $134,900.</strong></li></ul>",
+      "The purchase consumes $116,500 before accounting for any deposit already paid. If a documented $10,000 earnest-money deposit is credited to the buyer at closing, the remaining purchase cash is $106,500. The deposit does not reduce the total resources needed for the plan; it changes when part of the money is paid. The $14,400 reserve amount remains an asset, rather than an additional fee paid to the lender in this example.",
+      "Actual settlement figures, permitted credits, payment definitions and reserve rules will differ. Ask whether the proposal requires retained assets, a lender-controlled reserve account or another form of holdback. Those arrangements have different effects on your usable money.",
+      {
+        "h": "A passing ratio does not replace an operating budget"
+      },
+      "Many one-to-four-unit DSCR programs compare qualifying monthly rent with principal, interest, taxes, insurance and applicable association dues, often called PITIA. That program calculation differs from the commercial-property method based on net operating income divided by debt service. The <a href=\"https://visiolending.com/dscr-loans/\">residential investor-program explanation</a> and the <a href=\"https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf\">OCC's commercial real estate handbook</a> illustrate that distinction.",
+      "Suppose the example property has $3,000 of qualifying monthly rent and a $2,400 monthly PITIA payment. The program-style ratio is 1.25. The $600 difference still has to support expenses not included in that payment, such as maintenance, management and turnover. It is not automatically net cash flow or profit. Use our <a href=\"/dscr-program-calculator\">DSCR program calculator</a> for the qualification estimate and a separate operating budget for ownership decisions.",
+      "One month without rent plus a $1,800 repair would require $4,200 just to cover that month's $2,400 payment and the repair. Starting with $14,400 in cash, those two uses would leave $10,200, before utilities or other expenses. This hypothetical stress test shows why the right operating cushion depends on the property and your circumstances, even when the initial underwriting ratio looks comfortable.",
+      {
+        "h": "Prepare asset information before making an offer"
+      },
+      "List the accounts you intend to use, their owners and any restrictions on access. Ask the lender how it handles funds held in an LLC, jointly held accounts, recent transfers, investment assets and cash-out proceeds. Do not assume proceeds from the new refinance count toward reserves until the specific program confirms that treatment.",
+      "Keep an audit trail for earnest money and transfers between accounts. Avoid moving funds repeatedly merely to make a statement look simpler. If the purchase is one of several transactions closing near the same date, present the combined plan so the same funds are not allocated to multiple properties. Private statements belong in a designated secure document process, not a public inquiry form.",
+      {
+        "h": "Common questions"
+      },
+      "<strong>Are reserves another closing charge?</strong> Not when the requirement is simply to document assets remaining after closing. A separately funded escrow or holdback is different. Ask the lender which arrangement applies.",
+      "<strong>Can I use the down payment as reserves too?</strong> Money spent at closing is no longer available afterward. Build the reserve calculation using the assets that actually remain and qualify under the program.",
+      "<strong>Will a good DSCR eliminate the asset review?</strong> Do not assume so. Property income, credit, leverage, liquidity and the selected program all shape the review.",
+      "<strong>How much should a first-time investor keep?</strong> Start with the lender's actual requirement, then model vacancy, known repairs, insurance deductibles and other obligations. Our <a href=\"/resources/first-dscr-loan\">first DSCR loan guide</a> connects those questions to the overall process.",
+      {
+        "h": "Review the whole cash plan with Stonehaven"
+      },
+      "Stonehaven is a mortgage broker arranging financing through lenders. Share the property state, price or value, requested loan, expected rent, taxes, insurance and available funding through our <a href=\"/dscr-review\">DSCR review form</a>. We follow up by text and can help compare deal structure and placement options. Business-purpose program availability and terms vary by state and lender. A review is not approval, and no particular reserve amount guarantees eligibility."
+    ]
+  },
+  "es": {
+    "metaTitle": "Reservas DSCR y efectivo para cerrar | Stonehaven",
+    "title": "Reservas de un préstamo DSCR: ¿cuánto dinero debe quedar después del cierre?",
+    "desc": "Prepare un presupuesto para comprar un inmueble de alquiler que distinga pago inicial, costos de cierre, reservas exigidas y reparaciones posteriores.",
+    "eyebrow": "DSCR · Planificación del efectivo",
+    "terms": [
+      [
+        "Inmueble",
+        "Inversión de alquiler con fines comerciales"
+      ],
+      [
+        "Distinción principal",
+        "Dinero utilizado al cerrar frente a activos que conserva"
+      ],
+      [
+        "Ejemplo",
+        "Presupuesto ilustrativo, no una oferta de préstamo"
+      ]
+    ],
+    "body": [
+      "<strong>Un préstamo DSCR puede exigir más fondos disponibles que el pago inicial y los gastos de cierre.</strong> El prestamista puede pedir reservas documentadas después de la operación, mientras que el inmueble necesita su propio efectivo operativo. Antes de presentar una oferta, separe el dinero que gastará en la compra, los activos que conservará para cumplir la evaluación y los fondos destinados a reparaciones o períodos sin inquilino.",
+      {
+        "h": "Qué significan las reservas DSCR"
+      },
+      "Las reservas son activos elegibles que el prestamista verifica como respaldo financiero después de la operación. Un programa puede expresarlas como cierta cantidad de pagos mensuales de vivienda. Pregunte qué pago se utiliza, cuántos meses se exigen y qué activos son aceptables. Una cuenta de jubilación o inversión puede recibir un tratamiento distinto al efectivo; el saldo del estado de cuenta no equivale automáticamente al monto reconocido para calificar.",
+      "No existe una única regla de reservas para todos los prestamistas DSCR. Por ejemplo, <a href=\"https://visiolending.com/lending-process/\">el proceso publicado por un prestamista</a> distingue el efectivo para cerrar de las reservas e indica cómo trata distintos tipos de cuenta. Una <a href=\"https://corr.pennymac.com/announcements/announcement-26-80\">actualización de otro prestamista de julio de 2026</a> muestra que los requisitos también cambian. Son referencias en inglés sobre sus programas, no un requisito universal de Stonehaven.",
+      {
+        "h": "Distinga cuatro usos del dinero"
+      },
+      "<ul><li><strong>Fondos de adquisición:</strong> pago inicial y costos de la operación después de depósitos y créditos permitidos.</li><li><strong>Reservas del prestamista:</strong> activos elegibles que deben quedar después del cierre según el programa.</li><li><strong>Trabajo inmediato:</strong> reparaciones, limpieza, seguridad o gastos para alquilar que ya espera pagar.</li><li><strong>Respaldo operativo propio:</strong> dinero para interrupciones y gastos que superen la evaluación mínima del prestamista.</li></ul>",
+      "Son categorías de planificación, no necesariamente cuatro cuentas distintas. Lo importante es no considerar el mismo dólar como gastado y todavía disponible. Si utilizará efectivo para una reparación inmediatamente después de cerrar, muestre ese uso expresamente, aunque la evaluación inicial reconozca el saldo como reservas.",
+      {
+        "h": "Una compra hipotética de $400,000"
+      },
+      "Suponga una compra de $400,000 con un préstamo de $300,000. El comprador aporta $100,000 al precio. Solo para este ejemplo, los gastos de la operación son $12,000 y los prepagos más el depósito inicial de la cuenta de impuestos y seguro suman $4,500. El programa exige seis meses de un pago de vivienda de $2,400, es decir, $14,400 en reservas. El inversionista también destina $4,000 a trabajos inmediatos, por separado.",
+      "<ul><li>Pago inicial: $100,000.</li><li>Gastos de la operación: $12,000.</li><li>Prepagos y depósito inicial de impuestos y seguro: $4,500.</li><li>Activos conservados como reservas supuestas: $14,400.</li><li>Presupuesto separado de trabajos inmediatos: $4,000.</li><li><strong>Recursos totales del plan: $134,900.</strong></li></ul>",
+      "La compra consume $116,500 antes de considerar un depósito ya pagado. Si un depósito documentado de garantía de $10,000 se acredita al comprador al cerrar, quedan $106,500 por aportar a la compra. El depósito no reduce los recursos totales necesarios: cambia el momento en que se paga una parte. Los $14,400 de reservas siguen siendo un activo, no un cargo adicional que se entrega al prestamista en este ejemplo.",
+      "Las cifras reales de liquidación, los créditos permitidos, la definición del pago y las reglas de reservas serán diferentes. Pregunte si la propuesta exige conservar activos, financiar una cuenta controlada por el prestamista u otra retención. Cada estructura afecta de manera distinta al dinero que puede utilizar.",
+      {
+        "h": "Cumplir el índice no sustituye un presupuesto operativo"
+      },
+      "Muchos programas DSCR de una a cuatro unidades comparan la renta mensual admitida con capital, intereses, impuestos, seguro y cuotas de asociación aplicables, o PITIA. Ese cálculo de programa difiere del método comercial basado en ingreso operativo neto dividido entre servicio de deuda. La <a href=\"https://visiolending.com/dscr-loans/\">explicación de un programa para inversionistas</a> y el <a href=\"https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf\">manual de inmuebles comerciales de la OCC</a>, en inglés, ilustran la diferencia.",
+      "Suponga que el inmueble del ejemplo tiene $3,000 de renta mensual admitida y un pago PITIA de $2,400. El índice del programa es 1.25. La diferencia de $600 todavía debe cubrir gastos no incluidos en ese pago, como mantenimiento, administración y cambios de inquilino. No es automáticamente flujo neto ni ganancia. Use nuestra <a href=\"/es/dscr-program-calculator\">calculadora del programa DSCR</a> para estimar la calificación y un presupuesto operativo separado para decidir sobre la inversión.",
+      "Un mes sin renta y una reparación de $1,800 exigirían $4,200 solo para cubrir el pago de $2,400 y la reparación. Si empieza con $14,400 en efectivo, ambos usos dejan $10,200, antes de servicios y otros gastos. Esta prueba hipotética muestra por qué el respaldo adecuado depende del inmueble y de sus circunstancias, aunque el índice inicial parezca cómodo.",
+      {
+        "h": "Prepare los datos de activos antes de ofertar"
+      },
+      "Anote las cuentas que utilizará, sus titulares y las restricciones de acceso. Pregunte cómo trata el prestamista los fondos de una LLC, las cuentas conjuntas, las transferencias recientes, las inversiones y el efectivo de un refinanciamiento. No suponga que los fondos de la nueva operación cuentan como reservas hasta que el programa lo confirme.",
+      "Conserve un registro del depósito de garantía y las transferencias. Evite mover fondos repetidamente solo para simplificar un estado de cuenta. Si tiene varias operaciones con fechas cercanas, presente el plan conjunto para no asignar el mismo dinero a varios inmuebles. Los estados de cuenta privados deben entregarse mediante un proceso seguro, no por un formulario público.",
+      {
+        "h": "Preguntas frecuentes"
+      },
+      "<strong>¿Las reservas son otro gasto de cierre?</strong> No cuando el requisito consiste en documentar activos que quedan después. Una cuenta financiada por separado o una retención es distinta. Pregunte cuál corresponde.",
+      "<strong>¿Puedo contar el pago inicial también como reservas?</strong> El dinero gastado al cerrar ya no está disponible después. Calcule las reservas con los activos que realmente queden y sean elegibles.",
+      "<strong>¿Un buen DSCR elimina la revisión de activos?</strong> No lo suponga. Ingresos del inmueble, crédito, apalancamiento, liquidez y programa influyen en la evaluación.",
+      "<strong>¿Cuánto debe conservar quien invierte por primera vez?</strong> Empiece por el requisito real del prestamista y modele vacancia, reparaciones conocidas, deducibles de seguro y otras obligaciones. Nuestra <a href=\"/es/resources/first-dscr-loan\">guía del primer préstamo DSCR</a> conecta estas preguntas con el proceso completo.",
+      {
+        "h": "Revise el plan completo con Stonehaven"
+      },
+      "Stonehaven es un corredor hipotecario que gestiona financiamiento mediante prestamistas. Comparta el estado donde está el inmueble, precio o valor, préstamo solicitado, renta prevista, impuestos, seguro y fondos disponibles mediante el <a href=\"/es/dscr-review\">formulario de revisión DSCR</a>. Damos seguimiento por mensaje de texto y podemos ayudarle a comparar estructuras y opciones de colocación. La disponibilidad y las condiciones comerciales varían por estado y prestamista. Una revisión no es aprobación y ningún monto concreto de reservas garantiza elegibilidad."
+    ]
+  }
+}

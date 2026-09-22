@@ -142,3 +142,13 @@ Educational introductions for professionals. No referral compensation is offered
 - [Multifamily acquisition financing](https://stonehavencre.com/commercial/multifamily-acquisition): stabilized purchases, value-add plans, current Fannie Mae Small Mortgage Loans and Freddie Mac Conventional Small program context. Published agency loan-size ranges describe those programs, not Stonehaven’s overall project-size limits.
 - [Five to eight unit financing](https://stonehavencre.com/commercial/5-8-unit-financing): small multifamily underwriting, DSCR versus NOI assumptions and legal unit-count review.
 - [Georgia and metro Atlanta commercial financing](https://stonehavencre.com/commercial/georgia): the Alpharetta-based brokerage’s local construction, acquisition and refinancing paths, with nationwide commercial placement subject to availability.
+
+## Project cash flow and rental-loan planning
+
+- [Commercial loan refinance: how to calculate a cash-in gap before maturity](https://stonehavencre.com/blog/commercial-refinance-cash-in-gap): educational guide with explicit assumptions and lender-specific questions.
+- [Construction loan interest reserves vs. contingency: budget for both](https://stonehavencre.com/blog/construction-loan-interest-reserve-vs-contingency): educational guide with explicit assumptions and lender-specific questions.
+- [Fix-and-flip rehab draws: how much cash do you need between payments?](https://stonehavencre.com/blog/fix-and-flip-rehab-draw-cash-flow): educational guide with explicit assumptions and lender-specific questions.
+- [What if your flip does not sell? Plan a rental refinance exit early](https://stonehavencre.com/blog/fix-and-flip-rental-exit-refinance): educational guide with explicit assumptions and lender-specific questions.
+- [Subdivision financing: how lot release prices affect developer cash flow](https://stonehavencre.com/blog/subdivision-loan-lot-release-prices): educational guide with explicit assumptions and lender-specific questions.
+- [DSCR loan reserves: how much cash should remain after closing?](https://stonehavencre.com/blog/dscr-loan-reserves-cash-to-close): educational guide with explicit assumptions and lender-specific questions.
+- [DSCR prepayment penalties: compare the cost of selling or refinancing early](https://stonehavencre.com/blog/dscr-prepayment-penalty-exit-planning): educational guide with explicit assumptions and lender-specific questions.

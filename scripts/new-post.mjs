@@ -8,6 +8,7 @@ if (!/^\d{4}-\d{2}-\d{2}$/.test(b.date || '')) throw new Error('date must be YYY
 if (new Date(b.date).toISOString().slice(0, 10) !== b.date || b.date > new Date().toISOString().slice(0, 10)) throw new Error('Use a real publication date that is not in the future');
 if (!['guide', 'closing', 'case-study', 'announcement'].includes(b.type)) throw new Error('type must be guide, closing, case-study or announcement');
 if (b.product && !['HELOC', 'DSCR', 'Family', 'Commercial'].includes(b.product)) throw new Error('Unsupported product');
+if (b.inquiry && (b.inquiry !== 'Residential' || b.product !== 'HELOC')) throw new Error('Unsupported inquiry destination');
 if (b.audience && b.audience !== 'partners') throw new Error('Unsupported audience');
 if (b.audience === 'partners' && b.product) throw new Error('Partner guides use their own contact CTA');
 if (b.product === 'Family' && !['parents', 'adult-child'].includes(b.familyAudience)) throw new Error('Choose a Family audience');
@@ -52,7 +53,7 @@ for(const lang of ['en','es']){
   const body=p.body.map(x=>typeof x==='string'?(/^(<table|<div|<ul|<ol)\b/.test(x)?x:`<p style="margin-top:16px;">${x}</p>`):`<h2 style="margin-top:28px;font-size:22px;">${x.h}</h2>`).join('\n');
   const terms=p.terms.map(([k,v])=>`<tr><td style="padding:8px 12px;border-bottom:1px solid rgba(20,35,50,.08);color:var(--stone-400);white-space:nowrap;">${k}</td><td style="padding:8px 12px;border-bottom:1px solid rgba(20,35,50,.08);">${v}</td></tr>`).join('');
   const back=lang==='es'?'← Todos los artículos':'← All articles', tl=b.type==='announcement'?(lang==='es'?'Resumen del anuncio':'Announcement overview'):b.type==='guide'?(lang==='es'?'Resumen de la guía':'Guide overview'):(lang==='es'?'Términos de la operación':'Deal terms');
-  shell=shell.replace(/(<section class="lead">[\s\S]*?<span class="eyebrow">)[\s\S]*?(<\/span>)/, (_, start, end) => start + disclosures[b.type][lang] + end);
+  shell=shell.replace(/<section class="lead">[\s\S]*?<\/section>/, block => block.replace(/(<(?:span class="eyebrow"|p class="fine")>)[\s\S]*?(<\/(?:span|p)>)/, (_, start, end) => start + disclosures[b.type][lang] + end));
   const main=`<main>
 <section class="funnel-hero"><span class="eyebrow">${p.eyebrow}</span><h1>${p.title}</h1><p>${p.desc}</p><p style="font-size:13px;color:var(--stone-400);margin-top:16px;">Stonehaven Lending · ${b.date}</p></section>
 <section class="tight"><div class="wrap"><div style="max-width:860px;margin:0 auto;">
@@ -78,16 +79,28 @@ ${shell.slice(shell.indexOf('<section class="lead">'),shell.indexOf('</main>'))}
   if (b.product === 'Commercial') {
     out = out.replace(/(<p style="margin-top:22px;font-size:13px;color:var\(--stone-400\);line-height:1\.7;">)[\s\S]*?<\/p>/, (_, start) => start + (lang === 'es' ? 'Comparta su proyecto para recibir seguimiento por mensaje de texto. Una revisión inicial no constituye aprobación.' : 'Share your project for follow-up by text. An initial review is not approval.') + '</p>');
     const cta = lang === 'es'
-      ? ['Revise su proyecto de construcción', 'Comparta compra o saldo, presupuesto, valor terminado estimado y experiencia. Le daremos seguimiento por mensaje de texto.', 'Solicitar revisión del proyecto']
-      : ['Get feedback on your construction project', 'Share acquisition or payoff, budget, estimated completed value and builder experience. We follow up by text.', 'Request a construction review'];
+      ? ['Revise su proyecto inmobiliario', 'Comparta la propiedad, compra o saldo, presupuesto, financiamiento solicitado y plan de salida. Le daremos seguimiento por mensaje de texto.', 'Solicitar revisión del proyecto']
+      : ['Get feedback on your real estate project', 'Share the property, acquisition or payoff, budget, requested financing and exit plan. We follow up by text.', 'Request a project review'];
     const destination = lang === 'es' ? '/es/commercial#leadForm' : '/terms-sheet#deal-review';
     out = out.replace(/<section class="lead">[\s\S]*?<\/section>/, `<section class="lead"><div class="wrap"><div class="lead-card"><h2>${cta[0]}</h2><p class="sub">${cta[1]}</p><p><a class="btn-primary" href="${destination}">${cta[2]}</a></p><p class="fine">${disclosures[b.type][lang]}</p></div></div></section>`);
+  }
+  if (b.product === 'DSCR') {
+    const cta = lang === 'es'
+      ? ['Revise su financiamiento DSCR', 'Comparta la propiedad, la renta, el financiamiento solicitado y su plan de salida. Le daremos seguimiento por mensaje de texto.', 'Solicitar una revisión DSCR']
+      : ['Review your DSCR financing', 'Share the rental property, rent, requested financing and exit plan. We follow up by text.', 'Request a DSCR review'];
+    out = out.replace(/<section class="lead">[\s\S]*?<\/section>/, `<section class="lead"><div class="wrap"><div class="lead-card"><h2>${cta[0]}</h2><p class="sub">${cta[1]}</p><p><a class="btn-primary" href="${prefix}/dscr-review">${cta[2]}</a></p><p class="fine">${disclosures[b.type][lang]}</p></div></div></section>`);
   }
   if (b.product === 'HELOC') {
     const cta = lang === 'es'
       ? ['Revise sus opciones de HELOC', 'Empiece con el valor estimado de su vivienda, el saldo hipotecario y el monto que desea solicitar.', 'Solicitar una revisión']
       : ['Review your HELOC options', 'Start with your estimated home value, mortgage balance, and the amount you want to request.', 'Request a HELOC review'];
     out = out.replace(/<section class="lead">[\s\S]*?<\/section>/, `<section class="lead"><div class="wrap"><div class="lead-card"><h2>${cta[0]}</h2><p class="sub">${cta[1]}</p><p><a class="btn-primary" href="${prefix}/heloc#callback">${cta[2]}</a></p><p class="fine">${disclosures[b.type][lang]}</p></div></div></section>`);
+  }
+  if (b.inquiry === 'Residential') {
+    const cta = lang === 'es'
+      ? ['Revise sus opciones de refinanciamiento', 'Comparta el valor de la vivienda, los saldos y límites actuales, y el cambio que desea realizar. Le daremos seguimiento por mensaje de texto.', 'Solicitar una revisión de refinanciamiento']
+      : ['Review your refinance options', 'Share the home value, current balances and credit limits, and the change you want to make. We follow up by text.', 'Request a refinance review'];
+    out = out.replace(/<section class="lead">[\s\S]*?<\/section>/, `<section class="lead"><div class="wrap"><div class="lead-card"><h2>${cta[0]}</h2><p class="sub">${cta[1]}</p><p><a class="btn-primary" href="${prefix}/residential#inquire">${cta[2]}</a></p><p class="fine">${disclosures[b.type][lang]}</p></div></div></section>`);
   }
   if (b.product === 'Family') {
     const destination = b.familyAudience === 'adult-child' ? '/family-housing-options' : '/buy-a-home-for-parents';

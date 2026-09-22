@@ -8,6 +8,7 @@ from search_metadata import load_title_overrides, normalize_page_metadata, norma
 from seo_brand_assets import normalize_brand_assets
 from seo_discovery import build_discovery_files
 from seo_contextual_links import transform as contextual_links
+from site_presentation import normalize_presentation
 R=Path(__file__).resolve().parent.parent
 ORIGIN='https://stonehavencre.com'
 skip={'docs','scripts','tests','downloads','node_modules'}
@@ -27,6 +28,7 @@ def cre_links(prefix,es):
  return [('/commercial/construction-loans','Financiamiento para construcción' if es else 'Construction financing'),('/commercial/fix-and-flip','Capital para renovación y reventa' if es else 'Fix-and-flip financing'),('/commercial/bridge-loans','Préstamos puente comerciales' if es else 'Commercial bridge loans')]
 counts={'breadcrumbs':0,'topic_hubs':0,'program_links':0}
 for path,(file,text) in pages.items():
+ text=normalize_presentation(text,path)
  text=normalize_page_metadata(text,path,title_overrides)
  text=text.replace('<b>Christiaan De Leeuw</b>','<a href="/management#chris-de-leeuw"><b>Chris De Leeuw</b></a>')
  if re.search(r'<meta[^>]+name="robots"[^>]+content="[^"]*noindex',text) or '<main>' not in text:

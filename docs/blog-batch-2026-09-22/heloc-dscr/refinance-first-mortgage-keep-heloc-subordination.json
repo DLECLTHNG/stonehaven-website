@@ -1,0 +1,131 @@
+{
+  "slug": "refinance-first-mortgage-keep-heloc-subordination",
+  "date": "2026-09-22",
+  "type": "guide",
+  "product": "HELOC",
+  "en": {
+    "metaTitle": "Refinance a Mortgage and Keep a HELOC | Stonehaven",
+    "title": "Can you refinance your first mortgage and keep your HELOC?",
+    "desc": "Understand HELOC subordination, why the full credit limit can matter and which documents to gather before refinancing your first mortgage.",
+    "eyebrow": "HELOC · Mortgage refinance planning",
+    "terms": [
+      [
+        "Decision",
+        "Keep, reduce, repay or replace the existing line"
+      ],
+      [
+        "Key issue",
+        "The new first mortgage and existing HELOC must fit together"
+      ],
+      [
+        "Example",
+        "Hypothetical ratios, not lender eligibility limits"
+      ]
+    ],
+    "body": [
+      "<strong>You may be able to refinance your first mortgage while keeping an existing HELOC.</strong> The refinance lender and HELOC lender need to accept the resulting loan structure, including lien priority and total borrowing against the property. A good starting point is to ask about subordination before spending money on a refinance that assumes your line can stay open.",
+      {
+        "h": "What HELOC subordination means"
+      },
+      "A mortgage lien is a legal claim against the property securing repayment. When the original first mortgage is replaced, the new lender generally wants its mortgage to have first priority. The existing HELOC lender may need to sign a subordination agreement so that its lien remains behind the new first mortgage. The closing agent or attorney coordinates the title requirements for the specific transaction.",
+      "<a href=\"https://singlefamily.fanniemae.com/job-aid/loan-delivery/topic/brief_into_to_sub_financing.htm\">Fannie Mae's subordinate-financing reference</a> describes a resubordinated lien as one retained in a refinance with a written agreement to remain below the new first lien. This explains the concept; it does not mean every mortgage or HELOC follows the same approval rules. Ask the current HELOC lender whether it considers subordination, what it needs and how long its review is currently taking.",
+      {
+        "h": "Why a zero balance can still matter"
+      },
+      "A line with nothing currently borrowed can still be an open secured account. Give the refinance lender both the drawn balance and the maximum credit limit. Reporting only the balance may leave out information needed to evaluate the amount you could borrow later.",
+      "For mortgages following Fannie Mae's rules, the home equity combined loan-to-value ratio, or HCLTV, includes the full HELOC limit. The combined loan-to-value ratio, or CLTV, uses the drawn HELOC balance. These measures answer different questions. The applicable lender must also decide the qualifying payment and whether the retained line fits its program. See the <a href=\"https://selling-guide.fanniemae.com/sel/b2-1.2-03/home-equity-combined-loan-value-hcltv-ratios\">HCLTV guidance</a> and <a href=\"https://selling-guide.fanniemae.com/sel/b2-1.2-02/combined-loan-value-cltv-ratios\">CLTV guidance</a>.",
+      {
+        "h": "A hypothetical refinance calculation"
+      },
+      "Assume a home is valued at $600,000 and the proposed replacement first mortgage is $360,000. There is an existing HELOC with a $90,000 limit and a $20,000 balance, and there are no other liens. For this simplified refinance example, use the same $600,000 value for all three calculations.",
+      "<ul><li><strong>First-mortgage LTV:</strong> $360,000 ÷ $600,000 = 60%.</li><li><strong>Combined ratio using the drawn balance:</strong> ($360,000 + $20,000) ÷ $600,000 = about 63.3%.</li><li><strong>Ratio using the full line limit:</strong> ($360,000 + $90,000) ÷ $600,000 = 75%.</li></ul>",
+      "Paying the $20,000 balance to zero would lower the drawn-balance ratio to 60%. It would leave the full-line ratio at 75% if the $90,000 limit remains unchanged. This is why paying down a line and permanently reducing its limit are separate decisions. These figures are not approval thresholds, and the new first-mortgage amount must reflect any costs actually financed.",
+      {
+        "h": "Compare four possible structures"
+      },
+      "Keeping the line may preserve future borrowing access, but it requires the relevant approvals and may involve processing costs. Reducing the limit may change the full-line ratio, but it also reduces your future flexibility. Ask whether the change must be permanent and documented, rather than assuming a temporary hold or zero balance has the same effect.",
+      "Paying off and closing the HELOC removes the ongoing line if the account and lien are properly released. Confirm the payoff amount, closure procedure and any applicable early-closure costs. Replacing both loans with a new structure may simplify the payment arrangement, but it can change the total debt, fees and repayment period. Compare the written alternatives rather than selecting only by the new first-mortgage payment.",
+      "If the real goal is to change the HELOC itself, our guide to <a href=\"/blog/existing-heloc-refinance-review\">refinancing an existing HELOC</a> addresses that separate decision. A household can have a reason to replace one loan and a reason to retain the other.",
+      {
+        "h": "Prepare a coordinated document list"
+      },
+      "<ul><li>The latest first-mortgage and HELOC statements, including the full line limit.</li><li>The existing HELOC agreement and any later limit changes.</li><li>The proposed new first-mortgage amount and purpose.</li><li>A current property-value estimate and the location of the home.</li><li>Any known additional liens and the intended closing date.</li><li>The current HELOC lender's subordination requirements and contact route.</li></ul>",
+      "Provide private documents through the lender's or broker's designated secure process. Use a public inquiry form only for a general summary. Keep both lenders informed before opening another secured line, increasing a limit or making a planned draw during the refinance. A changed balance or credit limit can affect information already reviewed.",
+      {
+        "h": "Common questions"
+      },
+      "<strong>Does subordination guarantee refinance approval?</strong> No. It addresses the position of the existing lien. The refinance still requires its own underwriting, valuation, title review and closing conditions.",
+      "<strong>Will paying the HELOC to zero close it automatically?</strong> Do not assume that it will. Ask the servicer for the account-closure and lien-release steps if closure is your intention. Keep written confirmation for the closing agent.",
+      "<strong>Can I keep drawing during the process?</strong> Ask both lenders before relying on that access. Their requirements and the proposed loan figures control the transaction. A draw that was possible earlier may still create a new underwriting issue.",
+      "<strong>What if the HELOC lender declines?</strong> Ask the refinance team to compare a lower loan amount, a documented line reduction, payoff or a different structure. Each option must fit the household budget and current lender requirements.",
+      {
+        "h": "Plan the two loans together"
+      },
+      "Stonehaven is a mortgage broker and can help compare your existing balances with a proposed refinance or new HELOC request. We follow up by text. Begin with the home value, first-mortgage balance, HELOC balance and limit, and your intended use of funds through our <a href=\"/residential#inquire\">residential refinance inquiry form</a>.",
+      "New HELOC requests start at $30,000. Residential inquiries are available in Georgia, Alabama, Tennessee, Florida, North Carolina and South Carolina, subject to lender and program requirements. An initial review is not an approval. Both debts are secured by the home, so consider the combined repayment obligation and the risk to the property if payments are not made."
+    ]
+  },
+  "es": {
+    "metaTitle": "Refinanciar la hipoteca y conservar el HELOC | Stonehaven",
+    "title": "¿Puede refinanciar su primera hipoteca y conservar su HELOC?",
+    "desc": "Entienda la subordinación de un HELOC, por qué puede importar el límite completo y qué documentos reunir antes de refinanciar la primera hipoteca.",
+    "eyebrow": "HELOC · Planificación del refinanciamiento",
+    "terms": [
+      [
+        "Decisión",
+        "Conservar, reducir, liquidar o sustituir la línea"
+      ],
+      [
+        "Punto clave",
+        "La nueva primera hipoteca debe ser compatible con el HELOC"
+      ],
+      [
+        "Ejemplo",
+        "Porcentajes hipotéticos, no límites de elegibilidad"
+      ]
+    ],
+    "body": [
+      "<strong>Es posible refinanciar la primera hipoteca y conservar un HELOC existente.</strong> El nuevo prestamista y la entidad del HELOC deben aceptar la estructura resultante, incluida la prioridad de los gravámenes y el endeudamiento total sobre la vivienda. Conviene preguntar por la subordinación antes de pagar gastos de un refinanciamiento que depende de mantener abierta la línea.",
+      {
+        "h": "Qué significa la subordinación de un HELOC"
+      },
+      "Un gravamen hipotecario es un derecho sobre el inmueble que garantiza el pago de una deuda. Al sustituir la primera hipoteca, el nuevo prestamista generalmente quiere mantener la primera prioridad. La entidad del HELOC puede tener que firmar un acuerdo de subordinación para que su gravamen quede detrás de la nueva hipoteca. El agente de cierre o abogado coordina los requisitos del título en esa operación.",
+      "La <a href=\"https://singlefamily.fanniemae.com/job-aid/loan-delivery/topic/brief_into_to_sub_financing.htm\">referencia de Fannie Mae sobre financiamiento subordinado</a>, en inglés, describe un gravamen que se conserva en un refinanciamiento mediante un acuerdo escrito para mantenerlo detrás de la nueva primera hipoteca. Esto explica el concepto; no significa que todas las hipotecas y líneas sigan las mismas reglas. Pregunte a la entidad de su HELOC si considera la subordinación, qué necesita y cuánto tarda actualmente su revisión.",
+      {
+        "h": "Por qué puede importar una línea con saldo cero"
+      },
+      "Una línea sin dinero utilizado puede seguir siendo una cuenta abierta garantizada por la vivienda. Entregue al nuevo prestamista tanto el saldo utilizado como el límite máximo. Informar solo el saldo puede omitir datos necesarios para evaluar cuánto podría pedir prestado después.",
+      "En hipotecas que siguen las reglas de Fannie Mae, la relación total que incluye líneas sobre el patrimonio, o HCLTV, utiliza el límite completo del HELOC. La relación combinada, o CLTV, utiliza el saldo retirado. Son medidas para preguntas distintas. El prestamista también debe determinar el pago para calificar y si la línea que conserva cumple su programa. Consulte las <a href=\"https://selling-guide.fanniemae.com/sel/b2-1.2-03/home-equity-combined-loan-value-hcltv-ratios\">reglas de HCLTV</a> y <a href=\"https://selling-guide.fanniemae.com/sel/b2-1.2-02/combined-loan-value-cltv-ratios\">CLTV</a>, en inglés.",
+      {
+        "h": "Un cálculo hipotético de refinanciamiento"
+      },
+      "Suponga que la vivienda vale $600,000 y que la nueva primera hipoteca propuesta es de $360,000. Existe un HELOC con límite de $90,000 y saldo de $20,000, sin otros gravámenes. En este ejemplo simplificado de refinanciamiento, se usa el mismo valor de $600,000 para los tres cálculos.",
+      "<ul><li><strong>LTV de la primera hipoteca:</strong> $360,000 ÷ $600,000 = 60%.</li><li><strong>Relación combinada con el saldo retirado:</strong> ($360,000 + $20,000) ÷ $600,000 = aproximadamente 63.3%.</li><li><strong>Relación con el límite completo:</strong> ($360,000 + $90,000) ÷ $600,000 = 75%.</li></ul>",
+      "Pagar los $20,000 reduciría la relación basada en el saldo a 60%. La relación que considera toda la línea seguiría en 75% si el límite permanece en $90,000. Por eso, pagar el saldo y reducir permanentemente el límite son decisiones distintas. Estas cifras no son umbrales de aprobación. El monto de la nueva primera hipoteca debe incluir los costos que realmente se financien.",
+      {
+        "h": "Compare cuatro estructuras posibles"
+      },
+      "Conservar la línea puede mantener acceso al crédito futuro, pero exige las aprobaciones correspondientes y puede generar gastos de trámite. Reducir el límite puede cambiar la relación que considera toda la línea, pero también reduce su flexibilidad. Pregunte si la reducción debe ser permanente y documentada; un bloqueo temporal o un saldo cero no necesariamente producen el mismo resultado.",
+      "Liquidar y cerrar el HELOC elimina la línea si se completan correctamente el cierre de cuenta y la liberación del gravamen. Confirme el monto de liquidación, el procedimiento y los posibles cargos por cierre anticipado. Sustituir ambos préstamos puede simplificar los pagos, pero también cambiar la deuda total, los cargos y el plazo. Compare las alternativas escritas, no solo el nuevo pago de la primera hipoteca.",
+      "Si el objetivo real es cambiar el propio HELOC, nuestra guía sobre <a href=\"/es/blog/existing-heloc-refinance-review\">refinanciar un HELOC existente</a> trata esa decisión por separado. Un hogar puede tener motivos para sustituir un préstamo y conservar el otro.",
+      {
+        "h": "Prepare una lista coordinada de documentos"
+      },
+      "<ul><li>Los estados de cuenta recientes de la primera hipoteca y el HELOC, incluido el límite completo.</li><li>El contrato del HELOC y cualquier modificación posterior del límite.</li><li>El monto y objetivo de la nueva primera hipoteca.</li><li>Una estimación del valor actual y la ubicación de la vivienda.</li><li>Otros gravámenes conocidos y la fecha de cierre prevista.</li><li>Los requisitos y el contacto de subordinación de la entidad del HELOC.</li></ul>",
+      "Envíe documentos privados mediante el proceso seguro que indique el prestamista o corredor. Use el formulario público solo para un resumen. Mantenga informados a ambos prestamistas antes de abrir otra línea garantizada, aumentar un límite o realizar un retiro durante el refinanciamiento. Un cambio del saldo o límite puede afectar la información ya evaluada.",
+      {
+        "h": "Preguntas frecuentes"
+      },
+      "<strong>¿La subordinación garantiza la aprobación del refinanciamiento?</strong> No. Resuelve la posición del gravamen existente. El nuevo préstamo todavía requiere evaluación, valuación, revisión del título y cumplimiento de condiciones de cierre.",
+      "<strong>¿Pagar el HELOC a cero lo cierra automáticamente?</strong> No lo suponga. Pida los pasos de cierre de cuenta y liberación del gravamen si esa es su intención. Conserve la confirmación escrita para el agente de cierre.",
+      "<strong>¿Puedo seguir retirando fondos durante el trámite?</strong> Pregunte a ambos prestamistas antes de depender de ese acceso. Sus requisitos y las cifras propuestas controlan la operación. Un retiro que antes era posible puede generar una nueva condición de evaluación.",
+      "<strong>¿Qué pasa si la entidad del HELOC rechaza la subordinación?</strong> Pida al equipo que compare un préstamo menor, una reducción documentada de la línea, la liquidación u otra estructura. Cada opción debe ajustarse al presupuesto del hogar y a las reglas vigentes.",
+      {
+        "h": "Planifique los dos préstamos en conjunto"
+      },
+      "Stonehaven es un corredor hipotecario. Podemos ayudarle a comparar sus saldos actuales con un refinanciamiento o una nueva solicitud de HELOC. Damos seguimiento por mensaje de texto. Comparta el valor de la vivienda, el saldo de la primera hipoteca, el saldo y límite del HELOC y el destino de los fondos mediante el <a href=\"/es/residential#inquire\">formulario de refinanciamiento residencial</a>.",
+      "Las nuevas solicitudes de HELOC empiezan en $30,000. Atendemos consultas residenciales en Georgia, Alabama, Tennessee, Florida, North Carolina y South Carolina, sujetas a los requisitos del prestamista y del programa. La revisión inicial no es aprobación. Ambas deudas están garantizadas por la vivienda: considere la obligación total de pago y el riesgo para el inmueble si no cumple."
+    ]
+  },
+  "inquiry": "Residential"
+}

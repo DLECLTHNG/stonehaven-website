@@ -2,7 +2,7 @@ import { leadErrors } from '../shared/lead-validation.mjs';
 
 const MAX_BYTES = 64 * 1024;
 const reject = (status, errors) => new Response(JSON.stringify({ ok: false, errors }), {
-  status, headers: { 'Content-Type': 'application/json', 'Cache-Control': 'no-store' },
+  status, headers: { 'Content-Type': 'application/json', 'Cache-Control': 'no-store', 'X-Content-Type-Options': 'nosniff', 'X-Robots-Tag': 'noindex, nofollow' },
 });
 
 // Validate before Netlify Forms capture, email notifications and CRM delivery.
@@ -29,6 +29,15 @@ export default async function validateLead(request) {
   try { form = await new Response(new Blob(chunks), { headers: { 'Content-Type': type } }).formData(); }
   catch { return reject(400, { form: 'Invalid form submission.' }); }
   if (!form.getAll('form-name').includes('lead')) return;
+  // Stop another website from submitting a visitor's browser into our inbox.
+  // Originless server-to-server delivery still supports Family intake. This is
+  // a browser boundary, not authentication or a replacement for spam filtering.
+  const origin = request.headers.get('origin');
+  const ownOrigin = new URL(request.url).origin;
+  if ((origin && ![ownOrigin, 'https://stonehavencre.com', 'https://www.stonehavencre.com'].includes(origin)) ||
+      (!origin && request.headers.get('sec-fetch-site') === 'cross-site')) {
+    return reject(403, { form: 'Please submit your inquiry from the Stonehaven website.' });
+  }
   const data = {};
   for (const [key, value] of form) {
     if (Object.hasOwn(data, key) || typeof value !== 'string') return reject(400, { form: 'Invalid form fields.' });

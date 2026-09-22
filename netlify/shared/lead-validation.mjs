@@ -1,12 +1,26 @@
 // Shared by Netlify's capture guard and server-side intake/relay functions.
 export const HELOC_MINIMUM = 30000;
 
+export function validName(raw) {
+  if (typeof raw !== 'string') return false;
+  const value = raw.trim();
+  // A zero-width or punctuation-only value can look empty in email and CRM.
+  // Keep international names and mononyms, but require an actual letter.
+  return value.length <= 120 && /\p{L}/u.test(value) && !/[\p{Cc}\u202a-\u202e\u2066-\u2069]/u.test(raw);
+}
+
+export function validEmail(raw) {
+  if (typeof raw !== 'string' || /[\p{Cc}\p{Cf}]/u.test(raw)) return false;
+  const value = raw.trim(), parts = value.split('@');
+  if (value.length > 254 || parts.length !== 2 || parts[0].length > 64 ||
+      !/^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+$/i.test(parts[0]) || /^\.|\.$|\.\./.test(parts[0])) return false;
+  return /^(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z](?:[a-z0-9-]{0,61}[a-z0-9])?$/i.test(parts[1]);
+}
+
 export function contactErrors(data) {
   const errors = {};
-  const name = typeof data?.name === 'string' ? data.name.trim() : '';
-  const email = typeof data?.email === 'string' ? data.email.trim() : '';
-  if (!name || name.length > 120 || /[\r\n\x00]/.test(name)) errors.name = 'Please enter your full name.';
-  if (!email || email.length > 254 || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) errors.email = 'Please enter a valid email address.';
+  if (!validName(data?.name)) errors.name = 'Please enter your full name.';
+  if (!validEmail(data?.email)) errors.email = 'Please enter a valid email address.';
   return errors;
 }
 

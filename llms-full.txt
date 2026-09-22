@@ -1,6 +1,6 @@
 # Stonehaven Lending: public pillar content
 
-Last updated: 2026-09-21.
+Last updated: 2026-09-22.
 
 Generated from the public English pillar pages below. Navigation, input controls and site footers are omitted; explanatory main content and source links are retained. Canonical web pages remain authoritative. This file does not establish indexing, rankings or program eligibility.
 
@@ -594,6 +594,8 @@ Updated September 20, 2026. Editorial standards (https://stonehavencre.com/edito
 
 ### Prepare the next decision
 
+Separate interest reserves, construction contingency and working cash (https://stonehavencre.com/blog/construction-loan-interest-reserve-vs-contingency)  before comparing the total loan commitment with the cash needed during construction.
+
 Acquiring a site, developing a subdivision or financing finished lots? Explore our land development and residential lot financing (https://stonehavencre.com/commercial/land-development-loans)  page to connect acquisition, site work, builder contracts and lot releases in one project review.
 
 If the investment needs improvements, our first rehab loan guide (https://stonehavencre.com/resources/first-rehab-loan)  connects the scope, contractor payments and draws with the planned sale or refinance. Use the investment deal checklist (https://stonehavencre.com/resources/investment-property-deal-checklist)  before comparing proposals.
@@ -758,6 +760,8 @@ The OCC’s CRE handbook describes rehabilitation lending and the need to assess
 Updated September 20, 2026. Editorial standards (https://stonehavencre.com/editorial-policy)  · Meet the team (https://stonehavencre.com/management)
 
 ### Prepare the next decision
+
+Prepare a rehab draw cash-flow plan (https://stonehavencre.com/blog/fix-and-flip-rehab-draw-cash-flow)  and separately evaluate a flip-to-rental refinance exit (https://stonehavencre.com/blog/fix-and-flip-rental-exit-refinance)  if the sale is delayed.
 
 For a first project, read our first fix-and-flip financing guide (https://stonehavencre.com/resources/first-fix-and-flip-financing) . Its worked example separates the acquisition advance, rehab funds, cash requirement and estimated profit after selling.
 
@@ -961,6 +965,10 @@ The OCC materials below provide background on bank development-loan review, valu
 
 Updated September 21, 2026. Editorial standards (https://stonehavencre.com/editorial-policy)  · Meet the team (https://stonehavencre.com/management)
 
+### Prepare the next decision
+
+Our guide to subdivision lot release prices (https://stonehavencre.com/blog/subdivision-loan-lot-release-prices)  explains how a lot sale is divided between debt reduction, costs and cash remaining for the project.
+
 ---
 
 # Commercial bridge loans. With a credible way out.
@@ -1118,6 +1126,8 @@ The OCC explains that refinancing can be constrained by weaker cash flow, collat
 Updated September 20, 2026. Editorial standards (https://stonehavencre.com/editorial-policy)  · Meet the team (https://stonehavencre.com/management)
 
 ### Prepare the next decision
+
+Test the commercial refinance cash-in gap (https://stonehavencre.com/blog/commercial-refinance-cash-in-gap)  before maturity by comparing replacement proceeds with the payoff, transaction costs and required reserves.
 
 If the investment needs improvements, our first rehab loan guide (https://stonehavencre.com/resources/first-rehab-loan)  connects the scope, contractor payments and draws with the planned sale or refinance. Use the investment deal checklist (https://stonehavencre.com/resources/investment-property-deal-checklist)  before comparing proposals.
 
@@ -2359,6 +2369,8 @@ Explore how rental income is evaluated, model a scenario and review a past closi
 
 ### Prepare the next decision
 
+Complete the cash plan with our guide to DSCR reserves and cash to close (https://stonehavencre.com/blog/dscr-loan-reserves-cash-to-close) . Compare DSCR prepayment terms (https://stonehavencre.com/blog/dscr-prepayment-penalty-exit-planning)  with your intended sale or refinance date, too.
+
 Our first DSCR loan guide (https://stonehavencre.com/resources/first-dscr-loan)  separates qualifying rent from real cash flow and explains what to prepare as a new landlord. It includes a refinance example with less cash available than expected.
 
 Does the property have five to eight units? Our 5–8 unit financing guide (https://stonehavencre.com/commercial/5-8-unit-financing)  explains how to review rents, operating expenses and legal unit count before choosing a route. Calculator assumptions do not confirm eligibility for a program.
@@ -2603,6 +2615,10 @@ Co-Founder · Residential Broker · 20+ years in mortgage operations
   Equal Housing Opportunity · Stonehaven Lending · NMLS #1752355
  GA Residential Mortgage Licensee #19721 · MLO #169068 · AL #22874 · TN #165060 · FL #MBR3925 · NC #B-198926 · SC
  Estimates only - subject to verification, appraisal, and lender approval. Stonehaven Lending is a mortgage brokerage, not a direct lender. HELOC rates are typically variable and payments may increase. Program availability varies by state. NMLS Consumer Access (https://www.nmlsconsumeraccess.org/EntityDetails.aspx/COMPANY/1752355)  · Privacy (https://stonehavencre.com/privacy)
+
+### Prepare the next decision
+
+Before committing the money, review when HELOC funds become usable (https://stonehavencre.com/blog/heloc-closing-timeline-cancellation-period) , what a restricted credit line means for a project (https://stonehavencre.com/blog/heloc-freeze-credit-line-reduction-plan)  and keeping a HELOC when refinancing the first mortgage (https://stonehavencre.com/blog/refinance-first-mortgage-keep-heloc-subordination) .
 
 ---
 
@@ -3543,6 +3559,10 @@ Sources support the concepts identified in the guide. One lender’s criteria ar
 
 Editorial standards (https://stonehavencre.com/editorial-policy)
 
+### Prepare the next decision
+
+Prepare a rehab draw cash-flow plan (https://stonehavencre.com/blog/fix-and-flip-rehab-draw-cash-flow)  and separately evaluate a flip-to-rental refinance exit (https://stonehavencre.com/blog/fix-and-flip-rental-exit-refinance)  if the sale is delayed.
+
 ---
 
 # Your first DSCR loan: from rent to financing
@@ -3645,6 +3665,10 @@ Sources support the concepts identified in the guide. One lender’s criteria ar
 - Kiavi: first-rental DSCR methodology and program example (https://www.kiavi.com/blog/dscr-loan-guide-how-to-finance-your-first-rental-property)
 
 Editorial standards (https://stonehavencre.com/editorial-policy)
+
+### Prepare the next decision
+
+Complete the cash plan with our guide to DSCR reserves and cash to close (https://stonehavencre.com/blog/dscr-loan-reserves-cash-to-close) . Compare DSCR prepayment terms (https://stonehavencre.com/blog/dscr-prepayment-penalty-exit-planning)  with your intended sale or refinance date, too.
 
 ---
 
@@ -3758,6 +3782,10 @@ Sources support the concepts identified in the guide. One lender’s criteria ar
 - OCC Bulletin 2024-29: commercial refinance risk (https://www.occ.treas.gov/news-issuances/bulletins/2024/bulletin-2024-29.html)
 
 Editorial standards (https://stonehavencre.com/editorial-policy)
+
+### Prepare the next decision
+
+Separate interest reserves, construction contingency and working cash (https://stonehavencre.com/blog/construction-loan-interest-reserve-vs-contingency)  before comparing the total loan commitment with the cash needed during construction.
 
 ---
 

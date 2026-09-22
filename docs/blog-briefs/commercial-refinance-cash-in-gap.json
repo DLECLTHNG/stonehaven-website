@@ -1,0 +1,138 @@
+{
+  "slug": "commercial-refinance-cash-in-gap",
+  "date": "2026-09-22",
+  "type": "guide",
+  "product": "Commercial",
+  "en": {
+    "title": "Commercial loan refinance: how to calculate a cash-in gap before maturity",
+    "metaTitle": "Commercial Refinance Cash-In Gap | Stonehaven",
+    "desc": "Estimate the cash needed when a new commercial loan will not cover the payoff. Compare debt service, value limits, closing costs and practical next steps.",
+    "eyebrow": "Commercial · Refinance planning",
+    "terms": [
+      [
+        "For",
+        "Owners facing a commercial mortgage maturity or bridge takeout"
+      ],
+      [
+        "Key calculation",
+        "Payoff plus new closing uses, less available new financing"
+      ],
+      [
+        "Example",
+        "Original hypothetical, not current lender terms"
+      ],
+      [
+        "Review",
+        "Property income, valuation, liquidity and repayment timing"
+      ]
+    ],
+    "body": [
+      "<strong>A commercial refinance cash-in gap is the amount you need to contribute when the new financing will not cover the old payoff and the other required closing uses.</strong> A performing property can still have a gap. The next lender may use different income assumptions, debt-service requirements or valuation limits from those used when the existing loan was originated.",
+      "Start with a sources-and-uses calculation before focusing on a quoted rate. A lower payment is not enough if the loan proceeds leave an unfunded closing. This guide explains a practical way to identify that problem early and prepare a complete request for commercial lender review.",
+      {
+        "h": "Build the payoff side from actual obligations"
+      },
+      "Obtain a current payoff estimate from the existing servicer and identify the contractual maturity date. Principal on a statement and the amount required to release the loan can differ. Accrued interest, contractual exit or prepayment charges, legal costs and other items may need to be included. The final payoff will be date-specific.",
+      "Then list the proposed transaction's expenses, escrow deposits, lender reserves and any necessary property work. Track existing reserves separately: do not count them as available closing funds until their release amount and timing are confirmed. Also distinguish money usable at closing from money that must remain available afterward.",
+      {
+        "h": "Understand the limits on the new loan"
+      },
+      "Loan-to-value, or LTV, compares the loan with the value accepted by the lender. Commercial debt-service coverage divides lender-underwritten annual net operating income by required annual debt service. Some lenders also assess debt yield, which compares underwritten annual net operating income with the loan amount. These measurements answer different questions and may produce different maximum proceeds.",
+      "The <a href=\"https://www.occ.treas.gov/news-issuances/bulletins/2024/bulletin-2024-29.html\">OCC's refinance-risk guidance</a> specifically addresses the risk of replacing debt under changed market and borrower conditions. It supports reviewing the next loan's requirements before maturity; it does not establish a universal LTV or coverage threshold. For definitions, see our <a href=\"/resources/how-lenders-size-commercial-loans\">guide to commercial loan sizing</a>.",
+      {
+        "h": "A hypothetical cash-in calculation"
+      },
+      "Assume a property has $240,000 of lender-underwritten annual net operating income and an illustrative accepted value of $3,600,000. For this example only, use a 70% LTV ceiling, 1.25 coverage requirement and 9% annual debt-service constant. The constant means annual debt service divided by loan balance in this model. It is not an advertised note rate or an available quote.",
+      "<table><caption>Illustrative new-loan sizing</caption><thead><tr><th scope=\"col\">Calculation</th><th scope=\"col\">Result</th></tr></thead><tbody><tr><td>Value limit: $3,600,000 × 70%</td><td>$2,520,000</td></tr><tr><td>Maximum annual debt service: $240,000 ÷ 1.25</td><td>$192,000</td></tr><tr><td>Coverage-based proceeds: $192,000 ÷ 9%</td><td>About $2,133,333</td></tr><tr><td>Lower of the two modeled limits</td><td>About $2,133,333</td></tr></tbody></table>",
+      "Suppose the payoff is $2,350,000 and the new closing costs and required deposits total $85,000. Required uses are $2,435,000. Subtracting modeled proceeds of approximately $2,133,333 leaves a cash-in gap of approximately <strong>$301,667</strong>. Further underwriting limits could reduce proceeds again. Do not treat the larger $2,520,000 value-based figure as an approved loan amount.",
+      "Now reduce underwritten income by 10%, to $216,000, while retaining the other assumptions. Coverage-based proceeds fall to $1,920,000: $216,000 ÷ 1.25 ÷ 9%. The resulting gap is $515,000. This sensitivity check shows why collecting current operating information matters even when a borrower expects the appraisal to remain unchanged.",
+      {
+        "h": "Separate a temporary problem from a permanent shortfall"
+      },
+      "An unfinished improvement or pending lease commencement may create a timing issue. Persistently weak income relative to debt may require a different capital structure. Describe what changes, who controls it, the cost, and the evidence supporting the expected result. A signed lease, a tenant's actual payment history and an unsupported forecast are different kinds of information.",
+      "A bridge loan may provide time to complete a credible business plan, but it creates another repayment date and its own costs. An extension of the current loan may be worth discussing, but it remains subject to the existing lender's decision and documentation. Neither should be assumed to eliminate a cash gap. Compare the proposed bridge exit with the <a href=\"/resources/commercial-refinance-guide\">commercial refinance preparation guide</a>.",
+      {
+        "h": "Practical options to bring into the discussion"
+      },
+      "<ul><li><strong>Documented borrower cash:</strong> identify the amount and retain adequate operating liquidity afterward.</li><li><strong>Improved operating evidence:</strong> correct inaccurate expenses or missing income with records, without inventing future performance.</li><li><strong>Changed financing structure:</strong> compare actual lender proposals and their full costs, reserves, guarantees and repayment obligations.</li><li><strong>Additional capital or collateral:</strong> disclose the proposed source and obtain the required lender and legal approvals.</li><li><strong>Sale or partial asset sale:</strong> model net proceeds, release requirements and timing rather than relying on an asking price.</li></ul>",
+      "Avoid taking on undisclosed debt to fill the gap. A second lien, partner advance or borrowed contribution may change eligibility and repayment capacity. Explain the entire capital stack at the start so a proposed solution does not create a new closing condition later.",
+      {
+        "h": "Prepare the file for Stonehaven"
+      },
+      "Send the property type and location, approximate payoff, maturity, current rent roll, operating summary, requested financing and the cash you expect to contribute. Keep private financial documents out of the initial public inquiry; arrange their delivery during follow-up. Stonehaven arranges financing through third-party lenders and can help frame the request and compare placement options. Start with <a href=\"/commercial/bridge-loans\">commercial bridge financing</a> or our <a href=\"/commercial\">commercial financing review</a>. We follow up by text.",
+      {
+        "h": "Frequently asked questions"
+      },
+      "<strong>Can I have a gap even if I never missed a payment?</strong> Yes. Payment history is important, but the new loan must satisfy the new lender's underwriting and cover the required closing uses.",
+      "<strong>Will a higher appraisal solve it?</strong> Only if value is the binding limit and the lender accepts the valuation. A coverage constraint can remain even with more collateral value.",
+      "<strong>Is a cash-in refinance automatically a bad outcome?</strong> No. Assess the resulting debt, liquidity, costs and business plan. The contribution should be a deliberate capital decision, not an unexpected closing-day problem.",
+      "<strong>When should I start?</strong> Start while there is time to collect records, evaluate options and address a gap before maturity. The required lead time varies by property and lender; no closing timeline is guaranteed."
+    ]
+  },
+  "es": {
+    "title": "Refinanciamiento comercial: calcule el efectivo faltante antes del vencimiento",
+    "metaTitle": "Efectivo faltante al refinanciar un préstamo | Stonehaven",
+    "desc": "Calcule cuánto efectivo necesita si el nuevo préstamo comercial no cubre la liquidación. Revise cobertura, valor, gastos de cierre y opciones prácticas.",
+    "eyebrow": "Comercial · Planificación del refinanciamiento",
+    "terms": [
+      [
+        "Para",
+        "Propietarios con un vencimiento comercial o salida de préstamo puente"
+      ],
+      [
+        "Cálculo clave",
+        "Liquidación y nuevos usos al cierre, menos financiamiento disponible"
+      ],
+      [
+        "Ejemplo",
+        "Hipotético y original, no términos actuales de un prestamista"
+      ],
+      [
+        "Revisión",
+        "Ingresos del inmueble, valor, liquidez y calendario de pago"
+      ]
+    ],
+    "body": [
+      "<strong>El faltante de efectivo en un refinanciamiento comercial es la aportación necesaria cuando el nuevo préstamo no cubre la liquidación anterior y los demás usos exigidos al cierre.</strong> Puede existir incluso si el inmueble funciona bien. El nuevo prestamista puede utilizar ingresos, requisitos de cobertura o límites de valor diferentes de los aplicados cuando se originó el préstamo actual.",
+      "Empiece con las fuentes y usos antes de centrarse en una tasa. Una cuota menor no basta si los fondos dejan un cierre sin financiar. Esta guía explica una manera práctica de identificar el problema a tiempo y preparar una solicitud completa para revisión comercial.",
+      {
+        "h": "Calcule la liquidación con obligaciones reales"
+      },
+      "Solicite una estimación actual de liquidación al administrador del préstamo e identifique el vencimiento contractual. El principal del estado de cuenta puede diferir del importe necesario para cancelar el préstamo. Puede ser necesario incluir intereses acumulados, cargos contractuales de salida o prepago, gastos legales y otros conceptos. La liquidación final dependerá de la fecha.",
+      "Liste después los gastos de la nueva operación, depósitos en cuentas de reserva y obras necesarias. Registre por separado las reservas existentes: no las cuente como dinero para el cierre hasta confirmar cuánto se liberará y cuándo. Distinga también el efectivo utilizable al cierre del que deberá permanecer disponible después.",
+      {
+        "h": "Entienda los límites del nuevo préstamo"
+      },
+      "La relación préstamo-valor, o LTV, compara la deuda con el valor aceptado por el prestamista. La cobertura comercial divide el ingreso operativo neto anual aceptado por el prestamista entre el servicio anual de la deuda. Algunos prestamistas también analizan el rendimiento de la deuda, que divide el ingreso operativo neto anual evaluado entre el préstamo. Son mediciones distintas y pueden generar límites diferentes.",
+      "La <a href=\"https://www.occ.treas.gov/news-issuances/bulletins/2024/bulletin-2024-29.html\">guía de la OCC sobre riesgo de refinanciamiento (en inglés)</a> trata el riesgo de sustituir deuda cuando cambian las condiciones del mercado o del prestatario. Respalda revisar los requisitos antes del vencimiento, pero no fija un LTV ni una cobertura universal. Para las definiciones, consulte nuestra <a href=\"/resources/how-lenders-size-commercial-loans\">guía de dimensionamiento de préstamos comerciales (en inglés)</a>.",
+      {
+        "h": "Un cálculo hipotético del faltante"
+      },
+      "Suponga que el inmueble tiene $240,000 de ingreso operativo neto anual aceptado y un valor ilustrativo de $3,600,000. Solo para este ejemplo, utilice un LTV máximo del 70%, cobertura de 1.25 y una constante anual de servicio de deuda del 9%. Esa constante divide los pagos anuales de deuda entre el saldo del préstamo en el modelo. No es una tasa nominal anunciada ni una cotización disponible.",
+      "<table><caption>Dimensionamiento ilustrativo del nuevo préstamo</caption><thead><tr><th scope=\"col\">Cálculo</th><th scope=\"col\">Resultado</th></tr></thead><tbody><tr><td>Límite por valor: $3,600,000 × 70%</td><td>$2,520,000</td></tr><tr><td>Servicio anual máximo: $240,000 ÷ 1.25</td><td>$192,000</td></tr><tr><td>Monto según cobertura: $192,000 ÷ 9%</td><td>Aproximadamente $2,133,333</td></tr><tr><td>Menor de ambos límites modelados</td><td>Aproximadamente $2,133,333</td></tr></tbody></table>",
+      "Si la liquidación es de $2,350,000 y los gastos y depósitos del nuevo cierre suman $85,000, los usos ascienden a $2,435,000. Restar los fondos modelados de aproximadamente $2,133,333 deja un faltante de <strong>$301,667</strong>, aproximadamente. Otros límites podrían reducir nuevamente el préstamo. No interprete los $2,520,000 calculados según el valor como un monto aprobado.",
+      "Reduzca ahora el ingreso evaluado un 10%, a $216,000, manteniendo los demás supuestos. Los fondos según cobertura bajan a $1,920,000: $216,000 ÷ 1.25 ÷ 9%. El faltante pasa a $515,000. Esta prueba muestra por qué conviene reunir información operativa actual, incluso si espera que el avalúo no cambie.",
+      {
+        "h": "Distinga un problema temporal de una insuficiencia permanente"
+      },
+      "Una mejora pendiente o el inicio próximo de un arrendamiento pueden crear un problema de calendario. Ingresos persistentemente débiles frente a la deuda pueden exigir otra estructura de capital. Explique qué cambiará, quién lo controla, cuánto costará y qué evidencia respalda el resultado. Un contrato firmado, los pagos reales del inquilino y una previsión sin respaldo son información diferente.",
+      "Un préstamo puente puede dar tiempo para ejecutar un plan creíble, pero añade otro vencimiento y sus propios costos. También puede conversar sobre una prórroga del préstamo actual, sujeta a decisión y documentación del prestamista. Ninguna alternativa elimina automáticamente el faltante. Compare la salida propuesta con nuestra <a href=\"/resources/commercial-refinance-guide\">guía de preparación para refinanciamiento comercial (en inglés)</a>.",
+      {
+        "h": "Opciones prácticas para la conversación"
+      },
+      "<ul><li><strong>Efectivo documentado:</strong> identifique la aportación y conserve liquidez operativa suficiente.</li><li><strong>Mejor evidencia operativa:</strong> corrija gastos inexactos o ingresos omitidos con documentos, sin inventar resultados futuros.</li><li><strong>Otra estructura financiera:</strong> compare propuestas reales, costos completos, reservas, garantías y obligaciones.</li><li><strong>Capital o garantía adicional:</strong> revele la fuente y obtenga las autorizaciones necesarias del prestamista y los asesores legales.</li><li><strong>Venta total o parcial:</strong> modele fondos netos, requisitos de liberación y calendario, en lugar de depender del precio anunciado.</li></ul>",
+      "Evite cubrir el faltante con deuda no revelada. Un segundo gravamen, un adelanto de un socio o una aportación prestada pueden cambiar la elegibilidad y la capacidad de pago. Explique toda la estructura de capital desde el principio para evitar una nueva condición inesperada al cierre.",
+      {
+        "h": "Prepare la información para Stonehaven"
+      },
+      "Comparta tipo y ubicación del inmueble, liquidación aproximada, vencimiento, relación de arrendamientos, resumen operativo, monto solicitado y efectivo previsto. No envíe documentos financieros privados por la consulta pública inicial; coordine su entrega durante el seguimiento. Stonehaven gestiona financiamiento mediante prestamistas externos y puede ayudar a presentar la solicitud y comparar alternativas. Empiece con <a href=\"/es/commercial/bridge-loans\">financiamiento puente comercial</a> o nuestra <a href=\"/es/commercial\">revisión comercial</a>. Damos seguimiento por mensaje de texto.",
+      {
+        "h": "Preguntas frecuentes"
+      },
+      "<strong>¿Puede faltar efectivo aunque nunca haya atrasado un pago?</strong> Sí. El historial importa, pero el nuevo préstamo debe cumplir los criterios del nuevo prestamista y cubrir los usos del cierre.",
+      "<strong>¿Un avalúo mayor lo resuelve?</strong> Solo si el valor es el límite determinante y el prestamista lo acepta. La cobertura puede seguir limitando el monto aunque aumente el valor de la garantía.",
+      "<strong>¿Aportar efectivo es necesariamente un mal resultado?</strong> No. Evalúe la deuda resultante, liquidez, costos y plan de negocio. La aportación debe ser una decisión deliberada, no una sorpresa el día del cierre.",
+      "<strong>¿Cuándo debo empezar?</strong> Mientras exista tiempo para reunir documentos, revisar alternativas y resolver un faltante antes del vencimiento. El plazo necesario varía según el inmueble y el prestamista; no se garantiza una fecha de cierre."
+    ]
+  }
+}

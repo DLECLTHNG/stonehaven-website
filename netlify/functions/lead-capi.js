@@ -53,7 +53,7 @@ const normPhone = (p) => {
   return digits.length === 10 ? "1" + digits : digits; // default US country code
 };
 
-const { allowedOrigin } = require("./lib/request-security");
+const { allowedOrigin, deliveryUrl } = require("./lib/request-security");
 
 function limited(ipHash) {
   const t = Date.now();
@@ -70,7 +70,7 @@ function safeSourceUrl(raw) {
   const fallback = "https://" + SITE_HOST + "/";
   try {
     const u = new URL(String(raw || ""));
-    if (u.protocol !== "https:") return fallback;
+    if (u.protocol !== "https:" || u.username || u.password || u.port) return fallback;
     if (u.hostname !== SITE_HOST && u.hostname !== "www." + SITE_HOST) return fallback;
     return u.origin + u.pathname;
   } catch { return fallback; }
@@ -82,7 +82,7 @@ function cleanMap(src, budget) {
   if (!src || typeof src !== "object" || Array.isArray(src)) return out;
   for (const k of Object.keys(src)) {
     if (budget.n >= EXTRA_MAX_KEYS) break;
-    if (!/^[A-Za-z0-9_.-]{1,60}$/.test(k)) continue;
+    if (!/^[A-Za-z0-9_.-]{1,60}$/.test(k) || ['__proto__', 'prototype', 'constructor'].includes(k)) continue;
     const v = src[k];
     if (typeof v === "string" && v) { out[k] = v.slice(0, EXTRA_MAX_LEN); budget.n++; }
     else if (typeof v === "number" && Number.isFinite(v)) { out[k] = v; budget.n++; }
@@ -117,7 +117,7 @@ exports.handler = async (event) => {
 
   let body;
   try { body = JSON.parse(event.body || "{}"); } catch { return { statusCode: 400, body: "" }; }
-  if (!body || typeof body !== "object") return { statusCode: 400, body: "" };
+  if (!body || typeof body !== "object" || Array.isArray(body)) return { statusCode: 400, body: "" };
 
   const event_name = String(body.event_name || "");
   const event_id = String(body.event_id || "").slice(0, 100);
@@ -125,6 +125,12 @@ exports.handler = async (event) => {
 
   const payload = cleanPayload(body.payload);
   const source_url = safeSourceUrl(body.source_url);
+  // Family pages have a separate privacy-controlled intake. A direct call to
+  // this generic ad endpoint must not turn those pages into advertising data.
+  if ([body.source_url, payload.page, payload.extra?.page, payload.extra?.lp_variant]
+      .some(value => /(?:^|\/)family(?:[-/]|$)|(?:^|[-/])(?:family-opportunity|parents|adult-child|disabil|thanks|request-received)/i.test(String(value || '')))) {
+    return { statusCode: 204, headers: { 'Cache-Control': 'no-store' }, body: '' };
+  }
   const { leadErrors } = await import('../shared/lead-validation.mjs');
   if (Object.keys(leadErrors(payload, new URL(source_url).pathname)).length) return { statusCode: 422, headers: { 'Cache-Control': 'no-store' }, body: JSON.stringify({ ok: false }) };
   const tasks = [];
@@ -166,8 +172,11 @@ exports.handler = async (event) => {
   // ---- CRM / speed-to-lead webhook (raw lead, so the broker can dial fast)
   const webhook = process.env.CRM_WEBHOOK_URL;
   if (webhook) {
+    let destination;
+    try { destination = deliveryUrl(webhook); }
+    catch { return { statusCode: 503, headers: { 'Cache-Control': 'no-store' }, body: JSON.stringify({ ok: false }) }; }
     tasks.push(
-      fetch(webhook, {
+      fetch(destination, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         redirect: "error", signal: AbortSignal.timeout(5000),

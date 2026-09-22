@@ -32,6 +32,10 @@ class MainText(HTMLParser):
         if self.skip:
             if tag == self.skip[-1]: self.skip.append(tag)
             return
+        # Void controls cannot open an exclusion scope: there is no closing tag
+        # to restore the following public article text.
+        if tag in ['input', 'img', 'source', 'br', 'hr', 'wbr', 'area', 'base', 'col', 'embed', 'link', 'meta', 'param', 'track'] and (attrs.get('aria-hidden') == 'true' or 'hidden' in attrs or tag == 'input'):
+            return
         if tag in ['script', 'style', 'nav', 'form', 'noscript', 'button', 'select', 'textarea', 'label'] or attrs.get('aria-hidden') == 'true' or 'hidden' in attrs:
             self.skip.append(tag)
             return
@@ -86,7 +90,7 @@ def build_discovery_files(root):
     for path in sorted((root / 'blog').glob('*heloc*.html')):
         text += f'- [{title(path)}]({ORIGIN}/blog/{path.stem})\n'
     (root / 'llms.txt').write_text(text)
-    full = '# Stonehaven Lending: public pillar content\n\nLast updated: 2026-09-21.\n\n'
+    full = '# Stonehaven Lending: public pillar content\n\nLast updated: 2026-09-22.\n\n'
     full += 'Generated from the public English pillar pages below. Navigation, input controls and site footers are omitted; explanatory main content and source links are retained. Canonical web pages remain authoritative. This file does not establish indexing, rankings or program eligibility.\n\n'
     for route in PILLARS:
         path = page_file(root, route)
