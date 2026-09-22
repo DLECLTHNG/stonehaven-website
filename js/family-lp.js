@@ -154,18 +154,25 @@
   }
   function digits(v) { return (v || "").replace(/\D/g, ""); }
   function phoneOk(v) { var d = digits(v); if (d.length === 11 && d.charAt(0) === "1") d = d.slice(1); return d.length === 10 && d.charAt(0) !== "0" && d.charAt(0) !== "1"; }
-  function emailOk(v) { return v.length <= 254 && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v); }
+  function emailOk(v) {
+    if (/[\p{Cc}\p{Cf}]/u.test(v)) return false;
+    v = v.trim();
+    var parts = v.split("@");
+    return v.length <= 254 && parts.length === 2 && parts[0].length <= 64 &&
+      /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+$/i.test(parts[0]) && !/^\.|\.$|\.\./.test(parts[0]) &&
+      /^(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z](?:[a-z0-9-]{0,61}[a-z0-9])?$/i.test(parts[1] || "");
+  }
 
   function validate() {
     var first = null;
     var name = (fields.name.value || "").trim();
-    var m = !name || name.length < 2 ? "Please enter your full name." : name.length > 120 ? "Please shorten your name." : "";
+    var m = !/\p{L}/u.test(name) || /[\p{Cc}\u202a-\u202e\u2066-\u2069]/u.test(fields.name.value) ? "Please enter your full name." : name.length > 120 ? "Please shorten your name." : "";
     setErr(fields.name, m); if (m && !first) first = fields.name;
     m = phoneOk(fields.phone.value) ? "" : "Please enter a valid phone number, including area code.";
     setErr(fields.phone, m); if (m && !first) first = fields.phone;
     m = STATES.indexOf(fields.state.value) === -1 ? "Please choose the property state." : "";
     setErr(fields.state, m); if (m && !first) first = fields.state;
-    m = emailOk((fields.email.value || "").trim()) ? "" : "Please enter a valid email address.";
+    m = emailOk(fields.email.value || "") ? "" : "Please enter a valid email address.";
     setErr(fields.email, m); if (m && !first) first = fields.email;
     if (fields.price) {
       var raw = (fields.price.value || "").trim();

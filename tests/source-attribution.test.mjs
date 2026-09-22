@@ -48,6 +48,21 @@ function page(options = {}) {
     extra(index = 0) { const value = this.data(index).extra; return typeof value === 'string' ? JSON.parse(value) : value; } };
 }
 
+test('visually blank contacts and malformed emails cannot submit or fire conversions', async () => {
+  for (const fields of [{name:'\u200b\u200c'}, {name:'---'}, {name:'Test\u0007Person'},
+    {email:'test\u0000@example.com'}, {email:'test..person@example.com'}, {email:'test@example..com'}]) {
+    const form = page({ fields });
+    form.submit(); await flush();
+    assert.equal(form.requests.length, 0, JSON.stringify(fields));
+    assert.equal(form.events.length, 0);
+    assert.equal(form.ads.length, 0);
+  }
+  const form = page({fields:{name:'李', email:'first.last+project@example.co.uk'}});
+  form.submit(); await flush();
+  assert.equal(form.requests.length, 1);
+  assert.equal(form.events.filter(event => event[1] === 'generate_lead').length, 1);
+});
+
 test('search landing and most recent allowlisted CRE article survive internal navigation separately from submission', async () => {
   const storage = new Map();
   const landing = '/blog/atlanta-teardown-rebuild-construction-financing';
@@ -139,6 +154,16 @@ test('sensitive housing, Family, receipt and private paths never store or attach
     assert.equal(p.extra().attribution, undefined, JSON.stringify(options));
     assert.equal(p.data().about.includes('[url]'), false);
     assert.equal(p.storage.has(KEY), false);
+  }
+});
+
+test('commercial multifamily and single-family property routes retain inquiry attribution', async () => {
+  for (const path of ['/commercial/multifamily', '/es/commercial/multifamily', '/blog/single-family-construction-financing']) {
+    const form = page({url:'https://stonehavencre.com'+path,referrer:'https://www.google.com/search?q=project'});
+    form.submit(); await flush();
+    assert.equal(form.extra().attribution.first_landing_path,path);
+    assert.equal(form.extra().attribution.first_channel,'organic_search');
+    assert.equal(form.extra().attribution.submission_path,path);
   }
 });
 

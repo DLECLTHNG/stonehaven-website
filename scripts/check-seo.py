@@ -9,10 +9,16 @@ ORIGIN='https://stonehavencre.com'
 SKIP={'docs','downloads','scripts','tests','node_modules','.git','.github'}
 class Page(HTMLParser):
     def __init__(self, text):
-        super().__init__(convert_charrefs=True);self.alternates=[];self.links=[];self.ids=set();self.canon=[];self.noindex=False;self.desc=[];self.titles=[];self.h1=0;self.ld=[];self.in_title=False;self.in_ld=False;self.buf='';self.feed(text)
+        super().__init__(convert_charrefs=True);self.alternates=[];self.links=[];self.ids=set();self.duplicate_ids=set();self.assets=[];self.missing_alt=[];self.lang=None;self.canon=[];self.noindex=False;self.desc=[];self.titles=[];self.h1=0;self.ld=[];self.in_title=False;self.in_ld=False;self.buf='';self.feed(text)
     def handle_starttag(self,tag,attrs):
         a=dict(attrs)
-        if a.get('id'):self.ids.add(a['id'])
+        if a.get('id'):
+            if a['id'] in self.ids:self.duplicate_ids.add(a['id'])
+            self.ids.add(a['id'])
+        if tag=='html':self.lang=a.get('lang')
+        if tag=='img' and 'alt' not in a:self.missing_alt.append(a.get('src','unknown image'))
+        if tag in ['img','script','source'] and a.get('src'):self.assets.append(a['src'])
+        if tag=='link' and a.get('rel') in ['stylesheet','icon','apple-touch-icon','preload'] and a.get('href'):self.assets.append(a['href'])
         if tag=='a' and a.get('href'):self.links.append(a['href'])
         if tag=='link' and a.get('hreflang'):self.alternates.append((a['hreflang'],a.get('href','')))
         if tag=='link' and a.get('rel')=='canonical':self.canon.append(a.get('href',''))
@@ -66,6 +72,13 @@ for item in entries:
     except (ValueError,TypeError):fail('Invalid lastmod: '+url)
 titles={};descs={}
 for path,p in pages.items():
+    if not p.lang:fail('Missing document language: '+path)
+    if p.duplicate_ids:fail('Duplicate element IDs: '+path+' -> '+', '.join(sorted(p.duplicate_ids)))
+    if p.missing_alt:fail('Missing image alternative text: '+path)
+    for href in p.assets:
+        asset=urlsplit(urljoin(ORIGIN+path,href))
+        if asset.netloc=='stonehavencre.com' and not (ROOT/unquote(asset.path).lstrip('/')).is_file():
+            fail('Missing local asset: '+path+' -> '+href)
     if not p.noindex:
         if ORIGIN+path not in seen:fail('Search page missing from sitemap: '+path)
         if p.canon!=[ORIGIN+path]:fail('Canonical mismatch: '+path)

@@ -99,13 +99,18 @@
     // Match legal documents, not financing destinations such as /terms-sheet.
     return /^\/(?:es\/)?(?:privacy|terms)(?:\.html?)?\/?$/.test(raw || "");
   }
+  function sensitiveHousingPath(raw) {
+    // Property types such as multifamily or single-family are not the Family
+    // Opportunity product. Match actual route tokens, not the word fragment.
+    return /(?:^|\/)family(?:[-/]|$)|(?:^|[-/])(?:family-opportunity|parents|adult-child|disabil|thanks|request-received)/i.test(raw || "");
+  }
   function safePublicPath(raw) {
     // Accept public marketing route shapes only. No encoded data, private
     // endpoints, confirmation routes, query strings or fragments survive.
     var path = typeof raw === "string" ? raw.split(/[?#]/)[0].replace(/\.html?$/, "").replace(/\/$/, "") : "";
     if (path === "" || path === "/es") return raw && raw.charAt(0) === "/" ? (path || "/") : "";
     if (path.length > 160 || !/^\/(?:es\/)?[a-z0-9-]+(?:\/[a-z0-9-]+)?$/.test(path)) return "";
-    if (/(?:family|parents|adult-child|disabil|thanks|request-received)/.test(path) || legalPolicyPath(path)) return "";
+    if (sensitiveHousingPath(path) || legalPolicyPath(path)) return "";
     var plain = path.replace(/^\/es(?=\/)/, "");
     return /^\/(?:blog|resources|commercial|residential|dscr|heloc|sba)(?:\/[a-z0-9-]+)?$/.test(plain) ||
       /^\/(?:contact|book|management|cash-out-refinance|bank-statement-loans|interest-only-loans|mortgage-calculator|commercial-loan-calculator|dscr-analyzer|dscr-review|dscr-program-calculator|sba-loan-calculator|sba-guide|refinance-calculator|terms-sheet|heloc-instant|heloc-wizard|heloc-planning-tools|calculation-methodology|editorial-policy)$/.test(plain) ? path : "";
@@ -114,7 +119,7 @@
     var body = document.body;
     return (typeof navigator !== "undefined" && navigator.globalPrivacyControl === true) ||
       (body && (body.getAttribute("data-fo-sensitive") === "1" || body.getAttribute("data-fo-kind") === "confirm")) ||
-      /(?:family|parents|adult-child|disabil|thanks|request-received)/.test(window.location.pathname) ||
+      sensitiveHousingPath(window.location.pathname) ||
       /^\/(?:es\/)?(?:admin|account|api|private|login|portal|dashboard|secure|auth)(?:[\/-]|$)|^\/\./.test(window.location.pathname);
   }
   function removeStoredSources() {
@@ -339,8 +344,11 @@
       var nameEl = form.querySelector('[name="name"]');
       var es = (form.getAttribute("data-sh-lang") || document.documentElement.lang || "en").indexOf("es") === 0;
       var invalid = [];
-      if (!nameEl || !nameEl.value.trim() || nameEl.value.trim().length > 120 || /[\r\n\x00]/.test(nameEl.value)) invalid.push({ el: nameEl, message: es ? "Ingrese su nombre completo." : "Please enter your full name." });
-      if (!emailEl || emailEl.value.trim().length > 254 || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailEl.value.trim())) invalid.push({ el: emailEl, message: es ? "Ingrese un correo electrónico válido." : "Please enter a valid email address." });
+      if (!nameEl || !/\p{L}/u.test(nameEl.value) || nameEl.value.trim().length > 120 || /[\p{Cc}\u202a-\u202e\u2066-\u2069]/u.test(nameEl.value)) invalid.push({ el: nameEl, message: es ? "Ingrese su nombre completo." : "Please enter your full name." });
+      var email = emailEl ? emailEl.value.trim() : "", emailParts = email.split("@");
+      if (!emailEl || /[\p{Cc}\p{Cf}]/u.test(emailEl.value) || email.length > 254 || emailParts.length !== 2 || emailParts[0].length > 64 ||
+          !/^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+$/i.test(emailParts[0]) || /^\.|\.$|\.\./.test(emailParts[0]) ||
+          !/^(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z](?:[a-z0-9-]{0,61}[a-z0-9])?$/i.test(emailParts[1] || "")) invalid.push({ el: emailEl, message: es ? "Ingrese un correo electrónico válido." : "Please enter a valid email address." });
       var phoneEl = form.querySelector('[name="phone"]');
       if (phoneEl && phoneEl.hasAttribute("required") && phoneEl.value.replace(/\D/g, "").length < 10) invalid.push({ el: phoneEl, message: es ? "Ingrese un número de teléfono válido." : "Please enter a valid phone number." });
       var validationBox = form.querySelector('.lead-validation-error');

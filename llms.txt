@@ -143,6 +143,16 @@ Educational introductions for professionals. No referral compensation is offered
 - [Five to eight unit financing](https://stonehavencre.com/commercial/5-8-unit-financing): small multifamily underwriting, DSCR versus NOI assumptions and legal unit-count review.
 - [Georgia and metro Atlanta commercial financing](https://stonehavencre.com/commercial/georgia): the Alpharetta-based brokerage’s local construction, acquisition and refinancing paths, with nationwide commercial placement subject to availability.
 
+## Project cash flow and rental-loan planning
+
+- [Commercial loan refinance: how to calculate a cash-in gap before maturity](https://stonehavencre.com/blog/commercial-refinance-cash-in-gap): educational guide with explicit assumptions and lender-specific questions.
+- [Construction loan interest reserves vs. contingency: budget for both](https://stonehavencre.com/blog/construction-loan-interest-reserve-vs-contingency): educational guide with explicit assumptions and lender-specific questions.
+- [Fix-and-flip rehab draws: how much cash do you need between payments?](https://stonehavencre.com/blog/fix-and-flip-rehab-draw-cash-flow): educational guide with explicit assumptions and lender-specific questions.
+- [What if your flip does not sell? Plan a rental refinance exit early](https://stonehavencre.com/blog/fix-and-flip-rental-exit-refinance): educational guide with explicit assumptions and lender-specific questions.
+- [Subdivision financing: how lot release prices affect developer cash flow](https://stonehavencre.com/blog/subdivision-loan-lot-release-prices): educational guide with explicit assumptions and lender-specific questions.
+- [DSCR loan reserves: how much cash should remain after closing?](https://stonehavencre.com/blog/dscr-loan-reserves-cash-to-close): educational guide with explicit assumptions and lender-specific questions.
+- [DSCR prepayment penalties: compare the cost of selling or refinancing early](https://stonehavencre.com/blog/dscr-prepayment-penalty-exit-planning): educational guide with explicit assumptions and lender-specific questions.
+
 ## DSCR guide series
 
 - [DSCR state guides](https://stonehavencre.com/dscr#state-guides): fifty state guides linked from the DSCR pillar, covering rental underwriting and state-specific considerations. Nationwide program availability varies by state.
@@ -177,10 +187,12 @@ Educational introductions for professionals. No referral compensation is offered
 - [Georgia HELOC questions to ask before requesting terms](https://stonehavencre.com/blog/georgia-heloc-questions)
 - [HELOC for an addition or ADU: plan the financing and permissions](https://stonehavencre.com/blog/heloc-adu-addition-planning)
 - [HELOC valuation: questions about your home and its condition](https://stonehavencre.com/blog/heloc-appraisal-property-condition)
+- [When can you use your HELOC after closing?](https://stonehavencre.com/blog/heloc-closing-timeline-cancellation-period)
 - [HELOC credit checks: separate the estimate from the application](https://stonehavencre.com/blog/heloc-credit-inquiry-stages)
 - [HELOC debt consolidation: compare the full repayment plan](https://stonehavencre.com/blog/heloc-debt-consolidation-total-cost)
 - [What happens to HELOC payments when the draw period ends?](https://stonehavencre.com/blog/heloc-draw-period-repayment-payments)
 - [HELOC fees when you need the money for a short time](https://stonehavencre.com/blog/heloc-fees-short-term-borrowing)
+- [Can a lender freeze your HELOC? Plan for a reduced credit line](https://stonehavencre.com/blog/heloc-freeze-credit-line-reduction-plan)
 - [Must you draw the full HELOC amount when it opens?](https://stonehavencre.com/blog/heloc-initial-draw-requirements)
 - [HELOC interest questions: records to organize for your tax adviser](https://stonehavencre.com/blog/heloc-interest-recordkeeping)
 - [Can you get a HELOC on a paid-off home?](https://stonehavencre.com/blog/heloc-paid-off-home)
@@ -190,6 +202,7 @@ Educational introductions for professionals. No referral compensation is offered
 - [HELOC or fixed home equity loan: compare the payment structure](https://stonehavencre.com/blog/heloc-vs-fixed-home-equity-loan)
 - [HELOC or home equity contract: compare different obligations](https://stonehavencre.com/blog/heloc-vs-home-equity-contract)
 - [Want to pay a HELOC down faster? Start with the agreement](https://stonehavencre.com/blog/pay-heloc-down-faster)
+- [Can you refinance your first mortgage and keep your HELOC?](https://stonehavencre.com/blog/refinance-first-mortgage-keep-heloc-subordination)
 - [Rental-property equity: separate HELOC and DSCR questions](https://stonehavencre.com/blog/rental-property-equity-heloc-dscr)
 - [Self-employed and considering a HELOC: prepare the income questions](https://stonehavencre.com/blog/self-employed-heloc-income-documents)
 - [Selling after opening a HELOC: questions before listing](https://stonehavencre.com/blog/selling-home-with-heloc)

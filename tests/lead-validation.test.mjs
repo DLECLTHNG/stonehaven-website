@@ -18,6 +18,19 @@ test('contact validation requires actual name and valid email strings', () => {
   for (const email of ['abc', 'a@b', 'a @example.com', 'a@@example.com', 'a@example.com\nspam']) assert.ok(contactErrors({ ...good, email }).email);
 });
 
+test('contacts reject invisible names, control characters and malformed mailboxes', async () => {
+  for (const name of ['\u200b\u200c\u200d', '\u00ad', '---', '1234', 'Test\u0007Person', 'Test\u202ePerson']) {
+    assert.ok(contactErrors({ ...good, name }).name, JSON.stringify(name));
+    assert.equal((await guard(post({ ...good, name }))).status, 422);
+  }
+  for (const email of ['\u200b@example.com', 'test\u0000@example.com', 'test@example.com\r\n', '<test>@example.com', 'test..person@example.com', '.test@example.com', 'test@example..com', 'test@-example.com', 'test@example.com.']) {
+    assert.ok(contactErrors({ ...good, email }).email, JSON.stringify(email));
+    assert.equal((await guard(post({ ...good, email }))).status, 422);
+  }
+  for (const name of ['李', 'José O’Neill', 'محمد', 'Jean-Luc']) assert.deepEqual(contactErrors({ ...good, name }), {});
+  for (const email of ['first.last+project@example.co.uk', 'o\'neill@example.com', 'test@xn--bcher-kva.de']) assert.deepEqual(contactErrors({ ...good, email }), {});
+});
+
 test('HELOC enforces the $30,000 boundary and still accepts a paid-off mortgage', () => {
   assert.deepEqual(leadErrors(heloc), {});
   for (const requested_amount of ['', '0', '5000', '25000', '29999.99', '-30000', '3e4', '30,00']) {
@@ -65,6 +78,20 @@ test('edge guard rejects duplicate fields, malformed context and oversized reque
   assert.equal((await guard(post(data))).status, 400);
   assert.equal((await guard(post({ ...good, extra: '{invalid' }))).status, 422);
   assert.equal((await guard(post({ ...good, about: 'x'.repeat(65536) }))).status, 413);
+});
+
+test('capture rejects foreign browser submissions while preserving native and server delivery', async () => {
+  for (const headers of [{origin:'https://foreign.example'}, {origin:'null'}, {'sec-fetch-site':'cross-site'}]) {
+    const response = await guard(new Request('https://stonehavencre.com/contact', {method:'POST',headers,body:new URLSearchParams(good)}));
+    assert.equal(response.status,403);
+    assert.equal(response.headers.get('x-content-type-options'),'nosniff');
+  }
+  for (const origin of ['https://stonehavencre.com','https://www.stonehavencre.com']) {
+    assert.equal(await guard(new Request('https://stonehavencre.com/contact', {method:'POST',headers:{origin},body:new URLSearchParams(good)})),undefined);
+  }
+  const preview='https://deploy-preview-123--stonehaven.netlify.app';
+  assert.equal(await guard(new Request(preview+'/contact', {method:'POST',headers:{origin:preview},body:new URLSearchParams(good)})),undefined);
+  assert.equal(await guard(post(good)),undefined,'Family server posts do not carry browser Origin headers');
 });
 
 test('every static inquiry form visibly collects required name and email', () => {

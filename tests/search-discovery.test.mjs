@@ -32,3 +32,24 @@ print(json.dumps(MainText().extract(html,'https://stonehavencre.com/guide')))`);
   assert.match(out, /Cost \| \$200/);
   assert.doesNotMatch(out, /Site menu|Private input|tracking|Hidden result|Calculator control|Footer links/);
 });
+
+test('hidden void controls cannot erase the rest of a public AI discovery article', () => {
+  const out = python(`from seo_discovery import MainText
+import json
+print(json.dumps(MainText().extract('<main><input hidden><p>Actual financing answer.</p><img hidden><p>Source explanation.</p></main>','https://stonehavencre.com/guide')))`);
+  assert.match(out, /Actual financing answer/);
+  assert.match(out, /Source explanation/);
+});
+
+test('article reading links retain manual anchors, support Spanish and survive rebuilds', () => {
+  const out = python(`from site_presentation import normalize_presentation as f
+import json
+html = '<main><article class="blog-article"><h2 id="existing">Inicio</h2><h2>¿Cómo preparar?</h2><h2>¿Cómo preparar?</h2><h2>Salida</h2></article></main>'
+once=f(html,'/es/blog/example')
+print(json.dumps({'once':once,'twice':f(once,'/es/blog/example')}))`);
+  assert.equal(out.once, out.twice);
+  assert.match(out.once, /href="#existing"/);
+  assert.match(out.once, /href="#article-como-preparar"/);
+  assert.match(out.once, /href="#article-como-preparar-2"/);
+  assert.match(out.once, /En esta guía/);
+});

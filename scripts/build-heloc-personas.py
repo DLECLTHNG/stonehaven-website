@@ -104,11 +104,11 @@ def head(p, intents_json):
 <link rel="icon" type="image/png" href="../assets/stonehaven-handpainted-logo.png"/><link rel="apple-touch-icon" href="../assets/stonehaven-handpainted-logo.png"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="../styles.css?v=seo-20260920"/><link rel="stylesheet" href="../funnel.css?v=seo-20260920"/>
+<link rel="stylesheet" href="../styles.css?v=20260922"/><link rel="stylesheet" href="../funnel.css?v=20260922"/>
 <noscript><style>.reveal{opacity:1 !important;transform:none !important;}</style></noscript>
 <script src="../js/site-config.js?v=6" defer></script>
 <script src="../js/heloc-fields.js?v=2" defer></script>
-<script src="../js/funnel.js?v=14" defer></script>
+<script src="../js/funnel.js?v=15" defer></script>
 <script src="../js/heloc-persona.js?v=1" defer></script>
 <style>
 .pp-hero{padding:150px 0 44px;}
