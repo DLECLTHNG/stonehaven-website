@@ -93,6 +93,34 @@ test('preview origin is exact and comes only from deployment configuration', asy
   assert.equal((await prod.handler(request(BODY, { Origin: preview }))).status, 403);
 });
 
+test('preview origin and label work with the runtime context Netlify actually provides', async () => {
+  // At runtime Netlify exposes only URL, SITE_NAME and SITE_ID; CONTEXT and DEPLOY_PRIME_URL are build-time only.
+  const { CONTEXT, ...runtimeEnv } = ENV;
+  const preview = 'https://deploy-preview-40--test-site.netlify.app';
+  const previewContext = { deploy: { context: 'deploy-preview' }, site: { name: 'test-site' } };
+  const at = (host, origin) => new Request(`${host}/api/heloc-application`, {
+    method: 'POST', headers: { Origin: origin, 'Content-Type': 'application/json' }, body: JSON.stringify(BODY),
+  });
+  const accepted = fixture({ env: runtimeEnv });
+  assert.equal((await accepted.handler(at(preview, preview), previewContext)).status, 200);
+  assert.match(JSON.parse(accepted.sends[0].body).subject, /^\[Preview test\] HELOC application received: /);
+  for (const [host, origin, context] of [
+    [preview, 'https://deploy-preview-39--test-site.netlify.app', previewContext],
+    ['https://deploy-preview-40--other-site.netlify.app', 'https://deploy-preview-40--other-site.netlify.app', previewContext],
+    [preview, preview, { deploy: { context: 'production' }, site: { name: 'test-site' } }],
+    [preview, preview, { deploy: { context: 'deploy-preview' }, site: {} }],
+    [preview, preview, undefined],
+  ]) {
+    const rejected = fixture({ env: runtimeEnv });
+    assert.equal((await rejected.handler(at(host, origin), context)).status, 403);
+    assert.equal(rejected.sends.length, 0);
+    assert.equal(rejected.pdfInputs.length, 0);
+  }
+  const production = fixture({ env: runtimeEnv });
+  assert.equal((await production.handler(request(), { deploy: { context: 'production' }, site: { name: 'test-site' } })).status, 200);
+  assert.doesNotMatch(JSON.parse(production.sends[0].body).subject, /Preview test/);
+});
+
 test('streamed bodies are bounded even without a content-length header', async () => {
   const f = fixture();
   const response = await f.handler(request(BODY, {}, { body: ' '.repeat(MAX_APPLICATION_BYTES + 1) }));

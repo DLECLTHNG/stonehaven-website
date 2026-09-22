@@ -52,13 +52,30 @@ export function applicationConfiguration(env) {
   return { password, hmacKey, apiKey, from };
 }
 
-function allowedOrigin(origin, env) {
+const PREVIEW_CONTEXTS = ['deploy-preview', 'branch-deploy'];
+
+// Netlify exposes only URL, SITE_NAME and SITE_ID to functions at runtime; CONTEXT and
+// DEPLOY_PRIME_URL exist at build time only. The deploy context and site name therefore
+// come from the function context, with env retained for local tests and tooling.
+function isPreview(context, env) {
+  return PREVIEW_CONTEXTS.includes(context?.deploy?.context ?? env.CONTEXT);
+}
+
+function allowedOrigin(origin, env, { preview = false, requestUrl = '', siteName = '' } = {}) {
   if (['https://stonehavencre.com', 'https://www.stonehavencre.com'].includes(origin)) return true;
-  if (!['deploy-preview', 'branch-deploy'].includes(env.CONTEXT)) return false;
+  if (!preview) return false;
   try {
     const deploy = new URL(env.DEPLOY_PRIME_URL);
-    return deploy.protocol === 'https:' && !deploy.username && !deploy.password && deploy.origin === origin &&
-      deploy.pathname === '/' && !deploy.search && !deploy.hash;
+    if (deploy.protocol === 'https:' && !deploy.username && !deploy.password && deploy.origin === origin &&
+        deploy.pathname === '/' && !deploy.search && !deploy.hash) return true;
+  } catch {}
+  // Without DEPLOY_PRIME_URL, a preview accepts only its own page origin, on this site's
+  // Netlify subdomain. A cross-site page cannot present the preview's own origin.
+  if (typeof siteName !== 'string' || !/^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/.test(siteName)) return false;
+  try {
+    const own = new URL(requestUrl);
+    return own.protocol === 'https:' && !own.username && !own.password && own.origin === origin &&
+      own.hostname.endsWith(`--${siteName}.netlify.app`);
   } catch { return false; }
 }
 
@@ -131,8 +148,9 @@ async function defaultPdf(application, password) {
 }
 
 export function createApplicationHandler({ env = process.env, now = () => new Date(), getStore = defaultStore, createPdf = defaultPdf, send = globalThis.fetch } = {}) {
-  return async function applicationHandler(request) {
+  return async function applicationHandler(request, context) {
     try {
+      const preview = isPreview(context, env);
       const method = request.method.toUpperCase();
       if (!['GET', 'POST'].includes(method)) return json(405, { ok: false, error: 'method_not_allowed' }, { Allow: 'GET, POST' });
       const settings = applicationConfiguration(env);
@@ -144,7 +162,7 @@ export function createApplicationHandler({ env = process.env, now = () => new Da
           return json(200, { ready: true });
         } catch { return json(200, { ready: false }); }
       }
-      if (!allowedOrigin(request.headers.get('origin'), env) || request.headers.get('sec-fetch-site') === 'cross-site') return json(403, { ok: false, error: 'origin_not_allowed' });
+      if (!allowedOrigin(request.headers.get('origin'), env, { preview, requestUrl: request.url, siteName: context?.site?.name ?? env.SITE_NAME ?? '' }) || request.headers.get('sec-fetch-site') === 'cross-site') return json(403, { ok: false, error: 'origin_not_allowed' });
       if (request.headers.get('content-type')?.split(';', 1)[0].trim().toLowerCase() !== 'application/json') return json(415, { ok: false, error: 'unsupported_media_type' });
       if (request.headers.has('content-encoding')) return json(415, { ok: false, error: 'unsupported_content_encoding' });
       if (!settings) return unavailable();
@@ -167,7 +185,7 @@ export function createApplicationHandler({ env = process.env, now = () => new Da
           throw error;
         }
         if (!(pdf instanceof Uint8Array) || pdf.byteLength < 100 || pdf.byteLength > 1024 * 1024) return unavailable();
-        const record = { version: 1, fingerprint: digest, created_at: createdAt, retry_until: new Date(clock.getTime() + RETRY_MS).toISOString(), status: 'pending', envelope: emailEnvelope(application, pdf, settings.from, ['deploy-preview','branch-deploy'].includes(env.CONTEXT)) };
+        const record = { version: 1, fingerprint: digest, created_at: createdAt, retry_until: new Date(clock.getTime() + RETRY_MS).toISOString(), status: 'pending', envelope: emailEnvelope(application, pdf, settings.from, preview) };
         // Atomic creation chooses one randomized encrypted PDF for all concurrent retries.
         const creation = await store.setJSON(key, record, { onlyIfNew: true });
         if (typeof creation?.modified !== 'boolean') return unavailable();
