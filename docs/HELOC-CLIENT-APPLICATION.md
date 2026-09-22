@@ -28,7 +28,7 @@ The daily `heloc-application-cleanup` function removes the encrypted envelope on
 
 ## Operations
 
-Function-only settings: `HELOC_APPLICATION_RESEND_KEY`, `HELOC_APPLICATION_PDF_PASSWORD`, `HELOC_APPLICATION_HMAC_KEY`, `HELOC_APPLICATION_FROM`. Production and deploy-preview are configured. Do not rotate the PDF password without retaining access to older attachments. Do not send the password with an application email. A deployment-preview email is labeled `[Preview test]`.
+Function-only settings: `HELOC_APPLICATION_RESEND_KEY`, `HELOC_APPLICATION_PDF_PASSWORD`, `HELOC_APPLICATION_HMAC_KEY`, `HELOC_APPLICATION_FROM`. Production and deploy-preview are configured. Netlify exposes only `URL`, `SITE_NAME` and `SITE_ID` to functions at runtime; `CONTEXT` and `DEPLOY_PRIME_URL` are build-time only. The deploy context and site name therefore come from the function context. A deploy preview accepts only its own page origin on this site's Netlify subdomain, and only preview submissions carry the `[Preview test]` subject label. Do not rotate the PDF password without retaining access to older attachments. Do not send the password with an application email. A deployment-preview email is labeled `[Preview test]`.
 
 Netlify endpoint paths: `/api/heloc-application` and `/.netlify/functions/heloc-application`. Requests require the exact site origin, valid JSON and no more than 16 KB. A per-IP/domain rate rule limits requests. Failures return generic, non-cacheable errors. There is no public application download or retrieval endpoint.
 
@@ -41,6 +41,11 @@ Static deploys now use the `.site` allowlist built by `scripts/build-public.mjs`
 - Independent PDF password authentication and content decryption, incorrect-password rejection, all-field round-trip and one page per applicant.
 - PDF pages visually checked with normal and maximum-length synthetic values.
 - Browser checks at 320, 390, 768 and 1440 pixels, centered actions, joint-to-single clearing, shared address, masked review and mocked success with clearing.
-- Deployment verification must additionally confirm the actual rate rule, readiness, one clearly labeled synthetic email, live noindex/security headers and exclusion of internal sources.
+- Deployment verification, completed on the deploy preview on 2026-09-22:
+  - The first live preview submission returned 403 because the origin check read `CONTEXT` and `DEPLOY_PRIME_URL`, which do not exist at function runtime. Fixed as described under Operations, with a regression test that fails on the previous code.
+  - Readiness returned `{"ready":true}` and the form enabled at 375 and 1440 pixels with no overflow, no browser storage and only first-party scripts.
+  - One synthetic application (Codex's own "Synthetic Intake Test" fixture) was accepted end to end: reference `e3a6959a-fb7e-4be5-b6ef-5e36b71e8367`, provider acceptance at 17:53:09 UTC, subject labeled `[Preview test]`.
+  - An identical resubmission returned the original acceptance without resending; changed details under the same reference returned 409; a foreign origin returned 403; the platform rate rule returned 429 after five requests.
+  - Response headers carried `noindex`, `no-store`, `no-referrer` and the page's strict Content-Security-Policy. Internal sources, dependencies, server code and the font file all returned 404, and every one of the 488 public files production served before this change returned 200 from the new `.site` build.
 
 Sources: [PDFKit encryption](https://pdfkit.org/docs/getting_started.html), [Netlify rate limiting](https://docs.netlify.com/manage/security/secure-access-to-sites/rate-limiting/), [Netlify Blobs](https://docs.netlify.com/build/data-and-storage/netlify-blobs/), [Resend idempotency](https://resend.com/docs/dashboard/emails/idempotency-keys), [FTC safeguards](https://www.ftc.gov/business-guidance/resources/ftc-safeguards-rule-what-your-business-needs-know).
