@@ -1,0 +1,9 @@
+{
+  "name": "stonehaven-website",
+  "private": true,
+  "scripts": { "test": "node scripts/check-site.mjs" },
+  "dependencies": {
+    "@netlify/blobs": "11.1.0",
+    "pdfkit": "0.20.2"
+  }
+}

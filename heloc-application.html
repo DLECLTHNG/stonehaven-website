@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'self'; form-action 'none'; base-uri 'none'; object-src 'none'">
+  <title>HELOC Client Application | Stonehaven Lending</title>
+  <meta name="description" content="Client application details for an individual or joint HELOC request with Stonehaven Lending.">
+  <link rel="icon" href="/assets/stonehaven-icon-48-v1.png">
+  <link rel="canonical" href="https://stonehavencre.com/heloc-application">
+  <link rel="stylesheet" href="/heloc-application.css?v=1">
+  <script type="module" src="/js/heloc-application.mjs?v=1"></script>
+</head>
+<body>
+  <header class="page-header">
+    <img src="/assets/stonehaven-logo-240-v1.webp" srcset="/assets/stonehaven-logo-120-v1.webp 120w, /assets/stonehaven-logo-240-v1.webp 240w, /assets/stonehaven-logo-360-v1.webp 360w, /assets/stonehaven-logo-512-v1.webp 512w" sizes="(max-width: 1000px) 100px, 120px" width="120" height="120" decoding="async" alt="Stonehaven Lending">
+    <div class="header-label">HELOC<span>Client application</span></div>
+  </header>
+  <main id="main">
+    <div class="intro">
+      <p class="eyebrow">Your next step</p>
+      <h1>Let’s get your HELOC started.</h1>
+      <p>Provide the details for everyone applying. Choose an individual application for one borrower or a joint application for two.</p>
+    </div>
+    <ol class="steps" aria-label="Application progress">
+      <li id="step-details" aria-current="step"><span>1</span>Applicant details</li>
+      <li id="step-review"><span>2</span>Review</li>
+    </ol>
+    <noscript><p class="notice">JavaScript is needed to complete this form. Please contact your Stonehaven advisor for assistance.</p></noscript>
+    <p id="unavailable" class="notice" role="status">Checking application availability…</p>
+    <form id="application-form" method="post" autocomplete="off" novalidate>
+      <fieldset id="application-fields" disabled>
+        <legend class="sr-only">HELOC application details</legend>
+        <section class="card application-type" aria-labelledby="application-type-heading">
+          <div class="section-top"><span class="section-number">01</span><div><h2 id="application-type-heading">Who is applying?</h2><p>Both applicants provide the same information on a joint application.</p></div></div>
+          <div class="type-options">
+            <label class="type-option"><input type="radio" name="application_type" value="single" checked><span><strong>Individual application</strong><small>One applicant</small></span></label>
+            <label class="type-option"><input type="radio" name="application_type" value="joint"><span><strong>Joint application</strong><small>Two applicants</small></span></label>
+          </div>
+        </section>
+        <div id="applicant-fields"></div>
+        <div id="error-summary" class="error-summary" role="alert" tabindex="-1" hidden></div>
+        <div class="form-actions"><p>All fields are required except apartment or unit.</p><button class="primary" type="submit">Review application <span aria-hidden="true">→</span></button></div>
+      </fieldset>
+    </form>
+    <section id="review" hidden aria-labelledby="review-heading">
+      <div class="card">
+        <p class="eyebrow">Before you continue</p><h2 id="review-heading" tabindex="-1">Review your details</h2>
+        <p class="section-note">Check each applicant’s information. Social Security numbers remain masked here.</p>
+        <div id="review-details"></div>
+        <p class="notice">Your details will be delivered to Stonehaven in a password-protected, encrypted PDF for review. Keep this page open until you receive a confirmation.</p>
+        <p id="delivery-status" class="field-error" role="status" tabindex="-1" hidden></p>
+        <div class="review-actions"><button id="edit-details" type="button" class="secondary">Edit details</button><button id="send-application" class="primary" type="button" disabled>Submit application</button></div>
+      </div>
+    </section>
+    <section id="confirmation" class="card confirmation" aria-labelledby="confirmation-heading" hidden>
+      <p class="eyebrow">Thank you</p><h2 id="confirmation-heading" tabindex="-1">Your details have been submitted.</h2>
+      <p>Your Stonehaven advisor will review your HELOC request and follow up with you. No credit check has been authorized by this form.</p>
+      <p class="receipt-label">Your reference</p><p id="receipt"></p><p class="section-note">Keep this reference for your records. You can close this page.</p>
+    </section>
+    <div class="help"><h2>Need a hand?</h2><p>Contact your Stonehaven advisor or call <a href="tel:+14709704979">(470) 970-4979</a>.</p><p class="small">Do not send Social Security numbers by text or ordinary email.</p></div>
+  </main>
+  <footer><p>Stonehaven Lending · NMLS #1752355</p><p>Your information is used to review your HELOC request. <a href="/privacy" target="_blank" rel="noopener noreferrer">Privacy policy</a></p><p>Stonehaven is a mortgage brokerage. Financing is subject to lender underwriting, documentation, program availability and applicable licensing. Providing these details is not a loan approval or authorization to pull credit.</p></footer>
+</body>
+</html>
