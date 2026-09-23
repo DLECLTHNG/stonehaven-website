@@ -5,7 +5,7 @@ Idempotent: regenerates heloc/<slug>.html for every persona."""
 import io, os, re, json, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from credit_bands import options as _credit_options
-CREDIT_OPTIONS = _credit_options('en')
+CREDIT_OPTIONS = _credit_options('en', minimum=640)
 from heloc_personas_config import PERSONAS, BASE_FAQS, PROCESS, REVIEW_NOTE
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -107,7 +107,7 @@ def head(p, intents_json):
 <link rel="stylesheet" href="../styles.css?v=20260922"/><link rel="stylesheet" href="../funnel.css?v=20260922"/>
 <noscript><style>.reveal{opacity:1 !important;transform:none !important;}</style></noscript>
 <script src="../js/site-config.js?v=6" defer></script>
-<script src="../js/heloc-fields.js?v=2" defer></script>
+<script src="../js/heloc-fields.js?v=3" defer></script>
 <script src="../js/funnel.js?v=15" defer></script>
 <script src="../js/heloc-persona.js?v=1" defer></script>
 <style>
@@ -207,8 +207,8 @@ def body(p):
     <div class="lf-field"><label for="pi-purpose">Borrowing purpose</label><select id="pi-purpose" name="purpose"><option>Home improvement</option><option>Debt consolidation</option><option>Other</option></select></div>
     <div class="lf-field"><label for="f-value">Estimated home value ($)</label><input id="f-value" type="number" inputmode="numeric" min="1" name="home_value" placeholder="400,000" step="0.01" required/></div>
     <div class="lf-field"><label for="f-balance">Mortgage balance ($, enter 0 if paid off)</label><input id="f-balance" type="number" inputmode="numeric" min="0" name="mortgage_balance" placeholder="250,000" step="0.01" required/></div>
-    <div class="lf-field"><label for="f-amount">How much do you want to borrow? ($30,000 minimum)</label><input id="f-amount" type="number" inputmode="numeric" min="30000" name="requested_amount" placeholder="60,000" step="0.01" required/></div>
-    <div class="lf-field"><label for="f-credit">Estimated credit score <span style="text-transform:none;letter-spacing:0;color:#AAB8C7;">(best guess is fine)</span></label><select id="f-credit" name="credit_band">%(credit_opts)s</select></div>
+    <div class="lf-field"><label for="f-amount">How much do you want to borrow? ($50,000 minimum)</label><input id="f-amount" type="number" inputmode="numeric" min="50000" name="requested_amount" placeholder="60,000" step="0.01" required/></div>
+    <div class="lf-field"><label for="f-credit">Estimated credit score (640 minimum) <span style="text-transform:none;letter-spacing:0;color:#AAB8C7;">(best guess is fine)</span></label><select id="f-credit" name="credit_band" required>%(credit_opts)s</select></div>
     <div class="lf-field"><label for="f-timing">Timing</label><select id="f-timing" name="timeline"><option>As soon as practical</option><option>1-3 months</option><option>3-6 months</option><option>Exploring</option></select></div>
     <div class="lf-field"><label for="f-name">Name</label><input id="f-name" type="text" name="name" autocomplete="name" required/></div>
     <div class="lf-field"><label for="f-phone">Mobile number</label><input id="f-phone" type="tel" name="phone" inputmode="tel" autocomplete="tel" required/></div>

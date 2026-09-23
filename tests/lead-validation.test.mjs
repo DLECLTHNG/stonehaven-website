@@ -2,10 +2,10 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync, readdirSync } from 'node:fs';
 import guard from '../netlify/edge-functions/validate-lead.js';
-import { contactErrors, leadErrors } from '../netlify/shared/lead-validation.mjs';
+import { contactErrors, leadErrors, helocCreditEligible } from '../netlify/shared/lead-validation.mjs';
 
 const good = { 'form-name': 'lead', name: 'Test Person', email: 'test+lead@example.com', page: 'contact', product: 'Commercial' };
-const heloc = { ...good, page: 'heloc-callback', extra: { home_value: '400000', mortgage_balance: '0', requested_amount: '30000' } };
+const heloc = { ...good, page: 'heloc-callback', extra: { home_value: '400000', mortgage_balance: '0', requested_amount: '50000', credit_band: '659-640' } };
 const post = (data, path = '/contact') => new Request('https://stonehavencre.com' + path, { method: 'POST', body: new URLSearchParams(data) });
 
 test('contact validation requires actual name and valid email strings', () => {
@@ -31,26 +31,57 @@ test('contacts reject invisible names, control characters and malformed mailboxe
   for (const email of ['first.last+project@example.co.uk', 'o\'neill@example.com', 'test@xn--bcher-kva.de']) assert.deepEqual(contactErrors({ ...good, email }), {});
 });
 
-test('HELOC enforces the $30,000 boundary and still accepts a paid-off mortgage', () => {
+test('HELOC enforces the $50,000 boundary and still accepts a paid-off mortgage', () => {
   assert.deepEqual(leadErrors(heloc), {});
-  for (const requested_amount of ['', '0', '5000', '25000', '29999.99', '-30000', '3e4', '30,00']) {
+  for (const requested_amount of ['', '0', '5000', '25000', '30000', '49999.99', '-50000', '5e4', '50,00', ['50000'], {}, true]) {
     assert.ok(leadErrors({ ...heloc, extra: { ...heloc.extra, requested_amount } }).requested_amount, requested_amount);
   }
-  for (const requested_amount of ['30000', '$30,000', '30000.01', '60000']) assert.deepEqual(leadErrors({ ...heloc, extra: { ...heloc.extra, requested_amount } }), {});
+  for (const requested_amount of ['50000', '$50,000', '50000.01', '60000', 50000]) assert.deepEqual(leadErrors({ ...heloc, extra: { ...heloc.extra, requested_amount } }), {});
   assert.ok(leadErrors({ ...heloc, requested_amount: '25000' }).requested_amount, 'conflicting top-level value cannot bypass minimum');
   assert.deepEqual(leadErrors({ ...good, requested_amount: '25000' }), {}, 'other loan programs are unaffected');
 });
 
 test('HELOC rules cover saved estimates, native forms, fallback routes and cash-out comparisons', () => {
-  for (const page of ['heloc-wizard-save', 'heloc-instant', 'heloc-callback', '/es/heloc/paid-off-home']) assert.ok(leadErrors({ ...good, page }).requested_amount, page);
+  for (const page of ['heloc-wizard-save', 'heloc-instant', 'heloc-callback', '/es/heloc/paid-off-home', 'es/heloc/paid-off-home']) assert.ok(leadErrors({ ...good, page }).requested_amount, page);
   assert.ok(leadErrors(good, '/es/heloc').requested_amount);
   assert.ok(leadErrors({ ...good, extra: { goal: 'Compare cash-out vs HELOC' } }).requested_amount);
   assert.ok(leadErrors({ ...good, extra: '{invalid' }).extra);
   assert.deepEqual(leadErrors({ ...good, page: 'heloc-wizard', ...heloc.extra }), {});
 });
 
+test('HELOC credit eligibility includes 640 but excludes unknown, malformed and partly ineligible ranges', () => {
+  for (const value of [640, 850, '640', '850', '659-640', '640-659', '640–659', '850-780', '640+', ' 640 ']) {
+    assert.equal(helocCreditEligible(value), true, String(value));
+    assert.deepEqual(leadErrors({ ...heloc, extra: { ...heloc.extra, credit_band: value } }), {});
+  }
+  for (const value of [undefined, null, '', 'not-sure', 'Not sure', '639', '600+', '639-620', '640-639', '619–659', '851', '850-999', '-640', '640.0', '6.4e2', ['640'], {}, true]) {
+    assert.equal(helocCreditEligible(value), false, String(value));
+    assert.ok(leadErrors({ ...heloc, extra: { ...heloc.extra, credit_band: value } }).credit_band, String(value));
+  }
+  const { credit_band, ...amounts } = heloc.extra;
+  assert.ok(leadErrors({ ...heloc, extra: amounts }).credit_band, 'credit cannot be omitted');
+  assert.deepEqual(leadErrors({ ...good, credit_band: '619-600', requested_amount: '30000' }), {}, 'other products retain their own eligibility');
+});
+
+test('HELOC aliases and mixed-product paths cannot bypass the same minimums', () => {
+  const { credit_band, ...amounts } = heloc.extra;
+  for (const key of ['credit_band', 'credit_band_pick', 'credit_score', 'credit', 'fico']) {
+    assert.ok(leadErrors({ ...heloc, [key]: '639' }).credit_band, key + ' conflicts with extra');
+    assert.ok(leadErrors({ ...heloc, extra: { ...heloc.extra, [key]: '639' } }).credit_band, key + ' conflicts inside extra');
+    assert.deepEqual(leadErrors({ ...good, product: 'HELOC', ...amounts, [key]: '640' }), {}, key + ' accepts boundary');
+    assert.deepEqual(leadErrors({ ...good, product: 'HELOC', extra: { ...amounts, [key]: '640' } }), {}, key + ' accepts nested boundary');
+  }
+  for (const marker of [{ product: 'HELOC' }, { product_choice: 'HELOC' }, { goal: 'Compare cash-out vs HELOC' }, { loan_type: 'HELOC' }, { lp_variant: 'heloc-wizard' }]) {
+    for (const data of [{ ...good, ...marker }, { ...good, extra: marker }]) {
+      assert.ok(leadErrors(data).requested_amount, JSON.stringify(marker));
+      assert.ok(leadErrors(data).credit_band, JSON.stringify(marker));
+    }
+  }
+});
+
 test('edge guard rejects invalid capture before Netlify email and CRM processing', async () => {
-  for (const data of [{ ...good, name: '' }, { ...good, email: '' }, { ...good, email: 'not-an-email' }, { ...heloc, extra: JSON.stringify({ ...heloc.extra, requested_amount: '29999' }) }]) {
+  for (const data of [{ ...good, name: '' }, { ...good, email: '' }, { ...good, email: 'not-an-email' },
+    ...[{ requested_amount: '49999' }, { credit_band: '639' }, { credit_band: 'not-sure' }, { credit_band: '' }].map(change => ({ ...heloc, extra: JSON.stringify({ ...heloc.extra, ...change }) }))]) {
     const response = await guard(post(data));
     assert.equal(response.status, 422);
     assert.equal(response.headers.get('cache-control'), 'no-store');
@@ -98,7 +129,7 @@ test('every static inquiry form visibly collects required name and email', () =>
   let count = 0;
   function walk(dir) {
     for (const entry of readdirSync(dir, { withFileTypes: true })) {
-      if (['.git', 'docs', 'downloads', 'node_modules', '.netlify'].includes(entry.name)) continue;
+      if (['.git', '.site', 'docs', 'downloads', 'node_modules', '.netlify'].includes(entry.name)) continue;
       const path = dir + '/' + entry.name;
       if (entry.isDirectory()) { walk(path); continue; }
       if (!entry.name.endsWith('.html')) continue;

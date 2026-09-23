@@ -37,7 +37,7 @@
 @media(max-width:480px){.nav .brand{gap:8px;margin-right:8px;}.nav .brand .bt .b1{font-size:22px;}.nav .brand .bt .b2{font-size:9px;letter-spacing:.22em;}.nav a.nav-phone{padding:0;margin-right:8px!important;font-size:12px;white-space:nowrap;}}
 </style>
 <script src="/js/site-config.js?v=6" defer></script>
-<script src="/js/heloc-fields.js?v=2" defer></script>
+<script src="/js/heloc-fields.js?v=3" defer></script>
 <script src="/js/funnel.js?v=15" defer></script>
 
 
@@ -76,7 +76,7 @@
           </select>
         </div>
         <div class="lf-field"><label for="cb-value">Estimated home value ($)</label><input id="cb-value" type="number" inputmode="numeric" min="1" name="home_value" step="0.01" required/></div>
-        <div class="lf-field"><label for="cb-balance">Mortgage balance ($, enter 0 if paid off)</label><input id="cb-balance" type="number" inputmode="numeric" min="0" name="mortgage_balance" step="0.01" required/></div><div class="lf-field"><label for="cb-amount">How much do you want to borrow? ($30,000 minimum)</label><input id="cb-amount" type="number" inputmode="numeric" min="30000" step="0.01" name="requested_amount" required/></div><div class="lf-field"><label for="cb-credit">Estimated credit score <span style="text-transform:none;letter-spacing:0;color:#AAB8C7;">(best guess is fine)</span></label><select id="cb-credit" name="credit_band"><option value="not-sure" selected>Select a range</option><option value="850-780">850-780</option><option value="779-760">779-760</option><option value="759-740">759-740</option><option value="739-720">739-720</option><option value="719-700">719-700</option><option value="699-680">699-680</option><option value="679-660">679-660</option><option value="659-640">659-640</option><option value="639-620">639-620</option><option value="619-600">619-600</option></select></div>
+        <div class="lf-field"><label for="cb-balance">Mortgage balance ($, enter 0 if paid off)</label><input id="cb-balance" type="number" inputmode="numeric" min="0" name="mortgage_balance" step="0.01" required/></div><div class="lf-field"><label for="cb-amount">How much do you want to borrow? ($50,000 minimum)</label><input id="cb-amount" type="number" inputmode="numeric" min="50000" step="0.01" name="requested_amount" required/></div><div class="lf-field"><label for="cb-credit">Estimated credit score (640 minimum) <span style="text-transform:none;letter-spacing:0;color:#AAB8C7;">(best guess is fine)</span></label><select id="cb-credit" name="credit_band" required><option value="" disabled selected>Select a range</option><option value="850-780">850-780</option><option value="779-760">779-760</option><option value="759-740">759-740</option><option value="739-720">739-720</option><option value="719-700">719-700</option><option value="699-680">699-680</option><option value="679-660">679-660</option><option value="659-640">659-640</option></select></div>
         <div class="lf-field full"><label for="cb-state">Property state</label>
           <select id="cb-state" name="state" required><option value="" selected>Select a state</option>
             <option value="Georgia">Georgia</option>

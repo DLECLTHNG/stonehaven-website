@@ -5,7 +5,7 @@ on-image headline and support line. Edit here, then:
 python3 scripts/build-heloc-ads.py
 Module types: checks, timeline, ladder, estimator, table, diagram, consolidation.
 Claims rules: no rates, no guarantees, "no hard credit pull to compare initial
-options" (never "no credit check"), credit floor always "600+ considered",
+options" (never "no credit check"), credit floor always "640+ considered",
 second-position HELOC leaves the first mortgage in place (never "payments stay
 the same"), VA loans: not a VA product, no government affiliation."""
 
@@ -17,7 +17,7 @@ ADS = [
 dict(slug="no-credit-impact", ad="NO CREDIT HIT CHECK", purpose="Home improvement",
  title="Checking HELOC Options Won't Affect Credit | Stonehaven",
  eyebrow="Soft credit pull", h1="Checking options won't affect credit scores",
- sub="A soft inquiry returns estimated options in minutes. A hard pull happens only if an application moves forward. Credit scores 600+ considered.",
+ sub="A soft inquiry returns estimated options in minutes. A hard pull happens only if an application moves forward. Credit scores 640+ considered.",
  cta="See what's available",
  modules=[dict(type="timeline", h="What happens to your credit, and when",
    items=[("Now: estimate","Enter a rough home value and mortgage balance. No credit inquiry of any kind at this step; the estimate is arithmetic on your numbers."),
@@ -26,7 +26,7 @@ dict(slug="no-credit-impact", ad="NO CREDIT HIT CHECK", purpose="Home improvemen
    dict(type="estimator")],
  faqs=[("Does a soft inquiry show up on my credit report?","Soft inquiries appear only to you on your own report; other lenders do not see them and they do not affect scores."),
        ("When exactly would a hard pull happen?","Only if you decide to submit a full application with a lender, after comparing options. It is never part of the estimate or the initial comparison."),
-       ("Is 600+ a promise of approval?","No. It describes where consideration typically begins. Credit, equity, income documentation and program rules all decide.")]),
+       ("Is 640+ a promise of approval?","No. It describes where consideration typically begins. Credit, equity, income documentation and program rules all decide.")]),
 
 dict(slug="terms-stated-plainly", ad="FICO FLOOR", purpose="Home improvement",
  title="HELOC Terms, Stated Plainly | Stonehaven Lending",
@@ -34,7 +34,7 @@ dict(slug="terms-stated-plainly", ad="FICO FLOOR", purpose="Home improvement",
  sub="No rate teasers, no promises underwriting cannot keep. Four things that are true before anyone applies.",
  cta="Get my estimate",
  modules=[dict(type="checks", h="Four things that are true",
-   items=["Credit scores 600+ considered","Second position: the existing first mortgage stays untouched","No hard credit pull to compare initial options","No appraiser visit to get started; full valuation requirements depend on the program"]),
+   items=["Credit scores 640+ considered","Second position: the existing first mortgage stays untouched","No hard credit pull to compare initial options","No appraiser visit to get started; full valuation requirements depend on the program"]),
    dict(type="estimator")],
  faqs=[("What does 'second position' mean?","The HELOC is a separate second lien behind your existing first mortgage. The first mortgage and its terms stay exactly as they are; the HELOC adds its own payment."),
        ("Will I need an appraisal eventually?","Getting started needs no appraiser visit. Whether a full appraisal is required later depends on the program and the lender; many home equity lines use automated or drive-by valuations."),
@@ -58,7 +58,7 @@ dict(slug="renovate-keep-your-rate", ad="HOME IMPROVEMENT", purpose="Home improv
  cta="Calculate my estimate",
  modules=[dict(type="estimator"),
    dict(type="checks", h="How renovation funding on a line works",
-   items=["Draw funds in stages as the contractor invoices, not all at once","Interest accrues on what you have drawn, not the whole line","The first mortgage and its rate are untouched; the line is its own loan with its own payment","Credit scores 600+ considered; no hard credit pull to compare initial options"])],
+   items=["Draw funds in stages as the contractor invoices, not all at once","Interest accrues on what you have drawn, not the whole line","The first mortgage and its rate are untouched; the line is its own loan with its own payment","Credit scores 640+ considered; no hard credit pull to compare initial options"])],
  faqs=[("Do I have to take the whole amount at once?","No. A line of credit is drawn as needed during its draw period, which suits staged renovation costs."),
        ("Does this change my current mortgage?","No. The HELOC sits in second position behind it. Your first mortgage keeps its balance, rate and payment; the HELOC adds a separate payment."),
        ("Is a fixed home equity loan better for a renovation?","For one known contract price, a fixed second loan can suit; for staged or uncertain costs, a line usually fits better. A specialist compares both for your project.")]),
@@ -66,7 +66,7 @@ dict(slug="renovate-keep-your-rate", ad="HOME IMPROVEMENT", purpose="Home improv
 dict(slug="veteran-equity", ad="VETERAN EQUITY", purpose="Home improvement",
  title="Access Home Equity Without Refinancing a VA Loan | Stonehaven",
  eyebrow="For veteran homeowners", h1="Access home equity without refinancing",
- sub="Veteran homeowners may be able to access home equity while leaving an existing VA loan and its rate in place. A second-position line sits behind the original loan. Credit scores 600+ considered.",
+ sub="Veteran homeowners may be able to access home equity while leaving an existing VA loan and its rate in place. A second-position line sits behind the original loan. Credit scores 640+ considered.",
  cta="See what's available",
  modules=[dict(type="table", h="The existing VA loan and a second-position line",
    cols=("","Existing VA first mortgage","Second-position HELOC"),

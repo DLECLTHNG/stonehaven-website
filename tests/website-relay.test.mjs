@@ -47,7 +47,7 @@ test('Residential, HELOC and Family records are forwarded with their saved detai
  setup(t);const sent=[];
  global.fetch=async(_,o)=>{sent.push(JSON.parse(o.body));return new Response(JSON.stringify({status:'created',lead:{id:'res-1'}}));};
  for(const data of [{product:'Residential',page:'contact'},{product:'Not sure',page:'family-parents'},{product:'DSCR',page:'heloc-persona'},{product:'Not sure',page:'mortgage-calculator'},{product:'Not sure',page:'residential-bank-statement'},{product:'Not sure',page:'residential-interest-only'}]) {
-  assert.equal((await handler({body:JSON.stringify({payload:{id:'saved-123',form_name:'lead',data:{name:'Test Person',email:'test@example.com',...data,extra:JSON.stringify({home_value:'450000',mortgage_balance:'200000',requested_amount:'75000'})}}})})).statusCode,200);
+  assert.equal((await handler({body:JSON.stringify({payload:{id:'saved-123',form_name:'lead',data:{name:'Test Person',email:'test@example.com',...data,extra:JSON.stringify({home_value:'450000',mortgage_balance:'200000',requested_amount:'75000',credit_band:'659-640'})}}})})).statusCode,200);
  }
  for(const body of sent){assert.equal(body.product,'Residential');assert.equal(body.extra.requested_amount,'75000');assert.equal(body.extra.netlify_submission_id,'saved-123');}
 });
@@ -65,7 +65,12 @@ test('private source attribution and project qualification retain the browser id
 
 test('saved invalid legacy leads do not create nameless or below-minimum CRM records', async t => {
  setup(t); global.fetch=async()=>{assert.fail('Must not forward an invalid lead');};
- for(const changes of [{name:''},{email:''},{page:'heloc-wizard-save',extra:JSON.stringify({home_value:'400000',mortgage_balance:'0',requested_amount:'29999'})}]) {
+ for(const changes of [{name:''},{email:''}, ...[
+  {requested_amount:'49999',credit_band:'659-640'},
+  {requested_amount:'50000',credit_band:'639'},
+  {requested_amount:'50000',credit_band:'not-sure'},
+  {requested_amount:'50000'}
+ ].map(fields=>({page:'heloc-wizard-save',extra:JSON.stringify({home_value:'400000',mortgage_balance:'0',...fields})}))]) {
   const value=JSON.parse(event.body); Object.assign(value.payload.data,changes);
   assert.equal((await handler({body:JSON.stringify(value)})).statusCode,204);
  }

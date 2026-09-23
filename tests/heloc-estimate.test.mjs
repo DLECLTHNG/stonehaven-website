@@ -27,3 +27,17 @@ test('zero mortgage is accepted, while cleared and negative estimates remove sta
  f.input('e-value','');assert.equal(f.nodes['e-range'].textContent,'-');assert.equal(f.attrs['data-sh-about-prefix'],undefined);
  f.input('e-value','450000');f.input('e-balance','-1');assert.equal(f.nodes['e-range'].textContent,'-');
 });
+test('HELOC estimate uses the $50,000 request boundary in both languages',()=>{
+ for(const lang of ['en','es']) {
+  const f=fixture(lang);
+  for(const value of ['30000','49999.99']) {
+   f.input('e-request',value);
+   assert.match(f.nodes['e-request-note'].textContent,/\$50,000/);
+   assert.doesNotMatch(f.nodes['e-request-note'].textContent,/Mortgage plus request|Saldo más solicitud/);
+  }
+  for(const value of ['50000','50000.01']) {
+   f.input('e-request',value);
+   assert.match(f.nodes['e-request-note'].textContent,/Mortgage plus request|Saldo más solicitud/);
+  }
+ }
+});
