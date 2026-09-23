@@ -39,10 +39,34 @@ test('CAPI and optional CRM webhook reject missing contacts and below-minimum HE
   const previous = global.fetch; t.after(() => { global.fetch = previous; });
   global.fetch = async () => { assert.fail('Invalid lead must not be delivered'); };
   for (const payload of [{}, {name:'',email:'test@example.com'}, {name:'Test Person',email:''},
-    {name:'Test Person',email:'test@example.com',page:'heloc-wizard-save',extra:{home_value:'400000',mortgage_balance:'0',requested_amount:'29999'}}]) {
+    {name:'Test Person',email:'test@example.com',page:'heloc-wizard-save',extra:{home_value:'400000',mortgage_balance:'0',requested_amount:'49999',credit_band:'659-640'}}]) {
     const response = await capi.handler(event({event_name:'lead',event_id:'invalid-contact',payload},'192.0.2.92'));
     assert.equal(response.statusCode, 422);
   }
+});
+
+test('HELOC CAPI validation survives event aliases and payload sanitization', async t => {
+  const previous = global.fetch, token = process.env.META_CAPI_TOKEN, webhook = process.env.CRM_WEBHOOK_URL;
+  t.after(() => { global.fetch = previous; for (const [key, value] of [['META_CAPI_TOKEN', token], ['CRM_WEBHOOK_URL', webhook]]) { if (value === undefined) delete process.env[key]; else process.env[key] = value; } });
+  delete process.env.META_CAPI_TOKEN;
+  process.env.CRM_WEBHOOK_URL = 'https://crm.example.com/lead';
+  let calls = 0;
+  global.fetch = async () => { calls++; return new Response('{}'); };
+  const payload = { name: 'Test Person', email: 'test@example.com', page: 'heloc-callback', extra: { home_value: '400000', mortgage_balance: '0', requested_amount: '50000', credit_band: '659-640' } };
+  const rejected = [
+    { payload: { ...payload, credit_score: '639' } },
+    { payload: { ...payload, requested_amount: '49999' } },
+    { payload: { name: payload.name, email: payload.email, product_choice: 'HELOC' } },
+    { payload: { ...payload, extra: { ...payload.extra, credit_band: 'not-sure' } } },
+    { payload: { ...payload, extra: { ...payload.extra, credit_band: undefined } } },
+    { event_name: 'heloc_callback', payload: { name: payload.name, email: payload.email } },
+  ];
+  for (const body of rejected) {
+    assert.equal((await capi.handler(event({ event_name: 'lead', event_id: 'threshold-test', ...body }, '192.0.2.111'))).statusCode, 422);
+  }
+  assert.equal(calls, 0, 'no advertising or CRM delivery for rejected requests');
+  assert.equal((await capi.handler(event({ event_name: 'heloc_callback', event_id: 'threshold-boundary', payload }, '192.0.2.112'))).statusCode, 200);
+  assert.equal(calls, 1, 'an eligible HELOC is delivered');
 });
 
 test('the generic advertising relay cannot accept Family or disability page context', async t => {

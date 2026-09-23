@@ -23,7 +23,8 @@
           geo: "Thank you - Stonehaven doesn't currently serve that state. Home loans are available in GA, AL, TN, FL, NC and SC.",
           need: "Please answer to continue.", phone: "Please enter a valid mobile number.", email: "Please enter a valid email.",
           stepOf: "Step {a} of {b}",
-          minimum: "The minimum HELOC request is $30,000.", lowEquity: "This estimate is below our $30,000 HELOC minimum.",
+          minimum: "The minimum HELOC request is $50,000.", lowEquity: "This estimate is below our $50,000 HELOC minimum.",
+          creditMinimum: "Select an estimated credit score of 640 or higher to continue.",
           saveName: "Full name", saveEmail: "Email",
           saveH: "Save your estimate", saveP: "Enter your name, email and mobile number. A specialist will text you this range and follow up personally.",
           savePh: "Mobile number", saveBtn: "Text me my estimate", saveOk: "Saved. A specialist will text your estimate to that number shortly.",
@@ -32,7 +33,8 @@
           geo: "Gracias - Stonehaven no atiende ese estado por ahora. Los préstamos de vivienda están disponibles en GA, AL, TN, FL, NC y SC.",
           need: "Responda para continuar.", phone: "Ingrese un número de celular válido.", email: "Ingrese un correo válido.",
           stepOf: "Paso {a} de {b}",
-          minimum: "El monto mínimo de una solicitud HELOC es $30,000.", lowEquity: "Esta estimación está por debajo de nuestro mínimo HELOC de $30,000.",
+          minimum: "El monto mínimo de una solicitud HELOC es $50,000.", lowEquity: "Esta estimación está por debajo de nuestro mínimo HELOC de $50,000.",
+          creditMinimum: "Seleccione un puntaje de crédito estimado de 640 o más para continuar.",
           saveName: "Nombre completo", saveEmail: "Correo electrónico",
           saveH: "Guarde su estimación", saveP: "Ingrese su nombre, correo electrónico y número de celular. Un especialista le enviará este rango por mensaje de texto y le dará seguimiento personalmente.",
           savePh: "Número de celular", saveBtn: "Envíenme mi estimación", saveOk: "Guardado. Un especialista le enviará su estimación por mensaje de texto en breve.",
@@ -142,6 +144,7 @@
     }
     if (type === "select") {
       var sl = step.querySelector("select"); var sv = sl ? sl.value : "";
+      if (key === "credit_band" && !window.SH_HELOC_FIELDS.creditEligible(sv)) { err(step, T.creditMinimum); return false; }
       if (!sv || sv === "not-sure") { err(step, T.need); return false; }
       answers[key] = sv; setHidden(key, sv); return true;
     }
@@ -258,6 +261,7 @@
       if (shown) return;
       var est = form.querySelector('input[name="est_available_high"]');
       if (!est || +est.value < window.SH_HELOC_FIELDS.minimumRequested) return;
+      if (!window.SH_HELOC_FIELDS.creditEligible(answers.credit_band) || +answers.requested_amount < window.SH_HELOC_FIELDS.minimumRequested) return;
       if (steps[i].getAttribute("data-key") !== "contact") return;
       var mainPhone = form.querySelector('input[name="phone"]');
       if (mainPhone && mainPhone.value.replace(/\D/g, "").length >= 10) return; /* already engaged */
