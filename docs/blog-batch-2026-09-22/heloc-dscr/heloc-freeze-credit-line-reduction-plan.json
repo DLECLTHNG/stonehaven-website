@@ -19,7 +19,7 @@
       ],
       [
         "Stonehaven inquiries",
-        "Requested HELOC amounts of $30,000 or more"
+        "Requested HELOC amounts of $50,000 or more and estimated credit scores of at least 640"
       ]
     ],
     "body": [
@@ -56,7 +56,7 @@
         "h": "How Stonehaven can help you prepare"
       },
       "Stonehaven is a mortgage broker. We can help review a new or replacement HELOC request, compare the proposed structure and identify questions for the relevant lender. We cannot reverse another lender's servicing decision or promise that an unused line will remain available.",
-      "Our HELOC inquiries start at $30,000. Residential inquiries are available in Georgia, Alabama, Tennessee, Florida, North Carolina and South Carolina, subject to lender and program requirements. Start with your estimated home value, existing mortgage and HELOC balances, and requested amount through the <a href=\"/heloc#callback\">HELOC inquiry form</a>. We follow up by text. Keep account numbers and private financial documents out of the public form. Your home secures a HELOC and may be at risk if you do not repay."
+      "Our HELOC inquiries start at $50,000 with an estimated credit score of at least 640. Residential inquiries are available in Georgia, Alabama, Tennessee, Florida, North Carolina and South Carolina, subject to lender and program requirements. Start with your estimated home value, existing mortgage and HELOC balances, and requested amount through the <a href=\"/heloc#callback\">HELOC inquiry form</a>. We follow up by text. Keep account numbers and private financial documents out of the public form. Your home secures a HELOC and may be at risk if you do not repay."
     ]
   },
   "es": {
@@ -75,7 +75,7 @@
       ],
       [
         "Consultas a Stonehaven",
-        "Solicitudes de HELOC desde $30,000"
+        "Solicitudes de HELOC desde $50,000 y puntajes de crédito estimados de al menos 640"
       ]
     ],
     "body": [
@@ -112,7 +112,7 @@
         "h": "Cómo puede ayudar Stonehaven"
       },
       "Stonehaven es un corredor hipotecario. Podemos ayudarle a revisar una solicitud de HELOC nuevo o de reemplazo, comparar la estructura propuesta e identificar preguntas para el prestamista correspondiente. No podemos revertir una decisión de otro administrador ni prometer que el crédito sin utilizar seguirá disponible.",
-      "Las consultas de HELOC empiezan en $30,000. Atendemos consultas residenciales en Georgia, Alabama, Tennessee, Florida, North Carolina y South Carolina, sujetas a requisitos del prestamista y del programa. Comparta el valor estimado de su vivienda, los saldos de hipoteca y HELOC, y el monto solicitado mediante el <a href=\"/es/heloc#callback\">formulario de HELOC</a>. Damos seguimiento por mensaje de texto. No incluya números de cuenta ni documentos financieros privados en el formulario público. La vivienda garantiza el HELOC y puede estar en riesgo si no paga."
+      "Las consultas de HELOC empiezan en $50,000 con un puntaje de crédito estimado de al menos 640. Atendemos consultas residenciales en Georgia, Alabama, Tennessee, Florida, North Carolina y South Carolina, sujetas a requisitos del prestamista y del programa. Comparta el valor estimado de su vivienda, los saldos de hipoteca y HELOC, y el monto solicitado mediante el <a href=\"/es/heloc#callback\">formulario de HELOC</a>. Damos seguimiento por mensaje de texto. No incluya números de cuenta ni documentos financieros privados en el formulario público. La vivienda garantiza el HELOC y puede estar en riesgo si no paga."
     ]
   }
 }

@@ -37,7 +37,7 @@
 @media(max-width:480px){.nav .brand{gap:8px;margin-right:8px;}.nav .brand .bt .b1{font-size:22px;}.nav .brand .bt .b2{font-size:9px;letter-spacing:.22em;}.nav a.nav-phone{padding:0;margin-right:8px!important;font-size:12px;white-space:nowrap;}}
 </style>
 <script src="/js/site-config.js?v=6" defer></script>
-<script src="/js/heloc-fields.js?v=2" defer></script>
+<script src="/js/heloc-fields.js?v=3" defer></script>
 <script src="/js/funnel.js?v=15" defer></script>
 
 
@@ -76,7 +76,7 @@
           </select>
         </div>
         <div class="lf-field"><label for="cb-value">Valor est. de la casa ($)</label><input id="cb-value" type="number" inputmode="numeric" min="1" name="home_value" step="0.01" required/></div>
-        <div class="lf-field"><label for="cb-balance">Saldo de la hipoteca ($, ingrese 0 si está pagada)</label><input id="cb-balance" type="number" inputmode="numeric" min="0" name="mortgage_balance" step="0.01" required/></div><div class="lf-field"><label for="cb-amount">¿Cuánto desea solicitar? (mínimo $30,000)</label><input id="cb-amount" type="number" inputmode="numeric" min="30000" step="0.01" name="requested_amount" required/></div><div class="lf-field"><label for="cb-credit">Puntaje de crédito estimado <span style="text-transform:none;letter-spacing:0;color:#AAB8C7;">(una estimación está bien)</span></label><select id="cb-credit" name="credit_band"><option value="not-sure" selected>Seleccione un rango</option><option value="850-780">850-780</option><option value="779-760">779-760</option><option value="759-740">759-740</option><option value="739-720">739-720</option><option value="719-700">719-700</option><option value="699-680">699-680</option><option value="679-660">679-660</option><option value="659-640">659-640</option><option value="639-620">639-620</option><option value="619-600">619-600</option></select></div>
+        <div class="lf-field"><label for="cb-balance">Saldo de la hipoteca ($, ingrese 0 si está pagada)</label><input id="cb-balance" type="number" inputmode="numeric" min="0" name="mortgage_balance" step="0.01" required/></div><div class="lf-field"><label for="cb-amount">¿Cuánto desea solicitar? (mínimo $50,000)</label><input id="cb-amount" type="number" inputmode="numeric" min="50000" step="0.01" name="requested_amount" required/></div><div class="lf-field"><label for="cb-credit">Puntaje de crédito estimado (mínimo 640) <span style="text-transform:none;letter-spacing:0;color:#AAB8C7;">(una estimación está bien)</span></label><select id="cb-credit" name="credit_band" required><option value="" disabled selected>Seleccione un rango</option><option value="850-780">850-780</option><option value="779-760">779-760</option><option value="759-740">759-740</option><option value="739-720">739-720</option><option value="719-700">719-700</option><option value="699-680">699-680</option><option value="679-660">679-660</option><option value="659-640">659-640</option></select></div>
         <div class="lf-field full"><label for="cb-state">Estado donde está la propiedad</label>
           <select id="cb-state" name="state" required><option value="" selected>Seleccione un estado</option>
             <option value="Georgia">Georgia</option>
@@ -89,7 +89,7 @@
         </div>
         <div class="lf-field"><label for="current-heloc">Saldo del HELOC actual, opcional ($)</label><input id="current-heloc" type="number" min="0" step="0.01" name="existing_heloc_balance"/></div><div class="lf-field"><label for="draw-end">Fin de disposición, opcional</label><input id="draw-end" type="month" name="draw_end"/></div><div class="lead-actions">
           <span class="note">Sin consulta de crédito en esta etapa. Al enviar, el visitante acepta que Stonehaven pueda comunicarse sobre esta consulta por mensaje de texto o correo. El consentimiento no es condición del servicio.</span>
-          <button type="submit" class="lead-submit" style="font-size:16px;">Llámenme</button>
+          <button type="submit" class="lead-submit" style="font-size:16px;">Envíenme un mensaje</button>
         </div>
       </form>
     </div>

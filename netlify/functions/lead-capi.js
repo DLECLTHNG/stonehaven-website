@@ -132,7 +132,12 @@ exports.handler = async (event) => {
     return { statusCode: 204, headers: { 'Cache-Control': 'no-store' }, body: '' };
   }
   const { leadErrors } = await import('../shared/lead-validation.mjs');
-  if (Object.keys(leadErrors(payload, new URL(source_url).pathname)).length) return { statusCode: 422, headers: { 'Cache-Control': 'no-store' }, body: JSON.stringify({ ok: false }) };
+  const validationPath = event_name === 'heloc_callback' ? '/heloc' : new URL(source_url).pathname;
+  // Validate before and after allowlisting. Otherwise a conflicting top-level
+  // score or a HELOC product choice could disappear during sanitization.
+  if (Object.keys(leadErrors(body.payload, validationPath)).length || Object.keys(leadErrors(payload, validationPath)).length) {
+    return { statusCode: 422, headers: { 'Cache-Control': 'no-store' }, body: JSON.stringify({ ok: false }) };
+  }
   const tasks = [];
 
   // ---- Meta Conversions API (dedups with the browser pixel via event_id)
