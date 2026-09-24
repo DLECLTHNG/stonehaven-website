@@ -22,17 +22,22 @@ export function validateApplicant(a, today) {
   if (!safeText(a.city) || !/\p{L}/u.test(a.city) || a.city.length > 100) errors.city = 'Enter the city.';
   if (!states.some(([code])=>code===a.state)) errors.state = 'Choose a state.';
   if (!/^\d{5}(?:-\d{4})?$/.test(a.zip || '')) errors.zip = 'Enter a 5-digit ZIP code or ZIP+4.';
-  if (!/^(?:\d+|\d{1,3}(?:,\d{3})+)(?:\.\d{1,2})?$/.test(a.w2_income || '') || !Number.isSafeInteger(Math.round(Number(a.w2_income.replaceAll(',',''))*100))) errors.w2_income = 'Enter annual W-2 income before taxes. Enter 0 if none.';
+  if (!/^(?:\d+|\d{1,3}(?:,\d{3})+)(?:\.\d{1,2})?$/.test(a.w2_income || '') || !Number.isSafeInteger(Math.round(Number(a.w2_income.replaceAll(',',''))*100))) errors.w2_income = 'Enter annual W2/self-employment income before taxes. Enter 0 if none.';
   return errors;
 }
 export function maskSsn(value) { return '•••-••-' + value.replaceAll('-','').slice(-4); }
+
+export function validateSubjectProperty(property) {
+  const errors = validateApplicant({...property, full_name:'Property', dob:'2000-01-01', ssn:'123456789', w2_income:'0'});
+  return Object.fromEntries(Object.entries(errors).filter(([key]) => ['address','unit','city','state','zip'].includes(key)).map(([key,message]) => [key, key === 'address' ? 'Enter the subject property street address.' : message]));
+}
 
 const form = document.querySelector('#application-form');
 const outerFields = document.querySelector('#application-fields');
 const review = document.querySelector('#review');
 const summary = document.querySelector('#error-summary');
 const keys = ['full_name','dob','ssn','address','unit','city','state','zip','w2_income'];
-const labels = {full_name:'Full legal name',dob:'Date of birth',ssn:'Social Security number',address:'Street address',unit:'Apartment or unit',city:'City',state:'State',zip:'ZIP code',w2_income:'Annual W-2 income before taxes'};
+const labels = {full_name:'Full legal name',dob:'Date of birth',ssn:'Social Security number',address:'Street address',unit:'Apartment or unit',city:'City',state:'State',zip:'ZIP code',w2_income:'Annual income – W2/Self-employment before taxes'};
 const addressKeys = ['address','unit','city','state','zip'];
 const endpoint = '/api/heloc-application';
 let ready = false, sending = false, pending = null;
@@ -57,9 +62,10 @@ function field(prefix, key, options = {}) {
 }
 
 function applicantCard(prefix, number) {
-  return `<section class="card" id="${prefix}-card" aria-labelledby="${prefix}-heading"${prefix==='joint'?' hidden':''}><div class="section-top"><span class="section-number">0${number+1}</span><div><h2 id="${prefix}-heading">Applicant ${number}</h2><p>${number===1?'Start with your legal name and personal details.':'Add the second applicant’s own details.'}</p></div></div><fieldset class="field-grid" id="${prefix}-fields"${prefix==='joint'?' disabled':''}><legend class="sr-only">Applicant ${number} information</legend>${field(prefix,'full_name',{wide:true})}${field(prefix,'dob')}${field(prefix,'ssn',{hint:'9 digits. Hidden while you type.'})}<h3 class="group-heading">Current home address</h3>${prefix==='joint'?'<label class="same-address wide"><input type="checkbox" id="same-address">Same current address as applicant 1</label>':''}${field(prefix,'address',{wide:true})}${field(prefix,'unit',{wide:true})}${field(prefix,'city')}${field(prefix,'state')}${field(prefix,'zip')}<h3 class="group-heading">Employment income</h3>${field(prefix,'w2_income',{wide:true,hint:'Annual W-2 employment wages before taxes, not take-home pay. Enter 0 if you have no W-2 income.'})}</fieldset></section>`;
+  return `<section class="card" id="${prefix}-card" aria-labelledby="${prefix}-heading"${prefix==='joint'?' hidden':''}><div class="section-top"><span class="section-number">0${number+1}</span><div><h2 id="${prefix}-heading">Applicant ${number}</h2><p>${number===1?'Start with your legal name and personal details.':'Add the second applicant’s own details.'}</p></div></div><fieldset class="field-grid" id="${prefix}-fields"${prefix==='joint'?' disabled':''}><legend class="sr-only">Applicant ${number} information</legend>${field(prefix,'full_name',{wide:true})}${field(prefix,'dob')}${field(prefix,'ssn',{hint:'9 digits. Hidden while you type.'})}<h3 class="group-heading">Current home address</h3>${prefix==='joint'?'<label class="same-address wide"><input type="checkbox" id="same-address">Same current address as applicant 1</label>':''}${field(prefix,'address',{wide:true})}${field(prefix,'unit',{wide:true})}${field(prefix,'city')}${field(prefix,'state')}${field(prefix,'zip')}<h3 class="group-heading">Annual income</h3>${field(prefix,'w2_income',{wide:true,hint:'Include W2 wages and self-employment income before taxes, not take-home pay. Enter 0 if none.'})}</fieldset></section>`;
 }
 document.querySelector('#applicant-fields').innerHTML = applicantCard('primary',1)+applicantCard('joint',2);
+document.querySelector('#subject-property-fields').innerHTML = `<section class="card" aria-labelledby="subject-heading"><div class="section-top"><div><h2 id="subject-heading">Subject property</h2><p>Enter the property you want to use for this HELOC. It may differ from your current home address.</p></div></div><fieldset class="field-grid"><legend class="sr-only">Subject property address</legend>${addressKeys.map(key=>field('subject',key,{wide:key==='address'||key==='unit'})).join('')}</fieldset></section>`;
 const jointFields = document.querySelector('#joint-fields');
 const sameAddress = document.querySelector('#same-address');
 const get = (prefix,key) => document.getElementById(`${prefix}-${key}`);
@@ -101,18 +107,22 @@ function applicant(prefix) {
   return values;
 }
 function showReview(applicants) {
-  const data={application_type:isJoint()?'joint':'single',applicants};
-  if (!pending || JSON.stringify(data)!==JSON.stringify({application_type:pending.application_type,applicants:pending.applicants})) pending={request_id:crypto.randomUUID(),...data};
+  const subject_property=Object.fromEntries(addressKeys.map(key=>[key,get('subject',key).value.trim()]));
+  const data={application_type:isJoint()?'joint':'single',applicants,subject_property};
+  if (!pending || JSON.stringify(data)!==JSON.stringify({application_type:pending.application_type,applicants:pending.applicants,subject_property:pending.subject_property})) pending={request_id:crypto.randomUUID(),...data};
   const content=document.querySelector('#review-details'); content.replaceChildren();
   const type=document.createElement('p'); type.textContent=isJoint()?'Joint application · Two applicants':'Individual application · One applicant';content.append(type);
   applicants.forEach((person,index)=>{
     const heading=document.createElement('h3');heading.textContent=`Applicant ${index+1}`;content.append(heading);
     const list=document.createElement('dl');
     const [year,month,day]=person.dob.split('-');
-    const rows=[['Full legal name',person.full_name],['Date of birth',`${month}/${day}/${year}`],['Social Security number',maskSsn(person.ssn)],['Current home address',[person.address,person.unit,`${person.city}, ${person.state} ${person.zip}`].filter(Boolean).join('\n')],['Annual W-2 income',new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',minimumFractionDigits:2}).format(Number(person.w2_income.replaceAll(',',''))) + ' before taxes']];
+    const rows=[['Full legal name',person.full_name],['Date of birth',`${month}/${day}/${year}`],['Social Security number',maskSsn(person.ssn)],['Current home address',[person.address,person.unit,`${person.city}, ${person.state} ${person.zip}`].filter(Boolean).join('\n')],['Annual income – W2/Self-employment',new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',minimumFractionDigits:2}).format(Number(person.w2_income.replaceAll(',',''))) + ' before taxes']];
     rows.forEach(([label,value])=>{const row=document.createElement('div'),term=document.createElement('dt'),description=document.createElement('dd');term.textContent=label;description.textContent=value;row.append(term,description);list.append(row);});
     content.append(list);
   });
+  const propertyHeading=document.createElement('h3');propertyHeading.textContent='Subject property';
+  const propertyAddress=document.createElement('p');propertyAddress.textContent=[subject_property.address,subject_property.unit,`${subject_property.city}, ${subject_property.state} ${subject_property.zip}`].filter(Boolean).join(', ');
+  content.append(propertyHeading,propertyAddress);
   hideSsn('primary');hideSsn('joint');
   form.hidden=true; review.hidden=false;
   document.querySelector('#step-details').removeAttribute('aria-current');document.querySelector('#step-review').setAttribute('aria-current','step');
@@ -133,6 +143,12 @@ form.addEventListener('submit',event=>{
       link.addEventListener('click',e=>{e.preventDefault();get(prefix,key).focus();});summary.append(link);
     });
   });
+  const property=Object.fromEntries(addressKeys.map(key=>[key,get('subject',key).value.trim()]));
+  Object.entries(validateSubjectProperty(property)).forEach(([key,error])=>{
+    get('subject',key).setAttribute('aria-invalid','true');document.querySelector(`#subject-${key}-error`).textContent=error;
+    const link=document.createElement('a');link.href=`#subject-${key}`;link.textContent=`Subject property: ${error}`;
+    link.addEventListener('click',e=>{e.preventDefault();get('subject',key).focus();});summary.append(link);
+  });
   if (summary.childElementCount) {summary.hidden=false;summary.focus();return;}
   showReview(applicants);
 });
@@ -147,7 +163,7 @@ function reset() {
   document.querySelector('#confirmation').hidden=true;
   document.querySelector('#receipt').textContent='';
   document.querySelector('.steps').hidden=false;
-  form.reset();keys.forEach(key=>{get('primary',key).value='';get('joint',key).value='';});
+  form.reset();addressKeys.forEach(key=>{get('subject',key).value='';});keys.forEach(key=>{get('primary',key).value='';get('joint',key).value='';});
   review.hidden=true;document.querySelector('#review-details').replaceChildren();form.hidden=false;
   document.querySelector('#step-review').removeAttribute('aria-current');document.querySelector('#step-details').setAttribute('aria-current','step');
   hideSsn('primary');hideSsn('joint');updateType();

@@ -1,3 +1,4 @@
+import { validateSubjectProperty } from '../../../js/heloc-application-validation.mjs';
 import { randomBytes } from 'node:crypto';
 import { readFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
@@ -44,6 +45,8 @@ function validatedInput(input) {
   if (!Array.isArray(input.applicants) || input.applicants.length !== expected) reject('applicants');
   if (typeof input.reference !== 'string' || !/^[A-Za-z0-9_-]{8,80}$/.test(input.reference)) reject('reference');
   if (typeof input.received_at !== 'string' || !/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d{1,3})?Z$/.test(input.received_at) || Number.isNaN(Date.parse(input.received_at))) reject('received_at');
+  if (!input.subject_property || Object.keys(validateSubjectProperty(input.subject_property)).length) reject('subject_property');
+  const subject_property = Object.fromEntries(['address','unit','city','state','zip'].map(key => [key, textValue(input.subject_property, key, {address:180,unit:80,city:100,state:2,zip:10}[key], undefined, key === 'unit')]));
   const applicants = input.applicants.map((entry, index) => {
     if (!entry || typeof entry !== 'object' || Array.isArray(entry)) reject('applicants', index);
     const result = Object.fromEntries(Object.entries(LIMITS).map(([key, limit]) => [key, textValue(entry, key, limit, index, key === 'unit')]));
@@ -63,7 +66,7 @@ function validatedInput(input) {
     if (!Number.isSafeInteger(Math.round(income * 100)) || income > 99999999999.99) reject('w2_income', index);
     return result;
   });
-  return { application_type: input.application_type, applicants, reference: input.reference, received_at: input.received_at };
+  return { application_type: input.application_type, applicants, subject_property, reference: input.reference, received_at: input.received_at };
 }
 
 function assertFontSupport(doc, applicants) {
@@ -113,13 +116,13 @@ function drawApplicant(doc, applicant, index, application) {
   if (applicant.unit) y = field(doc, 'Apartment / unit', applicant.unit, left, y, width);
   y = field(doc, 'City / state / ZIP code', `${applicant.city}, ${applicant.state} ${applicant.zip}`, left, y, width);
   const income = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', minimumFractionDigits: 2 }).format(Number(applicant.w2_income.replaceAll(',', '')));
-  y = field(doc, 'Annual W-2 income before taxes (USD)', income, left, y, width);
+  y = field(doc, 'Annual income - W2/Self-employment before taxes (USD)', income, left, y, width);
   if (y > 688) throw new PdfApplicationError('PDF_LAYOUT_OVERFLOW');
 
   doc.moveTo(left, 704).lineTo(left + width, 704).lineWidth(0.5).strokeColor('#D6DDE2').stroke();
   doc.fontSize(8).fillColor('#536575').text('Confidential borrower information. Share only through an approved protected channel.', left, 716, { width, lineGap: 2 });
   doc.text('Borrower-supplied details. This document is not a credit authorization or loan approval.', left, 731, { width, lineGap: 2 });
-  doc.text(`Stonehaven Lending | Page ${index + 1} of ${application.applicants.length}`, left, 751, { width, align: 'right', lineBreak: false });
+  doc.text(`Stonehaven Lending | Page ${index + 1} of ${application.applicants.length + 1}`, left, 751, { width, align: 'right', lineBreak: false });
 }
 
 /**
@@ -173,6 +176,20 @@ export async function createHelocApplicationPdf(input, password) {
       doc.registerFont('Application', font).font('Application');
       assertFontSupport(doc, application.applicants);
       for (const [index, applicant] of application.applicants.entries()) drawApplicant(doc, applicant, index, application);
+      const property=application.subject_property;
+      assertFontSupport(doc, [{...property,full_name:'Subject property'}]);
+      doc.addPage();
+      doc.rect(0,0,612,9).fill('#B18A43');
+      doc.fontSize(20).fillColor('#102D43').text('STONEHAVEN',48,43,{width:516});
+      doc.fontSize(22).text('HELOC subject property',48,103,{width:516});
+      doc.fontSize(9).fillColor('#536575').text(`Reference: ${application.reference}`,48,145,{width:516});
+      doc.text('Property securing the requested HELOC. May differ from the current home address.',48,175,{width:516});
+      let y=field(doc,'Subject property street address',property.address,48,239,516);
+      if(property.unit)y=field(doc,'Apartment / unit',property.unit,48,y,516);
+      y=field(doc,'City / state / ZIP code',`${property.city}, ${property.state} ${property.zip}`,48,y,516);
+      if(y>688)throw new PdfApplicationError('PDF_LAYOUT_OVERFLOW');
+      doc.fontSize(8).fillColor('#536575').text('Confidential borrower information. Share only through an approved protected channel.',48,716,{width:516});
+      doc.text(`Stonehaven Lending | Page ${application.applicants.length+1} of ${application.applicants.length+1}`,48,751,{width:516,align:'right',lineBreak:false});
       doc.end();
     } catch (error) {
       fail(error);

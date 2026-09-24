@@ -1,5 +1,5 @@
 import { createHmac, timingSafeEqual } from 'node:crypto';
-import { validateApplicant } from '../../../js/heloc-application-validation.mjs';
+import { validateApplicant, validateSubjectProperty } from '../../../js/heloc-application-validation.mjs';
 
 export const APPLICATION_STORE = 'heloc-applications-v1';
 export const MAX_APPLICATION_BYTES = 16 * 1024;
@@ -80,10 +80,14 @@ function allowedOrigin(origin, env, { preview = false, requestUrl = '', siteName
 }
 
 export function normalizeApplication(body, today) {
-  if (!exactKeys(body, ['request_id', 'application_type', 'applicants']) ||
+  if (!exactKeys(body, ['request_id', 'application_type', 'applicants', 'subject_property']) ||
       typeof body.request_id !== 'string' || !UUID.test(body.request_id) ||
       !['single', 'joint'].includes(body.application_type) || !Array.isArray(body.applicants) ||
       body.applicants.length !== (body.application_type === 'joint' ? 2 : 1)) return null;
+  const propertyKeys = ['address', 'unit', 'city', 'state', 'zip'];
+  if (!exactKeys(body.subject_property, propertyKeys) || propertyKeys.some(key => typeof body.subject_property[key] !== 'string' || body.subject_property[key].length > 200)) return null;
+  const subject_property = Object.fromEntries(propertyKeys.map(key => [key, body.subject_property[key].trim()]));
+  if (Object.keys(validateSubjectProperty(subject_property)).length) return null;
   const applicants = [];
   for (const supplied of body.applicants) {
     if (!exactKeys(supplied, APPLICANT_KEYS) || APPLICANT_KEYS.some(key => typeof supplied[key] !== 'string' || supplied[key].length > 200)) return null;
@@ -93,7 +97,7 @@ export function normalizeApplication(body, today) {
     applicant.w2_income = applicant.w2_income.replaceAll(',', '');
     applicants.push(applicant);
   }
-  return { request_id: body.request_id.toLowerCase(), application_type: body.application_type, applicants };
+  return { request_id: body.request_id.toLowerCase(), application_type: body.application_type, applicants, subject_property };
 }
 
 async function boundedJson(request) {
@@ -119,7 +123,7 @@ async function boundedJson(request) {
 }
 
 function fingerprint(application, key) {
-  return createHmac('sha256', key).update(JSON.stringify({ application_type: application.application_type, applicants: application.applicants })).digest('hex');
+  return createHmac('sha256', key).update(JSON.stringify({ application_type: application.application_type, applicants: application.applicants, subject_property: application.subject_property })).digest('hex');
 }
 
 function fingerprintMatches(left, right) {
