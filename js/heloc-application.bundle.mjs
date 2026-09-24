@@ -65,9 +65,10 @@ function applicantCard(prefix, number) {
   return `<section class="card" id="${prefix}-card" aria-labelledby="${prefix}-heading"${prefix==='joint'?' hidden':''}><div class="section-top"><span class="section-number">0${number+1}</span><div><h2 id="${prefix}-heading">Applicant ${number}</h2><p>${number===1?'Start with your legal name and personal details.':'Add the second applicant’s own details.'}</p></div></div><fieldset class="field-grid" id="${prefix}-fields"${prefix==='joint'?' disabled':''}><legend class="sr-only">Applicant ${number} information</legend>${field(prefix,'full_name',{wide:true})}${field(prefix,'dob')}${field(prefix,'ssn',{hint:'9 digits. Hidden while you type.'})}<h3 class="group-heading">Current home address</h3>${prefix==='joint'?'<label class="same-address wide"><input type="checkbox" id="same-address">Same current address as applicant 1</label>':''}${field(prefix,'address',{wide:true})}${field(prefix,'unit',{wide:true})}${field(prefix,'city')}${field(prefix,'state')}${field(prefix,'zip')}<h3 class="group-heading">Annual income</h3>${field(prefix,'w2_income',{wide:true,hint:'Include W2 wages and self-employment income before taxes, not take-home pay. Enter 0 if none.'})}</fieldset></section>`;
 }
 document.querySelector('#applicant-fields').innerHTML = applicantCard('primary',1)+applicantCard('joint',2);
-document.querySelector('#subject-property-fields').innerHTML = `<section class="card" aria-labelledby="subject-heading"><div class="section-top"><div><h2 id="subject-heading">Subject property</h2><p>Enter the property you want to use for this HELOC. It may differ from your current home address.</p></div></div><fieldset class="field-grid"><legend class="sr-only">Subject property address</legend>${addressKeys.map(key=>field('subject',key,{wide:key==='address'||key==='unit'})).join('')}</fieldset></section>`;
+document.querySelector('#subject-property-fields').innerHTML = `<section class="card" aria-labelledby="subject-heading"><div class="section-top"><div><h2 id="subject-heading">Subject property</h2><p>Enter the property you want to use for this HELOC. It may differ from your current home address.</p></div></div><fieldset class="field-grid"><legend class="sr-only">Subject property address</legend><label class="same-address wide"><input type="checkbox" id="subject-same-address">Same as applicant 1’s current home address</label>${addressKeys.map(key=>field('subject',key,{wide:key==='address'||key==='unit'})).join('')}</fieldset></section>`;
 const jointFields = document.querySelector('#joint-fields');
 const sameAddress = document.querySelector('#same-address');
+const subjectSameAddress = document.querySelector('#subject-same-address');
 const get = (prefix,key) => document.getElementById(`${prefix}-${key}`);
 const isJoint = () => form.elements.application_type.value === 'joint';
 
@@ -91,6 +92,16 @@ function updateAddress() {
     if (sameAddress.checked) input.value='';
   });
 }
+function syncSubjectAddress() {
+  if (subjectSameAddress.checked) addressKeys.forEach(key=>{get('subject',key).value=get('primary',key).value;});
+}
+subjectSameAddress.addEventListener('change',()=>{syncSubjectAddress();clearErrors();});
+addressKeys.forEach(key=>{
+  for(const event of ['input','change']) {
+    get('primary',key).addEventListener(event,syncSubjectAddress);
+    get('subject',key).addEventListener(event,()=>{subjectSameAddress.checked=false;});
+  }
+});
 function updateType() {
   const joint = isJoint();
   document.querySelector('#joint-card').hidden = !joint;
@@ -131,6 +142,7 @@ function showReview(applicants) {
 form.addEventListener('submit',event=>{
   event.preventDefault();
   if (!ready || sending) return;
+  syncSubjectAddress();
   clearErrors(); hideSsn('primary'); hideSsn('joint');
   const prefixes=isJoint()?['primary','joint']:['primary'];
   const applicants=prefixes.map(applicant);
