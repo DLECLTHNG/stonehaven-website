@@ -1,9 +1,7 @@
 # Netlify response headers.
 #
-# These live here and NOT in netlify.toml on purpose: the build command in
-# netlify.toml deletes netlify.toml itself, so any [[headers]] block declared
-# there never reaches the deploy. This file is read from the publish directory
-# and survives, the same way _redirects does. Verify any change with:
+# Response headers are copied into .site with the static assets.
+# Verify any change with:
 #   curl -sI https://stonehavencre.com/ | grep -i content-security
 #
 # Order matters: Netlify applies the first matching rule set, and later blocks
@@ -45,6 +43,23 @@
   X-Robots-Tag: noindex, nofollow
 
 # Immutable delivery derivatives. Keep filenames versioned when artwork changes.
+/heloc-application
+  X-Robots-Tag: noindex, nofollow, noarchive
+  Cache-Control: no-store, max-age=0
+  Referrer-Policy: no-referrer
+  Content-Security-Policy: default-src 'none'; script-src 'sha384-tawPgfCQ1XhjfsQdMkrwv9g0sZqwls3o3q8idRFP9E8l52EfCtXRzMcdQxEC/jYv'; style-src 'self'; img-src 'self'; connect-src 'self'; form-action 'none'; base-uri 'none'; object-src 'none'; frame-ancestors 'none'
+
+/heloc-application.html
+  X-Robots-Tag: noindex, nofollow, noarchive
+  Cache-Control: no-store, max-age=0
+  Referrer-Policy: no-referrer
+  Content-Security-Policy: default-src 'none'; script-src 'sha384-tawPgfCQ1XhjfsQdMkrwv9g0sZqwls3o3q8idRFP9E8l52EfCtXRzMcdQxEC/jYv'; style-src 'self'; img-src 'self'; connect-src 'self'; form-action 'none'; base-uri 'none'; object-src 'none'; frame-ancestors 'none'
+
+/api/heloc-application
+  X-Robots-Tag: noindex, nofollow, noarchive
+  Cache-Control: no-store, max-age=0
+  Referrer-Policy: no-referrer
+
 /assets/stonehaven-apple-180-v1.png
   Cache-Control: public, max-age=31536000, immutable
 

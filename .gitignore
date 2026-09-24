@@ -5,3 +5,5 @@
 
 # Python build artifacts
 scripts/__pycache__/
+node_modules/
+.site/

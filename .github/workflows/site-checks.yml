@@ -16,10 +16,13 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Install pinned server dependencies
+        run: npm ci --ignore-scripts
       - name: Tests and content checks
         run: node scripts/check-site.mjs
       - name: Verify generated pages match their sources
         run: |
+          node scripts/build-heloc-application.mjs
           python3 scripts/build-family-lps.py
           python3 scripts/build-dscr-personas.py
           python3 scripts/build-heloc-personas.py
