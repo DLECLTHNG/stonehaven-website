@@ -308,3 +308,30 @@ test('cleanup expires ambiguous submissions without sending or regenerating sens
   assert.equal(record.envelope, undefined);
   assert.equal((await f.handler(request({ ...BODY, request_id: SECOND_ID }))).status, 409);
 });
+
+test('every QA refusal occurs before PDF creation, storage writes or email',async()=>{
+  const missing={...BODY};delete missing.request_id;
+  const cases=[
+    [403,()=>request(BODY,{Origin:'https://example.com'})],
+    [403,()=>request(BODY,{'Sec-Fetch-Site':'cross-site'})],
+    [415,()=>request(BODY,{'Content-Type':'text/plain'})],
+    [415,()=>request(BODY,{'Content-Encoding':'identity'})],
+    [400,()=>request(BODY,{}, {body:'{'})],
+    [400,()=>request(BODY,{}, {body:'x'.repeat(MAX_APPLICATION_BYTES+1)})],
+    [422,()=>request({...BODY,applicants:[{...PERSON,ssn:'000-45-6789'}]})],
+    [422,()=>request({...BODY,extra:true})],
+    [422,()=>request(missing)],
+    [422,()=>request({...BODY,application_type:'joint'})],
+    [422,()=>request({...BODY,request_id:'invalid'})],
+    [405,()=>new Request(`${ORIGIN}/api/heloc-application`,{method:'PUT'})],
+  ];
+  for(const [status,makeRequest] of cases){
+    const f=fixture();let writes=0;
+    f.store.setJSON=async()=>{writes++;throw new Error('No storage write permitted for refusal');};
+    const response=await f.handler(makeRequest());
+    assert.equal(response.status,status);
+    assert.equal(f.pdfInputs.length,0);
+    assert.equal(writes,0);
+    assert.equal(f.sends.length,0);
+  }
+});
