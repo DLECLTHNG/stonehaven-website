@@ -10,7 +10,7 @@ import { createHelocApplicationPdf, PdfApplicationError } from '../netlify/funct
 // PDF renderer is not the application's eligibility or SSN validation layer.
 const PASSWORD = 'Synthetic-Only-PDF-Password-2026';
 const applicant = (changes = {}) => ({ full_name: 'Sample Applicant', dob: '1990-01-02', ssn: '000-00-0000', address: '123 Example Street', unit: 'Unit 1', city: 'Example City', state: 'GA', zip: '00000', w2_income: '120000.50', ...changes });
-const application = (changes = {}) => ({ application_type: 'single', applicants: [applicant()], reference: 'HL-SYNTHETIC-000001', received_at: '2026-09-22T17:00:00.000Z', ...changes });
+const application = (changes = {}) => ({ application_type: 'single', applicants: [applicant()], subject_property: {address:'987 Investment Road',unit:'Unit 2',city:'Atlanta',state:'GA',zip:'30301'}, reference: 'HL-SYNTHETIC-000001', received_at: '2026-09-22T17:00:00.000Z', ...changes });
 const hexEntry = (pdf, key) => {
   const match = pdf.toString('latin1').match(new RegExp(`/${key} <([a-f0-9]+)>`));
   assert.ok(match, `Expected encryption entry ${key}`);
@@ -90,17 +90,17 @@ test('each document gets independent encryption salts and a random owner passwor
   assert.notDeepEqual(openKey(first, PASSWORD), openKey(second, PASSWORD));
 });
 
-test('single and joint applications produce exactly one page per applicant', async () => {
+test('single and joint applications produce one page per applicant plus a subject property page', async () => {
   for (const count of [1, 2]) {
     const pdf = await createHelocApplicationPdf(application({ application_type: count === 2 ? 'joint' : 'single', applicants: Array.from({ length: count }, () => applicant()) }), PASSWORD);
-    assert.equal([...pdf.toString('latin1').matchAll(/\/Type \/Page\s/g)].length, count);
+    assert.equal([...pdf.toString('latin1').matchAll(/\/Type \/Page\s/g)].length, count + 1);
   }
 });
 
 test('maximum supported field lengths remain bounded on one page', async () => {
   const longest = applicant({ full_name: 'W'.repeat(120), address: 'W'.repeat(180), unit: 'W'.repeat(80), city: 'W'.repeat(100), w2_income: '99999999999.99' });
   const pdf = await createHelocApplicationPdf(application({ applicants: [longest] }), PASSWORD);
-  assert.equal([...pdf.toString('latin1').matchAll(/\/Type \/Page\s/g)].length, 1);
+  assert.equal([...pdf.toString('latin1').matchAll(/\/Type \/Page\s/g)].length, 2);
   assert.ok(pdf.length < 1024 * 1024);
 });
 
@@ -156,7 +156,7 @@ metadata = reader.metadata
 static_metadata = metadata['/Title'] == 'Stonehaven HELOC application' and metadata['/Author'] == 'Stonehaven Lending'
 print(json.dumps({'encrypted': encrypted, 'wrong_rejected': wrong_rejected, 'correct': correct, 'pages': len(texts), 'fields_match': matched, 'static_metadata': static_metadata}))
 `;
-  const result = spawnSync(python, ['-c', script], { input: JSON.stringify({ pdf: pdf.toString('base64'), password: PASSWORD, expected: [['Zoë García', '01/02/1990', '000-00-0000', '123 Example Street', 'Unit 1', 'São Paulo, GA 00000', '$120,000.50'], ['Sample Coapplicant', '12/31/1989', '000-00-0000', '987 Another Example Road', 'Example Town, FL 00000-0000', '$0.00']] }), encoding: 'utf8', timeout: 15000, maxBuffer: 1024 * 1024 });
+  const result = spawnSync(python, ['-c', script], { input: JSON.stringify({ pdf: pdf.toString('base64'), password: PASSWORD, expected: [['Zoë García', '01/02/1990', '000-00-0000', '123 Example Street', 'Unit 1', 'São Paulo, GA 00000', '$120,000.50'], ['Sample Coapplicant', '12/31/1989', '000-00-0000', '987 Another Example Road', 'Example Town, FL 00000-0000', '$0.00'], ['987 Investment Road','Unit 2','Atlanta, GA 30301']] }), encoding: 'utf8', timeout: 15000, maxBuffer: 1024 * 1024 });
   assert.equal(result.status, 0, 'Independent PDF reader must finish successfully');
-  assert.deepEqual(JSON.parse(result.stdout), { encrypted: true, wrong_rejected: true, correct: true, pages: 2, fields_match: true, static_metadata: true });
+  assert.deepEqual(JSON.parse(result.stdout), { encrypted: true, wrong_rejected: true, correct: true, pages: 3, fields_match: true, static_metadata: true });
 });

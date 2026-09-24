@@ -21,7 +21,12 @@ export function validateApplicant(a, today) {
   if (!safeText(a.city) || !/\p{L}/u.test(a.city) || a.city.length > 100) errors.city = 'Enter the city.';
   if (!states.some(([code])=>code===a.state)) errors.state = 'Choose a state.';
   if (!/^\d{5}(?:-\d{4})?$/.test(a.zip || '')) errors.zip = 'Enter a 5-digit ZIP code or ZIP+4.';
-  if (!/^(?:\d+|\d{1,3}(?:,\d{3})+)(?:\.\d{1,2})?$/.test(a.w2_income || '') || !Number.isSafeInteger(Math.round(Number(a.w2_income.replaceAll(',',''))*100))) errors.w2_income = 'Enter annual W-2 income before taxes. Enter 0 if none.';
+  if (!/^(?:\d+|\d{1,3}(?:,\d{3})+)(?:\.\d{1,2})?$/.test(a.w2_income || '') || !Number.isSafeInteger(Math.round(Number(a.w2_income.replaceAll(',',''))*100))) errors.w2_income = 'Enter annual W2/self-employment income before taxes. Enter 0 if none.';
   return errors;
 }
 export function maskSsn(value) { return '•••-••-' + value.replaceAll('-','').slice(-4); }
+
+export function validateSubjectProperty(property) {
+  const errors = validateApplicant({...property, full_name:'Property', dob:'2000-01-01', ssn:'123456789', w2_income:'0'});
+  return Object.fromEntries(Object.entries(errors).filter(([key]) => ['address','unit','city','state','zip'].includes(key)).map(([key,message]) => [key, key === 'address' ? 'Enter the subject property street address.' : message]));
+}

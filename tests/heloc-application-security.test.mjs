@@ -16,7 +16,7 @@ const ENV = {
   CONTEXT: 'production',
 };
 const PERSON = { full_name: 'Synthetic Intake Test', dob: '1988-02-29', ssn: '123-45-6789', address: '123 Synthetic Street', unit: '', city: 'Atlanta', state: 'GA', zip: '30301', w2_income: '120,000.00' };
-const BODY = { request_id: REQUEST_ID, application_type: 'single', applicants: [PERSON] };
+const BODY = { request_id: REQUEST_ID, application_type: 'single', applicants: [PERSON], subject_property: {address:'987 Investment Road',unit:'',city:'Atlanta',state:'GA',zip:'30301'} };
 const clone = value => JSON.parse(JSON.stringify(value));
 
 function fakeStore() {
@@ -183,7 +183,7 @@ test('only protected attachment carries applicant details, fixed recipient and s
   const stored = [...f.store.records.values()][0].data;
   const serialized = JSON.stringify({ stored, envelope, result });
   for (const privateValue of [PERSON.full_name, PERSON.dob, PERSON.address, PERSON.ssn, '123456789', ENV.HELOC_APPLICATION_PDF_PASSWORD, ENV.HELOC_APPLICATION_HMAC_KEY]) assert.equal(serialized.includes(privateValue), false);
-  assert.equal(stored.fingerprint, createHmac('sha256', ENV.HELOC_APPLICATION_HMAC_KEY).update(JSON.stringify({ application_type: 'single', applicants: normalizeApplication(BODY).applicants })).digest('hex'));
+  assert.equal(stored.fingerprint, createHmac('sha256', ENV.HELOC_APPLICATION_HMAC_KEY).update(JSON.stringify({ application_type: 'single', applicants: normalizeApplication(BODY).applicants, subject_property: BODY.subject_property })).digest('hex'));
   assert.equal(f.pdfInputs[0].application.reference, REQUEST_ID);
   assert.equal(f.pdfInputs[0].password, ENV.HELOC_APPLICATION_PDF_PASSWORD);
   for (const header of ['cache-control', 'x-content-type-options', 'x-robots-tag']) assert.ok(response.headers.has(header));
@@ -334,4 +334,19 @@ test('every QA refusal occurs before PDF creation, storage writes or email',asyn
     assert.equal(writes,0);
     assert.equal(f.sends.length,0);
   }
+});
+
+test('subject property is required, validated separately, and included in protected delivery', async () => {
+  for (const subject_property of [undefined, null, {}, {...BODY.subject_property,address:''}, {...BODY.subject_property,state:'XX'}, {...BODY.subject_property,zip:'bad'}, {...BODY.subject_property,extra:'reject'}]) {
+    const f=fixture();
+    assert.equal((await f.handler(request({...BODY,subject_property}))).status,422);
+    assert.equal(f.pdfInputs.length,0);
+    assert.equal(f.sends.length,0);
+  }
+  const f=fixture();
+  assert.equal((await f.handler(request())).status,200);
+  assert.deepEqual(f.pdfInputs[0].application.subject_property,BODY.subject_property);
+  assert.notEqual(f.pdfInputs[0].application.subject_property.address,PERSON.address);
+  assert.equal((await f.handler(request({...BODY,subject_property:{...BODY.subject_property,address:'456 Different Investment Road'}}))).status,409);
+  assert.equal(f.sends.length,1);
 });
