@@ -18,7 +18,7 @@ The first article adapts an existing unpublished draft into a narrower, current-
 1. **Nearby, not under one roof:** compare a separate nearby home with a multigenerational household around the occupant's preferences. Avoid framing one option as inherently better.
 2. **Before a parent sells the current home:** map contingencies and temporary overlapping costs. No guaranteed bridge financing.
 3. **The parent wants to contribute:** distinguish lender-accepted income, gifts, expense-sharing, and legal agreements. Requires program-specific review before discussing qualification treatment.
-4. **Family Opportunity versus co-signing:** a borrower-role comparison, not a claim that one structure always qualifies or costs less. Existing draft can be revised against current agency guidance.
+4. **Family Opportunity versus co-signing (September 25 release):** a borrower-role comparison, not a claim that one structure always qualifies or costs less. Existing draft can be revised against current agency guidance.
 5. **A condo for a parent:** discuss project eligibility questions, association fees, maintenance, and physical fit without promising condo approval.
 6. **Buying across state lines:** who is moving, which property state governs licensing, and which local costs need confirmation. Avoid cloning city-name articles.
 7. **Family home versus investment property:** explain why actual use determines the financing conversation. Do not imply family rent automatically qualifies a DSCR loan.
@@ -32,7 +32,7 @@ The first article adapts an existing unpublished draft into a narrower, current-
 
 Lead with the household decision rather than promises about rates, approval, or minimum cash needed. Keep borrower qualification, property suitability, ownership, and benefit-program questions distinct. Use the adult child's choices as the starting point for that article. Label all examples as hypothetical.
 
-These are editorial hypotheses, not measured keyword-volume findings. Review actual Search Console queries and qualified inquiries before choosing the next batch. No recurring publication schedule has been activated.
+These are editorial hypotheses, not measured keyword-volume findings. Review actual Search Console queries and qualified inquiries before choosing the next batch. Daily bilingual publication is authorized for 9 a.m. America/New_York. Consult dated publication logs before preparing a topic.
 
 ## Sources checked September 12, 2026
 
