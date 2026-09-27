@@ -16,7 +16,7 @@ The first article adapts an existing unpublished draft into a narrower, current-
 ## Next angles to develop
 
 1. **Nearby, not under one roof:** compare a separate nearby home with a multigenerational household around the occupant's preferences. Avoid framing one option as inherently better.
-2. **Before a parent sells the current home:** map contingencies and temporary overlapping costs. No guaranteed bridge financing.
+2. **Before a parent sells the current home (September 27 release):** map contingencies and temporary overlapping costs. No guaranteed bridge financing.
 3. **The parent wants to contribute:** distinguish lender-accepted income, gifts, expense-sharing, and legal agreements. Requires program-specific review before discussing qualification treatment.
 4. **Family Opportunity versus co-signing (September 25 release):** a borrower-role comparison, not a claim that one structure always qualifies or costs less. Existing draft can be revised against current agency guidance.
 5. **A condo for a parent:** discuss project eligibility questions, association fees, maintenance, and physical fit without promising condo approval.
