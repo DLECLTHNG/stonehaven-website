@@ -24,3 +24,5 @@ Release date remains pending. After an approved merge and verified production de
 Review PRs: [#48](https://github.com/DLECLTHNG/stonehaven-website/pull/48) and [#49](https://github.com/DLECLTHNG/stonehaven-website/pull/49). [First preview](https://deploy-preview-48--splendid-tulumba-0cbb01.netlify.app/) and [combined preview](https://deploy-preview-49--splendid-tulumba-0cbb01.netlify.app/). Both require owner approval before merging.
 
 Netlify preview handling: PR 49 targets main so the existing preview workflow runs. It includes PR 48 until that dependency is approved and merged. Rebase PR 49 onto the approved main and rerun checks before its own approved merge. No automatic merge is enabled. The attempted CLI draft did not deploy successfully and is not the review artifact.
+
+Owner preview refinement: shortened the bilingual homepage hero to a restrained real-estate-financing introduction without SBA or property-value positioning. Featured articles and the contextual reading links now cover commercial real estate only. Existing SBA program pages and navigation remain available. This supersedes the earlier prescribed hero sentence for the combined preview.

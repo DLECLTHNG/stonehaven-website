@@ -98,8 +98,8 @@ def reading_paths(pages, local, es):
         return link(pages, path, label)
     paragraphs = []
     if local == '/':
-        paragraphs.append(('Prepare la estructura con las '+a('/resources/commercial', 'commercial resources', 'guías comerciales')+', la '+a('/resources/sba-7a-vs-504', 'SBA comparison', 'comparación SBA')+' y la '+a('/residential/jumbo-loans', 'jumbo mortgage guide', 'guía de hipotecas jumbo')+'.') if es else
-                          'Prepare the structure with our '+a('/resources/commercial', 'commercial resources')+', '+a('/resources/sba-7a-vs-504', 'SBA comparison')+' and '+a('/residential/jumbo-loans', 'jumbo mortgage guide')+'.')
+        paragraphs.append(('Revise el '+a('/resources/how-lenders-size-commercial-loans', 'commercial loan sizing guide', 'cálculo del préstamo comercial')+', la '+a('/resources/bridge-vs-permanent-financing', 'bridge and permanent financing comparison', 'comparación entre financiamiento puente y permanente')+' y la '+a('/resources/commercial-refinance-guide', 'commercial refinance guide', 'guía de refinanciamiento comercial')+'.') if es else
+                          'Work through '+a('/resources/how-lenders-size-commercial-loans', 'commercial loan sizing')+', compare '+a('/resources/bridge-vs-permanent-financing', 'bridge and permanent financing')+' and prepare for '+a('/resources/commercial-refinance-guide', 'a commercial refinance')+'.')
     heading = 'Prepare la siguiente decisión' if es else 'Prepare the next decision'
     if local in ['/heloc', '/heloc-planning-tools', '/blog/heloc-preparation-checklist']:
         paragraphs.append(('Antes de comprometer el dinero, revise '+a('/blog/heloc-closing-timeline-cancellation-period', 'when HELOC funds become usable', 'cuándo puede usar los fondos del HELOC')+', '+a('/blog/heloc-freeze-credit-line-reduction-plan', 'what a restricted credit line means for a project', 'cómo afecta una restricción de la línea a su proyecto')+' y '+a('/blog/refinance-first-mortgage-keep-heloc-subordination', 'keeping a HELOC when refinancing the first mortgage', 'cómo conservar el HELOC al refinanciar la primera hipoteca')+'.') if es else
