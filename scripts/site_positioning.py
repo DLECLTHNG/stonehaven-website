@@ -5,6 +5,15 @@ import re
 def build(root):
     templates=root/'scripts/positioning-templates'
     names={'home':'index','residential':'residential','residential-buy':'residential/buy','residential-refinance':'residential/refinance','residential-jumbo-loans':'residential/jumbo-loans'}
+    names.update({
+        'residential-georgia':'residential/georgia',
+        'residential-alabama':'residential/alabama',
+        'residential-tennessee':'residential/tennessee',
+        'residential-florida':'residential/florida',
+        'residential-north-carolina':'residential/north-carolina',
+        'residential-south-carolina':'residential/south-carolina',
+        'resources-residential':'resources/residential',
+    })
     for language in ('en','es'):
         for name,route in names.items():
             target=root/('es/' if language=='es' else '')/(route+'.html')
