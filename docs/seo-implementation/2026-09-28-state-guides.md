@@ -20,3 +20,5 @@ Changed routes in this PR:
 - `/es/residential`, `/es/residential/buy`, `/es/residential/refinance`, `/es/residential/jumbo-loans` (directory destination only).
 
 Release date remains pending. After an approved merge and verified production deployment, record the date and use the existing IndexNow step. No other search-console or ad-account changes are part of this PR.
+
+Review PRs: [#48](https://github.com/DLECLTHNG/stonehaven-website/pull/48) and [#49](https://github.com/DLECLTHNG/stonehaven-website/pull/49). [First preview](https://deploy-preview-48--splendid-tulumba-0cbb01.netlify.app/) and [combined preview](https://deploy-preview-49--splendid-tulumba-0cbb01.netlify.app/). Both require owner approval before merging.
