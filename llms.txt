@@ -1,20 +1,13 @@
 # Stonehaven Lending
 
-Last updated: 2026-09-21.
+Last updated: 2026-09-28.
 
 This file is a navigation aid, not a ranking or indexing signal. Full pillar text: [llms-full.txt](https://stonehavencre.com/llms-full.txt).
 
-> Stonehaven Lending is a bilingual (English/Spanish) U.S. mortgage brokerage.
-> It arranges home loans in Georgia, Alabama, Tennessee, Florida, North
-> Carolina and South Carolina, and commercial real estate, SBA 7(a)/504 and
-> DSCR rental-property financing nationwide. Stonehaven is not a direct lender;
-> financing is subject to lender underwriting and program availability, which
-> varies by state. Preliminary reviews and calculators are educational and are
-> not approvals, commitments, rate quotes or guarantees.
+> Stonehaven Lending is a bilingual mortgage brokerage in Alpharetta, Georgia (NMLS #1752355) that arranges commercial real estate, investment property and SBA financing nationwide, with availability varying by state, and mortgages for homes valued at $1 million and above in Georgia, Alabama, Tennessee, Florida, North Carolina and South Carolina. Financing is subject to lender underwriting.
 
 Key facts:
 - Type: mortgage brokerage (residential + commercial); founder-run
-- Home loans: purchase, refinance, FHA, VA and HELOC in GA, AL, TN, FL, NC & SC
 - Commercial, DSCR and SBA financing: nationwide, availability varies by state
 - Residential DSCR convention modeled: eligible monthly rent / monthly PITIA (1-4 units); commercial DSCR commonly uses NOI / annual debt service
 - Calculators are deterministic, unit-tested code - methodology published at /calculation-methodology
@@ -30,25 +23,17 @@ Key facts:
 
 ## Core pages
 - [Stonehaven Lending](https://stonehavencre.com/): overview - who Stonehaven finances and how to start
-- [Residential Home Loans](https://stonehavencre.com/residential): purchase, refinance, FHA, VA in GA, AL, TN, FL, NC & SC
 - [DSCR Loans for Rental Property](https://stonehavencre.com/dscr): pillar guide - definition, lender DSCR vs investor cash flow, scenarios, requirements, risks, FAQs
 - [Commercial Real Estate Financing](https://stonehavencre.com/commercial): acquisition, refinance, construction and bridge for income-producing property, nationwide
 - [SBA Financing](https://stonehavencre.com/sba): SBA 7(a) and 504 for owner-occupied real estate and business acquisition
-- [HELOC / Home Equity](https://stonehavencre.com/heloc): borrow against equity without changing the current first-mortgage rate; includes a HELOC vs home-equity-loan vs cash-out comparison
+- [Homes valued at $1 million and above](https://stonehavencre.com/residential): purchase and refinancing in Georgia, Alabama, Tennessee, Florida, North Carolina and South Carolina
+- [Jumbo mortgages](https://stonehavencre.com/residential/jumbo-loans): conforming limits, documentation, reserves and appraisal, with dated primary sources
 - [Cash-Out Refinance](https://stonehavencre.com/cash-out-refinance): replace the mortgage and take cash - compared honestly against second-lien options; GA, AL, TN, FL, NC & SC
 - [Management](https://stonehavencre.com/management): founders Dawn M. Munoz and Chris De Leeuw
 - [Financing guides and closings blog](https://stonehavencre.com/blog): educational financing guides, referral-partner resources, and anonymized closed-transaction write-ups
 - [Calculation Methodology](https://stonehavencre.com/calculation-methodology): the exact formulas behind every figure on this site
 - [Contact](https://stonehavencre.com/contact)
 - [Privacy Policy](https://stonehavencre.com/privacy)
-
-## First-time investment-property learning center
-- [Start here: first-time investor guides](https://stonehavencre.com/resources/first-time-property-investor): choose a learning path before selecting financing; English and Spanish versions.
-- [First investment property financing](https://stonehavencre.com/resources/first-investment-property-financing): occupancy, property condition, cash planning, borrower structure and lender placement.
-- [First fix-and-flip financing](https://stonehavencre.com/resources/first-fix-and-flip-financing): initial advance versus rehab holdback, LTC and ARV, cash needs and sale sensitivity.
-- [First DSCR loan](https://stonehavencre.com/resources/first-dscr-loan): qualifying rent versus actual cash flow, first-time landlord review and refinance proceeds.
-- [First rehab loan](https://stonehavencre.com/resources/first-rehab-loan): scope, contractor milestones, draws, contingencies and sale or rental exit.
-- [Investment property deal checklist](https://stonehavencre.com/resources/investment-property-deal-checklist): a one-page scenario, staged documents and written-term comparison.
 
 ## Calculators (deterministic, ungated)
 - [Mortgage Calculator](https://stonehavencre.com/mortgage-calculator): full PITI payment + affordability
@@ -59,19 +44,16 @@ Key facts:
 - [SBA Loan Calculator](https://stonehavencre.com/sba-loan-calculator): 7(a)/504 payment and down-payment
 
 ## Residential detail
-- [Buy a home](https://stonehavencre.com/residential/buy): conventional, FHA, VA compared
 - [Refinance](https://stonehavencre.com/residential/refinance): when a refinance makes sense - break-even framing
-- [FHA loans](https://stonehavencre.com/residential/fha): 3.5% down for qualifying credit, MIP trade stated plainly
-- [VA loans](https://stonehavencre.com/residential/va): zero down for eligible veterans, funding fee explained
 - [Georgia home loans](https://stonehavencre.com/residential/georgia): Alpharetta HQ, GA license #19721, statewide
-- [Alabama home loans](https://stonehavencre.com/residential/alabama): license #22874 - Birmingham, Huntsville, Mobile
-- [Tennessee home loans](https://stonehavencre.com/residential/tennessee): license #165060 - Nashville, Memphis, Knoxville
-- [Florida home loans](https://stonehavencre.com/residential/florida): license #MBR3925, bilingual - Miami, Orlando, Tampa
-- [North Carolina home loans](https://stonehavencre.com/residential/north-carolina): license #B-198926 - Charlotte, Raleigh-Durham
-- [South Carolina home loans](https://stonehavencre.com/residential/south-carolina): Charleston, Columbia, Greenville
+- [Alabama home loans](https://stonehavencre.com/residential/alabama): license #22874: statewide
+- [Tennessee home loans](https://stonehavencre.com/residential/tennessee): license #165060: statewide
+- [Florida home loans](https://stonehavencre.com/residential/florida): license #MBR3925, bilingual: statewide
+- [North Carolina home loans](https://stonehavencre.com/residential/north-carolina): license #B-198926: statewide
+- [South Carolina home loans](https://stonehavencre.com/residential/south-carolina): statewide
 
 ## Commercial programs
-- [Land development and residential lot financing](https://stonehavencre.com/commercial/land-development-loans): Business-purpose land acquisition, subdivision development and finished-lot financing. Includes a hypothetical budget, lender comparison questions, lot-release considerations and a Commercial project inquiry form. Recourse and non-recourse requests are reviewed case by case; no universal leverage or guarantee terms are promised.
+- [Land development and residential lot financing](https://stonehavencre.com/commercial/land-development-loans): Business-purpose land acquisition, subdivision development and finished-lot financing. Includes a hypothetical budget, lender comparison questions, lot-release considerations and a Commercial project inquiry form. Requests are reviewed individually; no universal leverage or guarantee terms are promised.
 - [Construction financing](https://stonehavencre.com/commercial/construction-loans): Business-purpose ground-up and teardown financing; projects are reviewed individually, with cost, loan amount and completed value defined separately.
 - [Fix-and-flip financing](https://stonehavencre.com/commercial/fix-and-flip): Acquisition and renovation capital, rehab holdbacks, cash timing and resale or refinance planning.
 - [Commercial bridge loans](https://stonehavencre.com/commercial/bridge-loans): Transitional income-producing property, lease-up, existing debt and permanent-financing exit review.
@@ -91,16 +73,13 @@ These pages explain financing choices and illustrate project math. Any hypotheti
 
 ## Resource guides
 - [Home loan resources](https://stonehavencre.com/resources/residential)
-- [FHA vs conventional](https://stonehavencre.com/resources/fha-vs-conventional): the mortgage-insurance math that decides
 - [How much home](https://stonehavencre.com/resources/how-much-home): DTI ratios and the honest affordability math
 - [Refinance break-even](https://stonehavencre.com/resources/refinance-break-even)
-- [First-time buyer checklist](https://stonehavencre.com/resources/first-time-buyer-checklist)
 - [DSCR vs conventional](https://stonehavencre.com/resources/dscr-vs-conventional): which loan fits a rental
 - [SBA resources](https://stonehavencre.com/resources/sba): [7(a) vs 504](https://stonehavencre.com/resources/sba-7a-vs-504), [down payment](https://stonehavencre.com/resources/sba-down-payment), [timeline & documents](https://stonehavencre.com/resources/sba-timeline-documents)
 - [Commercial resources](https://stonehavencre.com/resources/commercial): [how lenders size loans](https://stonehavencre.com/resources/how-lenders-size-commercial-loans), [when to refinance](https://stonehavencre.com/resources/commercial-refinance-guide), [bridge vs permanent](https://stonehavencre.com/resources/bridge-vs-permanent-financing)
 
 ## En español
-- [Inicio](https://stonehavencre.com/es/), [Residencial](https://stonehavencre.com/es/residential), [DSCR](https://stonehavencre.com/es/dscr), [Comercial](https://stonehavencre.com/es/commercial), [SBA](https://stonehavencre.com/es/sba), [HELOC](https://stonehavencre.com/es/heloc), [Contacto](https://stonehavencre.com/es/contact), [Blog / Cierres](https://stonehavencre.com/es/blog)
 
 ## Referral partner guides
 
@@ -165,7 +144,6 @@ Educational introductions for professionals. No referral compensation is offered
 - [Before the next purchase, review the equity math](https://stonehavencre.com/dscr/cash-out-refinance)
 - [Bought with cash? Review what comes next](https://stonehavencre.com/dscr/cash-purchase-refinance)
 - [The next rental deserves its own financing review](https://stonehavencre.com/dscr/experienced-landlords)
-- [First rental? Start with the numbers](https://stonehavencre.com/dscr/first-time-investors)
 - [Match the financing to the hold plan](https://stonehavencre.com/dscr/hold-or-sell)
 - [Review the property and the ownership structure](https://stonehavencre.com/dscr/llc-investors)
 - [Review the lease. Then review the loan](https://stonehavencre.com/dscr/long-term-rentals)
@@ -175,34 +153,3 @@ Educational introductions for professionals. No referral compensation is offered
 - [Start the rental-loan conversation with the property](https://stonehavencre.com/dscr/self-employed-investors)
 - [An STR forecast needs a financing reality check](https://stonehavencre.com/dscr/short-term-rentals)
 - [For veterans exploring a rental investment: start with the deal](https://stonehavencre.com/dscr/veteran-investors)
-- [Another rental starts with a clear deal review](https://stonehavencre.com/dscr/working-professionals)
-
-## HELOC planning and guides
-
-- [HELOC planning tools](https://stonehavencre.com/heloc-planning-tools): model equity and compare scenarios with visible assumptions.
-- [How to compare two HELOC offers](https://stonehavencre.com/blog/compare-heloc-offers)
-- [Contractor financing or a HELOC: compare before signing](https://stonehavencre.com/blog/contractor-financing-vs-heloc)
-- [DSCR HELOC on a paid-off investment property: an investor scenario](https://stonehavencre.com/blog/dscr-heloc-paid-off-investment-property)
-- [Refinancing an existing HELOC: what to compare first](https://stonehavencre.com/blog/existing-heloc-refinance-review)
-- [Georgia HELOC questions to ask before requesting terms](https://stonehavencre.com/blog/georgia-heloc-questions)
-- [HELOC for an addition or ADU: plan the financing and permissions](https://stonehavencre.com/blog/heloc-adu-addition-planning)
-- [HELOC valuation: questions about your home and its condition](https://stonehavencre.com/blog/heloc-appraisal-property-condition)
-- [When can you use your HELOC after closing?](https://stonehavencre.com/blog/heloc-closing-timeline-cancellation-period)
-- [HELOC credit checks: separate the estimate from the application](https://stonehavencre.com/blog/heloc-credit-inquiry-stages)
-- [HELOC debt consolidation: compare the full repayment plan](https://stonehavencre.com/blog/heloc-debt-consolidation-total-cost)
-- [What happens to HELOC payments when the draw period ends?](https://stonehavencre.com/blog/heloc-draw-period-repayment-payments)
-- [HELOC fees when you need the money for a short time](https://stonehavencre.com/blog/heloc-fees-short-term-borrowing)
-- [Can a lender freeze your HELOC? Plan for a reduced credit line](https://stonehavencre.com/blog/heloc-freeze-credit-line-reduction-plan)
-- [Must you draw the full HELOC amount when it opens?](https://stonehavencre.com/blog/heloc-initial-draw-requirements)
-- [HELOC interest questions: records to organize for your tax adviser](https://stonehavencre.com/blog/heloc-interest-recordkeeping)
-- [Can you get a HELOC on a paid-off home?](https://stonehavencre.com/blog/heloc-paid-off-home)
-- [HELOC preparation checklist: what to have ready](https://stonehavencre.com/blog/heloc-preparation-checklist)
-- [HELOC for a roof or HVAC replacement: compare the funding plan](https://stonehavencre.com/blog/heloc-roof-hvac-replacement)
-- [HELOC or cash-out refinance? Compare the whole borrowing plan](https://stonehavencre.com/blog/heloc-vs-cash-out-refinance)
-- [HELOC or fixed home equity loan: compare the payment structure](https://stonehavencre.com/blog/heloc-vs-fixed-home-equity-loan)
-- [HELOC or home equity contract: compare different obligations](https://stonehavencre.com/blog/heloc-vs-home-equity-contract)
-- [Want to pay a HELOC down faster? Start with the agreement](https://stonehavencre.com/blog/pay-heloc-down-faster)
-- [Can you refinance your first mortgage and keep your HELOC?](https://stonehavencre.com/blog/refinance-first-mortgage-keep-heloc-subordination)
-- [Rental-property equity: separate HELOC and DSCR questions](https://stonehavencre.com/blog/rental-property-equity-heloc-dscr)
-- [Self-employed and considering a HELOC: prepare the income questions](https://stonehavencre.com/blog/self-employed-heloc-income-documents)
-- [Selling after opening a HELOC: questions before listing](https://stonehavencre.com/blog/selling-home-with-heloc)

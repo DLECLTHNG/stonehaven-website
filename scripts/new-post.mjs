@@ -1,6 +1,8 @@
 // node scripts/new-post.mjs post.json  — builds EN+ES post pages from a JSON brief
 // {slug, date:"YYYY-MM-DD", en:{title,desc,eyebrow,body:[...paragraphs or {h:..}],terms:[[label,value]]}, es:{...same}}
 import fs from 'node:fs';
+import {execFileSync} from 'node:child_process';
+import {fileURLToPath} from 'node:url';
 const b=JSON.parse(fs.readFileSync(process.argv[2],'utf8'));
 // Validate the entire bilingual brief before writing any output.
 if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(b.slug || '')) throw new Error('A safe lowercase slug is required');
@@ -34,6 +36,8 @@ const esc=s=>s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;')
 for(const lang of ['en','es']){
   const p=b[lang], path=(lang==='es'?'/es':'')+'/blog/'+b.slug, file=(lang==='es'?'es/':'')+'blog/'+b.slug+'.html';
   let shell=fs.readFileSync(idx[lang],'utf8').replace(/<!-- SEARCH-NAV:[A-Z]+:START -->[\s\S]*?<!-- SEARCH-NAV:[A-Z]+:END -->\n?/g, '');
+  // Use the same footer normalizer as the final site build for future posts.
+  shell=execFileSync('python3', ['-c', 'import sys; sys.path.insert(0, sys.argv[1]); from site_positioning import footer; print(footer(sys.stdin.read(), sys.argv[2]), end="")', fileURLToPath(new URL('.', import.meta.url)), path], {input:shell, encoding:'utf8'});
   shell=shell.replace(/<title>[^<]*<\/title>/,`<title>${esc(p.metaTitle || (p.title + " | Stonehaven Lending"))}</title>`)
    .replace(/<meta name="description" content="[^"]*"\/>/,`<meta name="description" content="${esc(p.desc)}"/>`)
    .replace(/<meta property="og:type" content="[^"]*"\/>/, '<meta property="og:type" content="article"/>')

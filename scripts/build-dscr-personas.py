@@ -21,7 +21,7 @@ PROCESS = [
 ]
 
 def footer_html():
-    t = io.open(os.path.join(ROOT, 'residential.html'), encoding='utf-8').read()
+    t = io.open(os.path.join(ROOT, 'scripts/positioning-templates/legacy-campaign-footer.html'), encoding='utf-8').read()
     f = re.search(r'<footer>.*?</footer>', t, re.S).group(0)
     return f.replace('src="assets/', 'src="../assets/')
 

@@ -1,3 +1,5 @@
+> Superseded positioning: see [the September 28 owner direction](./seo-implementation/2026-09-28-three-line-positioning.md). Other technical instructions remain in effect.
+
 > Owner correction, September 20, 2026: keep the homepage broad and residential-inclusive. Restore the previous homepage presentation. Remove preferred project-size positioning from evergreen pages. Pursue CRE SEO through dedicated service pages, guides and internal links, without repositioning the entire website as CRE-first. Dated campaign articles and actual lender-program limits remain separate. This correction supersedes conflicting positioning instructions below.
 
 # Codex prompt: next SEO and AI-search phase for stonehavencre.com

@@ -97,6 +97,9 @@ def reading_paths(pages, local, es):
         label = (spanish or en) + ' (en inglés)' if es else en
         return link(pages, path, label)
     paragraphs = []
+    if local == '/':
+        paragraphs.append(('Prepare la estructura con las '+a('/resources/commercial', 'commercial resources', 'guías comerciales')+', la '+a('/resources/sba-7a-vs-504', 'SBA comparison', 'comparación SBA')+' y la '+a('/residential/jumbo-loans', 'jumbo mortgage guide', 'guía de hipotecas jumbo')+'.') if es else
+                          'Prepare the structure with our '+a('/resources/commercial', 'commercial resources')+', '+a('/resources/sba-7a-vs-504', 'SBA comparison')+' and '+a('/residential/jumbo-loans', 'jumbo mortgage guide')+'.')
     heading = 'Prepare la siguiente decisión' if es else 'Prepare the next decision'
     if local in ['/heloc', '/heloc-planning-tools', '/blog/heloc-preparation-checklist']:
         paragraphs.append(('Antes de comprometer el dinero, revise '+a('/blog/heloc-closing-timeline-cancellation-period', 'when HELOC funds become usable', 'cuándo puede usar los fondos del HELOC')+', '+a('/blog/heloc-freeze-credit-line-reduction-plan', 'what a restricted credit line means for a project', 'cómo afecta una restricción de la línea a su proyecto')+' y '+a('/blog/refinance-first-mortgage-keep-heloc-subordination', 'keeping a HELOC when refinancing the first mortgage', 'cómo conservar el HELOC al refinanciar la primera hipoteca')+'.') if es else
@@ -119,7 +122,7 @@ def reading_paths(pages, local, es):
     if local in ['/commercial', '/commercial/construction-loans', '/commercial/development-financing-for-architects', '/resources/commercial', '/blog/residential-development-financing-georgia-florida-texas-case-study']:
         paragraphs.append(('¿Está comprando un terreno, preparando una subdivisión o financiando lotes terminados? Revise nuestro '+a('/commercial/land-development-loans', 'land development and residential lot financing', 'financiamiento de terrenos y lotes residenciales')+' para conectar adquisición, obras del sitio, acuerdos con constructores y liberación de lotes.') if es else
                           'Acquiring a site, developing a subdivision or financing finished lots? Explore our '+a('/commercial/land-development-loans', 'land development and residential lot financing')+' page to connect acquisition, site work, builder contracts and lot releases in one project review.')
-    if local in ['/', '/commercial', '/resources/commercial', '/resources/residential', '/blog']:
+    if local in ['/commercial', '/resources/commercial', '/resources/residential', '/blog']:
         paragraphs.append(('¿Está preparando su primera inversión? Nuestro '+a('/resources/first-time-property-investor', 'first-time investor learning center', 'centro de guías para nuevos inversionistas')+' conecta financiamiento de alquiler, renovación y reventa con presupuestos, desembolsos y preparación del expediente. Puede empezar a aprender antes de tener una propiedad bajo contrato.') if es else
                           'Planning your first investment? Our '+a('/resources/first-time-property-investor', 'first-time investor learning center')+' connects rental, fix-and-flip and rehab financing with budgets, draws and deal preparation. You can start learning before you have a property under contract.')
     if local in ['/dscr', '/dscr-analyzer', '/dscr-program-calculator', '/resources/dscr-vs-conventional', '/blog/dscr-loans-explained']:
@@ -181,10 +184,10 @@ def reading_paths(pages, local, es):
     if local == '/sba':
         paragraphs.append(('Una fecha deseada de cierre necesita un expediente completo. La '+a('/resources/sba-timeline-documents', 'SBA timeline and document checklist', 'lista de documentos y etapas SBA')+' explica qué preparar; nuestros '+a('/resources/sba', 'SBA financing resources', 'recursos de financiamiento SBA')+' reúnen estas decisiones para la conversación con el prestamista.') if es else
                           'A target closing date needs a complete file behind it. The '+a('/resources/sba-timeline-documents', 'SBA timeline and document checklist')+' explains what to prepare; our '+a('/resources/sba', 'SBA financing resources')+' bring these decisions together for the lender conversation.')
-    if local in ['/residential/buy', '/mortgage-calculator']:
+    if local in ['/mortgage-calculator']:
         paragraphs.append(('El pago calculado es una parte del presupuesto. Use la '+a('/resources/how-much-home', 'home affordability guide', 'guía de presupuesto para una vivienda')+' para revisar los gastos del hogar y la '+a('/resources/first-time-buyer-checklist', 'first-time buyer document checklist', 'lista de documentos para compradores primerizos')+' para preparar la primera revisión.') if es else
                           'The estimated payment is one part of the budget. Use the '+a('/resources/how-much-home', 'home affordability guide')+' to review household costs and the '+a('/resources/first-time-buyer-checklist', 'first-time buyer document checklist')+' to prepare for the first review.')
-    if local in ['/residential/buy', '/residential/fha']:
+    if local in ['/residential/fha']:
         paragraphs.append(('Si está comparando programas, la '+a('/resources/fha-vs-conventional', 'FHA versus conventional guide', 'guía de FHA frente a convencional')+' organiza las diferencias de seguro hipotecario, aportación inicial y elegibilidad que conviene revisar con el prestamista.') if es else
                           'If you are comparing programs, the '+a('/resources/fha-vs-conventional', 'FHA versus conventional guide')+' organizes the mortgage insurance, down payment and eligibility differences to review with a lender.')
     if local in ['/residential/refinance', '/refinance-calculator']:

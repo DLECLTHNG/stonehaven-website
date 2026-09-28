@@ -1,3 +1,5 @@
+> Superseded positioning: see [the September 28 owner direction](./2026-09-28-three-line-positioning.md). Other technical instructions remain in effect.
+
 # Homepage and positioning correction
 
 The owner clarified on September 20, 2026 that Stonehaven wants residential traffic and a broad website, with focused CRE SEO delivered through its dedicated content. This supersedes the earlier interpretation that the homepage should lead with commercial financing or a preferred $2M–$10M project range.

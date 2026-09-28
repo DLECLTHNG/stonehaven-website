@@ -73,6 +73,7 @@ def load_title_overrides(root):
 
 
 def normalize_entities(text, path):
+    promote = HeadMetadata(text).indexable
     def walk(data):
         if isinstance(data, list):
             for node in data:
@@ -81,6 +82,9 @@ def normalize_entities(text, path):
             kinds = data.get('@type', [])
             kinds = [kinds] if isinstance(kinds, str) else kinds
             if any(kind in kinds for kind in ['Organization', 'FinancialService']) and data.get('name') == 'Stonehaven Lending':
+                if promote:
+                    data['description'] = 'Stonehaven Lending is a bilingual mortgage brokerage in Alpharetta, Georgia (NMLS #1752355) that arranges commercial real estate, investment property and SBA financing nationwide, with availability varying by state, and mortgages for homes valued at one million dollars and above in Georgia, Alabama, Tennessee, Florida, North Carolina and South Carolina.'
+                    data['serviceType'] = ['Commercial real estate and investment property financing', 'SBA 7(a) and 504 financing', 'Mortgages for homes valued at one million dollars and above']
                 data['@id'] = ORG_ID
                 data['email'] = ORG_EMAIL
                 if data.get('image') == ORIGIN + '/assets/stonehaven-handpainted-logo.png':
@@ -136,6 +140,8 @@ def set_meta(text, key, value, attribute='property'):
 def normalize_page_metadata(text, path, title_overrides):
     text = normalize_entities(text, path)
     metadata = HeadMetadata(text)
+    if not metadata.indexable and 'og:image:alt' in metadata.meta:
+        text = set_meta(text, 'og:image:alt', 'Stonehaven Lending, Residential and Commercial')
     if metadata.indexable and path in title_overrides:
         text = re.sub(r'<title>.*?</title>', '<title>' + escape(title_overrides[path]) + '</title>', text, count=1, flags=re.S)
     title_match = re.search(r'<title>(.*?)</title>', text, re.S)
@@ -153,7 +159,7 @@ def normalize_page_metadata(text, path, title_overrides):
             'og:image:width': '1200',
             'og:image:height': '630',
             'og:image:type': 'image/jpeg',
-            'og:image:alt': 'Stonehaven Lending, Residential and Commercial',
+            'og:image:alt': 'Stonehaven Lending: commercial real estate, SBA and high-value home financing',
         }
         # Short search titles do not replace the descriptive H1 or article headline.
         # Keep existing social titles unless the page previously lacked one.
