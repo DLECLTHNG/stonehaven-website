@@ -6,7 +6,7 @@ Baseline: `f82326d` (latest origin/main when work began). Release: pending owner
 
 Before: `/`, `/bank-statement-loans`, `/blog`, `/blog/georgia-heloc-questions`, `/blog/heloc-preparation-checklist`, `/blog/heloc-vs-cash-out-refinance`, `/blog/how-much-home-equity-can-i-borrow`, `/commercial`, `/commercial/bridge-loans`, `/commercial/construction-loans`, `/commercial/fix-and-flip`, `/contact`, `/dscr`, `/es`, `/heloc`, `/interest-only-loans`, `/management`, `/privacy`, `/residential`, `/resources/commercial`, `/resources/first-time-property-investor`, `/resources/residential`, `/resources/sba`, `/sba`
 
-After: `/`, `/bank-statement-loans`, `/blog`, `/blog/construction-loan-property-already-owned-mortgage-payoff`, `/commercial`, `/commercial/bridge-loans`, `/commercial/construction-loans`, `/commercial/fix-and-flip`, `/contact`, `/dscr`, `/es`, `/interest-only-loans`, `/management`, `/privacy`, `/residential`, `/residential/jumbo-loans`, `/resources/commercial`, `/resources/sba`, `/resources/sba-7a-vs-504`, `/sba`
+After: `/`, `/bank-statement-loans`, `/blog`, `/blog/commercial-refinance-cash-in-gap`, `/blog/construction-loan-property-already-owned-mortgage-payoff`, `/blog/subdivision-loan-lot-release-prices`, `/commercial`, `/commercial/bridge-loans`, `/commercial/construction-loans`, `/commercial/fix-and-flip`, `/contact`, `/dscr`, `/es`, `/interest-only-loans`, `/management`, `/privacy`, `/residential`, `/residential/jumbo-loans`, `/resources/bridge-vs-permanent-financing`, `/resources/commercial`, `/resources/commercial-refinance-guide`, `/resources/how-lenders-size-commercial-loans`, `/resources/sba`, `/sba`
 
 ## index.html footer
 
@@ -18,7 +18,7 @@ After: `/blog`, `/commercial`, `/contact`, `/dscr`, `/management`, `/privacy`, `
 
 Before: `/`, `/es`, `/es/bank-statement-loans`, `/es/blog`, `/es/blog/georgia-heloc-questions`, `/es/blog/heloc-preparation-checklist`, `/es/blog/heloc-vs-cash-out-refinance`, `/es/blog/how-much-home-equity-can-i-borrow`, `/es/commercial`, `/es/commercial/bridge-loans`, `/es/commercial/construction-loans`, `/es/commercial/fix-and-flip`, `/es/contact`, `/es/dscr`, `/es/heloc`, `/es/interest-only-loans`, `/es/privacy`, `/es/residential`, `/es/resources/first-time-property-investor`, `/es/sba`, `/management`
 
-After: `/`, `/es`, `/es/bank-statement-loans`, `/es/blog`, `/es/blog/construction-loan-property-already-owned-mortgage-payoff`, `/es/commercial`, `/es/commercial/bridge-loans`, `/es/commercial/construction-loans`, `/es/commercial/fix-and-flip`, `/es/contact`, `/es/dscr`, `/es/interest-only-loans`, `/es/privacy`, `/es/residential`, `/es/residential/jumbo-loans`, `/es/sba`, `/management`, `/resources/commercial`, `/resources/sba`, `/resources/sba-7a-vs-504`
+After: `/`, `/es`, `/es/bank-statement-loans`, `/es/blog`, `/es/blog/commercial-refinance-cash-in-gap`, `/es/blog/construction-loan-property-already-owned-mortgage-payoff`, `/es/blog/subdivision-loan-lot-release-prices`, `/es/commercial`, `/es/commercial/bridge-loans`, `/es/commercial/construction-loans`, `/es/commercial/fix-and-flip`, `/es/contact`, `/es/dscr`, `/es/interest-only-loans`, `/es/privacy`, `/es/residential`, `/es/residential/jumbo-loans`, `/es/sba`, `/management`, `/resources/bridge-vs-permanent-financing`, `/resources/commercial`, `/resources/commercial-refinance-guide`, `/resources/how-lenders-size-commercial-loans`, `/resources/sba`
 
 ## es/index.html footer
 
@@ -42,7 +42,7 @@ After: `/blog`, `/commercial`, `/contact`, `/dscr`, `/management`, `/privacy`, `
 
 Before: `/es`, `/es/bank-statement-loans`, `/es/blog`, `/es/blog/georgia-heloc-questions`, `/es/blog/heloc-preparation-checklist`, `/es/blog/heloc-vs-cash-out-refinance`, `/es/blog/how-much-home-equity-can-i-borrow`, `/es/cash-out-refinance`, `/es/commercial`, `/es/contact`, `/es/dscr`, `/es/heloc`, `/es/interest-only-loans`, `/es/mortgage-calculator`, `/es/privacy`, `/es/refinance-calculator`, `/es/residential`, `/es/residential/alabama`, `/es/residential/buy`, `/es/residential/fha`, `/es/residential/florida`, `/es/residential/georgia`, `/es/residential/north-carolina`, `/es/residential/refinance`, `/es/residential/south-carolina`, `/es/residential/tennessee`, `/es/residential/va`, `/es/sba`, `/residential`
 
-After: `/es`, `/es/bank-statement-loans`, `/es/blog`, `/es/cash-out-refinance`, `/es/commercial`, `/es/contact`, `/es/dscr`, `/es/interest-only-loans`, `/es/privacy`, `/es/residential`, `/es/residential/alabama`, `/es/residential/buy`, `/es/residential/florida`, `/es/residential/georgia`, `/es/residential/jumbo-loans`, `/es/residential/north-carolina`, `/es/residential/refinance`, `/es/residential/south-carolina`, `/es/residential/tennessee`, `/es/sba`, `/management`, `/residential`, `/resources/commercial`, `/resources/residential`, `/resources/sba`
+After: `/es`, `/es/bank-statement-loans`, `/es/blog`, `/es/cash-out-refinance`, `/es/commercial`, `/es/contact`, `/es/dscr`, `/es/interest-only-loans`, `/es/privacy`, `/es/residential`, `/es/residential/alabama`, `/es/residential/buy`, `/es/residential/florida`, `/es/residential/georgia`, `/es/residential/jumbo-loans`, `/es/residential/north-carolina`, `/es/residential/refinance`, `/es/residential/south-carolina`, `/es/residential/tennessee`, `/es/resources/residential`, `/es/sba`, `/management`, `/residential`, `/resources/commercial`, `/resources/sba`
 
 ## es/residential.html footer
 
@@ -52,7 +52,7 @@ After: `/es/blog`, `/es/commercial`, `/es/contact`, `/es/dscr`, `/es/privacy`, `
 
 ## Sitemap
 
-378 baseline URLs retained. 2 added. None removed.
+378 baseline URLs retained. 3 added. None removed.
 
 ## Reachability of removed homepage or footer destinations
 
@@ -65,12 +65,12 @@ After: `/es/blog`, `/es/commercial`, `/es/contact`, `/es/dscr`, `/es/privacy`, `
 | `/blog/how-much-home-equity-can-i-borrow` | `/resources/residential` |
 | `/calculation-methodology` | `/resources/how-lenders-size-commercial-loans` |
 | `/es` | `/es/resources/first-investment-property-financing` |
-| `/es/blog/georgia-heloc-questions` | `/blog/georgia-heloc-questions` |
-| `/es/blog/heloc-preparation-checklist` | `/blog/heloc-preparation-checklist` |
-| `/es/blog/heloc-vs-cash-out-refinance` | `/blog/heloc-vs-cash-out-refinance` |
-| `/es/blog/how-much-home-equity-can-i-borrow` | `/blog/how-much-home-equity-can-i-borrow` |
-| `/es/heloc` | `/heloc` |
-| `/es/mortgage-calculator` | `/mortgage-calculator` |
+| `/es/blog/georgia-heloc-questions` | `/es/resources/residential` |
+| `/es/blog/heloc-preparation-checklist` | `/es/resources/residential` |
+| `/es/blog/heloc-vs-cash-out-refinance` | `/es/resources/residential` |
+| `/es/blog/how-much-home-equity-can-i-borrow` | `/es/resources/residential` |
+| `/es/heloc` | `/es/resources/residential` |
+| `/es/mortgage-calculator` | `/es/resources/residential` |
 | `/es/refinance-calculator` | `/refinance-calculator` |
 | `/es/resources/first-time-property-investor` | `/resources/first-time-property-investor` |
 | `/heloc` | `/resources/residential` |
