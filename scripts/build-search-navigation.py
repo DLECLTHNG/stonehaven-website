@@ -9,7 +9,9 @@ from seo_brand_assets import normalize_brand_assets
 from seo_discovery import build_discovery_files
 from seo_contextual_links import transform as contextual_links
 from site_presentation import normalize_presentation
+from site_positioning import build as build_positioning, footer as positioning_footer
 R=Path(__file__).resolve().parent.parent
+build_positioning(R)
 ORIGIN='https://stonehavencre.com'
 skip={'docs','scripts','tests','downloads','node_modules'}
 files=[p for p in R.rglob('*.html') if not any(x.startswith('.') or x in skip for x in p.relative_to(R).parts)]
@@ -29,6 +31,7 @@ def cre_links(prefix,es):
 counts={'breadcrumbs':0,'topic_hubs':0,'program_links':0}
 for path,(file,text) in pages.items():
  text=normalize_presentation(text,path)
+ text=positioning_footer(text,path)
  text=normalize_page_metadata(text,path,title_overrides)
  text=text.replace('<b>Christiaan De Leeuw</b>','<a href="/management#chris-de-leeuw"><b>Chris De Leeuw</b></a>')
  if re.search(r'<meta[^>]+name="robots"[^>]+content="[^"]*noindex',text) or '<main>' not in text:
@@ -67,6 +70,9 @@ for path,(file,text) in pages.items():
   elif local=='/resources/commercial':
    items=cre_links(prefix,es)+[('/resources/how-lenders-size-commercial-loans','Work through DSCR, LTV and debt yield'),('/resources/commercial-refinance-guide','Plan a commercial maturity or refinance'),('/blog/45-million-builder-fix-and-flip-capital','Explore the dated $45 million builder capital announcement')]
    h='Commercial financing: programs and decisions';intro='Compare project financing, work through the numbers and prepare a complete scenario.'
+  elif local=='/':
+   items=[('/residential/jumbo-loans','Hipotecas conformes y jumbo' if es else 'Conforming and jumbo mortgages'),('/bank-statement-loans','Documentación con estados de cuenta' if es else 'Bank statement documentation'),('/interest-only-loans','Estructura de solo intereses' if es else 'Interest-only structure')]
+   h='Financiamiento de viviendas de alto valor' if es else 'High-value home financing';intro='Revise el monto del préstamo, la documentación de ingresos y la estructura de pagos.' if es else 'Review loan size, income documentation and payment structure.'
   else:
    items=[('/bank-statement-loans','Hipotecas con estados de cuenta' if es else 'Bank statement mortgages'),('/interest-only-loans','Hipotecas de solo intereses' if es else 'Interest-only mortgages'),('/heloc','Opciones HELOC' if es else 'HELOC options')]
    items=[x for x in items if x[0]!=local];h='Compare opciones hipotecarias' if es else 'Compare mortgage options';intro='Explore documentación de ingresos, estructura de pagos y patrimonio disponible según su objetivo.' if es else 'Explore income documentation, payment structure and home equity options around your financing goal.'
@@ -79,6 +85,8 @@ for path,(file,text) in pages.items():
    items.append(('/blog/45-million-builder-fix-and-flip-capital','Anuncio de capital para constructores del 18 de septiembre' if es else 'September 18 builder capital announcement'))
   heading='Encuentre financiamiento para su proyecto' if es else 'Find financing for your project'
   intro='Compare construcción, renovación para reventa y financiamiento puente. Presente costo total, préstamo solicitado y plan de salida para una revisión por mensaje de texto.' if es else 'Compare construction, fix-and-flip and bridge options. Share total project cost, requested financing and your exit plan for a review by text.'
+  if local=='/':
+   intro='Compare el presupuesto, el uso de los fondos y el plan de salida antes de discutir una estructura.' if es else 'Compare the budget, use of funds and exit plan before discussing a structure.'
   addition='<section class="wrap search-topics"><h2>'+heading+'</h2><p>'+intro+'</p><ul class="search-program-links">'+links(prefix,items)+'</ul></section>'
   text=text.replace('</main>',marker('CRE',addition)+'</main>')
  text=contextual_links(text,path,pages)
