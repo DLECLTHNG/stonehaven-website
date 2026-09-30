@@ -8,6 +8,7 @@ from search_metadata import load_title_overrides, normalize_page_metadata, norma
 from seo_brand_assets import normalize_brand_assets
 from seo_discovery import build_discovery_files
 from seo_contextual_links import transform as contextual_links
+from cre_search_journeys import transform as cre_search_journeys
 from site_presentation import normalize_presentation
 from site_positioning import build as build_positioning, footer as positioning_footer
 R=Path(__file__).resolve().parent.parent
@@ -89,6 +90,7 @@ for path,(file,text) in pages.items():
    intro='Compare el presupuesto, el uso de los fondos y el plan de salida antes de discutir una estructura.' if es else 'Compare the budget, use of funds and exit plan before discussing a structure.'
   addition='<section class="wrap search-topics"><h2>'+heading+'</h2><p>'+intro+'</p><ul class="search-program-links">'+links(prefix,items)+'</ul></section>'
   text=text.replace('</main>',marker('CRE',addition)+'</main>')
+ text=cre_search_journeys(text,path)
  text=contextual_links(text,path,pages)
  if 'SEARCH-NAV:' in text:text=text.replace('</head>','<link rel="stylesheet" href="/search-navigation.css?v=1"/></head>')
  text=normalize_brand_assets(text)
