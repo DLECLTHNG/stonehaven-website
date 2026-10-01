@@ -286,10 +286,11 @@ test('storage and provider errors never reflect sensitive exception details or c
   }
 });
 
-test('cleanup drops encrypted attachments after 48h and keeps an opaque deduplication receipt for 30d', async () => {
+test('accepted attachments are removed immediately and opaque receipts expire after 30d', async () => {
   const f = fixture();
   await f.handler(request());
-  assert.deepEqual(await pruneApplicationRecords(f.store, new Date(DATE.getTime() + 48 * 60 * 60 * 1000)), { redacted: 1, deleted: 0 });
+  assert.equal(f.store.records.get(`application/${REQUEST_ID}`).data.envelope, undefined);
+  assert.deepEqual(await pruneApplicationRecords(f.store, new Date(DATE.getTime() + 48 * 60 * 60 * 1000)), { redacted: 0, deleted: 0 });
   const record = f.store.records.get(`application/${REQUEST_ID}`).data;
   assert.equal(record.envelope, undefined);
   assert.equal(record.status, 'accepted');
@@ -348,5 +349,15 @@ test('subject property is required, validated separately, and included in protec
   assert.deepEqual(f.pdfInputs[0].application.subject_property,BODY.subject_property);
   assert.notEqual(f.pdfInputs[0].application.subject_property.address,PERSON.address);
   assert.equal((await f.handler(request({...BODY,subject_property:{...BODY.subject_property,address:'456 Different Investment Road'}}))).status,409);
+  assert.equal(f.sends.length,1);
+});
+
+ test('cleanup redacts legacy accepted attachments without waiting 48 hours', async () => {
+  const f = fixture(); await f.handler(request());
+  const key = `application/${REQUEST_ID}`;
+  f.store.records.get(key).data.envelope = {attachments:[{content:'encrypted-fixture'}]};
+  assert.deepEqual(await pruneApplicationRecords(f.store, DATE), {redacted:1,deleted:0});
+  assert.equal(f.store.records.get(key).data.envelope, undefined);
+  assert.equal((await f.handler(request())).status,200);
   assert.equal(f.sends.length,1);
 });

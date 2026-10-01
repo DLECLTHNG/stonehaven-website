@@ -47,4 +47,7 @@ export default async function validateLead(request) {
   if (Object.keys(errors).length) return reject(422, errors);
 }
 
-export const config = { path: '/*', method: 'POST', onError: 'fail' };
+// Platform limits apply across instances; allow normal retries and shared offices.
+export const config = { path: '/*', method: 'POST', onError: 'fail',
+  rateLimit: { windowSize: 60, windowLimit: 60, aggregateBy: ['ip', 'domain'] },
+};
