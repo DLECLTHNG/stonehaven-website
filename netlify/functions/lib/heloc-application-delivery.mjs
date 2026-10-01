@@ -214,7 +214,10 @@ export function createApplicationHandler({ env = process.env, now = () => new Da
       try { receipt = await response.json(); } catch { return unavailable(); }
       if (!response.ok || typeof receipt?.id !== 'string' || !/^[a-zA-Z0-9_-]{8,100}$/.test(receipt.id)) return unavailable();
       const acceptedAt = now().toISOString();
-      const accepted = { ...record, status: 'accepted', accepted_at: acceptedAt, provider_id: receipt.id };
+      // Once the provider accepts the immutable message, retries only need the receipt.
+      // Keep no attachment or email envelope in the accepted storage record.
+      const { envelope, ...receiptRecord } = record;
+      const accepted = { ...receiptRecord, status: 'accepted', accepted_at: acceptedAt, provider_id: receipt.id };
       const saved = await store.setJSON(key, accepted, { onlyIfMatch: stored.etag });
       if (!saved.modified) {
         const latest = await store.getWithMetadata(key, { type: 'json', consistency: 'strong' });
@@ -230,7 +233,8 @@ export function createApplicationHandler({ env = process.env, now = () => new Da
 }
 
 // Invoke from a production scheduled function. No applicant details are read out or logged.
-// Attachments expire after 48h; opaque receipts remain 30d to suppress old client retries.
+// Accepted attachments are removed immediately; cleanup also handles older accepted records.
+// Pending attachments expire at the first cleanup after 48h; opaque receipts remain 30d.
 export async function pruneApplicationRecords(store, clock = new Date()) {
   const listing = await store.list({ prefix: 'application/' });
   let redacted = 0;
@@ -240,7 +244,7 @@ export async function pruneApplicationRecords(store, clock = new Date()) {
     if (!stored?.data || !Number.isFinite(Date.parse(stored.data.created_at))) continue;
     const age = clock.getTime() - Date.parse(stored.data.created_at);
     if (age >= RECEIPT_RETENTION_MS) { await store.delete(key); deleted++; }
-    else if (age >= ATTACHMENT_RETENTION_MS && stored.data.envelope) {
+    else if ((stored.data.status === 'accepted' || age >= ATTACHMENT_RETENTION_MS) && stored.data.envelope) {
       const { envelope, ...receipt } = stored.data;
       if (receipt.status !== 'accepted') receipt.status = 'expired';
       const result = await store.setJSON(key, receipt, { onlyIfMatch: stored.etag });

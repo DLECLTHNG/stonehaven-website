@@ -6,9 +6,9 @@
    prepayment explainer, the six-step progressive form, internal
    lead classification, and the summary handoff to the thanks page.
 
-   Nothing here stores credit or financial details in localStorage —
-   step progress persists only non-sensitive property fields, and the
-   full summary rides in sessionStorage for the confirmation page only.
+   Draft property details stay in sessionStorage for at most 30 minutes.
+   Credit, reserves and contact fields are excluded from draft persistence.
+   The confirmation summary also stays in sessionStorage.
    ============================================================ */
 (function () {
   "use strict";
@@ -165,18 +165,30 @@
     return ok;
   }
 
+  var DRAFT_KEY = "sh_dscr_review_session";
+  var DRAFT_TTL = 30 * 60 * 1000;
   function saveProgress() {
     try {
       var data = {};
-      SAFE_SAVE.forEach(function (id) { var el = $(id); if (el && el.value) data[id] = el.value; });
-      localStorage.setItem("sh_dscr_review", JSON.stringify(data));
+      SAFE_SAVE.forEach(function (id) { var el = $(id); if (el && el.value) data[id] = el.value.slice(0, 200); });
+      sessionStorage.setItem(DRAFT_KEY, JSON.stringify({ savedAt: Date.now(), fields: data }));
     } catch (e) {}
   }
   function restoreProgress() {
+    // Remove the old persistent draft without importing it onto a shared device.
+    try { localStorage.removeItem("sh_dscr_review"); } catch (e) {}
     try {
-      var data = JSON.parse(localStorage.getItem("sh_dscr_review") || "{}");
-      Object.keys(data).forEach(function (id) { var el = $(id); if (el && !el.value) el.value = data[id]; });
-    } catch (e) {}
+      var saved = JSON.parse(sessionStorage.getItem(DRAFT_KEY) || "null");
+      if (!saved || typeof saved.savedAt !== "number" || !Number.isFinite(saved.savedAt) ||
+          saved.savedAt > Date.now() || Date.now() - saved.savedAt >= DRAFT_TTL ||
+          !saved.fields || typeof saved.fields !== "object" || Array.isArray(saved.fields)) {
+        sessionStorage.removeItem(DRAFT_KEY); return;
+      }
+      SAFE_SAVE.forEach(function (id) {
+        var value = saved.fields[id], el = $(id);
+        if (el && !el.value && typeof value === "string" && value.length <= 200) el.value = value;
+      });
+    } catch (e) { try { sessionStorage.removeItem(DRAFT_KEY); } catch (ignored) {} }
   }
 
   /* internal-only lead classification — travels in the payload, never shown */
@@ -235,7 +247,7 @@
         var hidden = $("r-leadclass"); if (hidden) hidden.value = cls;
         try { sessionStorage.setItem("sh_dscr_summary", JSON.stringify(buildSummary())); } catch (err) {}
         track("funnel_step", { page: "dscr-review", step: STEPS });
-        try { localStorage.removeItem("sh_dscr_review"); } catch (err) {}
+        try { sessionStorage.removeItem(DRAFT_KEY); localStorage.removeItem("sh_dscr_review"); } catch (err) {}
       }, true);
     }
 
