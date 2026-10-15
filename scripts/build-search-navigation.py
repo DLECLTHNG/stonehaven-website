@@ -9,6 +9,7 @@ from seo_brand_assets import normalize_brand_assets
 from seo_discovery import build_discovery_files
 from seo_contextual_links import transform as contextual_links
 from cre_search_journeys import transform as cre_search_journeys
+from search_answers import transform as search_answers
 from site_presentation import normalize_presentation
 from site_positioning import build as build_positioning, footer as positioning_footer
 R=Path(__file__).resolve().parent.parent
@@ -36,6 +37,7 @@ for path,(file,text) in pages.items():
  text=normalize_page_metadata(text,path,title_overrides)
  text=text.replace('<b>Christiaan De Leeuw</b>','<a href="/management#chris-de-leeuw"><b>Chris De Leeuw</b></a>')
  if re.search(r'<meta[^>]+name="robots"[^>]+content="[^"]*noindex',text) or '<main>' not in text:
+  text=search_answers(text,path)
   text=normalize_brand_assets(text)
   if text!=file.read_text():file.write_text(text)
   continue
@@ -92,6 +94,7 @@ for path,(file,text) in pages.items():
   text=text.replace('</main>',marker('CRE',addition)+'</main>')
  text=cre_search_journeys(text,path)
  text=contextual_links(text,path,pages)
+ text=search_answers(text,path)
  if 'SEARCH-NAV:' in text:text=text.replace('</head>','<link rel="stylesheet" href="/search-navigation.css?v=1"/></head>')
  text=normalize_brand_assets(text)
  file.write_text(text)

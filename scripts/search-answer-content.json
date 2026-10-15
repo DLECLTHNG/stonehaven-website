@@ -1,0 +1,236 @@
+{
+  "/commercial": {
+    "en": {
+      "heading": "Which commercial financing structure fits the property?",
+      "intro": "A construction budget, a transitional building and a stabilized rental require different reviews. Start with the property’s current condition and the way the debt will be repaid.",
+      "columns": [
+        "Property or plan",
+        "What determines the structure",
+        "Prepare for review"
+      ],
+      "rows": [
+        [
+          "Ground-up construction",
+          "Eligible project costs, completed value, cash between draws and the sale or refinance exit.",
+          "Site control, plans, budget, schedule and builder experience."
+        ],
+        [
+          "Heavy renovation or bridge",
+          "Current condition, improvement costs, time to stabilize and the amount the exit can repay.",
+          "Acquisition or payoff, renovation scope, rent assumptions and exit calculation."
+        ],
+        [
+          "Stabilized commercial property",
+          "Net operating income, debt service, value and any debt-yield requirement.",
+          "Rent roll, operating statements, existing debt and requested terms."
+        ],
+        [
+          "1–4 unit investment rental",
+          "Eligible monthly rent compared with the qualifying housing payment; credit, equity and reserves still matter.",
+          "Lease or market rent, taxes, insurance, association dues and purchase price or payoff."
+        ]
+      ],
+      "after": "<p>For income-producing commercial property, <strong>DSCR = annual net operating income ÷ annual debt service</strong>. <strong>LTV = loan amount ÷ property value</strong>. <strong>LTC = loan amount ÷ eligible project cost</strong>. These measure different limits; a high LTC does not establish the cash needed at closing or between draws.</p><p>Work through <a href=\"/resources/how-lenders-size-commercial-loans\">a commercial loan-sizing example</a>, compare <a href=\"/resources/bridge-vs-permanent-financing\">bridge and permanent financing</a>, or prepare <a href=\"/commercial/construction-loans\">a construction request</a>.</p><p>Refinancing an existing balance? Review <a href=\"/blog/commercial-refinance-cash-in-gap\">why a commercial refinance can require cash at closing</a> before sizing the replacement loan.</p>",
+      "source": "Underwriting background: <a href=\"https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/index-commercial-real-estate-lending.html\">OCC commercial real estate lending handbook</a>. This supervisory reference does not set Stonehaven’s program terms."
+    },
+    "es": {
+      "heading": "¿Qué estructura de financiamiento corresponde al inmueble?",
+      "intro": "Una obra nueva, un edificio en transición y un alquiler estabilizado requieren revisiones distintas. Empiece con la condición actual del inmueble y la forma prevista de pagar la deuda.",
+      "columns": [
+        "Inmueble o plan",
+        "Qué determina la estructura",
+        "Qué preparar"
+      ],
+      "rows": [
+        [
+          "Obra nueva",
+          "Costos admisibles, valor terminado, efectivo entre desembolsos y salida por venta o refinanciamiento.",
+          "Control del terreno, planos, presupuesto, calendario y experiencia."
+        ],
+        [
+          "Renovación importante o préstamo puente",
+          "Condición actual, costo de mejoras, tiempo de estabilización y capacidad de pago de la salida.",
+          "Compra o liquidación, alcance de obra, rentas previstas y cálculo de salida."
+        ],
+        [
+          "Inmueble comercial estabilizado",
+          "Ingreso operativo neto, servicio de deuda, valor y cualquier requisito de rendimiento de deuda.",
+          "Lista de alquileres, estados operativos, deuda actual y términos solicitados."
+        ],
+        [
+          "Alquiler de inversión de 1 a 4 unidades",
+          "Renta mensual admisible frente al pago de vivienda para calificar; crédito, capital y reservas también cuentan.",
+          "Contrato o renta de mercado, impuestos, seguro, cuotas y precio o liquidación."
+        ]
+      ],
+      "after": "<p>Para un inmueble comercial que produce ingresos, <strong>DSCR = ingreso operativo neto anual ÷ servicio anual de deuda</strong>. <strong>LTV = préstamo ÷ valor del inmueble</strong>. <strong>LTC = préstamo ÷ costo admisible del proyecto</strong>. Son límites distintos; un LTC alto no determina el efectivo necesario al cierre o entre desembolsos.</p><p>Compare <a href=\"/resources/how-lenders-size-commercial-loans\">un ejemplo de cálculo comercial</a>, <a href=\"/resources/bridge-vs-permanent-financing\">financiamiento puente y permanente</a> o prepare <a href=\"/es/commercial/construction-loans\">una solicitud de construcción</a>.</p><p>Si refinancia un saldo existente, revise <a href=\"/es/blog/commercial-refinance-cash-in-gap\">por qué un refinanciamiento comercial puede requerir efectivo al cierre</a> antes de calcular el nuevo préstamo.</p>",
+      "source": "Contexto de evaluación: <a href=\"https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/index-commercial-real-estate-lending.html\">manual de préstamos inmobiliarios comerciales de la OCC</a>. Esta referencia de supervisión no establece los términos de Stonehaven."
+    }
+  },
+  "/dscr": {
+    "en": {
+      "heading": "How to read a rental-property DSCR calculation",
+      "intro": "For a typical 1–4 unit rental analysis, divide eligible monthly rent by the qualifying monthly housing payment. PITIA means principal, interest, taxes, insurance and association dues. Confirm the program’s accepted rent and payment calculation before relying on the result.",
+      "columns": [
+        "Illustrative input",
+        "Amount"
+      ],
+      "rows": [
+        [
+          "Eligible monthly rent",
+          "$2,500"
+        ],
+        [
+          "Monthly PITIA",
+          "$2,000"
+        ],
+        [
+          "DSCR: $2,500 ÷ $2,000",
+          "1.25"
+        ]
+      ],
+      "after": "<p><strong>A 1.25 DSCR is not a 25% investment return.</strong> The $500 difference in this example is before vacancy, repairs, management and other operating costs. A qualifying ratio is also not an approval: credit, property eligibility, leverage, reserves and documentation still require review.</p><p>Commercial-property DSCR usually uses annual net operating income divided by annual debt service. Keep that calculation separate from a residential rental program’s rent-to-payment ratio. <a href=\"/commercial/5-8-unit-financing\">Five-to-eight-unit properties need a program-specific review</a>.</p><p>Check <a href=\"/blog/which-rent-counts-dscr-loan\">which rent counts</a>, then use the <a href=\"/dscr-analyzer\">rental DSCR calculator</a>. For a refinance, start with <a href=\"/dscr/cash-out-refinance\">rental-property cash-out financing</a>.</p>",
+      "source": "Method and assumptions: <a href=\"/calculation-methodology\">Stonehaven’s calculator methodology</a>. Figures above are a hypothetical calculation, not a loan offer or completed transaction."
+    },
+    "es": {
+      "heading": "Cómo interpretar el cálculo DSCR de un alquiler",
+      "intro": "En un análisis típico de alquiler de 1 a 4 unidades, divida la renta mensual admisible entre el pago mensual de vivienda para calificar. PITIA incluye capital, intereses, impuestos, seguro y cuotas de asociación. Confirme qué renta y qué pago acepta el programa.",
+      "columns": [
+        "Dato ilustrativo",
+        "Importe"
+      ],
+      "rows": [
+        [
+          "Renta mensual admisible",
+          "$2,500"
+        ],
+        [
+          "PITIA mensual",
+          "$2,000"
+        ],
+        [
+          "DSCR: $2,500 ÷ $2,000",
+          "1.25"
+        ]
+      ],
+      "after": "<p><strong>Un DSCR de 1.25 no es una rentabilidad del 25%.</strong> La diferencia de $500 del ejemplo es anterior a vacancia, reparaciones, administración y otros gastos operativos. La relación tampoco constituye una aprobación: crédito, inmueble, capital, reservas y documentación siguen sujetos a revisión.</p><p>El DSCR comercial suele dividir el ingreso operativo neto anual entre el servicio anual de deuda. Distinga ese cálculo de la relación entre renta y pago de un programa residencial de inversión. <a href=\"/es/commercial/5-8-unit-financing\">Los edificios de cinco a ocho unidades requieren una revisión específica</a>.</p><p>Revise <a href=\"/es/blog/which-rent-counts-dscr-loan\">qué renta cuenta</a> y use la <a href=\"/es/dscr-analyzer\">calculadora DSCR</a>. Para refinanciar, empiece con <a href=\"/dscr/cash-out-refinance\">el retiro de efectivo de una propiedad de alquiler</a>.</p>",
+      "source": "Método y supuestos: <a href=\"/calculation-methodology\">metodología de las calculadoras de Stonehaven</a>. Las cifras son hipotéticas, no una oferta ni una operación cerrada."
+    }
+  },
+  "/heloc": {
+    "en": {
+      "heading": "What is a HELOC, and how much can you request?",
+      "intro": "A home equity line of credit is reusable borrowing secured by your property during an agreed draw period. A second-lien HELOC leaves the existing first mortgage in place. Rates are commonly variable, and payments can increase when the repayment period begins.",
+      "columns": [
+        "For a Stonehaven HELOC inquiry",
+        "What to have ready"
+      ],
+      "rows": [
+        [
+          "Requested credit line",
+          "$50,000 or more"
+        ],
+        [
+          "Estimated credit score",
+          "640 or higher"
+        ],
+        [
+          "Property and existing debt",
+          "Estimated value, mortgage balance and any other liens"
+        ],
+        [
+          "Financing goal",
+          "Amount needed, timing, occupancy and repayment plan"
+        ]
+      ],
+      "after": "<p>The $50,000 and 640 thresholds are Stonehaven’s inquiry minimums, not a promise of approval. Available equity, income documentation, property eligibility and program requirements also matter.</p><p><strong>Illustrative equity calculation:</strong> at an assumed 80% combined loan-to-value limit, a $500,000 property supports $400,000 of total secured borrowing. Subtract a $300,000 first mortgage and no other liens to estimate $100,000 of potential line capacity before fees or further limits. The 80% assumption is an example, not a universal program maximum.</p><p>Compare <a href=\"/blog/heloc-vs-cash-out-refinance\">a HELOC with cash-out refinancing</a> or use the <a href=\"/heloc-planning-tools\">home equity planning tools</a> to test your own assumptions.</p>",
+      "source": "Product background: <a href=\"https://www.consumerfinance.gov/ask-cfpb/what-is-a-home-equity-line-of-credit-heloc-en-107/\">CFPB explanation of HELOCs</a>. Borrowing is secured by the property, which can be at risk if payments are not made."
+    },
+    "es": {
+      "heading": "¿Qué es una HELOC y cuánto puede solicitar?",
+      "intro": "Una línea de crédito sobre el valor de la vivienda permite reutilizar crédito garantizado por el inmueble durante el período de disposición. Una HELOC de segundo gravamen conserva la primera hipoteca. La tasa suele ser variable y el pago puede aumentar al comenzar la amortización.",
+      "columns": [
+        "Para una consulta HELOC con Stonehaven",
+        "Qué preparar"
+      ],
+      "rows": [
+        [
+          "Línea solicitada",
+          "$50,000 o más"
+        ],
+        [
+          "Puntaje de crédito estimado",
+          "640 o más"
+        ],
+        [
+          "Inmueble y deuda actual",
+          "Valor estimado, saldo hipotecario y otros gravámenes"
+        ],
+        [
+          "Objetivo",
+          "Monto necesario, plazo, ocupación y plan de pago"
+        ]
+      ],
+      "after": "<p>Los umbrales de $50,000 y 640 son mínimos de consulta de Stonehaven, no una promesa de aprobación. También cuentan el patrimonio, la documentación de ingresos, el inmueble y los requisitos del programa.</p><p><strong>Cálculo ilustrativo:</strong> con un límite combinado supuesto del 80%, un inmueble de $500,000 admite $400,000 de deuda garantizada total. Restar una primera hipoteca de $300,000, sin otros gravámenes, deja una capacidad estimada de $100,000 antes de cargos u otros límites. El 80% es un supuesto del ejemplo, no un máximo universal.</p><p>Compare <a href=\"/es/blog/heloc-vs-cash-out-refinance\">HELOC y refinanciamiento con retiro</a> o use las <a href=\"/es/heloc-planning-tools\">herramientas de planificación</a>.</p>",
+      "source": "Contexto del producto: <a href=\"https://www.consumerfinance.gov/ask-cfpb/what-is-a-home-equity-line-of-credit-heloc-en-107/\">explicación de HELOC de la CFPB, en inglés</a>. El inmueble garantiza la deuda y puede estar en riesgo si no paga."
+    }
+  },
+  "/cash-out-refinance": {
+    "en": {
+      "heading": "How much cash do you actually receive from a refinance?",
+      "intro": "Estimated cash received equals the new loan amount minus mortgage payoffs, other debts paid at closing and transaction costs paid from the loan. The new loan balance is not the amount available to spend.",
+      "columns": [
+        "Hypothetical closing calculation",
+        "Amount"
+      ],
+      "rows": [
+        [
+          "New mortgage",
+          "$400,000"
+        ],
+        [
+          "Existing mortgage payoff",
+          "−$300,000"
+        ],
+        [
+          "Closing costs and other closing items paid from proceeds",
+          "−$12,000"
+        ],
+        [
+          "Estimated cash received",
+          "$88,000"
+        ]
+      ],
+      "after": "<p>This example assumes no other debt payoffs. The final payoff includes amounts due through the closing date, and actual costs depend on the transaction. Credit, property use, valuation and the selected program determine the loan limit.</p><p>For your own home, compare the total cost and repayment period of <a href=\"/heloc\">a HELOC</a> against replacing the first mortgage. For an investment rental, start with <a href=\"/dscr/cash-out-refinance\">DSCR cash-out refinancing</a>, which has different qualification and property-use requirements. For an income-producing commercial building, use the <a href=\"/resources/commercial-refinance-guide\">commercial refinance guide</a>.</p>",
+      "source": "Product comparison: <a href=\"https://www.consumerfinance.gov/ask-cfpb/what-other-types-of-loans-are-similar-to-a-heloc-en-253/\">CFPB explanation of cash-out refinancing and other equity options</a>. The calculation is illustrative and is not a quote."
+    },
+    "es": {
+      "heading": "¿Cuánto efectivo recibe realmente al refinanciar?",
+      "intro": "El efectivo estimado es el nuevo préstamo menos la liquidación hipotecaria, otras deudas pagadas al cierre y los costos de la operación pagados con el préstamo. El nuevo saldo no equivale al efectivo disponible.",
+      "columns": [
+        "Cálculo hipotético del cierre",
+        "Importe"
+      ],
+      "rows": [
+        [
+          "Nueva hipoteca",
+          "$400,000"
+        ],
+        [
+          "Liquidación de la hipoteca actual",
+          "−$300,000"
+        ],
+        [
+          "Costos y otras partidas del cierre pagadas con los fondos",
+          "−$12,000"
+        ],
+        [
+          "Efectivo estimado recibido",
+          "$88,000"
+        ]
+      ],
+      "after": "<p>Este ejemplo supone que no se liquidan otras deudas. La liquidación final incluye importes hasta la fecha del cierre; los costos dependen de la operación. El crédito, uso del inmueble, valoración y programa determinan el límite del préstamo.</p><p>Para su vivienda, compare el costo total y el plazo de una <a href=\"/es/heloc\">HELOC</a> con reemplazar la primera hipoteca. Para un alquiler de inversión, revise el <a href=\"/dscr/cash-out-refinance\">refinanciamiento DSCR con retiro de efectivo</a>, con requisitos distintos. Para un edificio comercial que produce ingresos, use la <a href=\"/resources/commercial-refinance-guide\">guía de refinanciamiento comercial</a>.</p>",
+      "source": "Comparación: <a href=\"https://www.consumerfinance.gov/ask-cfpb/what-other-types-of-loans-are-similar-to-a-heloc-en-253/\">explicación de opciones sobre el patrimonio de la CFPB, en inglés</a>. El cálculo es ilustrativo y no constituye una cotización."
+    }
+  }
+}

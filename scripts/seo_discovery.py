@@ -3,6 +3,7 @@ from html.parser import HTMLParser
 from html import unescape
 from urllib.parse import urljoin
 import re
+import xml.etree.ElementTree as ET
 
 ORIGIN = 'https://stonehavencre.com'
 PILLARS = ['/', '/commercial', '/commercial/construction-loans', '/commercial/fix-and-flip',
@@ -85,7 +86,11 @@ def build_discovery_files(root):
             continue
         text += f'- [{title(path)}]({ORIGIN}/dscr/{path.stem})\n'
     (root / 'llms.txt').write_text(text)
-    full = '# Stonehaven Lending: public pillar content\n\nLast updated: 2026-09-28.\n\n'
+    ns = {'sm': 'http://www.sitemaps.org/schemas/sitemap/0.9'}
+    tree = ET.fromstring((root / 'sitemap.xml').read_text())
+    dates = [u.findtext('sm:lastmod', default='', namespaces=ns) for u in tree.findall('sm:url', ns) if u.findtext('sm:loc', default='', namespaces=ns) in {ORIGIN + route for route in PILLARS}]
+    updated = max(dates, default='')
+    full = '# Stonehaven Lending: public pillar content\n\nLatest source content update: ' + updated + '.\n\n'
     full += 'Selected public English pillar excerpts for the three promoted business lines. Navigation, input controls, footers and references to other programs are omitted. Excerpts retain their source links. Canonical web pages remain authoritative. This file does not establish indexing, rankings or program eligibility.\n\n'
     for route in PILLARS:
         path = page_file(root, route)

@@ -1,6 +1,6 @@
 # Stonehaven Lending: public pillar content
 
-Last updated: 2026-09-28.
+Latest source content update: 2026-10-15.
 
 Selected public English pillar excerpts for the three promoted business lines. Navigation, input controls, footers and references to other programs are omitted. Excerpts retain their source links. Canonical web pages remain authoritative. This file does not establish indexing, rankings or program eligibility.
 
@@ -151,6 +151,27 @@ Get a project review by text (https://stonehavencre.com/commercial#inquire) Book
 The Short Answer
 
 Commercial real estate financing supports property acquisition, construction, repositioning and refinancing. The right structure depends on the property’s cash flow or build plan, value, borrower profile and repayment strategy. Stonehaven helps you compare financing options and prepare the transaction.
+
+### Which commercial financing structure fits the property?
+
+A construction budget, a transitional building and a stabilized rental require different reviews. Start with the property’s current condition and the way the debt will be repaid.
+
+Scroll sideways to compare all columns.
+
+Which commercial financing structure fits the property?
+ | Property or plan | What determines the structure | Prepare for review
+ | Ground-up construction | Eligible project costs, completed value, cash between draws and the sale or refinance exit. | Site control, plans, budget, schedule and builder experience.
+ | Heavy renovation or bridge | Current condition, improvement costs, time to stabilize and the amount the exit can repay. | Acquisition or payoff, renovation scope, rent assumptions and exit calculation.
+ | Stabilized commercial property | Net operating income, debt service, value and any debt-yield requirement. | Rent roll, operating statements, existing debt and requested terms.
+ | 1–4 unit investment rental | Eligible monthly rent compared with the qualifying housing payment; credit, equity and reserves still matter. | Lease or market rent, taxes, insurance, association dues and purchase price or payoff.
+
+For income-producing commercial property, DSCR = annual net operating income ÷ annual debt service . LTV = loan amount ÷ property value . LTC = loan amount ÷ eligible project cost . These measure different limits; a high LTC does not establish the cash needed at closing or between draws.
+
+Work through a commercial loan-sizing example (https://stonehavencre.com/resources/how-lenders-size-commercial-loans) , compare bridge and permanent financing (https://stonehavencre.com/resources/bridge-vs-permanent-financing) , or prepare a construction request (https://stonehavencre.com/commercial/construction-loans) .
+
+Refinancing an existing balance? Review why a commercial refinance can require cash at closing (https://stonehavencre.com/blog/commercial-refinance-cash-in-gap)  before sizing the replacement loan.
+
+Underwriting background: OCC commercial real estate lending handbook (https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/index-commercial-real-estate-lending.html) . This supervisory reference does not set Stonehaven’s program terms.
 
 ### What are you planning?
 
@@ -1784,6 +1805,24 @@ eligible monthly rent ÷ monthly PITIA = residential DSCR
 Commercial: NOI ÷ annual debt service.
 
 Calculate My DSCR (https://stonehavencre.com/dscr-analyzer) Request a Deal Review (https://stonehavencre.com/dscr-review)
+
+### How to read a rental-property DSCR calculation
+
+For a typical 1–4 unit rental analysis, divide eligible monthly rent by the qualifying monthly housing payment. PITIA means principal, interest, taxes, insurance and association dues. Confirm the program’s accepted rent and payment calculation before relying on the result.
+
+How to read a rental-property DSCR calculation
+ | Illustrative input | Amount
+ | Eligible monthly rent | $2,500
+ | Monthly PITIA | $2,000
+ | DSCR: $2,500 ÷ $2,000 | 1.25
+
+A 1.25 DSCR is not a 25% investment return.  The $500 difference in this example is before vacancy, repairs, management and other operating costs. A qualifying ratio is also not an approval: credit, property eligibility, leverage, reserves and documentation still require review.
+
+Commercial-property DSCR usually uses annual net operating income divided by annual debt service. Keep that calculation separate from a residential rental program’s rent-to-payment ratio. Five-to-eight-unit properties need a program-specific review (https://stonehavencre.com/commercial/5-8-unit-financing) .
+
+Check which rent counts (https://stonehavencre.com/blog/which-rent-counts-dscr-loan) , then use the rental DSCR calculator (https://stonehavencre.com/dscr-analyzer) . For a refinance, start with rental-property cash-out financing (https://stonehavencre.com/dscr/cash-out-refinance) .
+
+Method and assumptions: Stonehaven’s calculator methodology (https://stonehavencre.com/calculation-methodology) . Figures above are a hypothetical calculation, not a loan offer or completed transaction.
 
 Start with the essentials
 

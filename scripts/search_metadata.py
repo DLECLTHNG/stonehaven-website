@@ -140,6 +140,17 @@ def set_meta(text, key, value, attribute='property'):
 def normalize_page_metadata(text, path, title_overrides):
     text = normalize_entities(text, path)
     metadata = HeadMetadata(text)
+    # Visible language navigation must lead to the same page as its declared
+    # alternate, rather than a different program or the current language.
+    def language_link(match):
+        tag = match[0]
+        lang = re.search(r'\bhreflang="([^"]+)"', tag)
+        if lang and lang[1] in metadata.alternates:
+            target = metadata.alternates[lang[1]]
+            if target.startswith(ORIGIN + '/'):
+                tag = re.sub(r'\bhref="[^"]*"', 'href="' + escape(target[len(ORIGIN):], quote=True) + '"', tag)
+        return tag
+    text = re.sub(r'<a\b[^>]*class="lang-opt\b[^>]*>', language_link, text)
     if not metadata.indexable and 'og:image:alt' in metadata.meta:
         text = set_meta(text, 'og:image:alt', 'Stonehaven Lending, Residential and Commercial')
     if metadata.indexable and path in title_overrides:
