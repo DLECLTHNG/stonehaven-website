@@ -27,7 +27,7 @@
         "h": "Ownership changes and the taxable-value assumption"
       },
       "New Mexico's property-tax code addresses residential valuation limits and the treatment of ownership changes. A buyer should ask the county assessor how the transfer affects the next applicable valuation. An inherited taxable-value assumption can distort DSCR, even where the projected lease income is well supported by the market.",
-      "State reference: <a href=\"https://realfile.tax.newmexico.gov/Property%20Tax%20Code.pdf\">New Mexico Taxation and Revenue Department: property tax code, March 2026</a>.",
+      "State reference: <a href=\"https://www.tax.newmexico.gov/businesses/state-assessed-property-bureau-overview/additional-info/\">New Mexico Taxation and Revenue Department: property tax code and resources</a>.",
       {
         "h": "Documents and questions for this property review"
       },
@@ -75,7 +75,7 @@
         "h": "Cambio de titularidad y supuesto de valor imponible"
       },
       "El código fiscal de Nuevo México trata los límites de valoración residencial y los cambios de titularidad. Pregunte al tasador cómo afecta la transferencia a la siguiente valoración aplicable. Conservar el supuesto fiscal anterior puede distorsionar DSCR aunque la renta proyectada tenga buen respaldo de mercado.",
-      "Fuente estatal: <a href=\"https://realfile.tax.newmexico.gov/Property%20Tax%20Code.pdf\">New Mexico Taxation and Revenue Department: property tax code, March 2026</a>.",
+      "Fuente estatal: <a href=\"https://www.tax.newmexico.gov/businesses/state-assessed-property-bureau-overview/additional-info/\">New Mexico Taxation and Revenue Department: property tax code and resources</a>.",
       {
         "h": "Documentos y preguntas para revisar esta propiedad"
       },
@@ -100,8 +100,8 @@
   },
   "sources": [
     {
-      "title": "New Mexico Taxation and Revenue Department: property tax code, March 2026",
-      "url": "https://realfile.tax.newmexico.gov/Property%20Tax%20Code.pdf",
+      "title": "New Mexico Taxation and Revenue Department: property tax code and resources",
+      "url": "https://www.tax.newmexico.gov/businesses/state-assessed-property-bureau-overview/additional-info/",
       "checked_at": "2026-09-12"
     }
   ],

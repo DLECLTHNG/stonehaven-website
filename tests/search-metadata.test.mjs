@@ -16,6 +16,14 @@ const page = (path, body = '', head = '') => `<!doctype html><html><head><title>
 const ld = value => `<script type="application/ld+json">${JSON.stringify(value)}</script>`;
 const schema = text => JSON.parse(text.match(/<script type="application\/ld\+json">(.*?)<\/script>/s)[1]);
 
+test('language navigation follows the declared alternate and preserves other links', () => {
+  const input = page('/cash-out-refinance', '<a class="lang-opt" href="/es/residential/refinance" hreflang="es">ES</a><a href="/es/contact">Contact</a>', `<link rel="alternate" hreflang="es" href="${origin}/es/cash-out-refinance"/>`);
+  const output = run('normalize_page_metadata', [input, '/cash-out-refinance', {}]);
+  assert.match(output, /class="lang-opt" href="\/es\/cash-out-refinance"/);
+  assert.match(output, /href="\/es\/contact"/);
+  assert.equal(run('normalize_page_metadata', [output, '/cash-out-refinance', {}]), output);
+});
+
 test('organization identifiers reach nested providers and authors without overwriting human identity', () => {
   const input = page('/test', '', ld({ '@context': 'https://schema.org', '@graph': [
     { '@type': 'Service', provider: { '@type': 'FinancialService', name: 'Stonehaven Lending', email: 'chris@stonehavencre.com', image: `${origin}/assets/stonehaven-handpainted-logo.png`, identifier: { '@type': 'PropertyValue', propertyID: 'other', value: 'retained' } } },
