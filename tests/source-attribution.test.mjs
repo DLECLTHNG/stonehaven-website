@@ -9,7 +9,7 @@ function page(options = {}) {
   const storage = options.storage || new Map(), requests = [], events = [], meta = [], ads = [];
   const attrs = { 'data-sh-form': 'cre-review', 'data-sh-product': 'Commercial', ...(options.formAttrs || {}) };
   const input = { name: 'Synthetic Example', email: 'private@example.com', phone: '2025550123', company_website: '', ...(options.fields || {}) };
-  const fields = Object.fromEntries(Object.entries(input).map(([name, value]) => [name, { name, value, id: name, type: 'text', style: {}, hasAttribute: () => true, addEventListener() {}, setAttribute() {}, removeAttribute() {}, focus() {} }]));
+  const fields = Object.fromEntries(Object.entries(input).map(([name, value]) => [name, { name, value, id: name, type: 'text', required: true, style: {}, hasAttribute(key) { return key === 'required' ? this.required : true; }, addEventListener() {}, setAttribute() {}, removeAttribute() {}, focus() {} }]));
   for (const name of options.missingFields || []) delete fields[name];
   let validationBox;
   const button = { style: {} }, handlers = {}, docHandlers = {}, error = { style: {} };
@@ -87,7 +87,18 @@ test('known AI referrals, paid campaigns and direct visits are classified conser
     ['https://google.com.evil.com/', '', 'referral'],
     ['https://chatgpt.com.evil.com/', '', 'referral'],
     ['https://industryassociation.org/directory', '', 'referral'],
-    ['', '?utm_source=chatgpt', 'direct_or_unknown'],
+    ['', '?utm_source=chatgpt', 'ai_referral'],
+    ['', '?utm_source=chatgpt.com', 'ai_referral'],
+    ['', '?utm_source=perplexity.ai', 'ai_referral'],
+    ['', '?utm_source=Claude', 'ai_referral'],
+    ['', '?utm_source=copilot.microsoft.com', 'ai_referral'],
+    ['', '?utm_source=gemini', 'ai_referral'],
+    ['', '?utm_source=chatgpt.com&utm_medium=cpc', 'paid_campaign'],
+    ['', '?utm_source=chatgpt.com&utm_medium=paid_social', 'paid_campaign'],
+    ['', '?utm_source=chatgpt.com.evil.com', 'direct_or_unknown'],
+    ['', '?utm_source=chatgpt.com/private', 'direct_or_unknown'],
+    ['', '?utm_source=google', 'direct_or_unknown'],
+    ['https://www.google.com/', '', 'organic_search'],
     ['', '?gclid=opaque-click', 'direct_or_unknown'],
     ['https://www.stonehavencre.com/blog', '', 'direct_or_unknown'],
     ['', '', 'direct_or_unknown']
@@ -395,7 +406,7 @@ test('land development inquiries retain project details and Commercial classific
   for (const prefix of ['', 'es/']) {
     const route = '/' + prefix + 'commercial/land-development-loans';
     const html = readFileSync(prefix + 'commercial/land-development-loans.html', 'utf8');
-    const formTag = html.match(/<form\b[^>]*data-sh-form=[^>]*>/)[0];
+    const formTag = html.match(/<form\b[^>]*data-sh-form="commercial-land-development-loans"[^>]*>/)[0];
     const formAttrs = Object.fromEntries([...formTag.matchAll(/(data-sh-[\w-]+)="([^"]*)"/g)].map(match => [match[1], match[2]]));
     const fields = { total_project_cost: '4800000', requested_amount: '3360000', project_value: '7000000',
       project_type: 'Land acquisition and development', property_owned: 'Under contract', timeline: '60-90 days',
@@ -412,4 +423,50 @@ test('land development inquiries retain project details and Commercial classific
     assert.equal(p.events.filter(event => event[1] === 'generate_lead').length, 1);
     assert.doesNotMatch(JSON.stringify([p.events, p.meta]), /4800000|3360000|7000000|Builder discussions underway|private@example.com/);
   }
+});
+
+
+test('quick inquiry preserves email and name requirements and conditional text contact', async () => {
+  for (const [fields, accepted] of [
+    [{contact_preference:'Email', phone:''}, true],
+    [{contact_preference:'Text', phone:''}, false],
+    [{contact_preference:'Text', phone:'2025550123'}, true],
+    [{contact_preference:'Email', phone:'123'}, false],
+    [{contact_preference:'Email', phone:'', name:''}, false],
+    [{contact_preference:'Email', phone:'', email:''}, false],
+  ]) {
+    const p = page({fields, formAttrs:{'data-sh-form':'quick-dscr','data-sh-product':'DSCR'}});
+    p.submit(); await flush();
+    assert.equal(p.requests.length, accepted ? 1 : 0, JSON.stringify(fields));
+    assert.equal(p.events.filter(e=>e[1]==='generate_lead').length, accepted ? 1 : 0);
+    if (accepted) { assert.equal(p.data().product,'DSCR'); assert.equal(p.extra().contact_preference,fields.contact_preference); }
+  }
+  const p = page({fields:{contact_preference:'Text',phone:''}});
+  p.submit(); await flush(); assert.equal(p.requests.length,0);
+  p.fields.contact_preference.value='Email';
+  p.submit(); await flush(); assert.equal(p.requests.length,1);
+});
+
+
+test('all generated quick forms deliver their rendered program and language without requiring deal numbers',async()=>{
+ const roots=['.','es','commercial','es/commercial','residential','es/residential','dscr'];let count=0;
+ for(const dir of roots) for(const file of readdirSync(dir)) {
+  if(!file.endsWith('.html'))continue;
+  const html=readFileSync(dir+'/'+file,'utf8');
+  const forms=[...html.matchAll(/<form\b[^>]*data-sh-form="quick-[^"]*"[^>]*>[\s\S]*?<\/form>/g)];
+  assert.ok(forms.length<=1,'duplicated quick form '+dir+'/'+file);
+  for(const [form] of forms){
+   count++;
+   const formAttrs=Object.fromEntries([...form.matchAll(/(data-sh-[\w-]+)="([^"]*)"/g)].map(m=>[m[1],m[2]]));
+   assert.match(form, /name="name"[^>]*required/);assert.match(form, /name="email"[^>]*required/);
+   assert.doesNotMatch(form, /name="(?:ssn|income|home_value|credit_score)"/);
+   const purpose=form.match(/name="loan_program" value="([^"]*)"/)[1];
+   const p=page({formAttrs,fields:{phone:'',contact_preference:'Email',loan_program:purpose,inquiry_path:'quick-v1'}});
+   p.submit();await flush();
+   assert.equal(p.requests.length,1);assert.equal(p.data().product,formAttrs['data-sh-product']);
+   assert.equal(p.data().lang,formAttrs['data-sh-lang']);assert.equal(p.extra().loan_program,purpose);
+   assert.equal(p.extra().inquiry_path,'quick-v1');
+  }
+ }
+ assert.equal(count,28);
 });

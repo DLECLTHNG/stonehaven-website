@@ -1,0 +1,32 @@
+[
+  {
+    "file": "cormorant-italic-latin-ext-20261018.woff2",
+    "source": "https://fonts.gstatic.com/s/cormorant/v24/H4c0BXOCl9bbnla_nHIq6oGzilJm9otsA9kQq_da4SWq847hdT2CeUc.woff2",
+    "subset": "latin-ext"
+  },
+  {
+    "file": "cormorant-italic-latin-20261018.woff2",
+    "source": "https://fonts.gstatic.com/s/cormorant/v24/H4c0BXOCl9bbnla_nHIq6oGzilJm9otsA9kQq_da7yWq847hdT2C.woff2",
+    "subset": "latin"
+  },
+  {
+    "file": "cormorant-normal-latin-ext-20261018.woff2",
+    "source": "https://fonts.gstatic.com/s/cormorant/v24/H4clBXOCl9bbnla_nHIq4Zu9qKS-awhq.woff2",
+    "subset": "latin-ext"
+  },
+  {
+    "file": "cormorant-normal-latin-20261018.woff2",
+    "source": "https://fonts.gstatic.com/s/cormorant/v24/H4clBXOCl9bbnla_nHIq75u9qKS-aw.woff2",
+    "subset": "latin"
+  },
+  {
+    "file": "inter-normal-latin-ext-20261018.woff2",
+    "source": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa25L7W0Q5n-wU.woff2",
+    "subset": "latin-ext"
+  },
+  {
+    "file": "inter-normal-latin-20261018.woff2",
+    "source": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2",
+    "subset": "latin"
+  }
+]

@@ -27,6 +27,8 @@ def footer(text,path):
     tagline=('Financiamiento inmobiliario comercial, SBA y para viviendas de alto valor. Un solo equipo responsable.' if es else 'Commercial real estate, SBA and high-value home financing. One accountable team.')
     def update(match):
         foot=match[0]
+        scope=('Financiamiento comercial, DSCR y SBA a nivel nacional, sujeto a disponibilidad por estado y programa. Financiamiento residencial en GA, AL, TN, FL, NC y SC.' if es else 'Commercial, DSCR and SBA financing nationwide, subject to state and program availability. Residential financing in GA, AL, TN, FL, NC and SC.')
+        foot=foot.replace('Programs available nationwide.',scope).replace('Préstamos a nivel nacional.',scope).replace('Programas disponibles a nivel nacional.',scope)
         foot=re.sub(r'(<div class="foot-brand">.*?</div>\s*<p>).*?(</p>)',lambda m:m[1]+tagline+m[2],foot,count=1,flags=re.S)
         foot=re.sub(r'<a href="/(?:es/)?resources/residential"[^>]*>.*?</a>','',foot,flags=re.S)
         prefix='/es' if es else ''

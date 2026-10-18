@@ -93,7 +93,14 @@
     "/blog/mortgage-broker-dscr-commercial-referral-partner",
     "/resources/how-lenders-size-commercial-loans",
     "/resources/commercial-refinance-guide",
-    "/resources/bridge-vs-permanent-financing"
+    "/resources/bridge-vs-permanent-financing",
+    "/blog/commercial-refinance-cash-in-gap",
+    "/blog/subdivision-loan-lot-release-prices",
+    "/blog/construction-loan-interest-reserve-vs-contingency",
+    "/commercial/architect-financing-partners",
+    "/commercial/construction-financing-for-architects",
+    "/commercial/land-development-loans",
+    "/commercial/multifamily-acquisition"
   ];
   function legalPolicyPath(raw) {
     // Match legal documents, not financing destinations such as /terms-sheet.
@@ -174,7 +181,11 @@
     var medium = (campaign.utm_medium || "").toLowerCase();
     if (/^(?:cpc|ppc|paid|paid_search|paid_social|display|cpm)$/.test(medium)) return "paid_campaign";
     var host = origin.replace(/^https?:\/\//, "");
-    if (/^(?:(?:www\.)?(?:chatgpt\.com|perplexity\.ai|claude\.ai)|chat\.openai\.com|copilot\.microsoft\.com|gemini\.google\.com)$/.test(host)) return "ai_referral";
+    var aiHost = /^(?:(?:www\.)?(?:chatgpt\.com|perplexity\.ai|claude\.ai)|chat\.openai\.com|copilot\.microsoft\.com|gemini\.google\.com)$/;
+    // Exact source tokens only. Never infer AI Overviews from ordinary Google,
+    // or accept lookalike hosts or URLs containing private conversation paths.
+    var source = (campaign.utm_source || "").trim().toLowerCase();
+    if (aiHost.test(host) || aiHost.test(source) || /^(?:chatgpt|perplexity|claude|copilot|gemini)$/.test(source)) return "ai_referral";
     if (/^(?:(?:www\.)?google\.(?:com|co\.uk|com\.au|ca|de|fr|es|co\.in)|(?:www\.)?(?:bing\.com|duckduckgo\.com)|search\.(?:yahoo\.com|brave\.com))$/.test(host) || medium === "organic") return "organic_search";
     return origin ? "referral" : "direct_or_unknown";
   }
@@ -305,6 +316,13 @@
   }
 
   function wireForm(form) {
+    var contactChoice = form.querySelector('[name="contact_preference"]');
+    var contactPhone = form.querySelector('[name="phone"]');
+    if (contactChoice && contactPhone) {
+      var syncContact = function () { contactPhone.required = contactChoice.value === "Text"; };
+      contactChoice.addEventListener("change", syncContact);
+      syncContact();
+    }
     // Both current and legacy product selectors control the selected lane.
     // Forms without a selector keep their fixed product classification.
     var productSel = form.querySelector('select[name="product_choice"]') || form.querySelector('select[name="product"]');
@@ -333,6 +351,7 @@
       e.preventDefault();
       if (inFlight) return;
       if (productSel) syncProduct();
+      if (contactChoice && contactPhone) syncContact();
 
       // honeypot — silently succeed so bots learn nothing
       var hp = form.querySelector('[name="company_website"]');
@@ -350,7 +369,7 @@
           !/^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+$/i.test(emailParts[0]) || /^\.|\.$|\.\./.test(emailParts[0]) ||
           !/^(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z](?:[a-z0-9-]{0,61}[a-z0-9])?$/i.test(emailParts[1] || "")) invalid.push({ el: emailEl, message: es ? "Ingrese un correo electrónico válido." : "Please enter a valid email address." });
       var phoneEl = form.querySelector('[name="phone"]');
-      if (phoneEl && phoneEl.hasAttribute("required") && phoneEl.value.replace(/\D/g, "").length < 10) invalid.push({ el: phoneEl, message: es ? "Ingrese un número de teléfono válido." : "Please enter a valid phone number." });
+      if (phoneEl && (phoneEl.hasAttribute("required") || (contactChoice && phoneEl.value.trim())) && phoneEl.value.replace(/\D/g, "").length < 10) invalid.push({ el: phoneEl, message: es ? "Ingrese un número de teléfono válido." : "Please enter a valid phone number." });
       var validationBox = form.querySelector('.lead-validation-error');
       if (validationBox) validationBox.hidden = true;
       if (invalid.length) {
@@ -367,6 +386,7 @@
         if (invalid[0].el) invalid[0].el.focus();
         return;
       }
+      [nameEl, emailEl, phoneEl].forEach(function (el) { if (el) { if (el.removeAttribute) el.removeAttribute("aria-invalid"); el.style.borderBottomColor = ""; } });
       if (/^heloc-/.test(form.getAttribute("data-sh-form") || "") || (window.SH_HELOC_FIELDS && window.SH_HELOC_FIELDS.applies(form))) {
         if (!window.SH_HELOC_FIELDS || !window.SH_HELOC_FIELDS.validate(form)) return;
       }
