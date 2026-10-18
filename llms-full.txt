@@ -470,7 +470,7 @@ Discuss your financing (https://stonehavencre.com/commercial/construction-loans#
 
 Company-reported transaction
 
-#### Construction with equity already in the land
+### Construction with equity already in the land
 
 In September 2026, Stonehaven reported arranging financing for 100% of the stated construction budget on a Brookhaven, Georgia teardown and rebuild, with the builder’s equity in the land.
 
@@ -1886,7 +1886,7 @@ Calculate My DSCR (https://stonehavencre.com/dscr-analyzer) Request a Deal Revie
 
 Company-reported transaction
 
-#### A DSCR loan to retire bridge debt
+### A DSCR loan to retire bridge debt
 
 In August 2026, Stonehaven reported arranging approximately $225,000 against a Florida single-family rental valued at about $300,000, at 75% LTV, to pay off a maturing hard-money loan.
 

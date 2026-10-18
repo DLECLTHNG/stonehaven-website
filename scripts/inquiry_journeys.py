@@ -38,7 +38,7 @@ def quick_form(product,purpose,es,path,full):
  <p class="quick-note">{t('Initial inquiry only. Financing is subject to underwriting, documentation and program availability.','Consulta inicial. El financiamiento está sujeto a evaluación, documentación y disponibilidad.')}</p>
  </div></div></section>''')
 
-def evidence(kind,es,cta):
+def evidence(kind,es,cta,level=3):
  prefix='/es' if es else ''
  if kind=='dscr':
   title='Un préstamo DSCR para liquidar deuda puente' if es else 'A DSCR loan to retire bridge debt'
@@ -50,7 +50,7 @@ def evidence(kind,es,cta):
   copy='En septiembre de 2026, Stonehaven reportó haber gestionado financiamiento para el 100% del presupuesto de construcción declarado de un proyecto de demolición y reconstrucción en Brookhaven, Georgia, con capital del constructor en el terreno.' if es else 'In September 2026, Stonehaven reported arranging financing for 100% of the stated construction budget on a Brookhaven, Georgia teardown and rebuild, with the builder’s equity in the land.'
   slug='brookhaven-ga-100-ltc-ground-up-construction'
   limit='No equivale al 100% de todos los costos del proyecto ni establece que otro constructor no necesite efectivo.' if es else 'This is not 100% of every project cost and does not establish that another builder needs no cash.'
- return '<article class="inquiry-evidence"><span class="eyebrow">'+('Operación reportada por Stonehaven' if es else 'Company-reported transaction')+'</span><h3>'+title+'</h3><p>'+copy+'</p><p class="quick-note">'+limit+'</p><p><a href="'+prefix+'/blog/'+slug+'">'+('Lea el caso completo' if es else 'Read the complete case study')+'</a> · <a href="'+cta+'">'+('Hable de su proyecto' if es else 'Discuss your project')+'</a></p></article>'
+ return '<article class="inquiry-evidence"><span class="eyebrow">'+('Operación reportada por Stonehaven' if es else 'Company-reported transaction')+'</span><h'+str(level)+'>'+title+'</h'+str(level)+'><p>'+copy+'</p><p class="quick-note">'+limit+'</p><p><a href="'+prefix+'/blog/'+slug+'">'+('Lea el caso completo' if es else 'Read the complete case study')+'</a> · <a href="'+cta+'">'+('Hable de su proyecto' if es else 'Discuss your project')+'</a></p></article>'
 
 def clean(text):
  return re.sub(r'<!-- INQUIRY-JOURNEY:[A-Z]+:START -->.*?<!-- INQUIRY-JOURNEY:[A-Z]+:END -->','',text,flags=re.S).replace(STYLE,'')
@@ -85,7 +85,7 @@ def transform(text,path):
    kind='construction' if product=='Commercial' else 'dscr'
    anchor=text.find('id="answer"');anchor=anchor if anchor>=0 else text.index('<main>')
    pos=text.index('</section>',anchor)+len('</section>')
-   text=text[:pos]+block('PROOF','<section class="wrap inquiry-proof">'+evidence(kind,es,'#quick-inquiry')+'</section>')+text[pos:]
+   text=text[:pos]+block('PROOF','<section class="wrap inquiry-proof">'+evidence(kind,es,'#quick-inquiry',level=2)+'</section>')+text[pos:]
   # Insert above the existing detailed form/review, or at the end of main.
   match=re.search(r'<section\b[^>]*id="(?:inquire|enquire|review)"',text)
   pos=match.start() if match else text.index('</main>')
