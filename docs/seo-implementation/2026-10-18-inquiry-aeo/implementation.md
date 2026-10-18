@@ -20,7 +20,7 @@ There are 28 new quick forms, all registered under the existing Netlify `lead` c
 
 The browser and shared server validator enforce the quick-form reply rules. The existing capture, email notification and CRM relay remain the delivery path. `inquiry_path=quick-v1`, financing purpose, reply preference, language and opaque submission identifier remain in the lead record. Contact fields, answers and attribution details are not added to ordinary analytics events. `generate_lead` still means accepted submission, not confirmed mailbox or CRM receipt. Source labels based on UTM tags are attribution signals, not proof of an AI recommendation. Ordinary Google traffic is not labeled AI.
 
-The measured homepage mobile audit identified render-blocking styles and low-contrast footer text. The English and Spanish homepages now combine six local stylesheets in their original cascade order, with a content-hashed URL, and improve the flagged numeral/footer contrast. Google Fonts, measurement, advertising and security controls remain intact.
+The measured homepage mobile audit identified render-blocking styles and low-contrast footer text. The English and Spanish homepages now combine six local stylesheets in their original cascade order, with a content-hashed URL, and improve the flagged numeral/footer contrast. The existing Cormorant and Inter fonts are served locally on the two homepages, with Latin and Latin-extended files, retained OFL licenses and priority font preloads. Measurement, advertising and security controls remain intact.
 
 ## Evidence and editorial treatment
 
@@ -47,6 +47,6 @@ For approved profiles, reconcile their details, add links to the relevant financ
 
 ## Next three actions
 
-1. Approve the preview, publish through the existing Git/Netlify workflow, then verify one clearly labeled quick inquiry through Netlify, the office mailbox and the CRM before measuring it as delivered.
+1. Approve the preview, publish through the existing Git/Netlify workflow, then verify the quick inquiry through the production CRM relay before measuring it as fully delivered. The preview test was saved in Netlify and Chris confirmed its office email alert. CRM forwarding is disabled in preview by configuration, and remains enabled in production. No preview credentials or permissions were expanded.
 2. Reconcile identity, licenses, response hours and the funded-volume evidence. Then align verified profiles and add genuinely reviewed expertise and approved transaction evidence.
 3. Use the measurement plan to compare legitimate inquiries and quality by page/source. Improve the strongest observed borrower questions before creating more pages.
