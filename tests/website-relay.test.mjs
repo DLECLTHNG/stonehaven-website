@@ -85,6 +85,9 @@ test('quick email inquiries retain product, reply choice and attribution through
   const response=await handler({body:JSON.stringify({payload:{id:'saved-quick-'+product,form_name:'lead',data:{name:'Synthetic Inquiry',email:'test@example.com',phone:'',product,page:'quick-review',extra:JSON.stringify(extra)}}})});
   assert.equal(response.statusCode,200);
   assert.equal(sent.at(-1).product,product);
+  // Existing CRM WEBSITE_PAGE_VALUES contract, not arbitrary new form IDs.
+  assert.equal(sent.at(-1).page,{DSCR:'website-dscr',Commercial:'website-commercial',SBA:'website-sba',Residential:'residential'}[product]);
+  assert.equal(sent.at(-1).extra.source_form_id,'quick-review');
   assert.equal(sent.at(-1).extra.contact_preference,'Email');
   assert.equal(sent.at(-1).extra.inquiry_path,'quick-v1');
   assert.equal(sent.at(-1).extra.submission_id,extra.submission_id);
@@ -98,5 +101,5 @@ test('native quick inquiries preserve product and reply method without browser s
  global.fetch=async(_,options)=>{saved=JSON.parse(options.body);return new Response(JSON.stringify({status:'created',lead:{id:'native-quick'}}),{status:201});};
  const data={name:'Synthetic Native',email:'test@example.com',phone:'',product:'DSCR',page:'quick-dscr-cash-out-refinance',lang:'es',inquiry_path:'quick-v1',loan_program:'Rental cash-out refinance',contact_preference:'Email'};
  assert.equal((await handler({body:JSON.stringify({payload:{id:'native-saved',form_name:'lead',data}})})).statusCode,200);
- assert.equal(saved.product,'DSCR');assert.equal(saved.lang,'es');assert.equal(saved.extra.contact_preference,'Email');assert.equal(saved.extra.loan_program,data.loan_program);assert.equal(saved.extra.netlify_submission_id,'native-saved');
+ assert.equal(saved.product,'DSCR');assert.equal(saved.page,'website-dscr');assert.equal(saved.extra.source_form_id,'quick-dscr-cash-out-refinance');assert.equal(saved.lang,'es');assert.equal(saved.extra.contact_preference,'Email');assert.equal(saved.extra.loan_program,data.loan_program);assert.equal(saved.extra.netlify_submission_id,'native-saved');
 });
