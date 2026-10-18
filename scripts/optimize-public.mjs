@@ -1,6 +1,6 @@
 // Optimize delivery without rewriting content, form markup or privacy boundaries.
 import {readFileSync} from 'node:fs';
-import {resolve, dirname, relative, sep} from 'node:path';
+import {resolve, relative, sep} from 'node:path';
 import {createHash} from 'node:crypto';
 
 const protectedPages = new Set(['heloc-application.html', 'request-received.html']);

@@ -18,6 +18,8 @@ test('delivery optimization preserves every public form, metadata and content bo
   assert.deepEqual(captures(output,/<meta\b[^>]*>|<title>[\s\S]*?<\/title>|<link\b[^>]*rel="(?:canonical|alternate)"[^>]*>|<script type="application\/ld\+json">[\s\S]*?<\/script>/g),captures(source,/<meta\b[^>]*>|<title>[\s\S]*?<\/title>|<link\b[^>]*rel="(?:canonical|alternate)"[^>]*>|<script type="application\/ld\+json">[\s\S]*?<\/script>/g),file+' metadata');
   const scripts=s=>captures(s,/<script\b[^>]*>[\s\S]*?<\/script>/g).filter(t=>!t.includes('/home-vendors.js')).map(t=>t.replace(/\?v=[^"']+/g,''));
   assert.deepEqual(scripts(output),scripts(source),file+' original scripts and order');
+  const body=s=>s.split('</head>')[1]?.replace(/<script\b[^>]*>[\s\S]*?<\/script>/g,'').replace(/\s+/g,' ').trim();
+  assert.equal(body(output),body(source),file+' body content');
   assert.equal(optimizePublic(output,file,root),output,file+' idempotent');
   if(output!==source){optimized++;assert.ok(!output.includes('href="https://fonts.googleapis.com'),file+' font delivery');}
   const injected=output.includes('/home-vendors.js')&&!source.includes('/home-vendors.js');
