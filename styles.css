@@ -145,7 +145,7 @@ section{padding:120px 0;}
 .use-grid:has(.use:nth-child(3):last-child){grid-template-columns:repeat(3,1fr);max-width:960px;}
 .use{background:var(--paper);padding:30px 34px;transition:background .35s var(--ease);}
 .use:hover{background:var(--white);}
-.use .un{font-family:'Cormorant',serif;font-style:italic;color:var(--brass);font-size:15px;}
+.use .un{font-family:'Cormorant',serif;font-style:italic;color:#805b1e;font-size:15px;}
 .use h2,.use h3{font-family:'Cormorant',serif;font-weight:500;font-size:21px;color:var(--slate-900);margin:8px 0 6px;}
 .use p{font-size:14px;color:var(--slate-400);font-weight:300;}
 
@@ -170,7 +170,7 @@ section{padding:120px 0;}
 .contact .meta a:hover{color:var(--white);}
 
 /* dark contact band used at foot of interior pages */
-.contact-band{background:var(--slate-900);color:var(--paper);text-align:center;position:relative;overflow:hidden;}
+.contact-band{--stone-400:#aab8c7;background:var(--slate-900);color:var(--paper);text-align:center;position:relative;overflow:hidden;}
 .contact-band .arch-deco{position:absolute;top:0;left:50%;transform:translateX(-50%);opacity:.5;}
 .contact-band .narrow{position:relative;z-index:2;}
 .contact-band .eyebrow{color:var(--stone-300);display:block;margin-bottom:28px;}
@@ -388,3 +388,6 @@ header.nav .brand img{width:120px;height:120px;object-fit:contain;mix-blend-mode
 /* Owner refinement: a quieter homepage introduction. */
 .home-intro h1{max-width:900px;margin-left:auto;margin-right:auto;text-wrap:balance}
 .page-hero.home-intro p.positioning-intro{max-width:660px;line-height:1.75}
+
+/* Preserve button contrast inside prose with darker editorial link colors. */
+.prose a.btn-primary{color:var(--paper);text-decoration:none;}
