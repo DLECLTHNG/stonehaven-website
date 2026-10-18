@@ -40,4 +40,7 @@ def bundle(text, path, root):
     compact = re.sub(r'\s+', ' ', compact)
     compact = re.sub(r'\s*([{};])\s*', r'\1', compact).strip()
     head = head.replace('<!-- HOME-STYLES -->', '<style id="home-styles" data-version="'+version+'">'+compact+'</style>')
+    body = body.replace('site-config.js?v=6', 'site-config.js?v=7').replace('funnel.js?v=15', 'funnel.js?v=16')
+    body = body.replace('<script src="js/site-config', '<script src="/js/home-vendors.js?v=1" defer></script>\n<script src="js/site-config')
+    body = body.replace('<script src="../js/site-config', '<script src="/js/home-vendors.js?v=1" defer></script>\n<script src="../js/site-config')
     return head+'</head>'+body

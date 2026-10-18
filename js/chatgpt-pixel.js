@@ -21,13 +21,15 @@
     sdk.src = "https://bzrcdn.openai.com/sdk/oaiq.min.js";
     sdk.onload = ready;
     sdk.onerror = ready;
-    document.head.appendChild(sdk);
+    if (window.shLoadMarketingScript) window.shLoadMarketingScript(sdk);
+    else document.head.appendChild(sdk);
   } else { ready(); }
   window.oaiq("init", { pixelId: pixelId, debug: false });
   window.oaiq("measure", "page_viewed", { type: "contents" });
   window.shChatGPTLead = function (eventId) {
     if (!eventId || sent.has(eventId)) return Promise.resolve();
     sent.add(eventId);
+    if (window.shFlushMarketingScripts) window.shFlushMarketingScripts();
     try {
       window.oaiq("measure", "lead_created", { type: "customer_action" }, { event_id: eventId });
     } catch (e) { return Promise.resolve(); }
