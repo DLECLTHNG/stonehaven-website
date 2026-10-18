@@ -183,7 +183,7 @@ section{padding:120px 0;}
 .contact-band .meta a:hover{color:var(--white);}
 
 /* ---------- FOOTER ---------- */
-footer{background:var(--slate-900);color:var(--stone-400);padding:64px 0 44px;}
+footer{--stone-400:#aab8c7;background:var(--slate-900);color:var(--stone-400);padding:64px 0 44px;}
 .foot-top{display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap;padding-bottom:40px;border-bottom:1px solid rgba(205,214,224,.14);}
 .foot-brand .fb{display:flex;align-items:center;gap:11px;margin-bottom:16px;}
 .foot-brand .fb img{width:30px;height:30px;}
