@@ -62,7 +62,7 @@ window.SH_CONFIG = {
     });
   };
   var script = document.createElement("script");
-  script.src = "/js/chatgpt-pixel.js?v=1";
+  script.src = "/js/chatgpt-pixel.js?v=2";
   script.async = true;
   document.head.appendChild(script);
 })();

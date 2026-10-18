@@ -28,7 +28,8 @@
     var gs = document.createElement("script");
     gs.async = true;
     gs.src = "https://www.googletagmanager.com/gtag/js?id=" + GA4_ID;
-    document.head.appendChild(gs);
+    if (window.shLoadMarketingScript) window.shLoadMarketingScript(gs);
+    else document.head.appendChild(gs);
     window.dataLayer = window.dataLayer || [];
     window.gtag = function () { window.dataLayer.push(arguments); };
     window.gtag("js", new Date());
@@ -42,7 +43,8 @@
       if (!f._fbq) f._fbq = n;
       n.push = n; n.loaded = true; n.version = "2.0"; n.queue = [];
       t = b.createElement(e); t.async = true; t.src = v;
-      s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s);
+      if (f.shLoadMarketingScript) f.shLoadMarketingScript(t);
+      else { s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s); }
     })(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
     window.fbq("init", META_PIXEL_ID);
     window.fbq("track", "PageView");
