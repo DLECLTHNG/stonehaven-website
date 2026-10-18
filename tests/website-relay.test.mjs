@@ -75,3 +75,19 @@ test('saved invalid legacy leads do not create nameless or below-minimum CRM rec
   assert.equal((await handler({body:JSON.stringify(value)})).statusCode,204);
  }
 });
+
+
+test('quick email inquiries retain product, reply choice and attribution through saved-lead relay',async t=>{
+ setup(t);const sent=[];
+ global.fetch=async(_,o)=>{sent.push(JSON.parse(o.body));return new Response(JSON.stringify({status:'created',lead:{id:'quick-qa'}}),{status:201});};
+ for(const product of ['DSCR','Commercial','SBA','Residential']) {
+  const extra={inquiry_path:'quick-v1',contact_preference:'Email',loan_program:'Synthetic financing purpose',submission_id:'browser-quick-'+product,attribution:{version:1,first_channel:'ai_referral',first_landing_path:'/dscr',submission_path:'/dscr'}};
+  const response=await handler({body:JSON.stringify({payload:{id:'saved-quick-'+product,form_name:'lead',data:{name:'Synthetic Inquiry',email:'test@example.com',phone:'',product,page:'quick-review',extra:JSON.stringify(extra)}}})});
+  assert.equal(response.statusCode,200);
+  assert.equal(sent.at(-1).product,product);
+  assert.equal(sent.at(-1).extra.contact_preference,'Email');
+  assert.equal(sent.at(-1).extra.inquiry_path,'quick-v1');
+  assert.equal(sent.at(-1).extra.submission_id,extra.submission_id);
+  assert.equal(sent.at(-1).extra.attribution.first_channel,'ai_referral');
+ }
+});

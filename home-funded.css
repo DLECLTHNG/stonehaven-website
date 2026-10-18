@@ -13,3 +13,7 @@
 @media(max-width:680px){.funded-volume{margin:25px 26px 0;padding:19px 0;gap:17px;}.funded-value{font-size:62px;}.funded-copy{max-width:160px;}.funded-copy strong{font-size:10px;letter-spacing:.09em;}.funded-copy small{font-size:11px;}}
 @media(max-width:360px){.funded-volume{gap:12px;margin-inline:20px;}.funded-value{font-size:53px;}}
 @media(prefers-reduced-motion:reduce){.funded-strip{will-change:auto;}}
+
+/* Home-page contrast corrections verified against the October 18 mobile audit. */
+.pillar .pn,.use .un{color:#805b1e;}
+footer{--stone-400:#aab8c7;}

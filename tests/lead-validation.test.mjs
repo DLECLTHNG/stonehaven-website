@@ -149,3 +149,18 @@ test('every static inquiry form visibly collects required name and email', () =>
   walk('.');
   assert.ok(count >= 120, 'all current inquiry forms are covered');
 });
+
+
+test('quick paths require a valid reply choice and phone for texts before capture', async () => {
+  const extra = {inquiry_path:'quick-v1', contact_preference:'Email'};
+  const email = {...good, phone:'', extra:JSON.stringify(extra)};
+  assert.equal(await guard(post(email)), undefined);
+  for (const contact_preference of ['Text','Call','']) {
+    const bad = {...email, extra:JSON.stringify({...extra,contact_preference})};
+    assert.equal((await guard(post(bad))).status,422);
+  }
+  assert.equal(await guard(post({...email,phone:'2025550123',extra:JSON.stringify({...extra,contact_preference:'Text'})})),undefined);
+  assert.ok(leadErrors({...good,inquiry_path:'quick-v1',contact_preference:'Text',phone:''}).phone);
+  assert.ok(leadErrors({...email,phone:'123'}).phone);
+  assert.ok(leadErrors({...email,product:'HELOC'}).requested_amount, 'quick path cannot bypass HELOC requirements');
+});

@@ -1,0 +1,46 @@
+{
+  "format_version": 1,
+  "prepared": "2026-10-18",
+  "records": [
+    {
+      "id": "florida-dscr-2026-08",
+      "closing_month": "2026-08",
+      "state": "FL",
+      "property_type": "Single-family rental",
+      "borrower_objective": "Pay off a maturing hard-money loan",
+      "obstacle": "Existing loan maturity",
+      "financing_arranged": "Approximately $225,000 at 75% LTV on an approximately $300,000 property",
+      "stonehaven_role": "Financing arranged, as reported in the existing published case",
+      "limitations": [
+        "Historical transaction, not a current offer",
+        "Prepared-file closing timeline is not a service commitment",
+        "No borrower identities or private documents reproduced"
+      ],
+      "source_url": "https://stonehavencre.com/blog/florida-dscr-cash-out-refinance-75-ltv-hard-money-payoff",
+      "approval_record": "Existing published company report, reused under October 18 brief; supporting private closing evidence not independently audited",
+      "photo_permission": null,
+      "quote_permission": null,
+      "expert_review": null
+    },
+    {
+      "id": "brookhaven-construction-2026-09",
+      "closing_month": "2026-09",
+      "state": "GA",
+      "property_type": "Residential teardown and new construction",
+      "borrower_objective": "Finance the stated construction budget",
+      "obstacle": "Distinguish land equity from cash and all-in project costs",
+      "financing_arranged": "100% of the stated construction budget with builder equity in the land",
+      "stonehaven_role": "Financing arranged, as reported in the existing published case",
+      "limitations": [
+        "Not 100% of every project cost",
+        "Does not establish a zero-cash offer",
+        "Historical transaction terms do not establish future approval"
+      ],
+      "source_url": "https://stonehavencre.com/blog/brookhaven-ga-100-ltc-ground-up-construction",
+      "approval_record": "Existing published company report, reused under October 18 brief; supporting private closing evidence not independently audited",
+      "photo_permission": null,
+      "quote_permission": null,
+      "expert_review": null
+    }
+  ]
+}

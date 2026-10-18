@@ -6,6 +6,9 @@ import unicodedata
 
 def normalize_presentation(text, path):
     es = path.startswith('/es/')
+    # A hidden mobile line break still needs a word boundary.
+    text = re.sub(r'<h1\b[^>]*>.*?</h1>', lambda m: re.sub(r'(?<=\S)(<br\s*/?>)', r' \1', m[0]), text, flags=re.S)
+    text = re.sub(r'(src="(?:/|\.\./)js/funnel\.js\?v=)\d+', r'\g<1>16', text)
     text = re.sub(r'(<a\b[^>]*href="/(?:es/)?blog"[^>]*>)(?:Closings|Cierres)(</a>)',
                   lambda m: m[1] + ('Guías y artículos' if es else 'Guides and articles') + m[2], text)
     if '/blog/' not in path and path not in ['/blog', '/es/blog']:
