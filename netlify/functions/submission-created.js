@@ -43,6 +43,15 @@ exports.handler = async (event) => {
       if (typeof data[field] === 'string' && data[field].length <= 160 && extra[field] === undefined) extra[field] = data[field];
     }
   }
+  // The CRM accepts a fixed set of page identifiers. Keep the specific new
+  // form in context and route quick inquiries through its existing product lane.
+  if (extra.inquiry_path === 'quick-v1' && /^quick-/.test(payload.page || '')) {
+    const crmPage = { DSCR: 'website-dscr', Commercial: 'website-commercial', SBA: 'website-sba', Residential: 'residential' }[payload.product];
+    if (crmPage) {
+      extra.source_form_id = payload.page;
+      payload.page = crmPage;
+    }
+  }
   payload.extra = { ...extra, netlify_submission_id: submission.id };
   let failure = 'network';
   for (let attempt = 0; attempt < 3; attempt++) {
