@@ -37,6 +37,12 @@ exports.handler = async (event) => {
   if (typeof data.extra === 'string' && data.extra.length <= 24000) {
     try { const parsed = JSON.parse(data.extra); if (parsed && typeof parsed === 'object' && !Array.isArray(parsed)) extra = parsed; } catch {}
   }
+  // Native quick forms retain reply choice even when JavaScript is unavailable.
+  if (data.inquiry_path === 'quick-v1') {
+    for (const field of ['inquiry_path', 'loan_program', 'contact_preference']) {
+      if (typeof data[field] === 'string' && data[field].length <= 160 && extra[field] === undefined) extra[field] = data[field];
+    }
+  }
   payload.extra = { ...extra, netlify_submission_id: submission.id };
   let failure = 'network';
   for (let attempt = 0; attempt < 3; attempt++) {

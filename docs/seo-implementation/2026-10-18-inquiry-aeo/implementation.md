@@ -18,7 +18,7 @@ Status: review preview. Production publication requires Chris's approval. This r
 
 There are 28 new quick forms, all registered under the existing Netlify `lead` contract. Required name and email preserve Chris's earlier instruction. Reply choice defaults to email; texts require a mobile number. Optional deal details are collapsed. A booked conversation is an alternative link, not recorded as a confirmed appointment. No SSN or financial-detail fields were added to quick forms.
 
-The browser and shared server validator enforce the quick-form reply rules. The existing capture, email notification and CRM relay remain the delivery path. `inquiry_path=quick-v1`, financing purpose, reply preference, language and opaque submission identifier remain in the lead record. Contact fields, answers and attribution details are not added to ordinary analytics events. `generate_lead` still means accepted submission, not confirmed mailbox or CRM receipt. Source labels based on UTM tags are attribution signals, not proof of an AI recommendation. Ordinary Google traffic is not labeled AI.
+The native no-JavaScript path also retains product, language, purpose and reply preference in the registered lead contract and relay. The browser and shared server validator enforce the quick-form reply rules. The existing capture, email notification and CRM relay remain the delivery path. `inquiry_path=quick-v1`, financing purpose, reply preference, language and opaque submission identifier remain in the lead record. Contact fields, answers and attribution details are not added to ordinary analytics events. `generate_lead` still means accepted submission, not confirmed mailbox or CRM receipt. Source labels based on UTM tags are attribution signals, not proof of an AI recommendation. Ordinary Google traffic is not labeled AI.
 
 The measured homepage mobile audit identified render-blocking styles and low-contrast footer text. The English and Spanish homepages now combine six local stylesheets in their original cascade order, with a content-hashed URL, and improve the flagged numeral/footer contrast. The existing Cormorant and Inter fonts are served locally on the two homepages, with Latin and Latin-extended files, retained OFL licenses and priority font preloads. Measurement, advertising and security controls remain intact.
 
@@ -30,11 +30,13 @@ The evidence register supplies reusable fields for closing month, state, propert
 
 ## Validation and discovery
 
-All 191 automated tests pass. Full site checks cover contacts and HELOC minimums, security, consent/privacy, attribution, duplicate/retry behavior, CRM relay and calculator rules. All generators were rerun with no output drift. SEO checks cover 444 HTML pages and 381 canonical sitemap URLs, translations, structured data and local links. Material page modifications receive October 18 dates; a shared script or footer update does not reset every article date.
+All 192 automated tests pass. Full site checks cover contacts and HELOC minimums, security, consent/privacy, attribution, duplicate/retry behavior, CRM relay and calculator rules. All generators were rerun with no output drift. SEO checks cover 444 HTML pages and 381 canonical sitemap URLs, translations, structured data and local links. Material page modifications receive October 18 dates; a shared script or footer update does not reset every article date.
 
 The existing `scripts/notify-indexnow.mjs` verifies live content before submitting canonical URLs. No duplicate integration was added. Submit the materially changed canonical URLs only after production approval and verification. Do not request indexing for the preview. Inspect Brookhaven's retained URL and request a targeted recrawl after a material live correction if its indexed text remains stale. Indexing is not guaranteed.
 
 Account exports, crawler IP verification, performance measurements and lead QA belong outside the public repository under `seo-private/2026-10-18-inquiry-aeo`. Account metrics are baseline observations, not a claim of improved conversions. See that private record for timestamps and reporting windows.
+
+Browser QA included 320/390px mobile and 1440px desktop, English/Spanish contact errors and keyboard focus. The final mobile lab run measured Performance 81 and Accessibility 100, compared with the production baseline of 68 and 96. First content appeared at 1.1s versus 2.9s; LCP remained 5.2s and needs further work. These single-run lab comparisons do not establish real-user Core Web Vitals or conversion uplift. The preview is intentionally noindex, and its toolbar is blocked by the existing CSP, so preview SEO/Best Practices scores are not production scores.
 
 ## Remaining owner facts
 

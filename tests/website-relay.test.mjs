@@ -91,3 +91,12 @@ test('quick email inquiries retain product, reply choice and attribution through
   assert.equal(sent.at(-1).extra.attribution.first_channel,'ai_referral');
  }
 });
+
+
+test('native quick inquiries preserve product and reply method without browser serialization', async t => {
+ setup(t);let saved;
+ global.fetch=async(_,options)=>{saved=JSON.parse(options.body);return new Response(JSON.stringify({status:'created',lead:{id:'native-quick'}}),{status:201});};
+ const data={name:'Synthetic Native',email:'test@example.com',phone:'',product:'DSCR',page:'quick-dscr-cash-out-refinance',lang:'es',inquiry_path:'quick-v1',loan_program:'Rental cash-out refinance',contact_preference:'Email'};
+ assert.equal((await handler({body:JSON.stringify({payload:{id:'native-saved',form_name:'lead',data}})})).statusCode,200);
+ assert.equal(saved.product,'DSCR');assert.equal(saved.lang,'es');assert.equal(saved.extra.contact_preference,'Email');assert.equal(saved.extra.loan_program,data.loan_program);assert.equal(saved.extra.netlify_submission_id,'native-saved');
+});

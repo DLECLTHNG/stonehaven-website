@@ -132,6 +132,9 @@
      forms submit to (via js/funnel.js) until the CRM intake endpoint is live. -->
 <form name="lead" method="POST" data-netlify="true" netlify-honeypot="company_website" hidden>
   <input type="hidden" name="extra"/>
+  <input type="hidden" name="inquiry_path"/>
+  <input type="hidden" name="loan_program"/>
+  <input type="text" name="contact_preference"/>
   <input type="text" name="name"/>
   <input type="email" name="email"/>
   <input type="tel" name="phone"/>
