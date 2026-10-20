@@ -72,8 +72,8 @@ def transform(text, path):
         text = text.replace('</main>', section + '</main>')
     if article:
         cta = ('Enviar mi proyecto HUD a Stonehaven' if es else 'Send your HUD deal to Stonehaven')
-        desc = ('Comparta ubicación, unidades, objetivo, monto solicitado y plazo. Stonehaven le ayuda a estructurar su solicitud y coordinar los siguientes pasos. Comience con un resumen, sin documentos privados.' if es else
-                'Share the location, unit count, purpose, requested amount and timing. Stonehaven helps structure your financing request and coordinate the next steps. Start with a summary, without private documents.')
+        desc = ('Stonehaven actúa como su intermediario hipotecario para ayudarle a estructurar la solicitud y coordinar los siguientes pasos. Comparta ubicación, unidades, objetivo, monto y plazo. Comience con un resumen, sin documentos privados.' if es else
+                'Stonehaven acts as your mortgage broker, helping structure the financing request and coordinate the next steps. Share the location, unit count, purpose, amount and timing. Start with a summary, without private documents.')
         def replace_cta(m):
             block = re.sub(r'<h2>.*?</h2>', '<h2>' + cta + '</h2>', m[0], count=1, flags=re.S)
             block = re.sub(r'<p class="sub">.*?</p>', '<p class="sub">' + desc + '</p>', block, count=1, flags=re.S)
