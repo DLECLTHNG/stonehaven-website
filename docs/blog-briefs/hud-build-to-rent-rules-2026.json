@@ -1,0 +1,114 @@
+{
+  "slug": "hud-build-to-rent-rules-2026",
+  "date": "2026-10-20",
+  "type": "guide",
+  "product": "Commercial",
+  "en": {
+    "title": "HUD Build-to-Rent Rules: What Builders Must Check",
+    "metaTitle": "HUD Build-to-Rent Rules: What Builders Must Check | Stonehaven",
+    "desc": "New HUD BTR guidance covers qualifying rental-home communities. Review contiguous sites, no individual sales, reserves and the construction or refinance path.",
+    "eyebrow": "HUD · Commercial financing",
+    "terms": [
+      [
+        "Policy",
+        "Issued Mortgagee Letter 2026-12"
+      ],
+      [
+        "Minimum scale",
+        "Five dwelling units, plus other tests"
+      ],
+      [
+        "Exit restriction",
+        "No individual sales or partial releases during the insured term"
+      ]
+    ],
+    "body": [
+      "A builder planning a rental-home community has a new HUD financing question to ask. Issued Mortgagee Letter 2026-12 allows qualifying developments of detached homes, duplexes and triplexes into specified multifamily insurance programs. The opportunity depends on the community structure, not just the words “build to rent.”",
+      "Before changing a capital plan, check the site map, ownership, intended exit and operating budget against the actual letter. A construction concept may fit while the planned individual-home exit does not.",
+      {
+        "h": "Two entry points, with different limits"
+      },
+      "The guidance covers 221(d)(4) new construction and 223(f) acquisition or refinancing of recently developed BTR communities with certificates of occupancy issued less than three years before application. It does not provide a blanket 223(f) route for every older detached rental portfolio.",
+      "The underlying program rules still apply. Completed homes need the applicable operating evidence, while new construction needs a defensible budget, design, team and lease-up plan.",
+      {
+        "h": "Compare two hypothetical site plans"
+      },
+      "<ul><li><strong>Integrated rental development:</strong> Forty rental homes sit on contiguous parcels under a unified operating plan, without privately owned homes interspersed. The sponsor plans a long-term rental hold and professional management. This may merit a HUD eligibility review.</li><li><strong>Mixed sale-and-rental subdivision:</strong> A builder wants to rent some houses, sell others and release individual parcels from the loan as buyers close. That plan conflicts with the letter’s no-individual-sales and no-partial-release conditions during the insured term.</li></ul>",
+      "These are hypothetical comparisons, not approvals. Five or more units is only the starting point. Site control, management, ownership, design and the financial tests also matter.",
+      {
+        "h": "A detached-home budget needs detached-home assumptions"
+      },
+      "Do not copy an apartment operating budget without reviewing what changes. Multiple roofs, private yards, exterior surfaces, utilities and community amenities can change maintenance and replacement needs. Use rental comparables that reflect the actual product and tenant demand.",
+      "For market-rate BTR, underwriting vacancy is the greater of 7% or comparable-property vacancy. A small community may need a more conservative assumption. If two homes in a ten-home project are vacant, the impact is very different from two vacant units in a large apartment complex.",
+      {
+        "h": "Lease-up and reserves affect the capital requirement"
+      },
+      "HUD may consider up to 24 months of absorption for new construction under the letter. That allowance does not fund a slow lease-up by itself. The operating-deficit reserve must cover the assessed need, with a minimum of the greater of 3% of the loan or four months of debt service.",
+      "A strong application connects the delivery schedule to leasing, concessions, expenses and reserves. Model delayed occupancy before treating the first forecast as sufficient.",
+      {
+        "h": "What to prepare before asking for terms"
+      },
+      "<ul><li>Parcel map, site control and disclosure of any HOA or separately owned parcels.</li><li>Unit types, count, construction status and certificate-of-occupancy dates.</li><li>Rental comparables, achieved rents where available and an operating budget.</li><li>Construction costs, reserve assumptions, financing request and sponsor experience.</li><li>A clear commitment in the business plan to unified rental ownership rather than individual sales.</li></ul>",
+      "Stonehaven can help review those inputs. Start with <a href=\"/commercial/hud-build-to-rent-financing\">the HUD BTR financing page</a>. If individual sales remain essential, compare <a href=\"/commercial/land-development-loans\">land and lot financing</a> instead of trying to force the project into a rental-community structure.",
+      {
+        "h": "Sources and review date"
+      },
+      "Checked October 20, 2026. These are program explanations and illustrative planning examples, not a commitment or current rate quote. Issued HUD updates control over older summaries.",
+      "<ul><li><a href=\"https://www.hud.gov/sites/default/files/hudclips/documents/2026-12hsgml.pdf\">HUD Mortgagee Letter 2026-12: build-to-rent eligibility</a></li><li><a href=\"https://www.hud.gov/sites/dfiles/OCHCO/documents/4430GHSGG.pdf\">HUD MAP Guide, Chapters 3, 5, 8 and 11</a></li></ul>"
+    ]
+  },
+  "es": {
+    "title": "Reglas HUD BTR: qué debe revisar el constructor",
+    "metaTitle": "Reglas HUD BTR: qué debe revisar el constructor | Stonehaven",
+    "desc": "La nueva guía HUD BTR cubre comunidades elegibles de alquiler. Revise continuidad del sitio, ventas individuales, reservas y rutas de financiamiento.",
+    "eyebrow": "HUD · Financiamiento comercial",
+    "terms": [
+      [
+        "Política",
+        "Carta Hipotecaria 2026-12 emitida"
+      ],
+      [
+        "Escala mínima",
+        "Cinco viviendas y demás pruebas"
+      ],
+      [
+        "Restricción de salida",
+        "Sin ventas individuales ni liberaciones parciales durante el préstamo"
+      ]
+    ],
+    "body": [
+      "Un constructor de comunidades de alquiler tiene una nueva opción que evaluar. La Carta Hipotecaria 2026-12 emitida permite que desarrollos elegibles de viviendas independientes, dúplex y tríplex accedan a programas multifamiliares específicos. La oportunidad depende de la estructura, no solo de llamarlo BTR.",
+      "Antes de cambiar el plan de capital, compare mapa, propiedad, salida y presupuesto operativo con la carta. La construcción puede encajar mientras la venta individual prevista no.",
+      {
+        "h": "Dos entradas con límites distintos"
+      },
+      "La guía cubre construcción nueva 221(d)(4) y compra o refinanciamiento 223(f) de comunidades BTR recientes, con certificados de ocupación de menos de tres años al solicitar. No abre automáticamente 223(f) a cualquier cartera antigua de casas de alquiler.",
+      "Siguen vigentes las reglas del programa. Las viviendas terminadas necesitan evidencia operativa; la obra nueva requiere presupuesto, diseño, equipo y arrendamiento defendibles.",
+      {
+        "h": "Compare dos sitios hipotéticos"
+      },
+      "<ul><li><strong>Desarrollo de alquiler integrado:</strong> Cuarenta casas ocupan parcelas contiguas con operación unificada, sin viviendas privadas ajenas intercaladas. El promotor prevé conservarlas y administrarlas profesionalmente. Puede justificar una revisión HUD.</li><li><strong>Subdivisión mixta:</strong> El constructor quiere alquilar algunas casas, vender otras y liberar parcelas al cerrar ventas. Choca con la prohibición de ventas individuales y liberaciones parciales durante el préstamo asegurado.</li></ul>",
+      "Son comparaciones hipotéticas, no aprobaciones. Cinco unidades es solo el inicio. También importan sitio, administración, propiedad, diseño y pruebas financieras.",
+      {
+        "h": "El presupuesto debe reflejar casas de alquiler"
+      },
+      "No copie sin revisión los gastos de un edificio de apartamentos. Varios techos, jardines privados, exteriores, servicios y amenidades cambian mantenimiento y reposición. Use comparables de alquiler adecuados al producto y demanda.",
+      "Para BTR de mercado, la vacancia de evaluación es el mayor entre 7% y la de comparables. Una comunidad pequeña puede requerir más. Dos casas vacías en diez afectan mucho más que dos unidades vacías en un complejo grande.",
+      {
+        "h": "Arrendamiento y reservas afectan el capital"
+      },
+      "HUD puede considerar hasta 24 meses de absorción para obra nueva. Ese plazo no financia por sí mismo una ocupación lenta. La reserva debe cubrir la necesidad evaluada y como mínimo el mayor entre 3% del préstamo y cuatro meses de servicio de deuda.",
+      "Conecte entregas con arrendamiento, concesiones, gastos y reservas. Modele ocupación retrasada antes de aceptar el primer pronóstico.",
+      {
+        "h": "Qué preparar antes de pedir términos"
+      },
+      "<ul><li>Mapa, control del sitio, asociaciones y parcelas de terceros.</li><li>Tipos de vivienda, número, avance y certificados de ocupación.</li><li>Comparables, rentas logradas y presupuesto operativo.</li><li>Costo de obra, reservas, préstamo y experiencia.</li><li>Plan claro de propiedad unificada de alquiler, sin ventas individuales.</li></ul>",
+      "Stonehaven puede ayudar a revisar estos datos. Consulte <a href=\"/es/commercial/hud-build-to-rent-financing\">la página de financiamiento BTR HUD</a>. Si vender individualmente es esencial, compare <a href=\"/es/commercial/land-development-loans\">financiamiento de terrenos y lotes</a>.",
+      {
+        "h": "Fuentes y fecha de revisión"
+      },
+      "Revisado el 20 de octubre de 2026. Son explicaciones y ejemplos ilustrativos, no un compromiso ni cotización. Las actualizaciones emitidas por HUD prevalecen sobre resúmenes anteriores.",
+      "<ul><li><a href=\"https://www.hud.gov/sites/default/files/hudclips/documents/2026-12hsgml.pdf\">HUD Mortgagee Letter 2026-12: build-to-rent eligibility</a></li><li><a href=\"https://www.hud.gov/sites/dfiles/OCHCO/documents/4430GHSGG.pdf\">HUD MAP Guide, Chapters 3, 5, 8 and 11</a></li></ul>"
+    ]
+  }
+}

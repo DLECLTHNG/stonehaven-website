@@ -1,0 +1,108 @@
+{
+  "slug": "hud-loan-leverage-cash-to-close",
+  "date": "2026-10-20",
+  "type": "guide",
+  "product": "Commercial",
+  "en": {
+    "title": "HUD 87% LTC: How Much Cash Does a Builder Need?",
+    "metaTitle": "HUD 87% LTC: How Much Cash Does a Builder Need? | Stonehaven",
+    "desc": "See why 87% HUD leverage does not always mean 13% cash. A worked example separates loan sizing, income limits, reserves and cash needed through construction.",
+    "eyebrow": "HUD · Commercial financing",
+    "terms": [
+      [
+        "Example",
+        "Hypothetical $10M eligible project"
+      ],
+      [
+        "Cost ceiling",
+        "87% = $8.7M before other tests"
+      ],
+      [
+        "Important distinction",
+        "Maximum loan versus available cash"
+      ]
+    ],
+    "body": [
+      "“Up to 87% LTC” describes one loan-sizing limit. It does not mean every developer needs only 13% of the budget in cash. Eligible costs, debt service coverage, statutory limits, required reserves and the timing of payments all affect the real capital requirement.",
+      "For HUD construction, use two calculations: the maximum loan that survives every applicable test, and the cash that must be available before and during the project. The difference matters even when the loan covers a large share of eligible cost.",
+      {
+        "h": "A worked example: the income test controls"
+      },
+      "Consider a hypothetical market-rate rental development with $10 million of HUD-eligible cost. At 87% LTC, the cost-based ceiling is $8.7 million. Now assume underwritten annual NOI of $600,000 and required DSCR of 1.15.",
+      "<div class=\"cre-note\"><p><strong>Maximum annual debt service:</strong> $600,000 ÷ 1.15 = about $521,739.</p><p>Assume, solely for this example, an all-in annual debt-service factor of 6.50% of the initial loan, including the relevant payment and insurance allowance. This factor is a modeling assumption, not an interest-rate quote or official HUD constant.</p><p><strong>Income-based loan:</strong> $521,739 ÷ 0.065 = about $8.027 million.</p></div>",
+      "The income test produces a lower amount than the $8.7 million cost ceiling. Before any other limiting test, the gap against eligible cost is about $1.973 million, not $1.3 million. The actual calculation must use the approved amortization, rate, insurance treatment and underwriting inputs.",
+      {
+        "h": "Now build the separate cash schedule"
+      },
+      "For illustration, assume another $300,000 of required costs and deposits is outside the $10 million figure and is not funded by the loan. Total capital required becomes about $2.273 million before considering acceptable land-equity credit, prior contributions or other approved sources.",
+      "This example deliberately keeps the extra $300,000 outside the original budget. In a real sources-and-uses schedule, identify each cost once. Counting a reserve inside the development budget and again as an extra deposit overstates the need; omitting it understates the need.",
+      "<ul><li>Cash spent on reports and design before financing is available.</li><li>Equity and deposits due at closing.</li><li>Working cash between contractor payments and loan draws.</li><li>Operating losses during lease-up and required reserves.</li><li>Contingency if costs rise or income stabilizes later than planned.</li></ul>",
+      {
+        "h": "Does 90% LTC remove this problem?"
+      },
+      "No. A qualifying affordable or middle-income structure may allow different cost and coverage limits, but eligibility must first be established. Other constraints still apply. A 90% maximum is not a commitment to finance every cost, and it does not eliminate reserves or the need to evidence equity.",
+      "The middle-income route has a specific recorded restriction and program framework. Read <a href=\"/blog/hud-middle-income-housing-90-percent-ltc\">the 2026 middle-income guide</a> before using that category.",
+      {
+        "h": "Compare proposals on the same basis"
+      },
+      "Ask for gross loan proceeds, funded costs, nonfunded costs, initial deposits, cash to close, expected draw timing and reserve-release conditions. Keep those figures separate from headline leverage.",
+      "Stonehaven can help organize the project’s sources and uses before a financing review. Start with <a href=\"/commercial/hud-221d4-construction-loans\">HUD construction financing</a> and provide the total budget, land status, projected NOI and requested amount.",
+      {
+        "h": "Sources and review date"
+      },
+      "Checked October 20, 2026. These are program explanations and illustrative planning examples, not a commitment or current rate quote. Issued HUD updates control over older summaries.",
+      "<ul><li><a href=\"https://www.hud.gov/sites/dfiles/OCHCO/documents/2025-03hsgml.pdf\">HUD Mortgagee Letter 2025-03: underwriting ratios</a></li><li><a href=\"https://www.hud.gov/sites/dfiles/OCHCO/documents/4430GHSGG.pdf\">HUD MAP Guide, Chapters 3, 5, 8 and 11</a></li><li><a href=\"https://www.hud.gov/sites/dfiles/hudclips/documents/2026-01hsgml.pdf\">HUD Mortgagee Letter 2026-01: middle-income housing</a></li><li><a href=\"https://public-inspection.federalregister.gov/2025-18379.pdf\">HUD final notice 2025-18379: multifamily insurance premiums</a></li></ul>"
+    ]
+  },
+  "es": {
+    "title": "HUD al 87% LTC: cuánto capital necesita la obra",
+    "metaTitle": "HUD al 87% LTC: cuánto capital necesita la obra | Stonehaven",
+    "desc": "Entienda por qué 87% LTC no siempre significa 13% de efectivo. Un ejemplo separa monto, límites de ingresos, reservas y capital durante la obra.",
+    "eyebrow": "HUD · Financiamiento comercial",
+    "terms": [
+      [
+        "Ejemplo",
+        "Proyecto hipotético elegible de $10 millones"
+      ],
+      [
+        "Límite por costo",
+        "87% = $8.7 millones antes de otras pruebas"
+      ],
+      [
+        "Distinción",
+        "Préstamo máximo frente a efectivo disponible"
+      ]
+    ],
+    "body": [
+      "“Hasta 87% LTC” describe un límite de monto. No significa que todo desarrollador necesite solamente 13% del presupuesto en efectivo. Costos elegibles, cobertura de deuda, límites legales, reservas y fechas de pago determinan el capital real.",
+      "Para construcción HUD, haga dos cálculos: el préstamo que cumple todas las pruebas y el efectivo necesario antes y durante el proyecto. La diferencia importa aunque se financie gran parte del costo.",
+      {
+        "h": "Ejemplo: limita la prueba de ingresos"
+      },
+      "Suponga un desarrollo de alquiler de mercado con $10 millones de costo elegible. Al 87% LTC, el límite por costo sería $8.7 millones. Suponga ahora NOI anual evaluado de $600,000 y DSCR requerido de 1.15.",
+      "<div class=\"cre-note\"><p><strong>Servicio anual máximo de deuda:</strong> $600,000 ÷ 1.15 = aproximadamente $521,739.</p><p>Solo para este ejemplo, use un factor anual total de servicio de deuda de 6.50% del préstamo inicial, incluida la asignación pertinente de pago y seguro. Es un supuesto de cálculo, no una tasa cotizada ni constante oficial HUD.</p><p><strong>Préstamo basado en ingresos:</strong> $521,739 ÷ 0.065 = aproximadamente $8.027 millones.</p></div>",
+      "La prueba de ingresos produce menos que el límite de $8.7 millones. Antes de otras pruebas, faltan aproximadamente $1.973 millones frente al costo elegible, no $1.3 millones. El cálculo real debe usar amortización, tasa, tratamiento del seguro e inputs aprobados.",
+      {
+        "h": "Después prepare el calendario de efectivo"
+      },
+      "Suponga otros $300,000 de costos y depósitos fuera de los $10 millones y no financiados por el préstamo. El capital total requerido sería aproximadamente $2.273 millones antes de reconocer crédito aceptable por terreno, aportaciones previas u otras fuentes aprobadas.",
+      "El ejemplo mantiene esos $300,000 fuera del presupuesto inicial. En un cuadro real de fuentes y usos, cuente cada costo una sola vez. Duplicar una reserva exagera la necesidad; omitirla la subestima.",
+      "<ul><li>Informes y diseño pagados antes de disponer del financiamiento.</li><li>Capital y depósitos exigidos al cierre.</li><li>Efectivo entre pagos al contratista y desembolsos.</li><li>Pérdidas durante arrendamiento y reservas exigidas.</li><li>Contingencia ante mayores costos o estabilización tardía.</li></ul>",
+      {
+        "h": "¿90% LTC elimina el problema?"
+      },
+      "No. Una categoría asequible o de ingresos medios puede permitir otros límites, pero primero debe establecerse elegibilidad. Siguen aplicándose restricciones. El 90% máximo no promete financiar cada gasto ni elimina reservas o prueba de capital.",
+      "La ruta de ingresos medios exige un marco de programa y restricción registrada específicos. Lea <a href=\"/es/blog/hud-middle-income-housing-90-percent-ltc\">la guía de 2026</a> antes de utilizar esa categoría.",
+      {
+        "h": "Compare propuestas sobre la misma base"
+      },
+      "Solicite préstamo bruto, costos financiados y no financiados, depósitos iniciales, efectivo al cierre, calendario de desembolsos y condiciones para liberar reservas. Sepárelos del porcentaje anunciado.",
+      "Stonehaven puede ayudar a organizar fuentes y usos. Comience con <a href=\"/es/commercial/hud-221d4-construction-loans\">financiamiento de construcción HUD</a> y comparta presupuesto, situación del terreno, NOI previsto y monto solicitado.",
+      {
+        "h": "Fuentes y fecha de revisión"
+      },
+      "Revisado el 20 de octubre de 2026. Son explicaciones y ejemplos ilustrativos, no un compromiso ni cotización. Las actualizaciones emitidas por HUD prevalecen sobre resúmenes anteriores.",
+      "<ul><li><a href=\"https://www.hud.gov/sites/dfiles/OCHCO/documents/2025-03hsgml.pdf\">HUD Mortgagee Letter 2025-03: underwriting ratios</a></li><li><a href=\"https://www.hud.gov/sites/dfiles/OCHCO/documents/4430GHSGG.pdf\">HUD MAP Guide, Chapters 3, 5, 8 and 11</a></li><li><a href=\"https://www.hud.gov/sites/dfiles/hudclips/documents/2026-01hsgml.pdf\">HUD Mortgagee Letter 2026-01: middle-income housing</a></li><li><a href=\"https://public-inspection.federalregister.gov/2025-18379.pdf\">HUD final notice 2025-18379: multifamily insurance premiums</a></li></ul>"
+    ]
+  }
+}

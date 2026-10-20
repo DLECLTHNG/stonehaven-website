@@ -468,5 +468,5 @@ test('all generated quick forms deliver their rendered program and language with
    assert.equal(p.extra().inquiry_path,'quick-v1');
   }
  }
- assert.equal(count,28);
+ assert.equal(count,38);
 });

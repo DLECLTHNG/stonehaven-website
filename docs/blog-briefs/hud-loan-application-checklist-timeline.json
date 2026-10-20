@@ -1,0 +1,124 @@
+{
+  "slug": "hud-loan-application-checklist-timeline",
+  "date": "2026-10-20",
+  "type": "guide",
+  "product": "Commercial",
+  "en": {
+    "title": "HUD Loan Checklist: Documents, Costs and Timing",
+    "metaTitle": "HUD Loan Checklist: Documents, Costs and Timing | Stonehaven",
+    "desc": "Prepare a HUD financing request in stages. Learn what to organize for income, costs, reports, closing conditions and a realistic application timeline.",
+    "eyebrow": "HUD · Commercial financing",
+    "terms": [
+      [
+        "Start",
+        "A concise property and financing summary"
+      ],
+      [
+        "Then",
+        "Program-specific documents and reports"
+      ],
+      [
+        "Timing",
+        "Milestones, not a guaranteed closing date"
+      ]
+    ],
+    "body": [
+      "A useful HUD financing checklist does more than collect documents. It identifies the decisions that could change the program, the budget or the closing date before the owner spends heavily on reports.",
+      "Start with a short concept summary. Then agree the scope, responsibilities and timing of the full file. A document request for a stabilized apartment refinance should not be copied unchanged onto a construction project or an assisted living facility.",
+      {
+        "h": "Stage 1: establish the property and business plan"
+      },
+      "<ul><li>Property location, unit or bed count, ownership and requested use of funds.</li><li>Purchase, refinance, new construction or rehabilitation, with a meaningful scope.</li><li>Estimated value or development budget, requested loan, current debt and payoff timing.</li><li>Current income or projected rental plan, sponsor experience and intended hold.</li><li>Known title, environmental, licensing or affordability issues that may affect the route.</li></ul>",
+      "Use the <a href=\"/commercial/hud-financing\">HUD program hub</a> to distinguish apartment, construction, BTR and healthcare paths. The initial public inquiry needs a summary, not sensitive documents.",
+      {
+        "h": "Stage 2: support the income and costs"
+      },
+      "For an existing apartment property, prepare rent rolls, operating statements, collections, concessions, occupancy history and a repair scope. The figures should reconcile. Explain unusual expenses or revenue instead of deleting inconvenient items.",
+      "For development, assemble site control, zoning, plans, costs, contractor qualifications, market assumptions, sources and uses, and the schedule. For healthcare, add the appropriate operator, license, occupancy and financial information using business-level records and the approved document process.",
+      {
+        "h": "Stage 3: coordinate reports and review"
+      },
+      "Confirm who orders the appraisal, environmental work, capital-needs analysis, market study and design or cost review as applicable. Establish each report’s required scope and useful life. A report prepared for a different financing purpose may need further work.",
+      "Material site or operating issues can change the sequence. Resolving a zoning question before commissioning a full design package can be more useful than accumulating documents around an unworkable plan.",
+      {
+        "h": "Stage 4: distinguish application from closing"
+      },
+      "An inquiry is not a formal application, a completed file is not a firm commitment, and a firm commitment can still contain closing conditions. Rate-lock and funding decisions have their own requirements. Ask for milestones rather than a single unexplained date.",
+      "A realistic schedule includes preparation, underwriting, HUD review, responses to questions, closing conditions and legal coordination. Construction adds design and contractor dependencies; healthcare has its own ORCF/LEAN review and queue.",
+      {
+        "h": "Ask for the full cost schedule"
+      },
+      "<ul><li>Application and examination charges where applicable.</li><li>Third-party reports, legal work and financing charges.</li><li>Mortgage insurance, including the applicable upfront construction treatment.</li><li>Repair escrows, replacement reserves and other required deposits.</li><li>Working capital, operating-deficit reserves and interim financing costs where relevant.</li></ul>",
+      "Separate refundable deposits from earned charges and distinguish financed costs from cash due before closing. A low quoted rate does not answer those questions.",
+      {
+        "h": "What to send Stonehaven first"
+      },
+      "A concise project summary is enough to start: location, units, purpose, cost or value, requested amount, existing debt, timing and the main issue. We can help organize the next review and identify which documents belong in a protected collection process.",
+      "Keep SSNs, account statements, tenant records and patient information out of public forms. Start at <a href=\"/commercial/hud-financing#quick-inquiry\">the HUD inquiry</a>, or read <a href=\"/blog/bridge-to-hud-multifamily-refinance\">bridge-to-HUD exit planning</a> if a maturity is approaching.",
+      {
+        "h": "Sources and review date"
+      },
+      "Checked October 20, 2026. These are program explanations and illustrative planning examples, not a commitment or current rate quote. Issued HUD updates control over older summaries.",
+      "<ul><li><a href=\"https://www.hud.gov/sites/dfiles/OCHCO/documents/4430GHSGG.pdf\">HUD MAP Guide, Chapters 3, 5, 8 and 11</a></li><li><a href=\"https://public-inspection.federalregister.gov/2025-18379.pdf\">HUD final notice 2025-18379: multifamily insurance premiums</a></li><li><a href=\"https://www.hud.gov/sites/default/files/hudclips/documents/2026-04hsgml.pdf\">HUD Mortgagee Letter 2026-04: environmental guidance</a></li><li><a href=\"https://www.hud.gov/hud-partners/healthcare-programs-orcf\">HUD Office of Residential Care Facilities</a></li><li><a href=\"https://www.hud.gov/stat/fha/underwriting-queues\">HUD healthcare underwriting queues</a></li></ul>"
+    ]
+  },
+  "es": {
+    "title": "Solicitud HUD: documentos, costos y calendario",
+    "metaTitle": "Solicitud HUD: documentos, costos y calendario | Stonehaven",
+    "desc": "Prepare una solicitud HUD por etapas. Organice ingresos, costos, informes, condiciones de cierre y un calendario realista de evaluación.",
+    "eyebrow": "HUD · Financiamiento comercial",
+    "terms": [
+      [
+        "Inicio",
+        "Resumen de inmueble y financiamiento"
+      ],
+      [
+        "Después",
+        "Documentos e informes según programa"
+      ],
+      [
+        "Calendario",
+        "Hitos, no fecha garantizada"
+      ]
+    ],
+    "body": [
+      "Una lista útil de financiamiento HUD no solo reúne documentos. Identifica decisiones que podrían cambiar programa, presupuesto o cierre antes de gastar en informes.",
+      "Comience con un resumen. Después acuerde alcance, responsables y calendario. No copie sin cambios una solicitud documental de apartamentos estabilizados a una obra o residencia asistida.",
+      {
+        "h": "Etapa 1: inmueble y plan"
+      },
+      "<ul><li>Ubicación, unidades o camas, propiedad y uso de fondos.</li><li>Compra, refinanciamiento, construcción o rehabilitación, con alcance claro.</li><li>Valor o presupuesto, préstamo, deuda y plazo de liquidación.</li><li>Ingresos actuales o plan de alquiler, experiencia y tenencia prevista.</li><li>Problemas conocidos de título, ambiente, licencias o restricciones.</li></ul>",
+      "Use <a href=\"/es/commercial/hud-financing\">el centro de programas HUD</a> para distinguir apartamentos, obra, BTR y cuidados. La consulta pública inicial necesita un resumen, no documentos sensibles.",
+      {
+        "h": "Etapa 2: respaldar ingresos y costos"
+      },
+      "Para apartamentos existentes, reúna listado de rentas, estados operativos, cobros, concesiones, ocupación y reparaciones. Las cifras deben conciliar. Explique partidas extraordinarias en vez de eliminarlas.",
+      "Para desarrollo, reúna control del sitio, zonificación, planos, costos, contratista, mercado, fuentes y usos y calendario. Para cuidados, añada información empresarial de operador, licencias, ocupación y finanzas mediante el proceso documental aprobado.",
+      {
+        "h": "Etapa 3: coordinar informes y evaluación"
+      },
+      "Confirme quién encarga tasación, trabajo ambiental, análisis de necesidades de capital, estudio de mercado y revisión de diseño o costos. Establezca alcance y vigencia. Un informe destinado a otra operación puede requerir trabajo adicional.",
+      "Problemas materiales pueden cambiar la secuencia. Resolver zonificación antes de encargar todos los planos puede ser más útil que acumular documentos para un plan inviable.",
+      {
+        "h": "Etapa 4: distinguir solicitud y cierre"
+      },
+      "Una consulta no es solicitud formal, un expediente completo no es compromiso firme y un compromiso puede contener condiciones de cierre. Fijar tasa y desembolsar tiene requisitos propios. Solicite hitos, no una fecha sin explicación.",
+      "El calendario incluye preparación, evaluación, revisión HUD, respuestas, condiciones y coordinación legal. La construcción añade dependencias de diseño y contratista; los centros de cuidados tienen su propia revisión ORCF/LEAN.",
+      {
+        "h": "Solicite todos los costos"
+      },
+      "<ul><li>Cargos de solicitud y examen cuando correspondan.</li><li>Informes, trabajo legal y cargos de financiamiento.</li><li>Seguro hipotecario y tratamiento inicial de construcción.</li><li>Depósitos de reparaciones, reservas de reposición y otros fondos exigidos.</li><li>Capital de trabajo, déficit operativo y financiamiento temporal aplicables.</li></ul>",
+      "Distinga depósitos reembolsables de cargos devengados, y gastos financiados de efectivo previo al cierre. Una tasa baja no responde esas preguntas.",
+      {
+        "h": "Qué enviar primero a Stonehaven"
+      },
+      "Basta un resumen: ubicación, unidades, objetivo, costo o valor, monto, deuda, fecha y dificultad principal. Podemos organizar la siguiente revisión y los documentos que necesitan un proceso protegido.",
+      "No incluya SSN, estados bancarios ni datos privados de inquilinos o pacientes en formularios públicos. Empiece en <a href=\"/es/commercial/hud-financing#quick-inquiry\">la consulta HUD</a> o revise <a href=\"/es/blog/bridge-to-hud-multifamily-refinance\">la salida de deuda puente</a> si se acerca un vencimiento.",
+      {
+        "h": "Fuentes y fecha de revisión"
+      },
+      "Revisado el 20 de octubre de 2026. Son explicaciones y ejemplos ilustrativos, no un compromiso ni cotización. Las actualizaciones emitidas por HUD prevalecen sobre resúmenes anteriores.",
+      "<ul><li><a href=\"https://www.hud.gov/sites/dfiles/OCHCO/documents/4430GHSGG.pdf\">HUD MAP Guide, Chapters 3, 5, 8 and 11</a></li><li><a href=\"https://public-inspection.federalregister.gov/2025-18379.pdf\">HUD final notice 2025-18379: multifamily insurance premiums</a></li><li><a href=\"https://www.hud.gov/sites/default/files/hudclips/documents/2026-04hsgml.pdf\">HUD Mortgagee Letter 2026-04: environmental guidance</a></li><li><a href=\"https://www.hud.gov/hud-partners/healthcare-programs-orcf\">HUD Office of Residential Care Facilities</a></li><li><a href=\"https://www.hud.gov/stat/fha/underwriting-queues\">HUD healthcare underwriting queues</a></li></ul>"
+    ]
+  }
+}

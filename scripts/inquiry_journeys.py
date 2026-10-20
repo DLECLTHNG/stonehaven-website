@@ -3,6 +3,11 @@ from html import escape
 import re
 
 PRIORITY = {
+ '/commercial/hud-financing': ('Commercial','HUD financing review','Revisión de financiamiento HUD'),
+ '/commercial/hud-223f-loans': ('Commercial','HUD 223(f) apartment financing','Financiamiento de apartamentos HUD 223(f)'),
+ '/commercial/hud-221d4-construction-loans': ('Commercial','HUD 221(d)(4) construction financing','Financiamiento de construcción HUD 221(d)(4)'),
+ '/commercial/hud-build-to-rent-financing': ('Commercial','HUD build-to-rent financing','Financiamiento HUD para comunidades de alquiler'),
+ '/commercial/hud-232-healthcare-financing': ('Commercial','HUD 232 facility financing','Financiamiento de centros HUD 232'),
  '/commercial/construction-loans': ('Commercial','Construction financing','Financiamiento de construcción'),
  '/commercial/land-development-loans': ('Commercial','Land development financing','Financiamiento de desarrollo de terrenos'),
  '/commercial/multifamily-acquisition': ('Commercial','Multifamily acquisition','Compra de inmuebles multifamiliares'),
@@ -21,6 +26,9 @@ def quick_form(product,purpose,es,path,full):
  t=lambda en,sp:sp if es else en
  details=t('Add a few deal details (optional)','Añadir detalles de la operación (opcional)')
  consent=t('By submitting, you ask Stonehaven to respond by your selected method about this inquiry. Consent is not a condition of service. For texts, message and data rates may apply; reply STOP to opt out.','Al enviar, solicita que Stonehaven responda por el medio seleccionado sobre esta consulta. El consentimiento no es condición del servicio. Para mensajes de texto pueden aplicarse cargos; responda STOP para cancelar.')
+ note=t('Initial inquiry only. Financing is subject to underwriting, documentation and program availability.','Consulta inicial. El financiamiento está sujeto a evaluación, documentación y disponibilidad.')
+ if path.removeprefix('/es').startswith('/commercial/hud-'):
+  note=t('Stonehaven acts as your mortgage broker. This is an initial inquiry; financing is subject to underwriting, documentation and program availability.','Stonehaven actúa como su intermediario hipotecario. Esta es una consulta inicial; el financiamiento está sujeto a evaluación, documentación y disponibilidad.')
  return block('QUICK',f'''<section class="lead inquiry-quick" id="quick-inquiry"><div class="wrap"><div class="lead-card">
  <span class="eyebrow">{t('Start a conversation','Inicie una conversación')}</span><h2>{t('Discuss your financing','Hablemos de su financiamiento')}</h2>
  <p class="sub">{escape(purpose)}. {t('Start with your name and email. Deal details are optional; we will review your inquiry and explain the next step.','Empiece con su nombre y correo. Los detalles son opcionales; revisaremos su consulta y explicaremos el siguiente paso.')}</p>
@@ -35,7 +43,7 @@ def quick_form(product,purpose,es,path,full):
  <div class="lead-actions"><span class="note">{consent} <a href="{prefix}/privacy">{t('Privacy policy','Privacidad')}</a>.</span><button class="lead-submit" type="submit">{t('Send my inquiry','Enviar mi consulta')}</button></div>
  </form><div class="lead-success" role="status" aria-live="polite"><div class="ok">{t('Thank you. Your inquiry was submitted.','Gracias. Su consulta fue enviada.')}</div><p>{t('Our team will review it and respond by your preferred method. This is not an approval or a rate quote.','Nuestro equipo la revisará y responderá por el medio elegido. No es una aprobación ni una cotización.')}</p></div>
  <p class="quick-alternatives"><a href="{full}">{t('Ready with the numbers? Use the detailed review','¿Tiene las cifras? Use la revisión detallada')}</a> · <a href="{prefix}/book?product={product}">{t('Book a conversation','Reserve una conversación')}</a></p>
- <p class="quick-note">{t('Initial inquiry only. Financing is subject to underwriting, documentation and program availability.','Consulta inicial. El financiamiento está sujeto a evaluación, documentación y disponibilidad.')}</p>
+ <p class="quick-note">{note}</p>
  </div></div></section>''')
 
 def evidence(kind,es,cta,level=3):

@@ -132,3 +132,13 @@ Educational introductions for professionals. No referral compensation is offered
 - [Subdivision financing: how lot release prices affect developer cash flow](https://stonehavencre.com/blog/subdivision-loan-lot-release-prices): educational guide with explicit assumptions and lender-specific questions.
 - [DSCR loan reserves: how much cash should remain after closing?](https://stonehavencre.com/blog/dscr-loan-reserves-cash-to-close): educational guide with explicit assumptions and lender-specific questions.
 - [DSCR prepayment penalties: compare the cost of selling or refinancing early](https://stonehavencre.com/blog/dscr-prepayment-penalty-exit-planning): educational guide with explicit assumptions and lender-specific questions.
+
+## HUD commercial multifamily and healthcare financing
+
+The HUD section explains commercial FHA mortgage insurance programs, not consumer FHA home loans. Stonehaven brokers HUD financing, helping property owners and developers assess program fit, structure requests and coordinate the financing process. HUD inquiries should go to Stonehaven through the relevant page form. These guides do not assert HUD lender approval or government endorsement. Issued HUD sources and review dates appear on each page.
+
+- [HUD financing for the long-term plan.](https://stonehavencre.com/commercial/hud-financing): Stonehaven brokers HUD financing for apartments, construction, build-to-rent and eligible healthcare projects. Submit your deal for an initial review.
+- [HUD 223(f) apartment financing.](https://stonehavencre.com/commercial/hud-223f-loans): Stonehaven brokers HUD 223(f) apartment acquisition and refinance financing. Explore eligibility, repairs, cash-out limits and preparation.
+- [HUD financing for apartment construction.](https://stonehavencre.com/commercial/hud-221d4-construction-loans): Stonehaven brokers HUD 221(d)(4) financing for apartment construction and substantial rehabilitation. Review eligibility, costs and capital needs.
+- [HUD financing for build-to-rent communities.](https://stonehavencre.com/commercial/hud-build-to-rent-financing): Stonehaven brokers HUD financing for eligible build-to-rent communities. Review site, ownership, construction and refinance requirements.
+- [HUD financing for residential care facilities.](https://stonehavencre.com/commercial/hud-232-healthcare-financing): Stonehaven brokers HUD 232 financing for eligible residential care facilities. Review licensing, operations, documentation and project preparation.

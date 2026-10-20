@@ -7,6 +7,9 @@ import xml.etree.ElementTree as ET
 
 ORIGIN = 'https://stonehavencre.com'
 PILLARS = ['/', '/commercial', '/commercial/construction-loans', '/commercial/fix-and-flip',
+           '/commercial/hud-financing', '/commercial/hud-223f-loans',
+           '/commercial/hud-221d4-construction-loans', '/commercial/hud-build-to-rent-financing',
+           '/commercial/hud-232-healthcare-financing',
            '/commercial/land-development-loans',
            '/commercial/bridge-loans', '/commercial/multifamily', '/commercial/mixed-use',
            '/commercial/commercial-property', '/commercial/multifamily-acquisition',
@@ -99,6 +102,9 @@ def build_discovery_files(root):
         excerpt = MainText().extract(path.read_text(), url)
         # Omit promotion of retained programs outside the three core lines.
         excluded = re.compile(r'HELOC|\bFHA\b|\bVA\b|Family Opportunity|first-time|first time|non-recourse', re.I)
-        excerpt = '\n\n'.join(part for part in excerpt.split('\n\n') if not excluded.search(part))
+        # Commercial HUD/FHA explanations must retain their qualifications.
+        # Consumer FHA promotion remains excluded from the other excerpts.
+        if not route.startswith('/commercial/hud-'):
+            excerpt = '\n\n'.join(part for part in excerpt.split('\n\n') if not excluded.search(part))
         full += excerpt + '\n\n'
     (root / 'llms-full.txt').write_text(full)

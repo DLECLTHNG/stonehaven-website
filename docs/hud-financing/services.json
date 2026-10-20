@@ -1,0 +1,400 @@
+{
+  "updated": "2026-10-20",
+  "scope": "Commercial multifamily and residential-care real estate only. No new consumer FHA content.",
+  "editorial_controls": [
+    "No claim that Stonehaven is a HUD/MAP/LEAN approved lender.",
+    "No invented affiliations, closings, rates or guaranteed proceeds.",
+    "Issued updates supersede older handbook ratios; draft policy is not treated as effective.",
+    "Reuses the existing Commercial lead path; no patient or borrower identity documents in public forms.",
+    "Owner direction October 20, 2026: Stonehaven brokers these deals. Do not publish lender names, lender directories or links to competing lenders. Route HUD inquiries to Stonehaven.",
+    "Each HUD service page must state Stonehaven’s mortgage broker role in its introduction and metadata. Article inquiry sections and HUD form notes must also identify the broker role. Do not imply Stonehaven makes credit decisions, funds HUD loans directly or holds HUD/MAP/LEAN approval."
+  ],
+  "pages": {
+    "hud-financing": {
+      "en": {
+        "title": "HUD Multifamily & Construction Financing | Stonehaven",
+        "description": "Stonehaven brokers HUD financing for apartments, construction, build-to-rent and eligible healthcare projects. Submit your deal for an initial review.",
+        "name": "HUD financing for the long-term plan.",
+        "eyebrow": "HUD · Commercial real estate",
+        "h1": "HUD financing for the long-term plan.",
+        "intro": "Stonehaven brokers HUD financing for apartments, rental developments and eligible healthcare facilities. Bring us the property, the numbers and your plan.",
+        "cta_href": "#quick-inquiry",
+        "cta_label": "Submit your HUD scenario",
+        "cta_title": "Bring your HUD deal to Stonehaven",
+        "cta_intro": "Share the property, requested amount and timing. We help assess the financing options, prepare your request and coordinate the next steps.",
+        "source_note": "Program research checked October 20, 2026. Issued HUD updates control over older summaries. This guide is educational, not a commitment, rate quote or HUD endorsement of Stonehaven.",
+        "sources": [
+          [
+            "https://www.hud.gov/sites/dfiles/OCHCO/documents/4430GHSGG.pdf",
+            "HUD MAP Guide, Chapters 3, 5, 8 and 11"
+          ],
+          [
+            "https://www.hud.gov/sites/dfiles/OCHCO/documents/2025-03hsgml.pdf",
+            "HUD Mortgagee Letter 2025-03: underwriting ratios"
+          ],
+          [
+            "https://www.hud.gov/sites/dfiles/hudclips/documents/2026-01hsgml.pdf",
+            "HUD Mortgagee Letter 2026-01: middle-income housing"
+          ],
+          [
+            "https://www.hud.gov/sites/default/files/hudclips/documents/2026-12hsgml.pdf",
+            "HUD Mortgagee Letter 2026-12: build-to-rent eligibility"
+          ],
+          [
+            "https://public-inspection.federalregister.gov/2025-18379.pdf",
+            "HUD final notice 2025-18379: multifamily insurance premiums"
+          ],
+          [
+            "https://www.hud.gov/hud-partners/healthcare-programs-orcf",
+            "HUD Office of Residential Care Facilities"
+          ]
+        ],
+        "body_html": "<section class=\"cre-section cre-answer\" id=\"answer\"><div class=\"wrap\"><h2>What is a HUD commercial real estate loan?</h2><p>HUD multifamily financing uses FHA mortgage insurance to support financing for eligible rental housing. It can provide long-term, fixed-rate financing for existing apartments, new rental construction and substantial rehabilitation. Eligible healthcare facilities use a separate Section 232 process. HUD insurance is not a grant, a rental subsidy or an automatic approval.</p><p>Stonehaven brokers HUD financing for property owners and developers. We help assess program fit, structure the request and coordinate the financing process. The property, its income, the development team and the intended hold period determine whether a HUD route deserves a closer look.</p></div></section>\n<section class=\"cre-section\"><div class=\"wrap\"><h2>How Stonehaven helps with your HUD deal</h2><ul><li><strong>Review the fit:</strong> Start with the property, business plan, financing request and deadline. We help identify the relevant program and questions to resolve early.</li><li><strong>Structure the request:</strong> Work through the budget or operating figures, existing debt, cash requirements and supporting documents.</li><li><strong>Coordinate the process:</strong> We help present the financing request, review proposed terms and coordinate documentation and follow-up through underwriting and closing.</li></ul><p>You have a point of contact at Stonehaven throughout the process. Final eligibility, terms and timing depend on underwriting, required approvals and the project.</p></div></section>\n<section class=\"cre-section\"><div class=\"wrap\"><h2>Choose the route that matches the property</h2><div class=\"cre-grid\"><article class=\"cre-card\"><h3><a href=\"/commercial/hud-223f-loans\">Existing apartments: 223(f)</a></h3><p>Purchase or refinance an eligible operating apartment property with repairs below the substantial rehabilitation threshold.</p></article><article class=\"cre-card\"><h3><a href=\"/commercial/hud-221d4-construction-loans\">Construction: 221(d)(4)</a></h3><p>Plan new apartments or substantial rehabilitation with construction financing and long-term permanent debt.</p></article><article class=\"cre-card\"><h3><a href=\"/commercial/hud-build-to-rent-financing\">Build-to-rent communities</a></h3><p>Review the new rules for qualifying detached rental homes, duplexes and triplexes on a cohesive site.</p></article><article class=\"cre-card\"><h3><a href=\"/commercial/hud-232-healthcare-financing\">Healthcare: Section 232</a></h3><p>Evaluate eligible nursing, assisted living and board-and-care facilities through the ORCF/LEAN process.</p></article></div></div></section>\n<section class=\"cre-section\"><div class=\"wrap\"><h2>Start with fit, then size the loan</h2><ul><li><strong>Property:</strong> Apartment programs generally start at five rental units. That is an eligibility floor, not a promise that a five-unit loan is economical.</li><li><strong>Business plan:</strong> Separate an operating-property refinance from construction, major rehabilitation and a sale of individual homes.</li><li><strong>Income:</strong> Use supportable rents and normalized operating expenses. A large appraisal cannot replace sufficient debt service coverage.</li><li><strong>Sponsor:</strong> Experience, liquidity, ownership structure and management matter alongside the building.</li><li><strong>Timing:</strong> Reports, underwriting, HUD review and closing conditions need room in the schedule. An urgent maturity may require a separately underwritten bridge plan.</li></ul><p>Standalone office, retail, industrial buildings and a collection of unrelated one-to-four-unit rentals do not become eligible apartment projects simply because they are commercial investments. Compare <a href=\"/commercial\">other commercial financing</a> or <a href=\"/dscr\">DSCR rental financing</a> when the property does not fit.</p></div></section>\n<section class=\"cre-section\"><div class=\"wrap\"><h2>Current terms worth understanding</h2><p>For covered market-rate 223(f) and 221(d)(4) transactions, current HUD guidance permits up to 87% applicable value or eligible cost with a 1.15 debt service coverage ratio. Qualifying affordable categories may reach 90% with 1.11 coverage. Eligible middle-income housing has a separate 221(d)(4) route. These are ceilings and tests, not quoted proceeds. <a href=\"https://www.hud.gov/sites/dfiles/OCHCO/documents/2025-03hsgml.pdf\">Read HUD’s ratio update</a>.</p><p>The lowest applicable sizing limit controls. Cash-out restrictions, per-unit statutory limits, expenses, reserves and lender underwriting can reduce available proceeds. The 87% headline does not mean an owner can automatically extract 87% of appraised value.</p><p>Covered multifamily loans have a 0.25% annual mortgage insurance premium under the notice applying to applications submitted or amended from October 1, 2025, before initial endorsement. MIP is separate from interest and upfront funding requirements. It is not a blanket reduction for already-endorsed loans or Section 232 healthcare loans. <a href=\"https://public-inspection.federalregister.gov/2025-18379.pdf\">Read the final MIP notice</a>.</p></div></section>\n<section class=\"cre-section\"><div class=\"wrap\"><h2>A useful first review package</h2><ul><li>Property location, unit count, current ownership and whether the request is a purchase, refinance or development.</li><li>Requested loan, estimated value or development budget, existing debt and the real closing deadline.</li><li>For an operating property: current rent roll, recent operating results, occupancy, concessions and planned repairs.</li><li>For development: site control, zoning, plans, construction budget, contractor and development experience.</li><li>Known environmental, title, insurance, affordability or operating issues. Identify them early rather than ordering reports on incomplete assumptions.</li></ul><p>Start with a short project summary in the inquiry below. We can then explain the document collection process. Keep SSNs, bank statements and private tenant or patient information out of the public form.</p></div></section>\n<section class=\"cre-section\"><div class=\"wrap\"><h2>Questions to resolve before choosing HUD</h2><h3>Is HUD only for subsidized housing?</h3><p>No. Eligible market-rate apartments can qualify. Affordable and middle-income classifications have their own criteria; ordinary affordable rents do not automatically establish a special category.</p><h3>Is the financing nonrecourse?</h3><p>HUD-insured multifamily structures generally offer nonrecourse debt, subject to loan-document exceptions and applicable construction or completion obligations. Nonrecourse does not mean the owner has no obligations.</p><h3>What does it cost and how long does it take?</h3><p>Request a property-specific schedule and a written breakdown of reports, application costs, financing charges, insurance and reserves. Do not rely on a universal rate, closing-time promise or minimum loan amount.</p><p>Continue with <a href=\"/blog/hud-loan-application-checklist-timeline\">the application checklist</a>, <a href=\"/blog/hud-loan-leverage-cash-to-close\">leverage versus cash needed</a> and <a href=\"/blog/bridge-to-hud-multifamily-refinance\">bridge-to-HUD planning</a>.</p></div></section>"
+      },
+      "es": {
+        "title": "Financiamiento HUD multifamiliar | Stonehaven",
+        "description": "Stonehaven intermedia financiamiento HUD para apartamentos, construcción, comunidades de alquiler y centros de cuidados. Envíe su proyecto para revisión.",
+        "name": "Financiamiento HUD para su plan a largo plazo.",
+        "eyebrow": "HUD · Bienes raíces comerciales",
+        "h1": "Financiamiento HUD para su plan a largo plazo.",
+        "intro": "Stonehaven actúa como intermediario hipotecario para apartamentos, desarrollos de alquiler y centros de cuidados elegibles mediante HUD. Comparta el inmueble, las cifras y su plan.",
+        "cta_href": "#quick-inquiry",
+        "cta_label": "Enviar mi proyecto HUD",
+        "cta_title": "Presente su proyecto HUD a Stonehaven",
+        "cta_intro": "Comparta el inmueble, el monto solicitado y su plazo. Le ayudamos a evaluar opciones, preparar la solicitud y coordinar los siguientes pasos.",
+        "source_note": "Fuentes revisadas el 20 de octubre de 2026. Las actualizaciones emitidas por HUD prevalecen sobre resúmenes anteriores. Esta guía no es un compromiso, una cotización ni un aval de HUD a Stonehaven.",
+        "sources": [
+          [
+            "https://www.hud.gov/sites/dfiles/OCHCO/documents/4430GHSGG.pdf",
+            "HUD MAP Guide, Chapters 3, 5, 8 and 11"
+          ],
+          [
+            "https://www.hud.gov/sites/dfiles/OCHCO/documents/2025-03hsgml.pdf",
+            "HUD Mortgagee Letter 2025-03: underwriting ratios"
+          ],
+          [
+            "https://www.hud.gov/sites/dfiles/hudclips/documents/2026-01hsgml.pdf",
+            "HUD Mortgagee Letter 2026-01: middle-income housing"
+          ],
+          [
+            "https://www.hud.gov/sites/default/files/hudclips/documents/2026-12hsgml.pdf",
+            "HUD Mortgagee Letter 2026-12: build-to-rent eligibility"
+          ],
+          [
+            "https://public-inspection.federalregister.gov/2025-18379.pdf",
+            "HUD final notice 2025-18379: multifamily insurance premiums"
+          ],
+          [
+            "https://www.hud.gov/hud-partners/healthcare-programs-orcf",
+            "HUD Office of Residential Care Facilities"
+          ]
+        ],
+        "body_html": "<section class=\"cre-section cre-answer\" id=\"answer\"><div class=\"wrap\"><h2>¿Qué es un préstamo HUD para inmuebles comerciales?</h2><p>El financiamiento multifamiliar HUD utiliza el seguro hipotecario FHA para respaldar financiamiento de viviendas de alquiler elegibles. Puede ofrecer deuda de largo plazo y tasa fija para apartamentos existentes, construcción y rehabilitación sustancial. Los centros de cuidados elegibles siguen un proceso separado bajo la Sección 232. El seguro HUD no es una subvención, ayuda de alquiler ni aprobación automática.</p><p>Stonehaven actúa como intermediario de financiamiento HUD para propietarios y desarrolladores. Le ayudamos a evaluar el programa, estructurar la solicitud y coordinar el proceso. El inmueble, sus ingresos, el equipo y el plazo previsto de tenencia determinan si conviene evaluar una opción HUD.</p></div></section>\n<section class=\"cre-section\"><div class=\"wrap\"><h2>Cómo le ayuda Stonehaven con su proyecto HUD</h2><ul><li><strong>Evaluar el programa:</strong> Empezamos por el inmueble, el plan de negocio, el monto solicitado y el plazo. Le ayudamos a identificar la ruta pertinente y las cuestiones que conviene resolver al inicio.</li><li><strong>Estructurar la solicitud:</strong> Revisamos el presupuesto o las cifras operativas, la deuda existente, el capital necesario y la documentación.</li><li><strong>Coordinar el proceso:</strong> Le ayudamos a presentar la solicitud, revisar las condiciones propuestas y coordinar documentos y seguimiento durante la evaluación y el cierre.</li></ul><p>Cuenta con un contacto en Stonehaven durante el proceso. La elegibilidad, las condiciones y los plazos finales dependen de la evaluación, las aprobaciones requeridas y el proyecto.</p></div></section>\n<section class=\"cre-section\"><div class=\"wrap\"><h2>Elija la ruta según el inmueble</h2><div class=\"cre-grid\"><article class=\"cre-card\"><h3><a href=\"/es/commercial/hud-223f-loans\">Apartamentos existentes: 223(f)</a></h3><p>Compra o refinanciamiento de un inmueble de alquiler operativo, con reparaciones inferiores al umbral de rehabilitación sustancial.</p></article><article class=\"cre-card\"><h3><a href=\"/es/commercial/hud-221d4-construction-loans\">Construcción: 221(d)(4)</a></h3><p>Nuevos apartamentos o rehabilitación sustancial con financiamiento de obra y deuda permanente de largo plazo.</p></article><article class=\"cre-card\"><h3><a href=\"/es/commercial/hud-build-to-rent-financing\">Comunidades construidas para alquilar</a></h3><p>Reglas nuevas para viviendas independientes, dúplex y tríplex de alquiler en un sitio integrado.</p></article><article class=\"cre-card\"><h3><a href=\"/es/commercial/hud-232-healthcare-financing\">Centros de cuidados: Sección 232</a></h3><p>Residencias de enfermería, vivienda asistida y centros de alojamiento y cuidados elegibles, mediante ORCF/LEAN.</p></article></div></div></section>\n<section class=\"cre-section\"><div class=\"wrap\"><h2>Primero la elegibilidad, después el monto</h2><ul><li><strong>Inmueble:</strong> Los programas de apartamentos generalmente comienzan en cinco unidades de alquiler. Ese mínimo no garantiza que un préstamo pequeño resulte económico.</li><li><strong>Plan:</strong> Distinga el refinanciamiento de un inmueble operativo, la construcción, la rehabilitación importante y la venta individual de viviendas.</li><li><strong>Ingresos:</strong> Use rentas respaldadas y gastos operativos normalizados. Una tasación alta no sustituye la cobertura de deuda.</li><li><strong>Promotor:</strong> Importan experiencia, liquidez, estructura de propiedad y administración.</li><li><strong>Plazo:</strong> Los informes, evaluación, revisión de HUD y condiciones de cierre requieren tiempo. Un vencimiento urgente puede necesitar un préstamo puente evaluado por separado.</li></ul><p>Una oficina, comercio, nave industrial o cartera de viviendas dispersas no se convierte automáticamente en un proyecto multifamiliar elegible. Compare <a href=\"/es/commercial\">otras opciones comerciales</a> o <a href=\"/es/dscr\">financiamiento DSCR</a> cuando corresponda.</p></div></section>\n<section class=\"cre-section\"><div class=\"wrap\"><h2>Términos actuales que conviene entender</h2><p>Para operaciones de mercado cubiertas por 223(f) y 221(d)(4), la guía actual permite hasta 87% del valor o costo elegible aplicable, con cobertura de deuda de 1.15. Algunas categorías asequibles permiten hasta 90% y cobertura de 1.11. La vivienda de ingresos medios tiene una ruta específica bajo 221(d)(4). Son límites y pruebas, no una oferta de fondos. <a href=\"https://www.hud.gov/sites/dfiles/OCHCO/documents/2025-03hsgml.pdf\">Actualización de ratios de HUD</a>.</p><p>Controla el menor límite aplicable. Las restricciones de retiro de capital, límites legales por unidad, gastos, reservas y evaluación pueden reducir los fondos. El 87% no significa que se pueda retirar automáticamente ese porcentaje del valor tasado.</p><p>El aviso aplicable a solicitudes presentadas o modificadas desde el 1 de octubre de 2025, antes del endoso inicial, establece una prima anual de seguro hipotecario de 0.25% para los préstamos multifamiliares cubiertos. Es distinta del interés y de los fondos iniciales requeridos. No reduce automáticamente préstamos ya endosados ni los de atención residencial de la Sección 232. <a href=\"https://public-inspection.federalregister.gov/2025-18379.pdf\">Aviso final de primas</a>.</p></div></section>\n<section class=\"cre-section\"><div class=\"wrap\"><h2>Información útil para una primera revisión</h2><ul><li>Ubicación, número de unidades, propiedad actual y objetivo: compra, refinanciamiento o desarrollo.</li><li>Préstamo solicitado, valor estimado o presupuesto, deuda existente y fecha límite real.</li><li>Inmueble operativo: listado de rentas, resultados recientes, ocupación, concesiones y reparaciones.</li><li>Desarrollo: control del sitio, zonificación, planos, presupuesto, contratista y experiencia.</li><li>Problemas conocidos de medioambiente, título, seguros, restricciones de ingresos u operación. Identifíquelos antes de encargar informes.</li></ul><p>Comience con un resumen en el formulario. Después explicaremos la recopilación de documentos. No incluya SSN, estados bancarios ni información privada de inquilinos o pacientes.</p></div></section>\n<section class=\"cre-section\"><div class=\"wrap\"><h2>Preguntas antes de elegir HUD</h2><h3>¿HUD es solo para vivienda subsidiada?</h3><p>No. Los apartamentos elegibles con rentas de mercado pueden calificar. Las categorías asequibles y de ingresos medios tienen criterios propios; una renta moderada no establece por sí sola una categoría especial.</p><h3>¿La deuda es sin recurso?</h3><p>Las estructuras multifamiliares aseguradas por HUD generalmente son sin recurso, sujetas a excepciones contractuales y obligaciones de construcción o terminación aplicables. No significa ausencia de obligaciones del propietario.</p><h3>¿Cuánto cuesta y cuánto tarda?</h3><p>Solicite un calendario específico y un desglose de informes, solicitud, cargos financieros, seguro y reservas. No base la decisión en una tasa, plazo de cierre o monto mínimo universal.</p><p>Continúe con <a href=\"/es/blog/hud-loan-application-checklist-timeline\">la lista de preparación</a>, <a href=\"/es/blog/hud-loan-leverage-cash-to-close\">apalancamiento y efectivo necesario</a> y <a href=\"/es/blog/bridge-to-hud-multifamily-refinance\">la salida de un préstamo puente hacia HUD</a>.</p></div></section>"
+      }
+    },
+    "hud-223f-loans": {
+      "en": {
+        "title": "HUD 223(f) Apartment Loans & Refinancing | Stonehaven",
+        "description": "Stonehaven brokers HUD 223(f) apartment acquisition and refinance financing. Explore eligibility, repairs, cash-out limits and preparation.",
+        "name": "HUD 223(f) apartment financing.",
+        "eyebrow": "HUD · Commercial real estate",
+        "h1": "HUD 223(f) apartment financing.",
+        "intro": "Stonehaven brokers HUD 223(f) financing for eligible apartment purchases and refinances. We help structure your request around the property, income and proceeds you need.",
+        "cta_href": "#quick-inquiry",
+        "cta_label": "Submit your HUD scenario",
+        "cta_title": "Bring your HUD deal to Stonehaven",
+        "cta_intro": "Share the property, requested amount and timing. We help assess the financing options, prepare your request and coordinate the next steps.",
+        "source_note": "Program research checked October 20, 2026. Issued HUD updates control over older summaries. This guide is educational, not a commitment, rate quote or HUD endorsement of Stonehaven.",
+        "sources": [
+          [
+            "https://www.hud.gov/sites/dfiles/OCHCO/documents/4430GHSGG.pdf",
+            "HUD MAP Guide, Chapters 3, 5, 8 and 11"
+          ],
+          [
+            "https://www.hud.gov/sites/dfiles/OCHCO/documents/2025-03hsgml.pdf",
+            "HUD Mortgagee Letter 2025-03: underwriting ratios"
+          ],
+          [
+            "https://www.hud.gov/sites/default/files/hudclips/documents/2026-05hsgml.pdf",
+            "HUD Mortgagee Letter 2026-05: 2026 thresholds"
+          ],
+          [
+            "https://public-inspection.federalregister.gov/2025-18379.pdf",
+            "HUD final notice 2025-18379: multifamily insurance premiums"
+          ]
+        ],
+        "body_html": "<section class=\"cre-section cre-answer\" id=\"answer\"><div class=\"wrap\"><h2>What does HUD 223(f) finance?</h2><p>Section 223(f) supports the purchase or refinancing of eligible existing multifamily rental properties with at least five units. It can accommodate qualifying repairs, but it is not the route for work that meets HUD’s substantial rehabilitation definition. The property’s income, condition and operating history must support permanent financing.</p><p>Terms can extend to 35 years, limited by 75% of remaining economic life. A fixed rate and long amortization may suit a long-term hold, but financing costs, MIP, reserves and exit restrictions still belong in the comparison.</p></div></section>\n<section class=\"cre-section\"><div class=\"wrap\"><h2>How much can an apartment property borrow?</h2><p>Current market-rate guidance allows up to 87% applicable LTV with a 1.15 DSCR, subject to all other limits. Eligible affordable categories can use different ratios. The approved amount is the lowest result of the applicable mortgage criteria, including value, debt service, transaction costs and statutory per-unit limits. <a href=\"https://www.hud.gov/sites/dfiles/OCHCO/documents/2025-03hsgml.pdf\">HUD’s current ratio letter</a>.</p><div class=\"cre-note\"><h3>A value ceiling is not a cash-out quote</h3><p>The 2025 ratio increase expressly left Criterion 10 cash-out rules unchanged. The MAP Guide describes that criterion as the greater of 80% of value or the cost to refinance, subject to other mortgage limits. It does not permit automatic 87% cash-out. Repair escrows and release conditions may also hold back cash.</p></div><p>Before estimating proceeds, separate existing payoff, transaction costs, repairs, deposits, required reserves and distributable cash. Compare the net result with your objective, not just the gross loan amount.</p></div></section>\n<section class=\"cre-section\"><div class=\"wrap\"><h2>Does the building have to be three years old?</h2><p>A blanket three-year waiting rule is outdated. The MAP Guide allows certain recently completed or substantially rehabilitated properties to apply after achieving the applicable program DSCR for at least one full month. It requires three consecutive months of the required coverage before endorsement, plus the specific operating documentation and safeguards for that category.</p><p>That is not an automatic one-month closing. Rent concessions, achieved collections, normalized expenses and the remaining lease-up plan need review. Newly completed build-to-rent communities also have the separate <a href=\"/commercial/hud-build-to-rent-financing\">2026 BTR eligibility rules</a>.</p></div></section>\n<section class=\"cre-section\"><div class=\"wrap\"><h2>Repairs can change the financing route</h2><p>Prepare a scope that separates life-safety items, accessibility work, ordinary repairs and major building-system work. Do not classify a property as light rehabilitation just because the purchase contract uses that phrase.</p><p>HUD’s substantial rehabilitation analysis considers more than a single dollar amount. The 2026 base per-unit threshold is $20,406 before applicable adjustments and the other tests in the MAP Guide. It is not a universal $20,406 repair allowance. Have the actual scope classified before budgeting a 223(f) closing. If it is substantial rehabilitation, compare <a href=\"/commercial/hud-221d4-construction-loans\">221(d)(4)</a>.</p></div></section>\n<section class=\"cre-section\"><div class=\"wrap\"><h2>Prepare the acquisition or refinance</h2><ul><li>Provide the current rent roll, lease concessions, trailing operating statements and occupancy history.</li><li>Reconcile taxes, insurance, utilities, management and replacement needs against actual records.</li><li>Identify purchase terms or debt payoff, prepayment obligations, ownership structure and any related-party sale.</li><li>Flag repairs, environmental conditions and affordability restrictions before reports are ordered.</li><li>Show the timing of deposits and any equity contribution separately from loan proceeds.</li></ul><p>For a short acquisition deadline, compare <a href=\"/blog/bridge-to-hud-multifamily-refinance\">a bridge-to-HUD plan</a> with the costs and risks of waiting for permanent debt. A bridge loan does not guarantee the later HUD refinance.</p></div></section>\n<section class=\"cre-section\"><div class=\"wrap\"><h2>How Stonehaven helps</h2><p>We start with the proposed use of funds and the property’s operating picture. We help organize the financing request, compare permanent and interim structures, and identify missing information before the next underwriting step.</p><p>If you intend to sell or refinance again soon, review the actual prepayment and transfer provisions before selecting a long-term structure. An assumable loan still requires applicable approvals. Read <a href=\"/blog/hud-223f-vs-221d4\">223(f) versus 221(d)(4)</a> and <a href=\"/blog/hud-loan-application-checklist-timeline\">the HUD application checklist</a>.</p></div></section>"
+      },
+      "es": {
+        "title": "Préstamos HUD 223(f) para apartamentos | Stonehaven",
+        "description": "Stonehaven intermedia financiamiento HUD 223(f) para compra y refinanciamiento de apartamentos. Revise requisitos, reparaciones y retiro de capital.",
+        "name": "Financiamiento HUD 223(f) para apartamentos.",
+        "eyebrow": "HUD · Bienes raíces comerciales",
+        "h1": "Financiamiento HUD 223(f) para apartamentos.",
+        "intro": "Stonehaven actúa como intermediario hipotecario para compras y refinanciamientos elegibles de apartamentos mediante HUD 223(f). Le ayudamos a estructurar la solicitud según el inmueble, sus ingresos y los fondos que necesita.",
+        "cta_href": "#quick-inquiry",
+        "cta_label": "Enviar mi proyecto HUD",
+        "cta_title": "Presente su proyecto HUD a Stonehaven",
+        "cta_intro": "Comparta el inmueble, el monto solicitado y su plazo. Le ayudamos a evaluar opciones, preparar la solicitud y coordinar los siguientes pasos.",
+        "source_note": "Fuentes revisadas el 20 de octubre de 2026. Las actualizaciones emitidas por HUD prevalecen sobre resúmenes anteriores. Esta guía no es un compromiso, una cotización ni un aval de HUD a Stonehaven.",
+        "sources": [
+          [
+            "https://www.hud.gov/sites/dfiles/OCHCO/documents/4430GHSGG.pdf",
+            "HUD MAP Guide, Chapters 3, 5, 8 and 11"
+          ],
+          [
+            "https://www.hud.gov/sites/dfiles/OCHCO/documents/2025-03hsgml.pdf",
+            "HUD Mortgagee Letter 2025-03: underwriting ratios"
+          ],
+          [
+            "https://www.hud.gov/sites/default/files/hudclips/documents/2026-05hsgml.pdf",
+            "HUD Mortgagee Letter 2026-05: 2026 thresholds"
+          ],
+          [
+            "https://public-inspection.federalregister.gov/2025-18379.pdf",
+            "HUD final notice 2025-18379: multifamily insurance premiums"
+          ]
+        ],
+        "body_html": "<section class=\"cre-section cre-answer\" id=\"answer\"><div class=\"wrap\"><h2>¿Qué financia HUD 223(f)?</h2><p>La Sección 223(f) respalda la compra o refinanciamiento de inmuebles multifamiliares de alquiler existentes y elegibles, con al menos cinco unidades. Admite reparaciones permitidas, pero no obras que constituyan rehabilitación sustancial según HUD. Los ingresos, condición e historial operativo deben respaldar deuda permanente.</p><p>El plazo puede llegar a 35 años, limitado al 75% de la vida económica restante. La tasa fija y amortización prolongada pueden servir para conservar el inmueble, pero deben compararse cargos, seguro hipotecario, reservas y restricciones de salida.</p></div></section>\n<section class=\"cre-section\"><div class=\"wrap\"><h2>¿Cuánto puede financiar el inmueble?</h2><p>La guía vigente para propiedades de mercado permite hasta 87% LTV aplicable y DSCR de 1.15, sujeto a los demás límites. Las categorías asequibles elegibles tienen ratios distintos. El monto aprobado es el menor resultado de los criterios aplicables: valor, cobertura de deuda, costos de la operación y límites legales por unidad. <a href=\"https://www.hud.gov/sites/dfiles/OCHCO/documents/2025-03hsgml.pdf\">Carta vigente de HUD</a>.</p><div class=\"cre-note\"><h3>El límite de valor no es una oferta de retiro de capital</h3><p>El aumento de 2025 dejó sin cambios el Criterio 10 para retiro de capital. La guía MAP lo describe como el mayor entre 80% del valor y el costo de refinanciar, sujeto a los otros límites hipotecarios. No permite retirar automáticamente 87% del valor. También pueden retenerse fondos por reparaciones y condiciones de liberación.</p></div><p>Separe liquidación de deuda, gastos, reparaciones, depósitos, reservas y efectivo distribuible. Compare el resultado neto con su objetivo, no solo el préstamo bruto.</p></div></section>\n<section class=\"cre-section\"><div class=\"wrap\"><h2>¿El edificio debe tener tres años?</h2><p>Una espera obligatoria universal de tres años es una interpretación desactualizada. La guía MAP permite que ciertos inmuebles recién terminados o rehabilitados sustancialmente soliciten financiamiento tras alcanzar el DSCR aplicable durante al menos un mes completo. Exige tres meses consecutivos de cobertura antes del endoso, documentación operativa y salvaguardas específicas.</p><p>Esto no equivale a un cierre automático en un mes. Se revisan concesiones, cobros reales, gastos normalizados y arrendamiento pendiente. Las comunidades construidas para alquilar también deben cumplir <a href=\"/es/commercial/hud-build-to-rent-financing\">las reglas BTR de 2026</a>.</p></div></section>\n<section class=\"cre-section\"><div class=\"wrap\"><h2>Las reparaciones pueden cambiar el programa</h2><p>Distinga trabajos de seguridad, accesibilidad, reparaciones ordinarias y sistemas importantes del edificio. No clasifique la obra como menor solo porque el contrato la describe así.</p><p>La evaluación de rehabilitación sustancial considera más de una cifra. El umbral base por unidad de 2026 es $20,406 antes de ajustes aplicables y otras pruebas de la guía MAP. No es una asignación universal de reparaciones. Clasifique el alcance antes de presupuestar el cierre. Si constituye rehabilitación sustancial, compare <a href=\"/es/commercial/hud-221d4-construction-loans\">221(d)(4)</a>.</p></div></section>\n<section class=\"cre-section\"><div class=\"wrap\"><h2>Prepare la compra o refinanciamiento</h2><ul><li>Listado actual de rentas, concesiones, estados operativos y ocupación histórica.</li><li>Impuestos, seguros, servicios, administración y necesidades de reposición respaldados por registros.</li><li>Condiciones de compra o liquidación, cargos de prepago, estructura de propiedad y venta entre partes relacionadas.</li><li>Reparaciones, condiciones ambientales y restricciones de vivienda asequible antes de encargar informes.</li><li>Calendario de depósitos y aportación de capital separado de los fondos del préstamo.</li></ul><p>Ante una fecha de compra próxima, compare <a href=\"/es/blog/bridge-to-hud-multifamily-refinance\">un plan puente hacia HUD</a> con los costos de esperar deuda permanente. El préstamo puente no garantiza el refinanciamiento HUD.</p></div></section>\n<section class=\"cre-section\"><div class=\"wrap\"><h2>Cómo ayuda Stonehaven</h2><p>Empezamos por el uso de fondos y los resultados del inmueble. Ayudamos a organizar la solicitud, comparar estructuras permanentes y temporales e identificar información pendiente antes de la siguiente evaluación.</p><p>Si planea vender o refinanciar pronto, revise las cláusulas de prepago y transferencia. La asunción del préstamo requiere las aprobaciones aplicables. Consulte <a href=\"/es/blog/hud-223f-vs-221d4\">223(f) frente a 221(d)(4)</a> y <a href=\"/es/blog/hud-loan-application-checklist-timeline\">la lista de preparación HUD</a>.</p></div></section>"
+      }
+    },
+    "hud-221d4-construction-loans": {
+      "en": {
+        "title": "HUD 221(d)(4) Construction Loans | Stonehaven",
+        "description": "Stonehaven brokers HUD 221(d)(4) financing for apartment construction and substantial rehabilitation. Review eligibility, costs and capital needs.",
+        "name": "HUD financing for apartment construction.",
+        "eyebrow": "HUD · Commercial real estate",
+        "h1": "HUD financing for apartment construction.",
+        "intro": "Stonehaven brokers HUD 221(d)(4) financing for eligible apartment construction and substantial rehabilitation. We help connect your development budget, financing structure and cash plan.",
+        "cta_href": "#quick-inquiry",
+        "cta_label": "Submit your HUD scenario",
+        "cta_title": "Bring your HUD deal to Stonehaven",
+        "cta_intro": "Share the property, requested amount and timing. We help assess the financing options, prepare your request and coordinate the next steps.",
+        "source_note": "Program research checked October 20, 2026. Issued HUD updates control over older summaries. This guide is educational, not a commitment, rate quote or HUD endorsement of Stonehaven.",
+        "sources": [
+          [
+            "https://www.hud.gov/sites/dfiles/OCHCO/documents/4430GHSGG.pdf",
+            "HUD MAP Guide, Chapters 3, 5, 8 and 11"
+          ],
+          [
+            "https://www.hud.gov/sites/dfiles/OCHCO/documents/2025-03hsgml.pdf",
+            "HUD Mortgagee Letter 2025-03: underwriting ratios"
+          ],
+          [
+            "https://www.hud.gov/sites/dfiles/hudclips/documents/2026-01hsgml.pdf",
+            "HUD Mortgagee Letter 2026-01: middle-income housing"
+          ],
+          [
+            "https://public-inspection.federalregister.gov/2025-18379.pdf",
+            "HUD final notice 2025-18379: multifamily insurance premiums"
+          ],
+          [
+            "https://www.hud.gov/sites/default/files/hudclips/documents/2026-05hsgml.pdf",
+            "HUD Mortgagee Letter 2026-05: 2026 thresholds"
+          ],
+          [
+            "https://www.hud.gov/sites/default/files/hudclips/documents/2026-04hsgml.pdf",
+            "HUD Mortgagee Letter 2026-04: environmental guidance"
+          ],
+          [
+            "https://www.hud.gov/sites/default/files/hudclips/documents/2026-12hsgml.pdf",
+            "HUD Mortgagee Letter 2026-12: build-to-rent eligibility"
+          ]
+        ],
+        "body_html": "<section class=\"cre-section cre-answer\" id=\"answer\"><div class=\"wrap\"><h2>What is HUD 221(d)(4)?</h2><p>Section 221(d)(4) insures financing for eligible new multifamily rental construction and substantial rehabilitation. The structure combines the construction phase with permanent debt that can amortize over up to 40 years after construction, subject to the program and commitment terms.</p><p>It is worth considering when the project will remain rental housing, the sponsor can prepare a detailed submission and the schedule allows for design, reports and HUD review. It is not a substitute for a quick land closing or a loan designed to sell individual homes.</p></div></section>\n<section class=\"cre-section\"><div class=\"wrap\"><h2>87% LTC, and when 90% may apply</h2><p>For covered market-rate projects, current HUD ratios allow up to 87% of eligible cost with a 1.15 DSCR. The loan must also satisfy statutory unit limits and the other applicable sizing tests. A budget that qualifies under LTC can still fail the income test. <a href=\"https://www.hud.gov/sites/dfiles/OCHCO/documents/2025-03hsgml.pdf\">Mortgagee Letter 2025-03</a>.</p><p>Qualifying affordable housing may use 90% and 1.11 DSCR. The separate middle-income pathway can also permit 90% LTC and 1.11 DSCR, but only for projects meeting the issued policy. A plan to charge moderate rents is not enough.</p><p>Under the 2026 middle-income letter, the general framework includes at least half the units for households at or below 120% of area median income, an eligible program or specified alternative pathway, and a recorded use restriction generally lasting at least ten years. Read <a href=\"/blog/hud-middle-income-housing-90-percent-ltc\">the middle-income guide</a> before using 90% in a capital plan.</p></div></section>\n<section class=\"cre-section\"><div class=\"wrap\"><h2>Build the cash plan around more than LTC</h2><ul><li>Separate the eligible development budget from costs that cannot be financed.</li><li>Identify land basis, existing debt and any equity credit. Do not assume an appraisal increase becomes spendable construction cash.</li><li>Budget report deposits, financing and legal costs, construction interest, mortgage insurance, escrows and contingencies.</li><li>Understand working-capital and operating-deficit reserve requirements, including when deposits must be made.</li><li>Map the draw process against contractor payments. Funding a percentage of total cost does not eliminate temporary cash needs.</li></ul><p>For covered multifamily construction, the revised MIP notice calculates upfront capitalized insurance over the construction period rounded up to whole years. The annual 0.25% figure is not necessarily the entire upfront premium. <a href=\"https://public-inspection.federalregister.gov/2025-18379.pdf\">Review the MIP notice</a>.</p></div></section>\n<section class=\"cre-section\"><div class=\"wrap\"><h2>The site, plans and team need to fit together</h2><p>A complete concept includes site control, zoning and entitlements, unit mix, market rents, plans, detailed costs, contractor experience, ownership and management. Environmental, floodplain, access and utility issues can change the design or schedule before a financing application is ready.</p><p>HUD construction also brings specific construction administration, inspections and applicable prevailing-wage requirements. Have the contractor and design team incorporate those requirements before treating an ordinary private construction budget as a HUD budget.</p><p>Major rehabilitation requires a coordinated scope and resident or relocation planning where applicable. The 2026 threshold update does not eliminate the other substantial rehabilitation tests.</p></div></section>\n<section class=\"cre-section\"><div class=\"wrap\"><h2>Where build-to-rent fits</h2><p>The issued 2026 guidance allows qualifying rental communities of detached homes, duplexes and triplexes to be considered under 221(d)(4) new construction. The community must meet the site, ownership, management and operating requirements. Individual home sales and partial collateral releases are not the intended exit.</p><p>Compare <a href=\"/commercial/hud-build-to-rent-financing\">HUD build-to-rent financing</a> with <a href=\"/commercial/land-development-loans\">lot development financing</a> if your business plan involves selling lots or completed homes.</p></div></section>\n<section class=\"cre-section\"><div class=\"wrap\"><h2>Start the review before the closing deadline</h2><p>Send Stonehaven the location, unit count, total budget, requested financing, site status, development team and intended rental hold. We can help organize the structure and determine which items need review first.</p><p>If land acquisition must close sooner, evaluate the interim financing and HUD path separately. An anticipated permanent loan is not an approval or a guaranteed takeout. Continue with <a href=\"/blog/hud-loan-application-checklist-timeline\">application preparation</a> and <a href=\"/blog/hud-loan-leverage-cash-to-close\">the cash-to-close example</a>.</p></div></section>"
+      },
+      "es": {
+        "title": "Construcción multifamiliar HUD 221(d)(4) | Stonehaven",
+        "description": "Stonehaven intermedia financiamiento HUD 221(d)(4) para construcción y rehabilitación multifamiliar. Revise requisitos, costos y capital necesario.",
+        "name": "Financiamiento HUD para construir apartamentos.",
+        "eyebrow": "HUD · Bienes raíces comerciales",
+        "h1": "Financiamiento HUD para construir apartamentos.",
+        "intro": "Stonehaven actúa como intermediario hipotecario para construcción y rehabilitación multifamiliar elegibles mediante HUD 221(d)(4). Le ayudamos a coordinar presupuesto, estructura financiera y capital necesario.",
+        "cta_href": "#quick-inquiry",
+        "cta_label": "Enviar mi proyecto HUD",
+        "cta_title": "Presente su proyecto HUD a Stonehaven",
+        "cta_intro": "Comparta el inmueble, el monto solicitado y su plazo. Le ayudamos a evaluar opciones, preparar la solicitud y coordinar los siguientes pasos.",
+        "source_note": "Fuentes revisadas el 20 de octubre de 2026. Las actualizaciones emitidas por HUD prevalecen sobre resúmenes anteriores. Esta guía no es un compromiso, una cotización ni un aval de HUD a Stonehaven.",
+        "sources": [
+          [
+            "https://www.hud.gov/sites/dfiles/OCHCO/documents/4430GHSGG.pdf",
+            "HUD MAP Guide, Chapters 3, 5, 8 and 11"
+          ],
+          [
+            "https://www.hud.gov/sites/dfiles/OCHCO/documents/2025-03hsgml.pdf",
+            "HUD Mortgagee Letter 2025-03: underwriting ratios"
+          ],
+          [
+            "https://www.hud.gov/sites/dfiles/hudclips/documents/2026-01hsgml.pdf",
+            "HUD Mortgagee Letter 2026-01: middle-income housing"
+          ],
+          [
+            "https://public-inspection.federalregister.gov/2025-18379.pdf",
+            "HUD final notice 2025-18379: multifamily insurance premiums"
+          ],
+          [
+            "https://www.hud.gov/sites/default/files/hudclips/documents/2026-05hsgml.pdf",
+            "HUD Mortgagee Letter 2026-05: 2026 thresholds"
+          ],
+          [
+            "https://www.hud.gov/sites/default/files/hudclips/documents/2026-04hsgml.pdf",
+            "HUD Mortgagee Letter 2026-04: environmental guidance"
+          ],
+          [
+            "https://www.hud.gov/sites/default/files/hudclips/documents/2026-12hsgml.pdf",
+            "HUD Mortgagee Letter 2026-12: build-to-rent eligibility"
+          ]
+        ],
+        "body_html": "<section class=\"cre-section cre-answer\" id=\"answer\"><div class=\"wrap\"><h2>¿Qué es HUD 221(d)(4)?</h2><p>La Sección 221(d)(4) asegura financiamiento para construcción multifamiliar de alquiler y rehabilitación sustancial elegibles. Combina la fase de construcción con deuda permanente que puede amortizarse hasta 40 años después de la obra, según el programa y compromiso.</p><p>Conviene evaluarla cuando el inmueble seguirá en alquiler, el promotor puede preparar un expediente detallado y el calendario permite diseño, informes y revisión de HUD. No sustituye un cierre urgente de terreno ni financiamiento para vender viviendas individualmente.</p></div></section>\n<section class=\"cre-section\"><div class=\"wrap\"><h2>87% LTC y cuándo podría aplicar 90%</h2><p>Para proyectos de mercado cubiertos, los ratios vigentes permiten hasta 87% del costo elegible y DSCR de 1.15. También se aplican límites legales por unidad y otras pruebas. Un presupuesto que cumple LTC puede no cumplir la cobertura de deuda. <a href=\"https://www.hud.gov/sites/dfiles/OCHCO/documents/2025-03hsgml.pdf\">Carta hipotecaria 2025-03</a>.</p><p>Algunas viviendas asequibles elegibles pueden usar 90% y DSCR de 1.11. La ruta de ingresos medios también puede permitir 90% LTC y 1.11, pero únicamente al cumplir la política emitida. Proponer rentas moderadas no basta.</p><p>El marco general de 2026 contempla al menos la mitad de las unidades para hogares con ingresos de hasta 120% del ingreso medio del área, un programa elegible o alternativa expresamente prevista y una restricción registrada generalmente de al menos diez años. Revise <a href=\"/es/blog/hud-middle-income-housing-90-percent-ltc\">la guía de ingresos medios</a> antes de asumir 90%.</p></div></section>\n<section class=\"cre-section\"><div class=\"wrap\"><h2>Planifique más que el porcentaje LTC</h2><ul><li>Separe el presupuesto elegible de los gastos que no pueden financiarse.</li><li>Identifique costo del terreno, deuda existente y posible crédito de capital. Una mayor tasación no se convierte automáticamente en efectivo para la obra.</li><li>Presupueste depósitos de informes, cargos financieros y legales, intereses de construcción, seguro hipotecario, depósitos en garantía y contingencias.</li><li>Revise reservas de capital de trabajo y déficit operativo, incluyendo fechas de aportación.</li><li>Compare desembolsos con pagos al contratista. Financiar un porcentaje del costo no elimina necesidades temporales de efectivo.</li></ul><p>Para la construcción multifamiliar cubierta, el aviso de primas calcula el seguro inicial capitalizado sobre el plazo de obra redondeado a años completos. El 0.25% anual no necesariamente equivale a toda la prima inicial. <a href=\"https://public-inspection.federalregister.gov/2025-18379.pdf\">Aviso de seguro hipotecario</a>.</p></div></section>\n<section class=\"cre-section\"><div class=\"wrap\"><h2>Sitio, planos y equipo deben estar coordinados</h2><p>El concepto debe incluir control del sitio, zonificación y permisos, unidades, rentas, planos, costos detallados, contratista, propiedad y administración. Medioambiente, inundaciones, acceso y servicios pueden cambiar diseño o calendario.</p><p>La construcción HUD también implica administración e inspecciones específicas y requisitos salariales prevalecientes aplicables. El equipo de diseño y contratista debe incorporarlos antes de utilizar un presupuesto de obra convencional.</p><p>La rehabilitación importante necesita un alcance coordinado y planificación para residentes o reubicación cuando corresponda. La actualización de umbrales de 2026 no elimina las otras pruebas de rehabilitación sustancial.</p></div></section>\n<section class=\"cre-section\"><div class=\"wrap\"><h2>Dónde encaja construir para alquilar</h2><p>La guía emitida en 2026 permite considerar comunidades elegibles de viviendas independientes, dúplex y tríplex bajo 221(d)(4) para construcción nueva. Deben cumplirse requisitos de sitio, propiedad, administración y operación. La venta individual y liberación parcial de garantía no constituyen la salida prevista.</p><p>Compare <a href=\"/es/commercial/hud-build-to-rent-financing\">financiamiento HUD para comunidades de alquiler</a> con <a href=\"/es/commercial/land-development-loans\">financiamiento de lotes</a> si piensa vender lotes o viviendas terminadas.</p></div></section>\n<section class=\"cre-section\"><div class=\"wrap\"><h2>Empiece antes de la fecha límite</h2><p>Comparta con Stonehaven ubicación, unidades, presupuesto, préstamo solicitado, estado del sitio, equipo y plan de alquiler. Podemos ayudar a organizar la estructura e identificar los primeros puntos de revisión.</p><p>Si la adquisición del terreno debe cerrar antes, evalúe por separado el financiamiento temporal y la opción HUD. Una salida prevista no es aprobación ni garantía. Consulte <a href=\"/es/blog/hud-loan-application-checklist-timeline\">la preparación de la solicitud</a> y <a href=\"/es/blog/hud-loan-leverage-cash-to-close\">el ejemplo de efectivo necesario</a>.</p></div></section>"
+      }
+    },
+    "hud-build-to-rent-financing": {
+      "en": {
+        "title": "HUD Build-to-Rent Financing: 2026 Rules | Stonehaven",
+        "description": "Stonehaven brokers HUD financing for eligible build-to-rent communities. Review site, ownership, construction and refinance requirements.",
+        "name": "HUD financing for build-to-rent communities.",
+        "eyebrow": "HUD · Commercial real estate",
+        "h1": "HUD financing for build-to-rent communities.",
+        "intro": "Stonehaven brokers HUD financing for eligible build-to-rent communities. We help assess the financing route and structure your request around the site, budget and long-term rental plan.",
+        "cta_href": "#quick-inquiry",
+        "cta_label": "Submit your HUD scenario",
+        "cta_title": "Bring your HUD deal to Stonehaven",
+        "cta_intro": "Share the property, requested amount and timing. We help assess the financing options, prepare your request and coordinate the next steps.",
+        "source_note": "Program research checked October 20, 2026. Issued HUD updates control over older summaries. This guide is educational, not a commitment, rate quote or HUD endorsement of Stonehaven.",
+        "sources": [
+          [
+            "https://www.hud.gov/sites/default/files/hudclips/documents/2026-12hsgml.pdf",
+            "HUD Mortgagee Letter 2026-12: build-to-rent eligibility"
+          ],
+          [
+            "https://www.hud.gov/sites/dfiles/OCHCO/documents/4430GHSGG.pdf",
+            "HUD MAP Guide, Chapters 3, 5, 8 and 11"
+          ],
+          [
+            "https://www.hud.gov/sites/dfiles/OCHCO/documents/2025-03hsgml.pdf",
+            "HUD Mortgagee Letter 2025-03: underwriting ratios"
+          ],
+          [
+            "https://public-inspection.federalregister.gov/2025-18379.pdf",
+            "HUD final notice 2025-18379: multifamily insurance premiums"
+          ]
+        ],
+        "body_html": "<section class=\"cre-section cre-answer\" id=\"answer\"><div class=\"wrap\"><h2>Can HUD finance a build-to-rent community?</h2><p>Yes, qualifying communities of detached rental homes, duplexes and triplexes can now be considered under issued Mortgagee Letter 2026-12. The guidance opens 221(d)(4) for new construction and 223(f) for acquisition or refinancing of recently developed BTR communities with certificates of occupancy less than three years old at application.</p><p>This is a specific rental-community pathway. It does not turn scattered houses, a for-sale subdivision or every older single-family rental portfolio into a HUD multifamily property. <a href=\"https://www.hud.gov/sites/default/files/hudclips/documents/2026-12hsgml.pdf\">Read the issued BTR letter</a>.</p></div></section>\n<section class=\"cre-section\"><div class=\"wrap\"><h2>The site and ownership tests come first</h2><ul><li>At least five dwelling units in a single cohesive, contiguous rental development.</li><li>Multiple contiguous parcels may be acceptable, but privately owned parcels interspersed within the development are not.</li><li>No sale of individual parcels or buildings and no partial releases of collateral during the insured loan term.</li><li>Professional management with appropriate local staffing and a team experienced with the project type and scale.</li><li>Any homeowners association must be disclosed and must not prevent the borrower from controlling and operating the project as required.</li></ul><p>For a builder, the exit decision belongs at the start. A project intended to sell homes one by one needs a different financing structure. Read <a href=\"/blog/hud-build-to-rent-rules-2026\">the BTR eligibility article</a> for a practical site-review example.</p></div></section>\n<section class=\"cre-section\"><div class=\"wrap\"><h2>Underwrite a rental community, not a home-sale plan</h2><p>The market study needs suitable rental comparisons, realistic absorption and the operating costs of detached homes or smaller buildings. Roofs, exterior maintenance, landscaping and amenities can produce different replacement and operating needs from a conventional apartment block.</p><p>The letter sets market-rate underwriting vacancy at the greater of 7% or the comparable-property level. Affordable projects have a 5% minimum, and small communities may warrant higher assumptions. Do not underwrite every house as continuously occupied just because the initial leasing interest is strong.</p><p>For new construction, HUD may consider absorption of up to 24 months. The initial operating-deficit reserve is sized to the risk, with a minimum of the greater of 3% of the loan or four months of debt service. Those minimums do not cap the reserve if projected losses require more.</p></div></section>\n<section class=\"cre-section\"><div class=\"wrap\"><h2>Construction and refinance are different entries</h2><h3>Before construction</h3><p>Use the 221(d)(4) review to connect site control, plans, costs, contractor experience, lease-up and permanent debt. Confirm environmental and design requirements before locking a budget.</p><h3>After development</h3><p>The new BTR 223(f) route is for recently developed communities within the letter’s certificate-of-occupancy window. Operating performance and the underlying 223(f) requirements still apply. Recent completion alone is insufficient.</p><p>Factory-built or modular components can raise additional approval and construction-draw questions. Review them at concept stage. The letter also distinguishes dwelling configurations from common-area accessibility obligations; do not treat it as an exemption from all accessibility requirements.</p></div></section>\n<section class=\"cre-section\"><div class=\"wrap\"><h2>A BTR summary Stonehaven can review</h2><ul><li>City and state, acreage, parcel map and whether the site is contiguous.</li><li>Number of homes, duplexes or triplexes and the intended rental ownership structure.</li><li>Total development cost or purchase price, existing debt and requested financing.</li><li>Zoning, approvals, construction status and certificate-of-occupancy dates if completed.</li><li>Expected rents, achieved leases, concessions, operating budget and replacement assumptions.</li><li>Sponsor, contractor and manager experience, plus any HOA or individual-sale plans.</li></ul><p>We help connect the development plan with the financing path. Start with a summary, then prepare the detailed file through the appropriate document process. Compare <a href=\"/commercial/hud-221d4-construction-loans\">221(d)(4) construction</a> and <a href=\"/commercial/hud-223f-loans\">223(f) refinancing</a>.</p></div></section>"
+      },
+      "es": {
+        "title": "HUD para comunidades de alquiler BTR | Stonehaven",
+        "description": "Stonehaven intermedia financiamiento HUD para comunidades de alquiler elegibles. Revise requisitos de sitio, propiedad, construcción y refinanciamiento.",
+        "name": "HUD para comunidades construidas para alquilar.",
+        "eyebrow": "HUD · Bienes raíces comerciales",
+        "h1": "HUD para comunidades construidas para alquilar.",
+        "intro": "Stonehaven actúa como intermediario hipotecario para comunidades de alquiler elegibles mediante HUD. Le ayudamos a evaluar la ruta y estructurar la solicitud según el sitio, presupuesto y plan de alquiler.",
+        "cta_href": "#quick-inquiry",
+        "cta_label": "Enviar mi proyecto HUD",
+        "cta_title": "Presente su proyecto HUD a Stonehaven",
+        "cta_intro": "Comparta el inmueble, el monto solicitado y su plazo. Le ayudamos a evaluar opciones, preparar la solicitud y coordinar los siguientes pasos.",
+        "source_note": "Fuentes revisadas el 20 de octubre de 2026. Las actualizaciones emitidas por HUD prevalecen sobre resúmenes anteriores. Esta guía no es un compromiso, una cotización ni un aval de HUD a Stonehaven.",
+        "sources": [
+          [
+            "https://www.hud.gov/sites/default/files/hudclips/documents/2026-12hsgml.pdf",
+            "HUD Mortgagee Letter 2026-12: build-to-rent eligibility"
+          ],
+          [
+            "https://www.hud.gov/sites/dfiles/OCHCO/documents/4430GHSGG.pdf",
+            "HUD MAP Guide, Chapters 3, 5, 8 and 11"
+          ],
+          [
+            "https://www.hud.gov/sites/dfiles/OCHCO/documents/2025-03hsgml.pdf",
+            "HUD Mortgagee Letter 2025-03: underwriting ratios"
+          ],
+          [
+            "https://public-inspection.federalregister.gov/2025-18379.pdf",
+            "HUD final notice 2025-18379: multifamily insurance premiums"
+          ]
+        ],
+        "body_html": "<section class=\"cre-section cre-answer\" id=\"answer\"><div class=\"wrap\"><h2>¿HUD puede financiar una comunidad construida para alquilar?</h2><p>Sí. La Carta Hipotecaria 2026-12 emitida permite considerar comunidades elegibles de viviendas independientes, dúplex y tríplex de alquiler. Contempla 221(d)(4) para construcción nueva y 223(f) para compra o refinanciamiento de comunidades BTR desarrolladas recientemente, con certificados de ocupación de menos de tres años al solicitar.</p><p>Es una ruta específica para comunidades de alquiler. No convierte viviendas dispersas, subdivisiones para venta ni cualquier cartera antigua de alquiler unifamiliar en un inmueble HUD elegible. <a href=\"https://www.hud.gov/sites/default/files/hudclips/documents/2026-12hsgml.pdf\">Carta emitida de BTR</a>.</p></div></section>\n<section class=\"cre-section\"><div class=\"wrap\"><h2>Primero revise el sitio y la propiedad</h2><ul><li>Al menos cinco viviendas en un desarrollo único, integrado y contiguo.</li><li>Pueden aceptarse varias parcelas contiguas, pero no parcelas privadas ajenas intercaladas en el desarrollo.</li><li>Sin venta de parcelas o edificios individuales ni liberaciones parciales de garantía durante el préstamo asegurado.</li><li>Administración profesional con personal local adecuado y experiencia en el tipo y escala del proyecto.</li><li>Cualquier asociación de propietarios debe declararse y no impedir el control y operación requeridos.</li></ul><p>La decisión de salida debe tomarse al inicio. Vender viviendas una por una requiere otra estructura. Consulte <a href=\"/es/blog/hud-build-to-rent-rules-2026\">el artículo de elegibilidad BTR</a> para revisar un ejemplo práctico.</p></div></section>\n<section class=\"cre-section\"><div class=\"wrap\"><h2>Evalúe una comunidad de alquiler</h2><p>El estudio de mercado necesita comparables de alquiler adecuados, absorción realista y gastos propios de casas o edificios pequeños. Techos, exteriores, jardines y amenidades pueden implicar reservas y costos distintos de un bloque de apartamentos.</p><p>La carta establece para proyectos de mercado una vacancia de evaluación igual al mayor entre 7% y la de comparables. Los proyectos asequibles tienen un mínimo de 5%, y las comunidades pequeñas pueden requerir supuestos superiores. El interés inicial no justifica asumir ocupación permanente de todas las viviendas.</p><p>En construcción nueva, HUD puede considerar absorción de hasta 24 meses. La reserva inicial de déficit operativo depende del riesgo, con mínimo del mayor entre 3% del préstamo y cuatro meses de servicio de deuda. Ese mínimo no limita una reserva mayor cuando las pérdidas previstas lo exigen.</p></div></section>\n<section class=\"cre-section\"><div class=\"wrap\"><h2>Construcción y refinanciamiento son entradas distintas</h2><h3>Antes de construir</h3><p>La evaluación 221(d)(4) conecta control del sitio, planos, costos, experiencia del contratista, arrendamiento y deuda permanente. Confirme requisitos ambientales y de diseño antes de cerrar el presupuesto.</p><h3>Después del desarrollo</h3><p>La nueva ruta BTR 223(f) corresponde a comunidades recientes dentro del plazo de certificados de ocupación de la carta. También se exigen desempeño operativo y requisitos 223(f). Haber terminado recientemente no basta.</p><p>La construcción modular o industrializada puede plantear cuestiones adicionales de aprobación y desembolsos. Revísela desde el concepto. La carta distingue configuraciones de viviendas y obligaciones de accesibilidad de áreas comunes; no elimina todos los requisitos de accesibilidad.</p></div></section>\n<section class=\"cre-section\"><div class=\"wrap\"><h2>Resumen BTR para revisar con Stonehaven</h2><ul><li>Ciudad, estado, superficie, mapa de parcelas y continuidad del sitio.</li><li>Número de viviendas, dúplex o tríplex y estructura de propiedad para alquiler.</li><li>Costo de desarrollo o compra, deuda existente y monto solicitado.</li><li>Zonificación, permisos, estado de obra y fechas de certificados de ocupación.</li><li>Rentas previstas y logradas, concesiones, gastos y reservas de reposición.</li><li>Experiencia del promotor, contratista y administrador, y cualquier asociación o plan de ventas individuales.</li></ul><p>Ayudamos a conectar el desarrollo con el financiamiento. Empiece con un resumen y luego prepare el expediente mediante el proceso adecuado. Compare <a href=\"/es/commercial/hud-221d4-construction-loans\">construcción 221(d)(4)</a> y <a href=\"/es/commercial/hud-223f-loans\">refinanciamiento 223(f)</a>.</p></div></section>"
+      }
+    },
+    "hud-232-healthcare-financing": {
+      "en": {
+        "title": "HUD 232 Healthcare & Assisted Living Loans | Stonehaven",
+        "description": "Stonehaven brokers HUD 232 financing for eligible residential care facilities. Review licensing, operations, documentation and project preparation.",
+        "name": "HUD financing for residential care facilities.",
+        "eyebrow": "HUD · Commercial real estate",
+        "h1": "HUD financing for residential care facilities.",
+        "intro": "Stonehaven brokers HUD 232 financing for eligible residential care facilities. We help organize the request around the property, operating business and long-term plan.",
+        "cta_href": "#quick-inquiry",
+        "cta_label": "Submit your HUD scenario",
+        "cta_title": "Bring your HUD deal to Stonehaven",
+        "cta_intro": "Share the property, requested amount and timing. We help assess the financing options, prepare your request and coordinate the next steps.",
+        "source_note": "Program research checked October 20, 2026. Issued HUD updates control over older summaries. This guide is educational, not a commitment, rate quote or HUD endorsement of Stonehaven.",
+        "sources": [
+          [
+            "https://www.hud.gov/hud-partners/healthcare-programs-orcf",
+            "HUD Office of Residential Care Facilities"
+          ],
+          [
+            "https://www.hud.gov/sites/documents/42321s2c2hsgh.pdf",
+            "HUD Section 232 Handbook: eligibility"
+          ],
+          [
+            "https://www.hud.gov/sites/documents/42321s2c3hsgh.pdf",
+            "HUD Section 232 Handbook: loan sizing"
+          ],
+          [
+            "https://www.hud.gov/sites/dfiles/OCHCO/documents/2025-20hsgml.pdf",
+            "HUD Mortgagee Letter 2025-20: healthcare rehabilitation"
+          ],
+          [
+            "https://www.hud.gov/sites/dfiles/OCHCO/documents/2025-03hsgml.pdf",
+            "HUD Mortgagee Letter 2025-03: underwriting ratios"
+          ],
+          [
+            "https://www.hud.gov/stat/fha/underwriting-queues",
+            "HUD healthcare underwriting queues"
+          ]
+        ],
+        "body_html": "<section class=\"cre-section cre-answer\" id=\"answer\"><div class=\"wrap\"><h2>What does HUD Section 232 cover?</h2><p>Section 232 mortgage insurance supports eligible residential healthcare facilities, including nursing homes, assisted living and board-and-care facilities. It can support eligible purchase, refinancing, new construction and substantial rehabilitation transactions. HUD’s Office of Residential Care Facilities administers the program using the LEAN process.</p><p>Healthcare financing requires a review of both the real estate and the operating business. An apartment rent roll is not a substitute for the facility’s licensing, staffing, financial and regulatory picture.</p></div></section>\n<section class=\"cre-section\"><div class=\"wrap\"><h2>Identify the facility before selecting the program</h2><ul><li><strong>Nursing facilities:</strong> Eligible licensed facilities generally require at least 20 beds under the handbook.</li><li><strong>Assisted living:</strong> Licensing, services and the handbook’s definition matter, including the general 20-bed minimum.</li><li><strong>Board and care:</strong> The handbook uses a minimum of 20 accommodations, with its own operating definition.</li><li><strong>Independent living:</strong> A standalone independent-living property is not automatically a Section 232 facility. Incidental independent-living units within an eligible project have specific limits and review requirements.</li><li><strong>Other uses:</strong> Hospitals and ordinary medical offices are not automatically Section 232 properties. Hospitals have a separate Section 242 program.</li></ul><p>Check the licensed use and actual services rather than relying on a property listing labeled “senior housing.” <a href=\"https://www.hud.gov/sites/documents/42321s2c2hsgh.pdf\">HUD’s facility eligibility chapter</a> provides the controlling definitions.</p></div></section>\n<section class=\"cre-section\"><div class=\"wrap\"><h2>Separate the real estate owner and operator</h2><p>The borrower, operator, lease arrangements and management structure all affect review. Relevant information includes ownership, operating experience, licenses, occupancy, payer mix, operating results, inspections and capital needs. Related-party arrangements and management agreements should be identified early.</p><p>The initial review should use business-level summaries. Do not send patient names, records, diagnoses, benefits information or other personal health information through a public inquiry form.</p></div></section>\n<section class=\"cre-section\"><div class=\"wrap\"><h2>Do not import apartment terms into healthcare</h2><p>The 2025 multifamily ratio letter expressly excludes Section 232, and the multifamily MIP reduction is not a universal healthcare premium. The applicable healthcare loan-sizing tests, coverage requirements, insurance and term must be established for the transaction.</p><p>Similarly, the 2025 update to the healthcare substantial rehabilitation definition belongs to the Section 232 rules. Do not apply an apartment repair threshold to a care-facility renovation. <a href=\"https://www.hud.gov/sites/dfiles/OCHCO/documents/2025-20hsgml.pdf\">Read the healthcare rehabilitation update</a>.</p><p>A fixed-rate, long-term structure may suit a stabilized operating facility. If occupancy, operations or licensing are changing, a bridge-to-HUD proposal needs an independently underwritten exit and enough time for stabilization, review and closing.</p></div></section>\n<section class=\"cre-section\"><div class=\"wrap\"><h2>Prepare a healthcare financing summary</h2><ul><li>Facility type, city and state, licensed beds or accommodations and current occupancy.</li><li>Purchase price or estimated value, existing debt, requested financing and use of funds.</li><li>Owner and operator structure, operating history and relevant experience.</li><li>Recent financial trends, payer mix and any material licensing or inspection issues.</li><li>Renovation scope, capital needs, timing and the planned long-term operating model.</li></ul><p>We can help organize the financing conversation around these business facts and identify the next document step. For ordinary rental apartments, use <a href=\"/commercial/hud-223f-loans\">the 223(f) apartment guide</a> instead.</p></div></section>\n<section class=\"cre-section\"><div class=\"wrap\"><h2>What affects the timeline?</h2><p>The quality of the operating file, regulatory issues, transaction complexity and the HUD review queue all matter. <a href=\"https://www.hud.gov/stat/fha/underwriting-queues\">HUD publishes healthcare underwriting queue information</a>, but a queue position is not a closing-date guarantee.</p><p>Resolve a maturity or acquisition deadline before committing to a permanent-loan schedule. Bridge costs, extension conditions and the consequences of a delayed takeout should be clear in the comparison.</p></div></section>"
+      },
+      "es": {
+        "title": "HUD 232 para centros de cuidados | Stonehaven",
+        "description": "Stonehaven intermedia financiamiento HUD 232 para centros de cuidados elegibles. Revise licencias, operación, documentos y preparación del proyecto.",
+        "name": "Financiamiento HUD para centros de cuidados.",
+        "eyebrow": "HUD · Bienes raíces comerciales",
+        "h1": "Financiamiento HUD para centros de cuidados.",
+        "intro": "Stonehaven actúa como intermediario hipotecario para centros residenciales de cuidados elegibles mediante HUD 232. Le ayudamos a organizar la solicitud según el inmueble, la empresa operadora y el plan de largo plazo.",
+        "cta_href": "#quick-inquiry",
+        "cta_label": "Enviar mi proyecto HUD",
+        "cta_title": "Presente su proyecto HUD a Stonehaven",
+        "cta_intro": "Comparta el inmueble, el monto solicitado y su plazo. Le ayudamos a evaluar opciones, preparar la solicitud y coordinar los siguientes pasos.",
+        "source_note": "Fuentes revisadas el 20 de octubre de 2026. Las actualizaciones emitidas por HUD prevalecen sobre resúmenes anteriores. Esta guía no es un compromiso, una cotización ni un aval de HUD a Stonehaven.",
+        "sources": [
+          [
+            "https://www.hud.gov/hud-partners/healthcare-programs-orcf",
+            "HUD Office of Residential Care Facilities"
+          ],
+          [
+            "https://www.hud.gov/sites/documents/42321s2c2hsgh.pdf",
+            "HUD Section 232 Handbook: eligibility"
+          ],
+          [
+            "https://www.hud.gov/sites/documents/42321s2c3hsgh.pdf",
+            "HUD Section 232 Handbook: loan sizing"
+          ],
+          [
+            "https://www.hud.gov/sites/dfiles/OCHCO/documents/2025-20hsgml.pdf",
+            "HUD Mortgagee Letter 2025-20: healthcare rehabilitation"
+          ],
+          [
+            "https://www.hud.gov/sites/dfiles/OCHCO/documents/2025-03hsgml.pdf",
+            "HUD Mortgagee Letter 2025-03: underwriting ratios"
+          ],
+          [
+            "https://www.hud.gov/stat/fha/underwriting-queues",
+            "HUD healthcare underwriting queues"
+          ]
+        ],
+        "body_html": "<section class=\"cre-section cre-answer\" id=\"answer\"><div class=\"wrap\"><h2>¿Qué cubre la sección 232 de HUD?</h2><p>El seguro hipotecario de la Sección 232 respalda centros residenciales de cuidados elegibles, incluidas residencias de enfermería, vivienda asistida y alojamiento con cuidados. Puede apoyar compras, refinanciamientos, construcción y rehabilitación sustancial elegibles. La Oficina de Centros de Cuidados Residenciales de HUD administra el programa mediante LEAN.</p><p>Se evalúan tanto el inmueble como la empresa operadora. Un listado de rentas no sustituye licencias, personal, finanzas y situación regulatoria.</p></div></section>\n<section class=\"cre-section\"><div class=\"wrap\"><h2>Identifique el centro antes del programa</h2><ul><li><strong>Enfermería:</strong> Los centros elegibles con licencia generalmente requieren al menos 20 camas según el manual.</li><li><strong>Vivienda asistida:</strong> Importan licencia, servicios y definición del manual, incluido el mínimo general de 20 camas.</li><li><strong>Alojamiento y cuidados:</strong> El manual utiliza un mínimo de 20 alojamientos y una definición operativa propia.</li><li><strong>Vida independiente:</strong> Un inmueble exclusivamente de vida independiente no es automáticamente elegible para 232. Las unidades incidentales dentro de un centro elegible tienen límites y revisión específicos.</li><li><strong>Otros usos:</strong> Hospitales y consultorios médicos no son automáticamente inmuebles 232. Los hospitales tienen un programa separado, la Sección 242.</li></ul><p>Revise el uso autorizado y los servicios reales, no solamente una descripción de “vivienda para mayores”. <a href=\"https://www.hud.gov/sites/documents/42321s2c2hsgh.pdf\">El capítulo de elegibilidad de HUD</a> contiene las definiciones.</p></div></section>\n<section class=\"cre-section\"><div class=\"wrap\"><h2>Distinga propietario y operador</h2><p>El prestatario, operador, arrendamientos y estructura de administración afectan la evaluación. Importan propiedad, experiencia, licencias, ocupación, composición de pagadores, resultados, inspecciones y necesidades de capital. Identifique relaciones entre partes y contratos de administración desde el inicio.</p><p>La primera revisión utiliza resúmenes de la empresa. No envíe nombres de pacientes, expedientes, diagnósticos, beneficios ni información personal de salud en el formulario público.</p></div></section>\n<section class=\"cre-section\"><div class=\"wrap\"><h2>No aplique términos de apartamentos a centros de cuidados</h2><p>La carta de ratios multifamiliares de 2025 excluye expresamente la Sección 232. La reducción de primas multifamiliares tampoco es universal para centros de cuidados. Cada operación debe establecer sus pruebas de monto, cobertura, seguro y plazo.</p><p>La actualización de 2025 sobre rehabilitación sustancial sanitaria pertenece a las reglas 232. No aplique un umbral de reparaciones de apartamentos a una residencia de cuidados. <a href=\"https://www.hud.gov/sites/dfiles/OCHCO/documents/2025-20hsgml.pdf\">Actualización de rehabilitación sanitaria</a>.</p><p>La tasa fija y estructura prolongada pueden servir a un centro estabilizado. Si cambian ocupación, operaciones o licencias, un préstamo puente hacia HUD necesita una salida evaluada por separado y tiempo para estabilización, revisión y cierre.</p></div></section>\n<section class=\"cre-section\"><div class=\"wrap\"><h2>Prepare el resumen de financiamiento</h2><ul><li>Tipo de centro, ciudad, estado, camas o alojamientos autorizados y ocupación.</li><li>Precio o valor estimado, deuda existente, monto solicitado y uso de fondos.</li><li>Estructura de propietario y operador, historial y experiencia.</li><li>Tendencias financieras, composición de pagadores y problemas materiales de licencias o inspecciones.</li><li>Alcance de renovación, necesidades de capital, calendario y modelo operativo futuro.</li></ul><p>Ayudamos a organizar la conversación con estos datos empresariales e identificar documentos posteriores. Para apartamentos ordinarios, consulte <a href=\"/es/commercial/hud-223f-loans\">la guía 223(f)</a>.</p></div></section>\n<section class=\"cre-section\"><div class=\"wrap\"><h2>¿Qué afecta el plazo?</h2><p>Importan la calidad del expediente operativo, cuestiones regulatorias, complejidad y cola de revisión. <a href=\"https://www.hud.gov/stat/fha/underwriting-queues\">HUD publica información sobre su cola de evaluación</a>, pero la posición no garantiza una fecha de cierre.</p><p>Revise el vencimiento o plazo de compra antes de comprometerse con el calendario permanente. Compare costos del puente, condiciones de extensión y consecuencias de una salida retrasada.</p></div></section>"
+      }
+    }
+  }
+}

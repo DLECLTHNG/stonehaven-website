@@ -1,0 +1,76 @@
+{
+  "checked": "2026-10-20",
+  "hierarchy": "Issued HUD mortgagee letters and final notices control over older handbook provisions. Public references explain program rules and do not direct borrowers to other lenders.",
+  "sources": [
+    {
+      "key": "map",
+      "url": "https://www.hud.gov/sites/dfiles/OCHCO/documents/4430GHSGG.pdf",
+      "title": "HUD MAP Guide, Chapters 3, 5, 8 and 11"
+    },
+    {
+      "key": "ratios",
+      "url": "https://www.hud.gov/sites/dfiles/OCHCO/documents/2025-03hsgml.pdf",
+      "title": "HUD Mortgagee Letter 2025-03: underwriting ratios"
+    },
+    {
+      "key": "middle",
+      "url": "https://www.hud.gov/sites/dfiles/hudclips/documents/2026-01hsgml.pdf",
+      "title": "HUD Mortgagee Letter 2026-01: middle-income housing"
+    },
+    {
+      "key": "btr",
+      "url": "https://www.hud.gov/sites/default/files/hudclips/documents/2026-12hsgml.pdf",
+      "title": "HUD Mortgagee Letter 2026-12: build-to-rent eligibility"
+    },
+    {
+      "key": "limits",
+      "url": "https://www.hud.gov/sites/default/files/hudclips/documents/2026-05hsgml.pdf",
+      "title": "HUD Mortgagee Letter 2026-05: 2026 thresholds"
+    },
+    {
+      "key": "mip",
+      "url": "https://public-inspection.federalregister.gov/2025-18379.pdf",
+      "title": "HUD final notice 2025-18379: multifamily insurance premiums"
+    },
+    {
+      "key": "environment",
+      "url": "https://www.hud.gov/sites/default/files/hudclips/documents/2026-04hsgml.pdf",
+      "title": "HUD Mortgagee Letter 2026-04: environmental guidance"
+    },
+    {
+      "key": "health",
+      "url": "https://www.hud.gov/hud-partners/healthcare-programs-orcf",
+      "title": "HUD Office of Residential Care Facilities"
+    },
+    {
+      "key": "health2",
+      "url": "https://www.hud.gov/sites/documents/42321s2c2hsgh.pdf",
+      "title": "HUD Section 232 Handbook: eligibility"
+    },
+    {
+      "key": "health3",
+      "url": "https://www.hud.gov/sites/documents/42321s2c3hsgh.pdf",
+      "title": "HUD Section 232 Handbook: loan sizing"
+    },
+    {
+      "key": "healthrehab",
+      "url": "https://www.hud.gov/sites/dfiles/OCHCO/documents/2025-20hsgml.pdf",
+      "title": "HUD Mortgagee Letter 2025-20: healthcare rehabilitation"
+    },
+    {
+      "key": "queue",
+      "url": "https://www.hud.gov/stat/fha/underwriting-queues",
+      "title": "HUD healthcare underwriting queues"
+    }
+  ],
+  "policy_checks": {
+    "market_rate": "ML2025-03: 87% applicable LTV/LTC, 1.15 DSCR; all limiting criteria still apply.",
+    "cash_out": "ML2025-03 leaves Criterion 10 unchanged. MAP3.7.11: greater of 80% of value or cost to refinance; no automatic 87% cash-out.",
+    "seasoning": "MAP3.7.2.B: at least one full month applicable DSCR to apply, three consecutive months before endorsement, with documentation and safeguards.",
+    "middle_income": "ML2026-01 supersedes ML2025-02; qualifying 221d4 only, 90% LTC and1.11DSCR, general 50% units at <=120%AMI and recorded restriction normally >=10years. Program and exceptions must be checked.",
+    "btr": "Issued ML2026-12;221d4 new construction;223f CO<3years;5+units;cohesive contiguous site;no individual sales or partial releases.",
+    "mip": "Final2025-18379:25bpsannual coveredmultifamily;applicationssubmittedoramended>=2025-10-01 beforeinitialendorsement;constructionupfrontcoversrounded-upyears;notblanket232.",
+    "thresholds": "ML2026-05:2026baseSR$20,406 before applicable adjustments/tests;large-loan threshold$130M. Neither is a universal loan/repair cap.",
+    "healthcare": "232usesORCF/LEAN,itsowneligibility,sizingandinsurance. ML2025-03excludes232."
+  }
+}
