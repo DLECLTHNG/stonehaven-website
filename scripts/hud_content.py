@@ -17,7 +17,8 @@ SERVICES = [
 
 
 def clean(text):
-    return re.sub(r'<!-- HUD-CONTENT:START -->.*?<!-- HUD-CONTENT:END -->', '', text, flags=re.S)
+    return re.sub(r'<!-- HUD-CONTENT:START -->.*?<!-- HUD-CONTENT:END -->', '', text, flags=re.S).replace(
+        '<link rel="stylesheet" href="/hud-financing.css?v=1"/>', '')
 
 
 def transform(text, path):
