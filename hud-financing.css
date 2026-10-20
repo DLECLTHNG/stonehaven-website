@@ -1,0 +1,14 @@
+/* HUD-specific reading layouts reuse the site's existing typography and forms. */
+.hud-page .cre-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+.hud-page .cre-card h3{font-size:27px;line-height:1.22;}
+.hud-page .small-multifamily-content h3{margin-top:24px;}
+.hud-page .small-multifamily-content .cre-card h3{margin-top:0;}
+.hud-article .blog-article .cre-note{margin:24px 0;padding:24px;border-left:3px solid var(--brass);background:var(--paper-2);}
+.hud-article .blog-article .cre-note h3{font-size:20px;line-height:1.4;margin:0 0 14px;}
+.hud-article .blog-article .cre-note p+p{margin-top:14px;}
+.hud-page .search-program-links,.hud-article .search-program-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 28px;}
+.hud-page .search-program-links a,.hud-article .search-program-links a{overflow-wrap:anywhere;}
+@media(max-width:700px){
+ .hud-page .cre-grid,.hud-page .search-program-links,.hud-article .search-program-links{grid-template-columns:1fr;}
+ .hud-article .blog-article .cre-note{padding:20px;}
+}

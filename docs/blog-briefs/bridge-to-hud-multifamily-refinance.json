@@ -1,0 +1,114 @@
+{
+  "slug": "bridge-to-hud-multifamily-refinance",
+  "date": "2026-10-20",
+  "type": "guide",
+  "product": "Commercial",
+  "en": {
+    "title": "Bridge-to-HUD: Plan the Refinance Before Maturity",
+    "metaTitle": "Bridge-to-HUD: Plan the Refinance Before Maturity | Stonehaven",
+    "desc": "Plan a bridge-to-HUD apartment refinance around income, payoff, reserves and timing. Work through a hypothetical proceeds gap before the bridge matures.",
+    "eyebrow": "HUD · Commercial financing",
+    "terms": [
+      [
+        "Purpose",
+        "Interim financing with a separately tested exit"
+      ],
+      [
+        "Key risk",
+        "Permanent proceeds may be below the payoff"
+      ],
+      [
+        "Starting point",
+        "Income, repairs, maturity and cash plan"
+      ]
+    ],
+    "body": [
+      "A bridge-to-HUD plan uses short-term financing while an eligible property becomes ready for a permanent HUD-insured loan. The bridge may solve an acquisition deadline or fund a transition. It does not guarantee that the eventual refinance will close, cover the entire payoff or produce cash out.",
+      "The safest time to test that exit is before signing the bridge loan. Waiting until maturity turns missing documentation, weaker income or a repair issue into an immediate cash problem.",
+      {
+        "h": "Work backward from the permanent loan"
+      },
+      "For apartments, start by testing the proposed 223(f) exit against the actual property. Confirm eligibility, repair classification, supportable operating income, loan sizing and the expected timing. A projected appraisal alone is not an exit analysis.",
+      "Recently completed properties have a specific path under the MAP Guide. Application can begin after at least one full month at the applicable DSCR, but three consecutive months are required before endorsement, along with the other conditions. One month of leasing does not guarantee one month to refinance.",
+      {
+        "h": "Calculate the payoff gap before it becomes urgent"
+      },
+      "<div class=\"cre-note\"><h3>Hypothetical proceeds test</h3><p>Assume the permanent gross loan underwrites to $6.8 million. The bridge payoff at the projected closing is $6.7 million, and transaction costs, reserves and required deposits use $350,000. Net proceeds available for payoff are $6.45 million, leaving a $250,000 gap. These assumed amounts are not a quote or a closed deal.</p></div>",
+      "A higher appraisal does not automatically cure the gap if debt service coverage controls loan sizing. Interest accrued during a delay can enlarge the payoff while weaker collections reduce the replacement loan. Test both changes together.",
+      {
+        "h": "Build a timeline with decision points"
+      },
+      "<ul><li><strong>Before bridge closing:</strong> Identify the permanent program, likely sizing constraints, required repairs and operating evidence.</li><li><strong>During ownership:</strong> Maintain rent rolls, collections, expenses, concessions and repair records that reconcile.</li><li><strong>Before maturity:</strong> Allow time for reports, underwriting, HUD review, firm-commitment conditions and closing.</li><li><strong>If the schedule slips:</strong> Know extension fees, minimum interest, rate changes, liquidity conditions and alternatives before relying on an extension.</li></ul>",
+      "An extension option may be conditional. A possible sale or a second refinance also requires its own realistic proceeds and timing analysis.",
+      {
+        "h": "Confirm costs and responsibilities in writing"
+      },
+      "Ask which reports may be reusable, when they expire, who orders them, who owns them and whether the permanent process requires different scope. Do not assume every bridge appraisal or environmental report will transfer without further work.",
+      "Compare bridge prepayment terms with the earliest realistic HUD closing. A permanent loan can be ready while a minimum-interest or exit-fee provision still changes the economics.",
+      {
+        "h": "How Stonehaven can help prepare the exit"
+      },
+      "Share the property, existing loan balance, maturity, recent operations, completed and remaining work, and your target refinance amount. We can help organize the timing and proceeds questions before the next underwriting step.",
+      "For apartments, continue with <a href=\"/commercial/hud-223f-loans\">HUD 223(f) financing</a>. For development, review <a href=\"/commercial/hud-221d4-construction-loans\">221(d)(4)</a>. Eligible care facilities use <a href=\"/commercial/hud-232-healthcare-financing\">a separate Section 232 process</a>, so apartment assumptions should not be transferred to healthcare.",
+      {
+        "h": "Sources and review date"
+      },
+      "Checked October 20, 2026. These are program explanations and illustrative planning examples, not a commitment or current rate quote. Issued HUD updates control over older summaries.",
+      "<ul><li><a href=\"https://www.hud.gov/sites/dfiles/OCHCO/documents/4430GHSGG.pdf\">HUD MAP Guide, Chapters 3, 5, 8 and 11</a></li><li><a href=\"https://www.hud.gov/sites/dfiles/OCHCO/documents/2025-03hsgml.pdf\">HUD Mortgagee Letter 2025-03: underwriting ratios</a></li><li><a href=\"https://www.hud.gov/hud-partners/healthcare-programs-orcf\">HUD Office of Residential Care Facilities</a></li></ul>"
+    ]
+  },
+  "es": {
+    "title": "De préstamo puente a HUD: prepare la salida",
+    "metaTitle": "De préstamo puente a HUD: prepare la salida | Stonehaven",
+    "desc": "Planifique la salida de un préstamo puente hacia HUD con ingresos, liquidación, reservas y calendario. Revise un ejemplo de faltante de fondos.",
+    "eyebrow": "HUD · Financiamiento comercial",
+    "terms": [
+      [
+        "Objetivo",
+        "Deuda temporal con salida evaluada por separado"
+      ],
+      [
+        "Riesgo principal",
+        "Los fondos permanentes pueden ser insuficientes"
+      ],
+      [
+        "Punto de partida",
+        "Ingresos, reparaciones, plazo y efectivo"
+      ]
+    ],
+    "body": [
+      "Un plan puente hacia HUD utiliza financiamiento temporal mientras un inmueble elegible se prepara para deuda permanente asegurada por HUD. Puede resolver una compra urgente o transición. No garantiza que el refinanciamiento cierre, liquide toda la deuda o permita retirar capital.",
+      "Evalúe la salida antes de firmar el puente. Esperar al vencimiento convierte documentación pendiente, menores ingresos o reparaciones en un problema inmediato de efectivo.",
+      {
+        "h": "Empiece por la deuda permanente prevista"
+      },
+      "Para apartamentos, compruebe la salida 223(f) contra el inmueble real: elegibilidad, clasificación de reparaciones, ingreso operativo respaldado, monto y calendario. Una tasación proyectada no es un análisis de salida.",
+      "Los inmuebles recientes tienen una ruta específica en la guía MAP. Se puede solicitar tras al menos un mes completo con DSCR aplicable, pero se requieren tres meses consecutivos antes del endoso y las demás condiciones. Un mes de arrendamiento no garantiza refinanciamiento en un mes.",
+      {
+        "h": "Calcule el faltante antes de que sea urgente"
+      },
+      "<div class=\"cre-note\"><h3>Ejemplo hipotético de fondos</h3><p>Suponga un préstamo permanente bruto de $6.8 millones. La liquidación prevista del puente es $6.7 millones y costos, reservas y depósitos consumen $350,000. Quedan $6.45 millones para liquidar, con un faltante de $250,000. Son supuestos educativos, no una cotización ni operación cerrada.</p></div>",
+      "Una tasación mayor no soluciona necesariamente el faltante si limita la cobertura de deuda. Los intereses de un retraso pueden aumentar la liquidación mientras menores cobros reducen el préstamo nuevo. Pruebe ambos cambios juntos.",
+      {
+        "h": "Organice el calendario por decisiones"
+      },
+      "<ul><li><strong>Antes del puente:</strong> Identifique programa permanente, límites probables, reparaciones e historial operativo necesario.</li><li><strong>Durante la propiedad:</strong> Mantenga rentas, cobros, gastos, concesiones y registros de obras conciliados.</li><li><strong>Antes del vencimiento:</strong> Reserve tiempo para informes, evaluación, revisión HUD, condiciones y cierre.</li><li><strong>Si hay retrasos:</strong> Conozca cargos de extensión, interés mínimo, cambios de tasa, requisitos de liquidez y alternativas.</li></ul>",
+      "La extensión puede tener condiciones. Una venta o segundo refinanciamiento también necesita su propio análisis de fondos y tiempo.",
+      {
+        "h": "Confirme costos y responsabilidades"
+      },
+      "Pregunte qué informes pueden reutilizarse, cuándo vencen, quién los encarga, quién los controla y si requieren otro alcance. No asuma que toda tasación o informe ambiental del puente servirá sin trabajo adicional.",
+      "Compare prepago del puente con la fecha realista más temprana de cierre HUD. Incluso si la deuda permanente está lista, cargos de salida o interés mínimo pueden cambiar el resultado.",
+      {
+        "h": "Cómo ayuda Stonehaven a preparar la salida"
+      },
+      "Comparta inmueble, saldo, vencimiento, resultados recientes, obras realizadas y pendientes y refinanciamiento solicitado. Podemos ayudar a organizar las preguntas de plazo y fondos antes de la siguiente evaluación.",
+      "Para apartamentos, consulte <a href=\"/es/commercial/hud-223f-loans\">HUD 223(f)</a>. Para desarrollo, <a href=\"/es/commercial/hud-221d4-construction-loans\">221(d)(4)</a>. Los centros de cuidados utilizan <a href=\"/es/commercial/hud-232-healthcare-financing\">un proceso 232 separado</a>.",
+      {
+        "h": "Fuentes y fecha de revisión"
+      },
+      "Revisado el 20 de octubre de 2026. Son explicaciones y ejemplos ilustrativos, no un compromiso ni cotización. Las actualizaciones emitidas por HUD prevalecen sobre resúmenes anteriores.",
+      "<ul><li><a href=\"https://www.hud.gov/sites/dfiles/OCHCO/documents/4430GHSGG.pdf\">HUD MAP Guide, Chapters 3, 5, 8 and 11</a></li><li><a href=\"https://www.hud.gov/sites/dfiles/OCHCO/documents/2025-03hsgml.pdf\">HUD Mortgagee Letter 2025-03: underwriting ratios</a></li><li><a href=\"https://www.hud.gov/hud-partners/healthcare-programs-orcf\">HUD Office of Residential Care Facilities</a></li></ul>"
+    ]
+  }
+}

@@ -3,6 +3,11 @@ from html import escape
 import re
 
 PRIORITY = {
+ '/commercial/hud-financing': ('Commercial','HUD financing review','Revisión de financiamiento HUD'),
+ '/commercial/hud-223f-loans': ('Commercial','HUD 223(f) apartment financing','Financiamiento de apartamentos HUD 223(f)'),
+ '/commercial/hud-221d4-construction-loans': ('Commercial','HUD 221(d)(4) construction financing','Financiamiento de construcción HUD 221(d)(4)'),
+ '/commercial/hud-build-to-rent-financing': ('Commercial','HUD build-to-rent financing','Financiamiento HUD para comunidades de alquiler'),
+ '/commercial/hud-232-healthcare-financing': ('Commercial','HUD 232 facility financing','Financiamiento de centros HUD 232'),
  '/commercial/construction-loans': ('Commercial','Construction financing','Financiamiento de construcción'),
  '/commercial/land-development-loans': ('Commercial','Land development financing','Financiamiento de desarrollo de terrenos'),
  '/commercial/multifamily-acquisition': ('Commercial','Multifamily acquisition','Compra de inmuebles multifamiliares'),

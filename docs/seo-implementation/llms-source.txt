@@ -132,3 +132,13 @@ Educational introductions for professionals. No referral compensation is offered
 - [Subdivision financing: how lot release prices affect developer cash flow](https://stonehavencre.com/blog/subdivision-loan-lot-release-prices): educational guide with explicit assumptions and lender-specific questions.
 - [DSCR loan reserves: how much cash should remain after closing?](https://stonehavencre.com/blog/dscr-loan-reserves-cash-to-close): educational guide with explicit assumptions and lender-specific questions.
 - [DSCR prepayment penalties: compare the cost of selling or refinancing early](https://stonehavencre.com/blog/dscr-prepayment-penalty-exit-planning): educational guide with explicit assumptions and lender-specific questions.
+
+## HUD commercial multifamily and healthcare financing
+
+The HUD section explains commercial FHA mortgage insurance programs, not consumer FHA home loans. Stonehaven helps organize financing requests; these guides do not assert HUD lender approval or government endorsement. Issued HUD sources and review dates appear on each page.
+
+- [HUD financing for the long-term plan.](https://stonehavencre.com/commercial/hud-financing): Explore HUD apartment, construction, build-to-rent and healthcare financing. Compare eligibility, current rules, costs and the steps to prepare a project.
+- [HUD 223(f) apartment financing.](https://stonehavencre.com/commercial/hud-223f-loans): Explore HUD 223(f) apartment acquisition and refinance loans: current leverage, DSCR, cash-out limits, repairs and operating-history requirements.
+- [HUD financing for apartment construction.](https://stonehavencre.com/commercial/hud-221d4-construction-loans): Plan HUD 221(d)(4) apartment construction or substantial rehabilitation. Review 87% LTC, qualifying 90% paths, reserves, costs and project preparation.
+- [HUD financing for build-to-rent communities.](https://stonehavencre.com/commercial/hud-build-to-rent-financing): Explore the new HUD build-to-rent rules for detached rental homes, duplexes and triplexes. Check site, ownership, construction and refinance eligibility.
+- [HUD financing for residential care facilities.](https://stonehavencre.com/commercial/hud-232-healthcare-financing): Explore HUD 232 financing for eligible nursing, assisted living and board-and-care facilities. Review licensing, operations, preparation and bridge risks.

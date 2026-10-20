@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-20",
+  "posts": [
+    {
+      "slug": "hud-223f-vs-221d4",
+      "title": "HUD 223(f) vs. 221(d)(4): Which Route Fits?",
+      "esTitle": "HUD 223(f) o 221(d)(4): qué ruta elegir",
+      "source_keys": [
+        "map",
+        "ratios",
+        "limits"
+      ]
+    },
+    {
+      "slug": "bridge-to-hud-multifamily-refinance",
+      "title": "Bridge-to-HUD: Plan the Refinance Before Maturity",
+      "esTitle": "De préstamo puente a HUD: prepare la salida",
+      "source_keys": [
+        "map",
+        "ratios",
+        "health"
+      ]
+    },
+    {
+      "slug": "hud-loan-leverage-cash-to-close",
+      "title": "HUD 87% LTC: How Much Cash Does a Builder Need?",
+      "esTitle": "HUD al 87% LTC: cuánto capital necesita la obra",
+      "source_keys": [
+        "ratios",
+        "map",
+        "middle",
+        "mip"
+      ]
+    },
+    {
+      "slug": "hud-build-to-rent-rules-2026",
+      "title": "HUD Build-to-Rent Rules: What Builders Must Check",
+      "esTitle": "Reglas HUD BTR: qué debe revisar el constructor",
+      "source_keys": [
+        "btr",
+        "map"
+      ]
+    },
+    {
+      "slug": "hud-middle-income-housing-90-percent-ltc",
+      "title": "HUD Middle-Income Housing: When 90% LTC Fits",
+      "esTitle": "Vivienda de ingresos medios HUD: cuándo aplica 90% LTC",
+      "source_keys": [
+        "middle",
+        "ratios",
+        "map"
+      ]
+    },
+    {
+      "slug": "hud-loan-application-checklist-timeline",
+      "title": "HUD Loan Checklist: Documents, Costs and Timing",
+      "esTitle": "Solicitud HUD: documentos, costos y calendario",
+      "source_keys": [
+        "map",
+        "mip",
+        "environment",
+        "health",
+        "queue"
+      ]
+    }
+  ]
+}
