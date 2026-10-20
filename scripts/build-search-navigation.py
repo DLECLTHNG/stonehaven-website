@@ -102,7 +102,7 @@ for path,(file,text) in pages.items():
  text=search_answers(text,path)
  text=inquiry_journeys(text,path)
  text=hud_content(text,path)
- if 'SEARCH-NAV:' in text:text=text.replace('</head>','<link rel="stylesheet" href="/search-navigation.css?v=1"/></head>')
+ if 'SEARCH-NAV:' in text or 'HUD-CONTENT:' in text:text=text.replace('</head>','<link rel="stylesheet" href="/search-navigation.css?v=1"/></head>')
  text=normalize_brand_assets(text)
  text=bundle_home_styles(text,path,R)
  file.write_text(text)

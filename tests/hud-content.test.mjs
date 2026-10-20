@@ -22,6 +22,7 @@ test('HUD pages use the established Commercial lead contract in both languages',
   assert.match(form,/name="email"[^>]*required/);
   assert.doesNotMatch(form,/name="(?:ssn|dob|patient|diagnosis)"/);
   assert.match(html,/funnel\.js/);
+  assert.match(html,/href="\/search-navigation\.css/);
  }
 });
 
