@@ -12,6 +12,7 @@ from cre_search_journeys import transform as cre_search_journeys
 from search_answers import transform as search_answers
 from inquiry_journeys import transform as inquiry_journeys, clean as clean_inquiries
 from hud_content import transform as hud_content, clean as clean_hud
+from construction_content import transform as construction_content, clean as clean_construction
 from site_presentation import normalize_presentation
 from home_styles import bundle as bundle_home_styles
 from site_positioning import build as build_positioning, footer as positioning_footer
@@ -23,6 +24,7 @@ files=[p for p in R.rglob('*.html') if not any(x.startswith('.') or x in skip fo
 def route(p):
  s=p.relative_to(R).as_posix();return '/'+(s[:-10] if s.endswith('index.html') else s[:-5])
 def clean(s):
+ s=clean_construction(s)
  s=clean_hud(s)
  s=clean_inquiries(s)
  return re.sub(r'<!-- SEARCH-NAV:[A-Z]+:START -->.*?<!-- SEARCH-NAV:[A-Z]+:END -->\n?','',s,flags=re.S).replace('<link rel="stylesheet" href="/search-navigation.css?v=1"/>','')
@@ -102,7 +104,8 @@ for path,(file,text) in pages.items():
  text=search_answers(text,path)
  text=inquiry_journeys(text,path)
  text=hud_content(text,path)
- if 'SEARCH-NAV:' in text or 'HUD-CONTENT:' in text:text=text.replace('</head>','<link rel="stylesheet" href="/search-navigation.css?v=1"/></head>')
+ text=construction_content(text,path)
+ if any(mark in text for mark in ['SEARCH-NAV:', 'HUD-CONTENT:', 'CONSTRUCTION-CONTENT:']):text=text.replace('</head>','<link rel="stylesheet" href="/search-navigation.css?v=1"/></head>')
  text=normalize_brand_assets(text)
  text=bundle_home_styles(text,path,R)
  file.write_text(text)

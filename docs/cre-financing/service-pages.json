@@ -17,13 +17,13 @@
   "pages": {
     "construction-loans": {
       "en": {
-        "title": "Construction Loans for Builders | Up to 100% LTC | Stonehaven",
-        "description": "Ground-up and teardown construction financing for builders. Explore up to 100% eligible LTC, land equity, construction draws and project review with Stonehaven.",
-        "name": "Construction loans for builders",
+        "title": "Ground-Up Construction Loans for Builders | Stonehaven",
+        "description": "Ground-up construction financing for spec homes, teardowns and rental developments. Review land equity, eligible LTC, draw schedules and your next build.",
+        "name": "Ground-up construction loans for builders",
         "eyebrow": "Ground-up construction · Teardown and rebuild",
-        "h1": "Construction financing.<br> <em>Built around your next project.</em>",
-        "intro": "Capital for builders planning ground-up construction, spec homes and teardown projects. We review your budget, land position and financing request to explore suitable lender options.",
-        "answer": "Stonehaven arranges construction financing through third-party lenders. Qualifying deals may access up to 100% of eligible project costs. The actual structure depends on the budget, land equity, completed value, builder profile and repayment plan. It does not automatically cover every expense or mean zero cash is needed.",
+        "h1": "Ground-up construction financing.<br> <em>Built around your next project.</em>",
+        "intro": "Build to sell, build to hold or develop in phases. Stonehaven helps structure financing around your land, construction budget, draw schedule and exit.",
+        "answer": "A ground-up construction loan finances a new property from the land stage through completion, with construction funds generally released in stages. Stonehaven acts as a mortgage broker for builders and investors. Qualifying projects may be considered for up to 100% of eligible costs, subject to budget, equity, completed value, experience and underwriting. Financing the budget does not mean zero cash required.",
         "facts": [
           [
             "Project review",
@@ -51,6 +51,18 @@
           [
             "Build to sell or hold",
             "A spec sale and a rental refinance need different exit assumptions. Include comparable sales for a sale exit, or supported rent and expense estimates for a rental plan."
+          ],
+          [
+            "Spec homes without a presale",
+            "Prepare comparable sales, a marketing timeline and carrying costs. A project without a contracted buyer needs its own financing review."
+          ],
+          [
+            "Multiple homes and phased starts",
+            "Show commitments, unfinished work and overlapping cash needs across your projects before adding the next start."
+          ],
+          [
+            "Multifamily development",
+            "Compare construction, lease-up and permanent financing. Evaluate separately whether a HUD program fits the property and hold plan."
           ]
         ],
         "comparison_title": "100% LTC and 100% of construction costs are different",
@@ -148,7 +160,7 @@
         "faqs": [
           [
             "Can I get 100% LTC construction financing?",
-            "Potentially. Stonehaven has lender relationships that can consider up to 100% of eligible costs on qualifying deals. Eligibility, land equity treatment, leverage limits, liquidity and guarantees depend on the actual lender and file."
+            "Potentially, on qualifying projects. We review eligible-cost definitions, land equity, value limits, liquidity and guarantees. Funding 100% of the construction budget is different from funding 100% of total project cost or completed value."
           ],
           [
             "Does land equity replace my cash down payment?",
@@ -169,9 +181,37 @@
           [
             "How quickly will I get feedback?",
             "We aim to provide initial deal feedback in under one hour after the inquiry reaches our team. That is an initial response, not a credit decision, term sheet or closing commitment. We follow up by text."
+          ],
+          [
+            "Can I finance a spec home without a buyer under contract?",
+            "Some programs consider build-to-sell projects without a presale. Prepare market demand, comparable sales, experience, timing and cash through sale. Eligibility needs a project-specific review."
+          ],
+          [
+            "Can a DSCR loan pay off the construction loan?",
+            "It may be an exit for an eligible completed rental, but it requires separate underwriting. Check rent, expenses, occupancy, value and net refinance proceeds against the construction payoff."
           ]
         ],
         "links": [
+          [
+            "/blog/spec-home-construction-loans-without-presales",
+            "Spec home construction loans: can you build without a buyer?",
+            "Practical questions and worked examples for your next project."
+          ],
+          [
+            "/blog/ground-up-construction-draw-schedule-cash-flow",
+            "Construction loan draws: how much cash do builders need between payments?",
+            "Practical questions and worked examples for your next project."
+          ],
+          [
+            "/blog/financing-multiple-spec-homes-builder-exposure",
+            "Financing multiple spec homes: plan exposure, starts and sales",
+            "Practical questions and worked examples for your next project."
+          ],
+          [
+            "/blog/build-to-rent-construction-loan-dscr-exit",
+            "Build-to-rent financing: plan the DSCR exit before construction",
+            "Practical questions and worked examples for your next project."
+          ],
           [
             "/blog/brookhaven-ga-100-ltc-ground-up-construction",
             "Company-reported Brookhaven construction closing",
@@ -181,37 +221,28 @@
             "/blog/construction-loan-property-already-owned-mortgage-payoff",
             "Already own the property?",
             "Understand how equity and an existing mortgage payoff fit into the review."
-          ],
-          [
-            "/commercial/fix-and-flip",
-            "Renovation instead of a new build",
-            "Compare financing for purchase, rehab and resale."
           ]
         ],
-        "source_note": "The OCC’s CRE handbook explains the role of construction budgets, borrower equity, draw controls and repayment planning. It is banking guidance, not a Stonehaven product sheet or a promise of eligibility. The CFPB overview provides consumer construction-loan background, not eligibility rules for a business-purpose project.",
+        "source_note": "The OCC CRE handbook provides background on budgets, equity, construction controls and repayment. It is bank supervisory guidance, not a Stonehaven program sheet. Examples are illustrative and terms require a project-specific review.",
         "sources": [
           [
             "https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf",
             "OCC: Commercial Real Estate Lending handbook"
-          ],
-          [
-            "https://www.consumerfinance.gov/ask-cfpb/what-is-a-construction-loan-en-108/",
-            "CFPB: construction-loan overview (consumer context)"
           ]
         ],
         "form_title": "Tell us about your construction project",
         "form_prefix": "Construction financing inquiry",
         "default_type": "Ground-up construction",
-        "updated": "2026-09-20"
+        "updated": "2026-10-21"
       },
       "es": {
-        "title": "Préstamos de construcción para desarrolladores | Stonehaven",
-        "description": "Financiamiento de obra nueva y reconstrucción. Explore hasta 100% del costo elegible, patrimonio del terreno, desembolsos y revisión con Stonehaven.",
-        "name": "Préstamos de construcción para desarrolladores",
+        "title": "Préstamos de obra nueva para constructores | Stonehaven",
+        "description": "Financiamiento de obra nueva, viviendas para venta y proyectos de alquiler. Revise terreno, costos, desembolsos y salida con Stonehaven.",
+        "name": "Préstamos de obra nueva para constructores",
         "eyebrow": "Obra nueva · Demolición y reconstrucción",
-        "h1": "Financiamiento de construcción.<br> <em>Para su próximo proyecto.</em>",
-        "intro": "Capital para desarrolladores que planean obra nueva, viviendas para venta y demoliciones con reconstrucción. Revisamos su presupuesto, situación del terreno y monto solicitado para explorar opciones adecuadas.",
-        "answer": "Stonehaven gestiona financiamiento de construcción con prestamistas externos. Los proyectos que califican pueden acceder a hasta el 100% de los costos elegibles. La estructura depende del presupuesto, patrimonio del terreno, valor terminado, perfil del desarrollador y plan de pago. No cubre automáticamente todos los gastos ni significa que no se necesite efectivo.",
+        "h1": "Financiamiento de obra nueva.<br> <em>Para su próximo proyecto.</em>",
+        "intro": "Construya para vender, conservar o desarrollar por etapas. Stonehaven le ayuda a estructurar el financiamiento desde el terreno hasta la obra, con un plan claro de desembolsos y salida.",
+        "answer": "Un préstamo de obra nueva financia la construcción de un inmueble desde el terreno, con fondos de obra normalmente entregados por etapas. Stonehaven actúa como intermediario hipotecario para constructores e inversionistas. Proyectos elegibles pueden considerarse para hasta 100% de costos admisibles, sujeto a presupuesto, patrimonio, valor terminado, experiencia y evaluación. Financiar el presupuesto no significa cero efectivo requerido.",
         "facts": [
           [
             "Revisión del proyecto",
@@ -239,6 +270,18 @@
           [
             "Construir para vender o alquilar",
             "La venta y el refinanciamiento de un alquiler requieren supuestos de salida distintos. Incluya ventas comparables o estimaciones justificadas de rentas y gastos."
+          ],
+          [
+            "Viviendas para venta sin preventa",
+            "Prepare comparables, plazo de venta y gastos de mantenimiento. La ausencia de comprador requiere una revisión específica."
+          ],
+          [
+            "Varias viviendas por etapas",
+            "Muestre deuda, obras pendientes y necesidades de efectivo de todos los proyectos antes de iniciar más viviendas."
+          ],
+          [
+            "Desarrollo multifamiliar",
+            "Compare obra, arrendamiento y deuda permanente. Revise por separado si corresponde un programa HUD."
           ]
         ],
         "comparison_title": "100% LTC no es lo mismo que financiar toda la construcción",
@@ -336,7 +379,7 @@
         "faqs": [
           [
             "¿Puedo obtener financiamiento de construcción al 100% LTC?",
-            "Es posible. Stonehaven trabaja con prestamistas que pueden considerar hasta el 100% de costos elegibles en proyectos que califican. Patrimonio del terreno, límites, liquidez, garantías y elegibilidad dependen del prestamista y del expediente."
+            "Podría ser posible en proyectos que califican. Revisamos la definición de costos admisibles, el patrimonio del terreno, los límites de valor, la liquidez y las garantías. Financiar el 100% de la obra no equivale al 100% del costo total ni del valor terminado."
           ],
           [
             "¿El patrimonio del terreno reemplaza mi aportación en efectivo?",
@@ -357,9 +400,37 @@
           [
             "¿Cuándo recibiré una respuesta?",
             "Buscamos responder inicialmente en menos de una hora desde que la consulta llega al equipo. Es una primera respuesta, no una decisión de crédito, carta de términos ni compromiso de cierre. Damos seguimiento por mensaje de texto."
+          ],
+          [
+            "¿Se puede construir sin comprador contratado?",
+            "Algunos programas consideran viviendas para venta sin preventa. Prepare demanda, comparables, experiencia, calendario y efectivo hasta la venta. La elegibilidad requiere revisión específica."
+          ],
+          [
+            "¿Puede un préstamo DSCR pagar la construcción?",
+            "Puede ser una salida para un alquiler terminado elegible, pero necesita evaluación propia. Compruebe renta, gastos, ocupación, valor y fondos netos frente a la liquidación de construcción."
           ]
         ],
         "links": [
+          [
+            "/es/blog/spec-home-construction-loans-without-presales",
+            "Préstamos para construir y vender: ¿se puede empezar sin comprador?",
+            "Una guía práctica para preparar su proyecto."
+          ],
+          [
+            "/es/blog/ground-up-construction-draw-schedule-cash-flow",
+            "Desembolsos de construcción: cuánto efectivo necesita entre pagos",
+            "Una guía práctica para preparar su proyecto."
+          ],
+          [
+            "/es/blog/financing-multiple-spec-homes-builder-exposure",
+            "Financiar varias viviendas para venta: deuda, inicios y salidas",
+            "Una guía práctica para preparar su proyecto."
+          ],
+          [
+            "/es/blog/build-to-rent-construction-loan-dscr-exit",
+            "Construir para alquilar: planifique la salida DSCR antes de la obra",
+            "Una guía práctica para preparar su proyecto."
+          ],
           [
             "/es/blog/brookhaven-ga-100-ltc-ground-up-construction",
             "Cierre de construcción reportado en Brookhaven",
@@ -369,28 +440,19 @@
             "/es/blog/construction-loan-property-already-owned-mortgage-payoff",
             "¿Ya es dueño del inmueble?",
             "Cómo se revisan el patrimonio y la deuda hipotecaria existente."
-          ],
-          [
-            "/es/commercial/fix-and-flip",
-            "Renovar en lugar de construir",
-            "Compare financiamiento de compra, remodelación y reventa."
           ]
         ],
-        "source_note": "El manual de CRE de la OCC explica presupuestos de construcción, patrimonio del prestatario, controles de desembolso y planificación de pago. Es orientación bancaria, no una ficha de producto de Stonehaven ni una promesa de elegibilidad. La descripción de la CFPB aporta contexto sobre préstamos de construcción al consumidor, no reglas de elegibilidad para proyectos comerciales.",
+        "source_note": "El manual CRE de la OCC ofrece contexto sobre presupuestos, patrimonio, controles de obra y pago. Es orientación supervisora bancaria, no un programa de Stonehaven. Los ejemplos son ilustrativos y las condiciones requieren revisión del proyecto.",
         "sources": [
           [
             "https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf",
-            "OCC: manual de préstamos inmobiliarios comerciales (en inglés)"
-          ],
-          [
-            "https://www.consumerfinance.gov/ask-cfpb/what-is-a-construction-loan-en-108/",
-            "CFPB: descripción de préstamos de construcción (contexto del consumidor, en inglés)"
+            "OCC: Commercial Real Estate Lending handbook"
           ]
         ],
         "form_title": "Cuéntenos sobre su proyecto de construcción",
         "form_prefix": "Construction financing inquiry",
         "default_type": "Ground-up construction",
-        "updated": "2026-09-20"
+        "updated": "2026-10-21"
       }
     },
     "fix-and-flip": {

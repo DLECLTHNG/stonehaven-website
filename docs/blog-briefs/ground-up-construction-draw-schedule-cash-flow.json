@@ -1,0 +1,120 @@
+{
+  "slug": "ground-up-construction-draw-schedule-cash-flow",
+  "date": "2026-10-21",
+  "type": "guide",
+  "product": "Commercial",
+  "en": {
+    "title": "Construction loan draws: how much cash do builders need between payments?",
+    "metaTitle": "Construction Draw Schedules & Builder Cash Flow | Stonehaven",
+    "desc": "Map construction draws, inspections, retainage and deposits before breaking ground. A worked cash-flow example explains why loan size is not spendable cash.",
+    "eyebrow": "Construction · Draws and working cash",
+    "terms": [
+      [
+        "Purpose",
+        "Plan the cash needed between construction advances"
+      ],
+      [
+        "Compare",
+        "Approved budget, earned work, payment due and cash released"
+      ],
+      [
+        "Example",
+        "Illustrative draw math, not an offered loan"
+      ]
+    ],
+    "body": [
+      "<strong>A construction loan commitment is not a bank balance available on day one.</strong> Funds may be held back and released as work meets the loan’s draw conditions. Before starting, match the contractor’s payment dates to inspection, documentation and disbursement requirements. The gap between paying for work and receiving an advance is part of the builder’s cash plan.",
+      "Stonehaven helps builders review that structure as a mortgage broker. A proposal that finances a large share of the budget still needs a workable first-draw plan and enough liquidity for the next stage.",
+      {
+        "h": "Separate four numbers on every draw"
+      },
+      "<ul><li><strong>Budget:</strong> the approved allowance for the trade or work item.</li><li><strong>Earned work:</strong> progress accepted for the payment application, including any eligible stored materials.</li><li><strong>Payment due:</strong> the amount after contractual retainage and prior payments.</li><li><strong>Loan disbursement:</strong> what the financing actually releases after its own conditions.</li></ul>",
+      "AIA describes <a href=\"https://help.aiacontracts.com/hc/en-us/articles/1500009387461-summary-g702-1992-application-and-certificate-for-payment\">G702 and G703 payment applications</a> as recording completed work, stored materials, retainage, prior payments and change orders. A contractor payment certification is not itself approval of a loan draw. Confirm the documents required for your project rather than assuming every financing arrangement uses AIA forms.",
+      {
+        "h": "An illustrative draw calculation"
+      },
+      "Assume an approved $1,000,000 construction contract. At the current application, accepted cumulative work is $300,000, assumed retainage is 10%, and previous certified payments total $180,000. These assumptions illustrate a payment calculation, not a standard retainage rule.",
+      "<div class=\"construction-table\"><table><caption>Illustrative contractor payment application</caption><thead><tr><th scope=\"col\">Calculation</th><th scope=\"col\">Amount</th></tr></thead><tbody><tr><th scope=\"row\">Accepted cumulative work</th><td>$300,000</td></tr><tr><th scope=\"row\">Less 10% assumed retainage</th><td>$30,000</td></tr><tr><th scope=\"row\">Net earned amount</th><td>$270,000</td></tr><tr><th scope=\"row\">Less prior certified payments</th><td>$180,000</td></tr><tr><th scope=\"row\">Current payment application</th><td>$90,000</td></tr></tbody></table></div>",
+      "The $90,000 application does not establish when the money reaches the project. If the builder must pay that amount before reimbursement, and a separate $25,000 deposit is due before it becomes draw-eligible, the temporary cash requirement is $115,000 before other expenses. Confirm that the deposit is not already included in the current payment to avoid double counting.",
+      {
+        "h": "Build the first-draw plan before closing"
+      },
+      "<ul><li>List what must be paid before mobilization: deposits, insurance, permits or site preparation.</li><li>Identify which items are eligible immediately, reimbursable later or excluded.</li><li>Confirm whether borrower equity must be contributed before loan advances.</li><li>Get the inspection request process and documentation checklist in writing.</li><li>Ask who resolves a disputed completion percentage or missing invoice.</li><li>Keep a separate contingency for unexpected costs; do not spend it twice as routine working cash.</li></ul>",
+      "Ask about inspection and draw fees, minimum request sizes, retainage release and treatment of change orders. A quoted inspection turnaround is not necessarily the total time from requesting money to receiving it.",
+      {
+        "h": "What if work costs more than the approved budget?"
+      },
+      "Document the scope change, revised price and effect on remaining costs before assuming the loan will fund it. Ask whether the change must be approved in advance and whether extra equity is required. An undrawn commitment can already be allocated to unfinished work; it is not automatically a free contingency.",
+      {
+        "h": "Are interest payments based on the full loan or drawn funds?"
+      },
+      "Read the proposal. Ask for the exact interest basis, any minimum-interest provision and any fee on unused funds. If interest is calculated on outstanding principal, a later draw changes future interest. If the agreement uses another basis, the same draw schedule can produce different costs. An interest reserve also has a defined budget and can run out.",
+      "Compare the separate roles of <a href=\"/blog/construction-loan-interest-reserve-vs-contingency\">interest reserve, contingency and working cash</a>. Our <a href=\"/blog/100-ltc-construction-loans-builder-cash-needed\">100% LTC guide</a> explains why financing eligible costs does not guarantee zero cash needed.",
+      {
+        "h": "A practical package for the financing review"
+      },
+      "Send a summary of the project, total cost, requested loan, permit status and intended first work package. Keep supporting bank statements and private contractor documents out of the public inquiry form. Stonehaven can help compare the funding sequence with the construction schedule through our <a href=\"/commercial/construction-loans#quick-inquiry\">construction financing review</a>.",
+      {
+        "h": "Sources and scope"
+      },
+      "The <a href=\"https://help.aiacontracts.com/hc/en-us/articles/1500009387461-summary-g702-1992-application-and-certificate-for-payment\">AIA payment-application overview</a> informs the document explanation. The <a href=\"https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf\">OCC CRE handbook</a> discusses construction monitoring and budget controls. These are not uniform rules for every private loan. Reviewed October 21, 2026. The cash example is original hypothetical arithmetic."
+    ]
+  },
+  "es": {
+    "title": "Desembolsos de construcción: cuánto efectivo necesita entre pagos",
+    "metaTitle": "Desembolsos y efectivo para construcción | Stonehaven",
+    "desc": "Coordine desembolsos, inspecciones, retenciones y depósitos antes de iniciar. Un ejemplo explica por qué el monto aprobado no es efectivo disponible.",
+    "eyebrow": "Construcción · Desembolsos y liquidez",
+    "terms": [
+      [
+        "Objetivo",
+        "Planificar efectivo entre anticipos de construcción"
+      ],
+      [
+        "Compare",
+        "Presupuesto, obra reconocida, pago exigible y fondos entregados"
+      ],
+      [
+        "Ejemplo",
+        "Cálculos ilustrativos, no una oferta"
+      ]
+    ],
+    "body": [
+      "<strong>El compromiso de un préstamo de construcción no es un saldo bancario disponible el primer día.</strong> Los fondos pueden reservarse y liberarse cuando la obra cumple las condiciones. Antes de empezar, coordine los pagos del contratista con inspecciones, documentos y desembolsos. La diferencia entre pagar la obra y recibir fondos forma parte de su plan de efectivo.",
+      "Stonehaven ayuda a revisar esa estructura como intermediario hipotecario. Financiar gran parte del presupuesto no elimina la necesidad de planificar el primer desembolso y disponer de liquidez para la siguiente etapa.",
+      {
+        "h": "Separe cuatro cifras en cada solicitud"
+      },
+      "<ul><li><strong>Presupuesto:</strong> importe aprobado para cada partida.</li><li><strong>Obra reconocida:</strong> avance aceptado, incluidos materiales almacenados que sean admisibles.</li><li><strong>Pago exigible:</strong> importe después de retenciones y pagos anteriores.</li><li><strong>Desembolso del préstamo:</strong> fondos que se entregan tras cumplir las condiciones financieras.</li></ul>",
+      "AIA explica que las <a href=\"https://help.aiacontracts.com/hc/en-us/articles/1500009387461-summary-g702-1992-application-and-certificate-for-payment\">solicitudes G702 y G703</a> registran obra terminada, materiales almacenados, retenciones, pagos anteriores y cambios. La certificación del pago del contratista no aprueba por sí sola un desembolso del préstamo. Confirme los documentos de su proyecto; no todos los acuerdos usan formularios AIA.",
+      {
+        "h": "Cálculo ilustrativo de un desembolso"
+      },
+      "Suponga un contrato de construcción aprobado de $1,000,000. La obra acumulada aceptada es $300,000, la retención supuesta es 10% y los pagos certificados anteriores suman $180,000. El porcentaje se usa para ilustrar el cálculo, no como regla universal.",
+      "<div class=\"construction-table\"><table><caption>Solicitud ilustrativa de pago del contratista</caption><thead><tr><th scope=\"col\">Cálculo</th><th scope=\"col\">Importe</th></tr></thead><tbody><tr><th scope=\"row\">Obra acumulada aceptada</th><td>$300,000</td></tr><tr><th scope=\"row\">Menos retención supuesta del 10%</th><td>$30,000</td></tr><tr><th scope=\"row\">Importe neto reconocido</th><td>$270,000</td></tr><tr><th scope=\"row\">Menos pagos certificados anteriores</th><td>$180,000</td></tr><tr><th scope=\"row\">Solicitud de pago actual</th><td>$90,000</td></tr></tbody></table></div>",
+      "La solicitud de $90,000 no establece cuándo llegará el dinero. Si debe pagar antes del reembolso y además vence un depósito separado de $25,000 todavía no admisible para desembolso, necesita temporalmente $115,000 antes de otros gastos. Confirme que el depósito no esté incluido en el pago actual para no contarlo dos veces.",
+      {
+        "h": "Planifique el primer desembolso antes del cierre"
+      },
+      "<ul><li>Enumere depósitos, seguros, permisos y preparación del sitio que debe pagar antes de movilizar la obra.</li><li>Identifique partidas admisibles ahora, reembolsables después o excluidas.</li><li>Confirme si debe aportar su patrimonio antes de recibir anticipos.</li><li>Obtenga por escrito el proceso de inspección y los documentos requeridos.</li><li>Pregunte quién resuelve diferencias sobre avance o facturas faltantes.</li><li>Separe contingencia para gastos inesperados; no la cuente también como efectivo rutinario.</li></ul>",
+      "Pregunte por cargos de inspección, mínimos por solicitud, liberación de retenciones y cambios de obra. El plazo de una inspección no necesariamente equivale al tiempo total hasta recibir fondos.",
+      {
+        "h": "¿Qué ocurre si la obra excede el presupuesto aprobado?"
+      },
+      "Documente el cambio, precio revisado y efecto sobre los costos pendientes antes de asumir que el préstamo lo financiará. Pregunte si necesita aprobación previa o patrimonio adicional. El saldo no desembolsado puede estar asignado a trabajo pendiente y no ser una contingencia libre.",
+      {
+        "h": "¿Los intereses se calculan sobre el préstamo completo o los fondos desembolsados?"
+      },
+      "Revise la propuesta. Pida la base exacta de cálculo, cualquier interés mínimo y cargos por fondos no usados. Si se usa el capital pendiente, cada anticipo cambia los intereses futuros. Otra base puede producir costos diferentes con el mismo calendario. La reserva de intereses también es limitada y puede agotarse.",
+      "Compare <a href=\"/es/blog/construction-loan-interest-reserve-vs-contingency\">reserva de intereses, contingencia y efectivo operativo</a>. La <a href=\"/es/blog/100-ltc-construction-loans-builder-cash-needed\">guía de 100% LTC</a> explica por qué financiar costos admisibles no garantiza cero efectivo.",
+      {
+        "h": "Prepare la revisión financiera"
+      },
+      "Comparta resumen, costo total, préstamo solicitado, permisos y primera etapa de obra. No envíe estados de cuenta ni documentos privados mediante el formulario público. Stonehaven ayuda a comparar los fondos con el calendario mediante una <a href=\"/es/commercial/construction-loans#quick-inquiry\">revisión de construcción</a>.",
+      {
+        "h": "Fuentes y alcance"
+      },
+      "La <a href=\"https://help.aiacontracts.com/hc/en-us/articles/1500009387461-summary-g702-1992-application-and-certificate-for-payment\">descripción de AIA</a> respalda la explicación documental. El <a href=\"https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf\">manual CRE de la OCC</a> aborda seguimiento de obra y controles presupuestarios. No son reglas uniformes para todo préstamo privado. Revisado el 21 de octubre de 2026. El ejemplo es aritmética hipotética propia."
+    ]
+  }
+}

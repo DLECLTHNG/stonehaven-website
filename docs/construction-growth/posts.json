@@ -1,0 +1,44 @@
+{
+  "updated": "2026-10-21",
+  "posts": [
+    {
+      "slug": "spec-home-construction-loans-without-presales",
+      "title": "Spec home construction loans: can you build without a buyer?",
+      "esTitle": "Préstamos para construir y vender: ¿se puede empezar sin comprador?",
+      "source_keys": [
+        "occ"
+      ]
+    },
+    {
+      "slug": "ground-up-construction-draw-schedule-cash-flow",
+      "title": "Construction loan draws: how much cash do builders need between payments?",
+      "esTitle": "Desembolsos de construcción: cuánto efectivo necesita entre pagos",
+      "source_keys": [
+        "aia",
+        "occ"
+      ]
+    },
+    {
+      "slug": "financing-multiple-spec-homes-builder-exposure",
+      "title": "Financing multiple spec homes: plan exposure, starts and sales",
+      "esTitle": "Financiar varias viviendas para venta: deuda, inicios y salidas",
+      "source_keys": [
+        "tract"
+      ]
+    },
+    {
+      "slug": "build-to-rent-construction-loan-dscr-exit",
+      "title": "Build-to-rent financing: plan the DSCR exit before construction",
+      "esTitle": "Construir para alquilar: planifique la salida DSCR antes de la obra",
+      "source_keys": [
+        "refinance"
+      ]
+    }
+  ],
+  "sources": {
+    "occ": "https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf",
+    "aia": "https://help.aiacontracts.com/hc/en-us/articles/1500009387461-summary-g702-1992-application-and-certificate-for-payment",
+    "tract": "https://www.occ.treas.gov/news-issuances/bulletins/2005/bulletin-2005-32.html",
+    "refinance": "https://www.occ.treas.gov/news-issuances/bulletins/2024/bulletin-2024-29.html"
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "slug": "spec-home-construction-loans-without-presales",
+  "date": "2026-10-21",
+  "type": "guide",
+  "product": "Commercial",
+  "en": {
+    "title": "Spec home construction loans: can you build without a buyer?",
+    "metaTitle": "Spec Home Construction Loans Without Presales | Stonehaven",
+    "desc": "Preparing a spec build? Understand presales, land equity, builder experience and the cash plan before requesting ground-up construction financing.",
+    "eyebrow": "Construction · Build to sell",
+    "terms": [
+      [
+        "Project",
+        "Business-purpose homes built for resale"
+      ],
+      [
+        "Key question",
+        "Can the project repay the loan without a buyer already contracted?"
+      ],
+      [
+        "Prepare",
+        "Lot, plans, budget, comparable sales and builder track record"
+      ]
+    ],
+    "body": [
+      "<strong>A spec home construction loan finances a home intended for sale before a buyer is under contract.</strong> Some programs can consider that structure, but the absence of a presale makes the proposed selling price, market demand, builder experience and available cash especially important. A finished-lot purchase, vertical build and eventual sale need to work as one financing plan.",
+      "Stonehaven acts as a mortgage broker for business-purpose construction projects. We help builders organize the request and compare the financing structure. This guide concerns investment builds, not a consumer borrowing to construct a personal residence.",
+      {
+        "h": "What changes when there is no presale?"
+      },
+      "A comparable sale supports a value discussion; it does not reserve a buyer. Prepare a realistic selling period, a carrying-cost allowance and a response if the house sells below the original estimate. Ask whether a proposal imposes a presale requirement, a limit on unsold homes or conditions before starting another build.",
+      "<div class=\"construction-table\"><table><caption>Three build-to-sell situations</caption><thead><tr><th scope=\"col\">Project</th><th scope=\"col\">What to explain</th></tr></thead><tbody><tr><th scope=\"row\">Single spec home</th><td>Why this size, layout and price fit the nearby buyer market.</td></tr><tr><th scope=\"row\">Teardown and rebuild</th><td>How demolition, site conditions and permits affect the budget and schedule.</td></tr><tr><th scope=\"row\">Several spec homes</th><td>How starts, sales and cash requirements overlap across the projects.</td></tr></tbody></table></div>",
+      {
+        "h": "The first review: six facts that make the project understandable"
+      },
+      "<ul><li><strong>Site control:</strong> owned, under contract or still being negotiated. Show acquisition cost and any payoff separately.</li><li><strong>Readiness:</strong> zoning, utility access, plans and permit status. Identify unfinished site work rather than calling the lot ready.</li><li><strong>Full budget:</strong> land, demolition if needed, hard costs, soft costs, financing allowances and contingency.</li><li><strong>Sale case:</strong> proposed finished specification, comparable sales and expected marketing period.</li><li><strong>Execution:</strong> the sponsor’s relevant completions, contractor role and current project workload.</li><li><strong>Cash:</strong> contribution at closing plus the money available between construction draws.</li></ul>",
+      {
+        "h": "A sale-price sensitivity example"
+      },
+      "This is hypothetical planning arithmetic, not a Stonehaven closing or an offered loan. Assume total project cost of $1,600,000, including the stated financing allowances but excluding selling costs; a $1,360,000 loan; and a projected sale at $2,100,000. The cost-minus-loan gap is $240,000. It is not a final cash-to-close quote because accepted land equity, advances and excluded costs still need review.",
+      "<div class=\"construction-table\"><table><caption>Illustrative sale proceeds, before other payoff adjustments</caption><thead><tr><th scope=\"col\">Sale assumption</th><th scope=\"col\">After 6% assumed selling costs</th><th scope=\"col\">Less $1.36M loan principal</th></tr></thead><tbody><tr><th scope=\"row\">$2,100,000</th><td>$1,974,000</td><td>$614,000</td></tr><tr><th scope=\"row\">$1,890,000 (10% lower)</th><td>$1,776,600</td><td>$416,600</td></tr></tbody></table></div>",
+      "The amounts in the last column are not profit. They must also return the builder’s invested equity and absorb any overruns, additional carry or payoff charges omitted from the assumptions. A lower sale price can leave enough to repay debt while materially reducing the builder’s return. Replace the assumed selling-cost percentage with your actual estimates.",
+      {
+        "h": "Can land equity cover the down payment?"
+      },
+      "It can support a request when accepted under the proposed program, but land value is not cash available for deposits or payroll. Keep the purchase basis, supported current value and mortgage payoff separate. Read our <a href=\"/blog/construction-loan-property-already-owned-mortgage-payoff\">owned-property construction guide</a> before treating appreciation as an available contribution.",
+      {
+        "h": "Can a first-time spec builder qualify?"
+      },
+      "That requires a specific review. Hiring an experienced contractor does not automatically satisfy a sponsor-experience requirement. Describe who completed prior projects, in what role, who manages this build and who covers a shortfall. We review the sponsor and contractor roles alongside the budget, cash position and repayment plan.",
+      {
+        "h": "Questions to settle before accepting terms"
+      },
+      "<ul><li>Is the lot advance separate from the construction holdback?</li><li>What must be completed before the first draw, and which costs are reimbursed?</li><li>Is a buyer contract required at any stage?</li><li>What happens if construction finishes but the home remains unsold?</li><li>Are extensions discretionary, and what notice, fees or performance conditions apply?</li></ul>",
+      "Use the <a href=\"/blog/ground-up-construction-draw-schedule-cash-flow\">construction draw guide</a> to plan working cash. For several starts, review <a href=\"/blog/financing-multiple-spec-homes-builder-exposure\">financing multiple spec homes</a>.",
+      {
+        "h": "Bring the project to Stonehaven"
+      },
+      "Start with the location, number of homes, ownership position, total cost, requested loan, completed value and target closing. We help structure the request and coordinate the next step. <a href=\"/commercial/construction-loans#quick-inquiry\">Discuss your ground-up construction project</a>.",
+      {
+        "h": "Source and scope"
+      },
+      "The <a href=\"https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf\">OCC Commercial Real Estate Lending handbook</a> discusses construction execution and repayment risks. It is bank supervisory guidance, not a Stonehaven program sheet or a promise of approval. Reviewed October 21, 2026. Numerical examples are our own stated assumptions."
+    ]
+  },
+  "es": {
+    "title": "Préstamos para construir y vender: ¿se puede empezar sin comprador?",
+    "metaTitle": "Construir para vender sin preventa | Stonehaven",
+    "desc": "Prepare una obra para reventa: preventas, patrimonio del terreno, experiencia del constructor y efectivo antes de solicitar financiamiento.",
+    "eyebrow": "Construcción · Viviendas para venta",
+    "terms": [
+      [
+        "Proyecto",
+        "Viviendas de inversión construidas para vender"
+      ],
+      [
+        "Pregunta clave",
+        "¿Puede pagarse la deuda sin un comprador contratado al inicio?"
+      ],
+      [
+        "Prepare",
+        "Terreno, planos, presupuesto, ventas comparables y experiencia"
+      ]
+    ],
+    "body": [
+      "<strong>Un préstamo para una vivienda especulativa financia una casa destinada a la venta antes de tener un comprador bajo contrato.</strong> Algunos programas pueden considerar esa estructura. Sin preventa, el precio previsto, la demanda, la experiencia y el efectivo disponible cobran especial importancia. La compra del lote, la obra y la venta deben formar un plan coherente.",
+      "Stonehaven actúa como intermediario hipotecario para proyectos de construcción con fines comerciales. Ayudamos a organizar la solicitud y comparar la estructura. Esta guía trata de inmuebles de inversión, no de un consumidor que construye su residencia personal.",
+      {
+        "h": "¿Qué cambia cuando no hay preventa?"
+      },
+      "Una venta comparable ayuda a justificar un valor, pero no asegura un comprador. Prepare un plazo realista de comercialización, gastos de mantenimiento y un plan si la vivienda se vende por menos. Pregunte si la propuesta exige preventas, limita las casas sin vender o condiciona el inicio de otra obra.",
+      "<div class=\"construction-table\"><table><caption>Tres situaciones de construcción para venta</caption><thead><tr><th scope=\"col\">Proyecto</th><th scope=\"col\">Qué explicar</th></tr></thead><tbody><tr><th scope=\"row\">Una vivienda para venta</th><td>Por qué el tamaño, diseño y precio responden a la demanda local.</td></tr><tr><th scope=\"row\">Demolición y reconstrucción</th><td>Cómo afectan demolición, condiciones del sitio y permisos al costo y plazo.</td></tr><tr><th scope=\"row\">Varias viviendas</th><td>Cómo se superponen inicios, ventas y necesidades de efectivo.</td></tr></tbody></table></div>",
+      {
+        "h": "Seis datos para la revisión inicial"
+      },
+      "<ul><li><strong>Control del sitio:</strong> propiedad actual, contrato de compra o negociación. Separe costo y saldo pendiente.</li><li><strong>Preparación:</strong> zonificación, servicios, planos y permisos. Identifique las obras del terreno aún pendientes.</li><li><strong>Presupuesto completo:</strong> terreno, demolición, obra, gastos indirectos, financiamiento y contingencia.</li><li><strong>Venta:</strong> especificaciones terminadas, comparables y plazo previsto de comercialización.</li><li><strong>Ejecución:</strong> proyectos comparables del patrocinador, función del contratista y otras obras activas.</li><li><strong>Efectivo:</strong> aportación al cierre y fondos disponibles entre desembolsos.</li></ul>",
+      {
+        "h": "Ejemplo de sensibilidad al precio de venta"
+      },
+      "Este cálculo es hipotético, no un cierre de Stonehaven ni una oferta. Suponga costo total de $1,600,000, incluidos los gastos financieros presupuestados pero sin gastos de venta; préstamo de $1,360,000; y venta prevista de $2,100,000. La diferencia entre costo y préstamo es $240,000. No representa una cotización final de efectivo al cierre: falta revisar patrimonio aceptado, anticipos y gastos excluidos.",
+      "<div class=\"construction-table\"><table><caption>Ingresos ilustrativos antes de otros ajustes de liquidación</caption><thead><tr><th scope=\"col\">Supuesto de venta</th><th scope=\"col\">Después de gastos de venta supuestos del 6%</th><th scope=\"col\">Menos capital del préstamo de $1.36M</th></tr></thead><tbody><tr><th scope=\"row\">$2,100,000</th><td>$1,974,000</td><td>$614,000</td></tr><tr><th scope=\"row\">$1,890,000 (10% menos)</th><td>$1,776,600</td><td>$416,600</td></tr></tbody></table></div>",
+      "La última columna no es utilidad. También debe devolver el patrimonio invertido y absorber sobrecostos, gastos adicionales o cargos de liquidación no incluidos. Un precio menor puede permitir pagar la deuda y aun así reducir mucho el rendimiento. Sustituya el porcentaje de venta supuesto por sus estimaciones reales.",
+      {
+        "h": "¿Puede el patrimonio del terreno cubrir la aportación?"
+      },
+      "Puede respaldar la solicitud si el programa lo acepta, pero no es efectivo disponible para depósitos o nómina. Separe costo de compra, valor sustentado y saldo hipotecario. Consulte la <a href=\"/es/blog/construction-loan-property-already-owned-mortgage-payoff\">guía de construcción en propiedad propia</a> antes de considerar la apreciación como aportación disponible.",
+      {
+        "h": "¿Puede calificar un constructor sin experiencia previa?"
+      },
+      "Requiere revisión particular. Contratar a una empresa experimentada no satisface automáticamente los requisitos del patrocinador. Explique quién realizó proyectos anteriores, en qué función, quién dirige esta obra y quién cubre faltantes. Revisamos las funciones del patrocinador y del contratista junto con el presupuesto, la liquidez y el plan de pago.",
+      {
+        "h": "Preguntas antes de aceptar condiciones"
+      },
+      "<ul><li>¿Se separan el anticipo del terreno y la reserva de construcción?</li><li>¿Qué se exige para el primer desembolso y qué gastos se reembolsan?</li><li>¿Se requiere contrato de comprador en alguna etapa?</li><li>¿Qué ocurre si termina la obra pero la vivienda no se vende?</li><li>¿Las prórrogas son discrecionales y qué avisos, cargos o condiciones aplican?</li></ul>",
+      "Revise la <a href=\"/es/blog/ground-up-construction-draw-schedule-cash-flow\">guía de desembolsos de construcción</a>. Para varios inicios, consulte <a href=\"/es/blog/financing-multiple-spec-homes-builder-exposure\">el financiamiento de varias viviendas para venta</a>.",
+      {
+        "h": "Presente su proyecto a Stonehaven"
+      },
+      "Empiece con ubicación, número de viviendas, propiedad actual, costo total, préstamo solicitado, valor terminado y fecha de cierre. Ayudamos a estructurar la solicitud y coordinar el siguiente paso. <a href=\"/es/commercial/construction-loans#quick-inquiry\">Consulte sobre su proyecto de obra nueva</a>.",
+      {
+        "h": "Fuente y alcance"
+      },
+      "El <a href=\"https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf\">manual de préstamos inmobiliarios comerciales de la OCC</a> aborda riesgos de ejecución y pago de construcción. Es orientación supervisora bancaria, no un programa de Stonehaven ni una promesa de aprobación. Revisado el 21 de octubre de 2026. Los ejemplos usan supuestos propios expresamente indicados."
+    ]
+  }
+}
