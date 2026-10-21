@@ -1,6 +1,6 @@
 # Stonehaven Lending: public pillar content
 
-Latest source content update: 2026-10-20.
+Latest source content update: 2026-10-21.
 
 Selected public English pillar excerpts for the three promoted business lines. Navigation, input controls, footers and references to other programs are omitted. Excerpts retain their source links. Canonical web pages remain authoritative. This file does not establish indexing, rankings or program eligibility.
 
@@ -464,18 +464,28 @@ For an acquisition that needs stabilization, compare bridge and permanent financ
 
 Use our commercial financing resources (https://stonehavencre.com/resources/commercial)  to connect these decisions with the documents and exit plan for your project.
 
+### Plan your next ground-up build
+
+Work through land, draws, multiple starts and the rental exit before committing capital.
+
+- Ground-up construction financing (https://stonehavencre.com/commercial/construction-loans)
+- Spec home construction loans: can you build without a buyer? (https://stonehavencre.com/blog/spec-home-construction-loans-without-presales)
+- Construction loan draws: how much cash do builders need between payments? (https://stonehavencre.com/blog/ground-up-construction-draw-schedule-cash-flow)
+- Financing multiple spec homes: plan exposure, starts and sales (https://stonehavencre.com/blog/financing-multiple-spec-homes-builder-exposure)
+- Build-to-rent financing: plan the DSCR exit before construction (https://stonehavencre.com/blog/build-to-rent-construction-loan-dscr-exit)
+
 ---
 
-# Construction financing. Built around your next project.
+# Ground-up construction financing. Built around your next project.
 
 Source: https://stonehavencre.com/commercial/construction-loans
 
 Ground-up construction · Teardown and rebuild
 
-## Construction financing.
+## Ground-up construction financing.
  Built around your next project.
 
-Capital for builders planning ground-up construction, spec homes and teardown projects. We review your budget, land position and financing request to explore suitable lender options.
+Build to sell, build to hold or develop in phases. Stonehaven helps structure financing around your land, construction budget, draw schedule and exit.
 
 Discuss your financing (https://stonehavencre.com/commercial/construction-loans#quick-inquiry) See the numbers (https://stonehavencre.com/commercial/construction-loans#example)
 
@@ -491,9 +501,9 @@ Read the complete case study (https://stonehavencre.com/blog/brookhaven-ga-100-l
 
 The short answer
 
-### Construction loans for builders
+### Ground-up construction loans for builders
 
-Stonehaven arranges construction financing through third-party lenders. Qualifying deals may access up to 100% of eligible project costs. The actual structure depends on the budget, land equity, completed value, builder profile and repayment plan. It does not automatically cover every expense or mean zero cash is needed.
+A ground-up construction loan finances a new property from the land stage through completion, with construction funds generally released in stages. Stonehaven acts as a mortgage broker for builders and investors. Qualifying projects may be considered for up to 100% of eligible costs, subject to budget, equity, completed value, experience and underwriting. Financing the budget does not mean zero cash required.
 
 Project reviewBudget, land equity and completed value
 
@@ -514,6 +524,18 @@ Land equity may strengthen the structure. Start with your ownership basis, estim
 #### Build to sell or hold
 
 A spec sale and a rental refinance need different exit assumptions. Include comparable sales for a sale exit, or supported rent and expense estimates for a rental plan.
+
+#### Spec homes without a presale
+
+Prepare comparable sales, a marketing timeline and carrying costs. A project without a contracted buyer needs its own financing review.
+
+#### Multiple homes and phased starts
+
+Show commitments, unfinished work and overlapping cash needs across your projects before adding the next start.
+
+#### Multifamily development
+
+Compare construction, lease-up and permanent financing. Evaluate separately whether a HUD program fits the property and hold plan.
 
 ### 100% LTC and 100% of construction costs are different
 
@@ -583,7 +605,7 @@ Raw land held without a defined build plan, owner-occupied consumer construction
 
 Can I get 100% LTC construction financing?
 
-Potentially. Stonehaven has lender relationships that can consider up to 100% of eligible costs on qualifying deals. Eligibility, land equity treatment, leverage limits, liquidity and guarantees depend on the actual lender and file.
+Potentially, on qualifying projects. We review eligible-cost definitions, land equity, value limits, liquidity and guarantees. Funding 100% of the construction budget is different from funding 100% of total project cost or completed value.
 
 Does land equity replace my cash down payment?
 
@@ -602,6 +624,14 @@ Confirm the calculation basis in the proposal. If interest-only payments are pro
 How quickly will I get feedback?
 
 We aim to provide initial deal feedback in under one hour after the inquiry reaches our team. That is an initial response, not a credit decision, term sheet or closing commitment. We follow up by text.
+
+Can I finance a spec home without a buyer under contract?
+
+Some programs consider build-to-sell projects without a presale. Prepare market demand, comparable sales, experience, timing and cash through sale. Eligibility needs a project-specific review.
+
+Can a DSCR loan pay off the construction loan?
+
+It may be an exit for an eligible completed rental, but it requires separate underwriting. Check rent, expenses, occupancy, value and net refinance proceeds against the construction payoff.
 
  Start a conversation
 
@@ -627,6 +657,30 @@ Keep account numbers, tax records and private documents out of this public form.
 
 ### Related guides and examples
 
+#### Spec home construction loans: can you build without a buyer?
+
+Practical questions and worked examples for your next project.
+
+Explore →  (https://stonehavencre.com/blog/spec-home-construction-loans-without-presales)
+
+#### Construction loan draws: how much cash do builders need between payments?
+
+Practical questions and worked examples for your next project.
+
+Explore →  (https://stonehavencre.com/blog/ground-up-construction-draw-schedule-cash-flow)
+
+#### Financing multiple spec homes: plan exposure, starts and sales
+
+Practical questions and worked examples for your next project.
+
+Explore →  (https://stonehavencre.com/blog/financing-multiple-spec-homes-builder-exposure)
+
+#### Build-to-rent financing: plan the DSCR exit before construction
+
+Practical questions and worked examples for your next project.
+
+Explore →  (https://stonehavencre.com/blog/build-to-rent-construction-loan-dscr-exit)
+
 #### Company-reported Brookhaven construction closing
 
 Read the reported construction-budget financing example, including the role of land equity.
@@ -639,20 +693,13 @@ Understand how equity and an existing mortgage payoff fit into the review.
 
 Explore →  (https://stonehavencre.com/blog/construction-loan-property-already-owned-mortgage-payoff)
 
-#### Renovation instead of a new build
-
-Compare financing for purchase, rehab and resale.
-
-Explore →  (https://stonehavencre.com/commercial/fix-and-flip)
-
 ### Sources and editorial standards
 
-The OCC’s CRE handbook explains the role of construction budgets, borrower equity, draw controls and repayment planning. It is banking guidance, not a Stonehaven product sheet or a promise of eligibility. The CFPB overview provides consumer construction-loan background, not eligibility rules for a business-purpose project.
+The OCC CRE handbook provides background on budgets, equity, construction controls and repayment. It is bank supervisory guidance, not a Stonehaven program sheet. Examples are illustrative and terms require a project-specific review.
 
 - OCC: Commercial Real Estate Lending handbook (https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf)
-- CFPB: construction-loan overview (consumer context) (https://www.consumerfinance.gov/ask-cfpb/what-is-a-construction-loan-en-108/)
 
-Updated September 20, 2026. Editorial standards (https://stonehavencre.com/editorial-policy)  · Meet the team (https://stonehavencre.com/management)
+Updated October 21, 2026. Editorial standards (https://stonehavencre.com/editorial-policy)  · Meet the team (https://stonehavencre.com/management)
 
 ### Prepare the next decision
 
@@ -1595,6 +1642,16 @@ Updated September 21, 2026. Editorial standards (https://stonehavencre.com/edito
 ### Prepare the next decision
 
 Our guide to subdivision lot release prices (https://stonehavencre.com/blog/subdivision-loan-lot-release-prices)  explains how a lot sale is divided between debt reduction, costs and cash remaining for the project.
+
+### Plan your next ground-up build
+
+Work through land, draws, multiple starts and the rental exit before committing capital.
+
+- Ground-up construction financing (https://stonehavencre.com/commercial/construction-loans)
+- Spec home construction loans: can you build without a buyer? (https://stonehavencre.com/blog/spec-home-construction-loans-without-presales)
+- Construction loan draws: how much cash do builders need between payments? (https://stonehavencre.com/blog/ground-up-construction-draw-schedule-cash-flow)
+- Financing multiple spec homes: plan exposure, starts and sales (https://stonehavencre.com/blog/financing-multiple-spec-homes-builder-exposure)
+- Build-to-rent financing: plan the DSCR exit before construction (https://stonehavencre.com/blog/build-to-rent-construction-loan-dscr-exit)
 
 ---
 

@@ -1,0 +1,118 @@
+{
+  "slug": "build-to-rent-construction-loan-dscr-exit",
+  "date": "2026-10-21",
+  "type": "guide",
+  "product": "Commercial",
+  "en": {
+    "title": "Build-to-rent financing: plan the DSCR exit before construction",
+    "metaTitle": "Build-to-Rent Construction Loans & DSCR Exit | Stonehaven",
+    "desc": "Building rentals? Test completion, lease-up, rental income and refinance proceeds before relying on a DSCR loan to repay construction debt.",
+    "eyebrow": "Construction · Build to rent",
+    "terms": [
+      [
+        "Strategy",
+        "Build an investment property and hold it as a rental"
+      ],
+      [
+        "Two reviews",
+        "Construction execution and permanent-loan eligibility"
+      ],
+      [
+        "Key test",
+        "Will refinance proceeds actually cover the payoff?"
+      ]
+    ],
+    "body": [
+      "<strong>A build-to-rent construction loan pays for the development stage; a DSCR refinance may provide the long-term exit for an eligible finished rental.</strong> They are separate decisions unless the written financing agreement establishes a specific combined structure. Completion alone does not guarantee a refinance or enough proceeds to repay the construction balance.",
+      "Stonehaven acts as a mortgage broker and helps coordinate the construction request with the proposed rental financing. Reviewing both early can reveal a gap before the builder spends money on a plan that depends on an unsupported exit.",
+      {
+        "h": "Work backward from the completed rental"
+      },
+      "<ul><li>Confirm the finished property type, unit count, ownership entity and intended rental use.</li><li>Support achievable rent with appropriate market evidence; identify lease and occupancy conditions.</li><li>Estimate taxes, insurance and any association charges that enter the proposed DSCR payment calculation.</li><li>Check completion evidence, certificate-of-occupancy requirements and remaining work.</li><li>Clarify title, ownership seasoning, valuation basis, refinance purpose and prepayment conditions.</li><li>Compare estimated net proceeds with the projected construction payoff at the actual refinance date.</li></ul>",
+      "A 1-4-unit rental, a 5-8-unit building and a unified rental community can require different underwriting. Use our <a href=\"/commercial/5-8-unit-financing\">5-8-unit guide</a> when the unit count moves beyond a typical small-property DSCR route.",
+      {
+        "h": "A hypothetical DSCR sensitivity check"
+      },
+      "Assume eligible monthly rent of $4,200 and a proposed full monthly housing payment of $3,300. For this illustration, DSCR is rent divided by that payment, or approximately 1.27. This is one residential investment calculation, not a universal program definition or qualification threshold.",
+      "<div class=\"construction-table\" role=\"region\" tabindex=\"0\" aria-label=\"Rental exit sensitivity, rounded to two decimal places\"><table><caption>Rental exit sensitivity, rounded to two decimal places</caption><thead><tr><th scope=\"col\">Illustrative change</th><th scope=\"col\">Result</th></tr></thead><tbody><tr><th scope=\"row\">Base: $4,200 rent ÷ $3,300 payment</th><td>1.27 DSCR</td></tr><tr><th scope=\"row\">Rent 10% lower: $3,780 ÷ $3,300</th><td>1.15 DSCR</td></tr><tr><th scope=\"row\">Payment $300 higher: $4,200 ÷ $3,600</th><td>1.17 DSCR</td></tr><tr><th scope=\"row\">Both changes: $3,780 ÷ $3,600</th><td>1.05 DSCR</td></tr></tbody></table></div>",
+      "A larger proposed payment can result from a different loan amount, financing terms or property expenses. Ask what payment and eligible rent the actual program uses. Commercial multifamily underwriting may instead use net operating income and annual debt service, so do not transplant this example into every property type.",
+      {
+        "h": "Then test whether the refinance pays off construction"
+      },
+      "Suppose the projected construction payoff is $900,000. If an illustrative refinance produces an $880,000 gross loan and $20,000 is used for closing costs and required escrows, only $860,000 remains for payoff. The cash gap is $40,000. These figures are assumptions, not quoted proceeds. The existence of equity or an acceptable coverage ratio does not eliminate that gap.",
+      "Model a later completion date and slower lease-up as well. Additional interest, insurance and operating expenses can increase the cash needed while waiting for the exit. An extension or bridge loan is a separate financing decision, not an automatic backup.",
+      {
+        "h": "When should a builder look at HUD instead?"
+      },
+      "For an eligible apartment development or cohesive rental community intended for a long hold, a HUD construction or build-to-rent route may deserve review at the planning stage. It has a separate process and eligibility requirements. Compare <a href=\"/commercial/hud-221d4-construction-loans\">HUD 221(d)(4)</a> and <a href=\"/commercial/hud-build-to-rent-financing\">HUD build-to-rent financing</a>. Do not assume a scattered collection of rental houses qualifies as one HUD project.",
+      {
+        "h": "Can I switch from selling to renting after construction?"
+      },
+      "Discuss the alternative early. A house designed for a sale price may not generate enough rent for the intended refinance. Review the business plan, financing documents and actual rental economics before changing course. The construction loan’s maturity continues to matter while you arrange the next loan.",
+      {
+        "h": "Start with one construction and rental summary"
+      },
+      "Provide the location, unit count, cost, requested construction loan, projected finished value, expected rent, development stage and timeline. Stonehaven can help compare the two stages and identify missing facts. <a href=\"/commercial/construction-loans#quick-inquiry\">Start a construction financing review</a> or use the <a href=\"/dscr-program-calculator\">DSCR calculator</a> as an educational starting point.",
+      {
+        "h": "Source and scope"
+      },
+      "The <a href=\"https://www.occ.treas.gov/news-issuances/bulletins/2024/bulletin-2024-29.html\">OCC bulletin on refinance risk</a> explains why repayment through a future loan requires its own analysis. It is bank guidance, not a guarantee of rental-loan eligibility. HUD-specific sources are retained on the linked program guides. Reviewed October 21, 2026. All numeric examples above are hypothetical."
+    ]
+  },
+  "es": {
+    "title": "Construir para alquilar: planifique la salida DSCR antes de la obra",
+    "metaTitle": "Construcción para alquiler y salida DSCR | Stonehaven",
+    "desc": "Antes de construir para alquilar, revise terminación, ocupación, renta y fondos de refinanciamiento para pagar la deuda de construcción.",
+    "eyebrow": "Construcción · Inmuebles para alquiler",
+    "terms": [
+      [
+        "Estrategia",
+        "Construir un inmueble de inversión y conservarlo para alquilar"
+      ],
+      [
+        "Dos revisiones",
+        "Ejecución de obra y elegibilidad del préstamo permanente"
+      ],
+      [
+        "Prueba clave",
+        "¿Cubren los fondos del refinanciamiento la liquidación?"
+      ]
+    ],
+    "body": [
+      "<strong>El préstamo de construcción para alquiler cubre el desarrollo; un refinanciamiento DSCR puede ofrecer una salida de largo plazo para un inmueble terminado que califique.</strong> Son decisiones separadas salvo que el contrato establezca una estructura conjunta específica. Terminar la obra no garantiza refinanciamiento ni fondos suficientes para pagar la deuda.",
+      "Stonehaven actúa como intermediario hipotecario y ayuda a coordinar la solicitud de construcción con el financiamiento de alquiler previsto. Revisar ambas etapas temprano permite identificar faltantes antes de invertir en un plan que depende de una salida sin sustento.",
+      {
+        "h": "Empiece por el inmueble de alquiler terminado"
+      },
+      "<ul><li>Confirme tipo de propiedad, unidades, entidad propietaria y uso de alquiler.</li><li>Sustente la renta con evidencia adecuada e identifique condiciones de contrato y ocupación.</li><li>Estime impuestos, seguros y cuotas que se incluyan en el pago DSCR.</li><li>Revise pruebas de terminación, certificado de ocupación y obras pendientes.</li><li>Aclare título, antigüedad de propiedad, base de valoración, objetivo y condiciones de prepago.</li><li>Compare fondos netos con la liquidación de construcción en la fecha real prevista.</li></ul>",
+      "Un inmueble de 1 a 4 unidades, un edificio de 5 a 8 y una comunidad unificada pueden requerir evaluaciones distintas. Consulte la <a href=\"/es/commercial/5-8-unit-financing\">guía de 5 a 8 unidades</a> cuando el proyecto supera una estructura DSCR pequeña habitual.",
+      {
+        "h": "Prueba hipotética de sensibilidad DSCR"
+      },
+      "Suponga renta mensual admisible de $4,200 y pago completo de vivienda de $3,300. En este ejemplo, renta dividida entre pago produce aproximadamente 1.27 DSCR. Es un método ilustrativo para inversión residencial, no una definición universal ni un mínimo para calificar.",
+      "<div class=\"construction-table\" role=\"region\" tabindex=\"0\" aria-label=\"Sensibilidad de la salida, redondeada a dos decimales\"><table><caption>Sensibilidad de la salida, redondeada a dos decimales</caption><thead><tr><th scope=\"col\">Cambio ilustrativo</th><th scope=\"col\">Resultado</th></tr></thead><tbody><tr><th scope=\"row\">Base: $4,200 de renta ÷ $3,300 de pago</th><td>1.27 DSCR</td></tr><tr><th scope=\"row\">Renta 10% menor: $3,780 ÷ $3,300</th><td>1.15 DSCR</td></tr><tr><th scope=\"row\">Pago $300 mayor: $4,200 ÷ $3,600</th><td>1.17 DSCR</td></tr><tr><th scope=\"row\">Ambos cambios: $3,780 ÷ $3,600</th><td>1.05 DSCR</td></tr></tbody></table></div>",
+      "Un pago mayor puede resultar de otro monto, condiciones financieras o gastos de propiedad. Confirme el pago y la renta que usa el programa. Un inmueble multifamiliar comercial puede usar ingreso operativo neto y servicio anual de deuda; no aplique este ejemplo a todo tipo de proyecto.",
+      {
+        "h": "Compruebe que el refinanciamiento pague la construcción"
+      },
+      "Suponga liquidación prevista de $900,000. Si el préstamo ilustrativo es $880,000 y $20,000 se destinan a cierre y depósitos requeridos, quedan $860,000 para liquidar. La diferencia de efectivo es $40,000. Son supuestos, no una cotización. Tener patrimonio o una cobertura aceptable no elimina ese faltante.",
+      "Pruebe también una terminación posterior y un arrendamiento más lento. Intereses, seguros y operación adicionales pueden aumentar el efectivo necesario. Una prórroga o préstamo puente requiere otra decisión de financiamiento; no es un respaldo automático.",
+      {
+        "h": "¿Cuándo conviene revisar HUD?"
+      },
+      "Un desarrollo de apartamentos o comunidad unificada de alquiler elegible, con intención de conservación prolongada, puede merecer revisión HUD desde la planificación. Tiene requisitos y proceso propios. Compare <a href=\"/es/commercial/hud-221d4-construction-loans\">HUD 221(d)(4)</a> y <a href=\"/es/commercial/hud-build-to-rent-financing\">HUD para construcción de alquiler</a>. No suponga que casas dispersas califican como un único proyecto HUD.",
+      {
+        "h": "¿Puede cambiar de venta a alquiler después de construir?"
+      },
+      "Revise esa alternativa con anticipación. Una casa diseñada para cierto precio de venta puede no producir renta suficiente para el refinanciamiento. Evalúe el plan, contratos y cifras reales antes de cambiar de estrategia. El vencimiento de construcción sigue vigente mientras organiza la salida.",
+      {
+        "h": "Prepare un resumen de construcción y alquiler"
+      },
+      "Comparta ubicación, unidades, costo, préstamo solicitado, valor terminado, renta prevista, etapa y plazo. Ayudamos a comparar ambas fases e identificar información pendiente. <a href=\"/es/commercial/construction-loans#quick-inquiry\">Inicie una revisión de construcción</a> o use la <a href=\"/es/dscr-program-calculator\">calculadora DSCR</a> como punto de partida educativo.",
+      {
+        "h": "Fuente y alcance"
+      },
+      "El <a href=\"https://www.occ.treas.gov/news-issuances/bulletins/2024/bulletin-2024-29.html\">boletín de la OCC sobre riesgo de refinanciamiento</a> explica por qué pagar mediante otro préstamo requiere análisis propio. Es orientación bancaria, no garantía de elegibilidad. Las fuentes HUD están en las guías enlazadas. Revisado el 21 de octubre de 2026. Todos los ejemplos numéricos son hipotéticos."
+    ]
+  }
+}
