@@ -1,9 +1,12 @@
 /* Small, readable comparison tables for the construction education guides. */
-.construction-table{margin:24px 0;max-width:100%;}
-.construction-table table{width:100%;table-layout:fixed;border-collapse:collapse;font-size:15px;line-height:1.6;}
+.construction-table{margin:24px 0;max-width:100%;overflow-x:auto;overscroll-behavior-x:contain;}
+.construction-table table{width:100%;min-width:300px;table-layout:fixed;border-collapse:collapse;font-size:15px;line-height:1.6;}
 .construction-table caption{text-align:left;font-weight:600;padding:0 0 12px;color:var(--slate-700);}
 .construction-table th,.construction-table td{padding:14px 12px;border:1px solid var(--line);vertical-align:top;text-align:left;overflow-wrap:anywhere;}
 .construction-table thead th{background:var(--paper-2);color:var(--slate-900);}
 .construction-table tbody th{font-weight:500;}
 @media(max-width:480px){.construction-table table{font-size:12px;line-height:1.5;}.construction-table th,.construction-table td{padding:10px 7px;}}
 @media print{.construction-table{break-inside:avoid;}}
+
+.construction-table--wide table{min-width:440px;}
+.construction-table:focus-visible{outline:2px solid var(--slate-700);outline-offset:4px;}
