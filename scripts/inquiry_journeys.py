@@ -78,7 +78,7 @@ def transform(text,path):
   actions='<div class="inquiry-hero-actions"><a class="btn-primary" href="#inquire">'+('Hablemos de su financiamiento' if es else 'Discuss your financing')+'</a><a class="btn-quiet" href="tel:+14709704979">'+('Llámenos' if es else 'Call (470) 970-4979')+'</a></div><p class="inquiry-next">'+('Comparta su objetivo. Nuestro equipo revisará la consulta y explicará los siguientes pasos por correo o mensaje de texto.' if es else 'Share your financing goal. Our team will review the inquiry and explain the next steps by email or text.')+'</p>'
   actions=actions.replace('#inquire',home_anchor)
   pos=text.index('<div class="funded-volume"');text=text[:pos]+block('ACTION',actions)+text[pos:]
-  proof=block('PROOF','<section class="wrap inquiry-proof"><h2>'+('De la estructura al cierre' if es else 'From financing structure to closing')+'</h2><div class="inquiry-proof-grid">'+evidence('construction',es,home_anchor)+evidence('dscr',es,home_anchor)+'</div></section>')
+  proof=block('PROOF','<section class="wrap inquiry-proof"><h2>'+('De la estructura al cierre' if es else 'From financing structure to closing')+'</h2><div class="inquiry-proof-grid">'+evidence('construction',es,prefix+'/commercial/construction-loans#inquire')+evidence('dscr',es,home_anchor)+'</div></section>')
   pos=text.index('</section>',text.index('positioning-guides'))+len('</section>');text=text[:pos]+proof+text[pos:]
  else:
   if persona:
@@ -87,7 +87,8 @@ def transform(text,path):
   # Primary hero links jump to the short path; detailed tools remain available.
   start=text.index('<main>');end=text.index('</section>',start)
   hero=text[start:end]
-  hero=re.sub(r'(<a class="btn-primary" href=")[^"]+(">).*?(</a>)',lambda m:m[1]+'#quick-inquiry'+m[2]+('Hablemos de su financiamiento' if es else 'Discuss your financing')+m[3],hero,count=1,flags=re.S)
+  action_label=('Hablemos de su obra nueva' if es else 'Discuss my ground-up build') if local=='/commercial/construction-loans' else ('Hablemos de su financiamiento' if es else 'Discuss your financing')
+  hero=re.sub(r'(<a class="btn-primary" href=")[^"]+(">).*?(</a>)',lambda m:m[1]+'#quick-inquiry'+m[2]+action_label+m[3],hero,count=1,flags=re.S)
   text=text[:start]+hero+text[end:]
   if local in ['/dscr','/dscr/cash-out-refinance','/dscr/bridge-loan-refinance','/commercial/construction-loans']:
    kind='construction' if product=='Commercial' else 'dscr'

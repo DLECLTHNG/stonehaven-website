@@ -6,71 +6,106 @@
   "growthTopic": "heloc-vs-fixed-home-equity-loan",
   "en": {
     "title": "HELOC or fixed home equity loan: compare the payment structure",
-    "desc": "Choose the comparison around your amount, timeline, and need for predictable payments.",
+    "desc": "Compare a HELOC with a fixed home equity loan: access to funds, payment changes, fees and the balance remaining when you plan to repay.",
     "eyebrow": "Home equity planning",
     "terms": [
       [
-        "Focus",
-        "A homeowner decision"
+        "Key difference",
+        "Reusable credit line versus a single loan advance"
       ],
       [
-        "Review",
-        "Lender requirements apply"
+        "Compare at the same date",
+        "Payments + remaining balance + fees"
+      ],
+      [
+        "Stonehaven HELOC inquiries",
+        "$50,000 minimum request and 640+ credit score; underwriting applies"
       ]
     ],
     "body": [
+      "<strong>A HELOC provides a credit line you may draw from during an agreed period. A fixed home equity loan advances a lump sum with a fixed interest rate.</strong> The useful comparison is how each handles your spending schedule, payment budget and payoff date. Neither is automatically cheaper. Both are secured by your home.",
       {
-        "h": "One amount or a series of costs?"
+        "h": "HELOC versus fixed home equity loan: the practical differences"
       },
-      "Start by identifying how much you need now and which costs are still uncertain. A known expense and a project with later phases create different financing questions. Compare the cost of borrowing the full amount now with the terms of accessing money later. Do not assume that every line lets you start with a very small advance.",
+      "<div class=\"answer-table answer-table--wide\" role=\"region\" tabindex=\"0\" aria-label=\"Compare the structures, then the actual offers\"><table><caption>Compare the structures, then the actual offers<span class=\"answer-scroll-hint\">Scroll sideways to compare all columns.</span></caption><thead><tr><th scope=\"col\">Question</th><th scope=\"col\">HELOC</th><th scope=\"col\">Fixed home equity loan</th></tr></thead><tbody><tr><th scope=\"row\">How do I receive funds?</th><td>Draws within the available line, subject to the agreement.</td><td>One advance at closing.</td></tr><tr><th scope=\"row\">Can the payment change?</th><td>Usually variable; balance and repayment stage also matter.</td><td>A fixed rate supports a predictable scheduled principal-and-interest payment.</td></tr><tr><th scope=\"row\">Can I borrow again?</th><td>Potentially during the draw period, within the available limit and contract conditions.</td><td>A repaid amount does not automatically become available to borrow again.</td></tr><tr><th scope=\"row\">What should I compare?</th><td>Required advances, later payments, fees and remaining balance.</td><td>Amount advanced, amortization, fees and remaining balance.</td></tr></tbody></table></div>",
+      "This guide compares a <em>fixed-rate</em> home equity loan specifically. Home equity loans can also have adjustable rates. Check the actual product name and agreement. See the <a href=\"https://www.consumerfinance.gov/ask-cfpb/what-is-the-difference-between-a-home-equity-loan-and-a-home-equity-line-of-credit-heloc-en-247/\">CFPB product comparison</a>.",
       {
-        "h": "Fixed can describe different features"
+        "h": "Match the funding to the spending schedule"
       },
-      "A fixed home equity loan and a fixed-rate option within a line are not interchangeable labels. For example, Bank of America describes converting eligible balances within its own HELOC. That is an example of a lender feature, not a statement of Stonehaven terms. Ask which balance is fixed, for how long, what costs apply, and how any later borrowing is priced.",
+      "Write down the invoices you know, the amounts that are still estimates and when each becomes due. If you need $80,000 immediately for a defined expense, compare both offers using $80,000 received on the same date. If you need $50,000 now and may need another $30,000 later, ask what the line requires you to draw initially and what conditions apply to later access.",
+      "Do not treat unused credit as cash already in your bank. Later access can be restricted under the agreement. Keep a separate plan for a bill that must be paid even if a future draw is unavailable. A lump-sum loan can leave you paying for money before the corresponding invoice is due; the actual offers determine whether that tradeoff is worthwhile.",
       {
-        "h": "Compare the whole budget"
+        "h": "A smaller monthly payment can leave a larger balance"
       },
-      "Use the planning calculator to compare the same amount and horizon. Look at payments made, remaining principal, and fees together. Keep your current mortgage payment in the household budget even when a new second-position loan leaves that mortgage unchanged. If predictable payments are the main goal, explain that to the broker before discussing maximum borrowing capacity.",
+      "Compare the same amount over the same holding period. The following is an illustrative accounting exercise, not two available loan offers. Assume each option advances $80,000 once, fees are paid separately, no additional borrowing occurs and both balances are paid off after 24 months. The payment totals and balances are assumed, not calculated from a quoted rate.",
+      "<div class=\"answer-table answer-table--wide\" role=\"region\" tabindex=\"0\" aria-label=\"Hypothetical comparison at month 24\"><table><caption>Hypothetical comparison at month 24<span class=\"answer-scroll-hint\">Scroll sideways to compare all columns.</span></caption><thead><tr><th scope=\"col\">Amount at the same date</th><th scope=\"col\">Option A</th><th scope=\"col\">Option B</th></tr></thead><tbody><tr><th scope=\"row\">Total payments already made</th><td>$12,000</td><td>$16,000</td></tr><tr><th scope=\"row\">Remaining principal to repay</th><td>$74,000</td><td>$68,000</td></tr><tr><th scope=\"row\">Fees paid separately</th><td>$2,000</td><td>$3,000</td></tr><tr><th scope=\"row\">Payments + remaining principal + fees</th><td>$88,000</td><td>$87,000</td></tr><tr><th scope=\"row\">Total above the original $80,000 advance</th><td>$8,000</td><td>$7,000</td></tr></tbody></table></div>",
+      "Option A has lower payments during the period but costs $1,000 more on these assumptions after accounting for the balance and fees. Use the <a href=\"/heloc-planning-tools#payments\">payment and remaining-balance planner</a> to model your own assumptions. Include any payoff charges. If fees are financed, do not add them again as separately paid fees.",
       {
-        "h": "Prepare the next conversation"
+        "h": "What happens when the HELOC draw period ends?"
       },
-      "Use the <a href=\"/heloc-planning-tools#payments\">home equity planning worksheet</a> to organize your assumptions. Leave anything you do not know blank for discussion. The worksheet does not check eligibility or obtain a lender offer. You can <a href=\"/heloc/compare-offers\">request a broker conversation</a> when you are ready to review your estimated home value, mortgage balance, and requested amount. Do not send account numbers or financial documents through a public inquiry form.",
-      "<a href=\"https://www.bankofamerica.com/home-equity/fixed-rate-loan/\">Read the source guidance</a>. Provider examples describe that provider only. This guide is educational. A home-secured loan puts the property at risk if repayment fails. Program availability, documentation, costs, and approval depend on the lender and your circumstances."
+      "Check the repayment schedule before signing. The next stage may require principal repayment or a balloon balance, changing the payment materially. A fixed-rate conversion within a HELOC applies to the balance and terms specified in that agreement; it is not the same product as a separate fixed home equity loan. The <a href=\"https://www.consumerfinance.gov/ask-cfpb/what-is-a-home-equity-line-of-credit-heloc-en-107/\">CFPB HELOC explanation</a> covers these distinctions.",
+      {
+        "h": "Which fees belong in the comparison?"
+      },
+      "Request written charges for opening, maintaining, converting and closing the account. Depending on the agreement, these can include appraisal or title costs, annual or inactivity charges, fixed-rate conversion fees and early cancellation charges. Verify which fees apply to your expected payoff date. The <a href=\"https://www.consumerfinance.gov/ask-cfpb/what-fees-can-my-lender-charge-if-i-take-out-a-heloc-en-249/\">CFPB fee list</a> is a useful starting checklist, not a fee schedule for Stonehaven.",
+      {
+        "h": "Prepare a review with Stonehaven"
+      },
+      "Stonehaven is a mortgage broker. Our HELOC inquiry minimums are a $50,000 requested line and a 640 credit score; they are not approval criteria by themselves. Share estimated home value, mortgage balance, requested amount and property state through the <a href=\"/heloc#callback\">HELOC review form</a>. Availability and terms depend on underwriting.",
+      "If replacing your existing first mortgage is also an option, compare <a href=\"/blog/heloc-vs-cash-out-refinance\">HELOC versus cash-out refinancing</a> separately. That changes a different part of your financing. Keep your existing mortgage payment in the budget when it remains in place. Because your home secures the borrowing, missed repayment can put it at risk. Do not send SSNs, account numbers or private documents through the inquiry form."
     ],
     "metaTitle": "HELOC vs. Fixed Home Equity Loan | Stonehaven Lending"
   },
   "es": {
     "title": "HELOC o préstamo con garantía hipotecaria a tasa fija",
-    "desc": "Compare según el monto, el calendario y la necesidad de pagos previsibles.",
+    "desc": "Compare un HELOC con un préstamo sobre el valor de la vivienda a tasa fija: acceso al dinero, pagos, cargos y saldo pendiente al liquidar.",
     "eyebrow": "Planificación del patrimonio de vivienda",
     "terms": [
       [
-        "Tema",
-        "Una decisión sobre su vivienda"
+        "Diferencia principal",
+        "Línea reutilizable frente a un solo desembolso"
       ],
       [
-        "Revisión",
-        "Sujeta a los requisitos del prestamista"
+        "Compare en la misma fecha",
+        "Pagos + saldo pendiente + cargos"
+      ],
+      [
+        "Mínimos de consulta HELOC",
+        "$50,000 solicitados y puntaje de 640+; sujeto a evaluación"
       ]
     ],
     "body": [
+      "<strong>Un HELOC ofrece una línea de crédito disponible durante un período acordado. Un préstamo sobre el valor de la vivienda a tasa fija entrega una suma y mantiene una tasa fija.</strong> Compare cómo cada uno se ajusta a sus gastos, presupuesto mensual y fecha de liquidación. Ninguno es automáticamente más barato. Ambos están garantizados por su vivienda.",
       {
-        "h": "¿Un monto o varios gastos?"
+        "h": "HELOC y préstamo a tasa fija: diferencias prácticas"
       },
-      "Identifique cuánto necesita ahora y qué gastos siguen inciertos. Un gasto conocido y un proyecto por fases plantean preguntas distintas. Compare pedir todo ahora con las condiciones de disponer del dinero después. No suponga que cualquier línea permite empezar con un retiro pequeño.",
+      "<div class=\"answer-table answer-table--wide\" role=\"region\" tabindex=\"0\" aria-label=\"Compare las estructuras y después las ofertas reales\"><table><caption>Compare las estructuras y después las ofertas reales<span class=\"answer-scroll-hint\">Deslice la tabla para comparar todas las columnas.</span></caption><thead><tr><th scope=\"col\">Pregunta</th><th scope=\"col\">HELOC</th><th scope=\"col\">Préstamo a tasa fija</th></tr></thead><tbody><tr><th scope=\"row\">¿Cómo recibo el dinero?</th><td>Retiros de la línea disponible según el contrato.</td><td>Un desembolso al cierre.</td></tr><tr><th scope=\"row\">¿Puede cambiar el pago?</th><td>Suele variar con tasa, saldo y etapa de pago.</td><td>La tasa fija permite un pago programado de principal e intereses previsible.</td></tr><tr><th scope=\"row\">¿Puedo volver a disponer?</th><td>Posiblemente durante disposición, sujeto al límite y al contrato.</td><td>Lo pagado no vuelve automáticamente a estar disponible.</td></tr><tr><th scope=\"row\">¿Qué debo comparar?</th><td>Retiros obligatorios, pagos posteriores, cargos y saldo.</td><td>Monto entregado, amortización, cargos y saldo.</td></tr></tbody></table></div>",
+      "Esta guía compara específicamente un préstamo con <em>tasa fija</em>. También existen préstamos sobre el valor de la vivienda con tasa ajustable. Revise el producto y el contrato. Consulte la <a href=\"https://www.consumerfinance.gov/ask-cfpb/what-is-the-difference-between-a-home-equity-loan-and-a-home-equity-line-of-credit-heloc-en-247/\">comparación del CFPB (en inglés)</a>.",
       {
-        "h": "La palabra fija puede describir características distintas"
+        "h": "Ajuste el financiamiento al calendario de gastos"
       },
-      "Un préstamo con tasa fija y una opción fija dentro de una línea no son etiquetas equivalentes. Bank of America, por ejemplo, describe conversiones de saldos de su propio HELOC. Es una característica de ese prestamista, no una condición de Stonehaven. Pregunte qué saldo se fija, durante cuánto tiempo, con qué costos y cómo se calculan retiros posteriores.",
+      "Anote las facturas confirmadas, los gastos todavía estimados y sus vencimientos. Si necesita $80,000 ahora para un gasto definido, compare ambas ofertas con $80,000 recibidos en la misma fecha. Si necesita $50,000 ahora y quizá otros $30,000 después, pregunte qué retiro inicial exige la línea y qué condiciones afectan el acceso posterior.",
+      "No trate el crédito no utilizado como efectivo ya depositado. El acceso posterior puede restringirse conforme al contrato. Prepare otra forma de cubrir una factura si un retiro futuro no está disponible. Un desembolso único puede generar costos antes de que venza la factura; las ofertas reales determinan si esa diferencia conviene.",
       {
-        "h": "Compare el presupuesto completo"
+        "h": "Un pago mensual menor puede dejar más deuda"
       },
-      "Use la calculadora para el mismo monto y plazo. Considere juntos pagos, principal pendiente y cargos. Mantenga la cuota hipotecaria actual en el presupuesto aunque un préstamo en segunda posición no la cambie. Si su prioridad son pagos previsibles, dígaselo al corredor antes de hablar del máximo disponible.",
+      "Compare el mismo monto y plazo. Este ejercicio contable es hipotético y no representa ofertas disponibles. Suponga que cada opción entrega $80,000 una sola vez, los cargos se pagan por separado, no hay retiros adicionales y ambas se liquidan a los 24 meses. Los pagos y saldos son supuestos, no cálculos basados en una tasa cotizada.",
+      "<div class=\"answer-table answer-table--wide\" role=\"region\" tabindex=\"0\" aria-label=\"Comparación hipotética al mes 24\"><table><caption>Comparación hipotética al mes 24<span class=\"answer-scroll-hint\">Deslice la tabla para comparar todas las columnas.</span></caption><thead><tr><th scope=\"col\">Importe en la misma fecha</th><th scope=\"col\">Opción A</th><th scope=\"col\">Opción B</th></tr></thead><tbody><tr><th scope=\"row\">Pagos realizados</th><td>$12,000</td><td>$16,000</td></tr><tr><th scope=\"row\">Principal pendiente</th><td>$74,000</td><td>$68,000</td></tr><tr><th scope=\"row\">Cargos pagados por separado</th><td>$2,000</td><td>$3,000</td></tr><tr><th scope=\"row\">Pagos + principal pendiente + cargos</th><td>$88,000</td><td>$87,000</td></tr><tr><th scope=\"row\">Total por encima de los $80,000 recibidos</th><td>$8,000</td><td>$7,000</td></tr></tbody></table></div>",
+      "La opción A exige menos pagos durante el período, pero cuesta $1,000 más bajo estos supuestos al incluir saldo y cargos. Use el <a href=\"/es/heloc-planning-tools#payments\">planificador de pagos y saldo</a> con sus propios supuestos. Incluya cargos de liquidación. Si financia un cargo, no lo cuente otra vez como pagado por separado.",
       {
-        "h": "Prepare la siguiente conversación"
+        "h": "¿Qué ocurre al terminar el período de disposición?"
       },
-      "Use la <a href=\"/es/heloc-planning-tools#payments\">herramienta de planificación</a> para organizar sus supuestos. Deje en blanco lo que no sepa para comentarlo después. La herramienta no determina elegibilidad ni obtiene una oferta. Puede <a href=\"/es/heloc/compare-offers\">solicitar una conversación con un corredor</a> para revisar el valor estimado, saldo hipotecario y monto solicitado. No envíe números de cuenta ni documentos financieros por un formulario público.",
-      "<a href=\"https://www.bankofamerica.com/home-equity/fixed-rate-loan/\">Consulte la fuente en inglés</a>. Los ejemplos de un proveedor corresponden solo a ese proveedor. Esta guía es educativa. Un préstamo garantizado por la vivienda pone el inmueble en riesgo si no se paga. La disponibilidad, documentación, costos y aprobación dependen del prestamista y de sus circunstancias."
+      "Revise el calendario antes de firmar. La siguiente etapa puede exigir amortizar principal o un pago global, cambiando considerablemente la cuota. Una conversión a tasa fija dentro de un HELOC se aplica al saldo y las condiciones del contrato; no equivale a un préstamo separado. La <a href=\"https://www.consumerfinance.gov/ask-cfpb/what-is-a-home-equity-line-of-credit-heloc-en-107/\">explicación del CFPB sobre HELOC (en inglés)</a> detalla estas diferencias.",
+      {
+        "h": "¿Qué cargos debo incluir?"
+      },
+      "Pida por escrito los cargos de apertura, mantenimiento, conversión y cierre. Según el contrato, pueden incluir tasación o título, cuotas anuales, inactividad, conversión a tasa fija y cancelación anticipada. Confirme cuáles afectan su fecha de liquidación. La <a href=\"https://www.consumerfinance.gov/ask-cfpb/what-fees-can-my-lender-charge-if-i-take-out-a-heloc-en-249/\">lista del CFPB (en inglés)</a> es una referencia, no una tabla de cargos de Stonehaven.",
+      {
+        "h": "Prepare una revisión con Stonehaven"
+      },
+      "Stonehaven es un intermediario hipotecario. Los mínimos de consulta HELOC son $50,000 solicitados y puntaje de 640; no bastan por sí solos para obtener aprobación. Comparta valor estimado, saldo hipotecario, monto solicitado y estado mediante el <a href=\"/es/heloc#callback\">formulario de revisión HELOC</a>. Disponibilidad y condiciones dependen de la evaluación.",
+      "Si también considera reemplazar la primera hipoteca, revise por separado <a href=\"/es/blog/heloc-vs-cash-out-refinance\">HELOC y refinanciamiento con retiro de efectivo</a>. Esa decisión cambia otra parte del financiamiento. Mantenga la cuota actual en su presupuesto si la primera hipoteca sigue vigente. La falta de pago puede poner su vivienda en riesgo. No envíe Seguro Social, cuentas ni documentos privados mediante el formulario."
     ]
-  }
+  },
+  "updated": "2026-10-25"
 }

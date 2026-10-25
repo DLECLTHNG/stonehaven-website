@@ -163,12 +163,19 @@ def build(slug, lang, c):
     table += '</tbody></table>'
     comparison = f'<section class="cre-section"><div class="wrap"><h2>{e(c["comparison_title"])}</h2><p class="cre-section-intro">{e(c["comparison_intro"])}</p><div class="cre-table">{table}</div></div></section>'
     scenario = f'<section class="cre-section cre-tint" id="example"><div class="wrap"><span class="eyebrow">{"Supuestos transparentes" if es else "Transparent assumptions"}</span><h2>{e(c["scenario_title"])}</h2><p class="cre-section-intro">{e(c["scenario_intro"])}</p><div class="cre-example"><dl class="cre-numbers">' + ''.join(f'<div><dt>{e(k)}</dt><dd>{e(v)}</dd></div>' for k, v in c['scenario_rows']) + '</dl><div class="cre-analysis">' + ''.join(f'<p>{e(p)}</p>' for p in c['scenario_analysis']) + '</div></div></div></section>'
+    cash_plan = ''
+    if c.get('cash_plan'):
+        plan = c['cash_plan']
+        cash_plan = '<section class="cre-section" id="cash-planning"><div class="wrap"><h2>' + e(plan['title']) + '</h2><p class="cre-section-intro">' + e(plan['intro']) + '</p><div class="cre-example"><dl class="cre-numbers">'
+        cash_plan += ''.join('<div><dt>' + e(k) + '</dt><dd>' + e(v) + '</dd></div>' for k, v in plan['rows']) + '</dl><div class="cre-analysis">'
+        cash_plan += ''.join('<p>' + e(p) + '</p>' for p in plan['analysis']) + '</div></div><div class="cre-grid">' + cards(plan['checks']) + '</div>'
+        cash_plan += '<div class="cre-hero-actions"><a class="btn-primary" href="#quick-inquiry">' + e(plan['cta_label']) + '</a><a class="btn-quiet" href="#inquire">' + e(plan['detail_label']) + '</a></div></div></section>'
     process = f'<section class="cre-section"><div class="wrap"><h2>{e(c["process_title"])}</h2><div class="cre-grid">{cards(c["process"])}</div></div></section>'
     documents = f'<section class="cre-section cre-tint"><div class="wrap cre-docs"><div><h2>{e(c["docs_title"])}</h2><ul class="cre-checklist">' + ''.join('<li>' + e(item) + '</li>' for item in c['docs']) + f'</ul></div><aside class="cre-note"><h3>{e(c["exclusions_title"])}</h3><p>{e(c["exclusions"])}</p></aside></div></section>'
     questions = f'<section class="cre-section" id="questions"><div class="wrap"><h2>{"Preguntas antes de comenzar" if es else "Questions before you start"}</h2>' + ''.join(f'<details class="cre-faq"><summary>{e(q)}</summary><p>{e(a)}</p></details>' for q, a in c['faqs']) + '</div></section>'
     related = f'<section class="cre-section"><div class="wrap"><h2>{"Guías y ejemplos relacionados" if es else "Related guides and examples"}</h2><div class="cre-grid">' + ''.join(f'<a class="cre-card cre-link-card" href="{e(link)}"><h3>{e(label)}</h3><p>{e(text)}</p><span>{"Leer más" if es else "Explore"} →</span></a>' for link, label, text in c['links']) + '</div></div></section>'
     sources = f'<section class="cre-section cre-sources"><div class="wrap"><h2>{"Fuentes y criterios editoriales" if es else "Sources and editorial standards"}</h2><p>{e(c["source_note"])}</p><ul>' + ''.join(f'<li><a href="{e(link)}" rel="noopener">{e(label)}</a></li>' for link, label in c['sources']) + '</ul><p>' + updated_label + f' <a href="{prefix}/editorial-policy">' + ('Criterios editoriales' if es else 'Editorial standards') + '</a> · <a href="/management">' + ('Nuestro equipo' if es else 'Meet the team') + '</a></p></div></section>'
-    output = head + '<main>\n' + '\n'.join([hero, trail, answer, fits, comparison, scenario, process, documents, questions, form(slug, lang, c), related, sources]) + '\n</main>' + footer
+    output = head + '<main>\n' + '\n'.join(part for part in [hero, trail, answer, fits, comparison, scenario, cash_plan, process, documents, questions, form(slug, lang, c), related, sources] if part) + '\n</main>' + footer
     (ROOT / (route.lstrip('/') + '.html')).write_text(output)
 
 
