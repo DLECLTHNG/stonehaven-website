@@ -159,6 +159,18 @@
         "exclusions": "Raw land held without a defined build plan, owner-occupied consumer construction and partially completed projects need a different review. This page does not establish their eligibility. Environmental issues, unresolved title, unsupported value or an incomplete budget can also change the financing path.",
         "faqs": [
           [
+            "Can a ground-up construction loan include the land purchase?",
+            "A construction request can include acquisition and the build, subject to the selected program. Show the purchase price, closing advance and construction holdback separately. If the land is not ready to build, identify which approvals or site work must be completed before construction funds can be released."
+          ],
+          [
+            "Can I discuss construction financing before permits are complete?",
+            "Yes. Start with the current plans, permit status, budget and expected start date so we can identify what is still needed. Early feedback is not an approval to close or start work. Ask which documents and approvals must be complete for the acquisition, demolition and construction stages."
+          ],
+          [
+            "Is ground-up construction financing the same as a fix-and-flip loan?",
+            "No. A ground-up project creates a new building, including a teardown and rebuild. A fix-and-flip project generally renovates an existing building for resale. Describe any demolition, structural work and change of use accurately so the financing review matches the actual scope."
+          ],
+          [
             "Can I get 100% LTC construction financing?",
             "Potentially, on qualifying projects. We review eligible-cost definitions, land equity, value limits, liquidity and guarantees. Funding 100% of the construction budget is different from funding 100% of total project cost or completed value."
           ],
@@ -193,6 +205,11 @@
         ],
         "links": [
           [
+            "/blog/construction-loan-property-already-owned-mortgage-payoff",
+            "Owned land, equity and mortgage payoff",
+            "Separate equity credit from money available to pay project costs."
+          ],
+          [
             "/blog/spec-home-construction-loans-without-presales",
             "Spec home construction loans: can you build without a buyer?",
             "Practical questions and worked examples for your next project."
@@ -216,11 +233,6 @@
             "/blog/brookhaven-ga-100-ltc-ground-up-construction",
             "Company-reported Brookhaven construction closing",
             "Read the reported construction-budget financing example, including the role of land equity."
-          ],
-          [
-            "/blog/construction-loan-property-already-owned-mortgage-payoff",
-            "Already own the property?",
-            "Understand how equity and an existing mortgage payoff fit into the review."
           ]
         ],
         "source_note": "The OCC CRE handbook provides background on budgets, equity, construction controls and repayment. It is bank supervisory guidance, not a Stonehaven program sheet. Examples are illustrative and terms require a project-specific review.",
@@ -233,7 +245,58 @@
         "form_title": "Tell us about your construction project",
         "form_prefix": "Construction financing inquiry",
         "default_type": "Ground-up construction",
-        "updated": "2026-10-21"
+        "updated": "2026-10-25",
+        "cash_plan": {
+          "title": "How much cash do I need if I already own the land?",
+          "intro": "Owned land can support the equity contribution, but it does not pay an invoice. Separate the funding gap for the whole project from cash needed at closing and cash needed between draws. This hypothetical example assumes free-and-clear land, no cash out and no other financing.",
+          "rows": [
+            [
+              "Accepted land basis, already owned",
+              "$400,000"
+            ],
+            [
+              "Remaining costs, including modeled fees and reserves",
+              "$1,600,000"
+            ],
+            [
+              "Total modeled cost basis",
+              "$2,000,000"
+            ],
+            [
+              "Assumed construction loan commitment",
+              "$1,500,000"
+            ],
+            [
+              "Loan divided by total modeled cost",
+              "75% LTC"
+            ],
+            [
+              "Remaining costs less new loan commitment",
+              "$100,000 funding gap"
+            ]
+          ],
+          "analysis": [
+            "The $400,000 land contribution is already part of the total cost basis. Do not subtract it again from the $1.6 million still to be paid. With $1.5 million of new financing, the remaining project has a $100,000 funding gap on these assumptions.",
+            "A $1.6 million commitment would cover 100% of the modeled remaining costs but equal 80% of the $2 million total cost basis. That arithmetic does not establish an available program or remove requirements for working cash.",
+            "If the land has debt, add its payoff to the uses of the new financing and ask how much land equity is recognized. An accepted value, an equity credit and cash released to the borrower are different figures."
+          ],
+          "checks": [
+            [
+              "1. Cash at closing",
+              "Ask for the actual closing advance and a sources-and-uses statement showing payoff, fees, reserves and your contribution. Funds held for later construction cannot pay a closing invoice."
+            ],
+            [
+              "2. Cash between draws",
+              "Map contractor invoices against expected reimbursement dates. An $80,000 invoice due before its draw can create an $80,000 temporary cash need. This may overlap with the project contribution, so model timing rather than blindly adding both amounts."
+            ],
+            [
+              "3. Cash if the schedule changes",
+              "Run a slower completion and sale scenario. Identify which reserve covers interest, which contingency covers extra work, and what remains your responsibility if either runs out."
+            ]
+          ],
+          "cta_label": "Discuss my construction plan",
+          "detail_label": "Send my project numbers"
+        }
       },
       "es": {
         "title": "Préstamos de obra nueva para constructores | Stonehaven",
@@ -378,6 +441,18 @@
         "exclusions": "Terrenos sin un plan definido de construcción, obra para vivienda principal del consumidor y proyectos parcialmente terminados necesitan otra revisión. Esta página no establece su elegibilidad. Problemas ambientales, de título, de valor o de presupuesto también pueden cambiar la vía de financiamiento.",
         "faqs": [
           [
+            "¿Un préstamo de obra nueva puede incluir la compra del terreno?",
+            "La solicitud puede incluir adquisición y construcción, sujeto al programa. Presente por separado el precio de compra, el desembolso al cierre y los fondos reservados para la obra. Si el terreno aún no está listo, identifique las autorizaciones o trabajos necesarios antes de liberar fondos para construir."
+          ],
+          [
+            "¿Puedo consultar sobre financiamiento antes de tener todos los permisos?",
+            "Sí. Empiece con los planos actuales, estado de los permisos, presupuesto y fecha prevista de inicio para identificar lo que falta. La respuesta inicial no es una aprobación para cerrar ni comenzar trabajos. Pregunte qué documentos y autorizaciones se requieren para cada etapa de compra, demolición y construcción."
+          ],
+          [
+            "¿El financiamiento de obra nueva es igual al de compra y renovación para reventa?",
+            "No. Una obra nueva crea un edificio nuevo, incluso cuando requiere demoler y reconstruir. Una operación de compra y renovación para reventa generalmente mejora un edificio existente. Describa la demolición, cambios estructurales y cambio de uso para que la revisión corresponda al alcance real."
+          ],
+          [
             "¿Puedo obtener financiamiento de construcción al 100% LTC?",
             "Podría ser posible en proyectos que califican. Revisamos la definición de costos admisibles, el patrimonio del terreno, los límites de valor, la liquidez y las garantías. Financiar el 100% de la obra no equivale al 100% del costo total ni del valor terminado."
           ],
@@ -412,6 +487,11 @@
         ],
         "links": [
           [
+            "/es/blog/construction-loan-property-already-owned-mortgage-payoff",
+            "Terreno propio, patrimonio y liquidación",
+            "Separe aportación y efectivo disponible."
+          ],
+          [
             "/es/blog/spec-home-construction-loans-without-presales",
             "Préstamos para construir y vender: ¿se puede empezar sin comprador?",
             "Una guía práctica para preparar su proyecto."
@@ -435,11 +515,6 @@
             "/es/blog/brookhaven-ga-100-ltc-ground-up-construction",
             "Cierre de construcción reportado en Brookhaven",
             "Lea el caso reportado de financiamiento del presupuesto de obra y el papel del patrimonio del terreno."
-          ],
-          [
-            "/es/blog/construction-loan-property-already-owned-mortgage-payoff",
-            "¿Ya es dueño del inmueble?",
-            "Cómo se revisan el patrimonio y la deuda hipotecaria existente."
           ]
         ],
         "source_note": "El manual CRE de la OCC ofrece contexto sobre presupuestos, patrimonio, controles de obra y pago. Es orientación supervisora bancaria, no un programa de Stonehaven. Los ejemplos son ilustrativos y las condiciones requieren revisión del proyecto.",
@@ -452,7 +527,58 @@
         "form_title": "Cuéntenos sobre su proyecto de construcción",
         "form_prefix": "Construction financing inquiry",
         "default_type": "Ground-up construction",
-        "updated": "2026-10-21"
+        "updated": "2026-10-25",
+        "cash_plan": {
+          "title": "¿Cuánto efectivo necesito si ya tengo el terreno?",
+          "intro": "El terreno puede contar como aportación, pero no paga una factura. Separe el faltante total del proyecto, el efectivo al cierre y el efectivo entre desembolsos. Este ejemplo hipotético supone un terreno libre de deuda, sin retiro de efectivo ni otro financiamiento.",
+          "rows": [
+            [
+              "Base aceptada del terreno que ya posee",
+              "$400,000"
+            ],
+            [
+              "Costos pendientes, incluidos cargos y reservas del ejemplo",
+              "$1,600,000"
+            ],
+            [
+              "Base total de costo del ejemplo",
+              "$2,000,000"
+            ],
+            [
+              "Préstamo de construcción supuesto",
+              "$1,500,000"
+            ],
+            [
+              "Préstamo dividido entre costo total",
+              "75% LTC"
+            ],
+            [
+              "Costos pendientes menos préstamo nuevo",
+              "$100,000 de faltante"
+            ]
+          ],
+          "analysis": [
+            "La aportación del terreno de $400,000 ya forma parte de la base total. No la reste otra vez de los $1.6 millones pendientes de pago. Con $1.5 millones de financiamiento nuevo, queda un faltante de $100,000 según estos supuestos.",
+            "Un préstamo de $1.6 millones cubriría el 100% de los costos pendientes del ejemplo, pero equivaldría al 80% de la base total de $2 millones. El cálculo no establece un programa disponible ni elimina la necesidad de efectivo operativo.",
+            "Si el terreno tiene deuda, incluya su liquidación entre los usos del préstamo y confirme qué patrimonio se reconoce. El valor aceptado, la aportación reconocida y el efectivo entregado al prestatario son cifras distintas."
+          ],
+          "checks": [
+            [
+              "1. Efectivo al cierre",
+              "Pida el desembolso inicial real y un desglose de fuentes y usos con liquidación, cargos, reservas y aportación. Los fondos retenidos para la obra no pagan una factura al cierre."
+            ],
+            [
+              "2. Efectivo entre desembolsos",
+              "Compare las facturas del contratista con las fechas previstas de reembolso. Una factura de $80,000 anterior al desembolso puede exigir $80,000 temporalmente. Puede coincidir con parte de su aportación: calcule las fechas antes de sumar ambos importes."
+            ],
+            [
+              "3. Efectivo si cambia el calendario",
+              "Pruebe una terminación y venta más lentas. Identifique la reserva para intereses, la contingencia para trabajo adicional y qué deberá pagar si se agotan."
+            ]
+          ],
+          "cta_label": "Hablemos de mi proyecto",
+          "detail_label": "Enviar las cifras del proyecto"
+        }
       }
     },
     "fix-and-flip": {
@@ -1145,7 +1271,7 @@
     },
     "land-development-loans": {
       "en": {
-        "updated": "2026-09-21",
+        "updated": "2026-10-25",
         "title": "Land Development & Residential Lot Loans | Stonehaven",
         "description": "Explore land acquisition, residential development and finished-lot financing. Stonehaven helps structure project funding, compare lenders and plan lot releases.",
         "name": "Land development and residential lot financing",
@@ -1182,44 +1308,53 @@
             "You are purchasing completed lots, holding inventory for your own builds or selling lots to other homebuilders. We help explain how lot ownership, construction starts and sale proceeds connect."
           ]
         ],
-        "comparison_title": "Compare financing for your development",
-        "comparison_intro": "A bank relationship and a specialty lender can each have a place. Stonehaven helps compare actual proposals against your budget and schedule. These are questions to ask, not promised terms or a ranking of lenders.",
+        "comparison_title": "Land development loan terms: what to check on a term sheet",
+        "comparison_intro": "A rate is only one term. Compare these items against the same budget and lot-sale schedule. Stonehaven helps you review the proposal as your mortgage broker; the signed loan documents and underwriting determine the actual terms.",
         "columns": [
-          "What to compare",
-          "Bank financing",
-          "Private or specialty financing",
-          "Stonehaven’s role"
+          "Term",
+          "What it means for the project",
+          "Question to resolve"
         ],
         "rows": [
           [
-            "Project stage",
-            "Confirm whether the bank will fund acquisition, site work, lot inventory or a combination.",
-            "Confirm the specific stages the lender accepts and whether later phases need separate approval.",
-            "Present the current stage and identify the next funding milestone."
+            "Commitment and closing advance",
+            "The total facility and money released on day one can differ.",
+            "What is available for acquisition, and what is held for site-work draws?"
           ],
           [
-            "Borrower cash",
-            "Ask which costs and land equity count toward the borrower contribution.",
-            "Ask about cash at closing, reserves, holdbacks and costs paid outside the loan.",
-            "Build a sources-and-uses comparison so the cash requirement is visible."
+            "Eligible costs and equity",
+            "The accepted cost basis determines what the stated LTC measures.",
+            "Which land basis, soft costs and reserves count, and which costs need outside cash?"
           ],
           [
-            "Guarantees",
-            "Read the proposed repayment and completion obligations.",
-            "Read the same obligations even when the proposal is described as non-recourse.",
-            "Identify the terms that need lender clarification and review with your counsel."
+            "Maturity and extensions",
+            "The payoff date must allow for site work and lot sales.",
+            "What happens if sales are six months late? Confirm extension conditions and charges."
           ],
           [
-            "Closing and draws",
-            "Confirm the approval steps, outstanding conditions and draw process.",
-            "Confirm the same items and who authorizes each advance.",
-            "Help coordinate the information needed to move the financing forward."
+            "Interest and other charges",
+            "Pricing can include fees as well as interest.",
+            "On what balance is interest charged? Are there minimum-interest or unused-commitment charges?"
           ],
           [
-            "Lot sales and repayment",
-            "Ask for the release schedule and required principal paydowns.",
-            "Compare release conditions, extension options and any prepayment terms.",
-            "Check how the proposed repayment structure fits your lot-sale plan."
+            "Draw conditions",
+            "The contract sets when work becomes eligible for payment.",
+            "Who verifies progress, which documents are required and when is money released?"
+          ],
+          [
+            "Lot release price",
+            "A sale may require a specified principal payment before that lot is released.",
+            "How much of each sale remains for costs and later phases after the required paydown?"
+          ],
+          [
+            "Guarantees and completion",
+            "Repayment obligations and duties to complete the work require separate review.",
+            "Who signs each obligation, and what does any non-recourse language actually exclude?"
+          ],
+          [
+            "Phase and construction approvals",
+            "Funding site work does not automatically approve the vertical builds.",
+            "Which later phases or homes need a new approval, appraisal or separate loan?"
           ]
         ],
         "scenario_title": "What a 40-lot development request could look like",
@@ -1373,7 +1508,7 @@
         "default_type": "Land acquisition and development"
       },
       "es": {
-        "updated": "2026-09-21",
+        "updated": "2026-10-25",
         "title": "Financiamiento de terrenos y lotes | Stonehaven",
         "description": "Explore financiamiento para adquirir terrenos, desarrollar comunidades residenciales y comprar lotes terminados. Prepare su proyecto con Stonehaven.",
         "name": "Financiamiento de terrenos y lotes residenciales",
@@ -1410,44 +1545,53 @@
             "Compra lotes terminados, mantiene inventario para construir o vende lotes a otros constructores. Ayudamos a explicar cómo se relacionan la propiedad de los lotes, el inicio de las obras y los ingresos por ventas."
           ]
         ],
-        "comparison_title": "Compare el financiamiento según el proyecto",
-        "comparison_intro": "Un banco y un prestamista especializado pueden tener funciones distintas. Stonehaven ayuda a comparar propuestas reales con su presupuesto y calendario. Estos son temas para revisar, no condiciones prometidas ni una clasificación de prestamistas.",
+        "comparison_title": "Condiciones del préstamo de desarrollo: qué revisar en la propuesta",
+        "comparison_intro": "La tasa es solo una condición. Compare estos puntos usando el mismo presupuesto y calendario de ventas. Stonehaven le ayuda a revisar la propuesta como intermediario hipotecario; la evaluación y los documentos firmados determinan las condiciones reales.",
         "columns": [
-          "Qué comparar",
-          "Financiamiento bancario",
-          "Capital privado o especializado",
-          "Función de Stonehaven"
+          "Condición",
+          "Qué significa para el proyecto",
+          "Pregunta que debe resolver"
         ],
         "rows": [
           [
-            "Etapa del proyecto",
-            "Confirme si el banco financia adquisición, mejoras, inventario de lotes o una combinación.",
-            "Confirme las etapas que admite el prestamista y si las fases posteriores requieren otra aprobación.",
-            "Presentar la etapa actual e identificar el próximo hito de financiamiento."
+            "Compromiso y desembolso inicial",
+            "El financiamiento total puede diferir del dinero entregado el primer día.",
+            "¿Cuánto se entrega para adquirir el terreno y cuánto queda retenido para la obra?"
           ],
           [
-            "Aportación del solicitante",
-            "Pregunte qué costos y patrimonio del terreno se reconocen como aportación.",
-            "Pregunte por efectivo al cierre, reservas, fondos retenidos y costos fuera del préstamo.",
-            "Comparar fuentes y usos para que la necesidad de efectivo sea visible."
+            "Costos elegibles y aportación",
+            "La base aceptada determina qué mide el LTC indicado.",
+            "¿Qué base del terreno, costos indirectos y reservas cuentan? ¿Qué exige efectivo externo?"
           ],
           [
-            "Garantías",
-            "Revise las obligaciones de pago y de terminación de la obra.",
-            "Revise las mismas obligaciones aunque la propuesta se describa como sin recurso.",
-            "Identificar los términos que requieren aclaración del prestamista y revisión con su abogado."
+            "Vencimiento y prórrogas",
+            "La fecha de liquidación debe contemplar la obra y las ventas.",
+            "¿Qué ocurre si las ventas se retrasan seis meses? Confirme requisitos y cargos de prórroga."
           ],
           [
-            "Cierre y desembolsos",
-            "Confirme los pasos de aprobación, las condiciones pendientes y el proceso de desembolsos.",
-            "Confirme los mismos puntos y quién autoriza cada anticipo.",
-            "Ayudar a coordinar la información necesaria para avanzar."
+            "Intereses y otros cargos",
+            "El precio puede incluir comisiones además de intereses.",
+            "¿Sobre qué saldo se cobran intereses? ¿Hay intereses mínimos o cargos sobre fondos no utilizados?"
           ],
           [
-            "Venta de lotes y pago",
-            "Solicite el calendario de liberaciones y los pagos de capital exigidos.",
-            "Compare condiciones de liberación, prórrogas y posibles condiciones de pago anticipado.",
-            "Revisar cómo encaja el plan de pago con las ventas previstas de lotes."
+            "Condiciones de desembolso",
+            "El contrato determina cuándo el trabajo puede pagarse.",
+            "¿Quién verifica el avance, qué documentos exige y cuándo libera el dinero?"
+          ],
+          [
+            "Precio de liberación del lote",
+            "La venta puede exigir un pago de principal antes de liberar el lote.",
+            "¿Cuánto queda para costos y fases posteriores después del pago obligatorio?"
+          ],
+          [
+            "Garantías y terminación",
+            "Las obligaciones de pago y de terminar la obra requieren revisión separada.",
+            "¿Quién firma cada obligación y qué excluye realmente una cláusula sin recurso?"
+          ],
+          [
+            "Aprobación de fases y viviendas",
+            "Financiar la urbanización no aprueba automáticamente la construcción de casas.",
+            "¿Qué fases o casas necesitan otra aprobación, tasación o préstamo?"
           ]
         ],
         "scenario_title": "Cómo podría presentarse un desarrollo de 40 lotes",

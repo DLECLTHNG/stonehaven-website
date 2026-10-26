@@ -1,0 +1,30 @@
+/* Scoped comparison guide layout. */
+.guide-facts{margin:0 0 28px;border-block:1px solid var(--line);}
+.guide-facts>div{display:grid;grid-template-columns:minmax(120px,1fr) minmax(0,2fr);gap:20px;padding:14px 0;}
+.guide-facts>div+div{border-top:1px solid var(--line);}
+.guide-facts dt{font-weight:600;color:var(--slate-900);}
+.guide-facts dd{margin:0;}
+.answer-guide{max-width:860px;margin-inline:auto;line-height:1.85;}
+.answer-guide h2{margin:36px 0 16px;font-size:28px;}
+.answer-guide h3{margin-top:24px;font-size:21px;}
+.answer-guide p,.answer-guide ul{margin:16px 0;}
+.answer-guide li+li{margin-top:9px;}
+@media(max-width:540px){.guide-facts>div{grid-template-columns:1fr;gap:5px;}.answer-guide h2{font-size:25px;}}
+
+/* Readable comparison tables for financing education guides. */
+.answer-table{margin:24px 0;max-width:100%;overflow-x:auto;overscroll-behavior-x:contain;}
+.answer-table table{width:100%;min-width:300px;table-layout:fixed;border-collapse:collapse;font-size:15px;line-height:1.6;}
+.answer-table caption{text-align:left;font-weight:600;padding:0 0 12px;color:var(--slate-700);}
+.answer-table th,.answer-table td{padding:14px 12px;border:1px solid var(--line);vertical-align:top;text-align:left;overflow-wrap:anywhere;}
+.answer-table thead th{background:var(--paper-2);color:var(--slate-900);}
+.answer-table tbody th{font-weight:500;}
+@media(max-width:480px){.answer-table table{font-size:12px;line-height:1.5;}.answer-table th,.answer-table td{padding:10px 7px;}}
+@media print{.answer-table{break-inside:avoid;}}
+
+.answer-table--wide table{min-width:440px;}
+.answer-table:focus-visible{outline:2px solid var(--slate-700);outline-offset:4px;}
+
+.guide-facts~h2{margin:32px 0 14px;}
+.guide-facts~p{margin:16px 0;}
+.answer-scroll-hint{display:none;}
+@media(max-width:700px){.answer-scroll-hint{display:block;font-size:12px;font-weight:400;margin-top:8px;}}

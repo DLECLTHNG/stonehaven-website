@@ -3,8 +3,8 @@ import re
 from html import escape, unescape
 
 JOURNEYS = [
+ ('/commercial/construction-loans', 'Ground-up construction financing', 'Financiamiento de obra nueva', 'Compare acquisition, land equity, the build budget and cash between draws.', 'Compare adquisición, patrimonio del terreno, presupuesto y efectivo entre desembolsos.'),
  ('/commercial/hud-financing', 'Plan a long-term HUD loan', 'Planificar un préstamo HUD', 'Explore apartment refinancing, rental construction, build-to-rent and eligible care facilities.', 'Explore refinanciamiento de apartamentos, construcción de alquiler y centros de cuidados elegibles.'),
- ('/commercial/construction-loans', 'Build or rebuild', 'Construir o reconstruir', 'Compare acquisition, land equity, the build budget and cash between draws.', 'Compare adquisición, patrimonio del terreno, presupuesto y efectivo entre desembolsos.'),
  ('/commercial/fix-and-flip', 'Buy, renovate and sell', 'Comprar, renovar y vender', 'Separate the purchase advance, renovation funding and planned resale.', 'Separe los fondos para compra, renovación y la reventa prevista.'),
  ('/commercial/bridge-loans', 'Refinance or reposition', 'Refinanciar o reposicionar', 'Start with the current payoff, maturity, cash flow and repayment plan.', 'Empiece con la liquidación actual, vencimiento, flujo de caja y plan de pago.'),
  ('/commercial/land-development-loans', 'Develop land or lots', 'Desarrollar terrenos o lotes', 'Connect site control, approvals, infrastructure and lot-sale timing.', 'Conecte el control del terreno, permisos, infraestructura y calendario de venta de lotes.'),
