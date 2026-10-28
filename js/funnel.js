@@ -562,6 +562,9 @@
     Array.prototype.forEach.call(form.querySelectorAll("input,select,textarea"), function (i) {
       i.addEventListener("input", function () { i.style.borderBottomColor = ""; i.removeAttribute('aria-invalid'); });
     });
+    // Required fields stay protected by the browser until our submit handler
+    // is attached. Forms that use native validation keep that behavior.
+    if (form.getAttribute('data-sh-custom-validation') === '1') form.noValidate = true;
   }
 
   document.addEventListener("DOMContentLoaded", function () {

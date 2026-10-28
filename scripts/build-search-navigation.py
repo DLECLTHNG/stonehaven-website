@@ -13,7 +13,7 @@ from search_answers import transform as search_answers
 from inquiry_journeys import transform as inquiry_journeys, clean as clean_inquiries
 from hud_content import transform as hud_content, clean as clean_hud
 from construction_content import transform as construction_content, clean as clean_construction
-from site_presentation import normalize_presentation
+from site_presentation import normalize_presentation, preserve_native_lead_validation
 from home_styles import bundle as bundle_home_styles
 from site_positioning import build as build_positioning, footer as positioning_footer
 from subprocess import run
@@ -107,6 +107,7 @@ for path,(file,text) in pages.items():
  text=inquiry_journeys(text,path)
  text=hud_content(text,path)
  text=construction_content(text,path)
+ text=preserve_native_lead_validation(text)
  if any(mark in text for mark in ['SEARCH-NAV:', 'HUD-CONTENT:', 'CONSTRUCTION-CONTENT:']):text=text.replace('</head>','<link rel="stylesheet" href="/search-navigation.css?v=1"/></head>')
  text=normalize_brand_assets(text)
  text=bundle_home_styles(text,path,R)
