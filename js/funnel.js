@@ -14,6 +14,11 @@
 (function () {
   "use strict";
 
+  // An older template or cached fragment must not wire the forms and pixels
+  // twice. Each document owns one funnel, regardless of script tag count.
+  if (window.__shFunnelInitialized) return;
+  window.__shFunnelInitialized = true;
+
   /* All IDs/endpoints live in js/site-config.js (window.SH_CONFIG) —
      the fallbacks here only cover a page that forgot the config tag. */
   var CFG = window.SH_CONFIG || {};
@@ -320,6 +325,21 @@
   }
 
   function wireForm(form) {
+    var started = false;
+    function recordStart(event) {
+      if (started || privateContext()) return;
+      var field = event.target;
+      if (!field || !field.name || field.name === 'company_website' || field.type === 'hidden' || field.disabled) return;
+      started = true;
+      // Static form identifiers only. Never send field names, answers or
+      // contact details to analytics. This is not a lead conversion.
+      analyticsOnly('inquiry_started', {
+        form_id: form.getAttribute('data-sh-form'),
+        language: document.documentElement.lang || 'en'
+      });
+    }
+    form.addEventListener('input', recordStart);
+    form.addEventListener('change', recordStart);
     var contactChoice = form.querySelector('[name="contact_preference"]');
     var contactPhone = form.querySelector('[name="phone"]');
     if (contactChoice && contactPhone) {
@@ -550,6 +570,11 @@
     document.addEventListener("click", function (event) {
       var a = event.target.closest && event.target.closest('a[href^="tel:"]');
       if (a) analyticsOnly("phone_click", { page_path: window.location.pathname, language: document.documentElement.lang || "en" });
+      var cta = event.target.closest && event.target.closest('a[data-sh-inquiry-cta]');
+      var placement = cta && cta.getAttribute && cta.getAttribute('data-sh-inquiry-cta');
+      if (!privateContext() && ['construction-result', 'construction-article'].indexOf(placement) !== -1) {
+        analyticsOnly('inquiry_cta_click', { placement: placement, page_path: safePublicPath(window.location.pathname), language: document.documentElement.lang || 'en' });
+      }
     });
 
     /* nav scroll + mobile menu + reveal (same behavior as the rest of the site) */

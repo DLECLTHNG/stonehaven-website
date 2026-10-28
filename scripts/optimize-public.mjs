@@ -34,7 +34,12 @@ export function optimizePublic(html, file, root = process.cwd()) {
         if (hasFonts) return '';
         hasFonts = true;
         const fonts = read(resolve(root, 'home-fonts.css')).replaceAll('font-weight: 300 500', 'font-weight: 100 900');
-        const preload = ['inter-normal', 'cormorant-normal', 'cormorant-italic'].map(name => `<link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/${name}-latin-20261018.woff2">`).join('');
+        // Prioritize the hero fonts. The italic face remains available through
+        // @font-face, but should not compete for bandwidth on every article.
+        const hero = html.match(/<h1\b[^>]*>[\s\S]*?<\/h1>/i)?.[0] || '';
+        const names = ['inter-normal', 'cormorant-normal'];
+        if (/<(?:em|i)\b/i.test(hero)) names.push('cormorant-italic');
+        const preload = names.map(name => `<link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/${name}-latin-20261018.woff2">`).join('');
         return preload + '<style data-site-performance="fonts">' + fonts + '</style>';
       }
       // Remove only redundant preconnects and preload copies of these fonts.
