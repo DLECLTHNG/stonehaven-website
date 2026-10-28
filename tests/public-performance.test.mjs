@@ -41,3 +41,22 @@ test('inline stylesheet position, media and relative asset semantics are retaine
  assert.match(result,/color:red.*data-site-performance="\/assets\/test.css" media="print".*url\(\/assets\/photo.webp\).*color:blue/);
  assert.ok(result.endsWith('<form method="POST"></form>'));
 });
+
+test('shared analytics and form scripts execute at most once per page',()=>{
+ for(const file of files){
+  const html=readFileSync(file,'utf8');
+  for(const name of ['funnel','site-config','home-vendors']) {
+   const count=captures(html,new RegExp('<script[^>]*src=["\'][^"\']*\\/'+name+'\\.js(?:\\?|["\'])','g')).length;
+   assert.ok(count<=1,file+' duplicate '+name);
+  }
+ }
+});
+test('italic preloads are reserved for hero text while all font faces remain available',()=>{
+ for(const file of ['construction-loan-calculator.html','blog/construction-loan-term-sheet-comparison.html','es/construction-loan-calculator.html']) {
+  const html=optimizePublic(readFileSync(file,'utf8'),file,root);
+  assert.doesNotMatch(html,/<link[^>]*rel="preload"[^>]*cormorant-italic/);
+  assert.match(html,/src: url\([^)]*cormorant-italic/);
+ }
+ const hero=optimizePublic(readFileSync('dscr.html','utf8'),'dscr.html',root);
+ assert.match(hero,/<link[^>]*rel="preload"[^>]*cormorant-italic/);
+});

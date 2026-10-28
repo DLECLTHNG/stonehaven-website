@@ -9,6 +9,22 @@ def normalize_presentation(text, path):
     # A hidden mobile line break still needs a word boundary.
     text = re.sub(r'<h1\b[^>]*>.*?</h1>', lambda m: re.sub(r'(?<=\S)(<br\s*/?>)', r' \1', m[0]), text, flags=re.S)
     text = re.sub(r'(src="(?:/|\.\./)js/funnel\.js\?v=)\d+', r'\g<1>16', text)
+    # Older translated templates appended the shared scripts a second time.
+    # Keep the first execution and its position. Never deduplicate unrelated
+    # scripts or add marketing to a page that did not already have it.
+    seen = set()
+    def shared_script(match):
+        src = re.search(r'\bsrc="([^"]+)"', match[0])
+        if not src:
+            return match[0]
+        key = re.sub(r'^(?:\.\./)+', '', src[1].split('?')[0]).lstrip('/')
+        if key not in {'js/site-config.js', 'js/funnel.js', 'js/home-vendors.js'}:
+            return match[0]
+        if key in seen:
+            return ''
+        seen.add(key)
+        return match[0]
+    text = re.sub(r'<script\b[^>]*src="[^"]+"[^>]*>\s*</script>', shared_script, text)
     text = re.sub(r'(<a\b[^>]*href="/(?:es/)?blog"[^>]*>)(?:Closings|Cierres)(</a>)',
                   lambda m: m[1] + ('Guías y artículos' if es else 'Guides and articles') + m[2], text)
     if '/blog/' not in path and path not in ['/blog', '/es/blog']:

@@ -43,7 +43,7 @@ function page(options = {}) {
   const fetch = async (url, opts) => { requests.push({ url, opts }); return { ok: options.accept ? options.accept(url) : true }; };
   vm.runInNewContext(code, { document, window, navigator, sessionStorage, URL, URLSearchParams, fetch, setTimeout, clearTimeout, AbortController, Uint8Array, IntersectionObserver: class { observe() {} } });
   docHandlers.DOMContentLoaded();
-  return { storage, requests, events, meta, ads, fields, navigator, button, submit: () => handlers.submit({ preventDefault() {} }),
+  return { storage, requests, events, meta, ads, fields, navigator, button, start: () => handlers.input({target:fields.name}), cta: () => docHandlers.click({target:{closest:selector=>selector==='a[data-sh-inquiry-cta]'?{getAttribute:()=> 'construction-result'}:null}}), submit: () => handlers.submit({ preventDefault() {} }),
     data(index = 0) { const r = requests[index]; return r.opts.headers['Content-Type'] === 'application/json' ? JSON.parse(r.opts.body) : Object.fromEntries(new URLSearchParams(r.opts.body)); },
     extra(index = 0) { const value = this.data(index).extra; return typeof value === 'string' ? JSON.parse(value) : value; } };
 }
@@ -482,4 +482,11 @@ test('all generated quick forms deliver their rendered program and language with
   }
  }
  assert.equal(count,38);
+});
+
+test('GPC and sensitive Family pages suppress inquiry engagement events',()=>{
+ for(const options of [{gpc:true},{url:'https://stonehavencre.com/family-opportunity-disability'},{bodyAttrs:{'data-fo-sensitive':'1'}}]) {
+  const p=page(options);p.start();p.cta();
+  assert.equal(p.events.length,0,JSON.stringify(options));assert.equal(p.meta.length,0);assert.equal(p.ads.length,0);
+ }
 });

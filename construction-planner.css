@@ -19,4 +19,11 @@
 .planner-table{overflow-x:auto;margin:20px 0}.planner-table table{width:100%;border-collapse:collapse;background:#fff;font-size:14px}.planner-table th,.planner-table td{text-align:left;padding:12px;border-bottom:1px solid #d8d6d0;vertical-align:top}.planner-table caption{text-align:left;font-weight:500;margin-bottom:12px}.planner-table thead{background:#eeeae2}.planner-table th{font-weight:500}
 .planner-actions{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;margin:26px 0}.planner-actions .btn-primary{text-align:center;white-space:normal}
 [hidden]{display:none!important}
+#cp-summary{scroll-margin-top:145px;min-width:0}
+.planner-result-link{display:inline-flex;align-items:center;min-height:44px;text-decoration:underline;text-underline-offset:4px}
+.planner-next-step{margin-top:18px;padding:22px;background:#eeeae2;border:1px solid #d8d6d0;border-radius:5px}
+.planner-next-step p{font-size:14px;line-height:1.65;margin:0 0 12px;color:#334653}
+.planner-next-step .btn-primary{display:flex;justify-content:center;width:100%;text-align:center;white-space:normal;box-sizing:border-box}
+.planner-next-step+.planner-note{margin-top:12px}
+section.planner-copy{padding:0}
 @media(max-width:760px){.planner-layout{grid-template-columns:1fr}.planner-inputs,.planner-results{padding:20px}.planner-fields{grid-template-columns:1fr}.planner-copy h2{font-size:28px}.planner-table table{min-width:520px}}

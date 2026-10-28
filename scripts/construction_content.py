@@ -49,6 +49,17 @@ def transform(text, path):
     section += '</ul></section><!-- CONSTRUCTION-CONTENT:END -->'
     text = text.replace('</main>', section + '</main>')
     if article or old_article:
+        # Offer a next step after the opening explanation, without interrupting
+        # the answer or making readers finish the entire guide first.
+        prompt = '¿Está planificando una obra?' if es else 'Planning a build?'
+        copy = ('Comparta ubicación y objetivo. Empiece con su nombre y correo; los detalles del proyecto son opcionales.' if es else
+                'Tell us where you are building and what you need to finance. Start with your name and email; project details are optional.')
+        label = 'Hablemos de mi proyecto' if es else 'Discuss my project'
+        early = '<!-- CONSTRUCTION-CONTENT:START --><aside class="construction-inline-inquiry"><p><strong>' + prompt + '</strong> ' + copy + '</p><a class="btn-primary" data-sh-inquiry-cta="construction-article" href="' + prefix + '/commercial/construction-loans#quick-inquiry">' + label + '</a></aside><!-- CONSTRUCTION-CONTENT:END -->'
+        def early_cta(m):
+            return re.sub(r'<h2\b', lambda _: early + '<h2', m[0], count=1)
+        text = re.sub(r'<article\b[^>]*class="blog-article"[^>]*>.*?</article>', early_cta, text, flags=re.S)
+        text = text.replace('</head>', '<link rel="stylesheet" href="/construction-guides.css?v=2"/></head>')
         cta = 'Revisar mi proyecto de construcción' if es else 'Discuss my construction project'
         title = 'Hablemos de su próxima obra' if es else 'Let’s look at your next build'
         desc = ('Stonehaven actúa como su intermediario hipotecario. Comparta ubicación, presupuesto, terreno, monto solicitado y plazo. Empiece con una consulta breve, sin documentos privados.' if es else
@@ -61,7 +72,6 @@ def transform(text, path):
                           block, count=1, flags=re.S)
         text = re.sub(r'<section class="lead">.*?</section>', replace_cta, text, flags=re.S)
     if article:
-        text = text.replace('</head>', '<link rel="stylesheet" href="/construction-guides.css?v=2"/></head>')
         def enrich(m):
             data = json.loads(m[1])
             if data.get('@type') == 'BlogPosting':

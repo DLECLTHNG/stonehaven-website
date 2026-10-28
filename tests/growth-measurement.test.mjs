@@ -14,9 +14,17 @@ function fixture(fetchImpl, options={}) {
  const document={head:{appendChild(){}},documentElement:{lang:options.lang||'en'},createElement:()=>({style:{},setAttribute(){}}),addEventListener:(k,f)=>{documentHandlers[k]=f},querySelectorAll:s=>s==='form[data-sh-form]'?[form]:[],getElementById:()=>null};
  const window={shChatGPTLead:id=>chatgpt.push(id),SH_CONFIG:{},location:{search:'?utm_source=google&utm_medium=cpc&utm_campaign=ga_dscr',pathname:'/contact',href:'https://stonehavencre.com/contact'},gtag:(...a)=>events.push(a),fbq:(...a)=>meta.push(a),addEventListener(){}};
  const storage=new Map();
- vm.runInNewContext(source,{document,window,sessionStorage:{getItem:k=>storage.get(k)||null,setItem:(k,v)=>storage.set(k,v)},URLSearchParams,fetch:fetchImpl,setTimeout,clearTimeout,AbortController,IntersectionObserver:class{observe(){}},console});
+ const context=vm.createContext({document,window,sessionStorage:{getItem:k=>storage.get(k)||null,setItem:(k,v)=>storage.set(k,v)},URLSearchParams,fetch:fetchImpl,setTimeout,clearTimeout,AbortController,IntersectionObserver:class{observe(){}},console});
+ vm.runInContext(source,context);
+ const initialReady=documentHandlers.DOMContentLoaded;
+ if(options.repeatScript) {
+  vm.runInContext(source,context);
+  assert.equal(documentHandlers.DOMContentLoaded,initialReady,'second execution must not register another ready callback');
+ }
  documentHandlers.DOMContentLoaded();
- return {events,meta,chatgpt,form,fields,button,select:(value,dispatch=true)=>{fields[options.selectName].value=value;if(dispatch)productHandlers.change()},submit:()=>handlers.submit({preventDefault(){}}),click:()=>documentHandlers.click({target:{closest:()=>({})}})};
+ return {events,meta,chatgpt,form,fields,button,select:(value,dispatch=true)=>{fields[options.selectName].value=value;if(dispatch)productHandlers.change()},submit:()=>handlers.submit({preventDefault(){}}),click:()=>documentHandlers.click({target:{closest:()=>({})}}),
+ start:(name='name')=>handlers.input({target:fields[name]}),
+ cta:(placement='construction-result')=>documentHandlers.click({target:{closest:s=>s==='a[data-sh-inquiry-cta]'?{getAttribute:()=>placement}:null}})};
 }
 const flush=()=>new Promise(r=>setImmediate(r));
 test('one accepted inquiry produces one GA4 lead and retains private attribution only in the submission',async()=>{
@@ -79,4 +87,26 @@ test('the existing home-loan choice still routes as Residential',async()=>{
  f.select('Residential');f.submit();await flush();
  assert.equal(requests[0].get('product'),'Residential');
  assert.equal(f.events.find(e=>e[1]==='generate_lead')[2].product,'Residential');
+});
+
+test('duplicate execution cannot register another funnel or duplicate a saved lead',async()=>{
+ const requests=[];
+ const f=fixture(async(url,opts)=>{requests.push(opts);return {ok:true}},{repeatScript:true});
+ f.submit();await flush();
+ assert.equal(requests.length,1);
+ assert.equal(f.events.filter(e=>e[1]==='generate_lead').length,1);
+ assert.equal(f.meta.filter(e=>e[1]==='Lead').length,1);
+ assert.equal(f.chatgpt.length,1);
+});
+test('inquiry engagement contains no answers and never counts as a conversion',()=>{
+ const f=fixture(()=>{throw new Error('engagement must not submit')});
+ f.start('company_website');assert.equal(f.events.length,0);
+ f.start();f.start('email');f.cta();f.cta('private-unapproved-label');
+ const starts=f.events.filter(e=>e[1]==='inquiry_started');
+ assert.equal(starts.length,1);
+ assert.deepEqual(JSON.parse(JSON.stringify(starts[0][2])),{form_id:'contact',language:'en'});
+ assert.equal(f.events.filter(e=>e[1]==='inquiry_cta_click').length,1);
+ assert.equal(f.events.filter(e=>e[1]==='generate_lead').length,0);
+ assert.equal(f.meta.length,0);assert.equal(f.chatgpt.length,0);
+ assert.doesNotMatch(JSON.stringify(f.events),/private@example|2025550123|Test Person|utm_source/);
 });
