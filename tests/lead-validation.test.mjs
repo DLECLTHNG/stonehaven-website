@@ -137,6 +137,10 @@ test('every static inquiry form visibly collects required name and email', () =>
       for (const form of html.matchAll(/<form\b[^>]*>[\s\S]*?<\/form>/g)) {
         if (!/data-sh-form=|id="inquiry-form"/.test(form[0])) continue;
         count++;
+        if (/data-sh-form=/.test(form[0])) {
+          assert.doesNotMatch(form[0].match(/^<form\b[^>]*>/)[0], /\snovalidate(?:\s|=|>)/i, path + ' must validate before JavaScript loads');
+          assert.doesNotMatch(form[0], /\sformnovalidate(?:\s|=|>)/i, path + ' submit controls cannot bypass required fields');
+        }
         for (const key of ['name', 'email']) {
           const input = form[0].match(new RegExp('<input\\b[^>]*name="' + key + '"[^>]*>'))?.[0];
           assert.ok(input, path + ' needs ' + key);

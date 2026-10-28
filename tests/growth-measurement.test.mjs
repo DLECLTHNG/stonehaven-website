@@ -10,7 +10,13 @@ function fixture(fetchImpl, options={}) {
  if(options.selectName) fields[options.selectName]={name:options.selectName,value:options.product||'Commercial',type:'select-one',style:{},addEventListener:(k,f)=>{productHandlers[k]=f}};
  const button={disabled:false,style:{}};
  const attributes={'data-sh-form':options.page||'contact','data-sh-product':options.product||'DSCR'};
+ if(options.customValidation) attributes['data-sh-custom-validation']='1';
  const form={id:'test',elements:Object.values(fields),style:{},getAttribute:k=>attributes[k]||null,setAttribute:(k,v)=>{attributes[k]=v},hasAttribute:()=>false,addEventListener:(k,f)=>{handlers[k]=f},querySelector:s=>s==='[type="submit"]'?button:fields[s.match(/name="([^"]+)"/)?.[1]]||null,querySelectorAll:()=>Object.values(fields),parentElement:{querySelector:()=>({classList:{add(){}}})}};
+ let noValidate=false;
+ Object.defineProperty(form,'noValidate',{get:()=>noValidate,set:value=>{
+  assert.equal(typeof handlers.submit,'function','custom validation must be attached before native checks are disabled');
+  noValidate=value;
+ }});
  const document={head:{appendChild(){}},documentElement:{lang:options.lang||'en'},createElement:()=>({style:{},setAttribute(){}}),addEventListener:(k,f)=>{documentHandlers[k]=f},querySelectorAll:s=>s==='form[data-sh-form]'?[form]:[],getElementById:()=>null};
  const window={shChatGPTLead:id=>chatgpt.push(id),SH_CONFIG:{},location:{search:'?utm_source=google&utm_medium=cpc&utm_campaign=ga_dscr',pathname:'/contact',href:'https://stonehavencre.com/contact'},gtag:(...a)=>events.push(a),fbq:(...a)=>meta.push(a),addEventListener(){}};
  const storage=new Map();
@@ -21,15 +27,24 @@ function fixture(fetchImpl, options={}) {
   vm.runInContext(source,context);
   assert.equal(documentHandlers.DOMContentLoaded,initialReady,'second execution must not register another ready callback');
  }
- documentHandlers.DOMContentLoaded();
- return {events,meta,chatgpt,form,fields,button,select:(value,dispatch=true)=>{fields[options.selectName].value=value;if(dispatch)productHandlers.change()},submit:()=>handlers.submit({preventDefault(){}}),click:()=>documentHandlers.click({target:{closest:()=>({})}}),
+ if(!options.deferReady) documentHandlers.DOMContentLoaded();
+ return {events,meta,chatgpt,form,fields,button,ready:()=>documentHandlers.DOMContentLoaded(),select:(value,dispatch=true)=>{fields[options.selectName].value=value;if(dispatch)productHandlers.change()},submit:()=>handlers.submit({preventDefault(){}}),click:()=>documentHandlers.click({target:{closest:()=>({})}}),
  start:(name='name')=>handlers.input({target:fields[name]}),
  cta:(placement='construction-result')=>documentHandlers.click({target:{closest:s=>s==='a[data-sh-inquiry-cta]'?{getAttribute:()=>placement}:null}})};
 }
 const flush=()=>new Promise(r=>setImmediate(r));
+test('required fields retain native protection until custom validation is ready',()=>{
+ for(const customValidation of [false,true]) {
+  const f=fixture(()=>{throw new Error('initialization must not submit')},{customValidation,deferReady:true});
+  assert.equal(f.form.noValidate,false);
+  f.ready();
+  assert.equal(f.form.noValidate,customValidation,'native-only forms must keep browser validation');
+  assert.equal(f.events.length,0);assert.equal(f.meta.length,0);assert.equal(f.chatgpt.length,0);
+ }
+});
 test('one accepted inquiry produces one GA4 lead and retains private attribution only in the submission',async()=>{
  const requests=[]; let accept;
- const f=fixture((url,opts)=>{requests.push(new URLSearchParams(opts.body));return new Promise(r=>{accept=r})});
+ const f=fixture((url,opts)=>{requests.push(new URLSearchParams(opts.body));return new Promise(r=>{accept=r})},{customValidation:true});
  f.submit();f.submit();assert.equal(requests.length,1,'double clicks cannot send duplicate inquiries');
  assert.equal(f.events.filter(e=>e[1]==='generate_lead').length,0);
  accept({ok:true});await flush();

@@ -4,7 +4,20 @@ import re
 import unicodedata
 
 
+def preserve_native_lead_validation(text):
+    # Keep required fields active before funnel.js loads or when it is blocked.
+    # Only the shared handler may opt into custom errors, after it is attached.
+    def form(match):
+        tag = match[0]
+        if not re.search(r'\bdata-sh-form=', tag):
+            return tag
+        return re.sub(r'\snovalidate(?:\s*=\s*(?:"[^"]*"|\x27[^\x27]*\x27|[^\s>]+))?(?=\s|>)',
+                      ' data-sh-custom-validation="1"', tag, flags=re.I)
+    return re.sub(r'<form\b[^>]*>', form, text, flags=re.I)
+
+
 def normalize_presentation(text, path):
+    text = preserve_native_lead_validation(text)
     es = path.startswith('/es/')
     # A hidden mobile line break still needs a word boundary.
     text = re.sub(r'<h1\b[^>]*>.*?</h1>', lambda m: re.sub(r'(?<=\S)(<br\s*/?>)', r' \1', m[0]), text, flags=re.S)
