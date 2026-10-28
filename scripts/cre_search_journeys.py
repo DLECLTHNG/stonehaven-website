@@ -12,6 +12,8 @@ JOURNEYS = [
  ('/dscr', 'Finance a rental property', 'Financiar una propiedad de alquiler', 'Review eligible rent, the full payment and cash flow before choosing a loan.', 'Revise la renta admisible, el pago completo y el flujo de caja antes de elegir un préstamo.'),
 ]
 GUIDES = [
+ ('/construction-loan-calculator', 'How much construction funding does the project need?', 'Calculate cost and value limits, land equity and the remaining funding gap before requesting terms.'),
+ ('/blog/construction-loan-term-sheet-comparison', 'Which construction term sheet fits the cash plan?', 'Compare usable proceeds, initial advances, draw rules and financing costs using the same project assumptions.'),
  ('/resources/how-lenders-size-commercial-loans', 'How much can the property support?', 'Work through NOI, DSCR, LTV and debt yield. Identify the constraint before choosing a requested amount.'),
  ('/resources/bridge-vs-permanent-financing', 'Bridge or permanent financing?', 'Compare the property’s readiness, financing costs and exit before choosing a structure.'),
  ('/resources/commercial-refinance-guide', 'What happens when the loan matures?', 'Organize the payoff, prepayment terms and refinance proceeds before the deadline.'),

@@ -10,3 +10,5 @@
 
 .construction-table--wide table{min-width:440px;}
 .construction-table:focus-visible{outline:2px solid var(--slate-700);outline-offset:4px;}
+
+.construction-table--checklist th:first-child{width:30%;}

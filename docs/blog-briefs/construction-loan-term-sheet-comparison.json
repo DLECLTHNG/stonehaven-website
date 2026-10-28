@@ -1,0 +1,130 @@
+{
+  "slug": "construction-loan-term-sheet-comparison",
+  "date": "2026-10-28",
+  "type": "guide",
+  "product": "Commercial",
+  "en": {
+    "title": "How to compare construction loan term sheets before you commit",
+    "metaTitle": "Construction Loan Term Sheet Checklist | Stonehaven",
+    "desc": "Compare a construction loan’s net proceeds, draw rules, fees, maturity and exit. Use a worked example to see why a lower rate may need more cash.",
+    "eyebrow": "Construction · Comparing financing",
+    "terms": [
+      [
+        "For",
+        "Builders comparing business-purpose construction financing"
+      ],
+      [
+        "Bring",
+        "The same budget, land position and schedule to each comparison"
+      ],
+      [
+        "Decision",
+        "Usable funding, cash timing and total cost through the exit"
+      ]
+    ],
+    "body": [
+      "<strong>Compare construction loan term sheets on usable proceeds, cash timing and the cost to reach your planned exit.</strong> A lower interest rate does not tell you whether the initial advance pays off the land debt, whether you can cover contractor invoices before reimbursement, or what happens if the project runs late.",
+      "Stonehaven acts as your mortgage broker. We help organize the project, compare proposed structures and identify questions to resolve before you commit. This guide concerns investment and development projects, not consumer construction of a personal residence.",
+      {
+        "h": "Start with one budget and one set of dates"
+      },
+      "Give each proposal the same land basis, existing payoff or purchase price, hard costs, soft costs, contingency, financing allowance and estimated completed value. Then compare the proposed closing date, first draw, construction completion and sale or refinance date. Otherwise, two appealing percentages may describe different projects.",
+      "Use the <a href=\"/construction-loan-calculator\">construction loan calculator</a> to separate the cost basis from uses still to fund. The calculated funding gap is a planning figure, not cash due on a settlement statement.",
+      {
+        "h": "Eight questions to put beside every proposal"
+      },
+      "<div class=\"construction-table construction-table--checklist\" role=\"region\" tabindex=\"0\" aria-label=\"Construction term sheet comparison checklist\"><table><caption>Construction term sheet comparison checklist</caption><thead><tr><th scope=\"col\">Item</th><th scope=\"col\">What to confirm</th></tr></thead><tbody><tr><th scope=\"row\">Total commitment</th><td>Does the figure include the construction holdback and interest reserve? What amount is actually usable for the project?</td></tr><tr><th scope=\"row\">Initial advance</th><td>After land acquisition or payoff, withheld fees and reserves, what remains available at closing?</td></tr><tr><th scope=\"row\">Cost and value limits</th><td>What costs qualify for LTC? Which land basis is accepted? What changes if the completed appraisal is lower?</td></tr><tr><th scope=\"row\">Draw mechanics</th><td>Who pays invoices first? Confirm inspections, documentation, retainage, deposits and any minimum draw amount.</td></tr><tr><th scope=\"row\">Interest and fees</th><td>Confirm fixed or floating rate, index and floor if applicable, drawn-balance versus commitment basis, origination, draw and exit charges.</td></tr><tr><th scope=\"row\">Maturity and extensions</th><td>Is the term measured from closing? Ask for extension conditions, fees and approval requirements in writing.</td></tr><tr><th scope=\"row\">Guarantees and obligations</th><td>Identify completion, payment, carry and other guarantees, plus any conditions for reducing or releasing them. Have counsel review legal obligations.</td></tr><tr><th scope=\"row\">Repayment and releases</th><td>For sales, check minimum interest and release amounts. For a refinance, test the required rent, value and completion conditions separately.</td></tr></tbody></table></div>",
+      {
+        "h": "Example: a lower rate can accompany a larger funding gap"
+      },
+      "The following is hypothetical, not a quote or a closed Stonehaven loan. Assume accepted land basis of $500,000, an existing $200,000 land payoff and $1.5 million of remaining costs, including a financing allowance. Total cost basis is $2 million; remaining cash uses are $1.7 million. Assume completed value supports both proposals.",
+      "<div class=\"construction-table construction-table--wide\" role=\"region\" tabindex=\"0\" aria-label=\"Illustrative proposals using the same project\"><table><caption>Illustrative proposals using the same project</caption><thead><tr><th scope=\"col\">Measure</th><th scope=\"col\">Proposal A</th><th scope=\"col\">Proposal B</th></tr></thead><tbody><tr><th scope=\"row\">Loan commitment</th><td>$1,500,000 (75% LTC)</td><td>$1,600,000 (80% LTC)</td></tr><tr><th scope=\"row\">Remaining uses less commitment</th><td>$200,000</td><td>$100,000</td></tr><tr><th scope=\"row\">Assumed annual interest rate</th><td>9%</td><td>10%</td></tr><tr><th scope=\"row\">Assumed average drawn balance for 12 months</th><td>$900,000</td><td>$960,000</td></tr><tr><th scope=\"row\">Illustrative interest for 12 months</th><td>$81,000</td><td>$96,000</td></tr><tr><th scope=\"row\">Assumed origination charge</th><td>2% = $30,000</td><td>1% = $16,000</td></tr><tr><th scope=\"row\">Interest plus origination only</th><td>$111,000</td><td>$112,000</td></tr></tbody></table></div>",
+      "In this example, the higher-rate proposal has a $100,000 smaller funding gap and only $1,000 more in the two illustrated charges. That does not make it the better loan: draw timing, guarantees, other fees and the exit still matter. Average drawn balances are assumed at 60% of each commitment; actual interest follows the loan documents and funding schedule. Replace the original financing allowance with the complete expected charges before finalizing the gap. Do not add the same fees twice.",
+      {
+        "h": "Check the money available on the first day"
+      },
+      "Suppose a proposal advances $300,000 at closing, applies $200,000 to existing land debt and withholds $40,000 for specified charges and reserves. Only $60,000 remains from that advance before any other closing uses. The total commitment may be much larger because construction money is held for later draws. Ask for this reconciliation in dollars.",
+      {
+        "h": "Read the draw procedure before signing"
+      },
+      "The <a href=\"https://help.aiacontracts.com/hc/en-us/articles/1500009387461-summary-g702-1992-application-and-certificate-for-payment\">AIA payment-application summary</a> shows why completed work, stored materials, previous payments, change orders and retainage need separate tracking. Your financing may use different documents. Ask for the actual draw instructions and a sample request package.",
+      "<a href=\"https://publishedguides.ncua.gov/examiner/Content/ExaminersGuide/Commercial%26MBL/CandD_Loans.htm\">NCUA construction guidance</a> emphasizes monitoring the budget, schedule and disbursements as a project progresses. For your comparison, translate that into practical questions: who inspects, what stops a draw and who funds a cost increase? Review our <a href=\"/blog/ground-up-construction-draw-schedule-cash-flow\">construction draw cash-flow guide</a> for the timing issue.",
+      {
+        "h": "Test a delay and the intended exit"
+      },
+      "Ask each provider to explain the same delay scenario. At a hypothetical $1.4 million drawn balance and 10% simple annual interest, three extra months cost $35,000 in interest before extension fees, taxes, insurance or other carry. Check the remaining interest allowance against that scenario rather than assuming the original reserve lasts.",
+      "For several spec homes, review <a href=\"/blog/financing-multiple-spec-homes-builder-exposure\">project exposure and unit releases</a>. For a rental exit, compare the future permanent loan with the projected construction payoff using our <a href=\"/blog/build-to-rent-construction-loan-dscr-exit\">build-to-rent refinance guide</a>. A planned refinance is not a guaranteed takeout.",
+      {
+        "h": "What should you send Stonehaven for a comparison?"
+      },
+      "<ul><li>Project location, intended use and number of units.</li><li>Owned-land basis and debt, or purchase price and contract timing.</li><li>Remaining itemized budget, completed value estimate and build schedule.</li><li>Relevant completed projects and the contractor’s role.</li><li>Your requested financing, cash plan and intended sale or refinance.</li></ul>",
+      "Start with the <a href=\"/commercial/construction-loans#quick-inquiry\">construction inquiry</a>. Mention that you have proposals to compare; we can arrange the next step for private documents. Initial feedback is not credit approval, and financing remains subject to underwriting and program availability.",
+      {
+        "h": "Sources and scope"
+      },
+      "Reviewed October 28, 2026. The <a href=\"https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf\">OCC Commercial Real Estate Lending handbook</a> discusses project budgets, equity, cost/value analysis and loan administration. OCC and NCUA materials guide their regulated institutions; they do not establish universal Stonehaven terms. The examples and comparison questions here are Stonehaven educational analysis. A term sheet’s legal effect depends on its wording and circumstances; obtain legal advice before signing obligations."
+    ]
+  },
+  "es": {
+    "title": "Cómo comparar propuestas de préstamos de construcción antes de comprometerse",
+    "metaTitle": "Comparar propuestas de construcción | Stonehaven",
+    "desc": "Compare fondos utilizables, desembolsos, cargos, vencimiento y salida. Un ejemplo muestra por qué una tasa menor puede requerir más efectivo.",
+    "eyebrow": "Construcción · Comparar financiamiento",
+    "terms": [
+      [
+        "Para",
+        "Constructores que comparan financiamiento con fines de inversión"
+      ],
+      [
+        "Prepare",
+        "El mismo presupuesto, situación del terreno y calendario"
+      ],
+      [
+        "Decisión",
+        "Fondos utilizables, momento de aportes y costo hasta la salida"
+      ]
+    ],
+    "body": [
+      "<strong>Compare propuestas de construcción por fondos utilizables, calendario de efectivo y costo hasta la salida prevista.</strong> Una tasa menor no confirma que el desembolso inicial liquide la deuda del terreno, que pueda pagar facturas antes del reembolso ni qué ocurre si la obra se retrasa.",
+      "Stonehaven actúa como su intermediario hipotecario. Ayudamos a organizar el proyecto, comparar estructuras propuestas e identificar preguntas pendientes antes de comprometerse. Esta guía trata de inversiones y desarrollos, no de construir una vivienda personal con un préstamo de consumo.",
+      {
+        "h": "Empiece con un presupuesto y un calendario comunes"
+      },
+      "Compare la misma base del terreno, saldo pendiente o precio de compra, costos directos e indirectos, contingencia, reserva de financiamiento y valor terminado. Después alinee cierre, primer desembolso, fin de obra y venta o refinanciamiento. De otro modo, los porcentajes pueden describir proyectos diferentes.",
+      "Use la <a href=\"/es/construction-loan-calculator\">calculadora de préstamos de construcción</a> para separar la base de costo de los usos pendientes. El capital faltante es una estimación de planificación, no un estado de cierre.",
+      {
+        "h": "Ocho preguntas para cada propuesta"
+      },
+      "<div class=\"construction-table construction-table--checklist\" role=\"region\" tabindex=\"0\" aria-label=\"Lista para comparar propuestas de construcción\"><table><caption>Lista para comparar propuestas de construcción</caption><thead><tr><th scope=\"col\">Elemento</th><th scope=\"col\">Qué confirmar</th></tr></thead><tbody><tr><th scope=\"row\">Compromiso total</th><td>¿Incluye fondos retenidos para obra y reserva de intereses? ¿Cuánto se puede usar para el proyecto?</td></tr><tr><th scope=\"row\">Desembolso inicial</th><td>Después de compra o saldo del terreno, cargos y reservas retenidos, ¿cuánto queda al cierre?</td></tr><tr><th scope=\"row\">Límites de costo y valor</th><td>¿Qué costos cuentan para LTC? ¿Qué base del terreno se acepta? ¿Qué cambia si baja la tasación terminada?</td></tr><tr><th scope=\"row\">Desembolsos</th><td>¿Quién paga primero las facturas? Confirme inspecciones, documentos, retenciones, anticipos y mínimos por solicitud.</td></tr><tr><th scope=\"row\">Intereses y cargos</th><td>Confirme tasa fija o variable, índice y piso si corresponden, base sobre saldo desembolsado o compromiso, y cargos de apertura, desembolso y salida.</td></tr><tr><th scope=\"row\">Vencimiento y extensiones</th><td>¿El plazo comienza al cierre? Solicite por escrito condiciones, cargos y aprobación de extensiones.</td></tr><tr><th scope=\"row\">Garantías y obligaciones</th><td>Identifique garantías de terminación, pago, mantenimiento y otras, y condiciones para reducirlas o liberarlas. Revise obligaciones legales con un abogado.</td></tr><tr><th scope=\"row\">Pago y liberaciones</th><td>Para ventas, revise interés mínimo y pagos de liberación. Para refinanciar, evalúe renta, valor y condiciones de terminación por separado.</td></tr></tbody></table></div>",
+      {
+        "h": "Ejemplo: una tasa menor puede implicar más capital faltante"
+      },
+      "Es un ejemplo hipotético, no cotización ni préstamo cerrado por Stonehaven. Suponga base aceptada del terreno de $500,000, deuda de $200,000 y $1.5 millones de costos pendientes, incluida reserva de financiamiento. La base total es $2 millones y los usos pendientes son $1.7 millones. Suponga que el valor terminado permite ambas propuestas.",
+      "<div class=\"construction-table construction-table--wide\" role=\"region\" tabindex=\"0\" aria-label=\"Propuestas hipotéticas para el mismo proyecto\"><table><caption>Propuestas hipotéticas para el mismo proyecto</caption><thead><tr><th scope=\"col\">Medida</th><th scope=\"col\">Propuesta A</th><th scope=\"col\">Propuesta B</th></tr></thead><tbody><tr><th scope=\"row\">Compromiso del préstamo</th><td>$1,500,000 (75% LTC)</td><td>$1,600,000 (80% LTC)</td></tr><tr><th scope=\"row\">Usos pendientes menos compromiso</th><td>$200,000</td><td>$100,000</td></tr><tr><th scope=\"row\">Tasa anual supuesta</th><td>9%</td><td>10%</td></tr><tr><th scope=\"row\">Saldo desembolsado promedio supuesto, 12 meses</th><td>$900,000</td><td>$960,000</td></tr><tr><th scope=\"row\">Interés ilustrativo de 12 meses</th><td>$81,000</td><td>$96,000</td></tr><tr><th scope=\"row\">Cargo de apertura supuesto</th><td>2% = $30,000</td><td>1% = $16,000</td></tr><tr><th scope=\"row\">Solo interés y apertura</th><td>$111,000</td><td>$112,000</td></tr></tbody></table></div>",
+      "En este ejemplo, la propuesta de mayor tasa deja $100,000 menos de capital faltante y solo $1,000 más en los dos cargos ilustrados. Eso no la convierte en la mejor opción: importan desembolsos, garantías, otros cargos y salida. Suponemos un saldo promedio del 60% de cada compromiso; el interés real depende de documentos y calendario. Sustituya la reserva original de financiamiento por todos los cargos esperados antes de cerrar el presupuesto. No cuente los mismos cargos dos veces.",
+      {
+        "h": "Compruebe el dinero disponible el primer día"
+      },
+      "Suponga que una propuesta desembolsa $300,000 al cierre, aplica $200,000 a deuda del terreno y retiene $40,000 para cargos y reservas especificados. Quedan $60,000 antes de otros usos del cierre. El compromiso total puede ser mayor porque los fondos de obra se entregan después. Pida esta conciliación en dólares.",
+      {
+        "h": "Lea el proceso de desembolsos antes de firmar"
+      },
+      "El <a href=\"https://help.aiacontracts.com/hc/en-us/articles/1500009387461-summary-g702-1992-application-and-certificate-for-payment\">resumen de solicitudes de pago de AIA</a> muestra por qué se registran por separado obra terminada, materiales almacenados, pagos anteriores, cambios y retenciones. Su financiamiento puede usar otros documentos. Solicite las instrucciones reales y un paquete de ejemplo.",
+      "La <a href=\"https://publishedguides.ncua.gov/examiner/Content/ExaminersGuide/Commercial%26MBL/CandD_Loans.htm\">orientación de NCUA</a> destaca el seguimiento de presupuesto, calendario y desembolsos. Conviértalo en preguntas prácticas: quién inspecciona, qué detiene un desembolso y quién cubre un aumento de costo. Consulte nuestra <a href=\"/es/blog/ground-up-construction-draw-schedule-cash-flow\">guía de efectivo entre desembolsos</a>.",
+      {
+        "h": "Pruebe un retraso y la salida prevista"
+      },
+      "Pida que expliquen el mismo escenario de retraso. Con un saldo hipotético de $1.4 millones y 10% de interés anual simple, tres meses adicionales cuestan $35,000 de interés, antes de extensiones, impuestos, seguros y otros gastos. Compare ese escenario con la reserva disponible.",
+      "Para varias viviendas, revise <a href=\"/es/blog/financing-multiple-spec-homes-builder-exposure\">exposición y liberación de unidades</a>. Para alquilar, compare el préstamo permanente previsto con el saldo de construcción en nuestra <a href=\"/es/blog/build-to-rent-construction-loan-dscr-exit\">guía de salida por refinanciamiento</a>. Un refinanciamiento planeado no está garantizado.",
+      {
+        "h": "¿Qué enviar a Stonehaven para comparar?"
+      },
+      "<ul><li>Ubicación, uso previsto y número de unidades.</li><li>Base y deuda del terreno propio, o precio y calendario de compra.</li><li>Presupuesto pendiente detallado, valor terminado estimado y calendario.</li><li>Proyectos similares terminados y función del contratista.</li><li>Financiamiento solicitado, efectivo y plan de venta o refinanciamiento.</li></ul>",
+      "Empiece con la <a href=\"/es/commercial/construction-loans#quick-inquiry\">consulta de construcción</a>. Indique que desea comparar propuestas; coordinaremos el siguiente paso para documentos privados. La respuesta inicial no es aprobación de crédito. El financiamiento depende de evaluación y disponibilidad.",
+      {
+        "h": "Fuentes y alcance"
+      },
+      "Revisado el 28 de octubre de 2026. El <a href=\"https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf\">manual de bienes raíces comerciales de OCC</a> trata presupuestos, patrimonio, costo, valor y administración. Los materiales de OCC y NCUA orientan a sus instituciones reguladas; no establecen términos universales de Stonehaven. Los ejemplos y preguntas son análisis educativo de Stonehaven. El efecto legal de una propuesta depende del texto y las circunstancias; consulte a un abogado antes de asumir obligaciones."
+    ]
+  }
+}

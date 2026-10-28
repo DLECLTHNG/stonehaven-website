@@ -5,7 +5,7 @@
   "product": "Commercial",
   "en": {
     "title": "Construction Financing When You Already Own the Property: Equity and Mortgage Payoff",
-    "desc": "Planning to tear down a property you already own? Separate existing debt, accepted land equity and the construction holdback before comparing term sheets.",
+    "desc": "Already own land or a teardown property? See how accepted land equity, an existing mortgage payoff and remaining build costs affect construction financing.",
     "eyebrow": "Builder financing",
     "terms": [
       [
@@ -26,6 +26,7 @@
       {
         "h": "The mortgage payoff is not the property’s value"
       },
+      "Use the <a href=\"/construction-loan-calculator\">construction loan calculator for land you already own</a> to compare the cost limit, completed-value limit and remaining funding gap. Enter the land basis and existing payoff separately; do not subtract the same land contribution twice.",
       "A payoff tells the closing team how much is owed to release an existing loan. It does not establish land value or the equity a new lender will recognize. Keep four figures distinct: original acquisition cost, documented improvements, current payoff and the lender’s accepted property basis. A new appraisal does not necessarily mean all appreciation qualifies as contributed equity.",
       "Ask how ownership duration, related-party purchases, prior work and existing liens affect the accepted basis. Public <a href=\"https://portal.limaone.com/documents/resources/New-Construction-Property-App.pdf\">construction application materials</a> illustrate why a review distinguishes a vacant-lot build from a teardown and asks about property equity and cash-out requests. Those questions do not establish a promise to release equity.",
       {
@@ -53,11 +54,11 @@
       },
       "<a href=\"/blog/atlanta-teardown-rebuild-construction-financing\">Atlanta Teardown and Rebuild Loans: From Purchase to New Construction</a> · <a href=\"/blog/100-ltc-construction-loans-builder-cash-needed\">100% LTC Construction Loans: How Much Cash Does a Builder Really Need?</a>"
     ],
-    "metaTitle": "Construction Loans on Property You Own | Stonehaven"
+    "metaTitle": "Construction Loan on Land You Own: Equity & Payoff | Stonehaven"
   },
   "es": {
     "title": "Financiar construcción en una propiedad que ya posee: patrimonio y saldo hipotecario",
-    "desc": "¿Piensa demoler un inmueble propio? Separe deuda existente, patrimonio aceptado y reserva de construcción antes de comparar condiciones.",
+    "desc": "¿Ya tiene terreno o un inmueble para demoler? Vea cómo patrimonio aceptado, saldo hipotecario y costos pendientes afectan el financiamiento de construcción.",
     "eyebrow": "Financiamiento para constructores",
     "terms": [
       [
@@ -78,6 +79,7 @@
       {
         "h": "El saldo hipotecario no es el valor del terreno"
       },
+      "Use la <a href=\"/es/construction-loan-calculator\">calculadora de construcción en terreno propio</a> para comparar límites por costo y valor terminado y el capital faltante. Introduzca base del terreno y saldo por separado; no reste el mismo aporte dos veces.",
       "El saldo de liquidación indica cuánto se debe para liberar el préstamo existente. No determina valor ni patrimonio aceptable. Separe costo original, mejoras documentadas, saldo actual y base que acepta el nuevo prestamista. Una tasación mayor no significa que toda la apreciación cuente como aportación.",
       "Pregunte cómo influyen tiempo de propiedad, compras entre partes relacionadas, obras previas y gravámenes. Una <a href=\"https://portal.limaone.com/documents/resources/New-Construction-Property-App.pdf\">solicitud pública de construcción</a> distingue terreno vacío de demolición y reconstrucción, y pregunta por patrimonio y retiro de efectivo. Esas preguntas no prometen liberar fondos.",
       {
@@ -105,6 +107,6 @@
       },
       "<a href=\"/es/blog/atlanta-teardown-rebuild-construction-financing\">Préstamos para demoler y reconstruir en Atlanta: de la compra a la obra</a> · <a href=\"/es/blog/100-ltc-construction-loans-builder-cash-needed\">Préstamos de construcción al 100% LTC: cuánto efectivo necesita el constructor</a>"
     ],
-    "metaTitle": "Construcción en propiedad propia | Stonehaven"
+    "metaTitle": "Construcción en terreno propio: patrimonio y deuda | Stonehaven"
   }
 }

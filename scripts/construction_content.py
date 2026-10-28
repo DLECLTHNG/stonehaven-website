@@ -16,7 +16,7 @@ EXISTING_ARTICLES = {
     'brookhaven-ga-100-ltc-ground-up-construction',
 }
 ENTRY_PAGES = {
-    '/commercial', '/resources/commercial', '/blog',
+    '/commercial', '/resources/commercial', '/blog', '/commercial/construction-loans',
     '/commercial/land-development-loans',
     '/commercial/construction-financing-for-architects',
     '/commercial/development-financing-for-architects',
@@ -25,7 +25,8 @@ ENTRY_PAGES = {
 
 def clean(text):
     return re.sub(r'<!-- CONSTRUCTION-CONTENT:START -->.*?<!-- CONSTRUCTION-CONTENT:END -->', '', text, flags=re.S).replace(
-        '<link rel="stylesheet" href="/construction-guides.css?v=1"/>', '')
+        '<link rel="stylesheet" href="/construction-guides.css?v=1"/>', '').replace(
+        '<link rel="stylesheet" href="/construction-guides.css?v=2"/>', '')
 
 
 def transform(text, path):
@@ -38,7 +39,9 @@ def transform(text, path):
     if not (article or old_article or local in ENTRY_PAGES):
         return text
     links = [(prefix + '/commercial/construction-loans', 'Financiamiento de obra nueva' if es else 'Ground-up construction financing')]
+    links.append((prefix + '/construction-loan-calculator', 'Calculadora: terreno, LTC y capital faltante' if es else 'Construction calculator: land equity, LTC and funding gap'))
     links += [(prefix + '/blog/' + p['slug'], p['esTitle'] if es else p['title']) for p in POSTS if local != '/blog/' + p['slug']]
+    links = [(url, label) for url, label in links if url != path]
     heading = 'Planifique su próxima obra' if es else 'Plan your next ground-up build'
     intro = 'Revise terreno, desembolsos, varias obras y la salida de alquiler antes de comprometer capital.' if es else 'Work through land, draws, multiple starts and the rental exit before committing capital.'
     section = '<!-- CONSTRUCTION-CONTENT:START --><section class="wrap search-topics"><h2>' + heading + '</h2><p>' + intro + '</p><ul class="search-program-links">'
@@ -58,7 +61,7 @@ def transform(text, path):
                           block, count=1, flags=re.S)
         text = re.sub(r'<section class="lead">.*?</section>', replace_cta, text, flags=re.S)
     if article:
-        text = text.replace('</head>', '<link rel="stylesheet" href="/construction-guides.css?v=1"/></head>')
+        text = text.replace('</head>', '<link rel="stylesheet" href="/construction-guides.css?v=2"/></head>')
         def enrich(m):
             data = json.loads(m[1])
             if data.get('@type') == 'BlogPosting':

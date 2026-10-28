@@ -1,0 +1,220 @@
+{
+  "en": {
+    "title": "Construction Loan Calculator: LTC, Land Equity & Cash | Stonehaven",
+    "heading": "Construction loan calculator",
+    "desc": "Estimate a ground-up construction loan using cost and completed value. Compare land ownership, existing debt and the funding gap before requesting terms.",
+    "intro": "Work out what your budget asks of the financing. This planning calculator separates the project cost basis from money still needed, then applies your own cost and value limits.",
+    "scope": "For business-purpose builds, spec homes and teardown projects. All starting figures are hypothetical assumptions, not Stonehaven program terms. Stonehaven is your mortgage broker.",
+    "groups": [
+      "1. Land and ownership",
+      "2. Remaining project budget",
+      "3. Your financing assumptions"
+    ],
+    "mode": "Land position",
+    "modes": [
+      "I already own the land",
+      "I am buying the land"
+    ],
+    "fields": {
+      "land": [
+        "Land purchase price or accepted land basis ($)",
+        "For owned land, use the basis accepted for financing, not automatically today’s market value."
+      ],
+      "payoff": [
+        "Existing land debt to repay ($)",
+        "Do not subtract this from the land basis. It is a separate use of the new loan."
+      ],
+      "hard": [
+        "Remaining hard costs ($)",
+        "Construction, demolition and site work still to be paid."
+      ],
+      "soft": [
+        "Remaining soft costs ($)",
+        "Design, engineering, permits and other eligible indirect costs."
+      ],
+      "contingency": [
+        "Remaining contingency ($)",
+        "A budget allowance, not permission to increase the loan."
+      ],
+      "finance": [
+        "Financing and carry allowance ($)",
+        "Include estimated interest, fees, insurance and taxes once. Interest is not calculated automatically."
+      ],
+      "excluded": [
+        "Additional costs outside eligible budget ($)",
+        "Excluded or unfinanced expenses. Do not include them again above."
+      ],
+      "value": [
+        "Estimated completed value ($)",
+        "A planning estimate. Actual financing uses the required appraisal and review."
+      ],
+      "ltc": [
+        "Assumed maximum loan-to-cost (%)",
+        "Enter the limit you want to test, from 0.1% to 100%."
+      ],
+      "ltv": [
+        "Assumed maximum completed-value LTV (%)",
+        "Enter your assumption. Different programs use different limits."
+      ]
+    },
+    "result": "Your planning estimate",
+    "loan_label": "Modeled loan amount",
+    "gap_label": "Remaining funding gap",
+    "rows": {
+      "cost": "Eligible cost basis",
+      "remaining": "Remaining eligible budget",
+      "need": "Uses still to fund",
+      "byCost": "Loan ceiling from LTC",
+      "byValue": "Loan ceiling from value",
+      "landEquity": "Land basis less existing debt"
+    },
+    "result_note": "The gap is an overall funding requirement, not a closing statement. Cash between draws and required liquidity may be additional. A positive result is not an approval.",
+    "privacy": "The calculator does not save or send your entered amounts. Contact us separately when you are ready to discuss the project.",
+    "error": "Enter all amounts as zero or a positive number, a completed value above zero, and percentages above zero and no greater than 100.",
+    "stress_title": "What if the build costs more or the appraisal is lower?",
+    "stress_intro": "These tests keep the base loan ceiling fixed when hard costs increase. A lower completed value may reduce proceeds before closing. No increase in the loan is assumed. Treat the hard-cost increase as an additional unfunded overrun, without reusing the contingency already in your budget.",
+    "stress_rows": [
+      "Your base assumptions",
+      "Hard costs 10% higher",
+      "Completed value 10% lower",
+      "Both changes together"
+    ],
+    "stress_headers": [
+      "Planning scenario",
+      "Modeled loan",
+      "Funding gap"
+    ],
+    "method_title": "How the construction loan calculation works",
+    "method_body": "<ol><li><strong>Eligible cost basis:</strong> accepted land basis plus remaining hard costs, soft costs, contingency and financing allowance.</li><li><strong>Loan ceilings:</strong> cost basis multiplied by your LTC limit, and completed value multiplied by your LTV limit.</li><li><strong>Uses still to fund:</strong> remaining budget plus the purchase price if buying, or existing land payoff if already owned.</li><li><strong>Modeled loan:</strong> the lowest of the two ceilings and the uses still to fund. This tool does not model cash-out.</li><li><strong>Funding gap:</strong> uses still to fund less the modeled loan, plus costs excluded from the eligible budget.</li></ol><p>Land already owned is included in the cost basis but is not a new cash purchase. Its existing payoff is a cash use. This distinction prevents counting the land contribution twice. Already-paid design fees, multiple liens, other collateral and complex capital stacks require a separate sources-and-uses review.</p>",
+    "example_title": "Example: owned land and a $1.6 million remaining budget",
+    "example_body": "<p>Assume free-and-clear land has an accepted basis of $400,000. Remaining costs are $1.2 million hard costs, $200,000 soft costs, $100,000 contingency and $100,000 financing allowance. The cost basis is $2 million. At an assumed 75% LTC, the cost ceiling is $1.5 million. A $3 million completed value at an assumed 65% LTV gives a $1.95 million value ceiling.</p><p>The model uses the lower $1.5 million loan, leaving $100,000 of the remaining budget unfunded. Add a $200,000 land payoff and the gap becomes $300,000. Buying the same land for $400,000 instead produces a $500,000 gap. These examples exclude any additional costs outside the entered budget.</p>",
+    "qa": [
+      [
+        "Can 100% of the construction budget still be less than 100% LTC?",
+        "Yes. With $400,000 of accepted land basis and $1.6 million of remaining costs, a $1.6 million loan is 80% of the $2 million total cost basis. It covers the remaining budget without financing the entire cost basis."
+      ],
+      [
+        "Does this estimate cash due at closing?",
+        "No. It estimates the overall funding gap. The closing advance, payoff, fees, equity funding sequence, retainage and reimbursement schedule determine when cash is needed."
+      ],
+      [
+        "Does owning land guarantee that no cash is needed?",
+        "No. Confirm the accepted basis, existing debt, costs excluded from financing and cash needed between draws. A property can contribute equity and still require cash during construction."
+      ]
+    ],
+    "cta": "Discuss my construction project",
+    "guide": "Compare construction term sheets",
+    "sources_title": "Methodology and sources",
+    "sources": "The formulas and worked examples are Stonehaven planning calculations. The OCC’s commercial real estate handbook explains LTC, LTV and construction budget review; it is banking guidance, not a list of Stonehaven loan terms.",
+    "reviewed": "Methodology reviewed October 28, 2026"
+  },
+  "es": {
+    "title": "Calculadora de construcción: LTC, terreno y capital | Stonehaven",
+    "heading": "Calculadora de préstamos de construcción",
+    "desc": "Estime financiamiento de obra nueva con costo y valor terminado. Compare terreno propio, deuda existente y capital faltante antes de solicitar términos.",
+    "intro": "Vea qué financiamiento necesita su presupuesto. Esta calculadora separa la base de costo del proyecto del dinero pendiente y aplica los límites sobre costo y valor que usted elija.",
+    "scope": "Para obras con fines de inversión, viviendas para venta y proyectos de demolición y reconstrucción. Las cifras iniciales son supuestos hipotéticos, no términos de Stonehaven. Stonehaven actúa como su intermediario hipotecario.",
+    "groups": [
+      "1. Terreno y propiedad",
+      "2. Presupuesto pendiente",
+      "3. Supuestos de financiamiento"
+    ],
+    "mode": "Situación del terreno",
+    "modes": [
+      "Ya soy dueño del terreno",
+      "Voy a comprar el terreno"
+    ],
+    "fields": {
+      "land": [
+        "Precio de compra o base aceptada del terreno ($)",
+        "Para terreno propio, use la base aceptada para financiamiento, no automáticamente su valor de mercado actual."
+      ],
+      "payoff": [
+        "Deuda del terreno que se debe liquidar ($)",
+        "No la reste de la base del terreno. Es un uso separado del nuevo préstamo."
+      ],
+      "hard": [
+        "Costos directos pendientes ($)",
+        "Construcción, demolición y obras del sitio aún por pagar."
+      ],
+      "soft": [
+        "Costos indirectos pendientes ($)",
+        "Diseño, ingeniería, permisos y otros costos indirectos admisibles."
+      ],
+      "contingency": [
+        "Contingencia pendiente ($)",
+        "Reserva del presupuesto, no autorización para aumentar el préstamo."
+      ],
+      "finance": [
+        "Reserva para financiamiento y mantenimiento ($)",
+        "Incluya intereses, cargos, seguros e impuestos estimados una sola vez. No calculamos intereses automáticamente."
+      ],
+      "excluded": [
+        "Costos adicionales fuera del presupuesto admisible ($)",
+        "Gastos excluidos o sin financiar. No los incluya de nuevo arriba."
+      ],
+      "value": [
+        "Valor terminado estimado ($)",
+        "Estimación para planificar. El financiamiento requiere tasación y revisión."
+      ],
+      "ltc": [
+        "Límite supuesto sobre costo, LTC (%)",
+        "Introduzca el límite que desea evaluar, de 0.1% a 100%."
+      ],
+      "ltv": [
+        "Límite supuesto sobre valor terminado, LTV (%)",
+        "Introduzca su supuesto. Los límites varían por programa."
+      ]
+    },
+    "result": "Estimación para planificar",
+    "loan_label": "Préstamo calculado",
+    "gap_label": "Capital pendiente de aportar",
+    "rows": {
+      "cost": "Base de costo admisible",
+      "remaining": "Presupuesto admisible pendiente",
+      "need": "Usos pendientes de financiar",
+      "byCost": "Límite según LTC",
+      "byValue": "Límite según valor",
+      "landEquity": "Base del terreno menos deuda"
+    },
+    "result_note": "La diferencia indica una necesidad total de fondos, no un estado de cierre. Puede necesitar liquidez adicional entre desembolsos. El resultado no constituye aprobación.",
+    "privacy": "La calculadora no guarda ni envía los montos que introduce. Contáctenos por separado cuando desee revisar el proyecto.",
+    "error": "Introduzca cero o un número positivo para cada monto, un valor terminado mayor que cero y porcentajes mayores que cero y no superiores a 100.",
+    "stress_title": "¿Qué pasa si aumenta el costo o baja la tasación?",
+    "stress_intro": "Estas pruebas mantienen el límite del préstamo inicial cuando aumentan los costos directos. Un valor terminado menor puede reducir los fondos antes del cierre. No suponemos un aumento del préstamo. Trate el aumento de costos como un gasto adicional sin financiar, sin reutilizar la contingencia ya incluida.",
+    "stress_rows": [
+      "Supuestos iniciales",
+      "Costos directos 10% mayores",
+      "Valor terminado 10% menor",
+      "Ambos cambios"
+    ],
+    "stress_headers": [
+      "Escenario",
+      "Préstamo calculado",
+      "Capital faltante"
+    ],
+    "method_title": "Cómo se calcula el financiamiento de construcción",
+    "method_body": "<ol><li><strong>Base de costo admisible:</strong> base aceptada del terreno más costos directos, indirectos, contingencia y reserva de financiamiento pendientes.</li><li><strong>Límites del préstamo:</strong> base de costo multiplicada por el límite LTC, y valor terminado multiplicado por el límite LTV.</li><li><strong>Usos pendientes:</strong> presupuesto pendiente más precio de compra si va a comprar, o saldo del terreno si ya es propietario.</li><li><strong>Préstamo calculado:</strong> el menor de los dos límites y los usos pendientes. No se calcula retiro de efectivo.</li><li><strong>Capital faltante:</strong> usos pendientes menos préstamo calculado, más costos excluidos del presupuesto admisible.</li></ol><p>El terreno propio se incluye en la base de costo, pero no es una nueva compra en efectivo. Su deuda pendiente sí requiere fondos. Esta distinción evita contar el aporte del terreno dos veces. Diseño ya pagado, varios gravámenes, otras garantías y estructuras complejas requieren una revisión separada de fuentes y usos.</p>",
+    "example_title": "Ejemplo: terreno propio y $1.6 millones de presupuesto pendiente",
+    "example_body": "<p>Suponga un terreno sin deuda con base aceptada de $400,000. Quedan $1.2 millones de costos directos, $200,000 indirectos, $100,000 de contingencia y $100,000 de reserva de financiamiento. La base de costo es $2 millones. Con un LTC supuesto de 75%, el límite es $1.5 millones. Un valor terminado de $3 millones y LTV supuesto de 65% dan un límite de $1.95 millones.</p><p>El modelo usa el menor préstamo de $1.5 millones, dejando $100,000 sin financiar. Si agrega $200,000 de deuda del terreno, faltan $300,000. Si en cambio compra ese terreno por $400,000, faltan $500,000. Estos ejemplos excluyen gastos adicionales fuera del presupuesto introducido.</p>",
+    "qa": [
+      [
+        "¿Financiar el 100% de la obra puede ser menos del 100% LTC?",
+        "Sí. Con una base aceptada del terreno de $400,000 y $1.6 millones pendientes, un préstamo de $1.6 millones equivale al 80% de la base total de $2 millones. Cubre el presupuesto pendiente sin financiar toda la base de costo."
+      ],
+      [
+        "¿Calcula el efectivo necesario al cierre?",
+        "No. Calcula la diferencia total de fondos. El desembolso inicial, saldo, cargos, orden de aportes, retenciones y calendario de reembolsos determinan cuándo se necesita efectivo."
+      ],
+      [
+        "¿Tener terreno garantiza que no necesitaré efectivo?",
+        "No. Confirme la base aceptada, deuda existente, costos excluidos y efectivo entre desembolsos. Un terreno puede aportar patrimonio y aún requerir efectivo durante la obra."
+      ]
+    ],
+    "cta": "Revisar mi proyecto de construcción",
+    "guide": "Comparar propuestas de construcción",
+    "sources_title": "Metodología y fuentes",
+    "sources": "Las fórmulas y ejemplos son cálculos de planificación de Stonehaven. El manual de bienes raíces comerciales de la OCC explica LTC, LTV y revisión de presupuestos; es orientación bancaria, no términos de préstamos de Stonehaven.",
+    "reviewed": "Metodología revisada el 28 de octubre de 2026"
+  }
+}

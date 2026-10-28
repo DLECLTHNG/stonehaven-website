@@ -16,8 +16,10 @@ from construction_content import transform as construction_content, clean as cle
 from site_presentation import normalize_presentation
 from home_styles import bundle as bundle_home_styles
 from site_positioning import build as build_positioning, footer as positioning_footer
+from subprocess import run
 R=Path(__file__).resolve().parent.parent
 build_positioning(R)
+run(["python3", str(R / "scripts/build-construction-planner.py")], check=True)
 ORIGIN='https://stonehavencre.com'
 skip={'docs','scripts','tests','downloads','node_modules'}
 files=[p for p in R.rglob('*.html') if not any(x.startswith('.') or x in skip for x in p.relative_to(R).parts)]

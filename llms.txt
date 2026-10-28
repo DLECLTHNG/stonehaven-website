@@ -151,6 +151,11 @@ The HUD section explains commercial FHA mortgage insurance programs, not consume
 - [Financing multiple spec homes: plan exposure, starts and sales](https://stonehavencre.com/blog/financing-multiple-spec-homes-builder-exposure): educational guide with explicit hypothetical assumptions and a construction-specific inquiry path.
 - [Build-to-rent financing: plan the DSCR exit before construction](https://stonehavencre.com/blog/build-to-rent-construction-loan-dscr-exit): educational guide with explicit hypothetical assumptions and a construction-specific inquiry path.
 
+## Construction planning tools
+
+- [Construction loan calculator](https://stonehavencre.com/construction-loan-calculator): user-supplied cost and completed-value limits, owned land versus purchase, payoff and remaining funding gap. Hypothetical assumptions, no rates or approval promised.
+- [Comparing construction term sheets](https://stonehavencre.com/blog/construction-loan-term-sheet-comparison): usable proceeds, closing advance, draws, fees, maturity and exit, with original hypothetical comparisons.
+
 ## DSCR guide series
 
 - [DSCR state guides](https://stonehavencre.com/dscr#state-guides): fifty state guides linked from the DSCR pillar, covering rental underwriting and state-specific considerations. Nationwide program availability varies by state.
