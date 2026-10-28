@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-21",
+  "updated": "2026-10-28",
   "posts": [
     {
       "slug": "spec-home-construction-loans-without-presales",
@@ -33,12 +33,23 @@
       "source_keys": [
         "refinance"
       ]
+    },
+    {
+      "slug": "construction-loan-term-sheet-comparison",
+      "title": "How to compare construction loan term sheets before you commit",
+      "esTitle": "Cómo comparar propuestas de préstamos de construcción antes de comprometerse",
+      "source_keys": [
+        "occ",
+        "aia",
+        "ncua"
+      ]
     }
   ],
   "sources": {
     "occ": "https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf",
     "aia": "https://help.aiacontracts.com/hc/en-us/articles/1500009387461-summary-g702-1992-application-and-certificate-for-payment",
     "tract": "https://www.occ.treas.gov/news-issuances/bulletins/2005/bulletin-2005-32.html",
-    "refinance": "https://www.occ.treas.gov/news-issuances/bulletins/2024/bulletin-2024-29.html"
+    "refinance": "https://www.occ.treas.gov/news-issuances/bulletins/2024/bulletin-2024-29.html",
+    "ncua": "https://publishedguides.ncua.gov/examiner/Content/ExaminersGuide/Commercial%26MBL/CandD_Loans.htm"
   }
 }

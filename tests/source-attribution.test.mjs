@@ -110,6 +110,19 @@ test('known AI referrals, paid campaigns and direct visits are classified conser
   }
 });
 
+test('construction tools retain only the content path when a visitor later makes an inquiry', async () => {
+  for (const path of ['/construction-loan-calculator', '/es/construction-loan-calculator', '/blog/construction-loan-term-sheet-comparison']) {
+    const storage = new Map();
+    page({storage, url:`https://stonehavencre.com${path}?budget=private-amount`, referrer:'https://chatgpt.com/'});
+    const inquiry=page({storage, url:'https://stonehavencre.com/commercial/construction-loans', referrer:`https://stonehavencre.com${path}`});
+    inquiry.submit(); await flush();
+    assert.equal(inquiry.extra().attribution.first_landing_path,path);
+    assert.equal(inquiry.extra().attribution.last_cre_content_path,path);
+    assert.equal(inquiry.extra().attribution.first_channel,'ai_referral');
+    assert.equal(JSON.stringify(inquiry.extra().attribution).includes('private-amount'),false);
+  }
+});
+
 test('campaign allowlist inherits across pages while first-touch source remains unchanged', async () => {
   const storage = new Map();
   page({ storage, url: 'https://stonehavencre.com/commercial?utm_source=google&utm_medium=cpc&utm_campaign=builders&email=not-stored@example.com' });

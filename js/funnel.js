@@ -99,6 +99,8 @@
     "/blog/commercial-refinance-cash-in-gap",
     "/blog/subdivision-loan-lot-release-prices",
     "/blog/construction-loan-interest-reserve-vs-contingency",
+    "/construction-loan-calculator",
+    "/blog/construction-loan-term-sheet-comparison",
     "/commercial/architect-financing-partners",
     "/commercial/construction-financing-for-architects",
     "/commercial/land-development-loans",
@@ -122,7 +124,7 @@
     if (sensitiveHousingPath(path) || legalPolicyPath(path)) return "";
     var plain = path.replace(/^\/es(?=\/)/, "");
     return /^\/(?:blog|resources|commercial|residential|dscr|heloc|sba)(?:\/[a-z0-9-]+)?$/.test(plain) ||
-      /^\/(?:contact|book|management|cash-out-refinance|bank-statement-loans|interest-only-loans|mortgage-calculator|commercial-loan-calculator|dscr-analyzer|dscr-review|dscr-program-calculator|sba-loan-calculator|sba-guide|refinance-calculator|terms-sheet|heloc-instant|heloc-wizard|heloc-planning-tools|calculation-methodology|editorial-policy)$/.test(plain) ? path : "";
+      /^\/(?:contact|book|management|cash-out-refinance|bank-statement-loans|interest-only-loans|mortgage-calculator|construction-loan-calculator|commercial-loan-calculator|dscr-analyzer|dscr-review|dscr-program-calculator|sba-loan-calculator|sba-guide|refinance-calculator|terms-sheet|heloc-instant|heloc-wizard|heloc-planning-tools|calculation-methodology|editorial-policy)$/.test(plain) ? path : "";
   }
   function privateContext() {
     var body = document.body;

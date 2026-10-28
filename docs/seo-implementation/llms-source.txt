@@ -150,3 +150,8 @@ The HUD section explains commercial FHA mortgage insurance programs, not consume
 - [Construction loan draws: how much cash do builders need between payments?](https://stonehavencre.com/blog/ground-up-construction-draw-schedule-cash-flow): educational guide with explicit hypothetical assumptions and a construction-specific inquiry path.
 - [Financing multiple spec homes: plan exposure, starts and sales](https://stonehavencre.com/blog/financing-multiple-spec-homes-builder-exposure): educational guide with explicit hypothetical assumptions and a construction-specific inquiry path.
 - [Build-to-rent financing: plan the DSCR exit before construction](https://stonehavencre.com/blog/build-to-rent-construction-loan-dscr-exit): educational guide with explicit hypothetical assumptions and a construction-specific inquiry path.
+
+## Construction planning tools
+
+- [Construction loan calculator](https://stonehavencre.com/construction-loan-calculator): user-supplied cost and completed-value limits, owned land versus purchase, payoff and remaining funding gap. Hypothetical assumptions, no rates or approval promised.
+- [Comparing construction term sheets](https://stonehavencre.com/blog/construction-loan-term-sheet-comparison): usable proceeds, closing advance, draws, fees, maturity and exit, with original hypothetical comparisons.
