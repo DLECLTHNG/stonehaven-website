@@ -77,7 +77,7 @@ def transform(text,path):
   text=text.replace('.<br><em>','. <br><em>')
   actions='<div class="inquiry-hero-actions"><a class="btn-primary" href="#inquire">'+('Hablemos de su financiamiento' if es else 'Discuss your financing')+'</a><a class="btn-quiet" href="tel:+14709704979">'+('Llámenos' if es else 'Call (470) 970-4979')+'</a></div><p class="inquiry-next">'+('Comparta su objetivo. Nuestro equipo revisará la consulta y explicará los siguientes pasos por correo o mensaje de texto.' if es else 'Share your financing goal. Our team will review the inquiry and explain the next steps by email or text.')+'</p>'
   actions=actions.replace('#inquire',home_anchor)
-  pos=text.index('<div class="funded-volume"');text=text[:pos]+block('ACTION',actions)+text[pos:]
+  pos=text.index('</section>',text.index('class="page-hero home-intro"'));text=text[:pos]+block('ACTION',actions)+text[pos:]
   proof=block('PROOF','<section class="wrap inquiry-proof"><h2>'+('De la estructura al cierre' if es else 'From financing structure to closing')+'</h2><div class="inquiry-proof-grid">'+evidence('construction',es,prefix+'/commercial/construction-loans#inquire')+evidence('dscr',es,home_anchor)+'</div></section>')
   pos=text.index('</section>',text.index('positioning-guides'))+len('</section>');text=text[:pos]+proof+text[pos:]
  else:

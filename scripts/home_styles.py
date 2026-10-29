@@ -17,14 +17,14 @@ def bundle(text, path, root):
         if not href or '://' in href[1]:
             return tag
         name = Path(href[1].split('?')[0]).name
-        if name not in {'styles.css', 'funnel.css', 'seo-resources.css', 'home-funded.css', 'inquiry-journeys.css', 'search-navigation.css'}:
+        if name not in {'styles.css', 'funnel.css', 'seo-resources.css', 'inquiry-journeys.css', 'search-navigation.css'}:
             return tag
         names.append(name)
         chunks.append('/* '+name+' */\n'+(root/name).read_text())
         return '<!-- HOME-STYLES -->' if len(chunks) == 1 else ''
     head, body = text.split('</head>', 1)
     head = re.sub(r'<link\b[^>]*>', collect, head)
-    if len(chunks) != 6:
+    if len(chunks) != 5:
         raise ValueError('Homepage CSS inventory changed: '+repr(names))
     chunks.insert(0, (root/'home-fonts.css').read_text())
     head = re.sub(r'<link\b[^>]*href="https://fonts\.(?:googleapis|gstatic)\.com[^"]*"[^>]*>', '', head)
