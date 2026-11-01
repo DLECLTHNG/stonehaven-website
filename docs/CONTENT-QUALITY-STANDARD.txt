@@ -1,0 +1,78 @@
+Stonehaven content quality standard
+Adopted November 1, 2026
+
+Purpose
+Answer a financing decision clearly, then offer the next useful step. Apply to
+new content and substantive revisions. Owner publication restrictions still
+apply. This standard does not resume Family, FHA, VA, HELOC-persona or
+first-time-buyer publication.
+
+Search intent and metadata
+Assign one primary question to each page. Use its language naturally in the
+search title, description, opening answer and relevant headings. Check existing
+pages before creating another URL. Do not add keyword repetition or location
+variants without distinct information. Keep canonical, hreflang, social metadata
+and the retained brief consistent.
+
+Answer and explanation
+Begin with a direct answer, including the qualification that materially changes
+it. Define unfamiliar terms. Use H2 for decisions or stages and H3 for narrower
+questions. Add a table when it makes a comparison easier. Use short paragraphs
+and lists for real steps or parallel items. Do not force a word count. A long
+construction guide should earn its length with different decisions, calculations,
+document steps and failure cases, not repeated summaries.
+
+Links
+Place descriptive internal links where the reader encounters the related
+question. A footer reading list is supplementary. Verify both route and fragment.
+Use the corresponding Spanish page when it exists; label English-only resources
+in Spanish copy. Replace generic source anchors with the publisher and topic.
+
+Evidence and business identity
+Use current primary sources near the claim they support. Prefer government,
+regulator, agency and professional-standard sources over competing lenders.
+Do not substitute agency conventional rules for a private DSCR program. Explain
+whether a source governs banks, credit unions, consumer loans or a named program.
+Do not remove a competitor citation while leaving an unsupported program claim.
+Omit or qualify that claim unless another source supports it.
+
+Stonehaven acts as mortgage broker. Link the genuine organizational byline to
+management. Never invent a named expert review, credentials, borrower experience,
+loan terms, reviews or closed deals. Label original calculations as hypothetical.
+Keep company-reported closings separate, including their limits and land-equity
+assumptions. Do not reinstate the removed aggregate funded-volume claim.
+
+Questions and structured data
+Write visible, specific questions with self-contained answers. Keep any schema
+consistent with the visible page. FAQ content helps readers, but do not promise
+FAQ rich results: Google retired that display feature in May 2026. Organization
+and article metadata do not guarantee rankings or AI citations.
+
+Video
+Optional, not a ranking requirement. Add a video only if it answers a question
+better than the text, comes from an appropriate publisher and has useful context
+or an accessible text alternative. Prefer a user-initiated, privacy-conscious
+load; do not add autoplay, tracking or blocking scripts just for time on page.
+No video was added in the November 1 revision.
+
+Inquiry and measurement safeguards
+Keep name/email validation, $50,000 HELOC minimum and 640 reported-score minimum.
+Preserve Netlify, office email and CRM routing and accepted-inquiry conversion
+tracking. Public inquiries must not solicit private documents or identifiers.
+Do not alter the secure application. Compare qualified leads and search visibility
+using actual available reports; do not claim a ranking or conversion improvement
+from publishing alone.
+
+Revisions and validation
+Use contentRevision in the retained brief only for an existing article receiving
+a substantive revision. scripts/article_quality.py rebuilds that article inside
+the existing page without changing its route or inquiry section. Keep the original
+publication date. Update visible modification dates, BlogPosting and sitemap for
+substantive changes only, not source-label corrections. Run check-site, all CI
+generators, and relevant mobile/desktop browser checks. Confirm preview behavior
+before publication and verify live URLs after an authorized production release.
+
+Primary search guidance checked November 1, 2026
+https://developers.google.com/search/docs/fundamentals/creating-helpful-content
+https://developers.google.com/search/docs/fundamentals/ai-optimization-guide
+https://developers.google.com/search/updates

@@ -5,32 +5,76 @@
   "product": "HELOC",
   "en": {
     "title": "HELOC or cash-out refinance? Compare the whole borrowing plan",
-    "desc": "Compare your existing mortgage, cash needs, repayment plan, and costs before choosing between a HELOC and cash-out refinancing.",
+    "desc": "Compare a HELOC with cash-out refinancing using net proceeds, combined payments, fees and repayment terms. Includes worked examples and key questions.",
     "eyebrow": "HELOC · Homeowner guide",
     "body": [
-      "Begin with the decision you are trying to make: do you need a separate source of funds, or do you want to replace the mortgage itself? Your current mortgage, the timing of your expenses, and your ability to manage the proposed payments belong in the same comparison.",
+      "<strong>A HELOC generally adds a separate credit line while keeping your existing mortgage. A cash-out refinance replaces that mortgage with a larger loan and pays out the remaining proceeds after payoffs and costs.</strong> The useful comparison is the combined payment, total borrowing cost and cash actually available for your project, not just which advertised rate is lower.",
+      "The <a href=\"https://www.consumerfinance.gov/ask-cfpb/what-other-types-of-loans-are-similar-to-a-heloc-en-253/\">CFPB comparison of HELOC alternatives</a> describes these structures and cautions that either may cost more depending on its terms. Stonehaven acts as your mortgage broker. We help review the figures and financing options; a public inquiry is not an approval or commitment.",
       {
-        "h": "What happens to the existing mortgage?"
+        "h": "HELOC versus cash-out refinance: the practical differences"
       },
-      "A HELOC generally sits alongside an existing mortgage. A home equity loan also provides separate borrowing, usually as one lump sum. A cash-out refinance replaces the existing mortgage with a new loan. The <a href=\"https://www.consumerfinance.gov/ask-cfpb/what-is-the-difference-between-a-home-equity-loan-and-a-home-equity-line-of-credit-heloc-en-247/\">CFPB explains the distinction between a line and a home equity loan</a>.",
+      "<table><caption>Compare the structure before comparing the quote</caption><thead><tr><th scope=\"col\">Question</th><th scope=\"col\">HELOC</th><th scope=\"col\">Cash-out refinance</th></tr></thead><tbody><tr><th scope=\"row\">What happens to the current mortgage?</th><td>Usually remains in place.</td><td>Replaced by the new loan.</td></tr><tr><th scope=\"row\">How do I receive funds?</th><td>Borrow under the line's draw rules and limits.</td><td>Receive net proceeds from the refinance.</td></tr><tr><th scope=\"row\">Which payments should I compare?</th><td>Existing mortgage plus the line's payment.</td><td>Replacement mortgage payment.</td></tr><tr><th scope=\"row\">What can change?</th><td>Rate, balance, access and repayment requirements, depending on the agreement.</td><td>Rate structure, term and total debt compared with the old mortgage.</td></tr></tbody></table>",
+      "A fixed home equity loan is another comparison when you want a separate lump sum. The <a href=\"/blog/heloc-vs-fixed-home-equity-loan\">HELOC versus home equity loan guide</a> focuses on that choice. Identify the structure first so that a quote for one product is not mistaken for another.",
       {
-        "h": "Compare two household plans"
+        "h": "Start with the mortgage you already have"
       },
-      "For a separate-lien option, write down the existing mortgage payment and the proposed additional payment. For a refinance, write down the proposed replacement payment and term. Then compare the full borrowing cost over the time you expect to keep the financing. A smaller monthly payment by itself does not settle the question.",
-      "A staged renovation creates a different cash need from one known bill. List the expected payments to contractors and when they fall due, rather than requesting the largest possible amount by default. Ask how a lender would handle a required initial draw or a change in your project schedule.",
+      "Record the outstanding balance, interest rate, remaining term, principal-and-interest payment and any other amounts included in the monthly payment. Use a recent statement for planning and an actual payoff quote for a transaction. Those figures are not always identical because a payoff may include accrued interest or other items.",
+      "If your current mortgage has a favorable rate, replacing its entire balance deserves a separate cost calculation. Keeping it does not automatically make a HELOC better, because the added line has its own cost and repayment risk. Ask for both structures using the same amount of usable cash and the same expected holding period.",
+      "Use the <a href=\"/cash-out-refinance\">cash-out refinance review</a> when replacing the first mortgage is part of your goal. If keeping that mortgage is central to your plan, the <a href=\"/heloc\">HELOC page</a> explains the initial review. Stonehaven currently accepts HELOC requests of at least $50,000 from applicants reporting a credit score of 640 or higher. Meeting those intake minimums does not establish eligibility or terms.",
       {
-        "h": "Questions to put beside each proposal"
+        "h": "How to calculate net cash from a refinance"
       },
-      "Ask which costs are due upfront, which are financed, whether there are ongoing fees, and what happens if you repay or close the account early. Record whether payments or rates can change. Ask for the repayment schedule and assumptions in writing so that you are comparing equivalent information.",
-      "If the purpose is paying other debts, compare the proposed plan with alternatives that do not secure those debts against your home. Your house is collateral for home equity borrowing. The <a href=\"https://www.consumerfinance.gov/ask-cfpb/what-is-a-home-equity-loan-en-106/\">CFPB home equity loan guidance</a> discusses that risk and credit-counseling alternatives.",
+      "<strong>Estimated net proceeds = new loan − mortgage payoffs − other amounts paid from the loan at closing.</strong> List the actual uses instead of treating the new loan minus the statement balance as guaranteed cash. Include financed costs only once. If you pay an item separately, show that cash expense separately.",
+      "In an original hypothetical example, a $375,000 replacement loan pays off $300,000 of existing debt and uses $9,000 for assumed closing charges and other closing items. The estimated cash available is $66,000. The loan exceeds the old debt by $75,000, but the borrower does not receive that entire difference. These amounts are illustrative, not fee estimates or lending terms.",
+      "A later refund of an old escrow account should not be treated as money available at the new closing unless the actual settlement arrangements establish that timing. Ask your servicer and closing team how the old and new escrow accounts will be handled. Compare the numbers with the <a href=\"https://www.consumerfinance.gov/owning-a-home/loan-estimate/\">CFPB Loan Estimate explainer</a> for applicable closed-end mortgage transactions. A HELOC uses different disclosures; do not assume it comes with the same form.",
       {
-        "h": "An illustrative planning example"
+        "h": "Compare monthly payments without hiding a longer repayment period"
       },
-      "A homeowner is planning a kitchen project in three stages and is unsure of the final cost. Another has a single completed project with a known bill. Neither situation proves that one loan is suitable. It tells the broker what to compare: timing of access, total cost, payment predictability, and the existing mortgage. These are hypothetical situations, not completed Stonehaven transactions.",
+      "A lower required payment can result from extending repayment, rather than reducing cost. Put the remaining term of the existing mortgage beside the proposed new term. Also distinguish principal-and-interest from the total housing payment, which can include taxes, insurance and other charges.",
+      "For example, a hypothetical $300,000 balance amortized over 20 years at 3% has a principal-and-interest payment of about $1,663.79. A hypothetical $375,000 replacement loan amortized over 30 years at 7% has a payment of about $2,494.88. These are fixed-rate mathematical illustrations, not current rates, offers or a recommendation. They exclude taxes, insurance and fees and do not compare equal cash proceeds against a HELOC.",
+      "To finish a real comparison, add the proposed HELOC payment to the existing mortgage and use the same project funding amount on both sides. Then compare interest, fees and balances remaining at the date you expect to sell or repay. A payment-only comparison leaves the remaining debt out of the decision. Our <a href=\"/heloc-planning-tools#payments\">HELOC payment worksheet</a> lets you test assumptions before discussing a quote.",
       {
-        "h": "Bring your figures to the conversation"
+        "h": "Match the funding schedule to the actual expense"
       },
-      "Use your estimated home value, remaining mortgage balance, and requested amount to <a href=\"/heloc#callback\">request a HELOC review</a>. Read the <a href=\"/blog/heloc-preparation-checklist\">preparation checklist</a> before the call, or explore the <a href=\"/cash-out-refinance\">cash-out refinance page</a> if replacing the mortgage is part of your goal. Stonehaven arranges financing through third-party lenders; final eligibility and terms depend on their review."
+      "A staged renovation needs a dated contractor-payment plan. A single known expense needs a defined amount and payment date. Ask whether the proposed line requires an initial draw, imposes minimum draws or charges fees for opening or closing the account. Do not request a larger line simply because a calculator shows theoretical equity.",
+      "If your project needs $60,000 in three stages, list each stage and date. Show what you can cover if the borrowing is delayed. That schedule gives the broker a more useful question than a maximum-loan request: which structure can fund these obligations at an acceptable cost and payment? The <a href=\"/blog/heloc-initial-draw-requirements\">initial-draw guide</a> explains what to verify before assuming unused borrowing will stay untouched.",
+      {
+        "h": "Stress-test a HELOC before comparing it with a new mortgage"
+      },
+      "Test a higher assumed rate, a larger drawn balance and the repayment phase separately. The line's low initial required payment may not show what you must pay later. The <a href=\"https://www.consumerfinance.gov/ask-cfpb/what-is-a-home-equity-line-of-credit-heloc-en-107/\">CFPB HELOC guide</a> explains variable rates, possible restrictions on additional borrowing and the transition out of the draw period.",
+      "Read <a href=\"/blog/heloc-draw-period-repayment-payments\">what happens to HELOC payments after the draw period</a> before relying on an interest-only estimate. Both HELOCs and cash-out mortgages secure borrowing against the property. If the aim is to repay other debts, compare alternatives that do not put the home behind those obligations.",
+      {
+        "h": "Compare costs over the period you expect to keep the loan"
+      },
+      "List origination charges, points, appraisal and title costs, ongoing fees and any applicable early-closure or prepayment provisions. Separate charges paid in cash from those added to the loan. Financed costs still have an economic cost even though you do not pay them from your bank account that day.",
+      "Choose a realistic comparison date, such as your planned sale or payoff. Ask for the payments made, interest and fees paid, and debt remaining at that date. Use the same project amount and include the retained first mortgage when comparing a HELOC. The <a href=\"/blog/compare-heloc-offers\">HELOC offer comparison guide</a> helps organize the agreement details.",
+      {
+        "h": "Questions homeowners ask about HELOCs and cash-out refinancing"
+      },
+      {
+        "h": "Is a HELOC always better if my first mortgage rate is low?",
+        "level": 3
+      },
+      "No. Keeping a low-rate first mortgage is one consideration. The line's rate, fees, required draws, repayment structure and your ability to handle both payments still need review.",
+      {
+        "h": "Is my home equity the same as the cash I can borrow?",
+        "level": 3
+      },
+      "No. Home value minus mortgage debt is an equity estimate. The allowable loan depends on the program's leverage limits and underwriting, and net cash can be reduced by payoffs and costs. Use the <a href=\"/blog/how-much-home-equity-can-i-borrow\">home-equity borrowing guide</a> to distinguish those figures.",
+      {
+        "h": "Can I compare a HELOC interest-only payment with a refinance payment?",
+        "level": 3
+      },
+      "You can list them, but they do different things. An interest-only payment does not reduce principal. An amortizing payment includes principal repayment. Compare the later repayment obligation and remaining balances as well.",
+      {
+        "h": "Can an investment property use the same financing as my home?",
+        "level": 3
+      },
+      "Do not assume that. Tell the broker the actual occupancy and intended use. A rental-property inquiry may need an investment HELOC or <a href=\"/dscr/cash-out-refinance\">DSCR cash-out refinance review</a>. Owner-occupied assumptions do not establish investment-property eligibility.",
+      {
+        "h": "Bring three numbers and a clear goal"
+      },
+      "Start with your estimated property value, current mortgage balance and requested amount. Add your state, occupancy, current rate, remaining term and what the funds will accomplish. Use the <a href=\"/heloc#callback\">HELOC review form</a> or the <a href=\"/cash-out-refinance#inquire\">cash-out refinance inquiry</a> for the route that matches your goal. We follow up by text where requested. Keep account numbers, tax returns and identity documents out of public inquiry fields."
     ],
     "terms": [
       [
@@ -46,32 +90,76 @@
   },
   "es": {
     "title": "¿HELOC o refinanciamiento con retiro de efectivo? Compare el plan completo",
-    "desc": "Compare su hipoteca actual, necesidad de efectivo, plan de pago y costos antes de elegir una HELOC o un refinanciamiento.",
+    "desc": "Compare HELOC y refinanciamiento con efectivo: fondos netos, pagos combinados, cargos y plazos. Incluye cálculos ilustrativos y preguntas clave.",
     "eyebrow": "HELOC · Guía para propietarios",
     "body": [
-      "Empiece con la decisión que desea tomar: ¿necesita fondos separados o quiere sustituir la hipoteca? Compare la hipoteca actual, las fechas de sus gastos y su capacidad para asumir los pagos propuestos.",
+      "<strong>Una HELOC generalmente añade una línea de crédito separada y conserva su hipoteca actual. Un refinanciamiento con retiro de efectivo sustituye esa hipoteca por un préstamo mayor y entrega el saldo después de cancelaciones y costos.</strong> Compare el pago combinado, el costo de financiamiento y el efectivo realmente disponible, no solo la tasa anunciada.",
+      "La <a href=\"https://www.consumerfinance.gov/ask-cfpb/what-other-types-of-loans-are-similar-to-a-heloc-en-253/\">comparación de alternativas a una HELOC del CFPB (en inglés)</a> explica estas estructuras y cómo sus términos afectan el costo. Stonehaven actúa como intermediario hipotecario y ayuda a revisar cifras y opciones. Una consulta pública no es aprobación ni compromiso de préstamo.",
       {
-        "h": "¿Qué pasa con la hipoteca actual?"
+        "h": "HELOC y refinanciamiento: diferencias prácticas"
       },
-      "Una HELOC generalmente se mantiene junto a la hipoteca existente. Un préstamo sobre el valor de la vivienda también ofrece financiamiento separado, normalmente en un solo desembolso. El refinanciamiento con retiro de efectivo sustituye la hipoteca. El <a href=\"https://www.consumerfinance.gov/ask-cfpb/what-is-the-difference-between-a-home-equity-loan-and-a-home-equity-line-of-credit-heloc-en-247/\">CFPB explica la diferencia entre una línea y un préstamo sobre el valor de la vivienda (en inglés)</a>.",
+      "<table><caption>Compare la estructura antes de comparar la cotización</caption><thead><tr><th scope=\"col\">Pregunta</th><th scope=\"col\">HELOC</th><th scope=\"col\">Refinanciamiento con efectivo</th></tr></thead><tbody><tr><th scope=\"row\">¿Qué pasa con la hipoteca actual?</th><td>Generalmente se conserva.</td><td>Se sustituye por el nuevo préstamo.</td></tr><tr><th scope=\"row\">¿Cómo recibo fondos?</th><td>Según las reglas y límites de disposición.</td><td>Como fondos netos del refinanciamiento.</td></tr><tr><th scope=\"row\">¿Qué pagos comparo?</th><td>Hipoteca existente más pago de la línea.</td><td>Pago de la hipoteca sustituta.</td></tr><tr><th scope=\"row\">¿Qué puede cambiar?</th><td>Tasa, saldo, acceso y pagos según el contrato.</td><td>Estructura de tasa, plazo y deuda total frente a la hipoteca anterior.</td></tr></tbody></table>",
+      "Un préstamo fijo sobre el valor de la vivienda es otra opción para comparar cuando necesita una suma separada. La <a href=\"/es/blog/heloc-vs-fixed-home-equity-loan\">guía de HELOC y préstamo fijo sobre el valor de la vivienda</a> explica esa decisión. Identifique primero el producto para no confundir cotizaciones de estructuras distintas.",
       {
-        "h": "Compare dos planes para su presupuesto"
+        "h": "Empiece con la hipoteca que ya tiene"
       },
-      "Para una opción separada, anote el pago hipotecario actual y el pago adicional propuesto. Para un refinanciamiento, anote el pago y plazo del préstamo que lo sustituye. Compare después el costo total durante el tiempo que espera mantener el financiamiento. Un pago mensual menor no resuelve por sí solo la decisión.",
-      "Una renovación por etapas requiere efectivo de forma distinta a una sola factura conocida. Anote los pagos previstos a contratistas y sus fechas. No solicite automáticamente el monto máximo. Pregunte cómo se trataría un desembolso inicial obligatorio o un cambio en el calendario del proyecto.",
+      "Anote saldo, tasa, plazo restante, pago de principal e intereses y otros conceptos incluidos en la cuota. Use un estado reciente para planificar y una cotización de cancelación para la operación. Pueden diferir porque la cancelación incluye intereses acumulados u otros conceptos.",
+      "Si la tasa actual es favorable, calcule por separado el costo de sustituir todo ese saldo. Conservarla tampoco convierte automáticamente a la HELOC en la mejor opción: la línea tiene sus propios costos y obligaciones. Solicite ambas comparaciones con el mismo efectivo utilizable y el mismo período previsto.",
+      "Use la <a href=\"/es/cash-out-refinance\">revisión de refinanciamiento con retiro de efectivo</a> si su objetivo incluye sustituir la primera hipoteca. Si quiere conservarla, consulte la <a href=\"/es/heloc\">página de HELOC</a>. Stonehaven acepta actualmente solicitudes de HELOC desde $50,000 para personas que declaran una puntuación de crédito de al menos 640. Cumplir esos mínimos iniciales no determina elegibilidad ni términos.",
       {
-        "h": "Preguntas para cada propuesta"
+        "h": "Cómo calcular el efectivo neto del refinanciamiento"
       },
-      "Pregunte qué costos se pagan al inicio, cuáles se financian, si existen cargos recurrentes y qué ocurre al pagar o cerrar la cuenta anticipadamente. Anote si la tasa o los pagos pueden cambiar. Pida el calendario de pagos y sus supuestos por escrito para comparar información equivalente.",
-      "Si desea pagar otras deudas, compare alternativas que no las garanticen con su vivienda. Su casa sirve como garantía del financiamiento. La <a href=\"https://www.consumerfinance.gov/ask-cfpb/what-is-a-home-equity-loan-en-106/\">guía del CFPB sobre préstamos sobre el valor de la vivienda (en inglés)</a> explica ese riesgo y alternativas de asesoramiento crediticio.",
+      "<strong>Fondos netos estimados = préstamo nuevo − cancelaciones hipotecarias − otros montos pagados del préstamo al cierre.</strong> Enumere los usos reales. La diferencia entre el préstamo y el saldo del estado de cuenta no equivale necesariamente al efectivo que recibirá. Incluya cada costo financiado una sola vez y muestre por separado lo pagado con fondos propios.",
+      "En un ejemplo hipotético original, un préstamo de $375,000 cancela $300,000 de deuda y destina $9,000 a cargos y otros conceptos supuestos del cierre. El efectivo disponible sería $66,000. El préstamo supera la deuda anterior en $75,000, pero el prestatario no recibe toda esa diferencia. Son cifras ilustrativas, no estimaciones de cargos ni condiciones de préstamo.",
+      "No considere una devolución posterior de la antigua cuenta de depósito en garantía como efectivo disponible al nuevo cierre sin confirmar las fechas. Pregunte al administrador y al equipo de cierre cómo se manejarán ambas cuentas. Para operaciones hipotecarias de plazo cerrado a las que corresponda, consulte la <a href=\"https://www.consumerfinance.gov/owning-a-home/loan-estimate/\">explicación del Loan Estimate del CFPB (en inglés)</a>. Una HELOC utiliza divulgaciones distintas; no dé por hecho que recibe el mismo formulario.",
       {
-        "h": "Ejemplo ilustrativo de planificación"
+        "h": "Compare pagos sin ocultar un plazo mayor"
       },
-      "Un propietario planea renovar la cocina en tres etapas y desconoce el costo final. Otro tiene una sola factura de un proyecto terminado. Ningún caso demuestra que un préstamo sea adecuado. Sirven para definir la comparación: acceso a los fondos, costo total, previsibilidad de pagos e hipoteca existente. Son situaciones hipotéticas, no operaciones cerradas por Stonehaven.",
+      "Un pago obligatorio menor puede resultar de extender la deuda, no de reducir su costo. Ponga el plazo restante junto al nuevo plazo. Distinga también principal e intereses del pago total de vivienda, que puede incluir impuestos, seguro y otros conceptos.",
+      "Por ejemplo, un saldo hipotético de $300,000 amortizado en 20 años al 3% tiene un pago de principal e intereses de aproximadamente $1,663.79. Un préstamo sustituto hipotético de $375,000 amortizado en 30 años al 7% tiene un pago de aproximadamente $2,494.88. Son cálculos con tasas fijas supuestas, no tasas actuales, ofertas ni recomendaciones. Excluyen impuestos, seguro y cargos; tampoco comparan por sí solos efectivo equivalente frente a una HELOC.",
+      "Para completar la comparación real, sume el pago propuesto de HELOC al de la hipoteca actual y use el mismo monto para el proyecto en ambos casos. Después compare intereses, cargos y saldos pendientes a la fecha prevista de venta o cancelación. Una comparación solo de pagos omite la deuda restante. La <a href=\"/es/heloc-planning-tools#payments\">herramienta de pagos HELOC</a> permite probar supuestos.",
       {
-        "h": "Prepare sus cifras"
+        "h": "Relacione el financiamiento con las fechas del gasto"
       },
-      "Con el valor estimado de su vivienda, saldo hipotecario y monto solicitado puede <a href=\"/es/heloc#callback\">pedir una revisión de HELOC</a>. Consulte la <a href=\"/es/blog/heloc-preparation-checklist\">lista de preparación</a> o la página de <a href=\"/es/cash-out-refinance\">refinanciamiento con retiro de efectivo</a>. Stonehaven organiza financiamiento mediante prestamistas externos; la elegibilidad y los términos finales dependen de su revisión."
+      "Una renovación por etapas necesita un calendario de pagos al contratista. Una factura conocida necesita monto y fecha. Pregunte por desembolso inicial obligatorio, retiros mínimos y cargos de apertura o cierre. No solicite automáticamente una línea mayor porque una calculadora muestre capital teórico.",
+      "Si necesita $60,000 en tres etapas, anote cada fecha y qué puede cubrir si el préstamo se retrasa. Eso permite preguntar qué estructura financia sus obligaciones con un costo y pago aceptables. La <a href=\"/es/blog/heloc-initial-draw-requirements\">guía del desembolso inicial</a> explica qué confirmar antes de asumir que dejará todo el crédito sin utilizar.",
+      {
+        "h": "Pruebe escenarios de pago antes de elegir una HELOC"
+      },
+      "Pruebe por separado una tasa mayor, un saldo utilizado mayor y la fase de amortización. El pago inicial reducido puede no representar la obligación futura. La <a href=\"https://www.consumerfinance.gov/ask-cfpb/what-is-a-home-equity-line-of-credit-heloc-en-107/\">guía HELOC del CFPB (en inglés)</a> explica tasas variables, posibles restricciones a nuevos retiros y el fin del período de disposición.",
+      "Lea <a href=\"/es/blog/heloc-draw-period-repayment-payments\">qué ocurre con los pagos al terminar el período de disposición</a>. Tanto la HELOC como la hipoteca con retiro de efectivo garantizan deuda con la propiedad. Si desea pagar otras deudas, compare alternativas que no las respalden con su vivienda.",
+      {
+        "h": "Compare costos durante el tiempo que conservará el préstamo"
+      },
+      "Enumere cargos de originación, puntos, tasación, título, cuotas recurrentes y condiciones de cierre o pago anticipado que correspondan. Separe cargos pagados en efectivo de los añadidos al préstamo. Financiar un cargo no elimina su costo económico.",
+      "Elija una fecha realista de comparación, como venta o cancelación prevista. Solicite pagos efectuados, intereses y cargos pagados, y deuda restante en esa fecha. Mantenga constante el monto del proyecto e incluya la primera hipoteca conservada en el escenario HELOC. La <a href=\"/es/blog/compare-heloc-offers\">guía de comparación de ofertas HELOC</a> ayuda a ordenar los detalles.",
+      {
+        "h": "Preguntas frecuentes sobre HELOC y refinanciamiento"
+      },
+      {
+        "h": "¿Siempre conviene una HELOC si mi primera hipoteca tiene tasa baja?",
+        "level": 3
+      },
+      "No. Conservar una tasa baja es un factor. También deben revisarse tasa y cargos de la línea, desembolsos obligatorios, amortización y capacidad de cumplir ambos pagos.",
+      {
+        "h": "¿El capital de mi vivienda equivale a lo que puedo pedir?",
+        "level": 3
+      },
+      "No. Valor menos deuda es una estimación de capital. El monto permitido depende de límites y evaluación; cancelaciones y costos pueden reducir el efectivo. La <a href=\"/es/blog/how-much-home-equity-can-i-borrow\">guía sobre cuánto capital puede pedir</a> distingue esas cifras.",
+      {
+        "h": "¿Puedo comparar un pago de solo intereses con uno de refinanciamiento?",
+        "level": 3
+      },
+      "Puede anotarlos, pero cumplen funciones distintas. El pago de solo intereses no reduce principal. El pago amortizado sí incluye devolución de capital. Compare también obligación futura y saldos restantes.",
+      {
+        "h": "¿Una propiedad de alquiler usa el mismo financiamiento que mi vivienda?",
+        "level": 3
+      },
+      "No lo suponga. Declare la ocupación y uso reales. Podría necesitar una HELOC de inversión o una <a href=\"/dscr/cash-out-refinance\">revisión de refinanciamiento DSCR con retiro de efectivo (en inglés)</a>. Los supuestos de vivienda principal no establecen elegibilidad de inversión.",
+      {
+        "h": "Prepare tres cifras y un objetivo"
+      },
+      "Comience con valor estimado, saldo hipotecario y monto solicitado. Añada estado, ocupación, tasa actual, plazo restante y finalidad. Use el <a href=\"/es/heloc#callback\">formulario de revisión HELOC</a> o la <a href=\"/es/cash-out-refinance#inquire\">consulta de refinanciamiento con efectivo</a>. Damos seguimiento por mensaje de texto cuando se solicita. No incluya números de cuenta, declaraciones tributarias ni documentos de identidad en campos públicos."
     ],
     "terms": [
       [
@@ -84,5 +172,13 @@
       ]
     ],
     "metaTitle": "HELOC o refinanciamiento con retiro de efectivo | Stonehaven Lending"
+  },
+  "contentRevision": {
+    "updated": "2026-11-01",
+    "citations": [
+      "https://www.consumerfinance.gov/ask-cfpb/what-other-types-of-loans-are-similar-to-a-heloc-en-253/",
+      "https://www.consumerfinance.gov/ask-cfpb/what-is-a-home-equity-line-of-credit-heloc-en-107/",
+      "https://www.consumerfinance.gov/owning-a-home/loan-estimate/"
+    ]
   }
 }

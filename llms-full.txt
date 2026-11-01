@@ -2623,7 +2623,7 @@ How to read a rental-property DSCR calculation
  | Monthly PITIA | $2,000
  | DSCR: $2,500 ÷ $2,000 | 1.25
 
-A 1.25 DSCR is not a 25% investment return.  The $500 difference in this example is before vacancy, repairs, management and other operating costs. A qualifying ratio is also not an approval: credit, property eligibility, leverage, reserves and documentation still require review.
+A 1.25 DSCR is not a 25% investment return.  The $500 difference in this example is before vacancy, repairs, management and other operating costs. A qualifying ratio is also not an approval: credit, property eligibility, leverage, reserves and cash to close (https://stonehavencre.com/blog/dscr-loan-reserves-cash-to-close) , and documentation still require review.
 
 Commercial-property DSCR usually uses annual net operating income divided by annual debt service. Keep that calculation separate from a residential rental program’s rent-to-payment ratio. Five-to-eight-unit properties need a program-specific review (https://stonehavencre.com/commercial/5-8-unit-financing) .
 

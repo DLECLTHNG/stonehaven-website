@@ -6,7 +6,7 @@
   "en": {
     "metaTitle": "DSCR Reserves and Cash to Close | Stonehaven",
     "title": "DSCR loan reserves: how much cash should remain after closing?",
-    "desc": "Build a rental-property cash plan that separates the down payment, closing costs, lender reserves and repairs you will fund after purchase.",
+    "desc": "Plan DSCR loan reserves and cash to close with a worked rental-purchase example. Separate down payment, closing costs, required assets and operating cash.",
     "eyebrow": "DSCR · Investor cash planning",
     "terms": [
       [
@@ -28,7 +28,7 @@
         "h": "What DSCR reserves mean"
       },
       "Reserves are eligible assets the lender verifies as a financial cushion after the transaction. A program may express them as a number of monthly housing payments. Ask which payment is used, how many months apply and which assets qualify. A retirement or investment account may receive different treatment from cash, and an amount shown on a statement is not automatically the amount counted by underwriting.",
-      "There is no single reserve rule across all DSCR lenders. For example, <a href=\"https://visiolending.com/lending-process/\">one lender's published process</a> distinguishes cash needed to close from required reserves and specifies how it treats different account types. A <a href=\"https://corr.pennymac.com/announcements/announcement-26-80\">July 2026 lender update</a> also illustrates that reserve and investor requirements change. Those references describe their own programs, not a universal Stonehaven requirement.",
+      "There is no single reserve rule across all DSCR programs. For a useful comparison, <a href=\"https://selling-guide.fanniemae.com/sel/b3-4.1-01/minimum-reserve-requirements\">Fannie Mae defines mortgage reserves as eligible assets available after closing</a> and deducts funds used to close before assessing reserves. That is an agency conventional-loan rule, not a DSCR requirement. Ask the DSCR program to state its own eligible assets, payment basis and required amount in writing.",
       {
         "h": "Separate four uses of cash"
       },
@@ -44,7 +44,7 @@
       {
         "h": "A passing ratio does not replace an operating budget"
       },
-      "Many one-to-four-unit DSCR programs compare qualifying monthly rent with principal, interest, taxes, insurance and applicable association dues, often called PITIA. That program calculation differs from the commercial-property method based on net operating income divided by debt service. The <a href=\"https://visiolending.com/dscr-loans/\">residential investor-program explanation</a> and the <a href=\"https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf\">OCC's commercial real estate handbook</a> illustrate that distinction.",
+      "Many one-to-four-unit DSCR programs compare qualifying monthly rent with principal, interest, taxes, insurance and applicable association dues, often called PITIA. That program calculation differs from the commercial-property method based on net operating income divided by debt service. The <a href=\"/dscr-program-calculator\">Stonehaven qualifying-rent calculator</a> and the <a href=\"https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf\">OCC's commercial real estate handbook</a> illustrate that distinction.",
       "Suppose the example property has $3,000 of qualifying monthly rent and a $2,400 monthly PITIA payment. The program-style ratio is 1.25. The $600 difference still has to support expenses not included in that payment, such as maintenance, management and turnover. It is not automatically net cash flow or profit. Use our <a href=\"/dscr-program-calculator\">DSCR program calculator</a> for the qualification estimate and a separate operating budget for ownership decisions.",
       "One month without rent plus a $1,800 repair would require $4,200 just to cover that month's $2,400 payment and the repair. Starting with $14,400 in cash, those two uses would leave $10,200, before utilities or other expenses. This hypothetical stress test shows why the right operating cushion depends on the property and your circumstances, even when the initial underwriting ratio looks comfortable.",
       {
@@ -52,6 +52,16 @@
       },
       "List the accounts you intend to use, their owners and any restrictions on access. Ask the lender how it handles funds held in an LLC, jointly held accounts, recent transfers, investment assets and cash-out proceeds. Do not assume proceeds from the new refinance count toward reserves until the specific program confirms that treatment.",
       "Keep an audit trail for earnest money and transfers between accounts. Avoid moving funds repeatedly merely to make a statement look simpler. If the purchase is one of several transactions closing near the same date, present the combined plan so the same funds are not allocated to multiple properties. Private statements belong in a designated secure document process, not a public inquiry form.",
+      {
+        "h": "Check the reserve calculation before comparing DSCR quotes"
+      },
+      "Ask each proposal to state the monthly payment used, required reserve months, eligible account value and any adjustment for other financed properties. A requirement of six months of a $2,400 payment means $14,400 in this hypothetical calculation. It is not a universal six-month DSCR rule. If another quote uses a different payment or asset haircut, the same number of months can represent a different amount of qualifying funds.",
+      "Record whether cash-out proceeds may count, whether funds must be seasoned and whether entity-held assets need additional documentation. Mark unanswered items as unresolved rather than inserting a rule from a different product. Our <a href=\"/resources/dscr-vs-conventional\">DSCR versus conventional comparison</a> explains why the two paths should be evaluated separately.",
+      {
+        "h": "Connect reserves with the exit and property budget"
+      },
+      "For a refinance, compare the new loan with payoff, closing uses and any cash contribution before deciding which assets remain. For a rental conversion, budget completion and leasing separately from the reserve requirement. Use the <a href=\"/dscr/cash-out-refinance\">DSCR cash-out refinance review</a> for the financing question and the <a href=\"/dscr-program-calculator\">qualifying-rent calculator</a> for a transparent rent-and-payment estimate. Neither establishes approval.",
+      "A useful review file contains one account summary, one sources-and-uses schedule and one property operating budget. Show where each dollar goes. If the same funds also support another purchase or construction project, disclose that commitment. This makes a reserve calculation useful for a decision instead of merely producing a passing number.",
       {
         "h": "Common questions"
       },
@@ -68,7 +78,7 @@
   "es": {
     "metaTitle": "Reservas DSCR y efectivo para cerrar | Stonehaven",
     "title": "Reservas de un préstamo DSCR: ¿cuánto dinero debe quedar después del cierre?",
-    "desc": "Prepare un presupuesto para comprar un inmueble de alquiler que distinga pago inicial, costos de cierre, reservas exigidas y reparaciones posteriores.",
+    "desc": "Planifique reservas DSCR y efectivo al cierre con un ejemplo de compra para alquiler. Separe pago inicial, costos, activos exigidos y efectivo operativo.",
     "eyebrow": "DSCR · Planificación del efectivo",
     "terms": [
       [
@@ -90,7 +100,7 @@
         "h": "Qué significan las reservas DSCR"
       },
       "Las reservas son activos elegibles que el prestamista verifica como respaldo financiero después de la operación. Un programa puede expresarlas como cierta cantidad de pagos mensuales de vivienda. Pregunte qué pago se utiliza, cuántos meses se exigen y qué activos son aceptables. Una cuenta de jubilación o inversión puede recibir un tratamiento distinto al efectivo; el saldo del estado de cuenta no equivale automáticamente al monto reconocido para calificar.",
-      "No existe una única regla de reservas para todos los prestamistas DSCR. Por ejemplo, <a href=\"https://visiolending.com/lending-process/\">el proceso publicado por un prestamista</a> distingue el efectivo para cerrar de las reservas e indica cómo trata distintos tipos de cuenta. Una <a href=\"https://corr.pennymac.com/announcements/announcement-26-80\">actualización de otro prestamista de julio de 2026</a> muestra que los requisitos también cambian. Son referencias en inglés sobre sus programas, no un requisito universal de Stonehaven.",
+      "No existe una regla única de reservas para todos los programas DSCR. Como comparación, <a href=\"https://selling-guide.fanniemae.com/sel/b3-4.1-01/minimum-reserve-requirements\">Fannie Mae define reservas como activos elegibles disponibles después del cierre (en inglés)</a> y descuenta los fondos usados para cerrar. Es una regla de préstamos convencionales de agencia, no un requisito DSCR. Solicite por escrito activos aceptados, base del pago y monto exigido por el programa concreto.",
       {
         "h": "Distinga cuatro usos del dinero"
       },
@@ -106,7 +116,7 @@
       {
         "h": "Cumplir el índice no sustituye un presupuesto operativo"
       },
-      "Muchos programas DSCR de una a cuatro unidades comparan la renta mensual admitida con capital, intereses, impuestos, seguro y cuotas de asociación aplicables, o PITIA. Ese cálculo de programa difiere del método comercial basado en ingreso operativo neto dividido entre servicio de deuda. La <a href=\"https://visiolending.com/dscr-loans/\">explicación de un programa para inversionistas</a> y el <a href=\"https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf\">manual de inmuebles comerciales de la OCC</a>, en inglés, ilustran la diferencia.",
+      "Muchos programas DSCR de una a cuatro unidades comparan la renta mensual admitida con capital, intereses, impuestos, seguro y cuotas de asociación aplicables, o PITIA. Ese cálculo de programa difiere del método comercial basado en ingreso operativo neto dividido entre servicio de deuda. La <a href=\"/es/dscr-program-calculator\">calculadora de renta elegible de Stonehaven</a> y el <a href=\"https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf\">manual de inmuebles comerciales de la OCC</a>, en inglés, ilustran la diferencia.",
       "Suponga que el inmueble del ejemplo tiene $3,000 de renta mensual admitida y un pago PITIA de $2,400. El índice del programa es 1.25. La diferencia de $600 todavía debe cubrir gastos no incluidos en ese pago, como mantenimiento, administración y cambios de inquilino. No es automáticamente flujo neto ni ganancia. Use nuestra <a href=\"/es/dscr-program-calculator\">calculadora del programa DSCR</a> para estimar la calificación y un presupuesto operativo separado para decidir sobre la inversión.",
       "Un mes sin renta y una reparación de $1,800 exigirían $4,200 solo para cubrir el pago de $2,400 y la reparación. Si empieza con $14,400 en efectivo, ambos usos dejan $10,200, antes de servicios y otros gastos. Esta prueba hipotética muestra por qué el respaldo adecuado depende del inmueble y de sus circunstancias, aunque el índice inicial parezca cómodo.",
       {
@@ -114,6 +124,16 @@
       },
       "Anote las cuentas que utilizará, sus titulares y las restricciones de acceso. Pregunte cómo trata el prestamista los fondos de una LLC, las cuentas conjuntas, las transferencias recientes, las inversiones y el efectivo de un refinanciamiento. No suponga que los fondos de la nueva operación cuentan como reservas hasta que el programa lo confirme.",
       "Conserve un registro del depósito de garantía y las transferencias. Evite mover fondos repetidamente solo para simplificar un estado de cuenta. Si tiene varias operaciones con fechas cercanas, presente el plan conjunto para no asignar el mismo dinero a varios inmuebles. Los estados de cuenta privados deben entregarse mediante un proceso seguro, no por un formulario público.",
+      {
+        "h": "Compruebe el cálculo antes de comparar propuestas DSCR"
+      },
+      "Pida que cada propuesta indique pago mensual utilizado, meses exigidos, valor elegible de cuentas y ajustes por otras propiedades financiadas. Seis meses de un pago de $2,400 equivalen a $14,400 en este ejemplo hipotético. No es una regla universal DSCR de seis meses. Si cambia el pago o el valor reconocido de los activos, el mismo número de meses puede exigir fondos diferentes.",
+      "Anote si pueden contar los fondos de un retiro de efectivo, si se exige antigüedad y si los activos de una entidad necesitan más documentación. Marque lo pendiente en vez de aplicar reglas de otro producto. La <a href=\"/resources/dscr-vs-conventional\">comparación DSCR y convencional (en inglés)</a> explica por qué deben evaluarse por separado.",
+      {
+        "h": "Relacione reservas, salida y presupuesto del inmueble"
+      },
+      "En un refinanciamiento, compare préstamo nuevo, cancelación, usos al cierre y aportación antes de calcular activos restantes. Si convierte un inmueble a alquiler, separe terminación y arrendamiento del requisito de reservas. Use la <a href=\"/dscr/cash-out-refinance\">revisión DSCR con retiro de efectivo (en inglés)</a> para el financiamiento y la <a href=\"/es/dscr-program-calculator\">calculadora de renta elegible</a> para estimar renta y pagos. Ninguna determina aprobación.",
+      "Un expediente útil incluye resumen de cuentas, fuentes y usos, y presupuesto operativo. Muestre el destino de cada dólar. Si esos fondos también respaldan otra compra u obra, declare ese compromiso. Así el cálculo sirve para decidir, no solo para obtener un resultado que parezca suficiente.",
       {
         "h": "Preguntas frecuentes"
       },
@@ -125,6 +145,13 @@
         "h": "Revise el plan completo con Stonehaven"
       },
       "Stonehaven es un corredor hipotecario que gestiona financiamiento mediante prestamistas. Comparta el estado donde está el inmueble, precio o valor, préstamo solicitado, renta prevista, impuestos, seguro y fondos disponibles mediante el <a href=\"/es/dscr-review\">formulario de revisión DSCR</a>. Damos seguimiento por mensaje de texto y podemos ayudarle a comparar estructuras y opciones de colocación. La disponibilidad y las condiciones comerciales varían por estado y prestamista. Una revisión no es aprobación y ningún monto concreto de reservas garantiza elegibilidad."
+    ]
+  },
+  "contentRevision": {
+    "updated": "2026-11-01",
+    "citations": [
+      "https://selling-guide.fanniemae.com/sel/b3-4.1-01/minimum-reserve-requirements",
+      "https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf"
     ]
   }
 }

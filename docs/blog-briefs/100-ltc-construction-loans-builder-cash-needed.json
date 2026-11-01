@@ -5,7 +5,7 @@
   "product": "Commercial",
   "en": {
     "title": "Up to 100% LTC Construction Loans: How Much Cash Does a Builder Really Need?",
-    "desc": "A 100% loan-to-cost headline does not tell you the cash needed at closing or between draws. Compare cost, completed value, reserves and funding timing.",
+    "desc": "Compare 100% LTC construction loans using eligible costs, completed value, land equity and draw timing. Calculate what cash a builder may still need.",
     "eyebrow": "Builder financing",
     "terms": [
       [
@@ -22,42 +22,109 @@
       ]
     ],
     "body": [
-      "When a builder asks for 100% financing, the first question is: 100% of what? Purchase price, eligible project cost and completed appraised value are different bases. A high loan-to-cost ratio can reduce the equity contribution, but it does not by itself establish the closing advance or eliminate the need for working capital.",
+      "<strong>Up to 100% LTC construction financing means the loan may cover all costs accepted in a particular program's cost basis. It does not automatically mean zero cash from the builder.</strong> The completed-value limit, land treatment, fees, reserves and draw schedule can each change what you need to contribute. Before comparing percentages, ask for a sources-and-uses schedule and a month-by-month cash plan.",
+      "Stonehaven is a mortgage broker. We can review high-leverage ground-up construction scenarios, including structures with up to 100% LTC where available and approved. This guide explains how to evaluate that headline. Its calculations are original hypothetical examples, not a rate quote, approval or representation of a completed transaction. For the overall process, start with our <a href=\"/commercial/construction-loans\">ground-up construction financing overview</a>.",
       {
-        "h": "What 100% loan-to-cost means"
+        "h": "What does 100% LTC mean in a construction loan?"
       },
-      "LTC compares the loan commitment with costs the lender accepts. If eligible costs are $2 million, a hypothetical 100% LTC ceiling is $2 million. That covers the eligible cost subtotal in this example, before considering excluded costs, fees, required reserves or other loan limits. These figures explain the calculation and are not a Stonehaven offer.",
-      "Stonehaven works with lenders that can offer up to 100% LTC for qualifying construction projects. Availability depends on the lender and the specific deal. A program maximum is not an approval for a particular builder. Confirm the current limits for loan size, experience, credit, liquidity, location and project type with the actual financing source.",
+      "Loan-to-cost, or LTC, is the loan amount divided by the eligible project cost. A $2 million commitment against a $2 million accepted cost basis is 100% LTC. A $1.8 million commitment against the same basis is 90% LTC. Neither ratio tells you when the money becomes available or how much of the commitment is reserved for interest and fees.",
+      "The denominator matters as much as the percentage. One proposal may include acquisition, construction and selected soft costs. Another may describe financing for the construction budget only, with land equity supplied separately. Ask for the actual dollar cost basis behind the quoted LTC. Do not compare two percentages until both proposals use the same costs.",
+      "The <a href=\"https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf\">OCC's Commercial Real Estate Lending handbook</a> discusses feasibility, borrower capacity, valuation and construction administration. These are useful underwriting concepts, not an endorsement of a 100% LTC product or a universal rule for private construction financing.",
       {
-        "h": "The completed-value limit can be the tighter test"
+        "h": "LTC, completed value and loan proceeds are different figures"
       },
-      "Assume the same $2 million eligible budget, a $2.4 million completed valuation and a hypothetical 70% completed-value cap. That second test would limit the commitment to $1.68 million, below the $2 million LTC result. The cost-versus-loan difference becomes $320,000. Both percentages in this example are assumptions, not quoted terms.",
-      "Ask the reviewer to put each test on one page: eligible cost basis, LTC ceiling, completed-value ceiling and final proposed commitment. A projected profit margin is not the same as cash available to complete the work. An appraisal below the builder’s target can change the financing even when the budget stays unchanged.",
+      "A construction proposal may be constrained by both eligible cost and completed value. Calculate each limit separately, then identify which one controls. A favorable cost ratio cannot overcome a lower valuation limit unless the actual program allows a different structure.",
+      "<ul><li><strong>LTC:</strong> commitment divided by accepted project costs.</li><li><strong>Completed-value ratio:</strong> commitment divided by the accepted value of the finished project. The proposal may call this completed LTV, LTARV or LTCV; ask what that label means.</li><li><strong>Initial advance:</strong> the amount released at closing, before later construction draws.</li><li><strong>Net construction proceeds:</strong> the portion available for the work after other financed uses and holdbacks.</li></ul>",
+      "A $2 million facility can therefore have a much smaller closing advance. If the facility also pays acquisition debt or funds an interest reserve, those uses do not create additional dollars for the contractor. Our <a href=\"/construction-loan-calculator\">construction loan calculator</a> helps separate cost, value, land and cash assumptions. Its results are estimates, not underwriting decisions.",
       {
-        "h": "Build a cash plan for three moments"
+        "h": "Worked example: the value cap creates a $320,000 gap"
       },
-      "<strong>Before closing:</strong> identify deposits, design, reports, permits and other costs that must be paid before funding. Ask whether any completed expenditures can count toward the required contribution and what proof is needed.",
-      "<strong>At closing:</strong> reconcile acquisition or payoff, closing costs, equity already invested and the lender’s initial advance. Ask whether points, interest reserves or other financed costs consume part of the commitment instead of adding construction dollars.",
-      "<strong>Between draws:</strong> compare contractor payment dates with inspection and reimbursement timing. Ask about holdbacks, retainage, minimum draw amounts and how change orders are handled. A financed construction budget can still require the builder to pay a bill before reimbursement arrives.",
+      "Assume eligible project costs of $2 million and a completed valuation of $2.4 million. For illustration only, assume a 100% LTC ceiling and a 70% completed-value ceiling. These percentages are deliberately hypothetical, not current Stonehaven terms.",
+      "<table><caption>Illustrative commitment calculation</caption><thead><tr><th scope=\"col\">Test</th><th scope=\"col\">Calculation</th><th scope=\"col\">Result</th></tr></thead><tbody><tr><th scope=\"row\">Cost ceiling</th><td>$2,000,000 × 100%</td><td>$2,000,000</td></tr><tr><th scope=\"row\">Completed-value ceiling</th><td>$2,400,000 × 70%</td><td>$1,680,000</td></tr><tr><th scope=\"row\">Lower limit</th><td>Lower of the two results</td><td>$1,680,000</td></tr><tr><th scope=\"row\">Eligible-cost gap</th><td>$2,000,000 − $1,680,000</td><td>$320,000</td></tr></tbody></table>",
+      "The project needs $320,000 beyond the modeled commitment to cover that accepted cost basis. That is not yet a complete cash-to-close answer. Some qualifying contribution may already exist as recognized land equity or paid costs. Other costs may be excluded from the eligible budget. The timing of each contribution also matters.",
+      "Now reduce the assumed completed value to $2.2 million while keeping everything else the same. The 70% value ceiling becomes $1.54 million and the eligible-cost gap rises to $460,000. This $140,000 change shows why a builder's projected resale price should not be treated as a confirmed appraisal. Model a lower-value case before committing to the purchase.",
       {
-        "h": "Compare two term sheets on the same budget"
+        "h": "Can land equity replace the down payment?"
       },
-      "The offer with the highest percentage is not automatically the offer requiring the least cash. Compare initial proceeds, funded costs, draw rules, reserve requirements, interest treatment, extension conditions and the expected net proceeds at sale. Use the same cost schedule and exit assumptions for both quotes.",
+      "Land you already own can affect the equity calculation, but its treatment must be confirmed. Present the acquisition date, purchase price, current debt, proposed value and documentary support for improvements. Ask whether the program uses cost, current appraised value or another basis, and whether ownership duration changes that treatment.",
+      "<strong>Land equity is not cash in your checking account.</strong> Even if it satisfies part of an equity requirement, it cannot automatically pay a subcontractor while a draw is pending. A payoff also consumes funding: a property valued at $500,000 with $200,000 debt has a different financing starting point from the same property owned free and clear.",
+      "Our <a href=\"/blog/construction-loan-property-already-owned-mortgage-payoff\">guide to construction financing on property already owned</a> explains the payoff and equity questions. For a published illustration of how carefully to read a high-leverage headline, see the <a href=\"/blog/brookhaven-ga-100-ltc-ground-up-construction\">company-reported Brookhaven construction example</a>. Its stated construction-budget financing and contributed land should not be generalized into a promise of 100% of every project's total costs.",
       {
-        "h": "Can land equity reduce the contribution?"
+        "h": "Build a cash plan for three stages"
       },
-      "It may, depending on the lender’s accepted basis, ownership history and liens. Equity credit is not the same as cash-out proceeds. For an already-owned property, provide purchase history, improvements and current payoff so the reviewer can explain what may count. If two projects are planned, show both schedules and avoid counting the same reserve dollars twice.",
-      "For an initial Stonehaven review, send the project stage, acquisition or payoff, construction budget, completed-value estimate and builder experience. Ask specifically for the expected cash at closing and peak cash needed during construction, not just the maximum leverage.",
       {
-        "h": "Related builder guides"
+        "h": "Before closing: costs that arrive before loan proceeds",
+        "level": 3
       },
-      "<a href=\"/blog/atlanta-teardown-rebuild-construction-financing\">Atlanta Teardown and Rebuild Loans: From Purchase to New Construction</a> · <a href=\"/blog/construction-loan-property-already-owned-mortgage-payoff\">Construction Financing When You Already Own the Property: Equity and Mortgage Payoff</a>"
+      "List earnest money, design deposits, surveys, engineering, permits and other due-diligence spending. Record what has already been paid, what can be refunded and what remains due. Do not assume every pre-closing expense will be reimbursed or counted as equity. Ask for the treatment in the financing proposal and keep invoices and payment records.",
+      "If the project is still being entitled, separate a possible construction closing from the immediate land or predevelopment funding need. A hoped-for construction commitment does not pay an obligation due next week. The <a href=\"/commercial/land-development-loans\">land and development financing guide</a> covers the earlier project stage.",
+      {
+        "h": "At closing: reconcile the actual funding statement",
+        "level": 3
+      },
+      "Put acquisition or payoff, financing costs and reserves on the uses side. Put the initial loan advance, acceptable deposits and borrower contribution on the sources side. Each source must be available on the date it is needed. A later construction draw belongs later in the schedule, even if it is part of the total commitment.",
+      "Mark each cost as financed, paid before closing, paid at closing or excluded. This prevents a common planning error: financing a cost in one subtotal while also subtracting it from the builder's cash requirement elsewhere. Ask who confirms the final settlement figures and when you will receive them.",
+      {
+        "h": "During construction: bridge the gap between bills and draws",
+        "level": 3
+      },
+      "Build a weekly schedule for major contractor payments, inspection requests and expected funding. Ask about draw frequency, submission cutoffs, evidence of completed work, lien documentation, retainage and treatment of stored materials. Do not assume all invoices become eligible for immediate reimbursement.",
+      "The <a href=\"https://publishedguides.ncua.gov/examiner/Content/ExaminersGuide/Commercial%26MBL/CandD_Loans.htm\">NCUA construction and development examination guide</a> explains why controlled disbursements and project-completion analysis matter. Its supervisory framework applies to credit unions; a private financing agreement can use different conditions. Our <a href=\"/blog/ground-up-construction-draw-schedule-cash-flow\">construction draw cash-flow guide</a> turns the timing question into a practical planning exercise.",
+      {
+        "h": "Interest reserve, contingency and working cash are not interchangeable"
+      },
+      "An interest reserve budgets financing expense. A construction contingency budgets unplanned project costs. Working cash covers bills while you wait for the next approved release. Treating all three as one available pool can make a project appear better funded than it is.",
+      "For a simple hypothetical draw example, assume $80,000 of eligible work is payable before a $72,000 release, with $8,000 retained under the assumed agreement. You need to cover the $80,000 payment initially and recover only $72,000 at that release. The remaining $8,000 is still tied up. This is a timing illustration, not a standard retainage percentage or reimbursement schedule.",
+      "Ask what happens when a change order increases the remaining cost to complete. Identify who supplies the extra funds, whether approval is required before work begins and whether additional borrowing is available. The <a href=\"/blog/construction-loan-interest-reserve-vs-contingency\">interest reserve versus contingency guide</a> explains the separate budgets without treating either as unlimited protection.",
+      {
+        "h": "Compare term sheets using the same project assumptions"
+      },
+      "Use one dated budget, one value assumption and one timeline for every comparison. A higher commitment can be less helpful if it delivers less at closing, carries expensive minimum interest or requires more cash between draws. A lower headline rate can also be offset by fees or an unsuitable extension structure.",
+      "<ul><li><strong>Amount and uses:</strong> commitment, initial advance, payoff, reserves and actual construction dollars.</li><li><strong>Pricing:</strong> rate basis, points, draw fees, unused-fund charges where applicable and minimum-interest provisions.</li><li><strong>Execution:</strong> permit conditions, inspections, funding sequence and document requirements.</li><li><strong>Completion:</strong> maturity, extension conditions, sale or refinance assumptions and release requirements.</li><li><strong>Obligations:</strong> guarantees, recourse, reporting and approval rights under the proposed documents.</li></ul>",
+      "Read the <a href=\"/blog/construction-loan-term-sheet-comparison\">construction term-sheet comparison guide</a> before selecting a proposal. Do not assume an extension will be available simply because the project remains profitable on paper. Put a delayed-completion case beside the original timeline and identify the added carrying costs and funding source.",
+      {
+        "h": "Plan the exit before deciding how much to borrow"
+      },
+      "For a spec home, model net sale proceeds after assumed selling costs and loan payoff, not just the expected sale price. For several homes, map individual closings, debt releases and cash available for the next start. The <a href=\"/blog/financing-multiple-spec-homes-builder-exposure\">multiple spec-home financing guide</a> helps organize overlapping projects.",
+      "For a build-to-rent property, test the proposed permanent loan independently from the construction facility. A completed building does not automatically qualify for the refinance amount required to repay construction debt. Rent, taxes, insurance, value, occupancy and program rules can change the takeout. Review the <a href=\"/blog/build-to-rent-construction-loan-dscr-exit\">construction-to-DSCR exit guide</a> while the budget is still flexible.",
+      {
+        "h": "What should a builder send for an initial review?"
+      },
+      "Start with a short project summary: location, property type, purchase or ownership position, existing payoff, construction budget, expected completed value, requested financing and desired closing date. Add whether plans and permits are complete, your relevant completed-project experience and the intended sale or rental exit. If a figure is an estimate, label it as one.",
+      "A useful next step is a single sources-and-uses page plus a schedule. Separate paid costs from costs still to be funded, and show other active projects that may use the same cash. This helps Stonehaven identify unanswered structuring questions before a detailed application. It does not replace underwriting, an appraisal or review of legal documents.",
+      {
+        "h": "Questions about 100% LTC construction loans"
+      },
+      {
+        "h": "Does 100% LTC mean no money down?",
+        "level": 3
+      },
+      "Not necessarily. It describes a ratio against an accepted cost basis. A value limit, excluded costs, reserves, land treatment or draw timing can still create a borrower contribution or working-capital need.",
+      {
+        "h": "Can I receive the whole commitment at closing?",
+        "level": 3
+      },
+      "Do not assume so. Separate the closing advance from amounts released later for eligible construction work. Confirm the disbursement schedule in the actual agreement.",
+      {
+        "h": "Does a higher ARV guarantee a larger loan?",
+        "level": 3
+      },
+      "No. An accepted valuation is only one input. Project cost, program limits, borrower qualifications, liquidity, experience and the exit can also constrain the structure. A projected resale value is not an appraisal.",
+      {
+        "h": "Can Stonehaven help if the land is already owned?",
+        "level": 3
+      },
+      "Yes, we can review an owned-land construction scenario as your mortgage broker. Include the debt balance, ownership history and budget. Availability and final terms depend on the project and underwriting; submitting a scenario is not approval.",
+      {
+        "h": "Discuss your ground-up construction project"
+      },
+      "Use the <a href=\"/commercial/construction-loans#quick-inquiry\">construction project inquiry</a> to start with your name, email and a short description. You can add project details when ready. Keep bank statements, identification and other private documents out of the public inquiry. We help you evaluate the structure and next steps, including the questions a high-LTC headline leaves unanswered."
     ],
-    "metaTitle": "100% LTC Construction: Cash Needed | Stonehaven"
+    "metaTitle": "100% LTC Construction Loans: Cash Needed | Stonehaven"
   },
   "es": {
     "title": "Préstamos de construcción hasta el 100% LTC: cuánto efectivo necesita el constructor",
-    "desc": "Un porcentaje de financiamiento no revela todo el efectivo necesario. Compare costo elegible, valor terminado, reservas y calendario de desembolsos.",
+    "desc": "Compare préstamos de construcción de hasta el 100% LTC: costos, valor terminado, terreno y desembolsos. Calcule el efectivo que podría necesitar.",
     "eyebrow": "Financiamiento para constructores",
     "terms": [
       [
@@ -74,37 +141,111 @@
       ]
     ],
     "body": [
-      "Cuando pide financiamiento al 100%, primero defina la base: precio de compra, costo elegible o valor terminado. Son medidas distintas. Un LTC alto puede reducir la aportación, pero no determina por sí solo el anticipo al cierre ni elimina el capital de trabajo.",
+      "<strong>Un financiamiento de construcción de hasta el 100% LTC puede cubrir todos los costos aceptados dentro de la base de un programa. No significa automáticamente que el constructor no necesite efectivo.</strong> El límite por valor terminado, el tratamiento del terreno, los cargos, las reservas y el calendario de desembolsos pueden cambiar su aportación. Antes de comparar porcentajes, solicite un cuadro de fuentes y usos y un plan mensual de efectivo.",
+      "Stonehaven actúa como intermediario hipotecario. Podemos revisar proyectos de obra nueva con alto apalancamiento, incluidas estructuras de hasta el 100% LTC cuando estén disponibles y sean aprobadas. Los cálculos de esta guía son ejemplos hipotéticos originales, no cotizaciones, aprobaciones ni operaciones cerradas. Consulte primero nuestro <a href=\"/es/commercial/construction-loans\">resumen del financiamiento de obra nueva</a> para conocer el proceso general.",
       {
-        "h": "Cómo se calcula el 100% LTC"
+        "h": "¿Qué significa 100% LTC en un préstamo de construcción?"
       },
-      "LTC compara el compromiso con los costos que acepta el prestamista. Con un presupuesto elegible hipotético de $2 millones, un límite del 100% equivale a $2 millones. Cubre el subtotal elegible del ejemplo, antes de costos excluidos, cargos, reservas u otros límites del préstamo. Es un cálculo educativo, no una oferta de Stonehaven.",
-      "Stonehaven trabaja con prestamistas que pueden ofrecer hasta 100% LTC para proyectos de construcción elegibles. La disponibilidad depende del prestamista y la operación. El máximo no aprueba a un constructor particular. Confirme requisitos actuales de monto, experiencia, crédito, liquidez, ubicación y tipo de obra.",
+      "La relación préstamo a costo, o LTC, divide el monto del préstamo entre el costo elegible del proyecto. Un compromiso de $2 millones sobre una base aceptada de $2 millones equivale al 100% LTC. Un compromiso de $1.8 millones sobre esa misma base equivale al 90%. Ninguna relación indica cuándo recibirá el dinero ni cuánto se reserva para intereses y cargos.",
+      "El denominador importa tanto como el porcentaje. Una propuesta puede incluir adquisición, construcción y ciertos costos indirectos. Otra puede financiar únicamente el presupuesto de obra, con capital del terreno aportado por separado. Solicite la base de costos expresada en dólares. No compare dos porcentajes hasta confirmar que incluyen los mismos conceptos.",
+      "El <a href=\"https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf\">manual de préstamos inmobiliarios comerciales de la OCC (en inglés)</a> trata la viabilidad, capacidad del prestatario, valoración y administración de la construcción. Son conceptos útiles de evaluación, no un respaldo a productos del 100% LTC ni reglas universales del financiamiento privado.",
       {
-        "h": "El valor terminado puede limitar más el préstamo"
+        "h": "LTC, valor terminado y fondos disponibles son cifras distintas"
       },
-      "Con el mismo costo de $2 millones, un valor terminado de $2.4 millones y un límite hipotético del 70% de ese valor, el compromiso máximo sería $1.68 millones. Es menor que $2 millones y deja una diferencia de $320,000. Ambos porcentajes son supuestos del ejemplo, no condiciones cotizadas.",
-      "Pida ver costo aceptado, límite LTC, límite por valor terminado y compromiso propuesto. Un margen de ganancia proyectado no equivale a efectivo para terminar. Una tasación inferior a la expectativa puede cambiar el financiamiento aunque no cambie el presupuesto.",
+      "Una propuesta puede estar limitada tanto por el costo elegible como por el valor terminado. Calcule cada límite por separado e identifique cuál controla el monto. Una relación favorable con el costo no elimina un límite menor por valoración, salvo que el programa permita otra estructura.",
+      "<ul><li><strong>LTC:</strong> compromiso dividido entre costos aceptados.</li><li><strong>Relación con valor terminado:</strong> compromiso dividido entre el valor aceptado del proyecto terminado. Confirme qué significa la etiqueta LTV, LTARV o LTCV utilizada.</li><li><strong>Anticipo inicial:</strong> fondos liberados al cierre, antes de los desembolsos de obra.</li><li><strong>Fondos netos para construcción:</strong> parte del préstamo disponible después de otros usos financiados y retenciones.</li></ul>",
+      "Un préstamo de $2 millones puede tener un anticipo inicial mucho menor. Si también cancela deuda de adquisición o financia una reserva de intereses, esos usos no generan dinero adicional para el contratista. La <a href=\"/es/construction-loan-calculator\">calculadora de préstamos de construcción</a> ayuda a separar costo, valor, terreno y efectivo. Ofrece estimaciones, no decisiones de aprobación.",
       {
-        "h": "Planifique el efectivo en tres etapas"
+        "h": "Ejemplo: el límite por valor deja una diferencia de $320,000"
       },
-      "<strong>Antes del cierre:</strong> identifique depósitos, diseño, informes y permisos. Pregunte si gastos ya pagados cuentan como aportación y cómo documentarlos.",
-      "<strong>Al cierre:</strong> concilie compra o liquidación, costos de cierre, patrimonio invertido y anticipo. Confirme si cargos o reservas de intereses consumen parte del compromiso y reducen los fondos disponibles para obra.",
-      "<strong>Entre desembolsos:</strong> compare vencimientos de contratistas con inspecciones y reembolsos. Pregunte por retenciones, mínimos y cambios de alcance. Un presupuesto financiado todavía puede exigir pagar una factura antes del reembolso.",
+      "Suponga costos elegibles de $2 millones y un valor terminado de $2.4 millones. Para ilustrar el cálculo, utilice un límite del 100% LTC y otro del 70% del valor terminado. Son supuestos hipotéticos, no condiciones actuales de Stonehaven.",
+      "<table><caption>Cálculo ilustrativo del compromiso</caption><thead><tr><th scope=\"col\">Prueba</th><th scope=\"col\">Cálculo</th><th scope=\"col\">Resultado</th></tr></thead><tbody><tr><th scope=\"row\">Límite por costo</th><td>$2,000,000 × 100%</td><td>$2,000,000</td></tr><tr><th scope=\"row\">Límite por valor</th><td>$2,400,000 × 70%</td><td>$1,680,000</td></tr><tr><th scope=\"row\">Límite menor</th><td>Menor de ambos resultados</td><td>$1,680,000</td></tr><tr><th scope=\"row\">Diferencia de costos</th><td>$2,000,000 − $1,680,000</td><td>$320,000</td></tr></tbody></table>",
+      "El proyecto necesita $320,000 adicionales al compromiso calculado para cubrir esa base de costos. Todavía no es la respuesta completa sobre el efectivo al cierre. Parte de la aportación aceptable podría existir como capital reconocido del terreno o gastos pagados. Otros costos podrían quedar fuera del presupuesto elegible. También importa cuándo debe estar disponible cada aportación.",
+      "Si el valor terminado supuesto baja a $2.2 millones, el límite del 70% se reduce a $1.54 millones y la diferencia aumenta a $460,000. Este cambio de $140,000 explica por qué el precio de venta previsto no debe tratarse como una tasación confirmada. Modele un valor menor antes de comprometerse con la compra.",
       {
-        "h": "Compare ofertas sobre la misma base"
+        "h": "¿Puede el capital del terreno sustituir el pago inicial?"
       },
-      "El mayor porcentaje no siempre exige menos efectivo. Compare fondos iniciales, costos incluidos, reglas de desembolso, reservas, intereses, prórrogas y resultado esperado de la venta usando el mismo presupuesto.",
+      "Un terreno que ya posee puede afectar el cálculo del capital, pero debe confirmarse su tratamiento. Presente fecha y precio de adquisición, deuda actual, valor propuesto y respaldo documental de las mejoras. Pregunte si el programa utiliza costo, tasación actual u otra base y si el tiempo de propiedad influye.",
+      "<strong>El capital del terreno no es efectivo en su cuenta bancaria.</strong> Aunque cubra parte del requisito de aportación, no paga automáticamente una factura mientras espera un desembolso. Una cancelación de deuda también consume fondos: un terreno valorado en $500,000 con deuda de $200,000 no tiene el mismo punto de partida que uno libre de deuda.",
+      "La <a href=\"/es/blog/construction-loan-property-already-owned-mortgage-payoff\">guía sobre construcción en una propiedad que ya posee</a> explica las preguntas de capital y cancelación. Consulte además el <a href=\"/es/blog/brookhaven-ga-100-ltc-ground-up-construction\">ejemplo de Brookhaven informado por la empresa</a>. El financiamiento del presupuesto de construcción y el terreno aportado de ese caso no equivalen a una promesa del 100% del costo total de cualquier proyecto.",
       {
-        "h": "¿Puede contar el patrimonio del terreno?"
+        "h": "Prepare efectivo para tres etapas"
       },
-      "Puede contar según la base aceptada, historial de propiedad y gravámenes. Reconocer patrimonio no significa entregar efectivo. Presente compra, mejoras y saldo actual. Si tiene dos obras, muestre ambos calendarios y no cuente las mismas reservas dos veces.",
-      "Para iniciar con Stonehaven, indique etapa, compra o saldo, presupuesto, valor terminado estimado y experiencia. Solicite una revisión del efectivo al cierre y del máximo necesario durante la obra, además del porcentaje.",
       {
-        "h": "Otras guías para constructores"
+        "h": "Antes del cierre: gastos anteriores a los fondos del préstamo",
+        "level": 3
       },
-      "<a href=\"/es/blog/atlanta-teardown-rebuild-construction-financing\">Préstamos para demoler y reconstruir en Atlanta: de la compra a la obra</a> · <a href=\"/es/blog/construction-loan-property-already-owned-mortgage-payoff\">Financiar construcción en una propiedad que ya posee: patrimonio y saldo hipotecario</a>"
+      "Anote depósito de compra, diseño, levantamientos, ingeniería, permisos y otros gastos de revisión. Distinga lo pagado, lo reembolsable y lo pendiente. No suponga que todo gasto previo será reembolsado o reconocido como capital. Solicite su tratamiento en la propuesta y conserve facturas y comprobantes.",
+      "Si todavía se tramitan autorizaciones, separe el posible cierre de construcción de la necesidad inmediata para terreno o predesarrollo. Un compromiso futuro no paga una obligación de la próxima semana. La <a href=\"/es/commercial/land-development-loans\">guía de financiamiento de terrenos y desarrollo</a> explica esa etapa anterior.",
+      {
+        "h": "Al cierre: concilie el estado de fondos",
+        "level": 3
+      },
+      "Coloque adquisición o cancelación, gastos financieros y reservas entre los usos. Coloque anticipo inicial, depósitos aceptables y aportación del prestatario entre las fuentes. Cada fuente debe estar disponible cuando se necesite. Un desembolso posterior pertenece a una fecha posterior, aunque forme parte del compromiso total.",
+      "Marque cada costo como financiado, pagado previamente, pagadero al cierre o excluido. Así evita incluir un gasto como financiado y volver a descontarlo en otro subtotal. Pregunte quién confirmará las cifras finales de liquidación y cuándo las recibirá.",
+      {
+        "h": "Durante la obra: cubra el tiempo entre facturas y desembolsos",
+        "level": 3
+      },
+      "Prepare un calendario semanal de pagos importantes, solicitudes de inspección y fondos esperados. Pregunte por frecuencia, fechas límite, evidencia de trabajo terminado, documentación de gravámenes, retenciones y materiales almacenados. No suponga que todas las facturas son reembolsables de inmediato.",
+      "La <a href=\"https://publishedguides.ncua.gov/examiner/Content/ExaminersGuide/Commercial%26MBL/CandD_Loans.htm\">guía de construcción y desarrollo de la NCUA (en inglés)</a> explica la importancia del control de desembolsos y del análisis de terminación. Su marco supervisa cooperativas de crédito; un contrato privado puede tener condiciones diferentes. La <a href=\"/es/blog/ground-up-construction-draw-schedule-cash-flow\">guía de flujo de efectivo entre desembolsos</a> ayuda a organizar ese calendario.",
+      {
+        "h": "Reserva de intereses, contingencia y efectivo operativo"
+      },
+      "La reserva de intereses presupuesta el gasto financiero. La contingencia cubre costos de obra imprevistos. El efectivo operativo permite pagar facturas mientras llega la siguiente liberación aprobada. Tratar los tres conceptos como un solo fondo disponible puede exagerar los recursos del proyecto.",
+      "En un ejemplo hipotético, suponga $80,000 de trabajo elegible pagadero antes de recibir $72,000, con $8,000 retenidos según el contrato supuesto. Inicialmente debe cubrir los $80,000 y en ese desembolso recupera solamente $72,000. Los otros $8,000 siguen comprometidos. No es un porcentaje estándar de retención ni un calendario prometido.",
+      "Pregunte qué ocurre si una orden de cambio aumenta el costo restante para terminar. Identifique quién aporta el dinero adicional, si hace falta autorización antes de trabajar y si existe capacidad de préstamo adicional. La <a href=\"/es/blog/construction-loan-interest-reserve-vs-contingency\">guía sobre reserva de intereses y contingencia</a> distingue estos presupuestos sin presentarlos como protección ilimitada.",
+      {
+        "h": "Compare propuestas con los mismos supuestos"
+      },
+      "Utilice un presupuesto fechado, un valor y un calendario para todas las propuestas. Un compromiso mayor puede ser menos útil si libera menos al cierre, exige intereses mínimos costosos o requiere más efectivo entre desembolsos. Una tasa menor puede quedar compensada por cargos o condiciones de extensión poco adecuadas.",
+      "<ul><li><strong>Monto y usos:</strong> compromiso, anticipo, cancelación, reservas y fondos efectivos para obra.</li><li><strong>Precio:</strong> base de la tasa, puntos, cargos por desembolso, cargos sobre fondos no utilizados cuando correspondan e intereses mínimos.</li><li><strong>Ejecución:</strong> permisos, inspecciones, secuencia de fondos y documentación.</li><li><strong>Terminación:</strong> vencimiento, condiciones de extensión, venta o refinanciamiento y liberación de garantías.</li><li><strong>Obligaciones:</strong> garantías personales, responsabilidad, informes y autorizaciones contractuales.</li></ul>",
+      "Consulte la <a href=\"/es/blog/construction-loan-term-sheet-comparison\">guía para comparar propuestas de construcción</a>. No dé por hecho que habrá una extensión porque el proyecto parezca rentable. Añada un escenario de retraso e identifique sus costos y la fuente de fondos.",
+      {
+        "h": "Planifique la salida antes de decidir cuánto pedir"
+      },
+      "Para una vivienda construida para venta, modele los fondos netos después de gastos de venta y cancelación, no solo el precio esperado. Para varias viviendas, relacione cierres individuales, liberaciones de deuda y efectivo para iniciar la siguiente. La <a href=\"/es/blog/financing-multiple-spec-homes-builder-exposure\">guía de financiamiento de varias viviendas</a> ayuda a organizar obras simultáneas.",
+      "Para un inmueble construido para alquiler, evalúe el préstamo permanente por separado. Un edificio terminado no califica automáticamente para el monto necesario para cancelar la construcción. Renta, impuestos, seguro, valor, ocupación y reglas del programa pueden cambiar la salida. Revise la <a href=\"/es/blog/build-to-rent-construction-loan-dscr-exit\">guía de salida de construcción a DSCR</a> mientras todavía puede ajustar el presupuesto.",
+      {
+        "h": "Qué enviar para una revisión inicial"
+      },
+      "Empiece con ubicación, tipo de inmueble, compra o propiedad existente, saldo pendiente, presupuesto, valor terminado esperado, financiamiento solicitado y fecha deseada. Añada situación de planos y permisos, experiencia relevante en proyectos terminados y salida de venta o alquiler. Identifique las estimaciones como tales.",
+      "Prepare un cuadro de fuentes y usos y un calendario. Separe costos pagados de costos pendientes y muestre otros proyectos que utilizarán el mismo efectivo. Esto ayuda a Stonehaven a identificar preguntas de estructura antes de una solicitud completa. No sustituye evaluación crediticia, tasación ni revisión de documentos legales.",
+      {
+        "h": "Preguntas sobre préstamos de construcción del 100% LTC"
+      },
+      {
+        "h": "¿100% LTC significa que no necesito pago inicial?",
+        "level": 3
+      },
+      "No necesariamente. Describe una relación con una base de costos aceptada. El valor, costos excluidos, reservas, terreno o calendario pueden exigir una aportación o capital operativo.",
+      {
+        "h": "¿Recibo todo el compromiso al cierre?",
+        "level": 3
+      },
+      "No lo suponga. Distinga el anticipo inicial de los fondos posteriores para trabajo elegible. Confirme el calendario en el contrato.",
+      {
+        "h": "¿Un ARV mayor garantiza un préstamo mayor?",
+        "level": 3
+      },
+      "No. La valoración aceptada es solo un dato. Costo, límites del programa, calificaciones, liquidez, experiencia y salida también pueden limitar el préstamo. Un precio de venta previsto no es una tasación.",
+      {
+        "h": "¿Puede Stonehaven revisar un terreno que ya poseo?",
+        "level": 3
+      },
+      "Sí. Podemos revisar el proyecto como su intermediario hipotecario. Incluya saldo de deuda, historial de propiedad y presupuesto. Disponibilidad y términos dependen del proyecto y su evaluación; enviar información no implica aprobación.",
+      {
+        "h": "Hablemos de su proyecto de obra nueva"
+      },
+      "Use la <a href=\"/es/commercial/construction-loans#quick-inquiry\">consulta de construcción</a> para comenzar con nombre, correo y una descripción breve. Puede añadir detalles cuando esté listo. No envíe estados bancarios, identificaciones ni documentos privados por el formulario público. Le ayudamos a evaluar la estructura, próximos pasos y preguntas que un porcentaje alto no resuelve."
     ],
     "metaTitle": "Construcción al 100% LTC: efectivo | Stonehaven"
+  },
+  "contentRevision": {
+    "updated": "2026-11-01",
+    "citations": [
+      "https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf",
+      "https://publishedguides.ncua.gov/examiner/Content/ExaminersGuide/Commercial%26MBL/CandD_Loans.htm"
+    ]
   }
 }

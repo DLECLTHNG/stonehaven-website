@@ -6,7 +6,7 @@
   "growthTopic": "heloc-draw-period-repayment-payments",
   "en": {
     "title": "What happens to HELOC payments when the draw period ends?",
-    "desc": "See how balance, rate, and remaining repayment time affect a hypothetical payment.",
+    "desc": "HELOC payments can change when the draw period ends. Compare interest-only and repayment examples, check your agreement and prepare for the transition.",
     "eyebrow": "Home equity planning",
     "terms": [
       [
@@ -19,29 +19,63 @@
       ]
     ],
     "body": [
+      "<strong>When a HELOC draw period ends, new borrowing generally stops and repayment follows the schedule in your agreement.</strong> Your payment can increase because you must repay principal, the rate changes, or both. Some agreements can require a large balance payment. Find the actual end date and repayment terms before treating today's payment as a long-term budget.",
+      "The <a href=\"https://www.consumerfinance.gov/ask-cfpb/what-is-a-home-equity-line-of-credit-heloc-en-107/\">CFPB guide to HELOC draw and repayment periods</a> explains the transition and possible payment changes. The examples below are our own calculations with assumed terms, not quotes or predictions. Stonehaven is a mortgage broker; servicing instructions and your contractual payment schedule must come from your existing servicer.",
       {
-        "h": "Identify the stage in your own agreement"
+        "h": "Draw period versus repayment period"
       },
-      "Find the date when borrowing access ends and the section explaining payments afterward. Do not rely on the product name or the payment shown on an advertisement. Ask whether your agreement calls for scheduled principal repayment, a balance due at once, or another arrangement. The CFPB describes different repayment structures, so a sample from another lender is not enough to establish your own obligation.",
+      "During the draw period, the agreement determines how you can borrow and what you must pay. A line of credit is not the same as a guarantee that you can redraw forever. During repayment, the remaining balance must be paid under the contract's schedule. Ask whether that means amortizing monthly payments, a balance due at once or another structure.",
+      "Do not assume every HELOC starts with interest-only payments or uses the same number of years. Record your agreement's dates, current balance, rate index and margin, any fixed-rate portion, minimum-payment calculation and maturity date. If an unfamiliar term affects the payment, ask the servicer to explain it in writing.",
       {
-        "h": "Change one assumption at a time"
+        "h": "Worked example: why a payment can rise without a rate increase"
       },
-      "Our educational model allows an interest-only period followed by amortization. Start with your assumed drawn balance and rate, then change the repayment months while holding the other figures constant. Next test a different rate. This shows which assumption drives the change. The model does not include new borrowing during the modeled period and is not a forecast of future rates.",
+      "Assume a $60,000 drawn balance and an 8% annual rate. For illustration only, suppose the initial payment is interest-only, then the same balance amortizes over 10 years at that unchanged rate. Using monthly calculations, the payment moves from $400 to approximately $727.97 because the second payment includes principal repayment.",
+      "<table><caption>Hypothetical payments on the same $60,000 balance</caption><thead><tr><th scope=\"col\">Assumption</th><th scope=\"col\">Monthly payment</th></tr></thead><tbody><tr><th scope=\"row\">8%, interest-only</th><td>$400.00</td></tr><tr><th scope=\"row\">8%, amortized over 120 months</th><td>$727.97</td></tr><tr><th scope=\"row\">10%, amortized over 120 months</th><td>$792.90</td></tr></tbody></table>",
+      "The third row changes only the assumed rate after adopting the 120-month repayment schedule. It is a stress test, not a forecast. The table excludes fees, additional draws and daily interest conventions, and it holds each modeled rate constant. Your actual agreement can calculate payments differently.",
+      "Use the <a href=\"/heloc-planning-tools#payments\">HELOC payment planning tool</a> to change one assumption at a time. Start with the actual balance you expect at the transition, not the maximum credit limit. For a paid-down balance, rerun the model; do not assume your payment will match an example using the original amount.",
       {
-        "h": "Prepare before the transition"
+        "h": "Four questions for the current servicer"
       },
-      "Ask your current lender for the expected payment under your actual agreement. If you want to discuss a new loan, keep that separate from a servicing request. Stonehaven can review a HELOC refinancing inquiry, but a new application is subject to underwriting and does not automatically extend an existing line. Avoid delaying a conversation until a payment is already due.",
+      "<ul><li><strong>When does access end?</strong> Confirm the last date for additional borrowing and any separate maturity date.</li><li><strong>What will I owe next?</strong> Request the payment calculation and whether principal amortization or a balloon applies.</li><li><strong>What could change the amount?</strong> Identify rate adjustments, fees and any fixed-rate conversion provisions.</li><li><strong>What options exist under this agreement?</strong> Ask what is actually available, its cost and any qualification requirements.</li></ul>",
+      "Keep the servicer's answer and the agreement together. A generic product advertisement cannot override your existing contract. If you expect difficulty making payments, contact the servicer before the transition rather than waiting for a missed payment. This guide cannot change the servicing arrangement or promise an extension.",
       {
-        "h": "Prepare the next conversation"
+        "h": "Separate refinancing from managing the existing account"
       },
-      "Use the <a href=\"/heloc-planning-tools#payments\">home equity planning worksheet</a> to organize your assumptions. Leave anything you do not know blank for discussion. The worksheet does not check eligibility or obtain a lender offer. You can <a href=\"/heloc/repayment-review\">request a broker conversation</a> when you are ready to review your estimated home value, mortgage balance, and requested amount. Do not send account numbers or financial documents through a public inquiry form.",
-      "<a href=\"https://www.consumerfinance.gov/ask-cfpb/what-is-a-home-equity-line-of-credit-heloc-en-107/\">Read the source guidance</a>. Provider examples describe that provider only. This guide is educational. A home-secured loan puts the property at risk if repayment fails. Program availability, documentation, costs, and approval depend on the lender and your circumstances."
+      "A new loan is a separate underwriting decision. Do not plan around refinancing until the application, valuation and closing requirements have been satisfied. Compare costs, the new term, the amount of debt and the projected payment with continuing under the existing agreement.",
+      "The <a href=\"/blog/existing-heloc-refinance-review\">existing HELOC refinance guide</a> explains how to prepare that comparison. If replacing the first mortgage is also under consideration, read the <a href=\"/blog/heloc-vs-cash-out-refinance\">HELOC versus cash-out refinance comparison</a>. A lower initial payment can still leave more debt or a longer repayment period.",
+      {
+        "h": "Questions about HELOC repayment"
+      },
+      {
+        "h": "Does the payment always increase when the draw period ends?",
+        "level": 3
+      },
+      "Not in every agreement. It depends on balance, rate and repayment structure. An interest-only payment changing to amortization can rise even with an unchanged rate, as the example shows.",
+      {
+        "h": "Is a fixed-rate conversion the same as refinancing?",
+        "level": 3
+      },
+      "No. A conversion, if available, follows the existing line's provisions. Refinancing involves a new loan. Ask for each option's eligibility, cost and effect on access to the remaining line.",
+      {
+        "h": "Can I keep making only the old payment?",
+        "level": 3
+      },
+      "Follow the payment required under your actual agreement. Paying an old amount does not change the new obligation. Ask the servicer to resolve any uncertainty before the due date.",
+      {
+        "h": "Can Stonehaven review a new HELOC request?",
+        "level": 3
+      },
+      "Yes. Our HELOC intake starts at $50,000 and a reported credit score of 640. Those minimums are not approval. We review the new financing request as your mortgage broker; we do not service or extend your existing line through a public inquiry.",
+      {
+        "h": "Prepare for a financing conversation"
+      },
+      "Bring estimated property value, mortgage and HELOC balances, desired financing amount and the repayment transition date. Use the <a href=\"/heloc#callback\">HELOC inquiry form</a> to request a review. Keep account numbers and private documents out of public fields. A home-secured loan puts the property at risk if you cannot repay it, so assess the later obligation alongside the immediate need for funds."
     ],
     "metaTitle": "HELOC Payments After the Draw Period | Stonehaven Lending"
   },
   "es": {
     "title": "Cómo cambian los pagos al terminar el período de disposición",
-    "desc": "Vea cómo saldo, tasa y plazo de amortización afectan un pago hipotético.",
+    "desc": "Los pagos HELOC pueden cambiar al terminar el período de disposición. Compare ejemplos de intereses y amortización y prepare la transición.",
     "eyebrow": "Planificación del patrimonio de vivienda",
     "terms": [
       [
@@ -54,23 +88,63 @@
       ]
     ],
     "body": [
+      "<strong>Al terminar el período de disposición de una HELOC, generalmente cesan los nuevos retiros y el saldo se paga según el contrato.</strong> El pago puede aumentar por amortización del principal, cambio de tasa o ambos. Algunos acuerdos pueden exigir un pago importante del saldo. Confirme fecha y condiciones antes de usar la cuota actual como presupuesto permanente.",
+      "La <a href=\"https://www.consumerfinance.gov/ask-cfpb/what-is-a-home-equity-line-of-credit-heloc-en-107/\">guía del CFPB sobre disposición y amortización HELOC (en inglés)</a> explica esta transición. Los ejemplos siguientes son cálculos propios con condiciones supuestas, no cotizaciones ni predicciones. Stonehaven es intermediario hipotecario; las instrucciones de pago y su calendario contractual deben venir del administrador actual.",
       {
-        "h": "Identifique la etapa de su contrato"
+        "h": "Período de disposición frente a período de amortización"
       },
-      "Busque cuándo termina el acceso a fondos y cómo se paga después. No se base solo en el nombre del producto ni en una cuota publicitaria. Pregunte si debe amortizar capital, pagar el saldo de una vez o cumplir otra estructura. La CFPB describe distintos esquemas; el ejemplo de otro prestamista no establece su obligación.",
+      "Durante la disposición, el contrato determina cómo puede retirar fondos y qué debe pagar. Una línea no garantiza poder retirar indefinidamente. Durante la amortización, debe devolver el saldo conforme al calendario. Pregunte si exige pagos amortizados, un saldo completo de una vez u otra estructura.",
+      "No suponga que todas las HELOC comienzan con solo intereses ni duran los mismos años. Anote fechas, saldo, índice y margen de tasa, cualquier parte fija, cálculo del pago mínimo y vencimiento. Si un término desconocido afecta su pago, solicite una explicación escrita.",
       {
-        "h": "Cambie un supuesto a la vez"
+        "h": "Ejemplo: el pago puede subir sin aumentar la tasa"
       },
-      "El modelo educativo permite una etapa de solo intereses seguida de amortización. Empiece con saldo y tasa supuestos y cambie los meses de pago manteniendo los demás datos. Luego pruebe otra tasa. Así podrá ver qué provoca la diferencia. El modelo no incluye retiros adicionales ni pronostica tasas futuras.",
+      "Suponga un saldo utilizado de $60,000 y tasa anual del 8%. Solo para ilustrar, el pago inicial es de intereses y luego el mismo saldo se amortiza durante 10 años a la misma tasa. Con cálculos mensuales, la cuota pasa de $400 a aproximadamente $727.97 porque ahora devuelve principal.",
+      "<table><caption>Pagos hipotéticos sobre el mismo saldo de $60,000</caption><thead><tr><th scope=\"col\">Supuesto</th><th scope=\"col\">Pago mensual</th></tr></thead><tbody><tr><th scope=\"row\">8%, solo intereses</th><td>$400.00</td></tr><tr><th scope=\"row\">8%, amortizado en 120 meses</th><td>$727.97</td></tr><tr><th scope=\"row\">10%, amortizado en 120 meses</th><td>$792.90</td></tr></tbody></table>",
+      "La tercera fila cambia únicamente la tasa supuesta tras adoptar el plazo de 120 meses. Es una prueba de sensibilidad, no un pronóstico. La tabla excluye cargos, nuevos retiros y convenciones de interés diario; mantiene constante cada tasa calculada. Su contrato puede usar otro cálculo.",
+      "Use la <a href=\"/es/heloc-planning-tools#payments\">herramienta de planificación de pagos HELOC</a> para cambiar un supuesto a la vez. Empiece con el saldo esperado al terminar la disposición, no con el límite máximo. Si reduce el saldo, repita el cálculo; no asuma que pagará lo mismo que un ejemplo con el monto original.",
       {
-        "h": "Prepárese antes de la transición"
+        "h": "Cuatro preguntas para el administrador actual"
       },
-      "Pida al prestamista actual el pago previsto según su contrato. Si desea hablar de un préstamo nuevo, distíngalo de una consulta de administración. Stonehaven puede revisar una solicitud de refinanciamiento de HELOC, sujeta a evaluación; no extiende automáticamente la línea existente. No espere hasta el vencimiento para preguntar.",
+      "<ul><li><strong>¿Cuándo termina el acceso?</strong> Confirme última fecha para retirar y cualquier vencimiento separado.</li><li><strong>¿Qué deberé pagar después?</strong> Solicite el cálculo e identifique amortización o pago final elevado.</li><li><strong>¿Qué puede cambiar el monto?</strong> Revise ajustes de tasa, cargos y conversiones a tasa fija.</li><li><strong>¿Qué permite el contrato?</strong> Pregunte por opciones reales, costos y requisitos.</li></ul>",
+      "Conserve la respuesta junto al contrato. Un anuncio genérico no modifica su acuerdo. Si prevé dificultades para pagar, contacte al administrador antes de la transición. Esta guía no cambia su obligación ni promete una extensión.",
       {
-        "h": "Prepare la siguiente conversación"
+        "h": "Separe refinanciamiento y administración de la cuenta actual"
       },
-      "Use la <a href=\"/es/heloc-planning-tools#payments\">herramienta de planificación</a> para organizar sus supuestos. Deje en blanco lo que no sepa para comentarlo después. La herramienta no determina elegibilidad ni obtiene una oferta. Puede <a href=\"/es/heloc/repayment-review\">solicitar una conversación con un corredor</a> para revisar el valor estimado, saldo hipotecario y monto solicitado. No envíe números de cuenta ni documentos financieros por un formulario público.",
-      "<a href=\"https://www.consumerfinance.gov/ask-cfpb/what-is-a-home-equity-line-of-credit-heloc-en-107/\">Consulte la fuente en inglés</a>. Los ejemplos de un proveedor corresponden solo a ese proveedor. Esta guía es educativa. Un préstamo garantizado por la vivienda pone el inmueble en riesgo si no se paga. La disponibilidad, documentación, costos y aprobación dependen del prestamista y de sus circunstancias."
+      "Un préstamo nuevo requiere una decisión de evaluación independiente. No dependa del refinanciamiento hasta cumplir requisitos de solicitud, valoración y cierre. Compare costos, plazo, deuda total y pago con continuar bajo el contrato existente.",
+      "La <a href=\"/es/blog/existing-heloc-refinance-review\">guía para revisar un refinanciamiento de HELOC</a> ayuda a preparar esa comparación. Si también considera sustituir la primera hipoteca, consulte <a href=\"/es/blog/heloc-vs-cash-out-refinance\">HELOC frente a refinanciamiento con efectivo</a>. Un pago inicial menor puede dejar más deuda o prolongar la devolución.",
+      {
+        "h": "Preguntas sobre amortización HELOC"
+      },
+      {
+        "h": "¿Siempre aumenta el pago al terminar la disposición?",
+        "level": 3
+      },
+      "No en todos los contratos. Depende del saldo, tasa y estructura. Pasar de solo intereses a amortización puede aumentar el pago aunque la tasa no cambie, como muestra el ejemplo.",
+      {
+        "h": "¿Convertir a tasa fija es lo mismo que refinanciar?",
+        "level": 3
+      },
+      "No. Una conversión disponible sigue las reglas de la línea existente. Refinanciar implica un préstamo nuevo. Pregunte por elegibilidad, costo y efecto sobre el crédito restante.",
+      {
+        "h": "¿Puedo seguir pagando solo la cuota anterior?",
+        "level": 3
+      },
+      "Cumpla el pago exigido por el contrato. Pagar el monto anterior no modifica la obligación nueva. Resuelva cualquier duda con el administrador antes del vencimiento.",
+      {
+        "h": "¿Puede Stonehaven revisar una solicitud nueva?",
+        "level": 3
+      },
+      "Sí. Nuestra revisión inicial de HELOC empieza en $50,000 y crédito declarado de 640. No implican aprobación. Actuamos como intermediario para la solicitud nueva; un formulario público no modifica ni extiende la línea existente.",
+      {
+        "h": "Prepare una conversación de financiamiento"
+      },
+      "Anote valor estimado de la propiedad, saldos de hipoteca y HELOC, monto deseado y fecha de transición. Use el <a href=\"/es/heloc#callback\">formulario HELOC</a> para solicitar revisión. No incluya números de cuenta ni documentos privados. El préstamo respaldado por la vivienda pone la propiedad en riesgo si no puede pagarlo; evalúe la obligación futura junto a su necesidad inmediata."
+    ]
+  },
+  "contentRevision": {
+    "updated": "2026-11-01",
+    "citations": [
+      "https://www.consumerfinance.gov/ask-cfpb/what-is-a-home-equity-line-of-credit-heloc-en-107/"
     ]
   }
 }
