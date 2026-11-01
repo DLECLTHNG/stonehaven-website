@@ -6,7 +6,7 @@ briefs with contentRevision opt in; this never creates or republishes a post.
 import json
 import re
 from datetime import date
-from html import escape
+from html import escape, unescape
 from pathlib import Path
 from search_metadata import set_meta
 
@@ -45,6 +45,12 @@ def transform(text, path, revisions):
             if level not in (2, 3):
                 raise ValueError('Article headings must be H2 or H3')
             body += f'<h{level} style="margin-top:28px;font-size:{22 if level == 2 else 18}px;">' + escape(item['h']) + f'</h{level}>\n'
+        elif item.startswith('<table') and len(re.findall(r'<th\b', item.split('</thead>')[0])) >= 3:
+            caption = re.search(r'<caption>(.*?)</caption>', item)
+            accessible_name = unescape(re.sub(r'<[^>]+>', '', caption[1])) if caption else ('Comparación de financiamiento' if lang == 'es' else 'Financing comparison')
+            hint = 'Si es necesario, deslice la tabla para ver todas las columnas.' if lang == 'es' else 'If needed, scroll the table horizontally to see every column.'
+            table = item.replace('<table>', '<table style="min-width:480px!important;table-layout:auto!important;">', 1)
+            body += '<p class="fine">' + hint + '</p><div class="article-table-scroll" role="region" tabindex="0" aria-label="' + escape(accessible_name, quote=True) + '" style="overflow-x:auto;max-width:100%;margin:18px 0;">' + table + '</div>\n'
         elif re.match(r'<(?:table|div|ul|ol|aside)\b', item):
             body += item + '\n'
         else:

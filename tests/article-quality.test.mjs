@@ -33,6 +33,18 @@ test('article refresh cannot alter a page that has not opted into revision', () 
   assert.equal(run('transform',[input,'/blog/family-guide',revisions]),input);
 });
 
+test('wide numeric comparisons have a named keyboard-accessible scroll region', () => {
+  const wide = structuredClone(brief);
+  wide.en.body = ['<table><caption>Cost &amp; value</caption><thead><tr><th>Test</th><th>Calculation</th><th>Result</th></tr></thead><tbody><tr><td>Limit</td><td>$2,400,000 × 70%</td><td>$1,680,000</td></tr></tbody></table>'];
+  const output = run('transform',[input,path,{[path]:[wide,'en']}]);
+  assert.match(output, /class="article-table-scroll" role="region" tabindex="0"/);
+  assert.match(output, /overflow-x:auto/);
+  assert.match(output, /aria-label="Cost &amp; value"/);
+  assert.match(output, /min-width:480px!important/);
+  assert.ok(output.includes('$1,680,000'));
+  assert.equal(run('transform',[output,path,{[path]:[wide,'en']}]),output);
+});
+
 test('sitemap changes only materially revised article dates', () => {
   const xml='<urlset><url><loc>https://stonehavencre.com'+path+'</loc><lastmod>2026-09-15</lastmod></url><url><loc>https://stonehavencre.com/heloc</loc><lastmod>2026-10-28</lastmod></url></urlset>';
   const output=run('update_sitemap',[xml,revisions]);
