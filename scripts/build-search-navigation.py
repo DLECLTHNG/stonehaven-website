@@ -5,6 +5,7 @@ from html import escape, unescape
 from urllib.parse import urlsplit
 import re,json
 from search_metadata import load_title_overrides, normalize_page_metadata, normalize_sitemap
+from article_quality import load_revisions, transform as revise_article, update_sitemap
 from seo_brand_assets import normalize_brand_assets
 from seo_discovery import build_discovery_files
 from seo_contextual_links import transform as contextual_links
@@ -18,6 +19,7 @@ from home_styles import bundle as bundle_home_styles
 from site_positioning import build as build_positioning, footer as positioning_footer
 from subprocess import run
 R=Path(__file__).resolve().parent.parent
+article_revisions=load_revisions(R)
 build_positioning(R)
 run(["python3", str(R / "scripts/build-construction-planner.py")], check=True)
 ORIGIN='https://stonehavencre.com'
@@ -41,6 +43,7 @@ def cre_links(prefix,es):
  return [('/commercial/construction-loans','Financiamiento para construcción' if es else 'Construction financing'),('/commercial/fix-and-flip','Capital para renovación y reventa' if es else 'Fix-and-flip financing'),('/commercial/bridge-loans','Préstamos puente comerciales' if es else 'Commercial bridge loans')]
 counts={'breadcrumbs':0,'topic_hubs':0,'program_links':0}
 for path,(file,text) in pages.items():
+ text=revise_article(text,path,article_revisions)
  text=normalize_presentation(text,path)
  text=positioning_footer(text,path)
  text=normalize_page_metadata(text,path,title_overrides)
@@ -113,6 +116,6 @@ for path,(file,text) in pages.items():
  text=bundle_home_styles(text,path,R)
  file.write_text(text)
 sitemap=R/'sitemap.xml'
-sitemap.write_text(normalize_sitemap(sitemap.read_text(),{path:file.read_text() for path,(file,_) in pages.items()}))
+sitemap.write_text(normalize_sitemap(update_sitemap(sitemap.read_text(),article_revisions),{path:file.read_text() for path,(file,_) in pages.items()}))
 build_discovery_files(R)
 print(json.dumps(counts))
