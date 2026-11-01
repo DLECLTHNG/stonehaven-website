@@ -5,7 +5,7 @@
   "product": "Commercial",
   "en": {
     "title": "Construction loan draws: how much cash do builders need between payments?",
-    "metaTitle": "Construction Draw Schedules & Builder Cash Flow | Stonehaven",
+    "metaTitle": "Construction Loan Draws & Builder Cash Flow | Stonehaven",
     "desc": "Map construction draws, inspections, retainage and deposits before breaking ground. A worked cash-flow example explains why loan size is not spendable cash.",
     "eyebrow": "Construction · Draws and working cash",
     "terms": [
@@ -55,6 +55,17 @@
       },
       "Send a summary of the project, total cost, requested loan, permit status and intended first work package. Keep supporting bank statements and private contractor documents out of the public inquiry form. Stonehaven can help compare the funding sequence with the construction schedule through our <a href=\"/commercial/construction-loans#quick-inquiry\">construction financing review</a>.",
       {
+        "h": "Build a rolling cash forecast, not just a draw schedule"
+      },
+      "A draw schedule tracks progress. A cash forecast tracks the bank balance that makes that progress possible. For each week, record the opening unrestricted cash, invoices due, expected approved disbursements and closing balance. Keep an invoice in the cash forecast even if the work is eligible for financing. Eligibility and payment date are different questions.",
+      "Hypothetical example: a builder starts a week with $95,000, owes $80,000 to trades and expects a $60,000 draw. If the draw arrives that week, cash ends at $75,000. If it arrives the following week, cash temporarily falls to $15,000. A further $25,000 supplier deposit creates a $10,000 shortage before any later reimbursement. A positive total project profit does not solve that timing problem.",
+      "Use a second version of the forecast with one delayed inspection and one reduced draw. Identify who can authorize a contingency transfer and which funds are actually available to cover the low point. Do not include an expected home sale until the closing proceeds can be used. Our <a href=\"/construction-loan-calculator\">construction loan calculator</a> helps organize the overall funding gap; this weekly forecast handles a different question: when cash leaves and returns.",
+      {
+        "h": "What should I do before signing a contractor payment schedule?",
+        "level": 3
+      },
+      "Put the proposed contractor dates beside the loan draw procedure. Resolve deposits, stored materials, inspection cutoffs, retainage and lien documentation before the first invoice. Ask whether an advance is reimbursement or direct payment, and who must approve changes. A contractor agreement does not override the loan agreement.",
+      {
         "h": "Sources and scope"
       },
       "The <a href=\"https://help.aiacontracts.com/hc/en-us/articles/1500009387461-summary-g702-1992-application-and-certificate-for-payment\">AIA payment-application overview</a> informs the document explanation. The <a href=\"https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf\">OCC CRE handbook</a> discusses construction monitoring and budget controls. These are not uniform rules for every private loan. Reviewed October 21, 2026. The cash example is original hypothetical arithmetic."
@@ -62,7 +73,7 @@
   },
   "es": {
     "title": "Desembolsos de construcción: cuánto efectivo necesita entre pagos",
-    "metaTitle": "Desembolsos y efectivo para construcción | Stonehaven",
+    "metaTitle": "Desembolsos de construcción y efectivo | Stonehaven",
     "desc": "Coordine desembolsos, inspecciones, retenciones y depósitos antes de iniciar. Un ejemplo explica por qué el monto aprobado no es efectivo disponible.",
     "eyebrow": "Construcción · Desembolsos y liquidez",
     "terms": [
@@ -112,9 +123,27 @@
       },
       "Comparta resumen, costo total, préstamo solicitado, permisos y primera etapa de obra. No envíe estados de cuenta ni documentos privados mediante el formulario público. Stonehaven ayuda a comparar los fondos con el calendario mediante una <a href=\"/es/commercial/construction-loans#quick-inquiry\">revisión de construcción</a>.",
       {
+        "h": "Prepare una proyección de efectivo, además del calendario de desembolsos"
+      },
+      "El calendario de desembolsos refleja el avance de obra. La proyección de efectivo muestra el saldo bancario que permite ese avance. Para cada semana, registre efectivo disponible al inicio, facturas por vencer, desembolsos aprobados esperados y saldo final. Incluya cada factura aunque el trabajo sea financiable. Elegibilidad y fecha de pago son preguntas distintas.",
+      "Ejemplo hipotético: un constructor inicia la semana con $95,000, debe $80,000 a contratistas y espera un desembolso de $60,000. Si llega esa semana, termina con $75,000. Si llega la siguiente, el saldo baja temporalmente a $15,000. Un depósito adicional de $25,000 a un proveedor crea un déficit de $10,000 antes del reembolso. La utilidad total prevista no resuelve ese desfase.",
+      "Prepare otra versión con una inspección retrasada y un desembolso reducido. Identifique quién autoriza transferencias de contingencia y qué fondos están disponibles para cubrir el saldo mínimo. No incluya una venta prevista hasta que pueda utilizar su efectivo. Nuestra <a href=\"/es/construction-loan-calculator\">calculadora de construcción</a> organiza la brecha total; esta proyección semanal muestra cuándo sale y regresa el dinero.",
+      {
+        "h": "¿Qué debo resolver antes de firmar el calendario de pagos del contratista?",
+        "level": 3
+      },
+      "Compare las fechas propuestas con el procedimiento de desembolso. Aclare depósitos, materiales almacenados, inspecciones, retenciones y documentos de gravámenes antes de la primera factura. Confirme si se reembolsa al constructor o se paga directamente y quién aprueba los cambios. El contrato de obra no sustituye al contrato de préstamo.",
+      {
         "h": "Fuentes y alcance"
       },
       "La <a href=\"https://help.aiacontracts.com/hc/en-us/articles/1500009387461-summary-g702-1992-application-and-certificate-for-payment\">descripción de AIA</a> respalda la explicación documental. El <a href=\"https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf\">manual CRE de la OCC</a> aborda seguimiento de obra y controles presupuestarios. No son reglas uniformes para todo préstamo privado. Revisado el 21 de octubre de 2026. El ejemplo es aritmética hipotética propia."
+    ]
+  },
+  "contentRevision": {
+    "updated": "2026-11-01",
+    "citations": [
+      "https://help.aiacontracts.com/hc/en-us/articles/1500009387461-summary-g702-1992-application-and-certificate-for-payment",
+      "https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf"
     ]
   }
 }

@@ -5,7 +5,7 @@
   "product": "Commercial",
   "en": {
     "title": "Financing multiple spec homes: plan exposure, starts and sales",
-    "metaTitle": "Financing Multiple Spec Homes & Builder Exposure | Stonehaven",
+    "metaTitle": "Multiple Spec Home Construction Loans | Stonehaven",
     "desc": "Moving from one build to several? Compare individual loans, portfolio limits, phased starts and release prices without double-counting available cash.",
     "eyebrow": "Construction · Scaling a building business",
     "terms": [
@@ -55,6 +55,17 @@
       },
       "Send the project count, locations, total budget, requested facility or loans, current debt and timing. We help organize the combined request and identify questions about collateral, guarantees, draw conditions and exits. Start with the <a href=\"/commercial/construction-loans#quick-inquiry\">construction financing inquiry</a>.",
       {
+        "h": "Check the week when two projects need cash together"
+      },
+      "A builder may be able to fund either project alone and still struggle when both request deposits in the same week. Add the weekly cash forecasts together before choosing start dates. Keep personal liquidity, company operating cash and funds restricted to another project separate.",
+      "In a hypothetical overlap, Project A needs $70,000 before reimbursement and Project B needs $55,000. Available unrestricted cash of $100,000 leaves a $25,000 gap even though each project individually appears affordable. Staggering a start may reduce the overlap, but only if the revised contractor and loan dates are agreed.",
+      "Use the <a href=\"/blog/ground-up-construction-draw-schedule-cash-flow\">draw cash-flow worksheet</a> for each project, then reconcile them at the company level.",
+      {
+        "h": "Does an approved exposure limit mean every new start is approved?",
+        "level": 3
+      },
+      "No. Confirm whether a facility includes project-specific approval, borrowing-base conditions, availability periods or other restrictions. A headline limit is not the same as unrestricted cash available for any site.",
+      {
         "h": "Source and scope"
       },
       "The <a href=\"https://www.occ.treas.gov/news-issuances/bulletins/2005/bulletin-2005-32.html\">interagency residential tract-development guidance</a> addresses appraisal and loan-to-value considerations for financed developments. It does not establish a universal builder exposure multiple, revolving commitment or Stonehaven product. Reviewed October 21, 2026. The schedules and questions above are planning tools, not legal interpretations of a loan agreement."
@@ -62,7 +73,7 @@
   },
   "es": {
     "title": "Financiar varias viviendas para venta: deuda, inicios y salidas",
-    "metaTitle": "Financiar varias viviendas para venta | Stonehaven",
+    "metaTitle": "Financiar varias viviendas especulativas | Stonehaven",
     "desc": "¿Pasará de una obra a varias? Compare préstamos individuales, límites totales, etapas y liberaciones sin contar dos veces el efectivo disponible.",
     "eyebrow": "Construcción · Crecimiento del constructor",
     "terms": [
@@ -112,9 +123,26 @@
       },
       "Comparta número de proyectos, ubicaciones, presupuesto, préstamos solicitados, deuda actual y plazos. Organizamos la solicitud y las preguntas sobre garantías, desembolsos y salida. Inicie una <a href=\"/es/commercial/construction-loans#quick-inquiry\">consulta de financiamiento de construcción</a>.",
       {
+        "h": "Revise la semana en que dos proyectos necesitan efectivo"
+      },
+      "Un constructor puede financiar cada proyecto individualmente y tener dificultades cuando ambos exigen depósitos la misma semana. Sume las proyecciones semanales antes de elegir fechas de inicio. Separe liquidez personal, efectivo operativo y fondos restringidos a otro proyecto.",
+      "En un ejemplo hipotético, el proyecto A necesita $70,000 antes del reembolso y el B necesita $55,000. Con $100,000 disponibles hay un déficit de $25,000, aunque cada proyecto parezca viable por separado. Escalonar el inicio puede reducirlo si se acuerdan las nuevas fechas con el contratista y el acreedor.",
+      "Utilice la <a href=\"/es/blog/ground-up-construction-draw-schedule-cash-flow\">guía de efectivo entre desembolsos</a> para cada proyecto y concilie los resultados a nivel empresarial.",
+      {
+        "h": "¿Un límite aprobado autoriza cualquier nueva obra?",
+        "level": 3
+      },
+      "No. Confirme aprobaciones por proyecto, condiciones de la base de financiamiento, períodos de disponibilidad y restricciones. El límite anunciado no equivale a efectivo libre para cualquier terreno.",
+      {
         "h": "Fuente y alcance"
       },
       "La <a href=\"https://www.occ.treas.gov/news-issuances/bulletins/2005/bulletin-2005-32.html\">guía interinstitucional de desarrollos residenciales</a> aborda tasaciones y relación préstamo-valor. No establece un múltiplo universal de capacidad, una línea revolvente ni un producto de Stonehaven. Revisado el 21 de octubre de 2026. Los calendarios son herramientas de planificación, no interpretaciones legales de un contrato."
+    ]
+  },
+  "contentRevision": {
+    "updated": "2026-11-01",
+    "citations": [
+      "https://www.occ.treas.gov/news-issuances/bulletins/2005/bulletin-2005-32.html"
     ]
   }
 }

@@ -1,0 +1,149 @@
+{
+  "slug": "jumbo-mortgage-down-payment-reserves",
+  "date": "2026-11-01",
+  "type": "guide",
+  "product": "Residential",
+  "contentRevision": {
+    "updated": "2026-11-01",
+    "citations": [
+      "https://selling-guide.fanniemae.com/sel/b3-4.1-01/minimum-reserve-requirements",
+      "https://www.consumerfinance.gov/owning-a-home/loan-estimate/"
+    ]
+  },
+  "en": {
+    "title": "Jumbo Mortgage Down Payment, Reserves and Cash to Close",
+    "metaTitle": "Jumbo Mortgage Down Payment, Reserves and Cash to Close | Stonehaven",
+    "desc": "Plan the cash behind a luxury home purchase: down payment, closing costs, reserves and sale timing. Includes a $1.5 million hypothetical purchase.",
+    "eyebrow": "High-value home financing",
+    "terms": [
+      [
+        "Purpose",
+        "Purchase planning, not a loan offer"
+      ],
+      [
+        "Service area",
+        "AL, SC, NC, GA, TN and FL"
+      ],
+      [
+        "Property use",
+        "Disclose primary, second-home or investment use"
+      ]
+    ],
+    "body": [
+      "<strong>The down payment is only one part of the cash needed for a jumbo mortgage.</strong> Plan separately for closing costs, funds that must remain available after closing and the expenses of owning the home. A larger contribution reduces the mortgage but can leave less flexibility for a business, renovation or overlapping home sale.",
+      "Stonehaven Lending is a mortgage brokerage arranging high-value home financing in Alabama, South Carolina, North Carolina, Georgia, Tennessee and Florida. This guide explains how to organize a purchase review. It does not set a universal jumbo down payment or reserve requirement.",
+      {
+        "h": "Start with four separate cash amounts"
+      },
+      "<ul><li><strong>Down payment:</strong> the purchase price less the mortgage and any other approved financing.</li><li><strong>Closing uses:</strong> fees, prepaid items and other amounts required for the transaction, after applicable credits and deposits.</li><li><strong>Required reserves:</strong> eligible assets the program requires you to retain, using that program’s definitions.</li><li><strong>Your personal buffer:</strong> money you want available for moving, repairs, business operations or other commitments.</li></ul>",
+      "Do not count the same dollars as both a down payment and funds remaining afterward. An account can appear on a statement without every dollar being immediately accessible or eligible for a particular purpose. Identify ownership, withdrawal restrictions and outstanding obligations before relying on it.",
+      {
+        "h": "A hypothetical $1.5 million purchase"
+      },
+      "Assume a buyer has $500,000 of unrestricted cash and estimates $40,000 in closing uses, with no credits or previously paid deposits in this simplified example. A $300,000 down payment leaves a $1.2 million mortgage and $160,000 after closing. A $450,000 down payment leaves a $1.05 million mortgage and $10,000 after closing.",
+      "Neither structure is an approval. The example does not assume that either remaining balance satisfies a lender’s reserves or the buyer’s needs. It shows the trade-off to discuss before choosing a larger down payment. Compare the actual proposed payments and costs under identical assumptions, using our <a href=\"/residential/jumbo-loans\">jumbo mortgage guide</a> as the starting point.",
+      "If the buyer also wants $75,000 for planned improvements, the first scenario leaves $85,000 after setting that amount aside. The second scenario does not cover that goal. The improvements are a separate personal cash decision, not a claim that their cost can automatically be added to the mortgage.",
+      {
+        "h": "Reserves are not simply another closing fee"
+      },
+      "A reserve requirement usually concerns eligible assets remaining after the transaction rather than an ordinary charge paid away at closing. Ask which accounts count, how they are valued, whether funds must be liquid and whether other financed properties change the calculation. The actual jumbo program determines the answer.",
+      "For context, <a href=\"https://selling-guide.fanniemae.com/sel/b3-4.1-01/minimum-reserve-requirements\">Fannie Mae’s reserve guidance</a> describes reserves for its agency loans. It is useful for understanding the concept, but its rules are not a universal jumbo standard. Ask for the requirement applicable to your proposal in writing.",
+      {
+        "h": "Buying before another home sells"
+      },
+      "Identify whether your down payment depends on sale proceeds and whether you can carry both homes during an overlap. Show the expected sale-closing date, remaining mortgage, likely sale costs and any conditions still outstanding. An accepted offer on your current home is not money already received.",
+      "Use two purchase plans: the sale closes as expected, and the sale closes later. Discuss the difference before agreeing to a purchase deadline. Your agent or attorney should explain the contract’s financing and sale contingencies. Our <a href=\"/residential/buy\">high-value home purchase guide</a> connects these dates with the financing review.",
+      {
+        "h": "Compare offers on the same basis"
+      },
+      "A quote with fewer upfront costs may have a different rate or credit structure. A different down payment can also change the loan amount and terms, so compare matching scenarios first. The <a href=\"https://www.consumerfinance.gov/owning-a-home/loan-estimate/\">CFPB Loan Estimate explainer</a> identifies the estimated payment, closing costs and cash to close so you can examine them separately.",
+      "Keep the property price, occupancy, requested amount, closing date and lock assumptions consistent. Then ask what changes if you contribute more or less. Do not compare one quote’s principal-and-interest payment with another quote’s total payment including taxes and insurance.",
+      {
+        "h": "Questions about jumbo purchase cash"
+      },
+      {
+        "h": "Is 20% down required for every jumbo mortgage?",
+        "level": 3
+      },
+      "There is no single rule across all jumbo programs. Ask for the actual down-payment and reserve requirements for the property, loan size, occupancy and borrower profile. This guide does not advertise a specific minimum.",
+      {
+        "h": "Can business cash count toward my purchase?",
+        "level": 3
+      },
+      "It needs review. Explain who owns the account, whether you may withdraw the funds and what the withdrawal means for the business. If your income comes from that company, read the <a href=\"/blog/self-employed-jumbo-mortgage-documentation\">self-employed jumbo preparation guide</a> before assuming that all business cash is available personally.",
+      {
+        "h": "What should I send Stonehaven first?",
+        "level": 3
+      },
+      "Share the state, price range, approximate down payment, income type, planned use and timing. A summary is enough to begin. Keep statements, tax returns and account numbers out of the public inquiry form; we explain the appropriate document process next."
+    ]
+  },
+  "es": {
+    "title": "Pago inicial, reservas y cierre de una hipoteca jumbo",
+    "metaTitle": "Pago inicial, reservas y cierre de una hipoteca jumbo | Stonehaven",
+    "desc": "Planifique el efectivo para una vivienda de lujo: aportación, cierre, reservas y venta de otra casa. Incluye una compra hipotética de $1.5 millones.",
+    "eyebrow": "Financiamiento de alto valor",
+    "terms": [
+      [
+        "Objetivo",
+        "Planificación de compra, no oferta de préstamo"
+      ],
+      [
+        "Área de servicio",
+        "AL, SC, NC, GA, TN y FL"
+      ],
+      [
+        "Uso",
+        "Declare residencia principal, segunda vivienda o inversión"
+      ]
+    ],
+    "body": [
+      "<strong>El pago inicial es solo una parte del efectivo necesario para una hipoteca jumbo.</strong> Separe gastos de cierre, fondos que deben quedar disponibles y costos de la vivienda. Una aportación mayor reduce la hipoteca, pero puede dejar menos flexibilidad para empresa, mejoras o venta de otra casa.",
+      "Stonehaven Lending es un corredor hipotecario que gestiona financiamiento de alto valor en Alabama, Carolina del Sur, Carolina del Norte, Georgia, Tennessee y Florida. Esta guía organiza la revisión de compra; no establece requisitos universales de aportación o reservas.",
+      {
+        "h": "Separe cuatro cantidades"
+      },
+      "<ul><li><strong>Pago inicial:</strong> precio menos hipoteca y otro financiamiento aprobado.</li><li><strong>Usos de cierre:</strong> cargos, prepagos y otras cantidades, después de créditos y depósitos aplicables.</li><li><strong>Reservas exigidas:</strong> activos elegibles que el programa exige conservar.</li><li><strong>Margen personal:</strong> dinero para mudanza, reparaciones, empresa u otros compromisos.</li></ul>",
+      "No cuente los mismos fondos como aportación y como efectivo posterior. Que una cuenta aparezca en un estado no significa que todo sea accesible o elegible. Identifique titularidad, restricciones y obligaciones antes de utilizarla en el cálculo.",
+      {
+        "h": "Ejemplo hipotético de compra de $1.5 millones"
+      },
+      "Suponga $500,000 de efectivo libre y $40,000 de gastos de cierre, sin créditos ni depósitos anteriores en este ejemplo simplificado. Una aportación de $300,000 deja hipoteca de $1.2 millones y $160,000 después del cierre. Aportar $450,000 deja préstamo de $1.05 millones y $10,000.",
+      "Ninguna estructura constituye aprobación. No se supone que los saldos cumplan las reservas del prestamista o necesidades del comprador. El ejemplo muestra qué discutir antes de aumentar la aportación. Compare pagos y costos reales con iguales supuestos y consulte la <a href=\"/es/residential/jumbo-loans\">guía de hipotecas jumbo</a>.",
+      "Si además desea reservar $75,000 para mejoras, el primer escenario deja $85,000 después de apartarlos. El segundo no cubre ese objetivo. Las mejoras son una decisión separada; no se afirma que puedan añadirse automáticamente a la hipoteca.",
+      {
+        "h": "Las reservas no son simplemente otro cargo de cierre"
+      },
+      "Generalmente, la reserva se refiere a activos elegibles restantes, no a un cargo ordinario pagado en el cierre. Pregunte qué cuentas cuentan, cómo se valoran, liquidez exigida y efecto de otras propiedades financiadas. El programa jumbo concreto determina la respuesta.",
+      "La <a href=\"https://selling-guide.fanniemae.com/sel/b3-4.1-01/minimum-reserve-requirements\">guía de reservas de Fannie Mae</a> describe sus préstamos de agencia. Ayuda a entender el concepto, pero sus reglas no son un estándar jumbo universal. Solicite por escrito el requisito de su propuesta.",
+      {
+        "h": "Comprar antes de vender otra vivienda"
+      },
+      "Identifique si la aportación depende de la venta y si puede mantener ambas viviendas. Muestre fecha prevista, hipoteca pendiente, costos de venta y condiciones sin resolver. Una oferta aceptada no es efectivo recibido.",
+      "Prepare dos escenarios: venta puntual y venta tardía. Revise la diferencia antes de aceptar una fecha de compra. Su agente o abogado debe explicar contingencias de financiamiento y venta. La <a href=\"/es/residential/buy\">guía de compra de alto valor</a> conecta estas fechas con la revisión hipotecaria.",
+      {
+        "h": "Compare ofertas sobre la misma base"
+      },
+      "Menos gastos iniciales pueden acompañarse de otra tasa o crédito. Cambiar la aportación también puede modificar monto y condiciones. El <a href=\"https://www.consumerfinance.gov/owning-a-home/loan-estimate/\">explicador de estimación de préstamo del CFPB</a> permite distinguir pago, gastos y efectivo de cierre.",
+      "Mantenga iguales precio, ocupación, monto, fecha y supuestos de bloqueo de tasa. Después pregunte qué cambia al aportar más o menos. No compare un pago de principal e intereses con otro que incluya impuestos y seguro.",
+      {
+        "h": "Preguntas sobre el efectivo de compra"
+      },
+      {
+        "h": "¿Siempre se exige el 20% de pago inicial?",
+        "level": 3
+      },
+      "No existe una regla para todos los programas jumbo. Solicite requisitos según propiedad, monto, ocupación y perfil. Esta guía no anuncia un mínimo específico.",
+      {
+        "h": "¿Puedo usar efectivo de la empresa?",
+        "level": 3
+      },
+      "Requiere revisión. Explique titularidad, posibilidad de retiro y efecto empresarial. Si esa empresa produce sus ingresos, consulte la <a href=\"/es/blog/self-employed-jumbo-mortgage-documentation\">guía jumbo para empresarios</a> antes de contar todo como dinero personal.",
+      {
+        "h": "¿Qué debo enviar primero?",
+        "level": 3
+      },
+      "Estado, rango de precio, aportación aproximada, ingresos, uso y fecha. Un resumen basta para comenzar. No envíe estados de cuenta, declaraciones ni números de cuenta por el formulario público; explicamos después el proceso adecuado."
+    ]
+  }
+}

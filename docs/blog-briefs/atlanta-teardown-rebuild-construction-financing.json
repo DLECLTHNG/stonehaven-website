@@ -49,9 +49,20 @@
       {
         "h": "Related builder guides"
       },
-      "<a href=\"/blog/100-ltc-construction-loans-builder-cash-needed\">100% LTC Construction Loans: How Much Cash Does a Builder Really Need?</a> · <a href=\"/blog/construction-loan-property-already-owned-mortgage-payoff\">Construction Financing When You Already Own the Property: Equity and Mortgage Payoff</a>"
+      "<a href=\"/blog/100-ltc-construction-loans-builder-cash-needed\">100% LTC Construction Loans: How Much Cash Does a Builder Really Need?</a> · <a href=\"/blog/construction-loan-property-already-owned-mortgage-payoff\">Construction Financing When You Already Own the Property: Equity and Mortgage Payoff</a>",
+      {
+        "h": "Price the site transition before pricing the finished home"
+      },
+      "For a teardown, ask the builder to separate demolition, disposal, site preparation, utility work and vertical construction. A single construction total hides costs that may be due before a normal progress draw. Put the permit path and contractor start date beside the acquisition deadline, not in a separate presentation.",
+      "For an owned property, reconcile the payoff before estimating usable land equity. For a purchase, show the earnest money already paid and the amount needed at closing. The <a href=\"/blog/construction-loan-property-already-owned-mortgage-payoff\">owned-property financing example</a> explains the difference between property value, debt and recognized equity.",
+      "Use the municipality governing the actual parcel. An Atlanta mailing address is not enough to establish which office approves demolition or the new build.",
+      {
+        "h": "Can I use a renovation quote for a complete teardown?",
+        "level": 3
+      },
+      "Ask for the financing to be reviewed against the actual scope. Removing the existing structure changes the project and collateral. Confirm that the proposed program, appraisal, insurance and funding sequence reflect demolition and new construction."
     ],
-    "metaTitle": "Atlanta Teardown & Rebuild Financing | Stonehaven"
+    "metaTitle": "Atlanta Teardown & Rebuild Construction Loans | Stonehaven"
   },
   "es": {
     "title": "Préstamos para demoler y reconstruir en Atlanta: de la compra a la obra",
@@ -99,8 +110,26 @@
       {
         "h": "Otras guías para constructores"
       },
-      "<a href=\"/es/blog/100-ltc-construction-loans-builder-cash-needed\">Préstamos de construcción al 100% LTC: cuánto efectivo necesita el constructor</a> · <a href=\"/es/blog/construction-loan-property-already-owned-mortgage-payoff\">Financiar construcción en una propiedad que ya posee: patrimonio y saldo hipotecario</a>"
+      "<a href=\"/es/blog/100-ltc-construction-loans-builder-cash-needed\">Préstamos de construcción al 100% LTC: cuánto efectivo necesita el constructor</a> · <a href=\"/es/blog/construction-loan-property-already-owned-mortgage-payoff\">Financiar construcción en una propiedad que ya posee: patrimonio y saldo hipotecario</a>",
+      {
+        "h": "Presupueste la transformación del terreno antes de la vivienda terminada"
+      },
+      "Pida separar demolición, retiro de escombros, preparación del terreno, servicios y construcción vertical. Un único total oculta gastos que pueden vencer antes de un desembolso normal. Coloque permisos e inicio de obra junto al plazo de adquisición.",
+      "Para una propiedad propia, concilie la liquidación antes de estimar patrimonio utilizable. En una compra, muestre el depósito pagado y el efectivo necesario al cierre. El <a href=\"/es/blog/construction-loan-property-already-owned-mortgage-payoff\">ejemplo de propiedad ya adquirida</a> distingue valor, deuda y patrimonio reconocido.",
+      "Identifique el municipio competente para la parcela. Una dirección postal de Atlanta no determina por sí sola quién autoriza la demolición o construcción.",
+      {
+        "h": "¿Puedo usar una cotización de renovación para una demolición completa?",
+        "level": 3
+      },
+      "Solicite una revisión del alcance real. Retirar la estructura cambia el proyecto y la garantía. Confirme que programa, tasación, seguro y desembolsos contemplan demolición y nueva construcción."
     ],
-    "metaTitle": "Financiar demolición y reconstrucción | Stonehaven"
+    "metaTitle": "Préstamos para demolición y construcción en Atlanta | Stonehaven"
+  },
+  "contentRevision": {
+    "updated": "2026-11-01",
+    "citations": [
+      "https://www.brookhavenga.gov/295/Demolition",
+      "https://www.brookhavenga.gov/291/New-Single-Family-Home---Residential"
+    ]
   }
 }

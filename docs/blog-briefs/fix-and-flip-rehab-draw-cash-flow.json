@@ -33,7 +33,7 @@
         "h": "Ask what the rehab holdback actually covers"
       },
       "Separate the purchase advance from the renovation holdback. Then ask which budget items qualify, how completion is verified and who receives the disbursement. A line showing $80,000 available for rehab does not establish that a $20,000 materials deposit will be funded before installation.",
-      "Processes vary. As one lender-specific example, <a href=\"https://www.limaone.com/construction-draw-process-explained/\">Lima One's published draw explanation</a> describes budget review, completed work, inspection and reimbursement. It also explains that interest treatment can differ among lenders. This source illustrates why you need the actual process for your selected loan; it is not a promise that Stonehaven's placements share one lender's eligibility, timing or pricing.",
+      "Processes vary. The <a href=\"https://help.aiacontracts.com/hc/en-us/articles/1500009387461-summary-g702-1992-application-and-certificate-for-payment\">AIA explanation of the G702 payment application</a> illustrates how work, retainage and amounts previously paid can be documented. It does not establish a lender’s approval, disbursement timing or required form. Obtain the actual draw procedure for the selected loan.",
       {
         "h": "A hypothetical first-flip cash plan"
       },
@@ -60,6 +60,16 @@
         "h": "How Stonehaven can assist with placement"
       },
       "Stonehaven is a mortgage brokerage that arranges financing through third-party lenders. We can review the purchase or payoff, rehab scope, expected completed value, experience and cash plan to identify potential financing options. Use our <a href=\"/commercial/fix-and-flip\">fix-and-flip financing page</a> and include your target closing date. We follow up by text. Final structure and draw conditions remain subject to the selected lender's underwriting.",
+      {
+        "h": "Separate reimbursable invoices from immediate cash demands"
+      },
+      "Before the first draw, create three lists: work included in the approved rehab budget, costs outside that budget and deposits due before work is complete. Ask which evidence is required for each funded line. Keep purchase closing cash separate from the working cash needed during renovation.",
+      "If the scope changes from cosmetic work to structural rebuilding, update the review before committing to the change. Our <a href=\"/commercial/construction-loans\">ground-up construction financing guide</a> covers a different project profile; a rehab approval should not be assumed to cover a new build.",
+      {
+        "h": "Can I assume a paid invoice will be fully reimbursed?",
+        "level": 3
+      },
+      "No. The cost must fit the approved scope and draw conditions, and may be affected by limits or retainage. Confirm eligibility and evidence before paying, then keep the payment record with the draw request.",
       {
         "h": "Frequently asked questions"
       },
@@ -99,7 +109,7 @@
         "h": "Pregunte qué cubre realmente la reserva de renovación"
       },
       "Separe el desembolso de compra de los fondos reservados para obra. Pregunte qué partidas califican, cómo se verifica el avance y quién recibe el dinero. Una línea de $80,000 disponibles para renovación no demuestra que se financie un anticipo de materiales de $20,000 antes de instalarlos.",
-      "Los procesos varían. Como ejemplo de un prestamista, la <a href=\"https://www.limaone.com/construction-draw-process-explained/\">explicación de desembolsos de Lima One (en inglés)</a> describe revisión del presupuesto, trabajo terminado, inspección y reembolso. También indica que el tratamiento de intereses puede variar. Ilustra por qué necesita conocer el proceso de su préstamo, no promete que las operaciones gestionadas por Stonehaven compartan elegibilidad, plazos o precios de ese prestamista.",
+      "Los procesos varían. La <a href=\"https://help.aiacontracts.com/hc/en-us/articles/1500009387461-summary-g702-1992-application-and-certificate-for-payment\">explicación AIA de la solicitud G702</a> ilustra documentación de obra, retenciones y pagos anteriores. No establece aprobación, plazo ni formulario exigido por un prestamista. Obtenga el procedimiento del préstamo elegido.",
       {
         "h": "Un plan hipotético de efectivo para la primera reventa"
       },
@@ -127,12 +137,28 @@
       },
       "Stonehaven es una firma de corretaje hipotecario que gestiona financiamiento mediante prestamistas externos. Podemos revisar compra o liquidación, alcance, valor terminado estimado, experiencia y efectivo para identificar alternativas. Utilice nuestra <a href=\"/es/commercial/fix-and-flip\">página de financiamiento para renovación y reventa</a> e indique cuándo desea cerrar. Damos seguimiento por mensaje de texto. La estructura y los desembolsos dependen de la evaluación del prestamista seleccionado.",
       {
+        "h": "Separe facturas reembolsables de necesidades inmediatas"
+      },
+      "Antes del primer desembolso, liste obra aprobada, gastos fuera del presupuesto y depósitos previos a la terminación. Confirme los comprobantes por partida. Separe el efectivo de compra del capital operativo para renovar.",
+      "Si el alcance cambia de trabajo cosmético a reconstrucción estructural, solicite revisión antes de comprometerse. Nuestra <a href=\"/es/commercial/construction-loans\">guía de nueva construcción</a> trata otro perfil; una aprobación de rehabilitación no necesariamente cubre una obra nueva.",
+      {
+        "h": "¿Puedo suponer que una factura pagada se reembolsa íntegramente?",
+        "level": 3
+      },
+      "No. Debe cumplir alcance y condiciones, y puede estar sujeta a límites o retenciones. Confirme elegibilidad y comprobantes antes de pagar; conserve el registro junto a la solicitud.",
+      {
         "h": "Preguntas frecuentes"
       },
       "<strong>¿Financiar el 100% de la renovación significa no aportar efectivo?</strong> No. La compra, los cargos, el calendario de reembolsos y los costos de mantener la propiedad, incluidos intereses, impuestos y seguro, pueden exigir efectivo. Pregunte qué costos son elegibles exactamente.",
       "<strong>¿Puedo usar el mismo efectivo operativo en varios proyectos?</strong> Solo si está disponible cuando cada uno lo necesita. Modele pagos simultáneos y revele otros compromisos al prestamista.",
       "<strong>¿Puedo cambiar de contratista después del cierre?</strong> El contrato puede exigir revisión o consentimiento. El cambio puede afectar presupuesto, terminación y documentos de desembolso. Confirme el proceso antes de comprometerse.",
       "<strong>¿La inspección del desembolso garantiza la calidad?</strong> No lo asuma. Aclare su propósito y contrate profesionales apropiados para calidad, cumplimiento de códigos y administración contractual."
+    ]
+  },
+  "contentRevision": {
+    "updated": "2026-11-01",
+    "citations": [
+      "https://help.aiacontracts.com/hc/en-us/articles/1500009387461-summary-g702-1992-application-and-certificate-for-payment"
     ]
   }
 }

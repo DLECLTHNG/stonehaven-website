@@ -61,6 +61,16 @@
       },
       "Send the property type and location, approximate payoff, maturity, current rent roll, operating summary, requested financing and the cash you expect to contribute. Keep private financial documents out of the initial public inquiry; arrange their delivery during follow-up. Stonehaven arranges financing through third-party lenders and can help frame the request and compare placement options. Start with <a href=\"/commercial/bridge-loans\">commercial bridge financing</a> or our <a href=\"/commercial\">commercial financing review</a>. We follow up by text.",
       {
+        "h": "Put maturity decisions on a dated calendar"
+      },
+      "List the contractual maturity, any extension notice deadline, the cost of extending, report ordering dates and the latest acceptable closing date. Work backward from obligations in the existing documents. An expected refinance closing is a planning assumption until the requirements are satisfied.",
+      "Use two payoff statements if the projected closing date changes. Interest, fees and other charges can change the cash-in amount even when the new loan proceeds stay the same. If work or lease-up remains, compare a <a href=\"/commercial/bridge-loans\">commercial bridge review</a> with the permanent financing case rather than treating either as assured.",
+      {
+        "h": "Does a strong appraisal remove the refinance gap?",
+        "level": 3
+      },
+      "Not necessarily. Income-based loan sizing, reserves, closing costs and the existing payoff may still require cash. Reconcile every limiting test and every closing use before concluding that the property can refinance without a contribution.",
+      {
         "h": "Frequently asked questions"
       },
       "<strong>Can I have a gap even if I never missed a payment?</strong> Yes. Payment history is important, but the new loan must satisfy the new lender's underwriting and cover the required closing uses.",
@@ -127,12 +137,28 @@
       },
       "Comparta tipo y ubicación del inmueble, liquidación aproximada, vencimiento, relación de arrendamientos, resumen operativo, monto solicitado y efectivo previsto. No envíe documentos financieros privados por la consulta pública inicial; coordine su entrega durante el seguimiento. Stonehaven gestiona financiamiento mediante prestamistas externos y puede ayudar a presentar la solicitud y comparar alternativas. Empiece con <a href=\"/es/commercial/bridge-loans\">financiamiento puente comercial</a> o nuestra <a href=\"/es/commercial\">revisión comercial</a>. Damos seguimiento por mensaje de texto.",
       {
+        "h": "Coloque las decisiones de vencimiento en un calendario"
+      },
+      "Anote vencimiento contractual, aviso para prórroga, costo de extensión, pedidos de informes y última fecha viable de cierre. Parta de las obligaciones del contrato actual. El cierre esperado sigue siendo un supuesto hasta cumplir los requisitos.",
+      "Actualice la liquidación si cambia la fecha. Intereses y cargos pueden modificar la aportación aunque el nuevo préstamo sea igual. Si faltan obra u ocupación, compare una <a href=\"/es/commercial/bridge-loans\">revisión de préstamo puente</a> con la alternativa permanente sin dar ninguna por segura.",
+      {
+        "h": "¿Una tasación alta elimina la brecha de refinanciamiento?",
+        "level": 3
+      },
+      "No necesariamente. Límites por ingresos, reservas, gastos y liquidación pueden exigir efectivo. Concilie cada límite y uso de fondos antes de concluir que no hace falta aportación.",
+      {
         "h": "Preguntas frecuentes"
       },
       "<strong>¿Puede faltar efectivo aunque nunca haya atrasado un pago?</strong> Sí. El historial importa, pero el nuevo préstamo debe cumplir los criterios del nuevo prestamista y cubrir los usos del cierre.",
       "<strong>¿Un avalúo mayor lo resuelve?</strong> Solo si el valor es el límite determinante y el prestamista lo acepta. La cobertura puede seguir limitando el monto aunque aumente el valor de la garantía.",
       "<strong>¿Aportar efectivo es necesariamente un mal resultado?</strong> No. Evalúe la deuda resultante, liquidez, costos y plan de negocio. La aportación debe ser una decisión deliberada, no una sorpresa el día del cierre.",
       "<strong>¿Cuándo debo empezar?</strong> Mientras exista tiempo para reunir documentos, revisar alternativas y resolver un faltante antes del vencimiento. El plazo necesario varía según el inmueble y el prestamista; no se garantiza una fecha de cierre."
+    ]
+  },
+  "contentRevision": {
+    "updated": "2026-11-01",
+    "citations": [
+      "https://www.occ.treas.gov/news-issuances/bulletins/2024/bulletin-2024-29.html"
     ]
   }
 }

@@ -48,6 +48,15 @@
       "Ask for gross loan proceeds, funded costs, nonfunded costs, initial deposits, cash to close, expected draw timing and reserve-release conditions. Keep those figures separate from headline leverage.",
       "Stonehaven can help organize the project’s sources and uses before a financing review. Start with <a href=\"/commercial/hud-221d4-construction-loans\">HUD construction financing</a> and provide the total budget, land status, projected NOI and requested amount.",
       {
+        "h": "Reconcile cash needed before closing and after closing"
+      },
+      "Create separate totals for costs paid before funding, equity due at closing and funds that must remain available afterward. Record whether each item is funded, reimbursable, credited or excluded. A single down-payment percentage cannot describe all four treatments. Compare the next steps in our <a href=\"/commercial/hud-financing\">HUD financing overview</a> and <a href=\"/blog/hud-loan-application-checklist-timeline\">application checklist</a>.",
+      {
+        "h": "Is maximum LTC the same as a promise of net proceeds?",
+        "level": 3
+      },
+      "No. Net proceeds depend on the controlling loan-sizing test and the required uses. Compare the proposed mortgage amount with a complete closing and post-closing cash schedule.",
+      {
         "h": "Sources and review date"
       },
       "Checked October 20, 2026. These are program explanations and illustrative planning examples, not a commitment or current rate quote. Issued HUD updates control over older summaries.",
@@ -99,10 +108,28 @@
       "Solicite préstamo bruto, costos financiados y no financiados, depósitos iniciales, efectivo al cierre, calendario de desembolsos y condiciones para liberar reservas. Sepárelos del porcentaje anunciado.",
       "Stonehaven puede ayudar a organizar fuentes y usos. Comience con <a href=\"/es/commercial/hud-221d4-construction-loans\">financiamiento de construcción HUD</a> y comparta presupuesto, situación del terreno, NOI previsto y monto solicitado.",
       {
+        "h": "Concilie efectivo antes y después del cierre"
+      },
+      "Separe gastos previos al financiamiento, aportación al cierre y fondos que deben permanecer disponibles. Registre si cada partida se financia, reembolsa, acredita o excluye. Un porcentaje de aportación no describe todos esos tratamientos. Compare los siguientes pasos en el <a href=\"/es/commercial/hud-financing\">resumen HUD</a> y la <a href=\"/es/blog/hud-loan-application-checklist-timeline\">lista de solicitud</a>.",
+      {
+        "h": "¿El LTC máximo promete fondos netos?",
+        "level": 3
+      },
+      "No. Los fondos dependen de la prueba limitante y los usos exigidos. Compare el monto propuesto con un calendario completo de efectivo antes y después del cierre.",
+      {
         "h": "Fuentes y fecha de revisión"
       },
       "Revisado el 20 de octubre de 2026. Son explicaciones y ejemplos ilustrativos, no un compromiso ni cotización. Las actualizaciones emitidas por HUD prevalecen sobre resúmenes anteriores.",
       "<ul><li><a href=\"https://www.hud.gov/sites/dfiles/OCHCO/documents/2025-03hsgml.pdf\">HUD Mortgagee Letter 2025-03: underwriting ratios</a></li><li><a href=\"https://www.hud.gov/sites/dfiles/OCHCO/documents/4430GHSGG.pdf\">HUD MAP Guide, Chapters 3, 5, 8 and 11</a></li><li><a href=\"https://www.hud.gov/sites/dfiles/hudclips/documents/2026-01hsgml.pdf\">HUD Mortgagee Letter 2026-01: middle-income housing</a></li><li><a href=\"https://public-inspection.federalregister.gov/2025-18379.pdf\">HUD final notice 2025-18379: multifamily insurance premiums</a></li></ul>"
+    ]
+  },
+  "contentRevision": {
+    "updated": "2026-11-01",
+    "citations": [
+      "https://www.hud.gov/sites/dfiles/OCHCO/documents/2025-03hsgml.pdf",
+      "https://www.hud.gov/sites/dfiles/OCHCO/documents/4430GHSGG.pdf",
+      "https://www.hud.gov/sites/dfiles/hudclips/documents/2026-01hsgml.pdf",
+      "https://public-inspection.federalregister.gov/2025-18379.pdf"
     ]
   }
 }

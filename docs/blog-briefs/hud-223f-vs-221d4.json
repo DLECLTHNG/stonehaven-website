@@ -51,6 +51,15 @@
       "<ul><li><strong>Scope:</strong> Obtain a meaningful repair or construction description before selecting the application route.</li><li><strong>Income:</strong> Distinguish achieved operations from projected rents after the work.</li><li><strong>Time:</strong> Reconcile purchase deadlines and maturities with the reports and review still required.</li><li><strong>Exit:</strong> Decide whether the goal is a long-term rental hold, an earlier sale or an interim financing step.</li></ul>",
       "Stonehaven can help organize that comparison. Start with the <a href=\"/commercial/hud-223f-loans\">223(f) apartment guide</a> or <a href=\"/commercial/hud-221d4-construction-loans\">221(d)(4) construction guide</a>, then share the property and business plan.",
       {
+        "h": "Write down the scope boundary"
+      },
+      "Separate repairs needed now, optional improvements and work needed to make the property habitable or complete the development. Give the same scope to every financing reviewer. Reclassifying a major project as light repairs to fit a preferred program creates an unreliable budget and timeline. Compare the next steps in our <a href=\"/commercial/hud-financing\">HUD financing overview</a> and <a href=\"/blog/hud-loan-application-checklist-timeline\">application checklist</a>.",
+      {
+        "h": "Should I choose a HUD program before obtaining the repair scope?",
+        "level": 3
+      },
+      "Start the discussion early, but do not finalize the route on the property label alone. The actual work, operating condition and program review determine which pathway can be considered.",
+      {
         "h": "Sources and review date"
       },
       "Checked October 20, 2026. These are program explanations and illustrative planning examples, not a commitment or current rate quote. Issued HUD updates control over older summaries.",
@@ -105,10 +114,27 @@
       "<ul><li><strong>Alcance:</strong> Defina reparaciones u obra antes de seleccionar la ruta.</li><li><strong>Ingresos:</strong> Distinga resultados reales de rentas previstas después de la obra.</li><li><strong>Plazo:</strong> Compare fechas de compra y vencimientos con informes y revisión pendientes.</li><li><strong>Salida:</strong> Defina si conservará en alquiler, venderá antes o necesita una etapa temporal.</li></ul>",
       "Stonehaven puede ayudar a organizar la comparación. Consulte <a href=\"/es/commercial/hud-223f-loans\">la guía 223(f)</a> o <a href=\"/es/commercial/hud-221d4-construction-loans\">la guía 221(d)(4)</a> y comparta el inmueble y plan.",
       {
+        "h": "Documente el alcance de obra"
+      },
+      "Separe reparaciones necesarias, mejoras opcionales y trabajos para habitabilidad o terminación. Entregue el mismo alcance a cada revisor. Describir una obra mayor como reparaciones menores para encajar en un programa produce un presupuesto y calendario poco fiables. Compare los siguientes pasos en el <a href=\"/es/commercial/hud-financing\">resumen HUD</a> y la <a href=\"/es/blog/hud-loan-application-checklist-timeline\">lista de solicitud</a>.",
+      {
+        "h": "¿Debo elegir el programa antes de definir las reparaciones?",
+        "level": 3
+      },
+      "Inicie la conversación pronto, pero no elija solo por la descripción del inmueble. Obra real, operación y revisión del programa determinan la vía posible.",
+      {
         "h": "Fuentes y fecha de revisión"
       },
       "Revisado el 20 de octubre de 2026. Son explicaciones y ejemplos ilustrativos, no un compromiso ni cotización. Las actualizaciones emitidas por HUD prevalecen sobre resúmenes anteriores.",
       "<ul><li><a href=\"https://www.hud.gov/sites/dfiles/OCHCO/documents/4430GHSGG.pdf\">HUD MAP Guide, Chapters 3, 5, 8 and 11</a></li><li><a href=\"https://www.hud.gov/sites/dfiles/OCHCO/documents/2025-03hsgml.pdf\">HUD Mortgagee Letter 2025-03: underwriting ratios</a></li><li><a href=\"https://www.hud.gov/sites/default/files/hudclips/documents/2026-05hsgml.pdf\">HUD Mortgagee Letter 2026-05: 2026 thresholds</a></li></ul>"
+    ]
+  },
+  "contentRevision": {
+    "updated": "2026-11-01",
+    "citations": [
+      "https://www.hud.gov/sites/dfiles/OCHCO/documents/4430GHSGG.pdf",
+      "https://www.hud.gov/sites/dfiles/OCHCO/documents/2025-03hsgml.pdf",
+      "https://www.hud.gov/sites/default/files/hudclips/documents/2026-05hsgml.pdf"
     ]
   }
 }

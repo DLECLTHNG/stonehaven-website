@@ -42,6 +42,17 @@ def normalize_presentation(text, path):
                   lambda m: m[1] + ('Guías y artículos' if es else 'Guides and articles') + m[2], text)
     if '/blog/' not in path and path not in ['/blog', '/es/blog']:
         return text
+    # Link the existing organization byline without inventing a named reviewer
+    # or changing publication dates. Preserve the paused Family article scope.
+    if '/blog/' in path and 'funnel.js' in text and not any(word in path for word in ('family', 'parents', 'parent-', 'adult-child', 'disabled-child', 'disability', 'co-sign')):
+        text = re.sub(r'(<p style="font-size:13px;[^>]*>)Stonehaven Lending( · )',
+                      r'\1<a href="/management">Stonehaven Lending</a>\2', text)
+        # Older FAQs put the question in bold inside the answer paragraph.
+        # Make that visible hierarchy navigable without generating FAQ claims.
+        def questions(match):
+            return re.sub(r'<p([^>]*)><strong>([^<]+\?)</strong>\s*(?:<br\s*/?>)?\s*',
+                          lambda q: '<h3 style="margin-top:24px;font-size:18px;">' + q[2] + '</h3><p' + q[1] + '>', match[0])
+        text = re.sub(r'<article\b[^>]*class="blog-article"[^>]*>.*?</article>', questions, text, flags=re.S)
     text = text.replace('A 15-minute call is enough to tell you what structure fits - honestly, and before you go looking elsewhere.',
                         'Share your financing question for follow-up by text. An initial review is not approval.')
     text = text.replace('Una llamada de 15 minutos basta para decirle qué estructura encaja, con honestidad y antes de que busque en otro lado.',

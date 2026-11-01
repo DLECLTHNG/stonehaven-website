@@ -61,6 +61,16 @@
       },
       "Stonehaven arranges financing through third-party lenders. Share the property's state, ownership or acquisition position, lot count, entitlement stage, infrastructure budget, requested financing and proposed builder or retail sales plan. We can help organize those facts for lender placement and identify release questions while comparing structures. We follow up by text. Final availability, guarantees, leverage and releases depend on underwriting and documents.",
       {
+        "h": "Model the last lots, not only the first sales"
+      },
+      "After every projected closing, calculate the debt remaining, lots remaining and unfinished shared improvements. A release formula that works for the first sale can leave too much debt against the remaining collateral if later sales are weaker or site work costs more.",
+      "Build a slower-sales case with identical release rules. Show the cash retained for roads, utilities and other completion obligations before treating any sale proceeds as money available for the next phase. The <a href=\"/blog/financing-multiple-spec-homes-builder-exposure\">multiple-project exposure guide</a> helps connect lot sales with later vertical starts.",
+      {
+        "h": "Can I negotiate release terms after a lot is under contract?",
+        "level": 3
+      },
+      "You can ask, but do not assume the lender will change the signed agreement. Review the release formula and any minimum repayment before setting a sale price or committing funds from that sale to another project.",
+      {
         "h": "Frequently asked questions"
       },
       "<strong>Is the release price a fee?</strong> A required principal release payment reduces debt. Separate fees or charges may also apply, so request a breakdown rather than treating every closing deduction the same way.",
@@ -127,12 +137,29 @@
       },
       "Stonehaven gestiona financiamiento mediante prestamistas externos. Comparta el estado donde está la propiedad, situación de compra o titularidad, cantidad de lotes, autorizaciones, presupuesto de infraestructura, monto solicitado y plan de ventas a constructores o compradores. Podemos organizar esos datos para presentar el proyecto e identificar preguntas sobre liberaciones. Damos seguimiento por mensaje de texto. Disponibilidad, garantías, apalancamiento y liberaciones dependen de evaluación y documentos.",
       {
+        "h": "Proyecte los últimos lotes, no solo las primeras ventas"
+      },
+      "Después de cada cierre previsto, calcule deuda, lotes restantes y mejoras compartidas pendientes. Una fórmula viable en la primera venta puede dejar demasiada deuda sobre las garantías restantes si bajan ventas o aumentan costos.",
+      "Prepare un escenario más lento con iguales reglas de liberación. Reserve fondos para vialidades, servicios y terminación antes de considerarlos disponibles para otra fase. La <a href=\"/es/blog/financing-multiple-spec-homes-builder-exposure\">guía de exposición entre proyectos</a> conecta ventas de lotes e inicios verticales.",
+      {
+        "h": "¿Puedo negociar la liberación después de contratar la venta?",
+        "level": 3
+      },
+      "Puede solicitarlo, pero no suponga que se cambiará el contrato firmado. Revise fórmula y pago mínimo antes de fijar precio o comprometer esos fondos en otro proyecto.",
+      {
         "h": "Preguntas frecuentes"
       },
       "<strong>¿El pago de liberación es una comisión?</strong> El abono exigido a principal reduce la deuda. Pueden existir cargos adicionales; solicite un desglose y no trate todas las deducciones como equivalentes.",
       "<strong>¿Puedo negociar el calendario?</strong> Puede solicitar una estructura compatible con el flujo del proyecto. El prestamista debe aceptarla y rigen los documentos firmados.",
       "<strong>¿Puedo conservar todos los ingresos tras liquidar el préstamo?</strong> Pueden quedar otras deudas, impuestos, gastos y obligaciones. Confirme la liquidación completa y los compromisos pendientes antes de distribuir efectivo.",
       "<strong>¿Un contrato con un constructor elimina el riesgo?</strong> No. Revise anticipos, condiciones de cierre, derechos de terminación y entregas. Un contrato es evidencia útil, pero no equivale a ventas cerradas."
+    ]
+  },
+  "contentRevision": {
+    "updated": "2026-11-01",
+    "citations": [
+      "https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf",
+      "https://www.occ.treas.gov/news-issuances/bulletins/2005/bulletin-2005-32.html"
     ]
   }
 }

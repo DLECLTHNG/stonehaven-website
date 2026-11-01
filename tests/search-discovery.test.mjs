@@ -53,3 +53,16 @@ print(json.dumps({'once':once,'twice':f(once,'/es/blog/example')}))`);
   assert.match(out.once, /href="#article-como-preparar-2"/);
   assert.match(out.once, /En esta guía/);
 });
+
+test('article bylines and questions gain semantic navigation without changing Family privacy pages', () => {
+  const out = python(`from site_presentation import normalize_presentation as f
+import json
+html = '<script src="/js/funnel.js"></script><p style="font-size:13px;">Stonehaven Lending · 2026-09-15</p><article class="blog-article"><h2>Questions</h2><p><strong>What cash is needed?</strong> The answer.</p></article><form><input name="email" required></form>'
+once=f(html,'/blog/construction-example')
+print(json.dumps({'once':once,'twice':f(once,'/blog/construction-example'),'family':f(html,'/blog/family-housing-example'),'original':html}))`);
+  assert.equal(out.once,out.twice);
+  assert.match(out.once, /<a href="\/management">Stonehaven Lending<\/a> · 2026-09-15/);
+  assert.match(out.once, /<h3[^>]*>What cash is needed\?<\/h3><p>The answer\.<\/p>/);
+  assert.match(out.once, /<form><input name="email" required><\/form>/);
+  assert.equal(out.family,out.original);
+});

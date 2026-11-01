@@ -51,6 +51,15 @@
       "<ul><li>Parcel map, site control and disclosure of any HOA or separately owned parcels.</li><li>Unit types, count, construction status and certificate-of-occupancy dates.</li><li>Rental comparables, achieved rents where available and an operating budget.</li><li>Construction costs, reserve assumptions, financing request and sponsor experience.</li><li>A clear commitment in the business plan to unified rental ownership rather than individual sales.</li></ul>",
       "Stonehaven can help review those inputs. Start with <a href=\"/commercial/hud-build-to-rent-financing\">the HUD BTR financing page</a>. If individual sales remain essential, compare <a href=\"/commercial/land-development-loans\">land and lot financing</a> instead of trying to force the project into a rental-community structure.",
       {
+        "h": "Document the community as one operating plan"
+      },
+      "Prepare a site map, ownership outline and budget for shared infrastructure and maintenance. Explain how homes will be leased and managed and whether any lots are intended for sale. Those facts help distinguish a rental community proposal from a collection of unrelated investment houses. Compare the next steps in our <a href=\"/commercial/hud-financing\">HUD financing overview</a> and <a href=\"/blog/hud-loan-application-checklist-timeline\">application checklist</a>.",
+      {
+        "h": "Does calling a development build-to-rent make it HUD eligible?",
+        "level": 3
+      },
+      "No. The development must meet the applicable program and current HUD requirements. Confirm eligibility from the actual ownership, site and operating structure before committing to the financing route.",
+      {
         "h": "Sources and review date"
       },
       "Checked October 20, 2026. These are program explanations and illustrative planning examples, not a commitment or current rate quote. Issued HUD updates control over older summaries.",
@@ -105,10 +114,26 @@
       "<ul><li>Mapa, control del sitio, asociaciones y parcelas de terceros.</li><li>Tipos de vivienda, número, avance y certificados de ocupación.</li><li>Comparables, rentas logradas y presupuesto operativo.</li><li>Costo de obra, reservas, préstamo y experiencia.</li><li>Plan claro de propiedad unificada de alquiler, sin ventas individuales.</li></ul>",
       "Stonehaven puede ayudar a revisar estos datos. Consulte <a href=\"/es/commercial/hud-build-to-rent-financing\">la página de financiamiento BTR HUD</a>. Si vender individualmente es esencial, compare <a href=\"/es/commercial/land-development-loans\">financiamiento de terrenos y lotes</a>.",
       {
+        "h": "Documente la comunidad como un plan operativo"
+      },
+      "Prepare plano, estructura de propiedad y presupuesto de infraestructura y mantenimiento compartidos. Explique arrendamiento, administración y si venderá lotes. Estos datos distinguen una comunidad de alquiler de viviendas de inversión independientes. Compare los siguientes pasos en el <a href=\"/es/commercial/hud-financing\">resumen HUD</a> y la <a href=\"/es/blog/hud-loan-application-checklist-timeline\">lista de solicitud</a>.",
+      {
+        "h": "¿Llamarlo build-to-rent lo hace elegible para HUD?",
+        "level": 3
+      },
+      "No. Debe cumplir el programa y los requisitos vigentes. Confirme elegibilidad según propiedad, terreno y operación reales antes de comprometerse con esa vía.",
+      {
         "h": "Fuentes y fecha de revisión"
       },
       "Revisado el 20 de octubre de 2026. Son explicaciones y ejemplos ilustrativos, no un compromiso ni cotización. Las actualizaciones emitidas por HUD prevalecen sobre resúmenes anteriores.",
       "<ul><li><a href=\"https://www.hud.gov/sites/default/files/hudclips/documents/2026-12hsgml.pdf\">HUD Mortgagee Letter 2026-12: build-to-rent eligibility</a></li><li><a href=\"https://www.hud.gov/sites/dfiles/OCHCO/documents/4430GHSGG.pdf\">HUD MAP Guide, Chapters 3, 5, 8 and 11</a></li></ul>"
+    ]
+  },
+  "contentRevision": {
+    "updated": "2026-11-01",
+    "citations": [
+      "https://www.hud.gov/sites/default/files/hudclips/documents/2026-12hsgml.pdf",
+      "https://www.hud.gov/sites/dfiles/OCHCO/documents/4430GHSGG.pdf"
     ]
   }
 }
