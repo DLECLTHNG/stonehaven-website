@@ -9,7 +9,7 @@ if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(b.slug || '')) throw new Error('A safe lo
 if (!/^\d{4}-\d{2}-\d{2}$/.test(b.date || '')) throw new Error('date must be YYYY-MM-DD');
 if (new Date(b.date).toISOString().slice(0, 10) !== b.date || b.date > new Date().toISOString().slice(0, 10)) throw new Error('Use a real publication date that is not in the future');
 if (!['guide', 'closing', 'case-study', 'announcement'].includes(b.type)) throw new Error('type must be guide, closing, case-study or announcement');
-if (b.product && !['HELOC', 'DSCR', 'Family', 'Commercial'].includes(b.product)) throw new Error('Unsupported product');
+if (b.product && !['HELOC', 'DSCR', 'Family', 'Commercial', 'Residential'].includes(b.product)) throw new Error('Unsupported product');
 if (b.inquiry && (b.inquiry !== 'Residential' || b.product !== 'HELOC')) throw new Error('Unsupported inquiry destination');
 if (b.audience && b.audience !== 'partners') throw new Error('Unsupported audience');
 if (b.audience === 'partners' && b.product) throw new Error('Partner guides use their own contact CTA');
@@ -93,6 +93,12 @@ ${shell.slice(shell.indexOf('<section class="lead">'),shell.indexOf('</main>'))}
       ? ['Revise su financiamiento DSCR', 'Comparta la propiedad, la renta, el financiamiento solicitado y su plan de salida. Le daremos seguimiento por mensaje de texto.', 'Solicitar una revisión DSCR']
       : ['Review your DSCR financing', 'Share the rental property, rent, requested financing and exit plan. We follow up by text.', 'Request a DSCR review'];
     out = out.replace(/<section class="lead">[\s\S]*?<\/section>/, `<section class="lead"><div class="wrap"><div class="lead-card"><h2>${cta[0]}</h2><p class="sub">${cta[1]}</p><p><a class="btn-primary" href="${prefix}/dscr-review">${cta[2]}</a></p><p class="fine">${disclosures[b.type][lang]}</p></div></div></section>`);
+  }
+  if (b.product === 'Residential') {
+    const cta = lang === 'es'
+      ? ['Conversemos sobre su compra', 'Comparta estado, precio previsto, pago inicial, tipo de ingresos y fecha de cierre. No envíe documentos financieros privados por el formulario público.', 'Revisar mi compra']
+      : ['Discuss your home purchase', 'Share the state, expected price, down payment, income type and closing date. Keep private financial documents out of the public inquiry form.', 'Discuss my purchase'];
+    out = out.replace(/<section class="lead">[\s\S]*?<\/section>/, `<section class="lead"><div class="wrap"><div class="lead-card"><h2>${cta[0]}</h2><p class="sub">${cta[1]}</p><p><a class="btn-primary" href="${prefix}/residential/jumbo-loans#quick-inquiry">${cta[2]}</a></p><p class="fine">${disclosures[b.type][lang]}</p></div></div></section>`);
   }
   if (b.product === 'HELOC') {
     const cta = lang === 'es'

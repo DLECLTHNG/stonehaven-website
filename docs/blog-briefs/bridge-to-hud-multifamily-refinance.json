@@ -51,6 +51,15 @@
       "Share the property, existing loan balance, maturity, recent operations, completed and remaining work, and your target refinance amount. We can help organize the timing and proceeds questions before the next underwriting step.",
       "For apartments, continue with <a href=\"/commercial/hud-223f-loans\">HUD 223(f) financing</a>. For development, review <a href=\"/commercial/hud-221d4-construction-loans\">221(d)(4)</a>. Eligible care facilities use <a href=\"/commercial/hud-232-healthcare-financing\">a separate Section 232 process</a>, so apartment assumptions should not be transferred to healthcare.",
       {
+        "h": "Set a fallback decision date"
+      },
+      "List the latest date at which you can still extend, sell or arrange a different refinance without missing the bridge maturity. Keep the status of the HUD application separate from that calendar. If the permanent proceeds decrease, identify the cash source for the payoff gap before the bridge becomes urgent. Compare the next steps in our <a href=\"/commercial/hud-financing\">HUD financing overview</a> and <a href=\"/blog/hud-loan-application-checklist-timeline\">application checklist</a>.",
+      {
+        "h": "Does submitting a HUD application extend my bridge loan?",
+        "level": 3
+      },
+      "No. The bridge documents control maturity and extension rights. A pending application does not change them. Obtain any extension in writing.",
+      {
         "h": "Sources and review date"
       },
       "Checked October 20, 2026. These are program explanations and illustrative planning examples, not a commitment or current rate quote. Issued HUD updates control over older summaries.",
@@ -105,10 +114,27 @@
       "Comparta inmueble, saldo, vencimiento, resultados recientes, obras realizadas y pendientes y refinanciamiento solicitado. Podemos ayudar a organizar las preguntas de plazo y fondos antes de la siguiente evaluación.",
       "Para apartamentos, consulte <a href=\"/es/commercial/hud-223f-loans\">HUD 223(f)</a>. Para desarrollo, <a href=\"/es/commercial/hud-221d4-construction-loans\">221(d)(4)</a>. Los centros de cuidados utilizan <a href=\"/es/commercial/hud-232-healthcare-financing\">un proceso 232 separado</a>.",
       {
+        "h": "Fije una fecha para decidir la alternativa"
+      },
+      "Identifique hasta cuándo puede prorrogar, vender o buscar otro refinanciamiento sin incumplir el vencimiento puente. Separe el estado de la solicitud HUD de ese calendario. Si bajan los fondos permanentes, identifique cómo cubrir la diferencia antes de que venza el puente. Compare los siguientes pasos en el <a href=\"/es/commercial/hud-financing\">resumen HUD</a> y la <a href=\"/es/blog/hud-loan-application-checklist-timeline\">lista de solicitud</a>.",
+      {
+        "h": "¿Presentar la solicitud HUD prorroga el préstamo puente?",
+        "level": 3
+      },
+      "No. El contrato puente determina vencimiento y prórrogas. Una solicitud pendiente no los modifica. Obtenga cualquier extensión por escrito.",
+      {
         "h": "Fuentes y fecha de revisión"
       },
       "Revisado el 20 de octubre de 2026. Son explicaciones y ejemplos ilustrativos, no un compromiso ni cotización. Las actualizaciones emitidas por HUD prevalecen sobre resúmenes anteriores.",
       "<ul><li><a href=\"https://www.hud.gov/sites/dfiles/OCHCO/documents/4430GHSGG.pdf\">HUD MAP Guide, Chapters 3, 5, 8 and 11</a></li><li><a href=\"https://www.hud.gov/sites/dfiles/OCHCO/documents/2025-03hsgml.pdf\">HUD Mortgagee Letter 2025-03: underwriting ratios</a></li><li><a href=\"https://www.hud.gov/hud-partners/healthcare-programs-orcf\">HUD Office of Residential Care Facilities</a></li></ul>"
+    ]
+  },
+  "contentRevision": {
+    "updated": "2026-11-01",
+    "citations": [
+      "https://www.hud.gov/sites/dfiles/OCHCO/documents/4430GHSGG.pdf",
+      "https://www.hud.gov/sites/dfiles/OCHCO/documents/2025-03hsgml.pdf",
+      "https://www.hud.gov/hud-partners/healthcare-programs-orcf"
     ]
   }
 }

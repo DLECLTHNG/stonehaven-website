@@ -33,7 +33,7 @@
         "h": "Check whether the property is ready for rental financing"
       },
       "A completed rehab, required local approvals, appropriate insurance and a credible rental plan are separate from the original resale plan. Confirm whether the next lender permits a vacant property, requires a lease or uses appraised market rent under its own rules. Do not sign a lease, change occupancy or alter insurance without checking the existing loan obligations and obtaining appropriate advice.",
-      "A rental refinance is a distinct underwriting decision. As a lender-specific market example, <a href=\"https://www.kiavi.com/loans/rental\">Kiavi's rental financing page</a> describes refinancing investment property and a transition from rehab to rental financing. Its published terms belong to that program and can change. They do not establish a universal seasoning period, rent calculation or approval standard for Stonehaven placements.",
+      "A rental refinance is a separate underwriting decision. Ask for the actual seasoning, property-condition, rent-documentation and loan-sizing requirements before treating it as the exit. The <a href=\"/dscr\">DSCR financing overview</a> explains the review without implying that a rehab approval guarantees the next loan.",
       {
         "h": "Run the rent calculation and the operating budget"
       },
@@ -60,6 +60,16 @@
         "h": "How Stonehaven can help review both exits"
       },
       "Stonehaven is a mortgage brokerage that arranges financing through third-party lenders. We can help organize the payoff, property and rental information, identify questions that affect placement and compare potential structures. Start with the property's location, current loan timing, rehab status, requested amount and expected rent. We follow up by text. Do not send private tenant or borrower documents through the initial public form.",
+      {
+        "h": "Compare a sale today with a financed hold"
+      },
+      "Prepare a net-sale worksheet and a rental-hold worksheet using the same property condition and date. For the rental case, show cash required to refinance, actual operating expenses and a reserve for vacancy and repairs. For the sale case, show selling costs and debt payoff. A higher future asking price is not cash available to service the loan today.",
+      "Use the <a href=\"/dscr-program-calculator\">DSCR planning calculator</a> for a preliminary coverage comparison, then verify the proposed program’s treatment of rent, taxes, insurance and associations. Keep the operating profit calculation separate from the underwriting ratio.",
+      {
+        "h": "Can I call the property a second home to avoid rental underwriting?",
+        "level": 3
+      },
+      "No. State the actual intended use. A property intended for rental income needs to be reviewed on that basis. Occupancy descriptions must remain accurate throughout the application and closing process.",
       {
         "h": "Frequently asked questions"
       },
@@ -99,7 +109,7 @@
         "h": "Compruebe si está listo para financiamiento de alquiler"
       },
       "Terminar la renovación, obtener autorizaciones locales, contar con seguro apropiado y preparar el plan de alquiler son requisitos distintos de la reventa original. Confirme si el nuevo prestamista acepta un inmueble vacío, exige contrato de arrendamiento o utiliza renta de mercado según sus reglas. Antes de firmar un alquiler, cambiar la ocupación o modificar el seguro, revise las obligaciones actuales y obtenga asesoramiento apropiado.",
-      "El refinanciamiento requiere una evaluación nueva. Como ejemplo del mercado, la <a href=\"https://www.kiavi.com/loans/rental\">página de financiamiento de alquiler de Kiavi (en inglés)</a> describe refinanciamiento de inversión y transición desde una renovación. Sus términos corresponden a ese programa y pueden cambiar. No establecen un plazo universal de titularidad, cálculo de renta ni aprobación para operaciones de Stonehaven.",
+      "El refinanciamiento de alquiler exige otra evaluación. Confirme antigüedad, condición, documentación de renta y cálculo del préstamo antes de depender de esa salida. El <a href=\"/es/dscr\">resumen DSCR</a> explica la revisión sin insinuar que aprobar la rehabilitación garantiza el siguiente préstamo.",
       {
         "h": "Calcule la cobertura y el presupuesto operativo"
       },
@@ -127,12 +137,28 @@
       },
       "Stonehaven es una firma de corretaje hipotecario que gestiona financiamiento mediante prestamistas externos. Podemos organizar liquidación, inmueble y alquiler, identificar cuestiones que afectan la presentación y comparar estructuras posibles. Empiece con ubicación, vencimiento, estado de la renovación, monto solicitado y renta esperada. Damos seguimiento por mensaje de texto. No envíe documentos privados de inquilinos o prestatarios por el formulario público inicial.",
       {
+        "h": "Compare vender hoy con conservar mediante financiamiento"
+      },
+      "Prepare un cálculo de venta neta y otro de conservación con alquiler, usando la misma condición y fecha. En el alquiler, muestre aportación para refinanciar, gastos reales y reserva de vacancia y reparaciones. En la venta, incluya gastos y liquidación. Un precio futuro esperado no paga la deuda actual.",
+      "Use la <a href=\"/es/dscr-program-calculator\">calculadora DSCR</a> para una comparación preliminar y confirme cómo el programa trata renta, impuestos, seguro y asociaciones. Separe utilidad operativa del índice de evaluación.",
+      {
+        "h": "¿Puedo declararla segunda vivienda para evitar evaluación de alquiler?",
+        "level": 3
+      },
+      "No. Indique el uso real previsto. Una propiedad destinada a renta debe revisarse como tal. La descripción de ocupación debe ser correcta durante solicitud y cierre.",
+      {
         "h": "Preguntas frecuentes"
       },
       "<strong>¿Puedo refinanciar inmediatamente al terminar?</strong> Depende de las reglas sobre titularidad, tipo de operación, valor, ocupación y condición. Terminar la obra no elimina automáticamente esos requisitos.",
       "<strong>¿Necesito un inquilino antes de solicitar?</strong> Pregunte al prestamista propuesto. Varían los requisitos de contrato y renta de mercado, y solicitar no asegura que un inmueble vacío calificará.",
       "<strong>¿DSCR elimina el faltante de efectivo?</strong> No. La cobertura, el valor y otras condiciones determinan los fondos. El refinanciamiento puede exigir una aportación.",
       "<strong>¿Puedo mudarme a la propiedad?</strong> Eso cambia el análisis de ocupación y financiamiento. Avise a Stonehaven y al prestamista actual antes de cambiar el plan para revisar las opciones residenciales y obligaciones apropiadas."
+    ]
+  },
+  "contentRevision": {
+    "updated": "2026-11-01",
+    "citations": [
+      "https://www.occ.treas.gov/news-issuances/bulletins/2024/bulletin-2024-29.html"
     ]
   }
 }

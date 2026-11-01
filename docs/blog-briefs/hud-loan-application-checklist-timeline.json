@@ -56,6 +56,15 @@
       "A concise project summary is enough to start: location, units, purpose, cost or value, requested amount, existing debt, timing and the main issue. We can help organize the next review and identify which documents belong in a protected collection process.",
       "Keep SSNs, account statements, tenant records and patient information out of public forms. Start at <a href=\"/commercial/hud-financing#quick-inquiry\">the HUD inquiry</a>, or read <a href=\"/blog/bridge-to-hud-multifamily-refinance\">bridge-to-HUD exit planning</a> if a maturity is approaching.",
       {
+        "h": "Assign an owner to every outstanding item"
+      },
+      "Use a shared checklist with the document, responsible person, due date and unresolved question. Separate an ordered report from a completed report and a completed report from one accepted for the application. Track changes to scope or ownership so older documents do not silently become inconsistent. Begin with the <a href=\"/commercial/hud-financing\">HUD financing overview</a> to identify the relevant program discussion.",
+      {
+        "h": "Can I set the closing date from a published queue alone?",
+        "level": 3
+      },
+      "No. A queue is only one part of the process. Your document readiness, report findings, application review and closing conditions also affect timing. Ask for milestones and dependencies for your specific file.",
+      {
         "h": "Sources and review date"
       },
       "Checked October 20, 2026. These are program explanations and illustrative planning examples, not a commitment or current rate quote. Issued HUD updates control over older summaries.",
@@ -115,10 +124,29 @@
       "Basta un resumen: ubicación, unidades, objetivo, costo o valor, monto, deuda, fecha y dificultad principal. Podemos organizar la siguiente revisión y los documentos que necesitan un proceso protegido.",
       "No incluya SSN, estados bancarios ni datos privados de inquilinos o pacientes en formularios públicos. Empiece en <a href=\"/es/commercial/hud-financing#quick-inquiry\">la consulta HUD</a> o revise <a href=\"/es/blog/bridge-to-hud-multifamily-refinance\">la salida de deuda puente</a> si se acerca un vencimiento.",
       {
+        "h": "Asigne un responsable a cada pendiente"
+      },
+      "Use una lista con documento, responsable, fecha y pregunta pendiente. Distinga informe solicitado, terminado y aceptado para la solicitud. Registre cambios de alcance o propiedad para evitar documentos inconsistentes. Comience con el <a href=\"/es/commercial/hud-financing\">resumen HUD</a> para identificar el programa pertinente.",
+      {
+        "h": "¿Puedo fijar el cierre solo por una cola publicada?",
+        "level": 3
+      },
+      "No. La cola es una parte del proceso. Preparación, hallazgos, revisión y condiciones también afectan el plazo. Solicite hitos y dependencias de su expediente.",
+      {
         "h": "Fuentes y fecha de revisión"
       },
       "Revisado el 20 de octubre de 2026. Son explicaciones y ejemplos ilustrativos, no un compromiso ni cotización. Las actualizaciones emitidas por HUD prevalecen sobre resúmenes anteriores.",
       "<ul><li><a href=\"https://www.hud.gov/sites/dfiles/OCHCO/documents/4430GHSGG.pdf\">HUD MAP Guide, Chapters 3, 5, 8 and 11</a></li><li><a href=\"https://public-inspection.federalregister.gov/2025-18379.pdf\">HUD final notice 2025-18379: multifamily insurance premiums</a></li><li><a href=\"https://www.hud.gov/sites/default/files/hudclips/documents/2026-04hsgml.pdf\">HUD Mortgagee Letter 2026-04: environmental guidance</a></li><li><a href=\"https://www.hud.gov/hud-partners/healthcare-programs-orcf\">HUD Office of Residential Care Facilities</a></li><li><a href=\"https://www.hud.gov/stat/fha/underwriting-queues\">HUD healthcare underwriting queues</a></li></ul>"
+    ]
+  },
+  "contentRevision": {
+    "updated": "2026-11-01",
+    "citations": [
+      "https://www.hud.gov/sites/dfiles/OCHCO/documents/4430GHSGG.pdf",
+      "https://public-inspection.federalregister.gov/2025-18379.pdf",
+      "https://www.hud.gov/sites/default/files/hudclips/documents/2026-04hsgml.pdf",
+      "https://www.hud.gov/hud-partners/healthcare-programs-orcf",
+      "https://www.hud.gov/stat/fha/underwriting-queues"
     ]
   }
 }

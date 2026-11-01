@@ -3499,6 +3499,10 @@ Loans are subject to lender underwriting. If a path doesn't fit, we say so early
 - North Carolina (https://stonehavencre.com/residential/north-carolina)
 - South Carolina (https://stonehavencre.com/residential/south-carolina)
 
+### Plan your high-value home purchase
+
+Start with the decision in front of you: does this purchase need a jumbo mortgage? (https://stonehavencre.com/residential/jumbo-loans) , how much cash should remain after closing? (https://stonehavencre.com/blog/jumbo-mortgage-down-payment-reserves)  or how do I prepare business-owner income? (https://stonehavencre.com/blog/self-employed-jumbo-mortgage-documentation)  Each guide connects the numbers with the next documents and decisions.
+
  Start Here
 
 ### Request a consultation
@@ -3523,41 +3527,89 @@ All residential guides (https://stonehavencre.com/resources/residential)
 
 ---
 
-# Jumbo mortgages: loan size and underwriting
+# Jumbo mortgages for a well-planned purchase
 
 Source: https://stonehavencre.com/residential/jumbo-loans
 
-Residential financing
+High-value home financing
 
-## Jumbo mortgages: loan size and underwriting
+## Jumbo mortgages for a well-planned purchase
 
-Stonehaven Lending arranges mortgages for homes valued at $1 million and above in Georgia, Alabama, Tennessee, Florida, North Carolina and South Carolina. We are a mortgage brokerage; the lender underwrites and decides each application.
+A high-value home. A financing plan that connects your purchase, your income and the cash you want to keep.
 
 Discuss your financing (https://stonehavencre.com/residential/jumbo-loans#quick-inquiry)
 
-### Conforming or jumbo?
+### A jumbo mortgage starts with the loan amount
 
-Home value and loan amount are different figures. Depending on the down payment, a $1 million home may use a conforming or jumbo mortgage. The 2026 FHFA baseline conforming limit for a one-unit home is $832,750 ; some counties have higher limits. The loan must also meet the lender’s other requirements.
+A jumbo mortgage exceeds the conforming loan limit for the property’s county and unit count. A luxury home does not automatically need a jumbo loan: your down payment changes the amount borrowed. Stonehaven is a mortgage brokerage arranging high-value home financing in Alabama, South Carolina, North Carolina, Georgia, Tennessee and Florida.
 
-FHFA: 2026 conforming limits (https://www.fhfa.gov/news/news-release/fhfa-announces-conforming-loan-limit-values-for-2026) . Source checked September 28, 2026.
+For a one-unit home, the 2026 baseline conforming limit is $832,750; some counties have higher limits. Check the property’s county using the current FHFA county loan-limit table (https://www.fhfa.gov/data/conforming-loan-limit) . Being within a limit does not establish eligibility. Jumbo requirements also vary by program.
 
-### What makes a loan jumbo
+### Plan the purchase around the cash you want to keep
 
-A jumbo mortgage exceeds the conforming limit applicable to the property. Not every high-value home needs one. Check the county and unit count before comparing structures. CFPB: jumbo loan definition (https://www.consumerfinance.gov/ask-cfpb/what-is-a-jumbo-loan-en-116/) .
+Choose a down payment after looking at closing costs, reserves, near-term commitments and the proposed monthly payment. A larger down payment reduces the loan, but also leaves less liquidity. Ask for comparable scenarios using the same property, closing date and documented income.
 
-### Documentation and reserves
+Hypothetical purchase: a $1.5 million home with a $300,000 down payment requires a $1.2 million loan before any other financing. If the buyer has $500,000 available and closing uses are assumed to be $40,000, $160,000 remains afterward. Increasing the down payment to $450,000 reduces the loan to $1.05 million but leaves $10,000 under those assumptions. These figures illustrate cash allocation, not a program’s minimum down payment or reserve requirement.
 
-Chase’s educational guidance describes potentially more detailed income, asset and debt review, and reserves remaining after closing. Documents depend on the lender and income source. These are market observations, not Stonehaven program requirements. Source: preparing for a jumbo mortgage (https://www.chase.com/personal/mortgage/education/financing-a-home/how-to-prepare-for-jumbo-mortgage) .
+The jumbo down-payment and reserves guide (https://stonehavencre.com/blog/jumbo-mortgage-down-payment-reserves)  shows how to keep the purchase budget separate from the funds needed after closing.
 
-### Property appraisal
+### Match the income review to how you are paid
 
-Valuation review can differ too. Chase explains that some lenders request two appraisals depending on loan amount or other circumstances. Confirm the scope, costs and timing for the specific property with the lender. Source: jumbo application process (https://www.chase.com/personal/mortgage/education/financing-a-home/jumbo-loan-application-process) .
+For a salaried buyer, start with base pay and identify bonuses, commissions or equity compensation separately. For a business owner, distinguish business revenue, expenses, ownership share and money available personally. A strong business bank balance is not automatically personal qualifying income.
 
-Sources checked September 28, 2026. Cited lenders are educational sources; inclusion does not assert a lending relationship.
+If tax-return income does not describe the full picture, we can review whether a bank-statement mortgage (https://stonehavencre.com/bank-statement-loans)  fits the documented circumstances. That route still requires an income review and does not mean every deposit is usable income. Read the self-employed jumbo mortgage preparation guide (https://stonehavencre.com/blog/self-employed-jumbo-mortgage-documentation)  before collecting a file.
 
-### How we help
+### Primary residence, second home or rental?
 
-We organize property, income and funds information to explore financing options for your home. The lender confirms documentation, eligibility, appraisal requirements and the final decision. No approval is implied.
+Tell us the intended use before discussing terms. A home you will occupy, a second home and a property primarily held for rental income can require different financing. Include any planned rental use, management agreement or existing lease. Do not choose an occupancy label just to obtain a preferred quote.
+
+If the plan is a rental investment, start with our DSCR financing review (https://stonehavencre.com/dscr) . For a personal home, we review the residential route.
+
+### Compare payment structures beyond the opening payment
+
+Compare fixed and adjustable structures using the expected ownership period, adjustment terms and ability to handle a higher payment. If interest-only financing is considered, identify when principal payments begin and what happens to the payment afterward.
+
+The CFPB explains that interest-only payments do not reduce principal during the interest-only period (https://www.consumerfinance.gov/ask-cfpb/what-is-an-interest-only-loan-en-101/) . Our interest-only mortgage guide (https://stonehavencre.com/interest-only-loans)  covers the questions to ask before choosing that structure. Availability is subject to the specific program.
+
+### Review the property before setting a firm financing timetable
+
+For a custom home, large acreage, waterfront property or condominium, describe the property accurately at the start. Ask what valuation and property review are needed, who orders them and whether the closing date leaves time to resolve questions. Do not assume a listing price is the financeable value.
+
+Collect an address-specific insurance quote. For a condominium, identify association dues, known assessments and the documents available from the association. These are practical preparation steps, not a statement that every property qualifies.
+
+### What to share for an initial review
+
+- Property state, county and expected purchase price.
+- Requested loan and approximate down payment.
+- Primary residence, second home or investment use.
+- Income type: salary, business ownership, variable compensation or other documented income.
+- Whether you are under contract, selling another home and your target closing date.
+
+Start with a summary in the inquiry below. Keep tax returns, bank statements, account numbers and identification documents out of the public form. We explain the appropriate document process after the initial conversation.
+
+### How Stonehaven handles the financing conversation
+
+We help organize the purchase, income and cash position, identify structures to review, and coordinate the application through the financing process. The lender determines underwriting, documentation and approval. We do not promise approval, a particular rate or a closing date before reviewing the file.
+
+When comparing written offers, put the loan amount, payment structure, points, fees, lock period and closing funds side by side. The CFPB mortgage offer comparison guide (https://www.consumerfinance.gov/owning-a-home/compare/)  explains how Loan Estimates help make that comparison.
+
+### Jumbo mortgage questions
+
+Does a $1 million home require a jumbo mortgage?
+
+Not necessarily. The loan amount after the down payment, county limit and unit count determine whether it exceeds the conforming limit. Other underwriting requirements still apply.
+
+Is there one minimum down payment for every jumbo loan?
+
+No. The loan amount, occupancy, property and borrower profile affect the available structure. Ask for the actual down payment and reserves required for the proposed loan.
+
+Can a self-employed buyer be considered?
+
+Yes, we can review a self-employed purchase scenario. The appropriate documentation path depends on the business, income and requested loan; review is not approval.
+
+Can I inquire before finding a property?
+
+Yes. Start with the state, price range, intended use and income type. A preliminary conversation helps identify what needs review before you commit to a property.
 
  Start a conversation
 

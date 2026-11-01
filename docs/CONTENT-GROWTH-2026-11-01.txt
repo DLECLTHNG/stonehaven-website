@@ -1,0 +1,23 @@
+Construction, commercial and high-value homebuyer content release
+2026-11-01
+
+Scope
+- Expanded the remaining 18 retained Commercial guide briefs in English and Spanish, preserving their original publication dates and disclosures.
+- Added original cash-flow examples and practical review questions for construction draws, owned property, spec homes, multiple projects, rental exits and commercial refinancing. HUD additions address preparation and decisions without changing program ratios.
+- Refined eight construction search titles. Existing construction inquiry paths remain in place.
+- Linked organization bylines and converted bold FAQ questions to semantic H3 headings across eligible existing articles. This presentation pass does not imply a new factual review or publication date for every article.
+- Reworked the existing jumbo hub, expanded the purchase and residential pages, and added distinct local guidance to AL, SC, NC, GA, TN and FL pages in both languages.
+- Published two retained bilingual Residential briefs: jumbo-mortgage-down-payment-reserves and self-employed-jumbo-mortgage-documentation.
+- Added contextual discovery links through the residential resource hub. No duplicate city landing pages, fabricated offices, ratings or personal credentials.
+
+Source scope
+Primary sources checked November 1, 2026: FHFA county conforming loan limits; CFPB loan comparisons, Loan Estimate and interest-only explanations; Fannie Mae agency reserves and self-employed income guidance; Alabama, Georgia and South Carolina revenue departments; Tennessee Comptroller; North Carolina Real Estate Commission; Florida Office of Insurance Regulation; OCC CRE handbook; AIA payment-application explanation; HUD Mortgagee Letters 2025-03, 2026-01 and 2026-12; Brookhaven demolition requirements.
+Fannie Mae examples are agency rules, not universal jumbo rules. OCC context is banking supervision, not a private-loan promise. Hypothetical examples are not transactions or offers. County tax, insurance and contract guidance is linked at the relevant paragraph.
+Three lender-specific commercial examples and their associated claims were replaced with scoped primary-source or internal explanations. The jumbo hub no longer relies on competitor marketing pages.
+
+Preservation
+Existing forms, accepted-inquiry conversions and tracking scripts remain unchanged. New articles link to the existing Residential inquiry flow. No private documents are requested in public forms. Family publication remains paused. No new Family, FHA, VA, HELOC-persona or first-time-buyer campaign content was created. No aggregate funded-volume counter was restored.
+
+Validation
+217 automated tests and full site checks passed: 482 HTML pages, 419 sitemap URLs. All 16 CI generators reproduced their source output without changes. 26 responsive checks covered 13 priority routes at 390px and 1440px. Construction and Residential CTA destinations and empty-form rejection were checked locally. Delivery backend code and notification settings were not changed; no new end-to-end email/CRM test was claimed.
+Private release evidence and search baseline context are retained outside this public repository.

@@ -5,7 +5,7 @@
   "product": "Commercial",
   "en": {
     "title": "How to compare construction loan term sheets before you commit",
-    "metaTitle": "Construction Loan Term Sheet Checklist | Stonehaven",
+    "metaTitle": "Compare Construction Loan Term Sheets | Stonehaven",
     "desc": "Compare a construction loan’s net proceeds, draw rules, fees, maturity and exit. Use a worked example to see why a lower rate may need more cash.",
     "eyebrow": "Construction · Comparing financing",
     "terms": [
@@ -60,6 +60,16 @@
       "<ul><li>Project location, intended use and number of units.</li><li>Owned-land basis and debt, or purchase price and contract timing.</li><li>Remaining itemized budget, completed value estimate and build schedule.</li><li>Relevant completed projects and the contractor’s role.</li><li>Your requested financing, cash plan and intended sale or refinance.</li></ul>",
       "Start with the <a href=\"/commercial/construction-loans#quick-inquiry\">construction inquiry</a>. Mention that you have proposals to compare; we can arrange the next step for private documents. Initial feedback is not credit approval, and financing remains subject to underwriting and program availability.",
       {
+        "h": "Compare the cost of the same delay"
+      },
+      "Give each proposal the same stress case: construction finishes three months later and the sale takes another two months. Ask for the interest basis, extension conditions, extension fee, inspection costs and maturity consequences under that exact timetable. Do not compare a short, optimistic holding period in one proposal with a longer realistic period in another.",
+      "Track the expiration date of each quote and list unresolved assumptions. A verbal explanation should become a written condition before you rely on it. Use the <a href=\"/construction-loan-calculator\">construction financing planner</a> to keep the budget consistent; use the signed documents for the actual legal obligations.",
+      {
+        "h": "Is the cheapest rate always the cheapest construction loan?",
+        "level": 3
+      },
+      "No. Compare total projected costs, initial proceeds, required equity, draw timing and the exit under the same assumptions. A lower rate can be offset by fees, a smaller usable advance or a costly extension.",
+      {
         "h": "Sources and scope"
       },
       "Reviewed October 28, 2026. The <a href=\"https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf\">OCC Commercial Real Estate Lending handbook</a> discusses project budgets, equity, cost/value analysis and loan administration. OCC and NCUA materials guide their regulated institutions; they do not establish universal Stonehaven terms. The examples and comparison questions here are Stonehaven educational analysis. A term sheet’s legal effect depends on its wording and circumstances; obtain legal advice before signing obligations."
@@ -67,7 +77,7 @@
   },
   "es": {
     "title": "Cómo comparar propuestas de préstamos de construcción antes de comprometerse",
-    "metaTitle": "Comparar propuestas de construcción | Stonehaven",
+    "metaTitle": "Compare propuestas de préstamos de construcción | Stonehaven",
     "desc": "Compare fondos utilizables, desembolsos, cargos, vencimiento y salida. Un ejemplo muestra por qué una tasa menor puede requerir más efectivo.",
     "eyebrow": "Construcción · Comparar financiamiento",
     "terms": [
@@ -122,9 +132,27 @@
       "<ul><li>Ubicación, uso previsto y número de unidades.</li><li>Base y deuda del terreno propio, o precio y calendario de compra.</li><li>Presupuesto pendiente detallado, valor terminado estimado y calendario.</li><li>Proyectos similares terminados y función del contratista.</li><li>Financiamiento solicitado, efectivo y plan de venta o refinanciamiento.</li></ul>",
       "Empiece con la <a href=\"/es/commercial/construction-loans#quick-inquiry\">consulta de construcción</a>. Indique que desea comparar propuestas; coordinaremos el siguiente paso para documentos privados. La respuesta inicial no es aprobación de crédito. El financiamiento depende de evaluación y disponibilidad.",
       {
+        "h": "Compare el costo del mismo retraso"
+      },
+      "Aplique el mismo escenario a cada propuesta: obra terminada tres meses tarde y venta otros dos meses después. Solicite base de intereses, condiciones y cargo de prórroga, inspecciones y consecuencias al vencimiento. No compare un plazo optimista en una propuesta con uno más largo y realista en otra.",
+      "Registre vencimiento de cotizaciones y supuestos pendientes. Pida que las explicaciones verbales queden por escrito. Use la <a href=\"/es/construction-loan-calculator\">calculadora de financiamiento</a> para mantener el mismo presupuesto y los documentos firmados para las obligaciones legales.",
+      {
+        "h": "¿La tasa más baja siempre significa el préstamo más barato?",
+        "level": 3
+      },
+      "No. Compare costos totales, anticipo inicial, aportación, desembolsos y salida con iguales supuestos. Comisiones, fondos iniciales reducidos o prórrogas pueden compensar una tasa inferior.",
+      {
         "h": "Fuentes y alcance"
       },
       "Revisado el 28 de octubre de 2026. El <a href=\"https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf\">manual de bienes raíces comerciales de OCC</a> trata presupuestos, patrimonio, costo, valor y administración. Los materiales de OCC y NCUA orientan a sus instituciones reguladas; no establecen términos universales de Stonehaven. Los ejemplos y preguntas son análisis educativo de Stonehaven. El efecto legal de una propuesta depende del texto y las circunstancias; consulte a un abogado antes de asumir obligaciones."
+    ]
+  },
+  "contentRevision": {
+    "updated": "2026-11-01",
+    "citations": [
+      "https://help.aiacontracts.com/hc/en-us/articles/1500009387461-summary-g702-1992-application-and-certificate-for-payment",
+      "https://publishedguides.ncua.gov/examiner/Content/ExaminersGuide/Commercial%26MBL/CandD_Loans.htm",
+      "https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf"
     ]
   }
 }

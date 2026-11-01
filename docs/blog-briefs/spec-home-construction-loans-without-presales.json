@@ -58,6 +58,17 @@
       },
       "Start with the location, number of homes, ownership position, total cost, requested loan, completed value and target closing. We help structure the request and coordinate the next step. <a href=\"/commercial/construction-loans#quick-inquiry\">Discuss your ground-up construction project</a>.",
       {
+        "h": "Build the sale exit around net proceeds"
+      },
+      "A comparable sale supports a price discussion; it does not show the cash left after your own sale closes. Start with the expected selling price, subtract selling and closing costs, then subtract the projected loan payoff, including interest and any agreed exit charge. Compare the remainder with the cash you invested.",
+      "For illustration, a $1.5 million sale less $90,000 of selling costs and a $1.15 million payoff leaves $260,000 before taxes and other project obligations. If the sale price falls to $1.35 million while those assumed costs and payoff stay the same, only $110,000 remains. Neither figure is profit until all invested cash and unpaid costs are reconciled.",
+      "For a ground-up spec project, prepare a completion date and a separate sale-closing date. Carrying costs continue between them. The <a href=\"/blog/construction-loan-interest-reserve-vs-contingency\">interest-reserve guide</a> explains why the sales period belongs in the financing plan.",
+      {
+        "h": "Is a listing agreement the same as a presale?",
+        "level": 3
+      },
+      "No. A listing markets a home; a purchase contract identifies a buyer and agreed terms, often with contingencies. Submit the actual contract status. Do not describe a reservation, expression of interest or agent price opinion as a binding presale.",
+      {
         "h": "Source and scope"
       },
       "The <a href=\"https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf\">OCC Commercial Real Estate Lending handbook</a> discusses construction execution and repayment risks. It is bank supervisory guidance, not a Stonehaven program sheet or a promise of approval. Reviewed October 21, 2026. Numerical examples are our own stated assumptions."
@@ -65,7 +76,7 @@
   },
   "es": {
     "title": "Préstamos para construir y vender: ¿se puede empezar sin comprador?",
-    "metaTitle": "Construir para vender sin preventa | Stonehaven",
+    "metaTitle": "Construcción especulativa sin preventa | Stonehaven",
     "desc": "Prepare una obra para reventa: preventas, patrimonio del terreno, experiencia del constructor y efectivo antes de solicitar financiamiento.",
     "eyebrow": "Construcción · Viviendas para venta",
     "terms": [
@@ -118,9 +129,26 @@
       },
       "Empiece con ubicación, número de viviendas, propiedad actual, costo total, préstamo solicitado, valor terminado y fecha de cierre. Ayudamos a estructurar la solicitud y coordinar el siguiente paso. <a href=\"/es/commercial/construction-loans#quick-inquiry\">Consulte sobre su proyecto de obra nueva</a>.",
       {
+        "h": "Calcule la salida por venta con ingresos netos"
+      },
+      "Una venta comparable ayuda a analizar el precio, pero no muestra cuánto efectivo quedará en su cierre. Del precio previsto reste gastos de venta y cierre, y después la liquidación proyectada, incluidos intereses y cargos de salida acordados. Compare el remanente con su inversión en efectivo.",
+      "Como ilustración, una venta de $1.5 millones menos $90,000 de gastos y una liquidación de $1.15 millones deja $260,000 antes de impuestos y otras obligaciones. Si el precio baja a $1.35 millones y los otros supuestos permanecen iguales, quedan $110,000. Ninguna cifra representa utilidad hasta conciliar toda la inversión y los costos pendientes.",
+      "Para una construcción especulativa, prepare una fecha de terminación y otra de cierre de venta. Los gastos continúan entre ambas. La <a href=\"/es/blog/construction-loan-interest-reserve-vs-contingency\">guía sobre reservas de intereses</a> explica por qué debe presupuestar ese período.",
+      {
+        "h": "¿Un contrato de listado equivale a una preventa?",
+        "level": 3
+      },
+      "No. El listado comercializa la vivienda; el contrato de compraventa identifica a un comprador y condiciones acordadas, frecuentemente sujetas a contingencias. Informe el estado real del contrato. No presente una reserva, interés informal u opinión de precio como preventa vinculante.",
+      {
         "h": "Fuente y alcance"
       },
       "El <a href=\"https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf\">manual de préstamos inmobiliarios comerciales de la OCC</a> aborda riesgos de ejecución y pago de construcción. Es orientación supervisora bancaria, no un programa de Stonehaven ni una promesa de aprobación. Revisado el 21 de octubre de 2026. Los ejemplos usan supuestos propios expresamente indicados."
+    ]
+  },
+  "contentRevision": {
+    "updated": "2026-11-01",
+    "citations": [
+      "https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf"
     ]
   }
 }

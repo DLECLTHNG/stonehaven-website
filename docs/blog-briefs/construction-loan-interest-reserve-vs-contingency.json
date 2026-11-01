@@ -5,7 +5,7 @@
   "product": "Commercial",
   "en": {
     "title": "Construction loan interest reserves vs. contingency: budget for both",
-    "metaTitle": "Construction Interest Reserves vs. Contingency | Stonehaven",
+    "metaTitle": "Construction Interest Reserve vs. Contingency | Stonehaven",
     "desc": "Learn how construction interest reserves, contingency and working cash differ. Use a practical budget example to prepare a builder financing request.",
     "eyebrow": "Commercial · Construction cash planning",
     "terms": [
@@ -56,6 +56,16 @@
         "h": "What Stonehaven can help prepare"
       },
       "Stonehaven is a mortgage brokerage that arranges financing through third-party lenders. We can review the proposed budget and capital request, identify questions for lender placement and compare how potential structures handle reserves and draws. Send the project location, ownership or purchase position, itemized budget, requested financing, experience and expected exit. Start with our <a href=\"/commercial/construction-loans\">construction financing page</a>; we follow up by text. Availability and final terms depend on the lender and project.",
+      {
+        "h": "Keep a reserve ledger as the project changes"
+      },
+      "At each budget update, show the original reserve, amounts used, remaining balance and revised need to finish. A contingency that looks adequate in percentage terms may already be committed to approved change orders. An interest reserve may be insufficient after a longer schedule even without a construction overrun.",
+      "Use a simple decision log: what changed, its cash effect, who approved it and whether the lender accepted the budget transfer. Do not count the same $50,000 as both an available construction contingency and money reserved for interest. Reconcile the ledger with the <a href=\"/blog/construction-loan-term-sheet-comparison\">term sheet and final loan documents</a>.",
+      {
+        "h": "Can an unused contingency automatically pay interest?",
+        "level": 3
+      },
+      "No. Ask whether the loan documents allow the transfer and what approval is needed. Treat a proposed transfer as unavailable until confirmed, especially when calculating cash needed to complete the project.",
       {
         "h": "Frequently asked questions"
       },
@@ -119,12 +129,29 @@
       },
       "Stonehaven es una firma de corretaje hipotecario que gestiona financiamiento mediante prestamistas externos. Podemos revisar el presupuesto y la solicitud, identificar preguntas para presentar el proyecto y comparar el tratamiento de reservas y desembolsos. Comparta ubicación, compra o propiedad actual, presupuesto detallado, monto solicitado, experiencia y salida prevista. Empiece en nuestra <a href=\"/es/commercial/construction-loans\">página de financiamiento de construcción</a>. Damos seguimiento por mensaje de texto. La disponibilidad y los términos finales dependen del prestamista y del proyecto.",
       {
+        "h": "Actualice un registro de reservas durante la obra"
+      },
+      "En cada revisión muestre reserva original, uso acumulado, saldo y necesidad restante. Una contingencia aparentemente suficiente puede estar comprometida a órdenes de cambio. La reserva de intereses puede agotarse por retrasos aunque no aumente el costo de obra.",
+      "Registre qué cambió, efecto en efectivo, autorización y aceptación del traslado presupuestario por el acreedor. No cuente los mismos $50,000 como contingencia disponible y reserva de intereses. Concilie el registro con la <a href=\"/es/blog/construction-loan-term-sheet-comparison\">propuesta y documentación final</a>.",
+      {
+        "h": "¿La contingencia no utilizada puede pagar intereses automáticamente?",
+        "level": 3
+      },
+      "No. Confirme si el contrato permite transferirla y qué aprobación exige. Considere esos fondos no disponibles hasta recibir confirmación, especialmente al calcular el efectivo para terminar.",
+      {
         "h": "Preguntas frecuentes"
       },
       "<strong>¿La reserva significa que nunca debo hacer un pago?</strong> No. Es una fuente limitada regulada por el contrato. Un faltante o gasto no elegible puede exigir efectivo del prestatario.",
       "<strong>¿Recibo la contingencia al cierre?</strong> No necesariamente. La provisión puede mantenerse bajo control y liberarse únicamente después de una solicitud aprobada. Confirme las reglas de desembolso.",
       "<strong>¿Un terreno propio sustituye todas las reservas en efectivo?</strong> Su valor puede ayudar a estructurar el préstamo, pero no paga una factura sin un desembolso autorizado u otra fuente documentada. Revise tanto el patrimonio como la liquidez.",
       "<strong>¿Puede aumentarse la reserva después?</strong> Un aumento requiere una decisión crediticia o modificación contractual, no es un derecho automático. Planifique cómo cubrirá el faltante antes de depender de una prórroga o de fondos adicionales."
+    ]
+  },
+  "contentRevision": {
+    "updated": "2026-11-01",
+    "citations": [
+      "https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf",
+      "https://www.occ.treas.gov/news-issuances/bulletins/2024/bulletin-2024-29.html"
     ]
   }
 }

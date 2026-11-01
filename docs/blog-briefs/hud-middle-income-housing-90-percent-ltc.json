@@ -51,6 +51,15 @@
       "Share the location, unit count, development budget, proposed program, expected qualifying unit share, restriction term and current approvals. We can help organize the financing comparison and identify the eligibility questions that need confirmation.",
       "Continue with <a href=\"/commercial/hud-221d4-construction-loans\">221(d)(4) construction financing</a> and <a href=\"/blog/hud-loan-leverage-cash-to-close\">the cash-needed example</a>. A qualifying ratio still does not guarantee the final loan or eliminate reserves.",
       {
+        "h": "Compare the restricted and unrestricted business plans"
+      },
+      "Prepare two operating cases with the actual rent and occupancy assumptions for each. Show the capital requirement, ongoing compliance costs and consequences for the hold period. More leverage is only one variable; evaluate whether the full set of commitments fits the development strategy. Compare the next steps in our <a href=\"/commercial/hud-financing\">HUD financing overview</a> and <a href=\"/blog/hud-loan-application-checklist-timeline\">application checklist</a>.",
+      {
+        "h": "Can I use the middle-income leverage without the related obligations?",
+        "level": 3
+      },
+      "No. Treat the eligibility conditions and continuing obligations as part of the financing structure. Obtain qualified review of the applicable restrictions before choosing this route.",
+      {
         "h": "Sources and review date"
       },
       "Checked October 20, 2026. These are program explanations and illustrative planning examples, not a commitment or current rate quote. Issued HUD updates control over older summaries.",
@@ -105,10 +114,27 @@
       "Comparta ubicación, unidades, presupuesto, programa propuesto, proporción elegible, duración de restricción y aprobaciones. Ayudamos a organizar la comparación y las preguntas que requieren confirmación.",
       "Consulte <a href=\"/es/commercial/hud-221d4-construction-loans\">construcción 221(d)(4)</a> y <a href=\"/es/blog/hud-loan-leverage-cash-to-close\">el ejemplo de efectivo necesario</a>. Un ratio elegible no garantiza el monto ni elimina reservas.",
       {
+        "h": "Compare los planes con y sin restricciones"
+      },
+      "Prepare dos casos operativos con los supuestos reales de renta y ocupación. Muestre capital, costos continuos de cumplimiento y consecuencias para el período de conservación. Mayor apalancamiento es solo una variable; evalúe todos los compromisos. Compare los siguientes pasos en el <a href=\"/es/commercial/hud-financing\">resumen HUD</a> y la <a href=\"/es/blog/hud-loan-application-checklist-timeline\">lista de solicitud</a>.",
+      {
+        "h": "¿Puedo usar ese apalancamiento sin sus obligaciones?",
+        "level": 3
+      },
+      "No. Condiciones de elegibilidad y obligaciones continuas forman parte del financiamiento. Obtenga revisión calificada de las restricciones antes de elegir esa vía.",
+      {
         "h": "Fuentes y fecha de revisión"
       },
       "Revisado el 20 de octubre de 2026. Son explicaciones y ejemplos ilustrativos, no un compromiso ni cotización. Las actualizaciones emitidas por HUD prevalecen sobre resúmenes anteriores.",
       "<ul><li><a href=\"https://www.hud.gov/sites/dfiles/hudclips/documents/2026-01hsgml.pdf\">HUD Mortgagee Letter 2026-01: middle-income housing</a></li><li><a href=\"https://www.hud.gov/sites/dfiles/OCHCO/documents/2025-03hsgml.pdf\">HUD Mortgagee Letter 2025-03: underwriting ratios</a></li><li><a href=\"https://www.hud.gov/sites/dfiles/OCHCO/documents/4430GHSGG.pdf\">HUD MAP Guide, Chapters 3, 5, 8 and 11</a></li></ul>"
+    ]
+  },
+  "contentRevision": {
+    "updated": "2026-11-01",
+    "citations": [
+      "https://www.hud.gov/sites/dfiles/hudclips/documents/2026-01hsgml.pdf",
+      "https://www.hud.gov/sites/dfiles/OCHCO/documents/2025-03hsgml.pdf",
+      "https://www.hud.gov/sites/dfiles/OCHCO/documents/4430GHSGG.pdf"
     ]
   }
 }

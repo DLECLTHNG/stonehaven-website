@@ -5,7 +5,7 @@
   "product": "Commercial",
   "en": {
     "title": "Build-to-rent financing: plan the DSCR exit before construction",
-    "metaTitle": "Build-to-Rent Construction Loans & DSCR Exit | Stonehaven",
+    "metaTitle": "Build-to-Rent Construction Loans & DSCR Exits | Stonehaven",
     "desc": "Building rentals? Test completion, lease-up, rental income and refinance proceeds before relying on a DSCR loan to repay construction debt.",
     "eyebrow": "Construction · Build to rent",
     "terms": [
@@ -54,6 +54,17 @@
       },
       "Provide the location, unit count, cost, requested construction loan, projected finished value, expected rent, development stage and timeline. Stonehaven can help compare the two stages and identify missing facts. <a href=\"/commercial/construction-loans#quick-inquiry\">Start a construction financing review</a> or use the <a href=\"/dscr-program-calculator\">DSCR calculator</a> as an educational starting point.",
       {
+        "h": "Choose the refinance unit before choosing the construction structure"
+      },
+      "Decide whether you intend to refinance each finished home separately or hold the development under one project loan. That decision affects the questions to ask about parcels, liens, release conditions and the proposed permanent financing. A house-by-house exit should not assume that the construction lender will release each property for the amount a future DSCR loan produces.",
+      "Build a separate row for each home: expected rent, taxes, insurance, HOA charges, completion, lease status, proposed refinance amount and required construction-loan release payment. If one home refinances late, show how the remaining debt and carrying costs will be paid. For a community held together, prepare the project operating budget instead of adding up optimistic individual house values.",
+      "Our <a href=\"/commercial/construction-loans\">build-to-rent financing guide</a> connects the development stage with the long-term hold. If the site is a qualifying multifamily rental development, compare the <a href=\"/commercial/hud-financing\">HUD route</a> early rather than assuming a retail DSCR refinance is the only exit.",
+      {
+        "h": "Can the construction approval guarantee the DSCR refinance?",
+        "level": 3
+      },
+      "Only rely on an expressly documented commitment and its conditions. A construction approval alone does not establish future rent, value, rate, property eligibility or refinance proceeds. Keep a cash-gap and delay scenario in the plan.",
+      {
         "h": "Source and scope"
       },
       "The <a href=\"https://www.occ.treas.gov/news-issuances/bulletins/2024/bulletin-2024-29.html\">OCC bulletin on refinance risk</a> explains why repayment through a future loan requires its own analysis. It is bank guidance, not a guarantee of rental-loan eligibility. HUD-specific sources are retained on the linked program guides. Reviewed October 21, 2026. All numeric examples above are hypothetical."
@@ -61,7 +72,7 @@
   },
   "es": {
     "title": "Construir para alquilar: planifique la salida DSCR antes de la obra",
-    "metaTitle": "Construcción para alquiler y salida DSCR | Stonehaven",
+    "metaTitle": "Construcción para alquilar y salida DSCR | Stonehaven",
     "desc": "Antes de construir para alquilar, revise terminación, ocupación, renta y fondos de refinanciamiento para pagar la deuda de construcción.",
     "eyebrow": "Construcción · Inmuebles para alquiler",
     "terms": [
@@ -110,9 +121,26 @@
       },
       "Comparta ubicación, unidades, costo, préstamo solicitado, valor terminado, renta prevista, etapa y plazo. Ayudamos a comparar ambas fases e identificar información pendiente. <a href=\"/es/commercial/construction-loans#quick-inquiry\">Inicie una revisión de construcción</a> o use la <a href=\"/es/dscr-program-calculator\">calculadora DSCR</a> como punto de partida educativo.",
       {
+        "h": "Defina la unidad de refinanciamiento antes de estructurar la construcción"
+      },
+      "Decida si refinanciará cada vivienda por separado o mantendrá el desarrollo bajo un préstamo conjunto. Esto cambia las preguntas sobre parcelas, gravámenes, liberaciones y financiamiento permanente. Una salida por vivienda no debe suponer que el acreedor liberará cada inmueble por el monto que produzca un futuro préstamo DSCR.",
+      "Prepare una fila por vivienda: renta prevista, impuestos, seguro, HOA, terminación, contrato de alquiler, refinanciamiento estimado y pago exigido para liberar el préstamo de construcción. Si una vivienda se refinancia tarde, muestre cómo pagará la deuda y los gastos restantes. Para una comunidad conjunta, use el presupuesto operativo del proyecto, no la suma de valores optimistas por vivienda.",
+      "Nuestra <a href=\"/es/commercial/construction-loans\">guía de build-to-rent</a> conecta el desarrollo con la conservación a largo plazo. Para un desarrollo multifamiliar elegible, compare la <a href=\"/es/commercial/hud-financing\">alternativa HUD</a> desde el principio.",
+      {
+        "h": "¿La aprobación de construcción garantiza el refinanciamiento DSCR?",
+        "level": 3
+      },
+      "Confíe únicamente en un compromiso expresamente documentado y sus condiciones. La aprobación de construcción no fija renta, valor, tasa, elegibilidad ni fondos futuros. Incluya escenarios de déficit de efectivo y retraso.",
+      {
         "h": "Fuente y alcance"
       },
       "El <a href=\"https://www.occ.treas.gov/news-issuances/bulletins/2024/bulletin-2024-29.html\">boletín de la OCC sobre riesgo de refinanciamiento</a> explica por qué pagar mediante otro préstamo requiere análisis propio. Es orientación bancaria, no garantía de elegibilidad. Las fuentes HUD están en las guías enlazadas. Revisado el 21 de octubre de 2026. Todos los ejemplos numéricos son hipotéticos."
+    ]
+  },
+  "contentRevision": {
+    "updated": "2026-11-01",
+    "citations": [
+      "https://www.occ.treas.gov/news-issuances/bulletins/2024/bulletin-2024-29.html"
     ]
   }
 }
