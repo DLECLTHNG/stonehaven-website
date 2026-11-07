@@ -3,16 +3,16 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Calculadora de refinanciamiento | Stonehaven Lending</title>
-<meta name="description" content="¿Debería refinanciar? Los costos de cierre divididos entre el ahorro mensual son su mes de equilibrio, según cuánto conservará la casa. Honesto e instantáneo."/>
+<title>Calculadora de refinanciamiento hipotecario | Stonehaven</title>
+<meta name="description" content="Calcule cuántos meses de ahorro necesita para recuperar los gastos de cierre. Compare los pagos y el tiempo que piensa conservar la vivienda."/>
 <link rel="canonical" href="https://stonehavencre.com/es/refinance-calculator"/>
 <link rel="alternate" hreflang="en" href="https://stonehavencre.com/refinance-calculator"/>
 <link rel="alternate" hreflang="es" href="https://stonehavencre.com/es/refinance-calculator"/>
 <link rel="alternate" hreflang="x-default" href="https://stonehavencre.com/refinance-calculator"/>
 <meta property="og:type" content="website"/>
 <meta property="og:site_name" content="Stonehaven Lending"/>
-<meta property="og:title" content="Calculadora de refinanciamiento | Stonehaven Lending"/>
-<meta property="og:description" content="¿Debería refinanciar? Los costos de cierre divididos entre el ahorro mensual son su mes de equilibrio, según cuánto conservará la casa. Honesto e instantáneo."/>
+<meta property="og:title" content="Calculadora de refinanciamiento hipotecario | Stonehaven"/>
+<meta property="og:description" content="Calcule cuántos meses de ahorro necesita para recuperar los gastos de cierre. Compare los pagos y el tiempo que piensa conservar la vivienda."/>
 <meta property="og:url" content="https://stonehavencre.com/es/refinance-calculator"/>
 <meta property="og:image" content="https://stonehavencre.com/assets/stonehaven-social-v1.jpg"/>
 <link sizes="48x48" rel="icon" type="image/png" href="/assets/stonehaven-icon-48-v1.png"/>
@@ -31,6 +31,8 @@
 <meta property="og:image:height" content="630"/>
 <meta property="og:image:type" content="image/jpeg"/>
 <meta property="og:image:alt" content="Stonehaven Lending: commercial real estate, SBA and high-value home financing"/>
+<meta name="twitter:description" content="Calcule cuántos meses de ahorro necesita para recuperar los gastos de cierre. Compare los pagos y el tiempo que piensa conservar la vivienda."/>
+<meta name="twitter:title" content="Calculadora de refinanciamiento hipotecario | Stonehaven"/>
 <link rel="stylesheet" href="/search-navigation.css?v=1"/></head>
 <body><noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=4039555362846500&ev=PageView&noscript=1" alt=""/></noscript><header class="nav" id="nav">
   <div class="wrap nav-inner">
@@ -54,8 +56,8 @@
 <main>
 <section class="funnel-hero">
   <span class="eyebrow">Residencial · Calculadora de refinanciamiento</span>
-  <h1>Calculadora de <em>refinanciamiento</em></h1>
-  <p>¿Los ahorros pagan los costos antes de que se vaya? Treinta segundos, sin consulta de crédito.</p>
+  <h1>Calculadora de <em>refinanciamiento hipotecario</em></h1>
+  <p>Compare el ahorro mensual con los gastos de cierre y calcule cuándo recuperaría esos gastos.</p>
 </section>
 <div class="proof-strip"><span><b>Matemática del equilibrio</b> - toda la decisión</span><span><b>Sin tasas gancho</b> - sus estimados</span><span><b>Sin consulta de crédito</b> en esta etapa</span><span><b>GA · AL · TN · FL · NC</b> residencial</span></div>
 
@@ -90,8 +92,8 @@
   <div class="wrap">
     <div class="lead-card reveal">
       <span class="eyebrow">Las cifras reales</span>
-      <h2>Que un especialista lo valore de verdad</h2>
-      <p class="sub">Saldo, pago y objetivo - un especialista responde en un día hábil sobre si la matemática funciona.</p>
+      <h2>Consulte sobre su refinanciamiento</h2>
+      <p class="sub">Comparta el estado de la propiedad y su objetivo para que podamos revisar el plazo, los costos y los posibles ahorros.</p>
       <form class="lead-form" data-sh-form="refinance-calculator" data-sh-product="Residential" data-sh-event="lead" data-sh-lang="es" data-sh-thanks="/es/thanks-residential" data-sh-custom-validation="1" method="POST" action="/es/thanks-residential" data-netlify="true" netlify-honeypot="company_website"><input type="hidden" name="form-name" value="lead"/>
         <input type="text" name="company_website" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true"/>
         <div class="lf-field"><label for="g-name">Nombre completo</label><input id="g-name" type="text" name="name" autocomplete="name" maxlength="120" required/></div>
@@ -109,7 +111,7 @@
         </div>
         <div class="lead-actions">
           <span class="note">Sin spam, sin consulta de crédito en esta etapa. Al enviar, usted acepta que Stonehaven pueda contactarle sobre su consulta por teléfono, correo o mensaje de texto. El consentimiento no es condición del servicio.</span>
-          <button type="submit" class="lead-submit">Enviar mi escenario</button>
+          <button type="submit" class="lead-submit">Solicitar una consulta</button>
         </div>
       </form>
     </div>
@@ -148,12 +150,18 @@
   var $=function(id){return document.getElementById(id);};
   var fired=false;
   function money(n){return "$"+Math.round(Math.abs(n)).toLocaleString("en-US");}
-  function calc(){
+  function calc(event){
     var R=window.SH_RES; if(!R) return;
     var cur=+$("r-current").value||0, nw=+$("r-new").value||0,
         costs=+$("r-costs").value||0, stay=+$("r-stay").value||0;
     var out={m:$("r-months"),v:$("r-verdict"),note:$("r-note")};
-    if(cur<=0||nw<=0){out.m.textContent="-";out.v.textContent="";return;}
+    if(event && event.type==="input" && !fired && window.shTrack){fired=true;window.shTrack("calc_used",{page:"refinance-calculator-es"});}
+    var form=document.querySelector('form[data-sh-form="refinance-calculator"]');
+    if(form)form.removeAttribute("data-sh-about-prefix");
+    if(cur<=0||nw<=0){
+      out.m.textContent="-";out.v.textContent="";out.note.textContent="";
+      $("r-save").textContent="-";$("r-net").textContent="-";return;
+    }
     var b=R.breakEven(costs,cur,nw);
     if(!b){
       out.m.textContent=" - ";
@@ -166,7 +174,7 @@
     var months=b.months, stayMo=stay*12;
     var net=b.monthlySavings*stayMo-costs;
     out.m.textContent=(Math.round(months*10)/10)+" meses";
-    $("r-save").textContent=money(b.monthlySavings)+"/mo";
+    $("r-save").textContent=money(b.monthlySavings)+"/mes";
     $("r-net").textContent=(net>=0?"+":"−")+money(net);
     out.v.className="verdict "+(months<=stayMo*0.5?"strong":months<=stayMo?"workable":"short");
     out.v.textContent=months<=stayMo*0.5?"Alcanza el equilibrio bien dentro de su estadía"
@@ -175,9 +183,7 @@
     out.note.textContent=months<=stayMo
       ? "Después del mes "+Math.ceil(months)+", cada mes en la casa es dinero conservado. En "+stay+" años eso es una "+(net>=0?"ganancia":"pérdida")+" neta de "+money(net)+"."
       : "Con estas cifras se iría antes de que el refinanciamiento se pague solo - una pérdida neta de "+money(net)+". Una estructura de menor costo, o quedarse como está, le gana.";
-    var form=document.querySelector('form[data-sh-form="refinance-calculator"]');
     if(form)form.setAttribute("data-sh-about-prefix","[Calculadora Refi ES] "+money(cur)+" -> "+money(nw)+"/mo · costs "+money(costs)+" · break-even "+(Math.round(months*10)/10)+" mo vs "+stay+" yr stay");
-    if(!fired&&window.shTrack){fired=true;window.shTrack("calc_used",{page:"refinance-calculator-es"});}
   }
   ["r-current","r-new","r-costs","r-stay"].forEach(function(id){$(id).addEventListener("input",calc);});
   document.addEventListener("DOMContentLoaded",calc);

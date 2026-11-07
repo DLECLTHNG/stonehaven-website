@@ -263,6 +263,27 @@
     try { if (typeof window.gtag === "function") window.gtag("event", name, params); } catch (e) {}
   }
 
+  // Only record the two public management-to-inquiry routes. Discard all other referrer data.
+  function managementEntry() {
+    if (privateContext() || !document.referrer) return "";
+    try {
+      var here = new URL(window.location.href);
+      var previous = new URL(document.referrer);
+      if (previous.origin !== here.origin || safePublicPath(previous.pathname) !== "/management") return "";
+      if (here.pathname === "/commercial/construction-loans") return "management-build";
+      if (here.pathname === "/residential/jumbo-loans") return "management-purchase";
+    } catch (e) {}
+    return "";
+  }
+
+  function inquiryEventFields(form, fields) {
+    var entry = managementEntry();
+    if (entry) fields.inquiry_entry = entry;
+    var purpose = form.querySelector('[name="inquiry_purpose"]');
+    if (!privateContext() && purpose && purpose.value === "Professional introduction") fields.inquiry_kind = "professional";
+    return fields;
+  }
+
   /* ---------- 3 · form submission per WEBSITE_FORM_CONTRACT ---------- */
   // Any <form data-sh-form> is wired automatically. Attributes:
   //   data-sh-form      : source id, e.g. "dscr-analyzer" (sent as `page`)
@@ -299,6 +320,8 @@
     // Place the concise source summary after project facts and ahead of free text so the CRM's
     // 2,000-character fallback keeps it even when a prospect adds long notes.
     if (id) lines.push("[submission] " + id);
+    var entry = managementEntry();
+    if (entry) lines.push("[entry] " + entry);
     if (attribution) lines.push("[source] " + attribution.first_channel + "; first=" + attribution.first_landing_path +
       (attribution.first_referrer_origin ? "; ref=" + attribution.first_referrer_origin : "") +
       "; submit=" + attribution.submission_path + (attribution.last_cre_content_path ? "; CRE=" + attribution.last_cre_content_path : ""));
@@ -333,10 +356,10 @@
       started = true;
       // Static form identifiers only. Never send field names, answers or
       // contact details to analytics. This is not a lead conversion.
-      analyticsOnly('inquiry_started', {
+      analyticsOnly('inquiry_started', inquiryEventFields(form, {
         form_id: form.getAttribute('data-sh-form'),
         language: document.documentElement.lang || 'en'
-      });
+      }));
     }
     form.addEventListener('input', recordStart);
     form.addEventListener('change', recordStart);
@@ -430,6 +453,8 @@
       inquiryId = inquiryId || submissionId();
       var attribution = submissionAttribution();
       extra.submission_id = inquiryId;
+      var entry = managementEntry();
+      if (entry) extra.inquiry_entry = entry;
       if (attribution) extra.attribution = attribution;
 
       var payload = {
@@ -444,6 +469,7 @@
         extra: extra
       };
 
+      var acceptedFields = inquiryEventFields(form, { form_id: payload.page, product: payload.product, language: payload.lang });
       inFlight = true;
       var evt = form.getAttribute("data-sh-event") || "lead";
       track("form_submit_attempted", { page: payload.page });
@@ -451,7 +477,7 @@
       if (btn) { btn.disabled = true; btn.style.opacity = ".6"; }
 
       function done() {
-        analyticsOnly("generate_lead", { form_id: payload.page, product: payload.product, language: payload.lang });
+        analyticsOnly("generate_lead", acceptedFields);
         // Created before delivery, preserved across fallback/manual retries,
         // and shared only as the opaque conversion ID after accepted delivery.
         var eventId = inquiryId;
@@ -520,6 +546,7 @@
         var nf = new URLSearchParams();
         nf.append("form-name", "lead");
         nf.append("extra", JSON.stringify(payload.extra));
+        if (["Financing", "Professional introduction"].indexOf(extra.inquiry_purpose) !== -1) nf.append("inquiry_purpose", extra.inquiry_purpose);
         ["name", "email", "phone", "product", "about", "page", "lang"].forEach(function (k) {
           nf.append(k, payload[k] || "");
         });
@@ -569,15 +596,19 @@
 
   document.addEventListener("DOMContentLoaded", function () {
     Array.prototype.forEach.call(document.querySelectorAll("form[data-sh-form]"), wireForm);
+    var purpose = document.getElementById("contact-purpose");
+    if (purpose && window.location.hash === "#partner-inquiry") purpose.value = "Professional introduction";
 
     document.addEventListener("click", function (event) {
       var a = event.target.closest && event.target.closest('a[href^="tel:"]');
       if (a) analyticsOnly("phone_click", { page_path: window.location.pathname, language: document.documentElement.lang || "en" });
       var cta = event.target.closest && event.target.closest('a[data-sh-inquiry-cta]');
       var placement = cta && cta.getAttribute && cta.getAttribute('data-sh-inquiry-cta');
-      if (!privateContext() && ['construction-result', 'construction-article'].indexOf(placement) !== -1) {
+      if (!privateContext() && ['construction-result', 'construction-article', 'management-build', 'management-purchase', 'broker-introduction', 'sba-building'].indexOf(placement) !== -1) {
         analyticsOnly('inquiry_cta_click', { placement: placement, page_path: safePublicPath(window.location.pathname), language: document.documentElement.lang || 'en' });
       }
+      var worksheet = event.target.closest && event.target.closest('a[data-sh-resource="heloc-offers"]');
+      if (worksheet && !privateContext()) analyticsOnly('worksheet_open', { resource: 'heloc-offers', language: document.documentElement.lang || 'en' });
     });
 
     /* nav scroll + mobile menu + reveal (same behavior as the rest of the site) */

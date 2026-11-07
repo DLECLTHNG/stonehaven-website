@@ -6,6 +6,8 @@ const source=readFileSync('js/funnel.js','utf8');
 function fixture(fetchImpl, options={}) {
  const events=[],meta=[],chatgpt=[],handlers={},documentHandlers={};
  const fields=Object.fromEntries(Object.entries({name:'Test Person',email:'private@example.com',phone:'2025550123',company_website:''}).map(([name,value])=>[name,{name,value,type:'text',style:{},hasAttribute:()=>true,addEventListener(){}}]));
+ const pathname=options.pathname || '/contact';
+ if(options.purpose) fields.inquiry_purpose={name:'inquiry_purpose',value:options.purpose,type:'select-one',style:{},addEventListener(){}};
  const productHandlers={};
  if(options.selectName) fields[options.selectName]={name:options.selectName,value:options.product||'Commercial',type:'select-one',style:{},addEventListener:(k,f)=>{productHandlers[k]=f}};
  const button={disabled:false,style:{}};
@@ -17,10 +19,10 @@ function fixture(fetchImpl, options={}) {
   assert.equal(typeof handlers.submit,'function','custom validation must be attached before native checks are disabled');
   noValidate=value;
  }});
- const document={head:{appendChild(){}},documentElement:{lang:options.lang||'en'},createElement:()=>({style:{},setAttribute(){}}),addEventListener:(k,f)=>{documentHandlers[k]=f},querySelectorAll:s=>s==='form[data-sh-form]'?[form]:[],getElementById:()=>null};
- const window={shChatGPTLead:id=>chatgpt.push(id),SH_CONFIG:{},location:{search:'?utm_source=google&utm_medium=cpc&utm_campaign=ga_dscr',pathname:'/contact',href:'https://stonehavencre.com/contact'},gtag:(...a)=>events.push(a),fbq:(...a)=>meta.push(a),addEventListener(){}};
+ const document={referrer:options.referrer||'',head:{appendChild(){}},documentElement:{lang:options.lang||'en'},createElement:()=>({style:{},setAttribute(){}}),addEventListener:(k,f)=>{documentHandlers[k]=f},querySelectorAll:s=>s==='form[data-sh-form]'?[form]:[],getElementById:()=>null};
+ const window={shChatGPTLead:id=>chatgpt.push(id),SH_CONFIG:{},location:{search:'?utm_source=google&utm_medium=cpc&utm_campaign=ga_dscr',pathname,href:'https://stonehavencre.com'+pathname,hostname:'stonehavencre.com'},gtag:(...a)=>events.push(a),fbq:(...a)=>meta.push(a),addEventListener(){}};
  const storage=new Map();
- const context=vm.createContext({document,window,sessionStorage:{getItem:k=>storage.get(k)||null,setItem:(k,v)=>storage.set(k,v)},URLSearchParams,fetch:fetchImpl,setTimeout,clearTimeout,AbortController,IntersectionObserver:class{observe(){}},console});
+ const context=vm.createContext({document,window,sessionStorage:{getItem:k=>storage.get(k)||null,setItem:(k,v)=>storage.set(k,v)},URL,URLSearchParams,navigator:{globalPrivacyControl:!!options.gpc},fetch:fetchImpl,setTimeout,clearTimeout,AbortController,IntersectionObserver:class{observe(){}},console});
  vm.runInContext(source,context);
  const initialReady=documentHandlers.DOMContentLoaded;
  if(options.repeatScript) {
@@ -124,4 +126,31 @@ test('inquiry engagement contains no answers and never counts as a conversion',(
  assert.equal(f.events.filter(e=>e[1]==='generate_lead').length,0);
  assert.equal(f.meta.length,0);assert.equal(f.chatgpt.length,0);
  assert.doesNotMatch(JSON.stringify(f.events),/private@example|2025550123|Test Person|utm_source/);
+});
+
+test('management attribution follows only the two same-origin routes and respects GPC',async()=>{
+ const cases=[
+  ['/commercial/construction-loans','https://stonehavencre.com/management?ignore=private','management-build'],
+  ['/residential/jumbo-loans','https://stonehavencre.com/management','management-purchase'],
+  ['/commercial/construction-loans','https://other.example/management',undefined],
+  ['/contact','https://stonehavencre.com/management',undefined],
+  ['/commercial/construction-loans','https://stonehavencre.com/management',undefined,true]
+ ];
+ for(const [pathname,referrer,expected,gpc] of cases){
+  let body;
+  const f=fixture(async(_,opts)=>{body=new URLSearchParams(opts.body);return {ok:true}},{pathname,referrer,gpc});
+  f.start();f.submit();await flush();
+  assert.equal(JSON.parse(body.get('extra')).inquiry_entry,expected);
+  assert.equal(f.events.find(e=>e[1]==='generate_lead')[2].inquiry_entry,expected);
+  assert.equal(f.events.find(e=>e[1]==='inquiry_started')?.[2].inquiry_entry,expected);
+  assert.doesNotMatch(JSON.stringify(f.events),/other\.example|ignore=private/);
+ }
+});
+test('the accepted event uses the submitted introduction purpose',async()=>{
+ let finish,body;
+ const f=fixture((_,opts)=>{body=new URLSearchParams(opts.body);return new Promise(resolve=>{finish=resolve})},{purpose:'Professional introduction'});
+ f.submit();f.fields.inquiry_purpose.value='Financing';
+ assert.equal(body.get('inquiry_purpose'),'Professional introduction');
+ finish({ok:true});await flush();
+ assert.equal(f.events.find(e=>e[1]==='generate_lead')[2].inquiry_kind,'professional');
 });

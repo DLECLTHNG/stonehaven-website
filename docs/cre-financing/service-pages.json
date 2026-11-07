@@ -245,7 +245,7 @@
         "form_title": "Tell us about your construction project",
         "form_prefix": "Construction financing inquiry",
         "default_type": "Ground-up construction",
-        "updated": "2026-10-25",
+        "updated": "2026-11-07",
         "cash_plan": {
           "title": "How much cash do I need if I already own the land?",
           "intro": "Owned land can support the equity contribution, but it does not pay an invoice. Separate the funding gap for the whole project from cash needed at closing and cash needed between draws. This hypothetical example assumes free-and-clear land, no cash out and no other financing.",
@@ -296,6 +296,24 @@
           ],
           "cta_label": "Discuss my construction plan",
           "detail_label": "Send my project numbers"
+        },
+        "spec_sale": {
+          "heading": "Can a builder break ground without a presale?",
+          "example": "Suppose you plan to sell the finished house and have no buyer under contract. An illustrative $1.5 million sale with $90,000 of selling costs and a $1.15 million payoff leaves $260,000 before taxes and recovery of your invested cash. At a $1.35 million sale price, the same costs and payoff leave $110,000. Budget for interest, insurance and upkeep through the sale closing.",
+          "links": [
+            [
+              "/blog/spec-home-construction-loans-without-presales",
+              "Prepare a single spec build"
+            ],
+            [
+              "/construction-loan-calculator",
+              "Calculate the project funding gap"
+            ],
+            [
+              "/blog/brookhaven-ga-100-ltc-ground-up-construction",
+              "Read the published Brookhaven land-equity case"
+            ]
+          ]
         }
       },
       "es": {
@@ -527,7 +545,7 @@
         "form_title": "Cuéntenos sobre su proyecto de construcción",
         "form_prefix": "Construction financing inquiry",
         "default_type": "Ground-up construction",
-        "updated": "2026-10-25",
+        "updated": "2026-11-07",
         "cash_plan": {
           "title": "¿Cuánto efectivo necesito si ya tengo el terreno?",
           "intro": "El terreno puede contar como aportación, pero no paga una factura. Separe el faltante total del proyecto, el efectivo al cierre y el efectivo entre desembolsos. Este ejemplo hipotético supone un terreno libre de deuda, sin retiro de efectivo ni otro financiamiento.",
@@ -578,6 +596,24 @@
           ],
           "cta_label": "Hablemos de mi proyecto",
           "detail_label": "Enviar las cifras del proyecto"
+        },
+        "spec_sale": {
+          "heading": "¿Puede iniciar la obra sin comprador?",
+          "example": "Suponga que construye para vender y aún no tiene comprador. Una venta hipotética por $1.5 millones, con $90,000 de gastos de venta y una liquidación de $1.15 millones, deja $260,000 antes de impuestos y de recuperar el efectivo invertido. Si el precio baja a $1.35 millones y esos gastos se mantienen, quedan $110,000. Presupueste intereses, seguro y mantenimiento hasta el cierre de la venta.",
+          "links": [
+            [
+              "/blog/spec-home-construction-loans-without-presales",
+              "Prepare una obra sin preventa"
+            ],
+            [
+              "/construction-loan-calculator",
+              "Calcule la aportación al proyecto"
+            ],
+            [
+              "/blog/brookhaven-ga-100-ltc-ground-up-construction",
+              "Lea el caso publicado de Brookhaven"
+            ]
+          ]
         }
       }
     },

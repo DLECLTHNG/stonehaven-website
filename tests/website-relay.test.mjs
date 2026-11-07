@@ -103,3 +103,14 @@ test('native quick inquiries preserve product and reply method without browser s
  assert.equal((await handler({body:JSON.stringify({payload:{id:'native-saved',form_name:'lead',data}})})).statusCode,200);
  assert.equal(saved.product,'DSCR');assert.equal(saved.page,'website-dscr');assert.equal(saved.extra.source_form_id,'quick-dscr-cash-out-refinance');assert.equal(saved.lang,'es');assert.equal(saved.extra.contact_preference,'Email');assert.equal(saved.extra.loan_program,data.loan_program);assert.equal(saved.extra.netlify_submission_id,'native-saved');
 });
+
+test('native contact submissions preserve product choice and professional purpose',async t=>{
+ setup(t);let forwarded;
+ global.fetch=async(_,options)=>{forwarded=JSON.parse(options.body);return new Response(JSON.stringify({status:'created',lead:{id:'native-contact'}}));};
+ const value=JSON.parse(event.body);
+ Object.assign(value.payload.data,{product:'Not sure',product_choice:'Residential',inquiry_purpose:'Professional introduction',lang:'es'});
+ assert.equal((await handler({body:JSON.stringify(value)})).statusCode,200);
+ assert.equal(forwarded.product,'Residential');
+ assert.equal(forwarded.extra.inquiry_purpose,'Professional introduction');
+ assert.equal(forwarded.lang,'es');
+});

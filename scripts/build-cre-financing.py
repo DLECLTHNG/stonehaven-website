@@ -163,6 +163,12 @@ def build(slug, lang, c):
     table += '</tbody></table>'
     comparison = f'<section class="cre-section"><div class="wrap"><h2>{e(c["comparison_title"])}</h2><p class="cre-section-intro">{e(c["comparison_intro"])}</p><div class="cre-table">{table}</div></div></section>'
     scenario = f'<section class="cre-section cre-tint" id="example"><div class="wrap"><span class="eyebrow">{"Supuestos transparentes" if es else "Transparent assumptions"}</span><h2>{e(c["scenario_title"])}</h2><p class="cre-section-intro">{e(c["scenario_intro"])}</p><div class="cre-example"><dl class="cre-numbers">' + ''.join(f'<div><dt>{e(k)}</dt><dd>{e(v)}</dd></div>' for k, v in c['scenario_rows']) + '</dl><div class="cre-analysis">' + ''.join(f'<p>{e(p)}</p>' for p in c['scenario_analysis']) + '</div></div></div></section>'
+    spec_sale = ''
+    if c.get('spec_sale'):
+        spec = c['spec_sale']
+        links = ' · '.join(f'<a href="{prefix}{e(path)}">{e(label)}</a>' for path, label in spec['links'])
+        spec_sale = (f'<section class="cre-section" id="spec-sale"><div class="wrap"><h2>{e(spec["heading"])}</h2>'
+                     f'<p class="cre-section-intro">{e(spec["example"])}</p><p>{links}</p></div></section>')
     cash_plan = ''
     if c.get('cash_plan'):
         plan = c['cash_plan']
@@ -175,7 +181,7 @@ def build(slug, lang, c):
     questions = f'<section class="cre-section" id="questions"><div class="wrap"><h2>{"Preguntas antes de comenzar" if es else "Questions before you start"}</h2>' + ''.join(f'<details class="cre-faq"><summary>{e(q)}</summary><p>{e(a)}</p></details>' for q, a in c['faqs']) + '</div></section>'
     related = f'<section class="cre-section"><div class="wrap"><h2>{"Guías y ejemplos relacionados" if es else "Related guides and examples"}</h2><div class="cre-grid">' + ''.join(f'<a class="cre-card cre-link-card" href="{e(link)}"><h3>{e(label)}</h3><p>{e(text)}</p><span>{"Leer más" if es else "Explore"} →</span></a>' for link, label, text in c['links']) + '</div></div></section>'
     sources = f'<section class="cre-section cre-sources"><div class="wrap"><h2>{"Fuentes y criterios editoriales" if es else "Sources and editorial standards"}</h2><p>{e(c["source_note"])}</p><ul>' + ''.join(f'<li><a href="{e(link)}" rel="noopener">{e(label)}</a></li>' for link, label in c['sources']) + '</ul><p>' + updated_label + f' <a href="{prefix}/editorial-policy">' + ('Criterios editoriales' if es else 'Editorial standards') + '</a> · <a href="/management">' + ('Nuestro equipo' if es else 'Meet the team') + '</a></p></div></section>'
-    output = head + '<main>\n' + '\n'.join(part for part in [hero, trail, answer, fits, comparison, scenario, cash_plan, process, documents, questions, form(slug, lang, c), related, sources] if part) + '\n</main>' + footer
+    output = head + '<main>\n' + '\n'.join(part for part in [hero, trail, answer, fits, comparison, scenario, spec_sale, cash_plan, process, documents, questions, form(slug, lang, c), related, sources] if part) + '\n</main>' + footer
     (ROOT / (route.lstrip('/') + '.html')).write_text(output)
 
 

@@ -28,12 +28,6 @@
     ],
     "body": [
       "<strong>A lot release price is the principal payment or other required repayment specified by the loan documents for the lender to release its lien on an individual lot.</strong> It is different from the buyer's purchase price. The gap between the sale proceeds and required payments influences how much cash remains for the developer, but that remainder is not automatically distributable profit.",
-      "When seeking subdivision or finished-lot financing, review the release schedule alongside the loan amount. A facility that funds the project initially can still create a cash shortage later if each early sale sends more money to debt reduction than your model assumes. Stonehaven's <a href=\"/commercial/land-development-loans\">land development financing page</a> explains the broader acquisition and development structure.",
-      {
-        "h": "Why the lender asks for a release payment"
-      },
-      "Selling a financed lot removes part of the collateral supporting the loan. The loan agreement governs how much must be repaid and what conditions must be satisfied before that parcel can leave the lender's lien. The <a href=\"https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf\">OCC Commercial Real Estate Lending handbook</a> discusses repayment linked to unit sales and release prices that can pay a loan off before the final unit sells.",
-      "Do not substitute a simple average of debt per lot for the contractual release amount. Premium lots, different phases, shared improvements and declining sales prices can affect the negotiated structure. Some agreements use a specified amount, a percentage-based formula or multiple tests. Obtain the actual language and have your attorney review how it applies to your sale contracts.",
       {
         "h": "A hypothetical sale shows the difference"
       },
@@ -41,6 +35,12 @@
       "<table><caption>Illustrative cash movement from one lot sale</caption><thead><tr><th scope=\"col\">Item</th><th scope=\"col\">Amount</th></tr></thead><tbody><tr><td>Gross lot sale proceeds</td><td>$180,000</td></tr><tr><td>Assumed selling and closing costs</td><td>($9,000)</td></tr><tr><td>Required principal release payment</td><td>($125,000)</td></tr><tr><td>Cash remaining before other obligations</td><td>$46,000</td></tr></tbody></table>",
       "A model using only $100,000 of repayment would show $71,000 remaining and overstate available cash by $25,000 on that sale. Across the first eight identical sales, the difference is $200,000. Under the stated assumptions, $125,000 multiplied by 16 sales repays the $2,000,000 principal. Interest, fees, additional advances or other obligations would change the final payoff, so this is not a complete closing statement.",
       "The $46,000 remainder also is not the project's profit. It may need to support unfinished infrastructure, taxes, interest, reserves, warranty obligations or additional contractual paydowns. Developer distributions should follow the agreement and the project's remaining needs, not just the cash visible in the account after closing.",
+      "When seeking subdivision or finished-lot financing, review the release schedule alongside the loan amount. A facility that funds the project initially can still create a cash shortage later if each early sale sends more money to debt reduction than your model assumes. Stonehaven's <a href=\"/commercial/land-development-loans\">land development financing page</a> explains the broader acquisition and development structure.",
+      {
+        "h": "Why the lender asks for a release payment"
+      },
+      "Selling a financed lot removes part of the collateral supporting the loan. The loan agreement governs how much must be repaid and what conditions must be satisfied before that parcel can leave the lender's lien. The <a href=\"https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf\">OCC Commercial Real Estate Lending handbook</a> discusses repayment linked to unit sales and release prices that can pay a loan off before the final unit sells.",
+      "Do not substitute a simple average of debt per lot for the contractual release amount. Premium lots, different phases, shared improvements and declining sales prices can affect the negotiated structure. Some agreements use a specified amount, a percentage-based formula or multiple tests. Obtain the actual language and have your attorney review how it applies to your sale contracts.",
       {
         "h": "Test slower sales and lower prices separately"
       },
@@ -104,12 +104,6 @@
     ],
     "body": [
       "<strong>El pago de liberación de un lote es el abono a principal u otro reembolso que exigen los documentos del préstamo para que el prestamista retire su gravamen de ese lote.</strong> Es distinto del precio que paga el comprador. La diferencia entre los ingresos y los pagos exigidos influye en el efectivo que queda al desarrollador, pero ese remanente no es automáticamente una utilidad distribuible.",
-      "Al solicitar financiamiento para subdivisiones o lotes terminados, revise el calendario de liberaciones junto con el monto del préstamo. Una línea que permite iniciar el proyecto todavía puede producir escasez de efectivo si las primeras ventas exigen más amortización de la modelada. Nuestra <a href=\"/es/commercial/land-development-loans\">página de financiamiento de desarrollo de terrenos</a> explica la estructura general de adquisición y desarrollo.",
-      {
-        "h": "Por qué se exige un pago de liberación"
-      },
-      "Vender un lote financiado retira parte de la garantía que respalda la deuda. El contrato determina cuánto debe pagarse y qué condiciones deben cumplirse antes de liberar la parcela. El <a href=\"https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf\">manual de préstamos inmobiliarios comerciales de la OCC (en inglés)</a> trata los pagos vinculados a ventas y las liberaciones que pueden liquidar el préstamo antes de vender la última unidad.",
-      "No sustituya el pago contractual por un promedio simple de deuda por lote. Los lotes de mayor valor, las fases, las mejoras compartidas y las caídas de precios pueden afectar la estructura. Algunos contratos utilizan un importe definido, una fórmula porcentual o varias pruebas. Obtenga el texto real y pida a su abogado que revise cómo se aplica a sus contratos de venta.",
       {
         "h": "Una venta hipotética muestra la diferencia"
       },
@@ -117,6 +111,12 @@
       "<table><caption>Movimiento ilustrativo del efectivo de una venta</caption><thead><tr><th scope=\"col\">Concepto</th><th scope=\"col\">Importe</th></tr></thead><tbody><tr><td>Precio bruto de venta del lote</td><td>$180,000</td></tr><tr><td>Gastos supuestos de venta y cierre</td><td>($9,000)</td></tr><tr><td>Pago exigido a principal para liberación</td><td>($125,000)</td></tr><tr><td>Efectivo antes de otras obligaciones</td><td>$46,000</td></tr></tbody></table>",
       "Un modelo con solo $100,000 de amortización mostraría $71,000 restantes y exageraría el efectivo disponible en $25,000 para esa venta. En las primeras ocho ventas idénticas, la diferencia sería de $200,000. Bajo estos supuestos, 16 pagos de $125,000 liquidan los $2,000,000 de principal. Los intereses, cargos, nuevos desembolsos u otras obligaciones cambiarían la liquidación final; no es un estado de cierre completo.",
       "Los $46,000 tampoco son la utilidad del proyecto. Pueden ser necesarios para infraestructura pendiente, impuestos, intereses, reservas, garantías de obra u otras amortizaciones contractuales. Las distribuciones al desarrollador deben seguir el contrato y las necesidades restantes, no simplemente el saldo de la cuenta después del cierre.",
+      "Al solicitar financiamiento para subdivisiones o lotes terminados, revise el calendario de liberaciones junto con el monto del préstamo. Una línea que permite iniciar el proyecto todavía puede producir escasez de efectivo si las primeras ventas exigen más amortización de la modelada. Nuestra <a href=\"/es/commercial/land-development-loans\">página de financiamiento de desarrollo de terrenos</a> explica la estructura general de adquisición y desarrollo.",
+      {
+        "h": "Por qué se exige un pago de liberación"
+      },
+      "Vender un lote financiado retira parte de la garantía que respalda la deuda. El contrato determina cuánto debe pagarse y qué condiciones deben cumplirse antes de liberar la parcela. El <a href=\"https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf\">manual de préstamos inmobiliarios comerciales de la OCC (en inglés)</a> trata los pagos vinculados a ventas y las liberaciones que pueden liquidar el préstamo antes de vender la última unidad.",
+      "No sustituya el pago contractual por un promedio simple de deuda por lote. Los lotes de mayor valor, las fases, las mejoras compartidas y las caídas de precios pueden afectar la estructura. Algunos contratos utilizan un importe definido, una fórmula porcentual o varias pruebas. Obtenga el texto real y pida a su abogado que revise cómo se aplica a sus contratos de venta.",
       {
         "h": "Pruebe por separado ventas más lentas y precios menores"
       },
@@ -156,7 +156,7 @@
     ]
   },
   "contentRevision": {
-    "updated": "2026-11-01",
+    "updated": "2026-11-07",
     "citations": [
       "https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf",
       "https://www.occ.treas.gov/news-issuances/bulletins/2005/bulletin-2005-32.html"

@@ -26,6 +26,7 @@
       },
       "<strong>Estimated net proceeds = new loan − mortgage payoffs − other amounts paid from the loan at closing.</strong> List the actual uses instead of treating the new loan minus the statement balance as guaranteed cash. Include financed costs only once. If you pay an item separately, show that cash expense separately.",
       "In an original hypothetical example, a $375,000 replacement loan pays off $300,000 of existing debt and uses $9,000 for assumed closing charges and other closing items. The estimated cash available is $66,000. The loan exceeds the old debt by $75,000, but the borrower does not receive that entire difference. These amounts are illustrative, not fee estimates or lending terms.",
+      "To check that amount for your home, <a href=\"/cash-out-refinance#inquire\">request a net-proceeds review</a> with the estimated value, current payoff and cash you need.",
       "A later refund of an old escrow account should not be treated as money available at the new closing unless the actual settlement arrangements establish that timing. Ask your servicer and closing team how the old and new escrow accounts will be handled. Compare the numbers with the <a href=\"https://www.consumerfinance.gov/owning-a-home/loan-estimate/\">CFPB Loan Estimate explainer</a> for applicable closed-end mortgage transactions. A HELOC uses different disclosures; do not assume it comes with the same form.",
       {
         "h": "Compare monthly payments without hiding a longer repayment period"
@@ -111,6 +112,7 @@
       },
       "<strong>Fondos netos estimados = préstamo nuevo − cancelaciones hipotecarias − otros montos pagados del préstamo al cierre.</strong> Enumere los usos reales. La diferencia entre el préstamo y el saldo del estado de cuenta no equivale necesariamente al efectivo que recibirá. Incluya cada costo financiado una sola vez y muestre por separado lo pagado con fondos propios.",
       "En un ejemplo hipotético original, un préstamo de $375,000 cancela $300,000 de deuda y destina $9,000 a cargos y otros conceptos supuestos del cierre. El efectivo disponible sería $66,000. El préstamo supera la deuda anterior en $75,000, pero el prestatario no recibe toda esa diferencia. Son cifras ilustrativas, no estimaciones de cargos ni condiciones de préstamo.",
+      "Para revisar ese importe, <a href=\"/es/cash-out-refinance#inquire\">solicite una revisión de fondos netos</a> con el valor estimado, la liquidación actual y el efectivo que necesita.",
       "No considere una devolución posterior de la antigua cuenta de depósito en garantía como efectivo disponible al nuevo cierre sin confirmar las fechas. Pregunte al administrador y al equipo de cierre cómo se manejarán ambas cuentas. Para operaciones hipotecarias de plazo cerrado a las que corresponda, consulte la <a href=\"https://www.consumerfinance.gov/owning-a-home/loan-estimate/\">explicación del Loan Estimate del CFPB (en inglés)</a>. Una HELOC utiliza divulgaciones distintas; no dé por hecho que recibe el mismo formulario.",
       {
         "h": "Compare pagos sin ocultar un plazo mayor"
@@ -174,11 +176,11 @@
     "metaTitle": "HELOC o refinanciamiento con retiro de efectivo | Stonehaven Lending"
   },
   "contentRevision": {
-    "updated": "2026-11-01",
+    "updated": "2026-11-07",
     "citations": [
       "https://www.consumerfinance.gov/ask-cfpb/what-other-types-of-loans-are-similar-to-a-heloc-en-253/",
-      "https://www.consumerfinance.gov/ask-cfpb/what-is-a-home-equity-line-of-credit-heloc-en-107/",
-      "https://www.consumerfinance.gov/owning-a-home/loan-estimate/"
+      "https://www.consumerfinance.gov/owning-a-home/loan-estimate/",
+      "https://www.consumerfinance.gov/ask-cfpb/what-is-a-home-equity-line-of-credit-heloc-en-107/"
     ]
   }
 }

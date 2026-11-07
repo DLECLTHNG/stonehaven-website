@@ -5,8 +5,8 @@
   "product": "HELOC",
   "growthTopic": "compare-heloc-offers",
   "en": {
-    "title": "How to compare two HELOC offers",
-    "desc": "Compare access, rate structure, fees, and repayment terms with an ungated offer worksheet.",
+    "title": "How to compare HELOC offers with different draw terms",
+    "desc": "Compare two written HELOC offers side by side. Check the required first draw, fees, changes in rate and repayment before choosing a line.",
     "eyebrow": "Home equity planning",
     "terms": [
       [
@@ -19,6 +19,11 @@
       ]
     ],
     "body": [
+      {
+        "h": "Compare the first draw in dollars"
+      },
+      "Suppose you need $60,000 for a project in two stages. Offer A allows a $20,000 first draw and a later request for the remaining $40,000. Offer B requires a $60,000 draw at closing. At the same rate and repayment terms, compare the interest on the additional $40,000 during the weeks before the second stage. These are illustrative terms. Check minimums, future access, fees and dates in each written offer.",
+      "<a data-sh-resource=\"heloc-offers\" href=\"/heloc-planning-tools#offers\">Open the two-offer worksheet</a>. For each line, record the first draw, when the first payment is due and how you request the next advance.",
       {
         "h": "Confirm that you are comparing the same product"
       },
@@ -38,13 +43,14 @@
       {
         "h": "Prepare the next conversation"
       },
-      "Use the <a href=\"/heloc-planning-tools#offers\">home equity planning worksheet</a> to organize your assumptions. Leave anything you do not know blank for discussion. The worksheet does not check eligibility or obtain a lender offer. You can <a href=\"/heloc/compare-offers\">request a broker conversation</a> when you are ready to review your estimated home value, mortgage balance, and requested amount. Do not send account numbers or financial documents through a public inquiry form.",
+      "Use the <a data-sh-resource=\"heloc-offers\" href=\"/heloc-planning-tools#offers\">home equity planning worksheet</a> to organize your assumptions. Leave anything you do not know blank for discussion. The worksheet does not check eligibility or obtain a lender offer. You can <a href=\"/heloc/compare-offers\">request a broker conversation</a> when you are ready to review your estimated home value, mortgage balance, and requested amount. Do not send account numbers or financial documents through a public inquiry form.",
       "<a href=\"https://www.consumerfinance.gov/ask-cfpb/what-are-government-recording-charges-for-a-mortgage-en-159/\">CFPB: mortgage recording charges</a>. Provider examples describe that provider only. This guide is educational. A home-secured loan puts the property at risk if repayment fails. Program availability, documentation, costs, and approval depend on the lender and your circumstances."
-    ]
+    ],
+    "metaTitle": "Compare HELOC Offers With Different Draw Terms | Stonehaven"
   },
   "es": {
-    "title": "Cómo comparar dos ofertas de HELOC",
-    "desc": "Compare acceso al dinero, tasas, cargos y condiciones de pago con una hoja de trabajo abierta.",
+    "title": "Cómo comparar HELOC con distintas condiciones de retiro",
+    "desc": "Compare adelantos iniciales, comisiones, cambios de tasa y pagos de dos líneas con la hoja de comparación de HELOC.",
     "eyebrow": "Planificación del patrimonio de vivienda",
     "terms": [
       [
@@ -57,6 +63,11 @@
       ]
     ],
     "body": [
+      {
+        "h": "Compare el primer retiro en dólares"
+      },
+      "Suponga que necesita $60,000 para una obra en dos etapas. La oferta A permite retirar $20,000 al cierre y solicitar los $40,000 restantes después. La oferta B exige retirar los $60,000 al cierre. Con la misma tasa y condiciones de pago, compare el interés sobre los $40,000 adicionales durante las semanas anteriores a la segunda etapa. Son supuestos ilustrativos. Confirme por escrito mínimos, disponibilidad futura, comisiones y fechas.",
+      "<a data-sh-resource=\"heloc-offers\" href=\"/es/heloc-planning-tools#offers\">Abrir la hoja de comparación</a>. Anote para cada línea el primer retiro, la fecha del siguiente pago y el método para solicitar fondos adicionales.",
       {
         "h": "Confirme que compara el mismo producto"
       },
@@ -76,8 +87,15 @@
       {
         "h": "Prepare la siguiente conversación"
       },
-      "Use la <a href=\"/es/heloc-planning-tools#offers\">herramienta de planificación</a> para organizar sus supuestos. Deje en blanco lo que no sepa para comentarlo después. La herramienta no determina elegibilidad ni obtiene una oferta. Puede <a href=\"/es/heloc/compare-offers\">solicitar una conversación con un corredor</a> para revisar el valor estimado, saldo hipotecario y monto solicitado. No envíe números de cuenta ni documentos financieros por un formulario público.",
+      "Use la <a data-sh-resource=\"heloc-offers\" href=\"/es/heloc-planning-tools#offers\">herramienta de planificación</a> para organizar sus supuestos. Deje en blanco lo que no sepa para comentarlo después. La herramienta no determina elegibilidad ni obtiene una oferta. Puede <a href=\"/es/heloc/compare-offers\">solicitar una conversación con un corredor</a> para revisar el valor estimado, saldo hipotecario y monto solicitado. No envíe números de cuenta ni documentos financieros por un formulario público.",
       "<a href=\"https://www.consumerfinance.gov/ask-cfpb/what-are-government-recording-charges-for-a-mortgage-en-159/\">CFPB: cargos de registro hipotecario (en inglés)</a>. Los ejemplos de un proveedor corresponden solo a ese proveedor. Esta guía es educativa. Un préstamo garantizado por la vivienda pone el inmueble en riesgo si no se paga. La disponibilidad, documentación, costos y aprobación dependen del prestamista y de sus circunstancias."
+    ],
+    "metaTitle": "Compare las condiciones de retiro de dos HELOC | Stonehaven"
+  },
+  "contentRevision": {
+    "updated": "2026-11-07",
+    "citations": [
+      "https://www.consumerfinance.gov/ask-cfpb/what-are-government-recording-charges-for-a-mortgage-en-159/"
     ]
   }
 }
