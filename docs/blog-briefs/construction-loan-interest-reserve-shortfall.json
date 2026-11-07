@@ -1,0 +1,97 @@
+{
+  "slug": "construction-loan-interest-reserve-shortfall",
+  "date": "2026-11-07",
+  "type": "guide",
+  "product": "Commercial",
+  "inquiry": "Construction",
+  "en": {
+    "title": "What to do before a construction loan interest reserve runs out",
+    "metaTitle": "Construction Loan Interest Reserve Shortfall | Stonehaven",
+    "desc": "Find the first interest payment a reserve cannot cover. Use a delayed spec-home sale to compare the cash shortfall, remaining draws and loan maturity.",
+    "eyebrow": "Ground-up construction · Delays and payoff",
+    "terms": [
+      [
+        "Decision",
+        "When a builder needs another source of interest payments"
+      ],
+      [
+        "Bring to the review",
+        "Current balance, available reserve, remaining draws and maturity"
+      ]
+    ],
+    "body": [
+      "<strong>Find the first interest bill the remaining reserve cannot pay in full.</strong> Start with the latest loan statement, add the draws still needed to finish and run interest through a realistic payoff date. Then compare that date with maturity. A builder can have enough cash to pay interest next month and still need an extension before the home sells.",
+      {
+        "h": "Which number on the statement matters?"
+      },
+      "Request the available interest reserve after pending charges. A loan statement may also show undisbursed hard costs, retainage and contingency. Each has its own purpose. Confirm what is available specifically for interest and the date through which interest has already been paid. Use the <a href=\"/blog/construction-loan-interest-reserve-vs-contingency\">reserve and contingency guide</a> if your budget groups these amounts together.",
+      {
+        "h": "A final draw can move the cash deadline forward"
+      },
+      "Assume a builder has $30,000 left in a cash-funded interest reserve, a $1.8 million loan balance and three months until an expected spec-home sale. Use 8% annual simple interest with equal months for illustration. With a flat balance, interest would total $36,000. A quick estimate would put the shortfall at $6,000.",
+      "The builder still needs a $300,000 construction draw at the end of month one. That changes the next two bills. Assume the entire draw funds, the reserve pays only interest, and no principal is repaid before the sale.",
+      "<table><caption>Interest due before the expected sale</caption><thead><tr><th scope=\"col\">Billing month</th><th scope=\"col\">Reserve and cash position</th></tr></thead><tbody><tr><td>1 · $12,000 interest on $1.8 million</td><td>$18,000 left in reserve</td></tr><tr><td>2 · $14,000 interest on $2.1 million</td><td>$4,000 left in reserve</td></tr><tr><td>3 · $14,000 interest on $2.1 million</td><td>$10,000 must come from another source</td></tr></tbody></table>",
+      "If the sale closes a month later, the shortfall rises to $24,000 under the same assumptions. Check the actual billing dates, daily balance and rate. The figures exclude extension charges, taxes, insurance and any interest charged on financed interest.",
+      {
+        "h": "Put the shortfall and maturity on the same calendar"
+      },
+      "Mark the next interest due date, the first partially uncovered payment, the contractual maturity date and any deadline to request an extension. Add the remaining inspection, certificate of occupancy if required, buyer financing and expected sale closing. For a rental exit, use the expected refinance funding date and any required lease-up milestones.",
+      "Ask which obligations must be paid while a request is under review. A proposed extension or refinance has its own conditions. If the note matures before the planned closing, even a fully funded interest reserve leaves the principal payoff to address.",
+      "Planning a build or a construction refinance? <a href=\"/commercial/construction-loans#quick-inquiry\" data-sh-inquiry-cta=\"construction-article\">Discuss the project and its financing deadline with Stonehaven</a>. Start with the location, remaining work and the month the loan matures. Detailed loan statements can wait for a secure review.",
+      {
+        "h": "What would support a revised financing plan?"
+      },
+      "Prepare the current cost to complete, available loan funds by budget line, remaining sponsor cash and a dated exit plan. Explain the specific delay. An inspection scheduled two weeks late creates a different decision from an unsold house with no buyer under contract. Show a second case with a later payoff and state who would pay each uncovered bill.",
+      "The <a href=\"https://www.fdic.gov/risk-management-manual-examination-policies/construction-and-land-development-lending.pdf\">FDIC construction and land development examination procedures</a> ask bank examiners to consider project feasibility, timing and guarantor capacity when reviewing reserve increases or extensions. As a mortgage broker, Stonehaven can review the assumptions and discuss financing options. Any modification to the existing loan requires the appropriate parties’ agreement.",
+      {
+        "h": "How should I budget for the next build?"
+      },
+      "Keep the projected and actual draw dates from this job. When pricing the next project, use those dates to <a href=\"/blog/construction-loan-interest-reserve-draw-schedule\">size a new interest reserve from the draw schedule</a>. A delayed closing late in construction can cost more per month than the same delay when only the land advance is outstanding."
+    ]
+  },
+  "es": {
+    "title": "Qué hacer antes de agotar la reserva de intereses de una obra",
+    "metaTitle": "Faltante en la reserva de intereses de construcción | Stonehaven",
+    "desc": "Identifique el primer pago de intereses que la reserva no alcanza a cubrir. Calcule el efectivo necesario si falta un desembolso y la venta se retrasa.",
+    "eyebrow": "Obra nueva · Retrasos y vencimiento",
+    "terms": [
+      [
+        "Decisión",
+        "Cuándo se necesitará efectivo adicional para pagar intereses"
+      ],
+      [
+        "Datos iniciales",
+        "Saldo, reserva disponible, desembolsos pendientes y vencimiento"
+      ]
+    ],
+    "body": [
+      "<strong>Identifique la primera cuota de intereses que la reserva ya no cubre por completo.</strong> Parta del último estado de cuenta, añada los desembolsos que faltan para terminar la obra y proyecte los intereses hasta una fecha realista de liquidación. Compare esa fecha con el vencimiento. Aunque pueda pagar los intereses del próximo mes, tal vez necesite una prórroga antes de vender.",
+      {
+        "h": "¿Qué saldo de la reserva debe usar?"
+      },
+      "Pida el importe disponible para intereses después de descontar cargos pendientes. El estado de cuenta también puede mostrar fondos para construcción, retenciones e imprevistos. Confirme qué suma se puede usar para intereses y hasta qué fecha están pagados. Consulte la <a href=\"/es/blog/construction-loan-interest-reserve-vs-contingency\">diferencia entre la reserva de intereses y la de imprevistos</a> si su presupuesto combina las partidas.",
+      {
+        "h": "El último desembolso puede adelantar la necesidad de efectivo"
+      },
+      "Suponga que quedan $30,000 en una reserva de efectivo, que la deuda asciende a $1.8 millones y que se prevé vender la vivienda en tres meses. Para el ejemplo, use una tasa anual simple del 8% y meses de igual duración. Con un saldo constante, los intereses sumarían $36,000 y faltarían $6,000.",
+      "Al final del primer mes, el constructor aún necesita un desembolso de $300,000 para terminar. Suponga que se entrega la suma completa y que no se amortiza capital antes de la venta. Los dos pagos siguientes cambian.",
+      "<table><caption>Intereses hasta la fecha de venta prevista</caption><thead><tr><th scope=\"col\">Mes de facturación</th><th scope=\"col\">Efectivo disponible</th></tr></thead><tbody><tr><td>1 · $12,000 sobre $1.8 millones</td><td>Quedan $18,000 en la reserva</td></tr><tr><td>2 · $14,000 sobre $2.1 millones</td><td>Quedan $4,000 en la reserva</td></tr><tr><td>3 · $14,000 sobre $2.1 millones</td><td>Se necesitan $10,000 de otra fuente</td></tr></tbody></table>",
+      "Si la venta se cierra un mes después, faltarían $24,000 con los mismos supuestos. Compruebe las fechas reales de cobro, los saldos diarios y la tasa. Calcule por separado los impuestos, el seguro, los cargos de prórroga y los intereses que genere cualquier interés financiado.",
+      {
+        "h": "Compare el calendario de pagos con el vencimiento"
+      },
+      "Anote la próxima cuota, el primer pago que la reserva cubra solo en parte, el vencimiento contractual y la fecha límite para solicitar una prórroga. Añada la inspección pendiente, el certificado de ocupación si se exige, el financiamiento del comprador y el cierre previsto. Si planea conservar la vivienda en alquiler, use la fecha de desembolso del refinanciamiento y los requisitos de ocupación aplicables.",
+      "Confirme qué obligaciones deben pagarse mientras se evalúa una solicitud. Una prórroga o un refinanciamiento puede estar sujeto a condiciones. Si el préstamo vence antes de la venta, también habrá que resolver cómo se liquidará el capital.",
+      "¿Planea construir o refinanciar una obra? <a href=\"/es/commercial/construction-loans#quick-inquiry\" data-sh-inquiry-cta=\"construction-article\">Consulte a Stonehaven sobre el proyecto y su plazo de financiamiento</a>. Indique la ubicación, las obras pendientes y el mes de vencimiento. Reserve los estados de cuenta para una revisión por un medio seguro.",
+      {
+        "h": "¿Qué información respalda una propuesta de financiamiento?"
+      },
+      "Prepare el costo actualizado para terminar, los fondos pendientes por partida, el efectivo disponible del promotor y el calendario de salida. Explique el motivo concreto del retraso. Una inspección aplazada dos semanas plantea un problema distinto al de una vivienda terminada sin comprador. Calcule un segundo escenario con un cierre posterior e indique quién cubriría cada pago pendiente.",
+      "Los <a href=\"https://www.fdic.gov/risk-management-manual-examination-policies/construction-and-land-development-lending.pdf\">procedimientos de supervisión de la FDIC para préstamos de construcción y urbanización</a> consideran la viabilidad, los plazos y la capacidad del garante al evaluar una ampliación de la reserva o del plazo. Stonehaven puede revisar los supuestos como intermediario hipotecario. Para modificar el préstamo vigente se requiere el acuerdo de las partes correspondientes.",
+      {
+        "h": "¿Cómo aplicar esta experiencia a la próxima obra?"
+      },
+      "Guarde las fechas previstas y reales de cada desembolso. Úselas para <a href=\"/es/blog/construction-loan-interest-reserve-draw-schedule\">calcular la reserva del próximo proyecto</a>. Un mes de retraso cerca de la venta puede costar más que un mes al inicio, cuando solo se ha financiado el terreno."
+    ]
+  }
+}

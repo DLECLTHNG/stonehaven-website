@@ -1,0 +1,89 @@
+{
+  "slug": "lot-release-first-construction-draw",
+  "date": "2026-11-07",
+  "type": "guide",
+  "product": "Commercial",
+  "inquiry": "Construction",
+  "en": {
+    "title": "Can the first construction draw pay the lot release price?",
+    "metaTitle": "Using the First Construction Draw for a Lot Release | Stonehaven",
+    "desc": "Moving a finished lot from development debt into a home construction loan? Calculate what the opening advance leaves for site work after the lot release.",
+    "eyebrow": "Ground-up construction · From finished lot to first draw",
+    "terms": [
+      [
+        "For",
+        "Developers building homes on lots pledged to a development loan"
+      ],
+      [
+        "Decision",
+        "How much of the first construction advance is available for work"
+      ]
+    ],
+    "body": [
+      "<strong>The first advance on a new construction loan can pay the release price on a finished lot when both financing agreements allow it and the closings are coordinated.</strong> The builder needs three figures before scheduling trades: the payoff required for that lot, the amount the new facility can advance at closing and the remaining cash available for work.",
+      {
+        "h": "Follow the money from one loan to the other"
+      },
+      "Suppose the same developer owns the subdivision and will build the home. Its development loan encumbers the lots. The new vertical construction loan will finance the house on one specified lot. The development loan holder issues written conditions for releasing that lot. The construction financing and title teams verify the parcel, permitted disbursement and required lien position before closing.",
+      "The <a href=\"https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf\">OCC commercial real estate lending handbook</a> describes separate development and construction facilities, including structures where the first construction draw repays the lot’s development debt. The signed agreements determine whether that approach works for your <a href=\"/commercial/land-development-loans\">land development financing</a>.",
+      {
+        "h": "What remains from a $140,000 opening advance?"
+      },
+      "Assume a $400,000 vertical construction commitment permits a $140,000 advance at closing. The developer needs $110,000 to release the lot, $6,000 for agreed closing charges and $60,000 for initial site work. In this example the closing instructions allow the rest of the opening advance to pay eligible work.",
+      "<table><caption>Hypothetical first-draw calculation</caption><thead><tr><th scope=\"col\">Cash movement</th><th scope=\"col\">Amount</th></tr></thead><tbody><tr><td>Opening advance</td><td>$140,000</td></tr><tr><td>Principal paid to release this lot</td><td>($110,000)</td></tr><tr><td>Closing charges</td><td>($6,000)</td></tr><tr><td>Advance available for initial work</td><td>$24,000</td></tr><tr><td>Additional cash needed for $60,000 of work</td><td>$36,000</td></tr></tbody></table>",
+      "The commitment still has $260,000 undrawn. Access to it depends on the next eligible milestone and the draw procedure. If the excavation contractor wants payment before that milestone, the developer needs to cover the $36,000 difference or agree to different payment dates before work starts.",
+      {
+        "h": "How much equity carries into the home build?"
+      },
+      "The release payment reduces the old facility’s debt and uses part of the new facility’s opening advance. Counting the $110,000 again as fresh sponsor cash would overstate the builder’s contribution. Show the acquisition basis, documented development costs assigned to the lot, remaining obligations and proposed land credit separately. Confirm what the new financing recognizes.",
+      "If a separate builder is buying the lot, start with the contract purchase price. The seller’s required release is one use of the sale proceeds. The buyer may also owe funds toward the purchase beyond the release amount. Use the settlement statement for that transaction.",
+      "If you have lots ready to build, <a href=\"/commercial/construction-loans#quick-inquiry\" data-sh-inquiry-cta=\"construction-article\">request a ground-up construction review</a>. Tell us where the project is, how many homes you intend to start and the expected lot release and opening draw. Estimates are enough for an initial discussion.",
+      {
+        "h": "What should be confirmed before the first trade starts?"
+      },
+      "<ul><li>Match the legal lot description on the release request to the parcel in the new financing.</li><li>Get a dated release amount and identify any interest, fees, completion conditions or approvals due in addition to principal.</li><li>Compare the first advance and permitted uses with deposits, closing costs and contractor invoices due before the next draw.</li><li>Have the closing and title professionals confirm how funding, recording and the start of work will be coordinated.</li></ul>",
+      "If you plan to sell lots together to a builder instead, model the <a href=\"/blog/bulk-lot-sale-release-price-cash-flow\">cash left after a multi-lot release</a>. Selling lots and refinancing retained lots into construction generate different cash flows."
+    ]
+  },
+  "es": {
+    "title": "¿Puede el primer desembolso de construcción pagar la liberación de un lote?",
+    "metaTitle": "Cómo liberar un lote con el primer desembolso de obra | Stonehaven",
+    "desc": "Si un lote terminado garantiza la deuda de urbanización, calcule cuánto queda del primer desembolso para empezar la vivienda después de liberar el terreno.",
+    "eyebrow": "Obra nueva · Del lote terminado al inicio de obra",
+    "terms": [
+      [
+        "Para",
+        "Promotores que van a construir en lotes con deuda de urbanización"
+      ],
+      [
+        "Decisión",
+        "Cuánto queda del primer desembolso para pagar la obra"
+      ]
+    ],
+    "body": [
+      "<strong>El primer desembolso del préstamo para construir una vivienda puede cubrir la liberación del lote si ambos contratos lo permiten y los cierres se coordinan.</strong> Antes de contratar los primeros trabajos, confirme cuánto exige el acreedor para liberar ese lote, qué monto puede desembolsarse al cierre y qué efectivo quedará para la obra.",
+      {
+        "h": "Cómo pasa el financiamiento del terreno a la vivienda"
+      },
+      "Suponga que el mismo promotor es dueño de la urbanización y construirá la vivienda. Los lotes garantizan el préstamo de urbanización. Un segundo préstamo financiará la vivienda sobre un lote determinado. El acreedor del primer préstamo indica por escrito sus condiciones para liberar esa parcela. El equipo del nuevo financiamiento y los profesionales de títulos verifican la identificación del lote, los usos permitidos y la prioridad de la nueva garantía.",
+      "El <a href=\"https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf\">manual de crédito inmobiliario comercial de la OCC</a> describe estructuras con préstamos separados en las que el primer desembolso de construcción amortiza la deuda del lote. Los contratos determinan si puede aplicarse esa estructura a su <a href=\"/es/commercial/land-development-loans\">financiamiento de urbanización</a>.",
+      {
+        "h": "¿Cuánto queda de un primer desembolso de $140,000?"
+      },
+      "Imagine un préstamo de construcción de hasta $400,000 que permite recibir $140,000 al cierre. La liberación del lote exige $110,000. Hay $6,000 de gastos de cierre y se necesitan $60,000 para iniciar los trabajos. En este ejemplo, las instrucciones de cierre permiten destinar a obra admisible el resto del desembolso inicial.",
+      "<table><caption>Ejemplo hipotético del primer desembolso</caption><thead><tr><th scope=\"col\">Movimiento de efectivo</th><th scope=\"col\">Importe</th></tr></thead><tbody><tr><td>Desembolso inicial</td><td>$140,000</td></tr><tr><td>Abono a capital para liberar el lote</td><td>($110,000)</td></tr><tr><td>Gastos de cierre</td><td>($6,000)</td></tr><tr><td>Fondos disponibles para iniciar la obra</td><td>$24,000</td></tr><tr><td>Efectivo adicional para pagar $60,000 de trabajos</td><td>$36,000</td></tr></tbody></table>",
+      "Quedan $260,000 sin desembolsar. Para utilizarlos habrá que cumplir el siguiente hito y los requisitos de desembolso. Si la excavación debe pagarse antes, el promotor tendrá que cubrir los $36,000 o acordar otro calendario con el contratista.",
+      {
+        "h": "¿Qué patrimonio del terreno se reconoce como aportación?"
+      },
+      "El pago de $110,000 reduce la deuda de urbanización y consume parte del nuevo préstamo. Si se registra también como efectivo nuevo del promotor, se exagera la aportación. Presente por separado el costo de adquisición, los costos documentados de urbanización asignados al lote, las obligaciones pendientes y el valor del terreno que solicita reconocer. Confirme qué importe admite el nuevo financiamiento.",
+      "Si otro constructor compra el lote, empiece por el precio de compraventa. El vendedor destina parte del cobro a obtener la liberación. El comprador puede adeudar una suma superior al importe de liberación para completar la compra. Revise la liquidación de esa operación.",
+      "Si ya dispone de lotes listos para edificar, <a href=\"/es/commercial/construction-loans#quick-inquiry\" data-sh-inquiry-cta=\"construction-article\">consulte sobre el financiamiento de sus próximas viviendas</a>. Indique la ubicación, el número de obras previstas y los importes estimados de liberación y del primer desembolso.",
+      {
+        "h": "Qué confirmar antes de que empiece el contratista"
+      },
+      "<ul><li>Compruebe que la descripción legal del lote coincide en la solicitud de liberación y en el nuevo financiamiento.</li><li>Pida el importe de liberación con su fecha de vigencia. Identifique intereses, cargos y condiciones adicionales.</li><li>Compare los usos permitidos del primer desembolso con los anticipos, gastos de cierre y facturas que vencen antes del siguiente.</li><li>Confirme con los profesionales de cierre y títulos la secuencia de desembolso, inscripción e inicio de obra.</li></ul>",
+      "Si piensa vender varios lotes a un constructor, calcule <a href=\"/es/blog/bulk-lot-sale-release-price-cash-flow\">cuánto efectivo quedará después de liberarlos</a>. Vender los lotes y obtener financiamiento para construir en ellos producen flujos de efectivo distintos."
+    ]
+  }
+}

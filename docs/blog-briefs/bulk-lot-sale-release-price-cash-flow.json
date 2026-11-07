@@ -1,0 +1,89 @@
+{
+  "slug": "bulk-lot-sale-release-price-cash-flow",
+  "date": "2026-11-07",
+  "type": "guide",
+  "product": "Commercial",
+  "inquiry": "Construction",
+  "en": {
+    "title": "Selling several lots to one builder? Calculate the cash after releases",
+    "metaTitle": "Bulk Lot Sale and Release Price Calculation | Stonehaven",
+    "desc": "Compare a four-lot builder purchase with individual sales. See when a minimum release price takes effect and how much cash is left for the next phase.",
+    "eyebrow": "Ground-up development · Builder lot purchases",
+    "terms": [
+      [
+        "Decision",
+        "Whether a discounted group sale can fund the next phase"
+      ],
+      [
+        "Key figures",
+        "Price per lot, required principal payment and dated site-work costs"
+      ]
+    ],
+    "body": [
+      "<strong>Before accepting a builder’s offer for several lots, calculate the required release payment on each parcel at the discounted price.</strong> Then subtract selling costs and compare the cash remaining at that closing with the next infrastructure bill. A faster sale can bring in cash sooner while leaving too little to start the next phase.",
+      {
+        "h": "Identify where the release formula changes"
+      },
+      "Read the partial-release provision and the schedule for the specific parcels. One agreement might set a fixed amount per lot. Another might require the greater of a minimum and a percentage of gross proceeds. Confirm how the contract defines proceeds, how the purchase price is allocated across lots and whether a group sale needs approval. The <a href=\"/blog/subdivision-loan-lot-release-prices\">lot release price guide</a> explains the underlying mechanics.",
+      "Assume a hypothetical agreement requires the greater of $105,000 or 75% of the gross price of each lot. The two amounts are equal at $140,000 per lot ($105,000 ÷ 0.75). Below $140,000, a further discount reduces the sale proceeds while the minimum principal payment stays at $105,000. These terms are invented for the calculation.",
+      {
+        "h": "Four individual lot sales versus one discounted closing"
+      },
+      "A builder offers $135,000 each for four identical finished lots at one closing. The developer’s alternative is selling them individually at an assumed $150,000 each over time. Assume selling costs equal 5% of gross in either case, the development debt exceeds the release payments and there are no other deductions in this comparison.",
+      "<table><caption>Illustrative proceeds for the same four lots</caption><thead><tr><th scope=\"col\">Four individual sales over time</th><th scope=\"col\">One group sale now</th></tr></thead><tbody><tr><td>Gross proceeds: $600,000</td><td>Gross proceeds: $540,000</td></tr><tr><td>Selling costs: $30,000</td><td>Selling costs: $27,000</td></tr><tr><td>Principal repayment: 4 × $112,500 = $450,000</td><td>Principal repayment: 4 × $105,000 = $420,000</td></tr><tr><td>Cash remaining: $120,000</td><td>Cash remaining: $93,000</td></tr></tbody></table>",
+      "The group closing delivers $93,000 now. The individual sales would generate $27,000 more cash in total if they close as modeled, and repay $30,000 more principal. They may also require months of additional interest, taxes and upkeep. Put those costs and dates into the individual-sale case before deciding.",
+      {
+        "h": "Will the proceeds cover the next construction start?"
+      },
+      "Suppose the next utility installation requires $110,000 immediately after the group closing. Even if all $93,000 can be used for infrastructure, the phase is $17,000 short. Ask whether proceeds must first replenish an escrow or fund unfinished improvements. Each additional restriction reduces the amount available to start work.",
+      "Before committing to the sale, <a href=\"/commercial/construction-loans#quick-inquiry\" data-sh-inquiry-cta=\"construction-article\">discuss financing for the next phase with Stonehaven</a>. Give the location, number of lots or homes, expected closing month and the work the proceeds need to fund.",
+      {
+        "h": "What if the builder wants to close in stages?"
+      },
+      "Put each group of lots on its own line with its closing conditions, release amount and estimated net cash. A deposit can remain in escrow, and a future purchase can depend on permits or acceptance of improvements. Mark when the cash actually becomes available. Compare that timing with the contractor’s deposit and start date.",
+      "If you intend to retain a lot and build on it yourself, the cash moves differently. See how the <a href=\"/blog/lot-release-first-construction-draw\">first construction advance can fund a lot release</a>. For a sale, ask the development loan holder for written release figures by lot and send the closing professional the agreed allocation before setting an unconditional delivery date.",
+      "The <a href=\"https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf\">OCC handbook on commercial real estate lending</a> explains how principal payments as lots sell protect the remaining collateral. The example here tests a hypothetical contract formula. Your release schedule and closing instructions govern the actual transaction."
+    ]
+  },
+  "es": {
+    "title": "Venta de varios lotes a un constructor: calcule el efectivo después de liberarlos",
+    "metaTitle": "Venta de lotes en bloque y pagos de liberación | Stonehaven",
+    "desc": "Compare la venta de cuatro lotes en bloque con ventas individuales. Calcule cuándo se aplica el pago mínimo de liberación y qué efectivo queda para la siguiente fase.",
+    "eyebrow": "Desarrollo inmobiliario · Venta de lotes a constructores",
+    "terms": [
+      [
+        "Decisión",
+        "Si una venta en bloque con descuento financia la próxima etapa"
+      ],
+      [
+        "Datos clave",
+        "Precio por lote, abono exigido al capital y fechas de pago de las obras"
+      ]
+    ],
+    "body": [
+      "<strong>Antes de aceptar una oferta por varios lotes, calcule cuánto deberá pagar para liberar cada parcela al precio con descuento.</strong> Reste los gastos de venta y compare el efectivo disponible al cierre con la próxima factura de infraestructura. Vender antes puede adelantar el cobro y aun así dejar fondos insuficientes para la siguiente etapa.",
+      {
+        "h": "Identifique el precio a partir del cual se aplica el mínimo"
+      },
+      "Revise la cláusula de liberación parcial y el anexo correspondiente a esas parcelas. El contrato podría fijar un importe por lote o exigir el mayor entre un mínimo y un porcentaje de los ingresos brutos. Confirme cómo se definen los ingresos, cómo se reparte el precio entre las parcelas y si la venta en bloque requiere autorización. La <a href=\"/es/blog/subdivision-loan-lot-release-prices\">guía sobre precios de liberación</a> explica cómo se amortiza la deuda al vender.",
+      "Suponga que un contrato hipotético exige el mayor importe entre $105,000 y el 75% del precio bruto de cada lote. Ambos importes coinciden a un precio de $140,000 ($105,000 ÷ 0.75). Por debajo de esa cifra, un descuento adicional reduce el cobro sin reducir el pago mínimo de $105,000. Son supuestos del ejemplo.",
+      {
+        "h": "Cuatro ventas individuales frente a un cierre en bloque"
+      },
+      "Un constructor ofrece $135,000 por cada uno de cuatro lotes terminados e idénticos en un solo cierre. El promotor calcula que podría venderlos por separado a $150,000 cada uno a lo largo de varios meses. Suponga gastos de venta del 5% en ambos casos, una deuda superior a los pagos de liberación y ninguna otra deducción.",
+      "<table><caption>Ingresos hipotéticos por los mismos cuatro lotes</caption><thead><tr><th scope=\"col\">Cuatro ventas en fechas distintas</th><th scope=\"col\">Una venta en bloque hoy</th></tr></thead><tbody><tr><td>Ingreso bruto: $600,000</td><td>Ingreso bruto: $540,000</td></tr><tr><td>Gastos de venta: $30,000</td><td>Gastos de venta: $27,000</td></tr><tr><td>Abono a capital: 4 × $112,500 = $450,000</td><td>Abono a capital: 4 × $105,000 = $420,000</td></tr><tr><td>Efectivo restante: $120,000</td><td>Efectivo restante: $93,000</td></tr></tbody></table>",
+      "La venta en bloque aporta $93,000 hoy. Si las ventas individuales se realizan en las fechas y a los precios previstos, dejarían $27,000 más de efectivo en total y reducirían la deuda en $30,000 adicionales. También podrían implicar más meses de intereses, impuestos y mantenimiento. Incorpore esos costos y sus fechas antes de decidir.",
+      {
+        "h": "¿Alcanza el efectivo para iniciar las próximas obras?"
+      },
+      "Suponga que la instalación de servicios públicos requiere $110,000 justo después del cierre en bloque. Aunque pueda destinar los $93,000 íntegros a infraestructura, faltarán $17,000. Confirme si primero debe reponer una cuenta de reserva o pagar mejoras pendientes. Cada obligación reduce el efectivo disponible para comenzar.",
+      "Antes de comprometerse con la venta, <a href=\"/es/commercial/construction-loans#quick-inquiry\" data-sh-inquiry-cta=\"construction-article\">consulte a Stonehaven sobre el financiamiento de la siguiente etapa</a>. Indique la ubicación, la cantidad de lotes o viviendas, el mes de cierre y las obras que deberá pagar.",
+      {
+        "h": "¿Qué pasa si el constructor propone varios cierres?"
+      },
+      "Anote para cada grupo de lotes las condiciones de cierre, el pago de liberación y el efectivo neto estimado. Un depósito puede seguir en custodia. Una compra futura puede depender de permisos o de la aceptación de las mejoras. Marque en qué fecha podrá utilizar el efectivo y compárela con el anticipo y la fecha de inicio del contratista.",
+      "Si va a conservar un lote para construir en él, el flujo cambia. Revise cómo <a href=\"/es/blog/lot-release-first-construction-draw\">el primer desembolso de construcción puede cubrir la liberación de un lote</a>. Para una venta, pida por escrito el importe exigido por parcela y confirme la distribución del precio con el profesional de cierre.",
+      "El <a href=\"https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf\">manual de crédito inmobiliario comercial de la OCC</a> explica la función de los abonos a capital conforme se venden los lotes. Aquí se ilustra una fórmula hipotética. Para la operación real, siga el anexo de liberación y las instrucciones de cierre."
+    ]
+  }
+}

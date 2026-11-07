@@ -36,6 +36,8 @@ test('publishes a bilingual guide, links, metadata and retained brief', t => {
     assert.equal(f.read('_redirects').split(`/${prefix}blog/publishing-test.html /${prefix}blog/publishing-test 301!`).length - 1, 1);
     const index = f.read(`${prefix}blog.html`);
     assert.ok(index.includes(`href="/${prefix}blog/publishing-test"`));
+    const listing = JSON.parse(index.match(/<script type="application\/ld\+json">(.*?)<\/script>/s)[1]);
+    assert.equal(listing.blogPost[0].url, article.mainEntityOfPage['@id']);
   }
   assert.deepEqual(JSON.parse(f.read('docs/blog-briefs/publishing-test.json')), f.brief);
 });
@@ -167,5 +169,18 @@ test('capital announcements use dated availability disclosure without fictional 
     assert.ok(!page.includes('hypothetical examples'));
     assert.ok(!page.includes('operaciones ya cerradas'));
     assert.ok(!page.includes('ejemplos hipotéticos'));
+  }
+});
+
+test('construction guides open the tracked commercial construction form in the article language', t => {
+  const f = fixture(t);
+  assert.notEqual(f.publish({...f.brief, product: 'DSCR', inquiry: 'Construction'}).status, 0);
+  const result = f.publish({...f.brief, product: 'Commercial', inquiry: 'Construction'});
+  assert.equal(result.status, 0, result.stderr);
+  for (const prefix of ['', 'es/']) {
+    const page = f.read(prefix + 'blog/publishing-test.html');
+    const cta = page.match(/<section class="lead">[\s\S]*?<\/section>/)[0];
+    assert.ok(cta.includes('data-sh-inquiry-cta="construction-article"'));
+    assert.ok(cta.includes('href="/' + prefix + 'commercial/construction-loans#quick-inquiry"'));
   }
 });

@@ -41,6 +41,7 @@
       "<table><caption>Illustrative project uses</caption><thead><tr><th scope=\"col\">Budget item</th><th scope=\"col\">Amount</th></tr></thead><tbody><tr><td>Land acquisition</td><td>$600,000</td></tr><tr><td>Hard construction costs</td><td>$1,500,000</td></tr><tr><td>Professional fees, permits and other soft costs</td><td>$180,000</td></tr><tr><td>Construction contingency</td><td>$150,000</td></tr><tr><td>Interest reserve</td><td>$120,000</td></tr><tr><td>Total modeled uses</td><td>$2,550,000</td></tr></tbody></table>",
       "If a hypothetical loan commitment is $2,040,000, it equals 80% of this modeled cost. The remaining funding requirement is $510,000. That calculation alone does not tell the borrower how much must be wired at closing or retained afterward. Existing land equity, lender cost eligibility, closing disbursements and reserve funding all need their own reconciliation. An unfunded loan commitment is not cash in the operating account.",
       "Avoid adding the same reserve twice. If the $120,000 interest reserve is already included in both the budget and committed financing, it is not an additional free allowance. If the lender excludes a cost category, rebuild the sources-and-uses statement so the borrower contribution remains visible. Our <a href=\"/blog/100-ltc-construction-loans-builder-cash-needed\">guide to 100% eligible LTC and builder cash needs</a> explains why a leverage headline does not settle this question.",
+      "For a monthly figure you can put in the budget, <a href=\"/blog/construction-loan-interest-reserve-draw-schedule\">calculate the interest reserve from the expected draw dates</a>.",
       {
         "h": "Stress-test the schedule, not just the construction price"
       },
@@ -61,6 +62,7 @@
       },
       "At each budget update, show the original reserve, amounts used, remaining balance and revised need to finish. A contingency that looks adequate in percentage terms may already be committed to approved change orders. An interest reserve may be insufficient after a longer schedule even without a construction overrun.",
       "Use a simple decision log: what changed, its cash effect, who approved it and whether the lender accepted the budget transfer. Do not count the same $50,000 as both an available construction contingency and money reserved for interest. Reconcile the ledger with the <a href=\"/blog/construction-loan-term-sheet-comparison\">term sheet and final loan documents</a>.",
+      "If the sale month has moved, <a href=\"/blog/construction-loan-interest-reserve-shortfall\">find the first interest bill the remaining reserve cannot cover</a>.",
       {
         "h": "Can an unused contingency automatically pay interest?",
         "level": 3
@@ -113,6 +115,7 @@
       "<table><caption>Usos ilustrativos del capital del proyecto</caption><thead><tr><th scope=\"col\">Partida</th><th scope=\"col\">Importe</th></tr></thead><tbody><tr><td>Compra del terreno</td><td>$600,000</td></tr><tr><td>Costos directos de construcción</td><td>$1,500,000</td></tr><tr><td>Honorarios, permisos y otros costos indirectos</td><td>$180,000</td></tr><tr><td>Contingencia de obra</td><td>$150,000</td></tr><tr><td>Reserva de intereses</td><td>$120,000</td></tr><tr><td>Total de usos modelados</td><td>$2,550,000</td></tr></tbody></table>",
       "Si un compromiso de préstamo hipotético es de $2,040,000, equivale al 80% del costo modelado. El financiamiento restante necesario es de $510,000. Ese cálculo no indica por sí solo cuánto debe transferirse al cierre ni cuánto debe conservarse después. El patrimonio neto del terreno, los costos elegibles, los desembolsos iniciales y las reservas requieren una conciliación propia. Un compromiso todavía no desembolsado no es efectivo en la cuenta operativa.",
       "Evite contar dos veces una reserva. Si los $120,000 ya están incluidos en el presupuesto y en el financiamiento comprometido, no son una asignación adicional gratuita. Si un prestamista excluye una categoría, ajuste el cuadro de fuentes y usos para que la aportación del prestatario permanezca visible. Nuestra <a href=\"/es/blog/100-ltc-construction-loans-builder-cash-needed\">guía sobre el 100% del costo elegible y el efectivo del constructor</a> explica por qué el porcentaje anunciado no resuelve esta pregunta.",
+      "Para pasar de estas partidas a una cifra mensual, <a href=\"/es/blog/construction-loan-interest-reserve-draw-schedule\">calcule la reserva con el calendario de desembolsos de la obra</a>.",
       {
         "h": "Pruebe el calendario, además del precio de la obra"
       },
@@ -133,6 +136,7 @@
       },
       "En cada revisión muestre reserva original, uso acumulado, saldo y necesidad restante. Una contingencia aparentemente suficiente puede estar comprometida a órdenes de cambio. La reserva de intereses puede agotarse por retrasos aunque no aumente el costo de obra.",
       "Registre qué cambió, efecto en efectivo, autorización y aceptación del traslado presupuestario por el acreedor. No cuente los mismos $50,000 como contingencia disponible y reserva de intereses. Concilie el registro con la <a href=\"/es/blog/construction-loan-term-sheet-comparison\">propuesta y documentación final</a>.",
+      "Si cambió el mes de venta, <a href=\"/es/blog/construction-loan-interest-reserve-shortfall\">identifique el primer pago de intereses que la reserva ya no cubre</a>.",
       {
         "h": "¿La contingencia no utilizada puede pagar intereses automáticamente?",
         "level": 3
@@ -148,7 +152,7 @@
     ]
   },
   "contentRevision": {
-    "updated": "2026-11-01",
+    "updated": "2026-11-07",
     "citations": [
       "https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf",
       "https://www.occ.treas.gov/news-issuances/bulletins/2024/bulletin-2024-29.html"
