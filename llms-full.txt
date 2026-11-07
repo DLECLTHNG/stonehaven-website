@@ -1,6 +1,6 @@
 # Stonehaven Lending: public pillar content
 
-Latest source content update: 2026-11-01.
+Latest source content update: 2026-11-07.
 
 Selected public English pillar excerpts for the three promoted business lines. Navigation, input controls, footers and references to other programs are omitted. Excerpts retain their source links. Canonical web pages remain authoritative. This file does not establish indexing, rankings or program eligibility.
 
@@ -572,6 +572,12 @@ A $3.5M request would equal 100% of that assumed cost, but only about 72.9% of c
 
 If the lender excludes an allowance, advances draws after completed work, or requires additional reserves, the builder can still need cash. A 100% eligible-cost structure must be checked line by line.
 
+### Can a builder break ground without a presale?
+
+Suppose you plan to sell the finished house and have no buyer under contract. An illustrative $1.5 million sale with $90,000 of selling costs and a $1.15 million payoff leaves $260,000 before taxes and recovery of your invested cash. At a $1.35 million sale price, the same costs and payoff leave $110,000. Budget for interest, insurance and upkeep through the sale closing.
+
+Prepare a single spec build (https://stonehavencre.com/blog/spec-home-construction-loans-without-presales)  · Calculate the project funding gap (https://stonehavencre.com/construction-loan-calculator)  · Read the published Brookhaven land-equity case (https://stonehavencre.com/blog/brookhaven-ga-100-ltc-ground-up-construction)
+
 ### How much cash do I need if I already own the land?
 
 Owned land can support the equity contribution, but it does not pay an invoice. Separate the funding gap for the whole project from cash needed at closing and cash needed between draws. This hypothetical example assumes free-and-clear land, no cash out and no other financing.
@@ -745,7 +751,7 @@ The OCC CRE handbook provides background on budgets, equity, construction contro
 
 - OCC: Commercial Real Estate Lending handbook (https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf)
 
-Updated October 25, 2026. Editorial standards (https://stonehavencre.com/editorial-policy)  · Meet the team (https://stonehavencre.com/management)
+Updated November 7, 2026. Editorial standards (https://stonehavencre.com/editorial-policy)  · Meet the team (https://stonehavencre.com/management)
 
 ### Prepare the next decision
 
@@ -3718,6 +3724,8 @@ A bank statement mortgage still requires documented income and lender underwriti
  | Decision factors | Income, debts, credit, assets and property | Income, debts, credit, assets and property still matter
 
 Compare both options. Bank statement programs can have different rates, down-payment requirements and fees. A different documentation method does not guarantee a larger loan or a faster closing.
+
+Prepare your business income for a jumbo purchase (https://stonehavencre.com/blog/self-employed-jumbo-mortgage-documentation) . See how to document ownership and work out how much operating cash will remain after closing.
 
 ### Questions before you start
 

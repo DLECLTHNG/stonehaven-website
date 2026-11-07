@@ -22,12 +22,17 @@
       ]
     ],
     "body": [
-      "A debt service coverage ratio (DSCR) loan uses rental income to evaluate an investment property under the selected lender's rules. For rental property in North Dakota, this guide focuses on unit-count classifications can differ from mortgage categories. Start with the local records below before relying on a projected loan payment.",
+      "For a North Dakota DSCR loan, check the parcel’s tax classification and unit count before estimating the monthly payment. A change in property taxes can change how much of that payment the rent covers.",
       {
         "h": "Unit-count classifications can differ from mortgage categories"
       },
       "North Dakota's residential-tax guidance defines its residential category using fewer than four separate family units. That is not the same boundary an investor may recognize from common one-to-four-unit mortgage terminology. Confirm the tax classification of the actual building independently from the loan program's property-type eligibility.",
       "State reference: <a href=\"https://www.tax.nd.gov/residential-property-tax\">North Dakota Office of State Tax Commissioner: residential property tax</a>.",
+      {
+        "h": "How Fargo property taxes affect DSCR"
+      },
+      "The <a href=\"https://www.fargond.gov/city-government/departments/finance/property-taxes/residential-property-taxes\">City of Fargo’s tax calculation</a> applies a 50% assessment ratio, a 9% factor for residential-class property and the local mill levy. Consider a hypothetical one-unit rental with a $300,000 assessor value and an assumed levy of 250 mills. Gross annual tax would be $300,000 × 0.50 × 0.09 × 0.250 = $3,375, or $281.25 a month. Verify the parcel’s classification, actual levy and special assessments before using the estimate.",
+      "With $2,500 in qualifying monthly rent and $1,900 for principal, interest and insurance, adding $281.25 in taxes gives illustrative coverage of $2,500 ÷ $2,181.25 = 1.15, assuming no association dues. Use your figures in the <a href=\"/dscr-program-calculator\">DSCR calculator</a> and <a href=\"/resources/dscr-vs-conventional\">compare DSCR with conventional rental financing</a>. The program determines the qualifying rent and payment.",
       {
         "h": "Documents and questions for this property review"
       },
@@ -70,12 +75,17 @@
       ]
     ],
     "body": [
-      "Un préstamo DSCR utiliza ingresos de alquiler para evaluar una propiedad de inversión según las reglas del prestamista. La razón DSCR mide la cobertura del servicio de la deuda. Para un alquiler en Dakota del Norte, esta guía aborda las clases por unidades pueden diferir de las hipotecarias. Revise los registros locales antes de confiar en un pago proyectado.",
+      "En Dakota del Norte, la categoría fiscal de una propiedad y el cálculo hipotecario pueden depender de criterios distintos. Revise el número de unidades y los impuestos específicos de la parcela antes de comparar la renta con el pago propuesto.",
       {
         "h": "Las clases por unidades pueden diferir de las hipotecarias"
       },
       "La guía fiscal de Dakota del Norte define su categoría residencial con menos de cuatro unidades familiares separadas. Ese límite no coincide con la terminología hipotecaria habitual de una a cuatro unidades. Confirme por separado la clase fiscal del edificio y la elegibilidad de su tipo de propiedad en el programa.",
       "Fuente estatal: <a href=\"https://www.tax.nd.gov/residential-property-tax\">North Dakota Office of State Tax Commissioner: residential property tax</a>.",
+      {
+        "h": "Cómo influyen los impuestos municipales en el cálculo DSCR"
+      },
+      "La <a href=\"https://www.fargond.gov/city-government/departments/finance/property-taxes/residential-property-taxes\">fórmula fiscal de Fargo</a> aplica al valor del asesor una proporción del 50%, un factor del 9% para la clase residencial y el gravamen local. Ejemplo hipotético de una vivienda de alquiler de una unidad: con un valor del asesor de $300,000 y un gravamen supuesto de 250 mills, el impuesto bruto sería $300,000 × 0.50 × 0.09 × 0.250 = $3,375 anuales, o $281.25 mensuales. Verifique la clasificación, el gravamen real y las contribuciones especiales de la parcela.",
+      "Con renta mensual elegible de $2,500 y $1,900 de principal, intereses y seguro, añadir $281.25 de impuestos da una cobertura ilustrativa de $2,500 ÷ $2,181.25 = 1.15, sin cuotas de asociación. Introduzca sus cifras en la <a href=\"/es/dscr-program-calculator\">calculadora DSCR</a> y <a href=\"/resources/dscr-vs-conventional\" hreflang=\"en\">compare DSCR con financiamiento convencional (en inglés)</a>. El programa determina la renta y el pago admitidos.",
       {
         "h": "Documentos y preguntas para revisar esta propiedad"
       },
@@ -105,5 +115,12 @@
       "checked_at": "2026-09-12"
     }
   ],
-  "series": "dscr"
+  "series": "dscr",
+  "contentRevision": {
+    "updated": "2026-11-07",
+    "citations": [
+      "https://www.tax.nd.gov/residential-property-tax",
+      "https://www.fargond.gov/city-government/departments/finance/property-taxes/residential-property-taxes"
+    ]
+  }
 }

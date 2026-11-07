@@ -37,6 +37,14 @@ exports.handler = async (event) => {
   if (typeof data.extra === 'string' && data.extra.length <= 24000) {
     try { const parsed = JSON.parse(data.extra); if (parsed && typeof parsed === 'object' && !Array.isArray(parsed)) extra = parsed; } catch {}
   }
+  if (data.page === 'contact') {
+    if (['Financing', 'Professional introduction'].includes(data.inquiry_purpose)) {
+      extra.inquiry_purpose = data.inquiry_purpose;
+    }
+    if (['Commercial', 'Residential', 'SBA', 'DSCR', 'Not sure'].includes(data.product_choice)) {
+      payload.product = data.product_choice;
+    }
+  }
   // Native quick forms retain reply choice even when JavaScript is unavailable.
   if (data.inquiry_path === 'quick-v1') {
     for (const field of ['inquiry_path', 'loan_program', 'contact_preference']) {

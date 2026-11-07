@@ -23,6 +23,7 @@
         "h": "The limit and the first advance are different questions"
       },
       "A proposed credit limit does not tell you how much must be advanced at opening. Ask for the initial-draw requirement in writing, including whether fees are included in that advance. Then compare it with what you actually need for the first project payment. Some plans have minimum borrowing requirements; the CFPB recommends checking those terms. Include the <a href=\"/blog/heloc-draw-period-repayment-payments\">payment after the draw period ends</a> in that plan, not only the payment when the line opens.",
+      "If two offers require different advances, <a href=\"/blog/compare-heloc-offers\">compare how much you would borrow at the first stage</a> and how much would remain available later.",
       {
         "h": "Map the project before choosing the amount"
       },
@@ -58,6 +59,7 @@
         "h": "El límite y el primer retiro son preguntas distintas"
       },
       "Un límite propuesto no indica cuánto debe retirar al abrir. Pida por escrito el requisito inicial y si incluye cargos. Compárelo con lo que necesita para el primer pago del proyecto. Algunos planes exigen mínimos de disposición; la CFPB recomienda revisarlos. Incluya el <a href=\"/es/blog/heloc-draw-period-repayment-payments\">pago al terminar el período de disposición</a>, no solo la cuota de apertura.",
+      "Si dos ofertas exigen distintos desembolsos, <a href=\"/es/blog/compare-heloc-offers\">compare cuánto pediría prestado en la primera etapa</a> y cuánto quedaría para después.",
       {
         "h": "Organice el proyecto antes de elegir el monto"
       },
@@ -71,6 +73,12 @@
       },
       "Use la <a href=\"/es/heloc-planning-tools#project\">herramienta de planificación</a> para organizar sus supuestos. Deje en blanco lo que no sepa para comentarlo después. La herramienta no determina elegibilidad ni obtiene una oferta. Puede <a href=\"/es/heloc/contractor-quotes\">solicitar una conversación con un corredor</a> para revisar el valor estimado, saldo hipotecario y monto solicitado. No envíe números de cuenta ni documentos financieros por un formulario público.",
       "<a href=\"https://www.consumerfinance.gov/ask-cfpb/what-is-a-home-equity-line-of-credit-heloc-en-107/\">CFPB: disposición y pago de una HELOC (en inglés)</a>. Los ejemplos de un proveedor corresponden solo a ese proveedor. Esta guía es educativa. Un préstamo garantizado por la vivienda pone el inmueble en riesgo si no se paga. La disponibilidad, documentación, costos y aprobación dependen del prestamista y de sus circunstancias."
+    ]
+  },
+  "contentRevision": {
+    "updated": "2026-11-07",
+    "citations": [
+      "https://www.consumerfinance.gov/ask-cfpb/what-is-a-home-equity-line-of-credit-heloc-en-107/"
     ]
   }
 }

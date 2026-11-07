@@ -23,8 +23,8 @@
       ]
     ],
     "body": [
-      "A builder planning a rental-home community has a new HUD financing question to ask. Issued Mortgagee Letter 2026-12 allows qualifying developments of detached homes, duplexes and triplexes into specified multifamily insurance programs. The opportunity depends on the community structure, not just the words “build to rent.”",
-      "Before changing a capital plan, check the site map, ownership, intended exit and operating budget against the actual letter. A construction concept may fit while the planned individual-home exit does not.",
+      "For a rental community on a contiguous site, start with three questions. Will at least five homes operate as one long-term rental property? Will all parcels remain together throughout the insured loan term? Is this a new build, or a recently completed community being acquired or refinanced? Bring those facts to Stonehaven for a broker review.",
+      "<a href=\"https://www.hud.gov/sites/default/files/hudclips/documents/2026-12hsgml.pdf\">HUD Mortgagee Letter 2026-12</a> sets the conditions for detached homes, duplexes and triplexes. If the plan depends on selling individual lots, review <a href=\"/commercial/land-development-loans\">land development financing</a>.",
       {
         "h": "Two entry points, with different limits"
       },
@@ -86,8 +86,8 @@
       ]
     ],
     "body": [
-      "Un constructor de comunidades de alquiler tiene una nueva opción que evaluar. La Carta Hipotecaria 2026-12 emitida permite que desarrollos elegibles de viviendas independientes, dúplex y tríplex accedan a programas multifamiliares específicos. La oportunidad depende de la estructura, no solo de llamarlo BTR.",
-      "Antes de cambiar el plan de capital, compare mapa, propiedad, salida y presupuesto operativo con la carta. La construcción puede encajar mientras la venta individual prevista no.",
+      "Para una comunidad de alquiler en un solo terreno contiguo, empiece con tres preguntas. ¿Habrá al menos cinco viviendas bajo una sola operación de alquiler a largo plazo? ¿Se conservarán todas las parcelas durante el préstamo asegurado? ¿Es obra nueva o una comunidad recientemente terminada que se comprará o refinanciará? Describa los hechos a Stonehaven para una revisión como corredor hipotecario.",
+      "<a href=\"https://www.hud.gov/sites/default/files/hudclips/documents/2026-12hsgml.pdf\">La carta hipotecaria 2026-12 de HUD</a> define las condiciones para viviendas independientes, dúplex y tríplex. Si el plan depende de vender lotes individuales, revise el <a href=\"/es/commercial/land-development-loans\">financiamiento para desarrollo de terrenos</a>.",
       {
         "h": "Dos entradas con límites distintos"
       },
@@ -130,7 +130,7 @@
     ]
   },
   "contentRevision": {
-    "updated": "2026-11-01",
+    "updated": "2026-11-07",
     "citations": [
       "https://www.hud.gov/sites/default/files/hudclips/documents/2026-12hsgml.pdf",
       "https://www.hud.gov/sites/dfiles/OCHCO/documents/4430GHSGG.pdf"

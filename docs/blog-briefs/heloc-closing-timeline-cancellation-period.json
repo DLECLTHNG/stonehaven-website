@@ -4,9 +4,9 @@
   "type": "guide",
   "product": "HELOC",
   "en": {
-    "metaTitle": "HELOC Closing and Funding Timeline | Stonehaven",
+    "metaTitle": "When Can You Use a HELOC After Closing? | Stonehaven",
     "title": "When can you use your HELOC after closing?",
-    "desc": "Separate application review, signing, the applicable cancellation period and actual access to funds before scheduling a contractor payment.",
+    "desc": "Plan your first HELOC draw. See how signing, the applicable cancellation period and release of funds affect when you can pay a contractor.",
     "eyebrow": "HELOC · Closing and funding",
     "terms": [
       [
@@ -23,7 +23,10 @@
       ]
     ],
     "body": [
-      "<strong>Signing your HELOC documents does not necessarily mean you can use the money that day.</strong> Application approval, account opening, any applicable cancellation period and the first usable advance are separate steps. Before scheduling a contractor deposit or another time-sensitive payment, ask the lender to confirm the expected funding date and how you will access the funds.",
+      {
+        "h": "From signing to your first draw"
+      },
+      "<ol><li><strong>Signing.</strong> Confirm when the line opens and keep the notices and disclosures you receive at closing.</li><li><strong>Cancellation.</strong> For a covered transaction, check the deadline in your notice. The example below shows how to count the days.</li><li><strong>Access to funds.</strong> Ask when the lender can release your first draw and when the transfer or check will clear.</li></ol>",
       {
         "h": "Start with the payment deadline, then work backward"
       },
@@ -67,9 +70,9 @@
     ]
   },
   "es": {
-    "metaTitle": "HELOC: cierre y disponibilidad del dinero | Stonehaven",
+    "metaTitle": "¿Cuándo puede usar una HELOC después del cierre? | Stonehaven",
     "title": "¿Cuándo puede utilizar su HELOC después del cierre?",
-    "desc": "Distinga la evaluación, la firma, el plazo de cancelación aplicable y el acceso real al dinero antes de programar un pago al contratista.",
+    "desc": "Planifique su primer retiro de una HELOC. Revise la firma, el plazo de cancelación aplicable y cuándo podrá disponer del dinero para pagar al contratista.",
     "eyebrow": "HELOC · Cierre y desembolso",
     "terms": [
       [
@@ -86,7 +89,10 @@
       ]
     ],
     "body": [
-      "<strong>Firmar los documentos del HELOC no significa necesariamente que pueda usar el dinero ese día.</strong> La aprobación, la apertura de cuenta, el plazo de cancelación aplicable y el primer retiro disponible son etapas distintas. Antes de programar un anticipo al contratista u otro pago urgente, pida al prestamista que confirme la fecha prevista de desembolso y cómo accederá a los fondos.",
+      {
+        "h": "De la firma al primer retiro"
+      },
+      "<ol><li><strong>Firma.</strong> Confirme la fecha de apertura de la línea y conserve los avisos y documentos del cierre.</li><li><strong>Cancelación.</strong> Si la operación está cubierta, consulte la fecha límite en su aviso. El ejemplo de abajo explica cómo contar los días.</li><li><strong>Disponibilidad.</strong> Pregunte cuándo el prestamista permitirá el primer retiro y cuánto tardará la transferencia o el cheque en estar disponible.</li></ol>",
       {
         "h": "Empiece por la fecha del pago y planifique hacia atrás"
       },
@@ -127,6 +133,14 @@
       },
       "Stonehaven es un corredor hipotecario. Podemos ayudarle a organizar una solicitud de HELOC y las preguntas de calendario para el prestamista. Damos seguimiento por mensaje de texto y las consultas empiezan en $50,000 con un puntaje de crédito estimado de al menos 640. Comparta el valor estimado de la vivienda, el saldo hipotecario, el monto solicitado y la fecha en que necesita fondos mediante el <a href=\"/es/heloc#callback\">formulario de HELOC</a>.",
       "Atendemos consultas residenciales en Georgia, Alabama, Tennessee, Florida, North Carolina y South Carolina, sujetas a requisitos del prestamista y del programa. La revisión inicial no constituye aprobación ni garantiza una fecha de cierre. La vivienda garantiza el HELOC y puede estar en riesgo si no paga. No envíe documentos de cuenta ni información privada por el formulario público."
+    ]
+  },
+  "contentRevision": {
+    "updated": "2026-11-07",
+    "citations": [
+      "https://www.consumerfinance.gov/rules-policy/regulations/1026/15/",
+      "https://www.consumerfinance.gov/rules-policy/regulations/1026/2/",
+      "https://www.consumerfinance.gov/ask-cfpb/what-documents-should-i-receive-before-closing-on-a-mortgage-loan-en-181/"
     ]
   }
 }

@@ -149,12 +149,18 @@
   var $=function(id){return document.getElementById(id);};
   var fired=false;
   function money(n){return "$"+Math.round(Math.abs(n)).toLocaleString("en-US");}
-  function calc(){
+  function calc(event){
     var R=window.SH_RES; if(!R) return;
     var cur=+$("r-current").value||0, nw=+$("r-new").value||0,
         costs=+$("r-costs").value||0, stay=+$("r-stay").value||0;
     var out={m:$("r-months"),v:$("r-verdict"),note:$("r-note")};
-    if(cur<=0||nw<=0){out.m.textContent="-";out.v.textContent="";return;}
+    if(event && event.type==="input" && !fired && window.shTrack){fired=true;window.shTrack("calc_used",{page:"refinance-calculator"});}
+    var form=document.querySelector('form[data-sh-form="refinance-calculator"]');
+    if(form)form.removeAttribute("data-sh-about-prefix");
+    if(cur<=0||nw<=0){
+      out.m.textContent="-";out.v.textContent="";out.note.textContent="";
+      $("r-save").textContent="-";$("r-net").textContent="-";return;
+    }
     var b=R.breakEven(costs,cur,nw);
     if(!b){
       out.m.textContent=" - ";
@@ -176,9 +182,7 @@
     out.note.textContent=months<=stayMo
       ? "Past month "+Math.ceil(months)+", every month in the home is money kept. Over "+stay+" years that's a net "+(net>=0?"gain":"loss")+" of "+money(net)+"."
       : "At these numbers you'd leave before the refinance pays for itself - a net loss of "+money(net)+". A lower-cost structure, or staying put, beats it.";
-    var form=document.querySelector('form[data-sh-form="refinance-calculator"]');
     if(form)form.setAttribute("data-sh-about-prefix","[Refi Calculator] "+money(cur)+" -> "+money(nw)+"/mo · costs "+money(costs)+" · break-even "+(Math.round(months*10)/10)+" mo vs "+stay+" yr stay");
-    if(!fired&&window.shTrack){fired=true;window.shTrack("calc_used",{page:"refinance-calculator"});}
   }
   ["r-current","r-new","r-costs","r-stay"].forEach(function(id){$(id).addEventListener("input",calc);});
   document.addEventListener("DOMContentLoaded",calc);
