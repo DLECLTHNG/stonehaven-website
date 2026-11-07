@@ -10,7 +10,8 @@ if (!/^\d{4}-\d{2}-\d{2}$/.test(b.date || '')) throw new Error('date must be YYY
 if (new Date(b.date).toISOString().slice(0, 10) !== b.date || b.date > new Date().toISOString().slice(0, 10)) throw new Error('Use a real publication date that is not in the future');
 if (!['guide', 'closing', 'case-study', 'announcement'].includes(b.type)) throw new Error('type must be guide, closing, case-study or announcement');
 if (b.product && !['HELOC', 'DSCR', 'Family', 'Commercial', 'Residential'].includes(b.product)) throw new Error('Unsupported product');
-if (b.inquiry && (b.inquiry !== 'Residential' || b.product !== 'HELOC')) throw new Error('Unsupported inquiry destination');
+const inquiryRoutes = { HELOC: 'Residential', Commercial: 'Construction' };
+if (b.inquiry && b.inquiry !== inquiryRoutes[b.product]) throw new Error('Unsupported inquiry destination');
 if (b.audience && b.audience !== 'partners') throw new Error('Unsupported audience');
 if (b.audience === 'partners' && b.product) throw new Error('Partner guides use their own contact CTA');
 if (b.product === 'Family' && !['parents', 'adult-child'].includes(b.familyAudience)) throw new Error('Choose a Family audience');
@@ -81,12 +82,22 @@ ${shell.slice(shell.indexOf('<section class="lead">'),shell.indexOf('</main>'))}
     out = out.replace(/<section class="lead">[\s\S]*?<\/section>/, `<section class="lead"><div class="wrap"><div class="lead-card"><h2>${cta[0]}</h2><p class="sub">${cta[1]}</p><p><a class="btn-primary" href="${prefix}/contact${lang === 'es' ? '' : '#inquire'}">${cta[2]}</a></p><p class="fine">${cta[3]}</p><p class="fine">${disclosures[b.type][lang]}</p></div></div></section>`);
   }
   if (b.product === 'Commercial') {
-    out = out.replace(/(<p style="margin-top:22px;font-size:13px;color:var\(--stone-400\);line-height:1\.7;">)[\s\S]*?<\/p>/, (_, start) => start + (lang === 'es' ? 'Comparta su proyecto para recibir seguimiento por mensaje de texto. Una revisión inicial no constituye aprobación.' : 'Share your project for follow-up by text. An initial review is not approval.') + '</p>');
-    const cta = lang === 'es'
+    const construction = b.inquiry === 'Construction';
+    const note = construction
+      ? (lang === 'es' ? 'En la consulta puede elegir respuesta por correo electrónico o mensaje de texto.' : 'You can choose an email or text reply on the construction inquiry.')
+      : (lang === 'es' ? 'Comparta su proyecto para recibir seguimiento por mensaje de texto. Una revisión inicial no constituye aprobación.' : 'Share your project for follow-up by text. An initial review is not approval.');
+    out = out.replace(/(<p style="margin-top:22px;font-size:13px;color:var\(--stone-400\);line-height:1\.7;">)[\s\S]*?<\/p>/, (_, start) => start + note + '</p>');
+    let cta = lang === 'es'
       ? ['Revise su proyecto inmobiliario', 'Comparta la propiedad, compra o saldo, presupuesto, financiamiento solicitado y plan de salida. Le daremos seguimiento por mensaje de texto.', 'Solicitar revisión del proyecto']
       : ['Get feedback on your real estate project', 'Share the property, acquisition or payoff, budget, requested financing and exit plan. We follow up by text.', 'Request a project review'];
-    const destination = lang === 'es' ? '/es/commercial#leadForm' : '/terms-sheet#deal-review';
-    out = out.replace(/<section class="lead">[\s\S]*?<\/section>/, `<section class="lead"><div class="wrap"><div class="lead-card"><h2>${cta[0]}</h2><p class="sub">${cta[1]}</p><p><a class="btn-primary" href="${destination}">${cta[2]}</a></p><p class="fine">${disclosures[b.type][lang]}</p></div></div></section>`);
+    let destination = lang === 'es' ? '/es/commercial#leadForm' : '/terms-sheet#deal-review';
+    if (construction) {
+      destination = prefix + '/commercial/construction-loans#quick-inquiry';
+      cta = lang === 'es'
+        ? ['Hablemos de su obra', 'Indique dónde va a construir, cuánto necesita y cuándo prevé empezar. Stonehaven puede revisar el calendario y el presupuesto con usted.', 'Consultar sobre mi obra']
+        : ['Discuss financing for your build', 'Tell us where you plan to build, how much you need and when you want to start. Stonehaven can review the draw schedule and budget with you.', 'Discuss my construction project'];
+    }
+    out = out.replace(/<section class="lead">[\s\S]*?<\/section>/, `<section class="lead"><div class="wrap"><div class="lead-card"><h2>${cta[0]}</h2><p class="sub">${cta[1]}</p><p><a class="btn-primary"${construction ? ' data-sh-inquiry-cta="construction-article"' : ''} href="${destination}">${cta[2]}</a></p><p class="fine">${disclosures[b.type][lang]}</p></div></div></section>`);
   }
   if (b.product === 'DSCR') {
     const cta = lang === 'es'
@@ -132,7 +143,7 @@ ${shell.slice(shell.indexOf('<section class="lead">'),shell.indexOf('</main>'))}
   const card=`<article style="background:#fff;border:1px solid rgba(20,35,50,.08);padding:28px 32px;margin-bottom:16px;"><span class="eyebrow">${p.eyebrow} · ${b.date}</span><h2 style="margin:8px 0 6px;font-size:22px;"><a href="${path}" style="color:inherit;text-decoration:none;">${p.title}</a></h2><p style="color:var(--slate-700);font-size:15px;line-height:1.75;">${p.desc}</p><p style="margin-top:10px;"><a href="${path}" class="line" style="font-size:13px;">${lang==='es'?'Leer el artículo':'Read the article'}</a></p></article>`;
   ix=ix.replace(/<!-- POSTS:START -->[\s\S]*?<p style="color:var\(--slate-700\)[^>]*>[^<]*<\/p>\s*<!-- POSTS:END -->/,'<!-- POSTS:START -->\n<!-- POSTS:END -->');
   ix=ix.replace('<!-- POSTS:START -->','<!-- POSTS:START -->\n'+card);
-  ix=ix.replace(/"blogPost":\[/,`"blogPost":[{"@type":"BlogPosting","headline":${JSON.stringify(p.title)},"url":"https://stonehavencre.com${path}","datePublished":"${b.date}"},`).replace(/,\]}<\/script>/,']}</script>');
+  ix=ix.replace(/"blogPost":\s*\[/,()=>`"blogPost":[{"@type":"BlogPosting","headline":${JSON.stringify(p.title)},"url":"https://stonehavencre.com${path}","datePublished":"${b.date}"},`).replace(/,\]}<\/script>/,']}</script>');
   fs.writeFileSync(idx[lang],ix);
   fs.appendFileSync('_redirects',`${path}.html ${path} 301!\n`);
   fs.writeFileSync('sitemap.xml',fs.readFileSync('sitemap.xml','utf8').replace('</urlset>',`<url><loc>https://stonehavencre.com${path}</loc><lastmod>${b.date}</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>\n</urlset>`));

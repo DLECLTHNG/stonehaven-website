@@ -1,0 +1,89 @@
+{
+  "slug": "construction-loan-interest-reserve-draw-schedule",
+  "date": "2026-11-07",
+  "type": "guide",
+  "product": "Commercial",
+  "inquiry": "Construction",
+  "en": {
+    "title": "How to size a construction loan interest reserve from the draw schedule",
+    "metaTitle": "Construction Loan Interest Reserve Calculation | Stonehaven",
+    "desc": "Estimate construction interest from expected loan balances. Follow a 12-month spec build and see what two extra months before sale add to the reserve.",
+    "eyebrow": "Ground-up construction · Budgeting before closing",
+    "terms": [
+      [
+        "Decision",
+        "How much interest to carry in the build budget"
+      ],
+      [
+        "Starting point",
+        "Dated draws, expected paydowns and the planned payoff month"
+      ]
+    ],
+    "body": [
+      "<strong>To size an interest reserve, estimate the loan balance outstanding in each period, multiply it by the annual rate and the fraction of the year outstanding, then add the periods through payoff.</strong> On a spec build, the sale closing can come months after the last contractor draw. Include that interval in your first budget.",
+      {
+        "h": "Build the forecast from the dates money moves"
+      },
+      "Start with the amount advanced for the land or existing payoff at closing. Add each expected construction advance on its funding date. Subtract any scheduled principal repayments. A contractor may finish framing in April and receive reimbursement in May, so use the financing dates from your <a href=\"/blog/ground-up-construction-draw-schedule-cash-flow\">draw schedule</a>. Keep contractor payment dates alongside them to see how much cash you need between draws.",
+      "For a monthly estimate, multiply the average outstanding balance by the annual rate divided by 12. For a midmonth advance, weight the balances by the number of days each is outstanding. Use the note’s day-count convention, rate resets and billing dates when you have them.",
+      {
+        "h": "A 12-month spec build with a $2 million commitment"
+      },
+      "Suppose the annual rate is a constant 8% for this illustration. Each amount below is the assumed average balance during a three-month period. The sponsor pays interest from a separate cash reserve. There are no financed interest advances, fees or principal repayments before sale.",
+      "<table><caption>Estimated interest at each stage of the build</caption><thead><tr><th scope=\"col\">Period and average balance</th><th scope=\"col\">Interest for three months</th></tr></thead><tbody><tr><td>Months 1 to 3 · $400,000</td><td>$8,000</td></tr><tr><td>Months 4 to 6 · $900,000</td><td>$18,000</td></tr><tr><td>Months 7 to 9 · $1,400,000</td><td>$28,000</td></tr><tr><td>Months 10 to 12 · $1,800,000</td><td>$36,000</td></tr></tbody></table>",
+      "The estimated reserve is <strong>$90,000</strong>. For example, the final quarter costs $1,800,000 × 8% × 3/12 = $36,000. Using half of the $2 million commitment for a full year would produce $80,000 and leave this budget $10,000 short. A project that draws more slowly could produce a different result.",
+      {
+        "h": "What if the buyer closes two months late?"
+      },
+      "At the same $1.8 million balance and 8% rate, two more months add $24,000. The revised estimate is $114,000. Insurance, taxes, utilities and any extension fee belong on separate budget lines. If the delay crosses maturity, confirm the extension terms separately. An interest balance alone cannot extend a loan.",
+      "If you have a site and a draft budget, <a href=\"/commercial/construction-loans#quick-inquiry\" data-sh-inquiry-cta=\"construction-article\">ask Stonehaven to review your construction financing</a>. Include the location, estimated first advance and expected sale month so we can discuss the part of the schedule driving your interest cost.",
+      {
+        "h": "What changes if the loan funds its own interest?"
+      },
+      "An interest advance can increase the principal on which the next period’s interest accrues. Carry each financed interest payment into the next opening balance if the agreement provides for it. Check how much of the commitment remains for the actual build after reserving funds. Compare the <a href=\"/blog/construction-loan-interest-reserve-vs-contingency\">interest reserve and construction contingency</a> separately.",
+      "Once work begins, replace estimates with the statements and funded draws each month. If the expected payoff moves beyond the remaining reserve, use the <a href=\"/blog/construction-loan-interest-reserve-shortfall\">interest reserve shortfall calculation</a> to identify when cash is needed.",
+      "The <a href=\"https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf\">OCC’s commercial real estate lending handbook</a> describes reserve sizing in relation to disbursements, paydowns, rates and the time to sale or occupancy. It is supervisory guidance for banks. The example above uses hypothetical figures for a builder’s budget."
+    ]
+  },
+  "es": {
+    "title": "Cómo calcular la reserva de intereses de una obra según sus desembolsos",
+    "metaTitle": "Cálculo de la reserva de intereses de obra | Stonehaven",
+    "desc": "Estime los intereses a partir de la deuda prevista en cada etapa. Vea cuánto cambia la reserva de una obra de 12 meses si la venta se retrasa dos meses.",
+    "eyebrow": "Obra nueva · Presupuesto antes del cierre",
+    "terms": [
+      [
+        "Decisión",
+        "Cuánto reservar para intereses durante la obra"
+      ],
+      [
+        "Punto de partida",
+        "Desembolsos, abonos al capital y mes previsto de liquidación"
+      ]
+    ],
+    "body": [
+      "<strong>Para calcular la reserva de intereses, estime el saldo pendiente en cada período, multiplíquelo por la tasa anual y por la fracción del año que corresponda. Sume los intereses hasta liquidar el préstamo.</strong> En una vivienda construida para la venta pueden pasar meses entre el último pago al contratista y el cierre de la compraventa. Incluya ese plazo en el presupuesto inicial.",
+      {
+        "h": "Use las fechas de los desembolsos"
+      },
+      "Empiece con el monto que se entrega al cierre para comprar el terreno o liquidar una deuda anterior. Añada cada desembolso de obra en la fecha prevista y reste los abonos a capital. Si la estructura se termina en abril y se reembolsa en mayo, use mayo en su <a href=\"/es/blog/ground-up-construction-draw-schedule-cash-flow\">calendario de desembolsos</a>. Anote también cuándo paga al contratista para saber cuánto efectivo necesita entre esas fechas.",
+      "Para una estimación mensual, multiplique el saldo promedio por la tasa anual dividida entre 12. Si recibe un desembolso a mitad de mes, pondere cada saldo por los días que estuvo pendiente. Cuando tenga el pagaré, use su base de cálculo diario, las fechas de facturación y los ajustes de tasa pactados.",
+      {
+        "h": "Una obra de 12 meses con un préstamo máximo de $2 millones"
+      },
+      "Suponga una tasa anual constante del 8% para este ejercicio. Cada cifra representa el saldo promedio de un trimestre. El constructor paga los intereses con una reserva de efectivo propia. El ejemplo excluye cargos, intereses financiados y abonos al capital antes de la venta.",
+      "<table><caption>Intereses estimados por etapa</caption><thead><tr><th scope=\"col\">Período y saldo promedio</th><th scope=\"col\">Intereses del trimestre</th></tr></thead><tbody><tr><td>Meses 1 a 3 · $400,000</td><td>$8,000</td></tr><tr><td>Meses 4 a 6 · $900,000</td><td>$18,000</td></tr><tr><td>Meses 7 a 9 · $1,400,000</td><td>$28,000</td></tr><tr><td>Meses 10 a 12 · $1,800,000</td><td>$36,000</td></tr></tbody></table>",
+      "La reserva estimada asciende a <strong>$90,000</strong>. En el último trimestre, $1,800,000 × 8% × 3/12 genera $36,000 de intereses. Suponer que se utiliza la mitad del préstamo durante todo el año daría $80,000. A esta obra le faltarían $10,000. Un calendario más lento arrojaría otro resultado.",
+      {
+        "h": "¿Y si la venta se cierra dos meses después?"
+      },
+      "Con una deuda de $1.8 millones al 8%, dos meses adicionales cuestan $24,000. La nueva estimación es de $114,000. Presupueste aparte el seguro, los impuestos, los servicios y cualquier cargo de prórroga. Si la venta se aplaza más allá del vencimiento, confirme las condiciones de la prórroga por separado.",
+      "Si ya tiene terreno y un presupuesto preliminar, <a href=\"/es/commercial/construction-loans#quick-inquiry\" data-sh-inquiry-cta=\"construction-article\">consulte a Stonehaven sobre el financiamiento de su obra</a>. Indique la ubicación, el primer desembolso estimado y el mes previsto de venta.",
+      {
+        "h": "¿Qué cambia si el préstamo financia los intereses?"
+      },
+      "Un desembolso destinado a intereses puede aumentar el capital sobre el que se calculan los intereses del período siguiente. Si el contrato lo establece, incorpore el interés financiado al próximo saldo inicial. Compruebe cuánto crédito queda para ejecutar la obra después de apartar la reserva. Distinga la <a href=\"/es/blog/construction-loan-interest-reserve-vs-contingency\">reserva de intereses de la partida para imprevistos</a>.",
+      "Durante la construcción, actualice el modelo con los estados de cuenta y los desembolsos reales. Si la reserva se agota antes de la venta, <a href=\"/es/blog/construction-loan-interest-reserve-shortfall\">calcule el faltante de intereses</a> para determinar cuándo necesitará efectivo.",
+      "El <a href=\"https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf\">manual de crédito inmobiliario comercial de la OCC</a> analiza las fechas de desembolso, los abonos, las tasas y el plazo de venta u ocupación. Es una guía de supervisión bancaria. Las cifras del ejemplo son hipotéticas."
+    ]
+  }
+}

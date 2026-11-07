@@ -111,7 +111,15 @@ test('known AI referrals, paid campaigns and direct visits are classified conser
 });
 
 test('construction tools retain only the content path when a visitor later makes an inquiry', async () => {
-  for (const path of ['/construction-loan-calculator', '/es/construction-loan-calculator', '/blog/construction-loan-term-sheet-comparison']) {
+  const routes = [
+    '/construction-loan-calculator',
+    '/blog/construction-loan-term-sheet-comparison',
+    '/blog/construction-loan-interest-reserve-draw-schedule',
+    '/blog/construction-loan-interest-reserve-shortfall',
+    '/blog/lot-release-first-construction-draw',
+    '/blog/bulk-lot-sale-release-price-cash-flow',
+  ];
+  for (const path of routes.flatMap(route => [route, '/es' + route])) {
     const storage = new Map();
     page({storage, url:`https://stonehavencre.com${path}?budget=private-amount`, referrer:'https://chatgpt.com/'});
     const inquiry=page({storage, url:'https://stonehavencre.com/commercial/construction-loans', referrer:`https://stonehavencre.com${path}`});

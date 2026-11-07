@@ -41,6 +41,7 @@
       },
       "Selling a financed lot removes part of the collateral supporting the loan. The loan agreement governs how much must be repaid and what conditions must be satisfied before that parcel can leave the lender's lien. The <a href=\"https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf\">OCC Commercial Real Estate Lending handbook</a> discusses repayment linked to unit sales and release prices that can pay a loan off before the final unit sells.",
       "Do not substitute a simple average of debt per lot for the contractual release amount. Premium lots, different phases, shared improvements and declining sales prices can affect the negotiated structure. Some agreements use a specified amount, a percentage-based formula or multiple tests. Obtain the actual language and have your attorney review how it applies to your sale contracts.",
+      "If a builder offers to buy several lots at a discount, <a href=\"/blog/bulk-lot-sale-release-price-cash-flow\">calculate the cash after the bulk lot release</a> before committing those proceeds to the next phase.",
       {
         "h": "Test slower sales and lower prices separately"
       },
@@ -56,10 +57,11 @@
       },
       "<ul><li>Is the release payment fixed by lot, based on a formula, or the greater of several amounts?</li><li>Can the lender require additional paydowns if prices or sales volume fall?</li><li>Are interest, fees and closing charges separate from the stated principal payment?</li><li>What conditions apply to releasing a lot with unfinished shared infrastructure?</li><li>Can sale proceeds fund the next phase, or must they first reduce this facility?</li><li>Are borrower distributions restricted until completion or repayment milestones?</li><li>What documents and notice period are required before each closing?</li></ul>",
       "If the developer also builds the houses, map how the vertical construction financing pays or releases the development debt on each lot. Do not assume the same lender or one loan automatically covers land, infrastructure and home construction. Our <a href=\"/commercial/construction-loans\">construction financing guide</a> can help frame that separate request.",
+      "When the developer keeps a lot to build a home, follow <a href=\"/blog/lot-release-first-construction-draw\">the release payment through the first vertical construction draw</a>.",
       {
         "h": "Prepare a development financing review"
       },
-      "Stonehaven arranges financing through third-party lenders. Share the property's state, ownership or acquisition position, lot count, entitlement stage, infrastructure budget, requested financing and proposed builder or retail sales plan. We can help organize those facts for lender placement and identify release questions while comparing structures. We follow up by text. Final availability, guarantees, leverage and releases depend on underwriting and documents.",
+      "Stonehaven acts as your mortgage broker. Share the site location, lot count, outstanding approvals, infrastructure budget and requested financing. If you plan to build homes on the lots, <a data-sh-inquiry-cta=\"construction-article\" href=\"/commercial/construction-loans#quick-inquiry\">discuss financing for your first construction phase</a>. Include the release date and target start so we can review how the two closings fit together.",
       {
         "h": "Model the last lots, not only the first sales"
       },
@@ -117,6 +119,7 @@
       },
       "Vender un lote financiado retira parte de la garantía que respalda la deuda. El contrato determina cuánto debe pagarse y qué condiciones deben cumplirse antes de liberar la parcela. El <a href=\"https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf\">manual de préstamos inmobiliarios comerciales de la OCC (en inglés)</a> trata los pagos vinculados a ventas y las liberaciones que pueden liquidar el préstamo antes de vender la última unidad.",
       "No sustituya el pago contractual por un promedio simple de deuda por lote. Los lotes de mayor valor, las fases, las mejoras compartidas y las caídas de precios pueden afectar la estructura. Algunos contratos utilizan un importe definido, una fórmula porcentual o varias pruebas. Obtenga el texto real y pida a su abogado que revise cómo se aplica a sus contratos de venta.",
+      "Si un comprador ofrece adquirir varios lotes, <a href=\"/es/blog/bulk-lot-sale-release-price-cash-flow\">calcule el efectivo de la venta en bloque después de liberar cada parcela</a>.",
       {
         "h": "Pruebe por separado ventas más lentas y precios menores"
       },
@@ -132,10 +135,11 @@
       },
       "<ul><li>¿El pago se fija por lote, utiliza una fórmula o exige el mayor de varios importes?</li><li>¿Puede exigirse otra amortización si bajan los precios o el volumen de ventas?</li><li>¿Los intereses, cargos y gastos de cierre son adicionales al principal indicado?</li><li>¿Qué condiciones permiten liberar un lote si falta infraestructura compartida?</li><li>¿Los ingresos pueden financiar la siguiente fase o primero deben reducir esta deuda?</li><li>¿Se restringen las distribuciones hasta ciertos hitos de terminación o pago?</li><li>¿Qué documentos y aviso previo se requieren para cada cierre?</li></ul>",
       "Si el desarrollador también construye las viviendas, indique cómo ese financiamiento pagará o liberará la deuda de desarrollo de cada lote. No asuma que un prestamista o préstamo cubre automáticamente terreno, infraestructura y viviendas. Nuestra <a href=\"/es/commercial/construction-loans\">guía de financiamiento de construcción</a> ayuda a preparar esa solicitud separada.",
+      "Si el promotor conserva el lote para edificar, revise <a href=\"/es/blog/lot-release-first-construction-draw\">cómo se paga la liberación con el primer desembolso de construcción</a>.",
       {
         "h": "Prepare una revisión de financiamiento"
       },
-      "Stonehaven gestiona financiamiento mediante prestamistas externos. Comparta el estado donde está la propiedad, situación de compra o titularidad, cantidad de lotes, autorizaciones, presupuesto de infraestructura, monto solicitado y plan de ventas a constructores o compradores. Podemos organizar esos datos para presentar el proyecto e identificar preguntas sobre liberaciones. Damos seguimiento por mensaje de texto. Disponibilidad, garantías, apalancamiento y liberaciones dependen de evaluación y documentos.",
+      "Stonehaven actúa como su intermediario hipotecario. Indique la ubicación del terreno, la cantidad de lotes, las autorizaciones pendientes, el presupuesto de infraestructura y el capital solicitado. Si el plan incluye viviendas nuevas, <a data-sh-inquiry-cta=\"construction-article\" href=\"/es/commercial/construction-loans#quick-inquiry\">consulte sobre el financiamiento de la primera etapa de construcción</a>. Incluya las fechas previstas de liberación e inicio de obra para que podamos revisar los plazos con usted.",
       {
         "h": "Proyecte los últimos lotes, no solo las primeras ventas"
       },
