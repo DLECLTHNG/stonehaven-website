@@ -13,6 +13,8 @@ PILLARS = ['/', '/commercial', '/commercial/construction-loans', '/commercial/fi
            '/commercial/land-development-loans',
            '/commercial/bridge-loans', '/commercial/multifamily', '/commercial/mixed-use',
            '/commercial/commercial-property', '/commercial/multifamily-acquisition',
+           '/commercial/multifamily-agency-vs-bridge', '/commercial/apartment-construction-loan-takeout',
+           '/commercial/affordable-housing-preservation', '/commercial/multifamily-supplemental-loan',
            '/commercial/5-8-unit-financing', '/commercial/georgia',
            '/commercial/architect-financing-partners', '/dscr', '/sba', '/residential', '/residential/jumbo-loans',
            '/bank-statement-loans', '/interest-only-loans', '/editorial-policy']
@@ -42,6 +44,8 @@ class MainText(HTMLParser):
             return
         if re.fullmatch('h[1-6]', tag): self.out.append('\n\n' + '#' * (int(tag[1]) + 1) + ' ')
         elif tag in ['p', 'section', 'article', 'div', 'table', 'summary']: self.out.append('\n\n')
+        elif tag == 'dt': self.out.append('\n')
+        elif tag == 'dd': self.out.append(' | ')
         elif tag == 'li': self.out.append('\n- ')
         elif tag == 'br': self.out.append('\n')
         elif tag == 'tr': self.out.append('\n')

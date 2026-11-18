@@ -26,7 +26,7 @@ test('language navigation follows the declared alternate and preserves other lin
 
 test('organization identifiers reach nested providers and authors without overwriting human identity', () => {
   const input = page('/test', '', ld({ '@context': 'https://schema.org', '@graph': [
-    { '@type': 'Service', provider: { '@type': 'FinancialService', name: 'Stonehaven Lending', email: 'chris@stonehavencre.com', image: `${origin}/assets/stonehaven-handpainted-logo.png`, identifier: { '@type': 'PropertyValue', propertyID: 'other', value: 'retained' } } },
+    { '@type': 'Service', serviceType: 'Mortgage brokerage', provider: { '@type': 'FinancialService', serviceType: 'Stale value', name: 'Stonehaven Lending', email: 'chris@stonehavencre.com', image: `${origin}/assets/stonehaven-handpainted-logo.png`, identifier: { '@type': 'PropertyValue', propertyID: 'other', value: 'retained' } } },
     { '@type': 'BlogPosting', headline: 'Example', url: `${origin}/test`, author: { '@type': 'Organization', name: 'Stonehaven Lending' } },
     { '@type': 'Person', name: 'Chris De Leeuw', email: 'chris@stonehavencre.com', identifier: 'individual-id' },
     { '@type': 'Organization', name: 'Another company', email: 'other@example.com' }
@@ -35,11 +35,13 @@ test('organization identifiers reach nested providers and authors without overwr
   const nodes = schema(output)['@graph'];
   for (const node of [nodes[0].provider, nodes[1].author]) {
     assert.equal(node['@id'], `${origin}/#org`);
+    assert.equal(node.serviceType, undefined);
     assert.equal(node.email, 'office@stonehavencre.com');
     assert.equal(node.logo, `${origin}/assets/stonehaven-logo-512-v1.webp`);
     const ids = Array.isArray(node.identifier) ? node.identifier : [node.identifier];
     assert.ok(ids.some(x => x.propertyID === 'NMLS' && x.value === '1752355'));
   }
+  assert.equal(nodes[0].serviceType, 'Mortgage brokerage');
   assert.ok(nodes[0].provider.identifier.some(x => x.propertyID === 'other'));
   assert.equal(nodes[0].provider.image, `${origin}/assets/stonehaven-logo-512-v1.webp`);
   assert.equal(nodes[2].email, 'chris@stonehavencre.com');

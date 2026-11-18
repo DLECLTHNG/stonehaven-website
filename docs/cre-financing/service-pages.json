@@ -250,12 +250,16 @@
           [
             "https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf",
             "OCC: Commercial Real Estate Lending handbook"
+          ],
+          [
+            "https://occ.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf",
+            "OCC, Commercial Real Estate Lending handbook"
           ]
         ],
         "form_title": "Tell us about your construction project",
         "form_prefix": "Construction financing inquiry",
         "default_type": "Ground-up construction",
-        "updated": "2026-11-07",
+        "updated": "2026-11-18",
         "cash_plan": {
           "title": "How much cash do I need if I already own the land?",
           "intro": "Owned land can support the equity contribution, but it does not pay an invoice. Separate the funding gap for the whole project from cash needed at closing and cash needed between draws. This hypothetical example assumes free-and-clear land, no cash out and no other financing.",
@@ -324,6 +328,40 @@
               "Read the published Brookhaven land-equity case"
             ]
           ]
+        },
+        "cost_to_complete": {
+          "heading": "Will the remaining construction funds cover the cost to complete?",
+          "intro": "Compare the unpaid construction budget with the funds you can still use for the work. In this hypothetical draw review, the builder is $70,000 short even though the loan has $850,000 left to draw.",
+          "rows": [
+            [
+              "Undrawn loan balance",
+              "$850,000"
+            ],
+            [
+              "Set aside for future interest and fees",
+              "$100,000"
+            ],
+            [
+              "Loan funds available for construction",
+              "$750,000"
+            ],
+            [
+              "Verified sponsor cash available for the work",
+              "$80,000"
+            ],
+            [
+              "Unpaid cost to complete, including retainage",
+              "$900,000"
+            ],
+            [
+              "Funding gap",
+              "$70,000"
+            ]
+          ],
+          "explanation": "The $750,000 available from the loan plus $80,000 in sponsor cash covers $830,000 of the $900,000 remaining budget. Count approved change orders and unpaid retainage once. Use the same statement date for the loan balance and the contractor’s cost report.",
+          "action": "Before requesting the next draw, confirm which invoices are due first, which funds are restricted and how you will cover the gap. For an apartment project, check when the building can refinance as well.",
+          "takeout": "Plan an apartment construction loan takeout",
+          "cta": "Request a construction budget review"
         }
       },
       "es": {
@@ -560,12 +598,16 @@
           [
             "https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf",
             "OCC: Commercial Real Estate Lending handbook"
+          ],
+          [
+            "https://occ.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf",
+            "OCC, Manual de supervisión de crédito inmobiliario comercial (en inglés)"
           ]
         ],
         "form_title": "Cuéntenos sobre su proyecto de construcción",
         "form_prefix": "Construction financing inquiry",
         "default_type": "Ground-up construction",
-        "updated": "2026-11-07",
+        "updated": "2026-11-18",
         "cash_plan": {
           "title": "¿Cuánto efectivo necesito si ya tengo el terreno?",
           "intro": "El terreno puede contar como aportación, pero no paga una factura. Separe el faltante total del proyecto, el efectivo al cierre y el efectivo entre desembolsos. Este ejemplo hipotético supone un terreno libre de deuda, sin retiro de efectivo ni otro financiamiento.",
@@ -634,6 +676,40 @@
               "Lea el caso publicado de Brookhaven"
             ]
           ]
+        },
+        "cost_to_complete": {
+          "heading": "¿Alcanzan los fondos pendientes para terminar la obra?",
+          "intro": "Compare los costos pendientes con los fondos que todavía puede aplicar a la obra. En este ejemplo hipotético, hacen falta $70,000, aunque quedan $850,000 por desembolsar.",
+          "rows": [
+            [
+              "Saldo del préstamo por desembolsar",
+              "$850,000"
+            ],
+            [
+              "Monto reservado para intereses y comisiones",
+              "$100,000"
+            ],
+            [
+              "Saldo disponible para la obra",
+              "$750,000"
+            ],
+            [
+              "Efectivo confirmado del promotor para la obra",
+              "$80,000"
+            ],
+            [
+              "Costo pendiente, incluidas las retenciones",
+              "$900,000"
+            ],
+            [
+              "Déficit de financiamiento",
+              "$70,000"
+            ]
+          ],
+          "explanation": "Los $750,000 disponibles del préstamo más $80,000 de efectivo suman $830,000 para cubrir $900,000 de costos. Incluya los cambios aprobados y las retenciones pendientes una sola vez. Concilie los saldos a la fecha del mismo estado de cuenta.",
+          "action": "Antes de solicitar otro desembolso, confirme qué facturas vencen primero, qué fondos están restringidos y cómo cubrirá el déficit. En un edificio de apartamentos también importa la fecha de refinanciamiento.",
+          "takeout": "Cómo refinanciar la construcción de apartamentos",
+          "cta": "Solicitar una revisión del presupuesto de obra"
         }
       }
     },

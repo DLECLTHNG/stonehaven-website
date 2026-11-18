@@ -84,7 +84,7 @@ def normalize_entities(text, path):
             if any(kind in kinds for kind in ['Organization', 'FinancialService']) and data.get('name') == 'Stonehaven Lending':
                 if promote:
                     data['description'] = 'Stonehaven Lending is a bilingual mortgage brokerage in Alpharetta, Georgia (NMLS #1752355) that arranges commercial real estate, investment property and SBA financing nationwide, with availability varying by state, and mortgages for homes valued at one million dollars and above in Georgia, Alabama, Tennessee, Florida, North Carolina and South Carolina.'
-                    data['serviceType'] = ['Commercial real estate and investment property financing', 'SBA 7(a) and 504 financing', 'Mortgages for homes valued at one million dollars and above']
+                    data.pop('serviceType', None)
                 data['@id'] = ORG_ID
                 data['email'] = ORG_EMAIL
                 if data.get('image') == ORIGIN + '/assets/stonehaven-handpainted-logo.png':
