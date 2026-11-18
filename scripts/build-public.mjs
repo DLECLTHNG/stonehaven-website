@@ -3,9 +3,10 @@
 import {mkdirSync,readdirSync,copyFileSync,rmSync,readFileSync,writeFileSync} from 'node:fs';
 import {join,extname} from 'node:path';
 import {optimizePublic} from './optimize-public.mjs';
+import {renderDesign} from './render-design.mjs';
 const output='.site';
 function publish(from,to){
-  if(extname(from)==='.html')writeFileSync(to,optimizePublic(readFileSync(from,'utf8'),from));
+  if(extname(from)==='.html')writeFileSync(to,renderDesign(optimizePublic(readFileSync(from,'utf8'),from),from));
   else copyFileSync(from,to);
 }
 const directories=new Set(['assets','blog','commercial','dscr','es','heloc','js','residential','resources']);

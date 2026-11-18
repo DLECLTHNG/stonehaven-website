@@ -1,0 +1,5 @@
+/* The application permits only same-origin styles and images. Use device fonts. */
+body[data-stonehaven-design="private"] {font-family: system-ui,sans-serif; color: #102e43; background: #f0f4f4;}
+body[data-stonehaven-design="private"] :is(.sh-site-header,h1,h2,h3,button,input,select) {font-family: system-ui,sans-serif;}
+body[data-stonehaven-design="private"] h1 {font-weight: 550; letter-spacing: -.04em;}
+body[data-stonehaven-design="private"] fieldset {border-radius: 0;}

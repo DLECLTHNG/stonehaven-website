@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Build small-multifamily service pages from retained bilingual JSON briefs.
 
-Default input includes the 5-8 unit and acquisition briefs. Pass one or more
+Default input includes the small-building, acquisition and owner guides. Pass one or more
 brief paths to build only those inputs. Run before build-search-navigation.py.
 """
 from datetime import date
@@ -14,7 +14,8 @@ import sys
 ROOT = Path(__file__).resolve().parent.parent
 ORIGIN = 'https://stonehavencre.com'
 DEFAULT_BRIEFS = ['docs/cre-financing/small-multifamily-service.json',
-                  'docs/cre-financing/multifamily-acquisition-service.json']
+                  'docs/cre-financing/multifamily-acquisition-service.json',
+                  'docs/cre-financing/multifamily-owner-guides.json']
 
 
 def e(value):

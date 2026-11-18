@@ -1,41 +1,71 @@
 # Stonehaven Lending: public pillar content
 
-Latest source content update: 2026-11-07.
+Latest source content update: 2026-11-18.
 
 Selected public English pillar excerpts for the three promoted business lines. Navigation, input controls, footers and references to other programs are omitted. Excerpts retain their source links. Canonical web pages remain authoritative. This file does not establish indexing, rankings or program eligibility.
 
 ---
 
-# Real estate financing. Personally handled.
+# Real estate financing, from the ground up.
 
 Source: https://stonehavencre.com/
 
 Stonehaven Lending · Mortgage brokerage
 
-## Real estate financing.
-Personally handled.
+## Real estate financing,
+from the ground up.
 
-For acquisitions, development and refinancing. We help structure your financing and guide your transaction from application to closing.
+Financing for builders, property investors and homebuyers. Work with our team from the first site review through closing.
 
-Discuss your financing (https://stonehavencre.com/#inquire) Call (470) 970-4979 (tel:+14709704979)
+Discuss your project  (https://stonehavencre.com/#inquire) Explore financing  (https://stonehavencre.com/#lines)
 
-Share your financing goal. Our team will review the inquiry and explain the next steps by email or text.
+ Financing
 
-Guides and articles
+### What are you financing?
 
-### Notes on commercial real estate
+#### Ground-up construction (https://stonehavencre.com/commercial/construction-loans)
 
-#### Finance your next ground-up build (https://stonehavencre.com/commercial/construction-loans)
+Land you own, a site under contract or a phased development. Plan your build budget and the cash you need between draws.
 
-Land purchase, owned equity, construction draws and the sale or rental exit.
+Explore construction loans  (https://stonehavencre.com/commercial/construction-loans)
 
-#### Plan your next refinance (https://stonehavencre.com/blog/commercial-refinance-cash-in-gap)
+#### Commercial & investment (https://stonehavencre.com/commercial)
 
-Property value, loan payoff and the funds needed at closing.
+Acquisition, bridge and permanent financing for apartments, rental properties and commercial real estate.
 
-#### Finance a development in stages (https://stonehavencre.com/blog/subdivision-loan-lot-release-prices)
+Explore commercial financing  (https://stonehavencre.com/commercial)
 
-How lot sales affect debt repayment and project cash flow.
+#### High-value homes (https://stonehavencre.com/residential)
+
+Purchase and refinance options for homes valued at $1 million or more across six Southeastern states.
+
+Explore residential mortgages  (https://stonehavencre.com/residential)
+
+Insights
+
+### Before you break ground.
+
+All financing guides  (https://stonehavencre.com/blog)
+
+Builder guide
+
+#### Interest reserves and contingencies in a construction budget
+
+ (https://stonehavencre.com/blog/construction-loan-interest-reserve-vs-contingency)
+
+Land development
+
+#### How lot releases affect your next phase
+
+ (https://stonehavencre.com/blog/subdivision-loan-lot-release-prices) Apartment financing
+
+#### Buying or refinancing an apartment property
+
+ (https://stonehavencre.com/commercial/multifamily) Planning tool
+
+#### Estimate the cash you need before the first draw
+
+ (https://stonehavencre.com/construction-loan-calculator)
 
 ### From financing structure to closing
 
@@ -58,56 +88,6 @@ In August 2026, Stonehaven reported arranging approximately $225,000 against a F
 The timing and terms belonged to that transaction and its prepared file. They are not current pricing or a standard closing promise.
 
 Read the DSCR case study (https://stonehavencre.com/blog/florida-dscr-cash-out-refinance-75-ltv-hard-money-payoff)  · Discuss your project (https://stonehavencre.com/#inquire)
-
-What we finance
-
-### Three lines of financing
-
-i
-
-#### Commercial real estate
-
-Construction, multifamily, mixed-use, bridge, land development, fix-and-flip and investment property. Nationwide, availability varies by state.
-
-Commercial (https://stonehavencre.com/commercial)  · DSCR (https://stonehavencre.com/dscr)
-
-ii
-
-#### SBA financing
-
-7(a) and 504 financing for business owners, including owner-occupied commercial property. Availability varies by state.
-
-SBA (https://stonehavencre.com/sba)
-
-iii
-
-#### Homes valued at $1 million and above
-
-Purchase and refinance in Georgia, Alabama, Tennessee, Florida, North Carolina and South Carolina.
-
-Residential (https://stonehavencre.com/residential)
-
-The process
-
-### From consultation to closing
-
-i
-
-#### Define the transaction
-
-We review the property, purpose, budget and timing.
-
-ii
-
-#### Structure the request
-
-We organize your documentation and compare financing options for your project.
-
-iii
-
-#### Coordinate the closing
-
-The lender underwrites and approves. Our team coordinates the file.
 
 In One Sentence
 
@@ -1920,6 +1900,34 @@ The short answer
 
 Multifamily financing for apartment properties with five or more units starts with property cash flow, condition and the ownership plan.  Stonehaven is a mortgage brokerage that evaluates potential agency, bank and bridge financing through third-party lenders. The property matters, but so do the borrower’s experience, financial capacity and required guarantees. For a 1–4 unit rental, explore DSCR loan options (https://stonehavencre.com/dscr) .
 
+### Which apartment financing decision comes next?
+
+Occupied apartments, newly delivered units and rent-restricted properties call for different evidence. Start with the decision in front of you.
+
+#### Buying or renovating
+
+Check how much actually funds at acquisition and how many units can go offline during renovations.
+
+Compare agency and bridge financing (https://stonehavencre.com/commercial/multifamily-agency-vs-bridge)
+
+#### Finishing construction
+
+Map move-ins, collections and final draws against your extension deadline.
+
+Plan the construction loan payoff (https://stonehavencre.com/commercial/apartment-construction-loan-takeout)
+
+#### Preserving affordable apartments
+
+Match the rent limits, assistance contracts and repair budget to the financing request.
+
+Review preservation financing (https://stonehavencre.com/commercial/affordable-housing-preservation)
+
+#### Raising additional capital
+
+Compare combined payments and cash available after payoff, escrows and closing costs.
+
+Compare supplemental debt and refinancing (https://stonehavencre.com/commercial/multifamily-supplemental-loan)
+
 ### What makes an apartment property ready for financing?
 
 A full building is not automatically a stabilized loan file. The lender needs support for collected rent, recurring expenses and the cash flow that can service the proposed debt. A current rent roll should reconcile with the operating statement, with concessions, delinquencies and vacant units identified.
@@ -1977,7 +1985,7 @@ Share the address and unit count, rent roll, trailing operating statement, purch
 - Commercial refinance and maturity planning (https://stonehavencre.com/resources/commercial-refinance-guide)
 - Bridge vs. permanent financing (https://stonehavencre.com/resources/bridge-vs-permanent-financing)
 
-Updated September 18, 2026
+Updated November 18, 2026
 
  Have a Live Deal?
 
