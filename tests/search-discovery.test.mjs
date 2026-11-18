@@ -24,11 +24,12 @@ print(json.dumps([{'once':f(x),'twice':f(f(x))} for x in images]))`);
 test('pillar export retains substantive text and links but excludes forms and hidden UI', () => {
   const out = python(`from seo_discovery import MainText
 import json
-html = '<header>Site menu</header><main><h1>Loan guide</h1><p>Review <a href="/commercial">commercial options</a> and costs.</p><form><div><label>Private input</label><input name="email"/></div><script>tracking()</script></form><div hidden><div>Hidden result</div></div><p>Visible answer.</p><label>Calculator control</label><table><tr><th>Cost</th><td>$200</td></tr></table></main><footer>Footer links</footer>'
+html = '<header>Site menu</header><main><h1>Loan guide</h1><p>Review <a href="/commercial">commercial options</a> and costs.</p><form><div><label>Private input</label><input name="email"/></div><script>tracking()</script></form><div hidden><div>Hidden result</div></div><p>Visible answer.</p><label>Calculator control</label><table><tr><th>Cost</th><td>$200</td></tr></table><dl><dt>Funding gap</dt><dd>$70,000</dd></dl></main><footer>Footer links</footer>'
 print(json.dumps(MainText().extract(html,'https://stonehavencre.com/guide')))`);
   assert.match(out, /Loan guide/);
   assert.match(out, /commercial options \(https:\/\/stonehavencre.com\/commercial\)/);
   assert.match(out, /Visible answer/);
+  assert.match(out, /Funding gap \| \$70,000/);
   assert.match(out, /Cost \| \$200/);
   assert.doesNotMatch(out, /Site menu|Private input|tracking|Hidden result|Calculator control|Footer links/);
 });

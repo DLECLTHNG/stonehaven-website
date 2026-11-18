@@ -483,11 +483,11 @@ The short answer
 
 A ground-up construction loan finances a new property from the land stage through completion, with construction funds generally released in stages. Stonehaven acts as a mortgage broker for builders and investors. Qualifying projects may be considered for up to 100% of eligible costs, subject to budget, equity, completed value, experience and underwriting. Financing the budget does not mean zero cash required.
 
-Project reviewBudget, land equity and completed value
+Project review | Budget, land equity and completed value
 
-Potential leverageUp to 100% of eligible LTC on qualifying deals
+Potential leverage | Up to 100% of eligible LTC on qualifying deals
 
-CoverageCommercial programs nationwide, subject to state availability
+Coverage | Commercial programs nationwide, subject to state availability
 
 ### Capital for the way you build
 
@@ -532,19 +532,19 @@ Transparent assumptions
 
 Hypothetical planning example, not a closed transaction, quote or approval. All amounts below are assumptions. The lender may recognize a different cost basis.
 
-Acquisition$1,100,000
+Acquisition | $1,100,000
 
-Demolition and construction$1,800,000
+Demolition and construction | $1,800,000
 
-Design, permits and other soft costs$250,000
+Design, permits and other soft costs | $250,000
 
-Financing and carrying-cost allowance$200,000
+Financing and carrying-cost allowance | $200,000
 
-Contingency$150,000
+Contingency | $150,000
 
-Assumed total project cost$3,500,000
+Assumed total project cost | $3,500,000
 
-Assumed completed value$4,800,000
+Assumed completed value | $4,800,000
 
 A $3.15M request would equal 90% of the assumed cost and about 65.6% of the assumed completed value. The arithmetic gap is $350,000 before any excluded costs or changes to the lender’s basis.
 
@@ -562,17 +562,17 @@ Prepare a single spec build (https://stonehavencre.com/blog/spec-home-constructi
 
 Owned land can support the equity contribution, but it does not pay an invoice. Separate the funding gap for the whole project from cash needed at closing and cash needed between draws. This hypothetical example assumes free-and-clear land, no cash out and no other financing.
 
-Accepted land basis, already owned$400,000
+Accepted land basis, already owned | $400,000
 
-Remaining costs, including modeled fees and reserves$1,600,000
+Remaining costs, including modeled fees and reserves | $1,600,000
 
-Total modeled cost basis$2,000,000
+Total modeled cost basis | $2,000,000
 
-Assumed construction loan commitment$1,500,000
+Assumed construction loan commitment | $1,500,000
 
-Loan divided by total modeled cost75% LTC
+Loan divided by total modeled cost | 75% LTC
 
-Remaining costs less new loan commitment$100,000 funding gap
+Remaining costs less new loan commitment | $100,000 funding gap
 
 The $400,000 land contribution is already part of the total cost basis. Do not subtract it again from the $1.6 million still to be paid. With $1.5 million of new financing, the remaining project has a $100,000 funding gap on these assumptions.
 
@@ -607,6 +607,28 @@ Confirm inspection requirements, draw documentation, reimbursement timing, retai
 #### At completion
 
 Build time for listing, sale or lease-up into the exit. Check maturity, extension conditions and the payoff calculation before relying on a refinance. Match the proposed maturity to construction plus marketing time; get extension conditions, notice deadlines and any costs in writing.
+
+#### Will the remaining construction funds cover the cost to complete?
+
+Compare the unpaid construction budget with the funds you can still use for the work. In this hypothetical draw review, the builder is $70,000 short even though the loan has $850,000 left to draw.
+
+Undrawn loan balance | $850,000
+
+Set aside for future interest and fees | $100,000
+
+Loan funds available for construction | $750,000
+
+Verified sponsor cash available for the work | $80,000
+
+Unpaid cost to complete, including retainage | $900,000
+
+Funding gap | $70,000
+
+The $750,000 available from the loan plus $80,000 in sponsor cash covers $830,000 of the $900,000 remaining budget. Count approved change orders and unpaid retainage once. Use the same statement date for the loan balance and the contractor’s cost report.
+
+Before requesting the next draw, confirm which invoices are due first, which funds are restricted and how you will cover the gap. For an apartment project, check when the building can refinance as well. Plan an apartment construction loan takeout (https://stonehavencre.com/commercial/apartment-construction-loan-takeout) .
+
+Request a construction budget review (https://stonehavencre.com/commercial/construction-loans#inquire)
 
 ### What to send for an initial construction review
 
@@ -742,8 +764,9 @@ Explore →  (https://stonehavencre.com/blog/lot-release-first-construction-draw
 The OCC CRE handbook provides background on budgets, equity, construction controls and repayment. It is bank supervisory guidance, not a Stonehaven program sheet. Examples are illustrative and terms require a project-specific review.
 
 - OCC: Commercial Real Estate Lending handbook (https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf)
+- OCC, Commercial Real Estate Lending handbook (https://occ.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf)
 
-Updated November 7, 2026. Editorial standards (https://stonehavencre.com/editorial-policy)  · Meet the team (https://stonehavencre.com/management)
+Updated November 18, 2026. Editorial standards (https://stonehavencre.com/editorial-policy)  · Meet the team (https://stonehavencre.com/management)
 
 ### Prepare the next decision
 
@@ -794,11 +817,11 @@ The short answer
 
 A fix-and-flip loan can finance the purchase and approved renovation of an investment property, with repayment planned from a sale. Stonehaven is a brokerage that helps compare lender structures, including up to 100% eligible LTC on qualifying deals. The renovation scope, after-repair value and cash available between draws all matter.
 
-Project reviewPurchase, renovation budget and resale plan
+Project review | Purchase, renovation budget and resale plan
 
-Financing reviewAcquisition, eligible rehab costs and the resale plan
+Financing review | Acquisition, eligible rehab costs and the resale plan
 
-Potential leverageUp to 100% eligible LTC on qualifying deals, subject to underwriting
+Potential leverage | Up to 100% eligible LTC on qualifying deals, subject to underwriting
 
 ### Match the capital to the scope
 
@@ -831,17 +854,17 @@ Transparent assumptions
 
 Hypothetical sensitivity exercise, not a transaction or loan quote. Assume every cost below is included in the planning budget; actual lender eligibility can differ.
 
-Purchase$1,600,000
+Purchase | $1,600,000
 
-Renovation$600,000
+Renovation | $600,000
 
-Other project costs, reserves and contingency$300,000
+Other project costs, reserves and contingency | $300,000
 
-Assumed total project cost$2,500,000
+Assumed total project cost | $2,500,000
 
-Assumed after-repair value$3,200,000
+Assumed after-repair value | $3,200,000
 
-Illustrative financing request$2,250,000
+Illustrative financing request | $2,250,000
 
 The $2.25M request equals 90% of total assumed cost and about 70.3% of the assumed after-repair value. That leaves a $250,000 arithmetic cost gap before lender adjustments or excluded items.
 
@@ -1523,9 +1546,9 @@ The short answer
 
 Land acquisition and development financing, often called A&D financing, supports the purchase and preparation of land for a business-purpose real estate project. Residential lot financing addresses the lots a developer sells or a builder holds before home construction. Stonehaven is a mortgage brokerage: we help package the project, compare suitable lending sources and work through the financing structure with you.
 
-Project scopeLand acquisition, residential subdivisions, horizontal development and finished-lot inventory.
+Project scope | Land acquisition, residential subdivisions, horizontal development and finished-lot inventory.
 
-Financing sizeShare the total project cost and requested financing. We assess the capital need, available equity and repayment plan for each deal.
+Financing size | Share the total project cost and requested financing. We assess the capital need, available equity and repayment plan for each deal.
 
 ### Capital for the stage your project is in
 
@@ -1551,23 +1574,23 @@ Transparent assumptions
 
 A hypothetical example, not a Stonehaven closing or an available loan offer. The developer plans to acquire a site, complete the site work and sell finished lots to builders.
 
-Planned finished lots40
+Planned finished lots | 40
 
-Land acquisition$1,400,000
+Land acquisition | $1,400,000
 
-Site-development budget$2,600,000
+Site-development budget | $2,600,000
 
-Soft costs, reserves and contingency$800,000
+Soft costs, reserves and contingency | $800,000
 
-Total modeled project cost$4,800,000
+Total modeled project cost | $4,800,000
 
-Requested loan commitment$3,360,000
+Requested loan commitment | $3,360,000
 
-Requested loan / total modeled cost70% LTC
+Requested loan / total modeled cost | 70% LTC
 
-Remaining modeled project funding$1,440,000
+Remaining modeled project funding | $1,440,000
 
-Assumed lot sales: 40 × $175,000$7,000,000 gross
+Assumed lot sales: 40 × $175,000 | $7,000,000 gross
 
 The $3.36 million request covers 70% of the modeled $4.8 million cost. The remaining $1.44 million must be addressed through acceptable equity or another approved source. This percentage is an illustration, not a Stonehaven program limit.
 
@@ -1731,11 +1754,11 @@ The short answer
 
 A commercial bridge loan can provide interim funding for acquisition, renovation, lease-up or a refinancing transition. Stonehaven arranges financing through third-party capital providers and evaluates the business plan and exit with the initial request. A near-term maturity alone does not establish a viable refinance.
 
-Uses to reviewAcquisition, value-add, lease-up and maturity transitions
+Uses to review | Acquisition, value-add, lease-up and maturity transitions
 
-Sizing focusCurrent cash flow, collateral, budget and exit proceeds
+Sizing focus | Current cash flow, collateral, budget and exit proceeds
 
-CoverageCommercial programs nationwide, subject to state availability
+Coverage | Commercial programs nationwide, subject to state availability
 
 ### What is the bridge meant to accomplish?
 
@@ -1768,15 +1791,15 @@ Transparent assumptions
 
 Hypothetical commercial planning exercise, not a lender quote. Assume an eventual $2.3M payoff, a 1.25x target DSCR and an 8% annual debt constant for illustration only. These are not Stonehaven program terms or rate quotes.
 
-Assumed annual underwritten NOI$240,000
+Assumed annual underwritten NOI | $240,000
 
-NOI ÷ illustrative 1.25x DSCR$192,000 annual debt-service capacity
+NOI ÷ illustrative 1.25x DSCR | $192,000 annual debt-service capacity
 
-Debt capacity ÷ illustrative 8% debt constant$2,400,000 income-based loan size
+Debt capacity ÷ illustrative 8% debt constant | $2,400,000 income-based loan size
 
-Assumed bridge payoff$2,300,000
+Assumed bridge payoff | $2,300,000
 
-Initial difference$100,000 before closing costs and other constraints
+Initial difference | $100,000 before closing costs and other constraints
 
 If underwritten NOI is 10% lower, at $216,000, the same calculation supports $2.16M. That is $140,000 below the assumed payoff before refinancing costs.
 
@@ -2215,6 +2238,8 @@ Multifamily acquisition financing funds the purchase of an apartment property. T
 
 Stonehaven arranges financing through third-party lenders nationwide, availability varies by state. Share the actual total project cost , including acquisition and planned improvements, separately from the financing request. We review projects individually and compare the property, sponsor and budget with available lender programs.
 
+If the rent roll includes income-restricted units, check the rent restrictions and assistance contracts (https://stonehavencre.com/commercial/affordable-housing-preservation)  before using nearby market rents to project income.
+
 ### Agency, bank or bridge financing?
 
 #### Fannie Mae Small Mortgage Loans
@@ -2261,6 +2286,8 @@ If permanent financing does not fit the property's present condition, compare co
 
 Check the intended refinance using a more conservative NOI and a later completion date. The bridge versus permanent financing guide (https://stonehavencre.com/resources/bridge-vs-permanent-financing)  explains why an exit needs its own underwriting. Review recourse, guarantees and carve-outs in the actual lender documents with counsel.
 
+If part of the building will be offline after closing, compare agency and bridge financing (https://stonehavencre.com/commercial/multifamily-agency-vs-bridge)  using the rent you expect to collect during the work.
+
 ### What to send for an acquisition review
 
 - Property location, legal unit count, purchase price and target closing date.
@@ -2288,7 +2315,7 @@ Public program information checked September 20, 2026. Requirements can change. 
 - Freddie Mac: Conventional Small launch and SBL transition, April 15, 2026 (https://freddiemac.gcs-web.com/news-releases/news-release-details/freddie-mac-multifamily-announces-launch-integrated-conventional)
 - OCC: Commercial Real Estate Lending handbook (https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf)
 
-Updated September 20, 2026. Editorial standards (https://stonehavencre.com/editorial-policy)  · Meet the team (https://stonehavencre.com/management)
+Updated November 18, 2026. Editorial standards (https://stonehavencre.com/editorial-policy)  · Meet the team (https://stonehavencre.com/management)
 
 ### Prepare the next decision
 
@@ -2314,6 +2341,214 @@ Planning a long-term apartment or rental-community hold? Explore HUD acquisition
 
 - HUD commercial real estate programs (https://stonehavencre.com/commercial/hud-financing)
 - HUD build-to-rent financing (https://stonehavencre.com/commercial/hud-build-to-rent-financing)
+
+---
+
+# Agency or bridge financing for an apartment building?
+
+Source: https://stonehavencre.com/commercial/multifamily-agency-vs-bridge
+
+Multifamily · Acquisition and refinancing
+
+## Agency or bridge financing for an apartment building?
+
+On an apartment purchase, agency financing is worth testing when collected rents already support the debt. A bridge loan can carry a building through renovation or lease-up if the budget covers the work and the owner has a credible way to repay it.
+
+Discuss my apartment property (https://stonehavencre.com/commercial/multifamily#inquire)
+
+### Which income can support the loan today?
+
+On a stabilized acquisition, reconcile the seller’s trailing 12 months of operations with the latest rent roll. Adjust for a tax reassessment, a new insurance quote, management costs and concessions that continue after closing. On a refinance, add the dated payoff, any prepayment charge and the remaining term.
+
+Fannie Mae’s conventional term sheet covers existing, stabilized properties with at least five units. Freddie Mac publishes separate conventional offerings, including fixed-rate, floating-rate and small loans. Compare the program that matches the property and loan size. Fannie Mae conventional eligibility (https://multifamily.fanniemae.com/financing-options/conventional-properties-term-sheet)  · Freddie Mac conventional programs (https://mf.freddiemac.com/financing/conventional) .
+
+### When do renovations change the answer?
+
+A buyer plans to renovate ten apartments, two at a time. For each pair, put the move-out, permit, completion and first rent payment on a calendar. If the building’s remaining income carries the debt, a permanent loan with approved repair arrangements may be worth reviewing. If the loan depends on the rent increase and the owner needs construction draws, compare a bridge loan (https://stonehavencre.com/commercial/bridge-loans)  with a bank renovation facility.
+
+Ask how much funds at closing, when renovation money can be drawn, what expenses the reserve covers and who pays for a delay. A larger commitment may provide less cash on acquisition day.
+
+### A change in rent can decide the exit
+
+Illustrative refinance test.  Assume the underwriter accepts $360,000 of annual net operating income and the proposal requires 1.25 times debt-service coverage. Dividing $360,000 by 1.25 leaves $288,000 for annual principal and interest. If recurring expenses rise by $40,000, the debt-service capacity drops to $256,000. A proposed $280,000 payment fits the first case and exceeds the second by $24,000 each year.
+
+Use both cases before signing a bridge note. The commercial loan calculator (https://stonehavencre.com/commercial-loan-calculator)  lets you test how a different rate or amortization changes the principal that payment can support. The figures above illustrate the arithmetic and do not quote terms.
+
+### Compare the same closing and sale dates
+
+Ask for a side-by-side showing cash required at closing, scheduled payments, reserves, repayment at sale and any exit or extension fee. Model a sale a year earlier than planned. An agency prepayment provision can affect early sale proceeds. A shorter bridge maturity can force a refinancing decision ahead of your preferred sale date.
+
+Give Stonehaven your purchase price or payoff, requested financing, units offline and target closing date. We can organize the two cases and flag which assumptions need supporting documents before you commit to a structure.
+
+### Compare structures for your building
+
+Send the unit count, occupancy, amount requested and the work you plan between closing and stabilization.
+
+Discuss my apartment property (https://stonehavencre.com/commercial/multifamily#inquire)
+
+### Sources and editorial standards
+
+The published program materials below describe the requirements discussed here. Availability for a specific property is confirmed during review.
+
+- Fannie Mae conventional property term sheet (https://multifamily.fanniemae.com/financing-options/conventional-properties-term-sheet)
+- Freddie Mac conventional term sheets (https://mf.freddiemac.com/financing/conventional)
+
+Updated November 18, 2026. Editorial standards (https://stonehavencre.com/editorial-policy)  · Meet the team (https://stonehavencre.com/management)
+
+---
+
+# Refinancing an apartment construction loan during lease-up
+
+Source: https://stonehavencre.com/commercial/apartment-construction-loan-takeout
+
+Multifamily development · Construction loan payoff
+
+## Refinancing an apartment construction loan during lease-up
+
+An apartment construction loan takeout repays the construction lender, usually with longer-term debt. Compare the maturity date with the month occupied units are expected to generate enough collected rent to support the new loan.
+
+Discuss my apartment property (https://stonehavencre.com/commercial/multifamily#inquire)
+
+### Track delivered units, move-ins and collections separately
+
+A certificate of occupancy, a signed lease, an occupied apartment and a first rent payment record different events. Build a monthly schedule for all four. Include concessions, delinquency and remaining construction retainage. A lease signed in June with a July move-in and one free month may first produce rent in August.
+
+For financing discussions, show the construction balance and expected final draws, the maturity and extension notice date, interest reserve balance, and operating cash needed until collections cover expenses. Ask the servicer for the notice and documents required to request an extension.
+
+### Compare three ways to reach permanent financing
+
+- Extend the construction loan.  Identify the fee, remaining draws, rate protection and occupancy conditions. Work backward from the notice deadline.
+- Use a lease-up bridge.  Compare the new closing costs and interest reserve with the additional time it buys. Stress-test the payoff under slower leasing.
+- Review a near-stabilization loan.  Fannie Mae publishes a specific permanent financing option for eligible newly built or recently renovated communities. Its term sheet lists a $10 million minimum loan and at least 75% physical occupancy at rate lock, with certificates of occupancy for all residential units at commitment. Sponsor experience, market and achievable coverage also enter its pre-review. Fannie Mae near-stabilization term sheet (https://multifamily.fanniemae.com/financing-options/conventional-properties/near-stabilization-financing/near-stabilization-execution-term-sheet) .
+
+If collections will fall short at maturity, compare bridge and agency debt using the same rent roll (https://stonehavencre.com/commercial/multifamily-agency-vs-bridge)  before pricing an extension.
+
+### How much time does slower leasing cost?
+
+Hypothetical 80-unit building.  With 48 occupied apartments today, the sponsor’s own 90% target is 72 occupied units. At six net move-ins a month, it takes four months to add the 24 units. At three per month, it takes eight. Net move-ins already subtract move-outs. This target is for the example.
+
+If the construction loan matures in five months, the slower case leaves a three-month gap before the target, plus time to document collections and close the replacement loan. At an assumed monthly cash shortfall of $30,000, those three months alone require $90,000. Add interest and operating costs only once when building your cash forecast.
+
+### Size the payoff before you start the next project
+
+Deduct the construction payoff, remaining bills, new escrows and closing costs from permanent loan proceeds. Record the equity required if that amount is negative. For a development still in design, compare the HUD 221(d)(4) construction route (https://stonehavencre.com/commercial/hud-221d4-construction-loans)  and project-specific construction financing (https://stonehavencre.com/commercial/construction-loans#inquire)  while the draw schedule is still flexible.
+
+Stonehaven can review your timeline, current property-level figures and backup exit. A property summary is enough for the public inquiry. We can arrange a separate exchange for detailed records.
+
+### Review the exit for your apartment development
+
+Include the units delivered, units occupied, construction balance and the maturity or extension notice date.
+
+Discuss my apartment property (https://stonehavencre.com/commercial/multifamily#inquire)
+
+### Sources and editorial standards
+
+The published program materials below describe the requirements discussed here. Availability for a specific property is confirmed during review.
+
+- Fannie Mae near-stabilization execution term sheet (https://multifamily.fanniemae.com/financing-options/conventional-properties/near-stabilization-financing/near-stabilization-execution-term-sheet)
+- HUD Multifamily Accelerated Processing Guide (https://www.hud.gov/sites/dfiles/GC/documents/4430GHSGG.pdf)
+
+Updated November 18, 2026. Editorial standards (https://stonehavencre.com/editorial-policy)  · Meet the team (https://stonehavencre.com/management)
+
+---
+
+# Financing an affordable apartment property with rent restrictions
+
+Source: https://stonehavencre.com/commercial/affordable-housing-preservation
+
+Multifamily · Affordable housing preservation
+
+## Financing an affordable apartment property with rent restrictions
+
+Preservation financing pays for the purchase, refinance or repair of existing affordable apartments while keeping the applicable rent and occupancy restrictions in place. Start with the recorded agreement and the dates any rental assistance expires.
+
+Discuss my apartment property (https://stonehavencre.com/commercial/multifamily#inquire)
+
+### Which units are restricted, and by which agreement?
+
+Ask for the recorded use agreement, amendments and a unit count for each restriction. Identify the rent and income limits, the period they cover, renewal options, and approvals required for a sale or new debt. If a project has rental assistance, include the contract term and how much revenue comes from assistance and resident payments.
+
+Keep market-rate units on a separate schedule. A building charging below-market rents may have no recorded restrictions. A building marketed as workforce housing may have enforceable restrictions on only part of the property. Have the owner’s counsel confirm the agreements that run with the land.
+
+### Build a rent schedule that matches the documents
+
+Hypothetical property.  Assume 12 of 40 apartments can collect $1,200 a month under their agreements, while the other 28 collect $1,500. At full collection, the annual total is $676,800. Modeling all 40 at $1,500 would produce $720,000, overstating annual revenue by $43,200 before vacancy, concessions or expenses.
+
+Use the rent applicable to each unit after any required utility allowance. Show actual collections alongside permitted rents. If a subsidy pays part of the contract rent, count the resident payment and subsidy once each, avoiding double-counting total contract rent.
+
+### Match the financing review to the property’s obligations
+
+Fannie Mae’s Affordable Housing Preservation term sheet addresses stabilized properties with documented affordability, including certain properties with expiring low-income housing tax credits or project-based assistance. Freddie Mac publishes separate targeted affordable housing term sheets. Confirm the eligible program and term for the actual agreements. Fannie Mae preservation criteria (https://multifamily.fanniemae.com/financing-options/affordable-loans/affordable-housing-preservation-term-sheet)  · Freddie Mac targeted affordable housing (https://mf.freddiemac.com/financing/tah) .
+
+A preservation refinance can require money for roofs, mechanical systems or occupied-unit repairs. Put the repair reserve, subordinate debt and resident relocation costs, if applicable, on the same sources-and-uses schedule. For substantial rehabilitation or new construction, compare the HUD construction and substantial rehabilitation path (https://stonehavencre.com/commercial/hud-221d4-construction-loans)  early.
+
+If the first mortgage has years left and the repairs are modest, compare a supplemental loan with replacing the first mortgage (https://stonehavencre.com/commercial/multifamily-supplemental-loan) . Check whether both the first loan and the affordability agreement permit additional debt.
+
+### What should the first inquiry include?
+
+Send the state, total and restricted units, acquisition price or payoff, financing requested, general type of restriction, and the next contract or debt expiry. Stonehaven can organize a financing review around those dates. Keep resident names, household certifications and financial records off the inquiry form. The initial comparison only needs property-level totals.
+
+### Discuss a preservation acquisition or refinance
+
+Share the restricted-unit count and key dates so the financing review can start with the property’s actual obligations.
+
+Discuss my apartment property (https://stonehavencre.com/commercial/multifamily#inquire)
+
+### Sources and editorial standards
+
+The published program materials below describe the requirements discussed here. Availability for a specific property is confirmed during review.
+
+- Fannie Mae affordable housing preservation term sheet (https://multifamily.fanniemae.com/financing-options/affordable-loans/affordable-housing-preservation-term-sheet)
+- Freddie Mac targeted affordable housing term sheets (https://mf.freddiemac.com/financing/tah)
+
+Updated November 18, 2026. Editorial standards (https://stonehavencre.com/editorial-policy)  · Meet the team (https://stonehavencre.com/management)
+
+---
+
+# A supplemental apartment loan or a full refinance?
+
+Source: https://stonehavencre.com/commercial/multifamily-supplemental-loan
+
+Multifamily · Borrowing against an existing property
+
+## A supplemental apartment loan or a full refinance?
+
+A multifamily supplemental loan adds debt secured by an apartment property while the first mortgage stays in place. Compare the cash available after fees and the cost of both payments with the proceeds and payment on a full refinance.
+
+Discuss my apartment property (https://stonehavencre.com/commercial/multifamily#inquire)
+
+### Who can arrange a supplemental loan?
+
+Start with the most recent mortgage statement and identify the owner of the first loan, its servicing company and the original closing date. Fannie Mae’s published supplemental program requires its own existing mortgage and requires the lender to be the current servicer. Freddie Mac’s rules depend in part on whether the first loan has been securitized. Ask the servicer to confirm who may originate the request. Fannie Mae supplemental terms (https://multifamily.fanniemae.com/financing-options/tools-existing-loans/supplemental-mortgage-loans-term-sheet)  · Freddie Mac supplemental terms (PDF) (https://mf.freddiemac.com/docs/product/supplemental.pdf) .
+
+A supplement generally adds a subordinate mortgage. The first mortgage stays in place, including its payment schedule and restrictions. Confirm the proposed use of funds, seasoning and whether the two loans would mature together. Stonehaven can help compare that route with a replacement first mortgage.
+
+### How much cash would each option actually release?
+
+Illustrative comparison.  Assume a proposed $5.5 million refinance, a $4.4 million first mortgage payoff before the prepayment charge, a $175,000 prepayment charge and $125,000 of costs and escrows. That leaves $800,000 at closing. If an eligible supplemental proposal provides $900,000 with $65,000 of costs and escrows, it would release $835,000 while leaving the first loan outstanding.
+
+The $35,000 difference only compares cash received on day one. The two structures leave different balances, payments and sale obligations. Escrows may also have a remaining balance when the property sells. Reconcile proceeds with the commercial refinance worksheet (https://stonehavencre.com/resources/commercial-refinance-guide)  and a payoff dated for the expected close.
+
+### Will the building cover both payments?
+
+Add the annual debt service on both loans and compare it with the underwritten property cash flow. If the first requires $300,000 a year and the supplement would add $70,000, a hypothetical $480,000 of underwritten net cash flow produces about 1.30 times combined coverage. A lender also reviews total debt against property value and program limits.
+
+Ask for prepayment schedules for both loans for your planned sale month. If one matures first, model the outstanding balance on the other. Share the first loan’s maturity, balance, approximate payment, requested additional funds and hold period for a first comparison.
+
+### Compare the options for additional capital
+
+Send the approximate first mortgage balance, the additional funds you need and when you might sell or refinance.
+
+Discuss my apartment property (https://stonehavencre.com/commercial/multifamily#inquire)
+
+### Sources and editorial standards
+
+The published program materials below describe the requirements discussed here. Availability for a specific property is confirmed during review.
+
+- Fannie Mae supplemental mortgage loan term sheet (https://multifamily.fanniemae.com/financing-options/tools-existing-loans/supplemental-mortgage-loans-term-sheet)
+- Freddie Mac Optigo supplemental loan term sheet (PDF) (https://mf.freddiemac.com/docs/product/supplemental.pdf)
+
+Updated November 18, 2026. Editorial standards (https://stonehavencre.com/editorial-policy)  · Meet the team (https://stonehavencre.com/management)
 
 ---
 
@@ -2413,11 +2648,11 @@ Request a commercial review by text (https://stonehavencre.com/commercial#inquir
 
 Stonehaven is a mortgage brokerage based in Alpharetta, Georgia. We review construction, renovation, acquisition and refinance projects across Georgia, with financing matched to the property, budget and repayment plan. Commercial financing is arranged nationwide; availability varies by state, lender and project.
 
-Georgia office10 Roswell Street, Suite 102, Alpharetta, GA 30009
+Georgia office | 10 Roswell Street, Suite 102, Alpharetta, GA 30009
 
-Project typesConstruction, renovation, acquisition and refinance
+Project types | Construction, renovation, acquisition and refinance
 
-Our roleA mortgage brokerage comparing third-party financing
+Our role | A mortgage brokerage comparing third-party financing
 
 ### Choose the financing conversation that fits the property
 
