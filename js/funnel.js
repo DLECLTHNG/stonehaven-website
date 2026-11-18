@@ -637,6 +637,25 @@
         if (event.key === "Escape" && links.classList.contains("open")) { setMenu(false); toggle.focus(); }
       });
     }
+    // Free up the phone viewport while an inquiry form or its matching hero
+    // action is on screen. The fixed shortcut returns further down the page.
+    var shortcut = document.querySelectorAll(".sticky-cta, .heloc-sticky")[0];
+    if (shortcut && window.IntersectionObserver) {
+      var shortcutLink = shortcut.querySelector("a[href]");
+      var inView = new Set();
+      var shortcutObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) inView.add(entry.target);
+          else inView.delete(entry.target);
+        });
+        shortcut.hidden = inView.size > 0;
+      }, {rootMargin: "-76px 0px -72px 0px"});
+      document.querySelectorAll("main form, main .calc-inputs, .page-hero a[href], .funnel-hero a[href]").forEach(function (element) {
+        if (element.tagName !== "A" || (shortcutLink && element.href === shortcutLink.href)) {
+          shortcutObserver.observe(element);
+        }
+      });
+    }
     var io = new IntersectionObserver(function (es) {
       es.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); } });
     }, { threshold: 0, rootMargin: "0px 0px -24px 0px" });

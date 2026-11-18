@@ -67,7 +67,9 @@
   try{
     var s=JSON.parse(sessionStorage.getItem("sh_dscr_summary")||"null");
     if(!s) return;
-    var rows=[["Deal type",s.dealType],["State",s.state],["Property",s.propType+(s.units&&+s.units>1?" · "+s.units+" units":"")],["Value / price",s.value?"$"+(+s.value).toLocaleString("en-US"):""],["Monthly rent",s.rent?"$"+(+s.rent).toLocaleString("en-US"):""],["Requested loan",s.loanAmt?"$"+(+s.loanAmt).toLocaleString("en-US"):""],["Timeline",s.close],["Educational DSCR estimate",s.dscr?s.dscr+"x":""]];
+    var property = s.propType || "";
+    if (property && +s.units > 1) property += " · " + s.units + " units";
+    var rows=[["Deal type",s.dealType],["State",s.state],["Property",property],["Value / price",s.value?"$"+(+s.value).toLocaleString("en-US"):""],["Monthly rent",s.rent?"$"+(+s.rent).toLocaleString("en-US"):""],["Requested loan",s.loanAmt?"$"+(+s.loanAmt).toLocaleString("en-US"):""],["Timeline",s.close],["Educational DSCR estimate",s.dscr?s.dscr+"x":""]];
     var host=document.getElementById("summaryRows"), any=false;
     rows.forEach(function(r){ if(!r[1])return; any=true; var d=document.createElement("div"); d.className="row"; d.innerHTML="<span></span><b></b>"; d.children[0].textContent=r[0]; d.children[1].textContent=r[1]; host.appendChild(d); });
     if(any) document.getElementById("summaryCard").style.display="block";

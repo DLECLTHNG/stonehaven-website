@@ -3,3 +3,4 @@ body[data-stonehaven-design="private"] {font-family: system-ui,sans-serif; color
 body[data-stonehaven-design="private"] :is(.sh-site-header,h1,h2,h3,button,input,select) {font-family: system-ui,sans-serif;}
 body[data-stonehaven-design="private"] h1 {font-weight: 550; letter-spacing: -.04em;}
 body[data-stonehaven-design="private"] fieldset {border-radius: 0;}
+body[data-stonehaven-design="private"] {--gold: #805e25;}

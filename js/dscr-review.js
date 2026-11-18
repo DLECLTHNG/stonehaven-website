@@ -140,12 +140,22 @@
   function stepEls() { return document.querySelectorAll(".rev-step"); }
   function dots() { return document.querySelectorAll(".quiz-progress span"); }
 
-  function show(n) {
+  function show(n, initial) {
     cur = n;
     stepEls().forEach(function (el, i) { el.classList.toggle("active", i === n - 1); });
     dots().forEach(function (d, i) { d.classList.toggle("done", i < n); });
-    var back = $("rev-back"); if (back) back.style.visibility = n === 1 ? "hidden" : "visible";
-    var card = $("rev-card"); if (card) card.scrollIntoView({ behavior: "smooth", block: "start" });
+    var step = stepEls()[n - 1];
+    var back = $("rev-back");
+    if (back) {
+      step.querySelector(".rev-nav").prepend(back);
+      back.hidden = n === 1;
+    }
+    if (!initial) {
+      var heading = step.querySelector("h3");
+      heading.tabIndex = -1;
+      heading.focus({preventScroll: true});
+      $("rev-card").scrollIntoView({block: "start", behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth"});
+    }
   }
 
   function fieldsIn(stepEl) { return stepEl.querySelectorAll("input[name],select[name],textarea[name]"); }
@@ -221,7 +231,7 @@
     var form = $("revForm");
     if (form) {
       restoreProgress();
-      show(1);
+      show(1, true);
 
       form.addEventListener("input", function () {
         if (!funnelStarted) { funnelStarted = true; track("funnel_started", { page: "dscr-review" }); }

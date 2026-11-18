@@ -4,6 +4,28 @@ import re
 import unicodedata
 
 
+# A closed native select has one line. Keep submission values intact, including
+# options that use their text as the value, by shortening only the display label.
+SELECT_LABELS = {
+    'SBA - owner-occupied / business': 'SBA business financing',
+    'SBA - ocupado por el propietario / negocio': 'SBA para empresas',
+    'DSCR - propiedad de alquiler': 'DSCR para alquiler',
+    'Residencial - préstamo de vivienda': 'Hipoteca residencial',
+    'Financiamiento para mi proyecto': 'Financiar mi proyecto',
+    'Primera propiedad de inversión': 'Mi primera inversión',
+    'Refinanciamiento con retiro de efectivo': 'Refinanciar y retirar efectivo',
+    'Refinanciamiento VA (IRRRL / retiro de efectivo)': 'VA: IRRRL o retiro de efectivo',
+}
+
+
+def fit_select_label(match):
+    attrs, text = match.groups()
+    label = SELECT_LABELS.get(text)
+    if not label or re.search(r'\blabel\s*=', attrs, re.I):
+        return match[0]
+    return f'<option{attrs} label="{escape(label, quote=True)}">{text}</option>'
+
+
 def preserve_native_lead_validation(text):
     # Keep required fields active before funnel.js loads or when it is blocked.
     # Only the shared handler may opt into custom errors, after it is attached.
@@ -18,6 +40,7 @@ def preserve_native_lead_validation(text):
 
 def normalize_presentation(text, path):
     text = preserve_native_lead_validation(text)
+    text = re.sub(r'<option\b([^>]*)>([^<]*)</option>', fit_select_label, text, flags=re.I)
     es = path.startswith('/es/')
     # A hidden mobile line break still needs a word boundary.
     text = re.sub(r'<h1\b[^>]*>.*?</h1>', lambda m: re.sub(r'(?<=\S)(<br\s*/?>)', r' \1', m[0]), text, flags=re.S)

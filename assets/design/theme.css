@@ -163,7 +163,7 @@ body[data-stonehaven-design] :is(.design-feature,.design-story) .eyebrow {margin
 body[data-stonehaven-design="home"] .inquiry-proof {
   max-width: none; padding: 64px var(--design-gutter); background: #112e41; color: #fff;
 }
-body[data-stonehaven-design="home"] .inquiry-proof > h2 {text-align: left; font-size: clamp(30px,3vw,48px);}
+body[data-stonehaven-design="home"] .inquiry-proof > h2 {text-align: left; font-size: clamp(30px,3vw,48px); line-height: 1.15;}
 body[data-stonehaven-design="home"] .inquiry-evidence {background: transparent; border: none; border-top: 1px solid #9c865e; padding: 20px 12px 0 0;}
 body[data-stonehaven-design="home"] .inquiry-evidence :is(.eyebrow,.quick-note,a) {color: #d8e4eb !important;}
 body[data-stonehaven-design="home"] .inquiry-evidence .eyebrow {font-size: 11px; font-weight: 650;}
@@ -205,6 +205,88 @@ body[data-stonehaven-design="private"], body[data-stonehaven-design="private"] :
   .design-split-photo {height: clamp(148px,44vw,260px); min-height: 0; object-position: 50% 52%;}
   .design-feature > div {padding: 20px;}
   body[data-stonehaven-design="home"] .inquiry-proof {padding-block: 40px;}
+}
+/* Keep action links legible when they sit inside editorial prose. */
+body[data-stonehaven-design] .blog-article a.btn-primary {color: #fff; text-decoration: none;}
+body[data-stonehaven-design] :is(.lp-foot,.fo-foot) {background: #eff4f4; color: #354f60;}
+body[data-stonehaven-design] .fo-foot a {color: inherit;}
+body[data-stonehaven-design] .fo-wrap {--gold: #805e25;}
+body[data-stonehaven-design] #lp .eyebrow {color: #805e25;}
+body[data-stonehaven-design] .pc-unit .un {color: #805e25;}
+body[data-stonehaven-design] .calc-inputs .calc-note,
+body[data-stonehaven-design] #summaryRows .row {color: var(--design-body);}
+body[data-stonehaven-design] #summaryRows .row b {color: var(--design-navy); text-align: end;}
+body[data-stonehaven-design] #summaryRows .row {gap: 1rem;}
+body[data-stonehaven-design] .view-toggle button[aria-selected="true"] {background: #d7bd8c; color: #102e43;}
+
+body[data-stonehaven-design] .calc-result {container-type: inline-size;}
+body[data-stonehaven-design] .calc-result .ratio {
+  font-size: clamp(28px, 15cqi, 76px);
+  overflow-wrap: anywhere;
+  font-variant-numeric: lining-nums tabular-nums;
+}
+body[data-stonehaven-design] .lf-field > label {
+  font-size: 12px; line-height: 1.45; letter-spacing: .085em; color: #405969;
+}
+body[data-stonehaven-design] .lf-field > label > span[style*="color" i] {color: #506875 !important;}
+body[data-stonehaven-design] .lead-card > p[style*="#8899AA" i] {color: #506875 !important;}
+body[data-stonehaven-design] .lf-field :is(input,textarea,select):not([type=hidden]):not([type=checkbox]):not([type=radio]) {
+  min-height: 44px;
+  border-bottom-color: #788c97;
+}
+body[data-stonehaven-design] .lf-field select {padding-inline-end: 20px;}
+body[data-stonehaven-design] .lf-field :is(input,textarea,select):focus-visible {
+  outline: 2px solid #2878a6;
+  outline-offset: 2px;
+}
+/* Expanded explanations take up space between the label and its control. */
+.lf-field label > .tipd[open] {display: block; position: static; margin: 4px 0;}
+.lf-field label > .tipd[open] .tip-pop {
+  display: block; position: static; transform: none; width: auto;
+  margin-block: 6px; cursor: auto;
+}
+body[data-stonehaven-design] .head > h2[style*="Cormorant"] {font-family: inherit !important; font-weight: 540 !important;}
+.rev-step .rev-nav {position: relative; justify-content: center;}
+.rev-step .rev-nav > span:empty {display: none;}
+.rev-step .rev-nav .quiz-back {position: absolute; inset-inline-start: 0; margin: 0;}
+@media (max-width: 600px) {
+  .rev-step .rev-nav {flex-direction: column-reverse;}
+  .rev-step .rev-nav .quiz-back {position: static; min-height: 36px;}
+}
+
+/* Paired fields share label and control tracks even when one label wraps. */
+@supports (grid-template-rows: subgrid) {
+  @media (min-width: 701px) {
+    :is(.lead-form,.architect-project-fields,.rev-grid,.calc-grid) > .lf-field:not([hidden]) {
+      display: grid;
+      grid-row: span 3;
+      grid-template-rows: subgrid;
+      align-items: start;
+      row-gap: 0;
+    }
+    :is(.lead-form,.architect-project-fields,.rev-grid,.calc-grid) > .lf-field > label {align-self: end;}
+  }
+}
+@media (min-width: 701px) and (max-width: 960px) {
+  .cre-grid {grid-template-columns: repeat(2,minmax(0,1fr));}
+}
+@media (min-width: 761px) and (max-width: 960px) {
+  .builder-guide-grid {grid-template-columns: repeat(2,minmax(0,1fr));}
+}
+body[data-stonehaven-design] :is(.sticky-cta,.heloc-sticky)[hidden],
+body[data-stonehaven-design]:has(form:focus-within) > :is(.sticky-cta,.heloc-sticky) {display: none;}
+@media (max-width: 700px) {
+  .proof-strip {
+    display: grid; grid-template-columns: repeat(2,minmax(0,1fr));
+    align-items: center; gap: 14px 20px; padding: 18px 20px;
+    text-align: center;
+  }
+  .proof-strip span {line-height: 1.5; letter-spacing: .09em;}
+  .hp-card h2 {overflow-wrap: anywhere; hyphens: auto;}
+}
+@media (max-width: 380px) {
+  body[data-stonehaven-design] .lead .wrap {padding-inline: 14px;}
+  body[data-stonehaven-design] .lead-card {padding-inline: 16px;}
 }
 @media print {
   .sh-site-header,.design-panorama,.design-split-photo {display: none !important;}
