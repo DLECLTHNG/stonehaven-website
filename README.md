@@ -6,6 +6,8 @@ Static HTML, CSS, JavaScript and Python page generators for the live mortgage br
 
 Run `python3 scripts/dev-server.py 8125`, then open http://127.0.0.1:8125. This server supports clean page URLs. Use `node scripts/family-dev-server.mjs 8902` for local Family form testing.
 
+To preview the deployed design locally, run `node scripts/build-public.mjs` and `python3 scripts/dev-server.py --built 8175`. The public build applies the shared header and theme after page generation. The static preview supports navigation and layout review. Netlify handles form delivery on hosted deployments.
+
 Run `node scripts/check-site.mjs` for all tests, four linters and the release content gate. No npm dependencies are required. CI uses Node 22 and Python 3.12. Netlify runs the same checks before removing internal files and publishing. GitHub checks also verify generator output matches the committed pages.
 
 ## Page ownership
