@@ -23,6 +23,7 @@
     ],
     "body": [
       "For a North Dakota DSCR loan, check the parcel’s tax classification and unit count before estimating the monthly payment. A change in property taxes can change how much of that payment the rent covers.",
+      "Start your rental review with the lease, the county tax figure you used and the insurance quote. Use the same figures in the <a href=\"/dscr-analyzer\">DSCR calculator</a>, then <a href=\"/dscr-review\">request a review of this rental</a> if the proposed payment fits.",
       {
         "h": "Unit-count classifications can differ from mortgage categories"
       },
@@ -76,6 +77,7 @@
     ],
     "body": [
       "En Dakota del Norte, la categoría fiscal de una propiedad y el cálculo hipotecario pueden depender de criterios distintos. Revise el número de unidades y los impuestos específicos de la parcela antes de comparar la renta con el pago propuesto.",
+      "Empiece con el contrato de alquiler, el impuesto del condado y la cotización de seguro. Use esas mismas cifras en la <a href=\"/es/dscr-analyzer\">calculadora DSCR</a> y, si el pago propuesto encaja, <a href=\"/es/dscr-review\">solicite una revisión del inmueble</a>.",
       {
         "h": "Las clases por unidades pueden diferir de las hipotecarias"
       },
@@ -117,7 +119,7 @@
   ],
   "series": "dscr",
   "contentRevision": {
-    "updated": "2026-11-07",
+    "updated": "2026-11-20",
     "citations": [
       "https://www.tax.nd.gov/residential-property-tax",
       "https://www.fargond.gov/city-government/departments/finance/property-taxes/residential-property-taxes"

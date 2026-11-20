@@ -24,10 +24,13 @@
     "body": [
       "Already owning the property can change the structure of a construction loan, but it does not automatically remove the cash contribution. The lender must evaluate the existing debt, the basis it will recognize for the property and the money needed to finish the new building. For a teardown, do that review before demolition begins.",
       {
+        "h": "What happens to the existing mortgage?"
+      },
+      "Suppose the accepted land basis is $600,000 and the remaining eligible build budget is $1.4 million. An illustrative 80% limit on $2 million of cost gives $1.6 million. Paying off a $200,000 mortgage leaves $1.4 million for the build. A lower appraisal, excluded costs or a delayed first draw can still leave you needing cash.",
+      {
         "h": "Turn owned land into a sources-and-uses schedule"
       },
       "Separate three figures: what you paid, what the property may be worth today and the equity basis recognized for this financing. Then show the existing payoff as a use of loan proceeds. An appraisal above your purchase price does not mean the difference will be paid to you at closing.",
-      "Consider a hypothetical $600,000 recognized land basis with a $200,000 mortgage and a $1.4 million remaining project budget. That is $2 million of eligible cost if all remaining items qualify. At an illustrative 80% cost limit, the ceiling is $1.6 million before other tests. Using $200,000 to retire the mortgage leaves $1.4 million for the remaining budget. This arithmetic assumes full recognition of the stated equity, no excluded costs and no lower value cap. Change any of those assumptions and cash may be required.",
       "Document the acquisition date, original closing statement, current payoff and site improvements separately. Before using this example for your project, compare the <a href=\"/blog/100-ltc-construction-loans-builder-cash-needed\">cost and completed-value limits</a> and ask which costs must be paid from cash.",
       {
         "h": "The mortgage payoff is not the property’s value"
@@ -65,7 +68,7 @@
       },
       "<a href=\"/blog/atlanta-teardown-rebuild-construction-financing\">Atlanta Teardown and Rebuild Loans: From Purchase to New Construction</a> · <a href=\"/blog/100-ltc-construction-loans-builder-cash-needed\">100% LTC Construction Loans: How Much Cash Does a Builder Really Need?</a>"
     ],
-    "metaTitle": "Construction Loans on Land You Already Own | Stonehaven"
+    "metaTitle": "Construction Loan on Land You Own With a Mortgage | Stonehaven"
   },
   "es": {
     "title": "Financiar construcción en una propiedad que ya posee: patrimonio y saldo hipotecario",
@@ -88,10 +91,13 @@
     "body": [
       "Poseer el inmueble cambia la estructura, pero no elimina automáticamente la aportación en efectivo. El prestamista debe evaluar deuda, base reconocida del terreno y fondos para terminar la nueva obra. En una demolición, conviene revisar esos puntos antes de comenzar.",
       {
+        "h": "Ejemplo de un terreno con hipoteca"
+      },
+      "Suponga que se reconoce una base de $600,000 para el terreno y que quedan $1.4 millones de obra elegible. Con un límite hipotético del 80% sobre un costo de $2 millones, el monto sería de $1.6 millones. Si el saldo por liquidar es de $200,000, quedarían $1.4 millones para la obra. La tasación, los costos excluidos y el calendario de desembolsos pueden exigir efectivo adicional.",
+      {
         "h": "Convierta el terreno propio en un cuadro de fuentes y usos"
       },
       "Separe tres cifras: el precio que pagó, el posible valor actual y la base patrimonial reconocida para este financiamiento. Después incluya la liquidación hipotecaria como uso de fondos. Una tasación superior al precio original no significa que recibirá la diferencia en efectivo al cierre.",
-      "Suponga una base reconocida de terreno de $600,000, una hipoteca de $200,000 y un presupuesto pendiente de $1.4 millones. El costo elegible sería $2 millones si todas las partidas califican. Con un límite ilustrativo del 80% del costo, el máximo sería $1.6 millones antes de otras pruebas. Liquidar $200,000 deja $1.4 millones para el presupuesto pendiente. El cálculo supone reconocimiento completo del patrimonio indicado, ningún gasto excluido y ningún límite de valor inferior. Si cambia un supuesto, puede requerirse efectivo.",
       "Documente por separado la fecha de adquisición, el cierre original, la liquidación actual y las mejoras del terreno. Compare los <a href=\"/es/blog/100-ltc-construction-loans-builder-cash-needed\">límites de costo y valor terminado</a> y confirme qué gastos debe pagar con efectivo.",
       {
         "h": "El saldo hipotecario no es el valor del terreno"
@@ -129,10 +135,10 @@
       },
       "<a href=\"/es/blog/atlanta-teardown-rebuild-construction-financing\">Préstamos para demoler y reconstruir en Atlanta: de la compra a la obra</a> · <a href=\"/es/blog/100-ltc-construction-loans-builder-cash-needed\">Préstamos de construcción al 100% LTC: cuánto efectivo necesita el constructor</a>"
     ],
-    "metaTitle": "Construcción en terreno propio y liquidación | Stonehaven"
+    "metaTitle": "Construir en un terreno propio con hipoteca | Stonehaven"
   },
   "contentRevision": {
-    "updated": "2026-11-07",
+    "updated": "2026-11-20",
     "citations": [
       "https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf"
     ]

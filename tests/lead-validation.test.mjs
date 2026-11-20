@@ -168,3 +168,11 @@ test('quick paths require a valid reply choice and phone for texts before captur
   assert.ok(leadErrors({...email,phone:'123'}).phone);
   assert.ok(leadErrors({...email,product:'HELOC'}).requested_amount, 'quick path cannot bypass HELOC requirements');
 });
+
+test('multifamily inquiry validates the requested contact method and continues to accept legacy forms', () => {
+  const inquiry = {...good, page: 'commercial-multifamily', phone: ''};
+  assert.deepEqual(leadErrors(inquiry), {});
+  assert.deepEqual(leadErrors({...inquiry, contact_preference: 'Email'}), {});
+  assert.ok(leadErrors({...inquiry, contact_preference: 'Text'}).phone);
+  assert.deepEqual(leadErrors({...inquiry, extra: {contact_preference: 'Text'}, phone: '2025550123'}), {});
+});

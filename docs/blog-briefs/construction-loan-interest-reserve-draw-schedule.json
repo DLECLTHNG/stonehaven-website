@@ -32,6 +32,7 @@
       "Suppose the annual rate is a constant 8% for this illustration. Each amount below is the assumed average balance during a three-month period. The sponsor pays interest from a separate cash reserve. There are no financed interest advances, fees or principal repayments before sale.",
       "<table><caption>Estimated interest at each stage of the build</caption><thead><tr><th scope=\"col\">Period and average balance</th><th scope=\"col\">Interest for three months</th></tr></thead><tbody><tr><td>Months 1 to 3 · $400,000</td><td>$8,000</td></tr><tr><td>Months 4 to 6 · $900,000</td><td>$18,000</td></tr><tr><td>Months 7 to 9 · $1,400,000</td><td>$28,000</td></tr><tr><td>Months 10 to 12 · $1,800,000</td><td>$36,000</td></tr></tbody></table>",
       "The estimated reserve is <strong>$90,000</strong>. For example, the final quarter costs $1,800,000 × 8% × 3/12 = $36,000. Using half of the $2 million commitment for a full year would produce $80,000 and leave this budget $10,000 short. A project that draws more slowly could produce a different result.",
+      "For a month-by-month check of that final quarter, suppose the average balances are $1.6 million in month 10, $1.8 million in month 11 and $2 million in month 12. At 8% divided by 12, the estimated monthly interest is $10,667, $12,000 and $13,333, rounded to the nearest dollar. A sale one month later at a $2 million balance would require about another $13,333. Use the actual payoff date and the day-count method in your note for a closing estimate.",
       {
         "h": "What if the buyer closes two months late?"
       },
@@ -73,6 +74,7 @@
       "Suponga una tasa anual constante del 8% para este ejercicio. Cada cifra representa el saldo promedio de un trimestre. El constructor paga los intereses con una reserva de efectivo propia. El ejemplo excluye cargos, intereses financiados y abonos al capital antes de la venta.",
       "<table><caption>Intereses estimados por etapa</caption><thead><tr><th scope=\"col\">Período y saldo promedio</th><th scope=\"col\">Intereses del trimestre</th></tr></thead><tbody><tr><td>Meses 1 a 3 · $400,000</td><td>$8,000</td></tr><tr><td>Meses 4 a 6 · $900,000</td><td>$18,000</td></tr><tr><td>Meses 7 a 9 · $1,400,000</td><td>$28,000</td></tr><tr><td>Meses 10 a 12 · $1,800,000</td><td>$36,000</td></tr></tbody></table>",
       "La reserva estimada asciende a <strong>$90,000</strong>. En el último trimestre, $1,800,000 × 8% × 3/12 genera $36,000 de intereses. Suponer que se utiliza la mitad del préstamo durante todo el año daría $80,000. A esta obra le faltarían $10,000. Un calendario más lento arrojaría otro resultado.",
+      "Para revisar el último trimestre mes a mes, suponga saldos medios de $1.6 millones en el mes 10, $1.8 millones en el mes 11 y $2 millones en el mes 12. Al dividir el 8% entre 12, los intereses mensuales estimados son $10,667, $12,000 y $13,333, redondeados al dólar. Si la venta se retrasa un mes con un saldo de $2 millones, harían falta unos $13,333 adicionales. Para estimar el importe al cierre, use la fecha de liquidación y la base de cómputo de días del pagaré.",
       {
         "h": "¿Y si la venta se cierra dos meses después?"
       },
@@ -84,6 +86,12 @@
       "Un desembolso destinado a intereses puede aumentar el capital sobre el que se calculan los intereses del período siguiente. Si el contrato lo establece, incorpore el interés financiado al próximo saldo inicial. Compruebe cuánto crédito queda para ejecutar la obra después de apartar la reserva. Distinga la <a href=\"/es/blog/construction-loan-interest-reserve-vs-contingency\">reserva de intereses de la partida para imprevistos</a>.",
       "Durante la construcción, actualice el modelo con los estados de cuenta y los desembolsos reales. Si la reserva se agota antes de la venta, <a href=\"/es/blog/construction-loan-interest-reserve-shortfall\">calcule el faltante de intereses</a> para determinar cuándo necesitará efectivo.",
       "El <a href=\"https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf\">manual de crédito inmobiliario comercial de la OCC</a> analiza las fechas de desembolso, los abonos, las tasas y el plazo de venta u ocupación. Es una guía de supervisión bancaria. Las cifras del ejemplo son hipotéticas."
+    ]
+  },
+  "contentRevision": {
+    "updated": "2026-11-20",
+    "citations": [
+      "https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf"
     ]
   }
 }

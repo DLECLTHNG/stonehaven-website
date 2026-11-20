@@ -53,9 +53,9 @@ export function leadErrors(data, path = '') {
   if (!extra || typeof extra !== 'object' || Array.isArray(extra)) {
     errors.extra = 'Please reload the form and try again.'; extra = {};
   }
-  // Only the new quick path changes phone requirements; keep legacy contracts.
-  if (extra.inquiry_path === 'quick-v1' || data.inquiry_path === 'quick-v1') {
-    const preference = extra.contact_preference ?? data.contact_preference;
+  const preference = extra.contact_preference ?? data.contact_preference;
+  const multifamilyChoice = data.page === 'commercial-multifamily' && preference !== undefined;
+  if (extra.inquiry_path === 'quick-v1' || data.inquiry_path === 'quick-v1' || multifamilyChoice) {
     if (!['Email', 'Text'].includes(preference)) errors.contact_preference = 'Please choose email or text.';
     const phone = typeof data.phone === 'string' ? data.phone.trim() : '';
     if ((preference === 'Text' || phone) && phone.replace(/\D/g, '').length < 10) errors.phone = 'Please enter a valid mobile number for texts.';

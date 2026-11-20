@@ -316,7 +316,8 @@ test('every actual English and Spanish root form route retains a CRE landing thr
     assert.ok(attribution, `missing context on ${destination}`);
     assert.equal(attribution.first_landing_path, landing, destination);
     assert.equal(attribution.first_channel, 'paid_campaign', destination);
-    assert.equal(attribution.last_cre_content_path, landing, destination);
+    const lastContent = destination.endsWith('/construction-loan-calculator') ? destination : landing;
+    assert.equal(attribution.last_cre_content_path, lastContent, destination);
     assert.equal(attribution.submission_path, destination === '/es/' ? '/es' : destination, destination);
     assert.equal(form.extra().utm.utm_source, 'google', destination);
     // The route also needs to qualify when it is itself the initial landing.
@@ -489,7 +490,7 @@ test('all generated quick forms deliver their rendered program and language with
    assert.equal(p.extra().inquiry_path,'quick-v1');
   }
  }
- assert.equal(count,38);
+ assert.equal(count,40);
 });
 
 test('GPC and sensitive Family pages suppress inquiry engagement events',()=>{

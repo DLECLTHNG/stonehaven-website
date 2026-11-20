@@ -45,6 +45,9 @@ exports.handler = async (event) => {
       payload.product = data.product_choice;
     }
   }
+  if (data.page === 'commercial-multifamily' && ['Email', 'Text'].includes(data.contact_preference)) {
+    extra.contact_preference = data.contact_preference;
+  }
   // Native quick forms retain reply choice even when JavaScript is unavailable.
   if (data.inquiry_path === 'quick-v1') {
     for (const field of ['inquiry_path', 'loan_program', 'contact_preference']) {

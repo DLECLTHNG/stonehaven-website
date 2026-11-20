@@ -3,6 +3,7 @@
 import {mkdirSync,readdirSync,copyFileSync,rmSync,readFileSync,writeFileSync} from 'node:fs';
 import {join,extname} from 'node:path';
 import {optimizePublic} from './optimize-public.mjs';
+import {buildGuideLibrary} from './guide-library.mjs';
 import {renderDesign} from './render-design.mjs';
 const output='.site';
 function publish(from,to){
@@ -26,4 +27,5 @@ for(const entry of readdirSync('.',{withFileTypes:true})){
   if(entry.isDirectory() && directories.has(entry.name))copy(entry.name,join(output,entry.name));
   else if(entry.isFile() && (['_headers','_redirects'].includes(entry.name) || extensions.has(extname(entry.name)))){publish(entry.name,join(output,entry.name));count++;}
 }
+buildGuideLibrary(output);
 console.log(`Prepared ${count} public files in ${output}; internal sources and dependencies excluded.`);

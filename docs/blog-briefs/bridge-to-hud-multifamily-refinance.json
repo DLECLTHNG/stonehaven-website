@@ -24,6 +24,7 @@
     ],
     "body": [
       "A bridge-to-HUD plan uses short-term financing while an eligible property becomes ready for a permanent HUD-insured loan. The bridge may solve an acquisition deadline or fund a transition. It does not guarantee that the eventual refinance will close, cover the entire payoff or produce cash out.",
+      "Consider a hypothetical bridge loan maturing June 30. If a required repair slips from April to June, ask when the inspection can occur, whether an extension is available and what it costs. Put the extension decision date on the schedule alongside the expected refinance closing.",
       "The safest time to test that exit is before signing the bridge loan. Waiting until maturity turns missing documentation, weaker income or a repair issue into an immediate cash problem.",
       {
         "h": "Work backward from the permanent loan"
@@ -87,6 +88,7 @@
     ],
     "body": [
       "Un plan puente hacia HUD utiliza financiamiento temporal mientras un inmueble elegible se prepara para deuda permanente asegurada por HUD. Puede resolver una compra urgente o transición. No garantiza que el refinanciamiento cierre, liquide toda la deuda o permita retirar capital.",
+      "Imagine un préstamo puente que vence el 30 de junio. Si una reparación obligatoria pasa de abril a junio, confirme cuándo se podrá inspeccionar el inmueble, si hay prórroga y cuánto costaría. Anote la fecha límite para decidir sobre la prórroga junto al cierre previsto del refinanciamiento.",
       "Evalúe la salida antes de firmar el puente. Esperar al vencimiento convierte documentación pendiente, menores ingresos o reparaciones en un problema inmediato de efectivo.",
       {
         "h": "Empiece por la deuda permanente prevista"
@@ -130,7 +132,7 @@
     ]
   },
   "contentRevision": {
-    "updated": "2026-11-01",
+    "updated": "2026-11-20",
     "citations": [
       "https://www.hud.gov/sites/dfiles/OCHCO/documents/4430GHSGG.pdf",
       "https://www.hud.gov/sites/dfiles/OCHCO/documents/2025-03hsgml.pdf",

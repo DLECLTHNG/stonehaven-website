@@ -69,7 +69,7 @@
       "landEquity": "Land basis less existing debt"
     },
     "result_note": "The gap is an overall funding requirement, not a closing statement. Cash between draws and required liquidity may be additional. A positive result is not an approval.",
-    "privacy": "The calculator does not save or send your entered amounts. Contact us separately when you are ready to discuss the project.",
+    "privacy": "Your figures stay on this page unless you choose to include the estimate and submit an inquiry.",
     "error": "Enter all amounts as zero or a positive number, a completed value above zero, and percentages above zero and no greater than 100.",
     "stress_title": "What if the build costs more or the appraisal is lower?",
     "stress_intro": "These tests keep the base loan ceiling fixed when hard costs increase. A lower completed value may reduce proceeds before closing. No increase in the loan is assumed. Treat the hard-cost increase as an additional unfunded overrun, without reusing the contingency already in your budget.",
@@ -178,7 +178,7 @@
       "landEquity": "Base del terreno menos deuda"
     },
     "result_note": "La diferencia indica una necesidad total de fondos, no un estado de cierre. Puede necesitar liquidez adicional entre desembolsos. El resultado no constituye aprobación.",
-    "privacy": "La calculadora no guarda ni envía los montos que introduce. Contáctenos por separado cuando desee revisar el proyecto.",
+    "privacy": "Sus cifras permanecen en esta página. Solo se envían si elige incluir la estimación y envía una consulta.",
     "error": "Introduzca cero o un número positivo para cada monto, un valor terminado mayor que cero y porcentajes mayores que cero y no superiores a 100.",
     "stress_title": "¿Qué pasa si aumenta el costo o baja la tasación?",
     "stress_intro": "Estas pruebas mantienen el límite del préstamo inicial cuando aumentan los costos directos. Un valor terminado menor puede reducir los fondos antes del cierre. No suponemos un aumento del préstamo. Trate el aumento de costos como un gasto adicional sin financiar, sin reutilizar la contingencia ya incluida.",

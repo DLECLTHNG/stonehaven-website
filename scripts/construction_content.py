@@ -55,6 +55,10 @@ def transform(text, path):
         copy = ('Comparta ubicación y objetivo. Empiece con su nombre y correo; los detalles del proyecto son opcionales.' if es else
                 'Tell us where you are building and what you need to finance. Start with your name and email; project details are optional.')
         label = 'Hablemos de mi proyecto' if es else 'Discuss my project'
+        if local.endswith('/construction-loan-property-already-owned-mortgage-payoff'):
+            label = 'Revisar mi terreno y el saldo por liquidar' if es else 'Review my land equity and payoff'
+        elif local.endswith('/100-ltc-construction-loans-builder-cash-needed'):
+            label = 'Revisar el efectivo que requiere mi obra' if es else 'Review the cash needed for my build'
         early = '<!-- CONSTRUCTION-CONTENT:START --><aside class="construction-inline-inquiry"><p><strong>' + prompt + '</strong> ' + copy + '</p><a class="btn-primary" data-sh-inquiry-cta="construction-article" href="' + prefix + '/commercial/construction-loans#quick-inquiry">' + label + '</a></aside><!-- CONSTRUCTION-CONTENT:END -->'
         def early_cta(m):
             return re.sub(r'<h2\b', lambda _: early + '<h2', m[0], count=1)
