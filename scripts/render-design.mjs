@@ -1,3 +1,4 @@
+import {financePresentation} from './finance-presentation.mjs';
 // Apply the shared visual design to the finished public document. Page generators
 // continue to own financing copy, inquiry forms, campaign attribution and scripts.
 import {renderHeader} from './design-header.mjs';
@@ -32,7 +33,10 @@ export function renderDesign(html, file) {
   if (photo) {
     html = html.replace(/(<section class="page-hero(?: cre-hero)?")([^>]*>)([\s\S]*?)<\/section>/, (_, start, end, contents) =>
       start + ' data-design-split' + end + '<div class="design-split-copy">' + contents +
-      '</div><img class="design-split-photo" src="/assets/design/' + photo + '.webp" width="1040" height="693" alt="" fetchpriority="high"></section>');
+      '</div><img class="design-split-photo" src="/assets/design/' + photo + '.webp" srcset="/assets/design/' + photo + '-480.webp 480w, /assets/design/' + photo + '-800.webp 800w, /assets/design/' + photo + '.webp 1040w" sizes="(max-width:840px) 100vw, 48vw" width="1040" height="693" alt="" fetchpriority="high"></section>');
+  }
+  if (!secure && !/name="robots"[^>]+noindex/i.test(html) && !/(?:family|parents|adult-child|disabilit)/.test(route)) {
+    html = financePresentation(html,route,file.startsWith('es/'));
   }
   return html;
 }

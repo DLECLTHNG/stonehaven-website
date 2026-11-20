@@ -28,6 +28,7 @@
     ],
     "body": [
       "<strong>An interest reserve and a construction contingency serve different purposes.</strong> An interest reserve sets aside money for loan interest during a defined period. A contingency provides a budget allowance for unforeseen project costs. Neither automatically supplies the working cash needed to pay contractors before a lender releases a draw. A builder financing request should show all three separately.",
+      "A delayed draw can change how much interest accrues. A change order can increase the construction budget. When both happen, update the interest schedule and the cost-to-complete budget separately. <a href=\"/blog/construction-loan-interest-reserve-draw-schedule\">Work through a monthly draw schedule</a>.",
       "This distinction matters when comparing construction term sheets. Two lenders may describe the same headline loan-to-cost percentage while treating interest, contingencies, deposits and other costs differently. The useful question is how much money reaches each purpose, when it becomes available and who funds any shortfall.",
       {
         "h": "Separate the three cash needs before requesting terms"
@@ -102,6 +103,7 @@
     ],
     "body": [
       "<strong>La reserva de intereses y la contingencia de obra cumplen funciones diferentes.</strong> La primera aparta dinero para intereses durante un período definido. La segunda incluye una provisión presupuestaria para costos imprevistos del proyecto. Ninguna proporciona automáticamente el efectivo necesario para pagar al contratista antes de que el prestamista autorice un desembolso. Presente las tres necesidades por separado al solicitar financiamiento.",
+      "Un desembolso tardío puede cambiar el interés acumulado. Una orden de cambio puede aumentar el presupuesto de obra. Si ocurren ambas cosas, actualice por separado el calendario de intereses y el presupuesto pendiente. <a href=\"/es/blog/construction-loan-interest-reserve-draw-schedule\">Revise un ejemplo mensual de desembolsos</a>.",
       "Esta diferencia importa al comparar propuestas de construcción. Dos prestamistas pueden anunciar el mismo porcentaje de préstamo sobre costo, pero tratar de forma distinta los intereses, las contingencias, los anticipos y otros gastos. Lo útil es saber cuánto dinero se asigna a cada propósito, cuándo estará disponible y quién cubrirá cualquier faltante.",
       {
         "h": "Separe las tres necesidades de efectivo antes de solicitar términos"
@@ -152,7 +154,7 @@
     ]
   },
   "contentRevision": {
-    "updated": "2026-11-07",
+    "updated": "2026-11-20",
     "citations": [
       "https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf",
       "https://www.occ.treas.gov/news-issuances/bulletins/2024/bulletin-2024-29.html"

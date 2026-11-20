@@ -69,7 +69,7 @@
   </div>
 </header>
 <main>
-<section class="page-hero"><span class="eyebrow">Comercial · Multifamiliar</span><h1>Financiamiento multifamiliar, <br>dimensionado sobre el <em>registro de rentas</em></h1><p>Financiamiento para compra, refinanciamiento y renovación de apartamentos de 5+ unidades, según el inmueble y el plan.</p><div style="margin-top:26px;display:flex;flex-direction:column;align-items:center;gap:16px;"><a class="btn-primary" href="#inquire">Reciba retroalimentación en menos de 1 hora</a><a class="btn-quiet" href="/commercial-loan-calculator">Calculadora comercial (en inglés)</a></div></section><!-- CRE-JOURNEY:TOC:START --><nav class="wrap cre-contents" aria-label="En esta guía"><details><summary>En esta guía</summary><ul><li><a href="#apartment-financing-guides">Elija la guía según su proyecto</a></li><li><a href="#cre-section-1">¿Está listo el inmueble para obtener financiamiento?</a></li><li><a href="#cre-section-2">Agencia, banco o puente según el plan</a></li><li><a href="#cre-section-3">Cómo el NOI limita el préstamo</a></li><li><a href="#cre-section-4">¿Sin recurso significa sin obligaciones personales?</a></li><li><a href="#cre-section-5">Compra, mejoras o préstamo por vencer</a></li><li><a href="#cre-section-6">Envíe el registro de rentas y el plan</a></li></ul></details></nav><!-- CRE-JOURNEY:TOC:END -->
+<section class="page-hero"><span class="eyebrow">Comercial · Multifamiliar</span><h1>Financiamiento multifamiliar, <br>dimensionado sobre el <em>registro de rentas</em></h1><p>Financiamiento para compra, refinanciamiento y renovación de apartamentos de 5+ unidades, según el inmueble y el plan.</p><div style="margin-top:26px;display:flex;flex-direction:column;align-items:center;gap:16px;"><a class="btn-primary" href="#inquire">Reciba retroalimentación en menos de 1 hora</a><a class="btn-quiet" href="/commercial-loan-calculator">Calculadora comercial (en inglés)</a></div></section><!-- CRE-JOURNEY:TOC:START --><nav class="wrap cre-contents" aria-label="En esta guía"><details><summary>En esta guía</summary><ul><li><a href="#apartment-financing-guides">Elija la guía según su proyecto</a></li><li><a href="#cre-section-1">¿Está listo el inmueble para obtener financiamiento?</a></li><li><a href="#cre-section-2">Agencia, banco o puente según el plan</a></li><li><a href="#cre-section-3">Cómo el NOI limita el préstamo</a></li><li><a href="#cre-section-4">¿Sin recurso significa sin obligaciones personales?</a></li><li><a href="#cre-section-5">Compra, mejoras o préstamo por vencer</a></li><li><a href="#cre-section-6">Cuéntenos sobre el inmueble</a></li></ul></details></nav><!-- CRE-JOURNEY:TOC:END -->
 <section class="cre-asset-section"><div class="wrap"><article class="cre-asset"><div class="asset-answer" id="answer"><span class="eyebrow">La respuesta corta</span><p><strong>El financiamiento de apartamentos con cinco o más unidades empieza por los ingresos, la condición del inmueble y el plan de inversión.</strong> Stonehaven es una firma de corretaje hipotecario que evalúa posibles opciones de agencias, bancos y prestamistas puente a través de terceros. También importan la experiencia del solicitante, su capacidad financiera y las garantías exigidas. Para alquileres de 1–4 unidades, consulte las <a href="/es/dscr">opciones de préstamos DSCR</a>.</p></div>
 <h2 id="apartment-financing-guides">Elija la guía según su proyecto</h2>
 <p>Un edificio ocupado, un proyecto recién terminado y una propiedad con alquileres regulados exigen análisis distintos. Elija la situación que se parezca a la suya.</p>
@@ -95,13 +95,14 @@
   <div class="wrap">
     <div class="lead-card reveal">
       <span class="eyebrow">¿Tiene una operación activa?</span>
-      <h2 id="cre-section-6">Envíe el registro de rentas y el plan</h2>
-      <p class="sub">Comparta el inmueble y el plan. Damos seguimiento por mensaje de texto con comentarios preliminares en menos de 1 hora; los términos requieren evaluación.</p>
-      <form class="lead-form" data-sh-form="commercial-multifamily" data-sh-product="Commercial" data-sh-event="deal_review_request" data-sh-lang="es" data-sh-thanks="/es/thanks-quote" data-sh-custom-validation="1" method="POST" action="/es/thanks-quote" data-netlify="true" netlify-honeypot="company_website"><input type="hidden" name="form-name" value="lead"/>
+      <h2 id="cre-section-6">Cuéntenos sobre el inmueble</h2>
+      <p class="sub">Comparta el número de unidades, el objetivo y el plazo. Elija cómo prefiere que respondamos. Si necesitamos la lista de alquileres, coordinaremos el envío de documentos por separado.</p>
+      <form class="lead-form" data-sh-form="commercial-multifamily" data-sh-product="Commercial" data-sh-event="deal_review_request" data-sh-lang="es" data-sh-thanks="/es/thanks-quote" data-sh-custom-validation="1" method="POST" action="/es/thanks-quote" data-netlify="true" netlify-honeypot="company_website"><input type="hidden" name="form-name" value="lead"/><input type="hidden" name="page" value="commercial-multifamily"/><input type="hidden" name="product" value="Commercial"/><input type="hidden" name="lang" value="es"/>
         <input type="text" name="company_website" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true"/>
         <div class="lf-field"><label for="q-name">Nombre</label><input id="q-name" type="text" name="name" autocomplete="name" required/></div>
         <div class="lf-field"><label for="q-email">Correo electrónico</label><input id="q-email" type="email" name="email" autocomplete="email" required/></div>
-        <div class="lf-field"><label for="q-phone">Teléfono</label><input id="q-phone" type="tel" name="phone" autocomplete="tel"/></div>
+        <div class="lf-field"><label for="q-reply">Cómo prefiere la respuesta</label><select id="q-reply" name="contact_preference"><option value="Email">Correo electrónico</option><option value="Text">Mensaje de texto</option></select></div>
+        <div class="lf-field" data-text-contact><label for="q-phone">Teléfono</label><input id="q-phone" type="tel" name="phone" autocomplete="tel"/></div>
         <div class="lf-field"><label for="q-amount">Monto del préstamo buscado</label>
           <select id="q-amount" name="loan_amount">
             <option value="$1M–$3M">$1M–$3M</option>
@@ -117,6 +118,7 @@
             <option value="Cash-out">Retiro de efectivo</option>
             <option value="Construction">Construcción</option>
             <option value="Bridge">Puente</option>
+            <option value="Bridge maturity">Vencimiento próximo de un préstamo puente</option>
           </select>
         </div>
         <div class="lf-field"><label for="q-state">Estado donde está la propiedad</label><input id="q-state" type="text" name="state" autocomplete="address-level1"/></div>
@@ -128,6 +130,7 @@
             <option value="Exploring">Explorando opciones</option>
           </select>
         </div>
+        <div class="lf-field full"><label for="q-overview">Resumen del inmueble (opcional)</label><textarea id="q-overview" name="about" rows="3" maxlength="1000"></textarea></div>
         <input type="hidden" name="asset_type" value="Multifamily"/>
         <div class="lead-actions">
           <span class="note">Retroalimentación honesta en menos de 1 hora. Al enviar, usted acepta que Stonehaven pueda contactarle sobre su consulta por teléfono, correo o mensaje de texto. El consentimiento no es condición del servicio.</span>

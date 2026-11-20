@@ -370,7 +370,15 @@
     var contactChoice = form.querySelector('[name="contact_preference"]');
     var contactPhone = form.querySelector('[name="phone"]');
     if (contactChoice && contactPhone) {
-      var syncContact = function () { contactPhone.required = contactChoice.value === "Text"; };
+      var textField = form.querySelector("[data-text-contact]");
+      var syncContact = function () {
+        var texting = contactChoice.value === "Text";
+        contactPhone.required = texting;
+        if (textField) {
+          contactPhone.disabled = !texting;
+          textField.hidden = !texting;
+        }
+      };
       contactChoice.addEventListener("change", syncContact);
       syncContact();
     }
@@ -420,7 +428,7 @@
           !/^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+$/i.test(emailParts[0]) || /^\.|\.$|\.\./.test(emailParts[0]) ||
           !/^(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z](?:[a-z0-9-]{0,61}[a-z0-9])?$/i.test(emailParts[1] || "")) invalid.push({ el: emailEl, message: es ? "Ingrese un correo electrónico válido." : "Please enter a valid email address." });
       var phoneEl = form.querySelector('[name="phone"]');
-      if (phoneEl && (phoneEl.hasAttribute("required") || (contactChoice && phoneEl.value.trim())) && phoneEl.value.replace(/\D/g, "").length < 10) invalid.push({ el: phoneEl, message: es ? "Ingrese un número de teléfono válido." : "Please enter a valid phone number." });
+      if (phoneEl && !phoneEl.disabled && (phoneEl.hasAttribute("required") || (contactChoice && phoneEl.value.trim())) && phoneEl.value.replace(/\D/g, "").length < 10) invalid.push({ el: phoneEl, message: es ? "Ingrese un número de teléfono válido." : "Please enter a valid phone number." });
       var validationBox = form.querySelector('.lead-validation-error');
       if (validationBox) validationBox.hidden = true;
       if (invalid.length) {
@@ -464,7 +472,7 @@
       var payload = {
         name: nameEl.value.trim(),
         email: emailEl.value.trim(),
-        phone: (form.querySelector('[name="phone"]') || { value: "" }).value.trim(),
+        phone: phoneEl && !phoneEl.disabled ? phoneEl.value.trim() : "",
         product: form.getAttribute("data-sh-product") || "Not sure",
         about: buildAbout(form, form.getAttribute("data-sh-about-prefix") || "", inquiryId, attribution),
         page: form.getAttribute("data-sh-form") || window.location.pathname,
@@ -608,7 +616,9 @@
       if (a) analyticsOnly("phone_click", { page_path: window.location.pathname, language: document.documentElement.lang || "en" });
       var cta = event.target.closest && event.target.closest('a[data-sh-inquiry-cta]');
       var placement = cta && cta.getAttribute && cta.getAttribute('data-sh-inquiry-cta');
-      if (!privateContext() && ['construction-result', 'construction-article', 'management-build', 'management-purchase', 'broker-introduction', 'sba-building'].indexOf(placement) !== -1) {
+      if (!privateContext() && ['construction-result', 'construction-article', 'management-build', 'management-purchase', 'broker-introduction', 'sba-building',
+        'home-hero', 'home-proof', 'builder-hero', 'builder-proof', 'builder-example', 'builder-detailed',
+        'article-footer', 'calculator-footer', 'product-inquiry'].indexOf(placement) !== -1) {
         analyticsOnly('inquiry_cta_click', { placement: placement, page_path: safePublicPath(window.location.pathname), language: document.documentElement.lang || 'en' });
       }
       var worksheet = event.target.closest && event.target.closest('a[data-sh-resource="heloc-offers"]');

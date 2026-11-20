@@ -19,6 +19,7 @@
       ]
     ],
     "body": [
+      "Line up both offers against the same first invoice. Compare the required opening draw, the interest on any amount drawn early, fees and when you can request the second draw.",
       {
         "h": "Compare the first draw in dollars"
       },
@@ -63,6 +64,7 @@
       ]
     ],
     "body": [
+      "Use la misma primera factura para comparar ambas ofertas. Revise el retiro inicial obligatorio, el interés sobre los fondos retirados por adelantado, los cargos y la fecha del segundo retiro.",
       {
         "h": "Compare el primer retiro en dólares"
       },
@@ -93,7 +95,7 @@
     "metaTitle": "Compare las condiciones de retiro de dos HELOC | Stonehaven"
   },
   "contentRevision": {
-    "updated": "2026-11-07",
+    "updated": "2026-11-20",
     "citations": [
       "https://www.consumerfinance.gov/ask-cfpb/what-are-government-recording-charges-for-a-mortgage-en-159/"
     ]

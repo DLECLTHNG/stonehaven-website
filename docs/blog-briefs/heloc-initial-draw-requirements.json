@@ -19,6 +19,7 @@
       ]
     ],
     "body": [
+      "Ask for the minimum first draw in dollars, the date interest starts and how much of the line stays available after that draw. Compare those figures with the amount of your first invoice.",
       {
         "h": "The limit and the first advance are different questions"
       },
@@ -55,6 +56,7 @@
       ]
     ],
     "body": [
+      "Pida el retiro inicial mínimo en dólares, la fecha en que empieza a correr el interés y cuánto crédito quedará disponible. Compare esas cifras con el monto de su primera factura.",
       {
         "h": "El límite y el primer retiro son preguntas distintas"
       },
@@ -76,7 +78,7 @@
     ]
   },
   "contentRevision": {
-    "updated": "2026-11-07",
+    "updated": "2026-11-20",
     "citations": [
       "https://www.consumerfinance.gov/ask-cfpb/what-is-a-home-equity-line-of-credit-heloc-en-107/"
     ]

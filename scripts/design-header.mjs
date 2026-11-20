@@ -25,8 +25,8 @@ function languageLink(html, header, es, full) {
 }
 
 function brand(es, linked) {
-  const images = '<img class="sh-sign-mark" src="/assets/design/stonehaven-mark.webp" width="144" height="176" alt="">' +
-    '<img class="sh-sign-word" src="/assets/design/stonehaven-wordmark.webp" width="615" height="128" alt="Stonehaven Lending">';
+  const images = '<img class="sh-sign-mark" src="/assets/design/stonehaven-mark-72.webp" srcset="/assets/design/stonehaven-mark-72.webp 72w, /assets/design/stonehaven-mark.webp 144w" sizes="40px" width="144" height="176" alt="">' +
+    '<img class="sh-sign-word" src="/assets/design/stonehaven-wordmark-288.webp" srcset="/assets/design/stonehaven-wordmark-288.webp 288w, /assets/design/stonehaven-wordmark.webp 615w" sizes="(max-width:480px) 144px, 175px" width="615" height="128" alt="Stonehaven Lending">';
   return linked
     ? `<a class="sh-sign" href="${es ? '/es/' : '/'}" aria-label="${es ? 'Stonehaven Lending, inicio' : 'Stonehaven Lending home'}">${images}</a>`
     : `<span class="sh-sign">${images}</span>`;

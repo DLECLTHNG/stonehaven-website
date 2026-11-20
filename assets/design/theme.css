@@ -292,3 +292,34 @@ body[data-stonehaven-design]:has(form:focus-within) > :is(.sticky-cta,.heloc-sti
   .sh-site-header,.design-panorama,.design-split-photo {display: none !important;}
   body[data-stonehaven-design] :is(.page-hero,.funnel-hero,.ig-hero) {margin: 0 !important; padding: 16px 0 !important;}
 }
+
+/* The header already reserves space for anchor navigation. */
+body[data-stonehaven-design] .inquiry-quick {scroll-margin-top: 0; padding-block: 16px 32px;}
+body[data-stonehaven-design] .inquiry-quick .lead-card {padding-block: clamp(20px, 3vw, 36px);}
+body[data-stonehaven-design] .inquiry-quick .sub {margin: 10px auto 20px;}
+.lead-form [hidden] {display: none !important;}
+.lead-form .estimate-opt-in {display: flex; align-items: center; gap: .75rem; cursor: pointer; min-height: 44px; text-transform: none; font-size: 1rem; letter-spacing: normal;}
+.lead-form .estimate-opt-in input {width: 1.2rem; height: 1.2rem; accent-color: #153841;}
+#estimate-preview textarea {width: 100%; min-height: 90px; line-height: 1.5;}
+#estimate-preview a {display: inline-block; padding-block: .5rem;}
+
+.library-index, .library-archive {padding-block: clamp(30px,6vw,72px);}
+.library-featured, .library-grid {display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,235px),1fr)); gap: 18px;}
+.library-featured {list-style: none; padding: 0; margin: 20px 0 34px;}
+.library-featured li, .library-topic {background: white; border-top: 2px solid #997534; padding: 18px;}
+.library-topic {padding-block: 20px;}
+.library-topic h2, .library-archive h2 {font-size: clamp(20px,2.2vw,29px);}
+.library-topic ul {padding-inline-start: 1.15rem; margin-block: 12px;}
+.library-topic li {margin-block: .5rem;}
+.library-archive article {max-width: 760px; padding-block: 20px; border-bottom: 1px solid #ccd6d5;}
+.library-archive nav {display: flex; gap: .5rem; margin-top: 20px;}
+.library-archive nav > * {padding: .6rem .9rem;}
+.home-resources {padding-block: clamp(28px,5vw,60px);}
+.home-resource-grid {display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,200px),1fr)); gap: 22px; margin-top: 24px;}
+.home-resource-grid h3 {font-size: 20px;}
+.home-resource-grid ul {padding-left: 1.15rem;}
+.home-resource-grid li {margin-block: 6px;}
+
+.library-archive aside {max-width: 760px; margin-top: 2.5rem; padding: 1.25rem; background: white; border-top: 2px solid #997534;}
+.library-archive aside ul {padding-inline-start: 1.25rem;}
+.library-archive aside li {margin: .5rem 0;}

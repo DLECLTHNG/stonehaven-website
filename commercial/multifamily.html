@@ -70,7 +70,7 @@
   </div>
 </header>
 <main>
-<section class="page-hero"><span class="eyebrow">Commercial · Multifamily</span><h1>Multifamily financing, <br>sized on the <em>rent roll</em></h1><p>Acquisition, refinance and renovation financing for 5+ unit apartments, matched to the property and business plan.</p><div style="margin-top:26px;display:flex;flex-direction:column;align-items:center;gap:16px;"><a class="btn-primary" href="#inquire">Get deal feedback in under 1 hour</a><a class="btn-quiet" href="/commercial-loan-calculator">Size the loan first</a></div></section><!-- CRE-JOURNEY:TOC:START --><nav class="wrap cre-contents" aria-label="In this guide"><details><summary>In this guide</summary><ul><li><a href="#apartment-financing-guides">Which apartment financing decision comes next?</a></li><li><a href="#cre-section-1">What makes an apartment property ready for financing?</a></li><li><a href="#cre-section-2">Agency, bank or bridge: choose around the business plan</a></li><li><a href="#cre-section-3">How NOI sets the loan, and why the rent roll is not enough</a></li><li><a href="#cre-section-4">Does nonrecourse mean no personal obligations?</a></li><li><a href="#cre-section-5">Buying, improving or approaching maturity?</a></li><li><a href="#cre-section-6">Send the rent roll and the plan</a></li></ul></details></nav><!-- CRE-JOURNEY:TOC:END -->
+<section class="page-hero"><span class="eyebrow">Commercial · Multifamily</span><h1>Multifamily financing, <br>sized on the <em>rent roll</em></h1><p>Acquisition, refinance and renovation financing for 5+ unit apartments, matched to the property and business plan.</p><div style="margin-top:26px;display:flex;flex-direction:column;align-items:center;gap:16px;"><a class="btn-primary" href="#inquire">Get deal feedback in under 1 hour</a><a class="btn-quiet" href="/commercial-loan-calculator">Size the loan first</a></div></section><!-- CRE-JOURNEY:TOC:START --><nav class="wrap cre-contents" aria-label="In this guide"><details><summary>In this guide</summary><ul><li><a href="#apartment-financing-guides">Which apartment financing decision comes next?</a></li><li><a href="#cre-section-1">What makes an apartment property ready for financing?</a></li><li><a href="#cre-section-2">Agency, bank or bridge: choose around the business plan</a></li><li><a href="#cre-section-3">How NOI sets the loan, and why the rent roll is not enough</a></li><li><a href="#cre-section-4">Does nonrecourse mean no personal obligations?</a></li><li><a href="#cre-section-5">Buying, improving or approaching maturity?</a></li><li><a href="#cre-section-6">Tell us about the apartment property</a></li></ul></details></nav><!-- CRE-JOURNEY:TOC:END -->
 <section class="cre-asset-section"><div class="wrap"><article class="cre-asset"><div class="asset-answer" id="answer"><span class="eyebrow">The short answer</span><p><strong>Multifamily financing for apartment properties with five or more units starts with property cash flow, condition and the ownership plan.</strong> Stonehaven is a mortgage brokerage that evaluates potential agency, bank and bridge financing through third-party lenders. The property matters, but so do the borrower’s experience, financial capacity and required guarantees. For a 1–4 unit rental, explore <a href="/dscr">DSCR loan options</a>.</p></div>
 <h2 id="apartment-financing-guides">Which apartment financing decision comes next?</h2>
 <p>Occupied apartments, newly delivered units and rent-restricted properties call for different evidence. Start with the decision in front of you.</p>
@@ -96,13 +96,14 @@
   <div class="wrap">
     <div class="lead-card reveal">
       <span class="eyebrow">Have a Live Deal?</span>
-      <h2 id="cre-section-6">Send the rent roll and the plan</h2>
-      <p class="sub">Share the property and plan. We follow up by text with preliminary feedback in under 1 hour; lender terms require review.</p>
-      <form class="lead-form" data-sh-form="commercial-multifamily" data-sh-product="Commercial" data-sh-event="deal_review_request" data-sh-thanks="/thanks-quote" data-sh-custom-validation="1" method="POST" action="/thanks-quote" data-netlify="true" netlify-honeypot="company_website"><input type="hidden" name="form-name" value="lead"/>
+      <h2 id="cre-section-6">Tell us about the apartment property</h2>
+      <p class="sub">Share the unit count, financing goal and timing. Choose how we should reply. If we need a rent roll, we’ll arrange document exchange separately.</p>
+      <form class="lead-form" data-sh-form="commercial-multifamily" data-sh-product="Commercial" data-sh-event="deal_review_request" data-sh-thanks="/thanks-quote" data-sh-custom-validation="1" method="POST" action="/thanks-quote" data-netlify="true" netlify-honeypot="company_website"><input type="hidden" name="form-name" value="lead"/><input type="hidden" name="page" value="commercial-multifamily"/><input type="hidden" name="product" value="Commercial"/><input type="hidden" name="lang" value="en"/>
         <input type="text" name="company_website" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true"/>
         <div class="lf-field"><label for="q-name">Name</label><input id="q-name" type="text" name="name" autocomplete="name" required/></div>
         <div class="lf-field"><label for="q-email">Email</label><input id="q-email" type="email" name="email" autocomplete="email" required/></div>
-        <div class="lf-field"><label for="q-phone">Phone</label><input id="q-phone" type="tel" name="phone" autocomplete="tel"/></div>
+        <div class="lf-field"><label for="q-reply">How should we reply?</label><select id="q-reply" name="contact_preference"><option value="Email">Email</option><option value="Text">Text message</option></select></div>
+        <div class="lf-field" data-text-contact><label for="q-phone">Phone</label><input id="q-phone" type="tel" name="phone" autocomplete="tel"/></div>
         <div class="lf-field"><label for="q-amount">Loan amount sought</label>
           <select id="q-amount" name="loan_amount">
             <option value="$1M–$3M">$1M–$3M</option>
@@ -118,6 +119,7 @@
             <option value="Cash-out">Cash-out</option>
             <option value="Construction">Construction</option>
             <option value="Bridge">Bridge</option>
+            <option value="Bridge maturity">Bridge loan nearing maturity</option>
           </select>
         </div>
         <div class="lf-field"><label for="q-state">Property state</label><input id="q-state" type="text" name="state" autocomplete="address-level1"/></div>
@@ -129,6 +131,7 @@
             <option value="Exploring">Exploring options</option>
           </select>
         </div>
+        <div class="lf-field full"><label for="q-overview">Property overview (optional)</label><textarea id="q-overview" name="about" rows="3" maxlength="1000"></textarea></div>
         <input type="hidden" name="asset_type" value="Multifamily"/>
         <div class="lead-actions">
           <span class="note">Honest feedback in under 1 hour. By submitting, you agree Stonehaven may contact you about your inquiry by phone, email or text. Consent is not a condition of service.</span>

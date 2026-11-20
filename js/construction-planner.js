@@ -7,6 +7,28 @@
   var money = new Intl.NumberFormat(es ? 'es-US' : 'en-US', {style: 'currency', currency: 'USD', maximumFractionDigits: 0});
   function node(id) { return document.getElementById('cp-' + id); }
   function show(id, value) { node(id).textContent = value; }
+  var include = document.getElementById('include-estimate');
+  var summary = document.getElementById('estimate-summary');
+  var preview = document.getElementById('estimate-preview');
+  function updateShare(result, inputs) {
+    if (!include) return;
+    if (!result) include.checked = false;
+    document.getElementById('estimate-choice').hidden = !result;
+    preview.hidden = !include.checked;
+    summary.disabled = !include.checked;
+    summary.value = '';
+    if (!include.checked) return;
+    var figures = [
+      [es ? 'Terreno' : 'Land', node('mode').selectedOptions[0].textContent],
+      [es ? 'Base del terreno' : 'Land basis', money.format(inputs.land)],
+      [es ? 'Deuda existente' : 'Payoff', money.format(inputs.payoff)],
+      [es ? 'Costo elegible modelado' : 'Modeled eligible cost', money.format(result.cost)],
+      [es ? 'Valor terminado' : 'Completed value', money.format(inputs.value)],
+      [es ? 'Préstamo estimado' : 'Modeled loan', money.format(result.loan)],
+      [es ? 'Capital faltante' : 'Funding gap', money.format(result.gap)]
+    ];
+    summary.value = figures.map(function (item) { return item.join(': '); }).join(' · ');
+  }
   function calc(event) {
     var p = {mode: node('mode').value};
     fields.forEach(function (key) {
@@ -19,6 +41,7 @@
     node('results').hidden = !result;
     node('stress').hidden = !result;
     node('error').hidden = !!result;
+    updateShare(result, p);
     if (!result) return;
     ['cost', 'remaining', 'need', 'byCost', 'byValue', 'loan', 'gap', 'landEquity'].forEach(function (key) { show(key, money.format(result[key])); });
     node('land-equity-row').hidden = p.mode !== 'owned';
@@ -36,5 +59,6 @@
     }
   }
   panel.querySelectorAll('input,select').forEach(function (input) { input.addEventListener('input', calc); input.addEventListener('change', calc); });
+  if (include) include.addEventListener('change', function () { calc(); });
   calc();
 })();

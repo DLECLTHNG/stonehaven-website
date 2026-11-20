@@ -29,22 +29,37 @@ def quick_form(product,purpose,es,path,full):
  note=t('Initial inquiry only. Financing is subject to underwriting, documentation and program availability.','Consulta inicial. El financiamiento está sujeto a evaluación, documentación y disponibilidad.')
  if path.removeprefix('/es').startswith('/commercial/hud-'):
   note=t('Stonehaven acts as your mortgage broker. This is an initial inquiry; financing is subject to underwriting, documentation and program availability.','Stonehaven actúa como su intermediario hipotecario. Esta es una consulta inicial; el financiamiento está sujeto a evaluación, documentación y disponibilidad.')
- return block('QUICK',f'''<section class="lead inquiry-quick" id="quick-inquiry"><div class="wrap"><div class="lead-card">
- <span class="eyebrow">{t('Start a conversation','Inicie una conversación')}</span><h2>{t('Discuss your financing','Hablemos de su financiamiento')}</h2>
- <p class="sub">{escape(purpose)}. {t('Start with your name and email. Deal details are optional; we will review your inquiry and explain the next step.','Empiece con su nombre y correo. Los detalles son opcionales; revisaremos su consulta y explicaremos el siguiente paso.')}</p>
+ calculator = path.endswith('/construction-loan-calculator')
+ builder = calculator or path.endswith('/commercial/construction-loans')
+ heading = t('Review my construction project','Revisar mi proyecto de construcción') if builder else t('Discuss your financing','Hablemos de su financiamiento')
+ intro = (t('Send your name and email. If you have a site, budget or closing date, you can add those details below.',
+            'Envíe su nombre y correo. Si ya tiene un terreno, un presupuesto o una fecha de cierre, puede añadir esos detalles abajo.') if builder else
+          escape(purpose) + '. ' + t('Start with your name and email. Deal details are optional; we will review your inquiry and explain the next step.','Empiece con su nombre y correo. Los detalles son opcionales; revisaremos su consulta y explicaremos el siguiente paso.'))
+ eyebrow = '' if builder else '<span class="eyebrow">'+t('Start a conversation','Inicie una conversación')+'</span>'
+ estimate = ''
+ if calculator:
+  estimate = f'''<div id="estimate-choice" class="lf-field full" hidden>
+  <label class="estimate-opt-in"><input type="checkbox" id="include-estimate"/> {t('Include my planning estimate','Incluir mi estimación en la consulta')}</label>
+  <div id="estimate-preview" hidden><label for="estimate-summary">{t('Figures included with this inquiry','Cifras que se enviarán con esta consulta')}</label>
+  <textarea id="estimate-summary" name="estimate_summary" rows="3" readonly disabled></textarea>
+  <a href="#construction-planner">{t('Edit calculator inputs','Editar los datos de la calculadora')}</a></div></div>'''
+ markup = f'''<section class="lead inquiry-quick" id="quick-inquiry"><div class="wrap"><div class="lead-card">
+ {eyebrow}<h2>{heading}</h2>
+ <p class="sub">{intro}</p>
  <form class="lead-form" data-sh-form="{source}" data-sh-product="{product}" data-sh-event="lead" data-sh-lang="{t('en','es')}" data-sh-about-prefix="{escape(purpose,quote=True)}" method="POST" action="{prefix}/thanks-quote" data-netlify="true" netlify-honeypot="company_website" novalidate>
  <input type="hidden" name="product" value="{product}"/><input type="hidden" name="page" value="{source}"/><input type="hidden" name="lang" value="{t('en','es')}"/><input type="hidden" name="form-name" value="lead"/><input type="hidden" name="loan_program" value="{escape(purpose,quote=True)}"/><input type="hidden" name="inquiry_path" value="quick-v1"/>
  <input type="text" name="company_website" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true"/>
  <div class="lf-field"><label for="quick-name">{t('Full name','Nombre completo')}</label><input id="quick-name" name="name" type="text" autocomplete="name" required maxlength="120"/></div>
  <div class="lf-field"><label for="quick-email">{t('Email','Correo electrónico')}</label><input id="quick-email" name="email" type="email" autocomplete="email" required maxlength="254"/></div>
  <div class="lf-field"><label for="quick-contact">{t('How should we reply?','¿Cómo prefiere la respuesta?')}</label><select id="quick-contact" name="contact_preference"><option value="Email">{t('Email','Correo electrónico')}</option><option value="Text">{t('Text message','Mensaje de texto')}</option></select></div>
- <div class="lf-field"><label for="quick-phone">{t('Mobile number (needed for text)','Celular (necesario para texto)')}</label><input id="quick-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" aria-describedby="quick-phone-help"/><small id="quick-phone-help">{t('Optional if you prefer email.','Opcional si prefiere correo.')}</small></div>
- <details class="quick-details"><summary>{details}</summary><div class="lf-field"><label for="quick-about">{t('What would you like to finance?','¿Qué desea financiar?')}</label><textarea id="quick-about" name="about" rows="3" maxlength="1000" aria-describedby="quick-privacy"></textarea><small id="quick-privacy">{t('A location, financing goal or timing is enough. No SSNs, account numbers or private documents.','Basta con ubicación, objetivo o plazo. No incluya SSN, números de cuenta ni documentos privados.')}</small></div></details>
- <div class="lead-actions"><span class="note">{consent} <a href="{prefix}/privacy">{t('Privacy policy','Privacidad')}</a>.</span><button class="lead-submit" type="submit">{t('Send my inquiry','Enviar mi consulta')}</button></div>
+ <div class="lf-field"{" data-text-contact" if builder else ""}><label for="quick-phone">{t('Mobile number (needed for text)','Celular (necesario para texto)')}</label><input id="quick-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" aria-describedby="quick-phone-help"/><small id="quick-phone-help">{t('Optional if you prefer email.','Opcional si prefiere correo.')}</small></div>
+ {estimate}<details class="quick-details"><summary>{details}</summary><div class="lf-field"><label for="quick-about">{t('What would you like to finance?','¿Qué desea financiar?')}</label><textarea id="quick-about" name="about" rows="3" maxlength="1000" aria-describedby="quick-privacy"></textarea><small id="quick-privacy">{t('A location, financing goal or timing is enough. No SSNs, account numbers or private documents.','Basta con ubicación, objetivo o plazo. No incluya SSN, números de cuenta ni documentos privados.')}</small></div></details>
+ <div class="lead-actions"><span class="note">{consent} <a href="{prefix}/privacy">{t('Privacy policy','Privacidad')}</a>.</span><button class="lead-submit" type="submit">{t('Request my project review','Solicitar la revisión de mi proyecto') if builder else t('Send my inquiry','Enviar mi consulta')}</button></div>
  </form><div class="lead-success" role="status" aria-live="polite"><div class="ok">{t('Thank you. Your inquiry was submitted.','Gracias. Su consulta fue enviada.')}</div><p>{t('Our team will review it and respond by your preferred method. This is not an approval or a rate quote.','Nuestro equipo la revisará y responderá por el medio elegido. No es una aprobación ni una cotización.')}</p></div>
  <p class="quick-alternatives"><a href="{full}">{t('Ready with the numbers? Use the detailed review','¿Tiene las cifras? Use la revisión detallada')}</a> · <a href="{prefix}/book?product={product}">{t('Book a conversation','Reserve una conversación')}</a></p>
  <p class="quick-note">{note}</p>
- </div></div></section>''')
+ </div></div></section>'''
+ return markup if calculator else block('QUICK',markup)
 
 def evidence(kind,es,cta,level=3):
  prefix='/es' if es else ''
@@ -73,7 +88,7 @@ def transform(text,path):
  prefix='/es' if es else ''
  if home:
   home_anchor='#enquire' if es else '#inquire'
-  proof=block('PROOF','<section class="wrap inquiry-proof"><h2>'+('De la estructura al cierre' if es else 'From financing structure to closing')+'</h2><div class="inquiry-proof-grid">'+evidence('construction',es,prefix+'/commercial/construction-loans#inquire')+evidence('dscr',es,home_anchor)+'</div></section>')
+  proof=block('PROOF','<section class="wrap inquiry-proof"><h2>'+('De la estructura al cierre' if es else 'From financing structure to closing')+'</h2><div class="inquiry-proof-grid">'+evidence('construction',es,prefix+'/commercial/construction-loans#quick-inquiry')+evidence('dscr',es,home_anchor)+'</div></section>')
   pos=text.index('</section>',text.index('positioning-guides'))+len('</section>');text=text[:pos]+proof+text[pos:]
  else:
   if persona:

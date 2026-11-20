@@ -23,6 +23,7 @@
       ]
     ],
     "body": [
+      "Ask for two dates in writing before scheduling a contractor payment: when your line can fund and when your first draw will reach your account. The signing date alone cannot tell you either.",
       {
         "h": "From signing to your first draw"
       },
@@ -89,6 +90,7 @@
       ]
     ],
     "body": [
+      "Antes de programar un pago al contratista, pida por escrito dos fechas: cuándo se pueden liberar los fondos de la línea y cuándo llegará a su cuenta el primer retiro. La fecha de firma por sí sola no determina ninguna de las dos.",
       {
         "h": "De la firma al primer retiro"
       },
@@ -136,7 +138,7 @@
     ]
   },
   "contentRevision": {
-    "updated": "2026-11-07",
+    "updated": "2026-11-20",
     "citations": [
       "https://www.consumerfinance.gov/rules-policy/regulations/1026/15/",
       "https://www.consumerfinance.gov/rules-policy/regulations/1026/2/",
