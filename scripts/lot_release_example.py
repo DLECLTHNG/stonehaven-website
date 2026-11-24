@@ -32,4 +32,9 @@ def add_editor(html, path):
     marker = '<table id="lot-release-table">'
     if html.count(marker) != 1:
         raise ValueError('Missing the worked lot sale table: ' + path)
+    # Both versions originally ended in a generic commercial form. Keep the
+    # primary article action on the same attributable project-review path.
+    old = '/es/commercial#leadForm' if es else '/terms-sheet#deal-review'
+    new = ('/es' if es else '') + '/commercial/construction-loans?guide=lot-release#quick-inquiry'
+    html = html.replace('<a class="btn-primary" href="' + old + '">', '<a class="btn-primary" data-sh-inquiry-cta="article-footer" href="' + new + '">')
     return html.replace(marker, editor + marker)

@@ -67,6 +67,11 @@
     fields.forEach(function (key) { node(key).value = owned[key]; });
     node('mode').value = 'owned';
     node('preset').hidden = false;
+    document.querySelectorAll('a[hreflang][href*="construction-loan-calculator"], a.lang-opt').forEach(function (link) {
+      var destination = new URL(link.href);
+      destination.searchParams.set('example', 'owned-land');
+      link.href = destination.pathname + destination.search + destination.hash;
+    });
     node('defaults').addEventListener('click', function () {
       fields.forEach(function (key) { node(key).value = node(key).defaultValue; });
       node('mode').value = 'owned';
@@ -74,9 +79,9 @@
       node('mode').focus();
       var url = new URL(window.location.href);
       url.searchParams.delete('example');
-      url.searchParams.set('guide', 'owned-land');
+      if (navigator.globalPrivacyControl !== true) url.searchParams.set('guide', 'owned-land');
       window.history.replaceState(null, '', url);
-      document.querySelectorAll('a.lang-opt').forEach(function (link) {
+      document.querySelectorAll('a[hreflang][href*="construction-loan-calculator"], a.lang-opt').forEach(function (link) {
         var destination = new URL(link.href);
         destination.searchParams.delete('example');
         if (navigator.globalPrivacyControl !== true) destination.searchParams.set('guide', 'owned-land');
