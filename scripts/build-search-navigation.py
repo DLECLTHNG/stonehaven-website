@@ -5,6 +5,7 @@ from html import escape, unescape
 from urllib.parse import urlsplit
 import re,json
 from search_metadata import load_title_overrides, normalize_page_metadata, normalize_sitemap
+from lot_release_example import add_editor
 from article_quality import load_revisions, transform as revise_article, update_sitemap
 from seo_brand_assets import normalize_brand_assets
 from seo_discovery import build_discovery_files
@@ -115,6 +116,13 @@ for path,(file,text) in pages.items():
  text=inquiry_journeys(text,path)
  text=hud_content(text,path)
  text=construction_content(text,path)
+ text=add_editor(text,path)
+ guide={'/blog/subdivision-loan-lot-release-prices':'lot-release','/blog/construction-loan-property-already-owned-mortgage-payoff':'owned-land'}.get(local)
+ if guide:
+  def guide_link(m):
+   key='example' if guide=='owned-land' and m[1].endswith('/construction-loan-calculator') else 'guide'
+   return 'href="'+m[1]+'?'+key+'='+guide+(m[2] or '')+'"'
+  text=re.sub(r'href="((?:/es)?/(?:construction-loan-calculator|commercial/construction-loans))(#[^"]*)?"',guide_link,text)
  text=preserve_native_lead_validation(text)
  if any(mark in text for mark in ['SEARCH-NAV:', 'HUD-CONTENT:', 'CONSTRUCTION-CONTENT:']):text=text.replace('</head>','<link rel="stylesheet" href="/search-navigation.css?v=1"/></head>')
  text=normalize_brand_assets(text)

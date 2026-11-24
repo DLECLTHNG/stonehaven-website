@@ -32,8 +32,8 @@
         "h": "A hypothetical sale shows the difference"
       },
       "Imagine a 20-lot subdivision with a $2,000,000 outstanding development balance. For this simplified example, there are no future loan advances. Equal allocation would suggest $100,000 of debt per lot. Suppose instead the agreement requires $125,000 of principal repayment for each lot sold, subject to the remaining balance and any final payoff requirements. These are invented teaching numbers, not Stonehaven program terms.",
-      "<table><caption>Illustrative cash movement from one lot sale</caption><thead><tr><th scope=\"col\">Item</th><th scope=\"col\">Amount</th></tr></thead><tbody><tr><td>Gross lot sale proceeds</td><td>$180,000</td></tr><tr><td>Assumed selling and closing costs</td><td>($9,000)</td></tr><tr><td>Required principal release payment</td><td>($125,000)</td></tr><tr><td>Cash remaining before other obligations</td><td>$46,000</td></tr></tbody></table>",
-      "If your next start needs $60,000 before the first draw, the $46,000 left from this sale leaves a $14,000 gap. <a data-sh-inquiry-cta=\"construction-article\" href=\"/commercial/construction-loans#quick-inquiry\">Review my lot release and next construction start</a>.",
+      "<table id=\"lot-release-table\"><caption>Illustrative cash movement from one lot sale</caption><thead><tr><th scope=\"col\">Item</th><th scope=\"col\">Amount</th></tr></thead><tbody><tr><td>Gross lot sale proceeds</td><td>$180,000</td></tr><tr><td>Assumed selling and closing costs</td><td>($9,000)</td></tr><tr><td>Required principal release payment</td><td>($125,000)</td></tr><tr><td>Cash remaining before other obligations</td><td>$46,000</td></tr></tbody></table>",
+      "In the original example, if your next start needs $60,000 before the first draw, the $46,000 left from this sale leaves a $14,000 gap. <a data-sh-inquiry-cta=\"construction-article\" href=\"/commercial/construction-loans?guide=lot-release#quick-inquiry\">Review my lot release and next construction start</a>.",
       "A model using only $100,000 of repayment would show $71,000 remaining and overstate available cash by $25,000 on that sale. Across the first eight identical sales, the difference is $200,000. Under the stated assumptions, $125,000 multiplied by 16 sales repays the $2,000,000 principal. Interest, fees, additional advances or other obligations would change the final payoff, so this is not a complete closing statement.",
       "The $46,000 remainder also is not the project's profit. It may need to support unfinished infrastructure, taxes, interest, reserves, warranty obligations or additional contractual paydowns. Developer distributions should follow the agreement and the project's remaining needs, not just the cash visible in the account after closing.",
       "When seeking subdivision or finished-lot financing, review the release schedule alongside the loan amount. A facility that funds the project initially can still create a cash shortage later if each early sale sends more money to debt reduction than your model assumes. Stonehaven's <a href=\"/commercial/land-development-loans\">land development financing page</a> explains the broader acquisition and development structure.",
@@ -62,7 +62,7 @@
       {
         "h": "Prepare a development financing review"
       },
-      "Stonehaven acts as your mortgage broker. Share the site location, lot count, outstanding approvals, infrastructure budget and requested financing. If you plan to build homes on the lots, <a data-sh-inquiry-cta=\"construction-article\" href=\"/commercial/construction-loans#quick-inquiry\">discuss financing for your first construction phase</a>. Include the release date and target start so we can review how the two closings fit together.",
+      "Stonehaven acts as your mortgage broker. Share the site location, lot count, outstanding approvals, infrastructure budget and requested financing. If you plan to build homes on the lots, <a data-sh-inquiry-cta=\"construction-article\" href=\"/commercial/construction-loans?guide=lot-release#quick-inquiry\">discuss financing for your first construction phase</a>. Include the release date and target start so we can review how the two closings fit together.",
       {
         "h": "Model the last lots, not only the first sales"
       },
@@ -111,8 +111,8 @@
         "h": "Una venta hipotética muestra la diferencia"
       },
       "Imagine una subdivisión de 20 lotes con saldo de desarrollo de $2,000,000. Para simplificar, no habrá futuros desembolsos. Una distribución uniforme sugeriría $100,000 de deuda por lote. Sin embargo, suponga que el contrato exige $125,000 de principal por lote vendido, sujeto al saldo restante y los requisitos finales de liquidación. Son cifras didácticas inventadas, no términos de un programa de Stonehaven.",
-      "<table><caption>Movimiento ilustrativo del efectivo de una venta</caption><thead><tr><th scope=\"col\">Concepto</th><th scope=\"col\">Importe</th></tr></thead><tbody><tr><td>Precio bruto de venta del lote</td><td>$180,000</td></tr><tr><td>Gastos supuestos de venta y cierre</td><td>($9,000)</td></tr><tr><td>Pago exigido a principal para liberación</td><td>($125,000)</td></tr><tr><td>Efectivo antes de otras obligaciones</td><td>$46,000</td></tr></tbody></table>",
-      "Si la siguiente fase requiere $60,000 antes del próximo desembolso, los $46,000 que quedan de esta venta dejan una brecha de $14,000. <a data-sh-inquiry-cta=\"construction-article\" href=\"/es/commercial/construction-loans#quick-inquiry\">Revisar el pago de liberación y mi próximo inicio de obra</a>.",
+      "<table id=\"lot-release-table\"><caption>Movimiento ilustrativo del efectivo de una venta</caption><thead><tr><th scope=\"col\">Concepto</th><th scope=\"col\">Importe</th></tr></thead><tbody><tr><td>Precio bruto de venta del lote</td><td>$180,000</td></tr><tr><td>Gastos supuestos de venta y cierre</td><td>($9,000)</td></tr><tr><td>Pago exigido a principal para liberación</td><td>($125,000)</td></tr><tr><td>Efectivo antes de otras obligaciones</td><td>$46,000</td></tr></tbody></table>",
+      "En el ejemplo original, si la siguiente fase requiere $60,000 antes del próximo desembolso, los $46,000 que quedan de esta venta dejan una brecha de $14,000. <a data-sh-inquiry-cta=\"construction-article\" href=\"/es/commercial/construction-loans?guide=lot-release#quick-inquiry\">Revisar el pago de liberación y mi próximo inicio de obra</a>.",
       "Un modelo con solo $100,000 de amortización mostraría $71,000 restantes y exageraría el efectivo disponible en $25,000 para esa venta. En las primeras ocho ventas idénticas, la diferencia sería de $200,000. Bajo estos supuestos, 16 pagos de $125,000 liquidan los $2,000,000 de principal. Los intereses, cargos, nuevos desembolsos u otras obligaciones cambiarían la liquidación final; no es un estado de cierre completo.",
       "Los $46,000 tampoco son la utilidad del proyecto. Pueden ser necesarios para infraestructura pendiente, impuestos, intereses, reservas, garantías de obra u otras amortizaciones contractuales. Las distribuciones al desarrollador deben seguir el contrato y las necesidades restantes, no simplemente el saldo de la cuenta después del cierre.",
       "Al solicitar financiamiento para subdivisiones o lotes terminados, revise el calendario de liberaciones junto con el monto del préstamo. Una línea que permite iniciar el proyecto todavía puede producir escasez de efectivo si las primeras ventas exigen más amortización de la modelada. Nuestra <a href=\"/es/commercial/land-development-loans\">página de financiamiento de desarrollo de terrenos</a> explica la estructura general de adquisición y desarrollo.",
@@ -141,7 +141,7 @@
       {
         "h": "Prepare una revisión de financiamiento"
       },
-      "Stonehaven actúa como su intermediario hipotecario. Indique la ubicación del terreno, la cantidad de lotes, las autorizaciones pendientes, el presupuesto de infraestructura y el capital solicitado. Si el plan incluye viviendas nuevas, <a data-sh-inquiry-cta=\"construction-article\" href=\"/es/commercial/construction-loans#quick-inquiry\">consulte sobre el financiamiento de la primera etapa de construcción</a>. Incluya las fechas previstas de liberación e inicio de obra para que podamos revisar los plazos con usted.",
+      "Stonehaven actúa como su intermediario hipotecario. Indique la ubicación del terreno, la cantidad de lotes, las autorizaciones pendientes, el presupuesto de infraestructura y el capital solicitado. Si el plan incluye viviendas nuevas, <a data-sh-inquiry-cta=\"construction-article\" href=\"/es/commercial/construction-loans?guide=lot-release#quick-inquiry\">consulte sobre el financiamiento de la primera etapa de construcción</a>. Incluya las fechas previstas de liberación e inicio de obra para que podamos revisar los plazos con usted.",
       {
         "h": "Proyecte los últimos lotes, no solo las primeras ventas"
       },
@@ -162,7 +162,7 @@
     ]
   },
   "contentRevision": {
-    "updated": "2026-11-20",
+    "updated": "2026-11-24",
     "citations": [
       "https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf",
       "https://www.occ.treas.gov/news-issuances/bulletins/2005/bulletin-2005-32.html"

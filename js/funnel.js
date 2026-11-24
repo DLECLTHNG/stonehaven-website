@@ -280,7 +280,45 @@
     return "";
   }
 
+  // Credit the guide on this construction journey. Opening another product or a
+  // fresh, untagged calculator cannot inherit an earlier guide from storage.
+  function constructionGuide() {
+    if (privateContext()) return "";
+    var path = safePublicPath(window.location.pathname).replace(/^\/es(?=\/)/, "");
+    if (path !== "/commercial/construction-loans" && path !== "/construction-loan-calculator") return "";
+    var query = new URLSearchParams(window.location.search);
+    if (path === "/construction-loan-calculator" && query.get("example") === "owned-land") return "owned-land";
+    var guide = query.get("guide");
+    return guide === "owned-land" || guide === "lot-release" ? guide : "";
+  }
+  function guideForForm(form) {
+    var id = form.getAttribute("data-sh-form") || "";
+    if (!/^(?:quick-(?:es-)?(?:commercial-construction-loans|construction-loan-calculator)|commercial-construction-loans)$/.test(id)) return "";
+    return constructionGuide();
+  }
+  function carryConstructionGuide() {
+    var guide = constructionGuide();
+    if (!guide) return;
+    // Preserve source on links between the worksheet and the two review forms,
+    // including a language switch. Never append an amount or an identifier.
+    document.querySelectorAll('a[href]').forEach(function (link) {
+      var href = link.getAttribute("href");
+      if (!href || href.charAt(0) === "#") return;
+      var url = new URL(link.href, window.location.href);
+      if (url.origin !== window.location.origin ||
+          !/^\/(?:es\/)?(?:commercial\/construction-loans|construction-loan-calculator)\/?$/.test(url.pathname)) return;
+      if (guide === "owned-land" && url.pathname.endsWith("/construction-loan-calculator") &&
+          new URLSearchParams(window.location.search).get("example") === "owned-land") {
+        url.searchParams.set("example", "owned-land");
+      } else {
+        url.searchParams.set("guide", guide);
+      }
+      link.href = url.pathname + url.search + url.hash;
+    });
+  }
   function inquiryEventFields(form, fields) {
+    var guide = guideForForm(form);
+    if (guide) fields.construction_guide = guide;
     var entry = managementEntry();
     if (entry) fields.inquiry_entry = entry;
     var purpose = form.querySelector('[name="inquiry_purpose"]');
@@ -465,6 +503,8 @@
       inquiryId = inquiryId || submissionId();
       var attribution = submissionAttribution();
       extra.submission_id = inquiryId;
+      var guide = guideForForm(form);
+      if (guide) extra.construction_guide = guide;
       var entry = managementEntry();
       if (entry) extra.inquiry_entry = entry;
       if (attribution) extra.attribution = attribution;
@@ -502,6 +542,7 @@
             // a CRM webhook. Keep new source context out of this ad integration;
             // the saved Netlify submission and its CRM relay hold the full record.
             var relayExtra = Object.assign({}, payload.extra);
+            delete relayExtra.construction_guide;
             delete relayExtra.attribution;
             delete relayExtra.submission_id;
             var relayPayload = Object.assign({}, payload, { extra: relayExtra,
@@ -608,6 +649,7 @@
 
   document.addEventListener("DOMContentLoaded", function () {
     Array.prototype.forEach.call(document.querySelectorAll("form[data-sh-form]"), wireForm);
+    carryConstructionGuide();
     var purpose = document.getElementById("contact-purpose");
     if (purpose && window.location.hash === "#partner-inquiry") purpose.value = "Professional introduction";
 

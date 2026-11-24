@@ -114,3 +114,28 @@ test('native contact submissions preserve product choice and professional purpos
  assert.equal(forwarded.extra.inquiry_purpose,'Professional introduction');
  assert.equal(forwarded.lang,'es');
 });
+
+test('saved construction sources reach the Commercial CRM relay only on eligible forms', async t => {
+  setup(t);
+  let saved;
+  global.fetch = async (_, options) => {
+    saved = JSON.parse(options.body);
+    return Response.json({status:'created', lead:{id:'test-lead'}});
+  };
+  for (const [page, source, expected] of [
+    ['quick-construction-loan-calculator','owned-land','owned-land'],
+    ['quick-es-commercial-construction-loans','lot-release','lot-release'],
+    ['commercial-construction-loans','lot-release','lot-release'],
+    ['quick-commercial-construction-loans','unrecognized',undefined],
+    ['contact','owned-land',undefined],
+  ]) {
+    const body = JSON.parse(event.body);
+    Object.assign(body.payload.data, {product:'Commercial', page, extra:JSON.stringify({
+      construction_guide:source, contact_preference:'Email', inquiry_path:'quick-v1'
+    })});
+    assert.equal((await handler({body:JSON.stringify(body)})).statusCode, 200);
+    assert.equal(saved.extra.construction_guide, expected);
+    if (expected) assert.equal(saved.extra.source_form_id, page);
+    if (page.startsWith('quick-')) assert.equal(saved.page, 'website-commercial');
+  }
+});
