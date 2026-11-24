@@ -499,3 +499,26 @@ test('GPC and sensitive Family pages suppress inquiry engagement events',()=>{
   assert.equal(p.events.length,0,JSON.stringify(options));assert.equal(p.meta.length,0);assert.equal(p.ads.length,0);
  }
 });
+
+test('only tagged construction journeys attach a guide to CRM intake and accepted GA events', async () => {
+  const cases = [
+    ['/construction-loan-calculator?example=owned-land','quick-construction-loan-calculator',false,'owned-land'],
+    ['/es/commercial/construction-loans?guide=lot-release','quick-es-commercial-construction-loans',false,'lot-release'],
+    ['/commercial/construction-loans?guide=owned-land','commercial-construction-loans',false,'owned-land'],
+    ['/commercial/construction-loans?guide=lot-release','commercial-construction-loans',true,undefined],
+    ['/construction-loan-calculator?guide=unknown','quick-construction-loan-calculator',false,undefined],
+    ['/construction-loan-calculator','quick-construction-loan-calculator',false,undefined],
+    ['/dscr?guide=owned-land','quick-dscr',false,undefined],
+  ];
+  for (const [route, formId, gpc, expected] of cases) {
+    const p = page({url:'https://stonehavencre.com' + route, gpc, formAttrs:{'data-sh-form':formId}});
+    p.start();
+    p.submit();
+    await flush();
+    assert.equal(p.extra().construction_guide, expected, route);
+    const accepted = p.events.filter(event => event[1] === 'generate_lead');
+    assert.equal(accepted.length, 1);
+    assert.equal(accepted[0][2].construction_guide, expected, route);
+    assert.ok(!JSON.stringify(p.meta).includes('construction_guide'));
+  }
+});

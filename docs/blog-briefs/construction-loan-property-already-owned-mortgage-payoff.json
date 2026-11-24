@@ -27,6 +27,7 @@
         "h": "What happens to the existing mortgage?"
       },
       "Suppose the accepted land basis is $600,000 and the remaining eligible build budget is $1.4 million. An illustrative 80% limit on $2 million of cost gives $1.6 million. Paying off a $200,000 mortgage leaves $1.4 million for the build. A lower appraisal, excluded costs or a delayed first draw can still leave you needing cash.",
+      "<a href=\"/construction-loan-calculator?example=owned-land#construction-planner\">Open this example in the construction calculator</a>. Change the payoff or build budget to see when you would need to bring cash.",
       {
         "h": "Turn owned land into a sources-and-uses schedule"
       },
@@ -35,7 +36,7 @@
       {
         "h": "The mortgage payoff is not the property’s value"
       },
-      "Use the <a href=\"/construction-loan-calculator\">construction loan calculator for land you already own</a> to compare the cost limit, completed-value limit and remaining funding gap. Enter the land basis and existing payoff separately; do not subtract the same land contribution twice.",
+      "Use the <a href=\"/construction-loan-calculator?example=owned-land#construction-planner\">construction loan calculator for land you already own</a> to compare the cost limit, completed-value limit and remaining funding gap. Enter the land basis and existing payoff separately; do not subtract the same land contribution twice.",
       "A payoff tells the closing team how much is owed to release an existing loan. It does not establish land value or the equity a new lender will recognize. Keep four figures distinct: original acquisition cost, documented improvements, current payoff and the lender’s accepted property basis. A new appraisal does not necessarily mean all appreciation qualifies as contributed equity.",
       "Ask how ownership duration, related-party purchases, prior work and existing liens affect the accepted basis. Separate a request to finance remaining work from a request to release equity as cash. The <a href=\"https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf\">OCC commercial real estate lending handbook</a> provides banking supervision context for construction risk; it is not a promise of private-loan eligibility or cash-out proceeds.",
       {
@@ -94,6 +95,7 @@
         "h": "Ejemplo de un terreno con hipoteca"
       },
       "Suponga que se reconoce una base de $600,000 para el terreno y que quedan $1.4 millones de obra elegible. Con un límite hipotético del 80% sobre un costo de $2 millones, el monto sería de $1.6 millones. Si el saldo por liquidar es de $200,000, quedarían $1.4 millones para la obra. La tasación, los costos excluidos y el calendario de desembolsos pueden exigir efectivo adicional.",
+      "<a href=\"/es/construction-loan-calculator?example=owned-land#construction-planner\">Abrir este ejemplo en la calculadora de construcción</a>. Cambie el saldo por liquidar o el presupuesto de obra para ver cuándo tendría que aportar efectivo.",
       {
         "h": "Convierta el terreno propio en un cuadro de fuentes y usos"
       },
@@ -102,7 +104,7 @@
       {
         "h": "El saldo hipotecario no es el valor del terreno"
       },
-      "Use la <a href=\"/es/construction-loan-calculator\">calculadora de construcción en terreno propio</a> para comparar límites por costo y valor terminado y el capital faltante. Introduzca base del terreno y saldo por separado; no reste el mismo aporte dos veces.",
+      "Use la <a href=\"/es/construction-loan-calculator?example=owned-land#construction-planner\">calculadora de construcción en terreno propio</a> para comparar límites por costo y valor terminado y el capital faltante. Introduzca base del terreno y saldo por separado; no reste el mismo aporte dos veces.",
       "El saldo de liquidación indica cuánto se debe para liberar el préstamo existente. No determina valor ni patrimonio aceptable. Separe costo original, mejoras documentadas, saldo actual y base que acepta el nuevo prestamista. Una tasación mayor no significa que toda la apreciación cuente como aportación.",
       "Pregunte cómo influyen antigüedad de propiedad, compras entre partes relacionadas, obra previa y gravámenes. Separe financiar obra pendiente de retirar patrimonio en efectivo. El <a href=\"https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf\">manual de crédito inmobiliario comercial de la OCC</a> ofrece contexto de supervisión bancaria, no una promesa de elegibilidad privada ni retiro de efectivo.",
       {
@@ -138,7 +140,7 @@
     "metaTitle": "Construir en un terreno propio con hipoteca | Stonehaven"
   },
   "contentRevision": {
-    "updated": "2026-11-20",
+    "updated": "2026-11-24",
     "citations": [
       "https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf"
     ]
