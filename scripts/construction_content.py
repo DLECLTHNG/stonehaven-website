@@ -58,7 +58,7 @@ def transform(text, path):
         label = 'Hablemos de mi proyecto' if es else 'Discuss my project'
         destination = prefix + '/commercial/construction-loans#quick-inquiry'
         if local == RESERVE_GUIDE:
-            prompt = '¿Cambió la fecha de venta?' if es else 'Did your sale or refinance date move?'
+            prompt = '¿Alcanzará la reserva si se retrasa la venta?' if es else 'Would your reserve cover a later sale?'
             copy = ('Podemos revisar cuánto afectaría el retraso a la reserva de intereses de su obra.' if es else
                     'We can walk through what a delay would mean for your interest reserve and remaining cash.')
             label = 'Consultar sobre mi reserva' if es else 'Ask about my construction budget'

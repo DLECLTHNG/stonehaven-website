@@ -10,3 +10,12 @@
 .quick-details{grid-column:1/-1;margin:6px 0}.quick-details summary{cursor:pointer;min-height:44px;display:flex;align-items:center;text-decoration:underline;text-underline-offset:4px}.quick-details[open] .lf-field{margin:10px 0}
 .quick-alternatives{line-height:1.8;text-align:center;margin-top:24px}.quick-note{font-size:13px!important;line-height:1.7!important;color:var(--slate-600,#52616d);margin-top:14px}
 @media(max-width:640px){.inquiry-proof-grid{grid-template-columns:1fr}.inquiry-evidence{padding:22px}.inquiry-hero-actions{flex-direction:column}.inquiry-hero-actions .btn-primary{width:min(100%,340px);text-align:center}.inquiry-quick{scroll-margin-top:125px}.quick-alternatives a{display:inline-block;padding:6px 0}}
+
+/* The article already supplies a reading column and side margins. */
+.blog-article .inquiry-quick.lead {padding-inline:0;background:transparent;}
+.blog-article .inquiry-quick.lead > .wrap {padding:0;}
+.blog-article .inquiry-quick .lead-card > h2 {margin-block-start:0;}
+@media(max-width:640px){
+  .blog-article .inquiry-quick .lead-card {padding-inline:14px;}
+  .blog-article .inquiry-quick .quick-alternatives a {display:block;}
+}

@@ -42,8 +42,8 @@ def quick_form(product,purpose,es,path,full):
           escape(purpose) + '. ' + t('Start with your name and email. Deal details are optional; we will review your inquiry and explain the next step.','Empiece con su nombre y correo. Los detalles son opcionales; revisaremos su consulta y explicaremos el siguiente paso.'))
  if reserve:
   heading = t('Review the reserve for my build','Revisar la reserva de mi obra')
-  intro = t('Will your interest reserve last until sale or refinance? Share your name and email so we can discuss the draw schedule and the cash you may need to finish.',
-            '¿Alcanzará su reserva de intereses hasta la venta o el refinanciamiento? Comparta su nombre y correo para revisar el calendario de desembolsos y el efectivo que podría necesitar para terminar.')
+  intro = t('Share your name and email. We can review how a later sale or refinance would change your cash needs.',
+            'Comparta su nombre y correo. Podemos revisar cuánto efectivo necesitaría si se retrasa la venta o el refinanciamiento.')
   details = t('Add a project location or expected completion date (optional)','Añadir la ubicación o la fecha prevista de terminación (opcional)')
  eyebrow = '' if builder else '<span class="eyebrow">'+t('Start a conversation','Inicie una conversación')+'</span>'
  estimate = ''
