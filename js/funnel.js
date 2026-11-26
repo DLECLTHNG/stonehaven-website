@@ -285,15 +285,16 @@
   function constructionGuide() {
     if (privateContext()) return "";
     var path = safePublicPath(window.location.pathname).replace(/^\/es(?=\/)/, "");
+    if (path === "/blog/construction-loan-interest-reserve-vs-contingency") return "interest-reserve";
     if (path !== "/commercial/construction-loans" && path !== "/construction-loan-calculator") return "";
     var query = new URLSearchParams(window.location.search);
     if (path === "/construction-loan-calculator" && query.get("example") === "owned-land") return "owned-land";
     var guide = query.get("guide");
-    return guide === "owned-land" || guide === "lot-release" ? guide : "";
+    return ["owned-land", "lot-release", "interest-reserve"].includes(guide) ? guide : "";
   }
   function guideForForm(form) {
     var id = form.getAttribute("data-sh-form") || "";
-    if (!/^(?:quick-(?:es-)?(?:commercial-construction-loans|construction-loan-calculator)|commercial-construction-loans)$/.test(id)) return "";
+    if (!/^(?:quick-(?:es-)?(?:commercial-construction-loans|construction-loan-calculator|construction-interest-reserve)|commercial-construction-loans)$/.test(id)) return "";
     return constructionGuide();
   }
   function carryConstructionGuide() {

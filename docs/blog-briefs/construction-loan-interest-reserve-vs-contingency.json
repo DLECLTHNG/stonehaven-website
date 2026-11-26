@@ -49,6 +49,7 @@
       "Suppose the original $120,000 reserve plan represents 12 months of an assumed average $10,000 monthly interest cost. Three additional months at the same assumed monthly cost require another $30,000. This is a cash-planning illustration, not a quoted interest rate or a loan-payment calculation. Actual interest depends on the note, outstanding advances, timing and any interest charged on previously financed costs.",
       "A separate $45,000 construction change order would reduce the $150,000 contingency to $105,000 if the lender approves that use. Paying the additional $30,000 of interest from the same contingency would reduce the remaining protection again and may not be permitted. Put each request through the lender's approval process rather than assuming budget categories can be moved freely.",
       "Build three versions of the timeline: the expected completion and exit, a modest delay, and a longer delay that reaches loan maturity. Include inspection availability, utility connections, final approvals and the time to sell or refinance. A finished building and a repaid construction loan are different milestones.",
+      "<div id=\"reserve-review-placement\"></div>",
       {
         "h": "Ask these questions when comparing financing"
       },
@@ -57,7 +58,7 @@
       {
         "h": "What Stonehaven can help prepare"
       },
-      "Stonehaven is a mortgage brokerage that arranges financing through third-party lenders. We can review the proposed budget and capital request, identify questions for lender placement and compare how potential structures handle reserves and draws. Send the project location, ownership or purchase position, itemized budget, requested financing, experience and expected exit. Start with our <a href=\"/commercial/construction-loans\">construction financing page</a>; we follow up by text. Availability and final terms depend on the lender and project.",
+      "As your mortgage broker, Stonehaven can review the budget and draw schedule together. If you already have a site, tell us where it is, whether you own it and when you expect to sell or refinance. You can <a href=\"#quick-inquiry\" data-sh-inquiry-cta=\"construction-article\">ask us to review the reserve</a> here or <a href=\"/construction-loan-calculator\">estimate the funding gap for the whole build</a> first.",
       {
         "h": "Keep a reserve ledger as the project changes"
       },
@@ -124,6 +125,7 @@
       "Suponga que la reserva original de $120,000 representa 12 meses con un costo medio de intereses supuesto de $10,000 mensuales. Tres meses adicionales con el mismo costo exigirían otros $30,000. Es un ejemplo de planificación de efectivo, no una tasa cotizada ni el cálculo de una cuota. Los intereses reales dependen del pagaré, los fondos desembolsados, las fechas y cualquier interés sobre costos financiados previamente.",
       "Una orden de cambio separada de $45,000 reduciría la contingencia de $150,000 a $105,000 si el prestamista autoriza ese uso. Pagar también los $30,000 adicionales de intereses con esa contingencia reduciría nuevamente la protección y podría no estar permitido. Solicite autorización en lugar de asumir que puede transferir libremente importes entre categorías.",
       "Prepare tres calendarios: terminación y salida previstas, un retraso moderado y un retraso mayor que alcance el vencimiento. Incluya inspecciones, conexiones de servicios, autorizaciones finales y tiempo para vender o refinanciar. Terminar el edificio y pagar el préstamo de construcción son hitos diferentes.",
+      "<div id=\"reserve-review-placement\"></div>",
       {
         "h": "Preguntas para comparar propuestas de financiamiento"
       },
@@ -132,7 +134,7 @@
       {
         "h": "Cómo puede ayudar Stonehaven"
       },
-      "Stonehaven es una firma de corretaje hipotecario que gestiona financiamiento mediante prestamistas externos. Podemos revisar el presupuesto y la solicitud, identificar preguntas para presentar el proyecto y comparar el tratamiento de reservas y desembolsos. Comparta ubicación, compra o propiedad actual, presupuesto detallado, monto solicitado, experiencia y salida prevista. Empiece en nuestra <a href=\"/es/commercial/construction-loans\">página de financiamiento de construcción</a>. Damos seguimiento por mensaje de texto. La disponibilidad y los términos finales dependen del prestamista y del proyecto.",
+      "Como su intermediario hipotecario, Stonehaven puede revisar el presupuesto y el calendario de desembolsos con usted. Si ya tiene un terreno, cuéntenos dónde está, si es suyo y cuándo espera vender o refinanciar. Puede <a href=\"#quick-inquiry\" data-sh-inquiry-cta=\"construction-article\">consultarnos sobre su reserva</a> aquí o <a href=\"/es/construction-loan-calculator\">calcular primero cuánto efectivo le falta para la obra</a>.",
       {
         "h": "Actualice un registro de reservas durante la obra"
       },
@@ -154,7 +156,7 @@
     ]
   },
   "contentRevision": {
-    "updated": "2026-11-20",
+    "updated": "2026-11-26",
     "citations": [
       "https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf",
       "https://www.occ.treas.gov/news-issuances/bulletins/2024/bulletin-2024-29.html"
