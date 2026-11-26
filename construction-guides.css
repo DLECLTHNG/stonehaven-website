@@ -16,3 +16,11 @@
 .construction-inline-inquiry p{font-size:15px;line-height:1.7;margin:0 0 16px}
 .construction-inline-inquiry .btn-primary{display:inline-flex;justify-content:center;text-align:center;white-space:normal;text-decoration:none;color:#fff}
 @media(max-width:480px){.construction-inline-inquiry{padding:18px}.construction-inline-inquiry .btn-primary{display:flex;width:100%;box-sizing:border-box}}
+
+/* The article already supplies a reading column and side margins. */
+.blog-article .inquiry-quick.lead {padding-inline:0;background:transparent;}
+.blog-article .inquiry-quick.lead > .wrap {padding:0;}
+.blog-article .inquiry-quick .lead-card > h2 {margin-block-start:0;}
+@media(max-width:640px){
+  .blog-article .inquiry-quick .lead-card {padding-inline:14px;}
+}
