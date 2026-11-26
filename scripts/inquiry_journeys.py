@@ -53,6 +53,7 @@ def quick_form(product,purpose,es,path,full):
   <div id="estimate-preview" hidden><label for="estimate-summary">{t('Figures included with this inquiry','Cifras que se enviarán con esta consulta')}</label>
   <textarea id="estimate-summary" name="estimate_summary" rows="3" readonly disabled></textarea>
   <a href="#construction-planner">{t('Edit calculator inputs','Editar los datos de la calculadora')}</a></div></div>'''
+ booking = '' if reserve else f' · <a href="{prefix}/book?product={product}">{t("Book a conversation","Reserve una conversación")}</a>'
  markup = f'''<section class="lead inquiry-quick" id="quick-inquiry"><div class="wrap"><div class="lead-card">
  {eyebrow}<h2>{heading}</h2>
  <p class="sub">{intro}</p>
@@ -66,7 +67,7 @@ def quick_form(product,purpose,es,path,full):
  {estimate}<details class="quick-details"><summary>{details}</summary><div class="lf-field"><label for="quick-about">{t('What would you like to finance?','¿Qué desea financiar?')}</label><textarea id="quick-about" name="about" rows="3" maxlength="1000" aria-describedby="quick-privacy"></textarea><small id="quick-privacy">{t('A location, financing goal or timing is enough. No SSNs, account numbers or private documents.','Basta con ubicación, objetivo o plazo. No incluya SSN, números de cuenta ni documentos privados.')}</small></div></details>
  <div class="lead-actions"><span class="note">{consent} <a href="{prefix}/privacy">{t('Privacy policy','Privacidad')}</a>.</span><button class="lead-submit" type="submit">{t('Request my project review','Solicitar la revisión de mi proyecto') if builder else t('Send my inquiry','Enviar mi consulta')}</button></div>
  </form><div class="lead-success" role="status" aria-live="polite"><div class="ok">{t('Thank you. Your inquiry was submitted.','Gracias. Su consulta fue enviada.')}</div><p>{t('Our team will review it and respond by your preferred method. This is not an approval or a rate quote.','Nuestro equipo la revisará y responderá por el medio elegido. No es una aprobación ni una cotización.')}</p></div>
- <p class="quick-alternatives"><a href="{full}">{t('Ready with the numbers? Use the detailed review','¿Tiene las cifras? Use la revisión detallada')}</a> · <a href="{prefix}/book?product={product}">{t('Book a conversation','Reserve una conversación')}</a></p>
+ <p class="quick-alternatives"><a href="{full}">{t('Ready with the numbers? Use the detailed review','¿Tiene las cifras? Use la revisión detallada')}</a>{booking}</p>
  <p class="quick-note">{note}</p>
  </div></div></section>'''
  return markup if calculator else block('QUICK',markup)

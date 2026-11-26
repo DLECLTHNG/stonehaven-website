@@ -79,7 +79,9 @@ def transform(text, path):
         def replace_cta(m):
             block = re.sub(r'<h2>.*?</h2>', '<h2>' + title + '</h2>', m[0], count=1, flags=re.S)
             block = re.sub(r'<p class="sub">.*?</p>', '<p class="sub">' + desc + '</p>', block, count=1, flags=re.S)
-            return re.sub(r'(<a class="btn-primary" href=")[^"]+(">).*?(</a>)',
+            if local == RESERVE_GUIDE:
+                block = block.replace('<a class="btn-primary" href="', '<a class="btn-primary" data-sh-inquiry-cta="article-footer" href="')
+            return re.sub(r'(<a class="btn-primary"(?: data-sh-inquiry-cta="article-footer")? href=")[^"]+(">).*?(</a>)',
                           lambda a: a[1] + destination + a[2] + cta + a[3],
                           block, count=1, flags=re.S)
         text = re.sub(r'<section class="lead">.*?</section>', replace_cta, text, flags=re.S)
