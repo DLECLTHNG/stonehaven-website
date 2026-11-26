@@ -3,6 +3,7 @@ import json
 import re
 from html import escape
 from pathlib import Path
+from inquiry_journeys import RESERVE_GUIDE
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = json.loads((ROOT / 'docs/construction-growth/posts.json').read_text())
@@ -55,11 +56,18 @@ def transform(text, path):
         copy = ('Comparta ubicación y objetivo. Empiece con su nombre y correo; los detalles del proyecto son opcionales.' if es else
                 'Tell us where you are building and what you need to finance. Start with your name and email; project details are optional.')
         label = 'Hablemos de mi proyecto' if es else 'Discuss my project'
-        if local.endswith('/construction-loan-property-already-owned-mortgage-payoff'):
+        destination = prefix + '/commercial/construction-loans#quick-inquiry'
+        if local == RESERVE_GUIDE:
+            prompt = '¿Cambió la fecha de venta?' if es else 'Did your sale or refinance date move?'
+            copy = ('Podemos revisar cuánto afectaría el retraso a la reserva de intereses de su obra.' if es else
+                    'We can walk through what a delay would mean for your interest reserve and remaining cash.')
+            label = 'Consultar sobre mi reserva' if es else 'Ask about my construction budget'
+            destination = '#quick-inquiry'
+        elif local.endswith('/construction-loan-property-already-owned-mortgage-payoff'):
             label = 'Revisar mi terreno y el saldo por liquidar' if es else 'Review my land equity and payoff'
         elif local.endswith('/100-ltc-construction-loans-builder-cash-needed'):
             label = 'Revisar el efectivo que requiere mi obra' if es else 'Review the cash needed for my build'
-        early = '<!-- CONSTRUCTION-CONTENT:START --><aside class="construction-inline-inquiry"><p><strong>' + prompt + '</strong> ' + copy + '</p><a class="btn-primary" data-sh-inquiry-cta="construction-article" href="' + prefix + '/commercial/construction-loans#quick-inquiry">' + label + '</a></aside><!-- CONSTRUCTION-CONTENT:END -->'
+        early = '<!-- CONSTRUCTION-CONTENT:START --><aside class="construction-inline-inquiry"><p><strong>' + prompt + '</strong> ' + copy + '</p><a class="btn-primary" data-sh-inquiry-cta="construction-article" href="' + destination + '">' + label + '</a></aside><!-- CONSTRUCTION-CONTENT:END -->'
         def early_cta(m):
             return re.sub(r'<h2\b', lambda _: early + '<h2', m[0], count=1)
         text = re.sub(r'<article\b[^>]*class="blog-article"[^>]*>.*?</article>', early_cta, text, flags=re.S)
@@ -72,7 +80,7 @@ def transform(text, path):
             block = re.sub(r'<h2>.*?</h2>', '<h2>' + title + '</h2>', m[0], count=1, flags=re.S)
             block = re.sub(r'<p class="sub">.*?</p>', '<p class="sub">' + desc + '</p>', block, count=1, flags=re.S)
             return re.sub(r'(<a class="btn-primary" href=")[^"]+(">).*?(</a>)',
-                          lambda a: a[1] + prefix + '/commercial/construction-loans#quick-inquiry' + a[2] + cta + a[3],
+                          lambda a: a[1] + destination + a[2] + cta + a[3],
                           block, count=1, flags=re.S)
         text = re.sub(r'<section class="lead">.*?</section>', replace_cta, text, flags=re.S)
     if article:

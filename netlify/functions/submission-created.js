@@ -37,9 +37,9 @@ exports.handler = async (event) => {
   if (typeof data.extra === 'string' && data.extra.length <= 24000) {
     try { const parsed = JSON.parse(data.extra); if (parsed && typeof parsed === 'object' && !Array.isArray(parsed)) extra = parsed; } catch {}
   }
-  // Only the dedicated construction forms can claim one of the two public sources.
-  const constructionForm = /^(?:quick-(?:es-)?(?:commercial-construction-loans|construction-loan-calculator)|commercial-construction-loans)$/.test(data.page || '');
-  if (!constructionForm || !['owned-land', 'lot-release'].includes(extra.construction_guide)) delete extra.construction_guide;
+  // Only the dedicated construction forms can claim a public guide source.
+  const constructionForm = /^(?:quick-(?:es-)?(?:commercial-construction-loans|construction-loan-calculator|construction-interest-reserve)|commercial-construction-loans)$/.test(data.page || '');
+  if (!constructionForm || !['owned-land', 'lot-release', 'interest-reserve'].includes(extra.construction_guide)) delete extra.construction_guide;
   if (constructionForm) extra.source_form_id = data.page;
   if (data.page === 'contact') {
     if (['Financing', 'Professional introduction'].includes(data.inquiry_purpose)) {

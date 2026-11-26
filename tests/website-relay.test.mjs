@@ -126,6 +126,9 @@ test('saved construction sources reach the Commercial CRM relay only on eligible
     ['quick-construction-loan-calculator','owned-land','owned-land'],
     ['quick-es-commercial-construction-loans','lot-release','lot-release'],
     ['commercial-construction-loans','lot-release','lot-release'],
+    ['quick-construction-interest-reserve','interest-reserve','interest-reserve'],
+    ['quick-es-construction-interest-reserve','interest-reserve','interest-reserve'],
+    ['quick-construction-loan-calculator','interest-reserve','interest-reserve'],
     ['quick-commercial-construction-loans','unrecognized',undefined],
     ['contact','owned-land',undefined],
   ]) {

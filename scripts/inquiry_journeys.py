@@ -2,6 +2,8 @@
 from html import escape
 import re
 
+RESERVE_GUIDE = '/blog/construction-loan-interest-reserve-vs-contingency'
+
 PRIORITY = {
  '/commercial/hud-financing': ('Commercial','HUD financing review','Revisión de financiamiento HUD'),
  '/commercial/hud-223f-loans': ('Commercial','HUD 223(f) apartment financing','Financiamiento de apartamentos HUD 223(f)'),
@@ -30,11 +32,19 @@ def quick_form(product,purpose,es,path,full):
  if path.removeprefix('/es').startswith('/commercial/hud-'):
   note=t('Stonehaven acts as your mortgage broker. This is an initial inquiry; financing is subject to underwriting, documentation and program availability.','Stonehaven actúa como su intermediario hipotecario. Esta es una consulta inicial; el financiamiento está sujeto a evaluación, documentación y disponibilidad.')
  calculator = path.endswith('/construction-loan-calculator')
- builder = calculator or path.endswith('/commercial/construction-loans')
+ reserve = path.removeprefix('/es') == RESERVE_GUIDE
+ if reserve:
+  source = 'quick-' + ('es-' if es else '') + 'construction-interest-reserve'
+ builder = calculator or reserve or path.endswith('/commercial/construction-loans')
  heading = t('Review my construction project','Revisar mi proyecto de construcción') if builder else t('Discuss your financing','Hablemos de su financiamiento')
  intro = (t('Send your name and email. If you have a site, budget or closing date, you can add those details below.',
             'Envíe su nombre y correo. Si ya tiene un terreno, un presupuesto o una fecha de cierre, puede añadir esos detalles abajo.') if builder else
           escape(purpose) + '. ' + t('Start with your name and email. Deal details are optional; we will review your inquiry and explain the next step.','Empiece con su nombre y correo. Los detalles son opcionales; revisaremos su consulta y explicaremos el siguiente paso.'))
+ if reserve:
+  heading = t('Review the reserve for my build','Revisar la reserva de mi obra')
+  intro = t('Will your interest reserve last until sale or refinance? Share your name and email so we can discuss the draw schedule and the cash you may need to finish.',
+            '¿Alcanzará su reserva de intereses hasta la venta o el refinanciamiento? Comparta su nombre y correo para revisar el calendario de desembolsos y el efectivo que podría necesitar para terminar.')
+  details = t('Add a project location or expected completion date (optional)','Añadir la ubicación o la fecha prevista de terminación (opcional)')
  eyebrow = '' if builder else '<span class="eyebrow">'+t('Start a conversation','Inicie una conversación')+'</span>'
  estimate = ''
  if calculator:
@@ -82,6 +92,14 @@ def transform(text,path):
  es=path.startswith('/es/');local=path[3:] if es else path
  text=clean(text)
  if 'noindex' in text or '<main>' not in text:return text
+ if local == RESERVE_GUIDE:
+  prefix='/es' if es else ''
+  purpose='Reserva de intereses para construcción' if es else 'Construction interest reserve review'
+  form=quick_form('Commercial',purpose,es,path,prefix+'/commercial/construction-loans#inquire')
+  marker='<div id="reserve-review-placement"></div>'
+  if text.count(marker) != 1:
+   raise ValueError('Expected one reserve inquiry location: '+path)
+  return text.replace(marker,form).replace('</head>',STYLE+'</head>')
  persona=local.startswith('/dscr/')
  home=local=='/'
  if not home and local not in PRIORITY and not persona:return text

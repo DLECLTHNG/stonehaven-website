@@ -4,16 +4,17 @@
 -- explicit team decision at report time applies even if made after intake.
 BEGIN READ ONLY;
 WITH guides(guide, ordering) AS (
-  VALUES ('owned-land', 1), ('lot-release', 2), ('unattributed', 3)
+  VALUES ('owned-land', 1), ('lot-release', 2), ('interest-reserve', 3), ('unattributed', 4)
 ), intake AS (
   SELECT l.id,
-    CASE WHEN l.intake_extra->>'construction_guide' IN ('owned-land','lot-release')
+    CASE WHEN l.intake_extra->>'construction_guide' IN ('owned-land','lot-release','interest-reserve')
          THEN l.intake_extra->>'construction_guide' ELSE 'unattributed' END AS guide
   FROM "Lead" l
   WHERE l."sourceChannel" = 'website' AND l.product = 'Commercial'
     AND l.intake_extra->>'source_form_id' IN (
       'quick-construction-loan-calculator','quick-es-construction-loan-calculator',
       'quick-commercial-construction-loans','quick-es-commercial-construction-loans',
+      'quick-construction-interest-reserve','quick-es-construction-interest-reserve',
       'commercial-construction-loans')
     AND l."createdAt" >= (:'start'::date::timestamp AT TIME ZONE 'America/New_York' AT TIME ZONE 'UTC')
     AND l."createdAt" < (:'stop'::date::timestamp AT TIME ZONE 'America/New_York' AT TIME ZONE 'UTC')

@@ -12,7 +12,7 @@ from seo_discovery import build_discovery_files
 from seo_contextual_links import transform as contextual_links
 from cre_search_journeys import transform as cre_search_journeys
 from search_answers import transform as search_answers
-from inquiry_journeys import transform as inquiry_journeys, clean as clean_inquiries
+from inquiry_journeys import RESERVE_GUIDE, transform as inquiry_journeys, clean as clean_inquiries
 from hud_content import transform as hud_content, clean as clean_hud
 from construction_content import transform as construction_content, clean as clean_construction
 from site_presentation import normalize_presentation, preserve_native_lead_validation
@@ -117,7 +117,7 @@ for path,(file,text) in pages.items():
  text=hud_content(text,path)
  text=construction_content(text,path)
  text=add_editor(text,path)
- guide={'/blog/subdivision-loan-lot-release-prices':'lot-release','/blog/construction-loan-property-already-owned-mortgage-payoff':'owned-land'}.get(local)
+ guide={RESERVE_GUIDE:'interest-reserve','/blog/subdivision-loan-lot-release-prices':'lot-release','/blog/construction-loan-property-already-owned-mortgage-payoff':'owned-land'}.get(local)
  if guide:
   def guide_link(m):
    key='example' if guide=='owned-land' and m[1].endswith('/construction-loan-calculator') else 'guide'
